@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Dispatch Location Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.96</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.96"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>Information about the location of the unit when dispatched</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11490 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.96"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10613) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (CONF:10616)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10614) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (CONF:10619)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10615) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (CONF:10622)</li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10613) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (CONF:10616)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10614) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (CONF:10619)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10615) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (CONF:10622)</li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSResponseSection.dita">EMS Response Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.96" extension="2022-01-01"/>
+  <statusCode/>
+</organizer>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Dispatch Location Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.96</tt>]</p>
+</body>
+</topic>

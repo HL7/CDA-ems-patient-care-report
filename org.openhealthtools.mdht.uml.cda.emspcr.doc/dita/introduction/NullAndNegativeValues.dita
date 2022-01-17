@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+
+			<topic id="nullandnegativevalues" xml:lang="en-us" >
+		<title>Pertinent Negatives</title>
+		<body>
+		<p>For some items in this guide, negated entries have clear boundaries. A negated procedure
+			in the Procedures Performed section clearly refers to the scope of the encounter,
+			whereas a similar negation in the History section implies it's never been done. In other
+			cases it can be difficult to distinguish a record that suggests absence by not recording
+			presence from a null value.</p>
+			<p>We follow CDA guidance in using RIM attributes for observations of absence, but we also record
+			explicit observations of presence or absence in four cases where this confusion seems
+			likely: </p>
+		<ul id="ul_qlw_5lq_5rb">
+			<li>Existence Of Drug Use Indication</li>
+			<li>Existence Of History Of Condition Or Surgery</li>
+			<li>Existence Of Known Drug Allergy </li>
+			<li>Existence Of Known Non Drug Allergy</li>
+			<li>Currently On Medication</li>
+		</ul>
+		<p>Several items also include reason observations for negatives, especially for interventions. A
+			map of NEMSIS pertinent negatives to CDA designs can be found in the appendix <i>Nulls
+				and Negative Action Values</i>.</p>
+			
+		</body>
+	
+	
+</topic>

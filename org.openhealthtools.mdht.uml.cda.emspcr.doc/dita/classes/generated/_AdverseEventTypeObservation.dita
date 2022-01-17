@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Adverse Event Type Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.90</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.90"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>Kind of adverse event involving EMS personnel</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11484 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.90"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11205)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10710)<tt><b>/@code</b>="67555-3" </tt><i>Work related exposure, injury, or death Provider NEMSIS type</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10709)
+</li>
+<li>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10711), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderAdverseEventType.dita">ProviderAdverseEventType</xref> 2.16.840.1.113883.17.3.11.72</tt><b> DYNAMIC</b> (CONF:10712)<p>NEMSIS Trace: EOther.06</p>
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11205)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10710)<tt><b>/@code</b>="67555-3" </tt><i>Work related exposure, injury, or death Provider NEMSIS type</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10709)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10711), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderAdverseEventType.dita">ProviderAdverseEventType</xref> 2.16.840.1.113883.17.3.11.72</tt><b> DYNAMIC</b> (CONF:10712)
+<p>NEMSIS Trace: EOther.06</p></li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSPersonnelAdverseEventSection.dita">EMS Personnel Adverse Event Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.90" extension="2022-01-01"/>
+  <code code="67555-3" codeSystem="2.16.840.1.113883.6.1" displayName="Work related exposure, injury, or death Provider NEMSIS type"/>
+  <value xsi:type="CD"/>
+</observation>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Adverse Event Type Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.90</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Successful Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.133</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.133"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>Indication of whether a procedure was successful</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11525 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.133"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11258)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10524)<tt><b>/@code</b>="67544-7" </tt><i>Procedure successful NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10525)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10526)<p>NEMSIS Trace: EProcedures.06</p>
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11258)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10524)<tt><b>/@code</b>="67544-7" </tt><i>Procedure successful NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10525)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10526)
+<p>NEMSIS Trace: EProcedures.06</p></li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.133" extension="2022-01-01"/>
+  <code code="67544-7" codeSystem="2.16.840.1.113883.6.1" displayName="Procedure successful NEMSIS"/>
+  <value xsi:type="BL"/>
+</observation>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Successful Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.133</tt>]</p>
+</body>
+</topic>

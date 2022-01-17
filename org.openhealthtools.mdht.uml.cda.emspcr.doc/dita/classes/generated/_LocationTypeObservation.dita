@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Location Type Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.88</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.88"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>Kind of location where the incident occurred</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11482 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.88"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11662)<tt><b>/@code</b>="74496-1" </tt><i>Injury location ICD code</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11202)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11717), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)<p>NEMSIS trace: eScene.09 (Incident location type)
+See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p>
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11662)<tt><b>/@code</b>="74496-1" </tt><i>Injury location ICD code</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11202)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11717), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
+<p>NEMSIS trace: eScene.09 (Incident location type)
+See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p></li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSSceneSection.dita">EMS Scene Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.88" extension="2022-01-01"/>
+  <code code="74496-1" codeSystem="2.16.840.1.113883.6.1" displayName="Injury location ICD code"/>
+  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.90"/>
+</observation>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Location Type Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.88</tt>]</p>
+</body>
+</topic>

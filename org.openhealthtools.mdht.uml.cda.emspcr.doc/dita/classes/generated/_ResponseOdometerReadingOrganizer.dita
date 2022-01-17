@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Response Odometer Reading Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.97"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>Collection of odometer readings at various points in an EMS crew's trip</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11494 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.97"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10626) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (CONF:10630)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10627) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (CONF:10634)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10628) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (CONF:10638)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10629) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (CONF:10642)</li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10626) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (CONF:10630)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10627) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (CONF:10634)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10628) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (CONF:10638)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10629) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (CONF:10642)</li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSResponseSection.dita">EMS Response Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.97" extension="2022-01-01"/>
+  <statusCode/>
+</organizer>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Response Odometer Reading Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Approach</title>
+	<body>
+		<p>We first transformed the NEMSIS specification into the Emergency Medical Services Domain
+			Analysis Model (EMS DAM), initially balloted through HL7 in May of 2010 and finalized
+			for the release in May 2011. The static part of the analysis model was then constrained
+			to the HL7 Reference Information Model (RIM) in a Domain Information Model (DIM),
+			balloted in January 2011, and reballoted in September 2011. After a DSTU period, this
+			guide was balloted to Normative status in the autumn of 2013. This "level one"
+			(attachment only, no structured data in body) was superseded by a "level three"
+			(structured clinical statements) guide in 2016. In the last five years, NEMSIS has
+			collected feedback from implementers and providers and revised their specification; the
+			current guide brings the CDA specification up to date with the NEMSIS 3.5 data set.</p>
+		<p>The guide aligns with the Consilidated CDA work by leveraging the Consolidated header.
+			Consolidated constraints on the header are inherited but not repeated in this guide.
+			Standard codes provided by LOINC can identify other alignments, both with the
+			Consolidated project and with Emergency Department specification <i>Data Elements for
+				Emergency Department Systems</i> (DEEDS). </p>
+		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
+			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
+			into computational models expressed in UML. These models are used by automated tooling
+			to generate this publication, plus validation tools and Java libraries for
+			implementers.</p>
+
+		</body>
+</topic>

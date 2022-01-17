@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>REFERENCES</title>
+	<body>
+		<p>
+			<ul>
+				<li>  Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo A, (Editors). HL7
+					Clinical Document Architecture, Release 2.0. ANSI-approved HL7 Standard; May
+					2005. Ann Arbor, Mich.: Health Level Seven, Inc. Available through <xref
+						format="html" href="http://www.hl7.org">HL7</xref> or if an HL7 member with
+					the following link: <xref format="zip"
+						href="http://www.hl7.org/documentcenter/private/standards/cda/r2/cda_r2_normativewebedition.zip"
+						>CDA Release 2 Normative Web Edition.</xref>
+				</li>
+				<li>
+					<xref format="html" href="http://www.regenstrief.org/loinc">LOINC®</xref>
+					: Logical Observation Identifiers Names and Codes,
+					Regenstrief
+					Institute.
+				</li>
+				<li>
+					<xref format="html" href="http://www.ihtsdo.org/">SNOMED CT®</xref>
+					: SNOMED Clinical Terms SNOMED International
+					Organization.
+				</li>
+				<li>
+					Extensible Markup Language,
+					<xref format="html" href="http://www.w3.org/XML">www.w3.org/XML</xref>
+					.
+				</li>
+				<li>  National Emergency Medical Services Information System (NEMSIS) Data Dictionary, version
+					3.5. Available at <xref format="html" href="http://www.NEMSIS.org"
+						>NEMSIS.org</xref>
+				</li>
+				<li> HL7 EMS Domain Analysis Model, available from HL7 at <xref href="http://hl7.org"
+						format="html" scope="external">HL7.org</xref>.</li>
+			</ul>
+		</p>
+	</body>
+</topic>

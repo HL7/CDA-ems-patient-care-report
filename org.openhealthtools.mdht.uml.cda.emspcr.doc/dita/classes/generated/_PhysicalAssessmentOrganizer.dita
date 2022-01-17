@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Physical Assessment Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.78</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.78"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>A collection of qualitative assessments of the patient's physical condition</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11470 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.78"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11103) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SkinAssessment.dita">Skin Assessment</xref> (CONF:11712)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11105) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeadAssessment.dita">Head Assessment</xref> (CONF:11104)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11342) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeurologicalAssessment.dita">Neurological Assessment</xref> (CONF:11659)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11107) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../FaceAssessment.dita">Face Assessment</xref> (CONF:11106)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11109) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeckAssessment.dita">Neck Assessment</xref> (CONF:11108)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11113) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartAssessment.dita">Heart Assessment</xref> (CONF:11112)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11115) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref> (CONF:11114)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11117) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref> (CONF:11116)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11119) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref> (CONF:11118)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11121) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref> (CONF:11120)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11123) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../EyeAssessment.dita">Eye Assessment</xref> (CONF:11122)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11125) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (CONF:11124)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11657) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../LungAssessment.dita">Lung Assessment</xref> (CONF:11660)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11658) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ChestAssessment.dita">Chest Assessment</xref> (CONF:11661)</li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11103) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SkinAssessment.dita">Skin Assessment</xref> (CONF:11712)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11105) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeadAssessment.dita">Head Assessment</xref> (CONF:11104)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11342) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeurologicalAssessment.dita">Neurological Assessment</xref> (CONF:11659)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11107) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../FaceAssessment.dita">Face Assessment</xref> (CONF:11106)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11109) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeckAssessment.dita">Neck Assessment</xref> (CONF:11108)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11113) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartAssessment.dita">Heart Assessment</xref> (CONF:11112)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11115) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref> (CONF:11114)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11117) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref> (CONF:11116)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11119) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref> (CONF:11118)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11121) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref> (CONF:11120)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11123) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../EyeAssessment.dita">Eye Assessment</xref> (CONF:11122)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11125) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (CONF:11124)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11657) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../LungAssessment.dita">Lung Assessment</xref> (CONF:11660)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11658) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ChestAssessment.dita">Chest Assessment</xref> (CONF:11661)</li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSPhysicalAssessmentSection.dita">EMS Physical Assessment Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.78" extension="2022-01-01"/>
+  <statusCode/>
+</organizer>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Physical Assessment Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.78</tt>]</p>
+</body>
+</topic>

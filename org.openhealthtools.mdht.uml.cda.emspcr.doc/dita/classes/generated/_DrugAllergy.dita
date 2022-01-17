@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Drug Allergy - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.48</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.48"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>An allergy or sensitivity to a drug.
+This statement follows the pattern of the Consolidated allergy observation, without the intervening "problem act" class.
+In this observation, as the Consolidated guide specifies, the code is "ASSERTION," and the value selected from 2.16.840.1.113883.3.88.12.3221.6.2. In this case, the value should be 416098002 (Drug allergy (disorder)), System = SNOMED CT, 2.16.840.1.113883.6.96. 
+The drug, to be placed in the participating product, is encoded in RxNorm.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11440 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.48"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActCode</tt>) (CONF:11340)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="416098002" </tt><i>Drug allergy (disorder)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11341)
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: EHistory.06
+
+Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken from ICD-10 CM.</i></lines></p></li></ol></li></ol></li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActCode</tt>) (CONF:11340)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="416098002" </tt><i>Drug allergy (disorder)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11341)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: EHistory.06
+
+Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken from ICD-10 CM.</i></lines></p></li></ol></li></ol></li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.48" extension="2022-01-01"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="ASSERTION"/>
+  <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.96" displayName="Drug allergy (disorder)"/>
+  <participant typeCode="WIT">
+    <participantRole/>
+  </participant>
+</observation>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
+<section id="changes">
+</section>
+<p><ph id="classformalname">Drug Allergy</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.48</tt>]</p>
+</body>
+</topic>

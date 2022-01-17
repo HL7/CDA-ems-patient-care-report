@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://git.eclipse.org/r/mdht/org.eclipse.mdht,master,cda/plugins/org.eclipse.mdht.uml.cda"/>
+<project reference="1.0,https://github.com/HL7/CDA-ems-patient-care-report.git,main,org.openhealthtools.mdht.uml.cda.emspcr"/>
+<project reference="1.0,https://github.com/HL7/CDA-ems-patient-care-report.git,main,org.openhealthtools.mdht.uml.cda.emspcr.doc"/>
+<project reference="1.0,https://github.com/HL7/CDA-ems-patient-care-report.git,main,org.openhealthtools.mdht.uml.cda.emspcr.model"/>
+<project reference="1.0,https://github.com/mdht/mdht-models.git,develop,models/org.openhealthtools.mdht.uml.term.models"/>
+</provider>
+</psf>
