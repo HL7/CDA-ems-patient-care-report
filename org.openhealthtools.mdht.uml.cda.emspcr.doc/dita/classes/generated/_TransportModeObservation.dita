@@ -21,10 +21,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10674)<tt><b>/@code</b>="67550-4" </tt><i>Transport mode from scene NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10673)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10675), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TransportationMode.dita">TransportationMode</xref> 2.16.840.1.113883.17.3.11.66</tt><b> DYNAMIC</b> (CONF:10676)<p>NEMSIS Trace: EDisposition.17 (disposition transport mode)</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10675), which <b>SHALL</b> be selected from ValueSet<tt> TransportationMode 2.16.840.1.113883.17.3.11.66</tt><b> DYNAMIC</b> (CONF:10676)<p>NEMSIS Trace: eDisposition.17 (disposition transport mode)</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11379) <ol><li>contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TransportModeQualifier.dita">Transport Mode Qualifier</xref> (CONF:11339)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11379) <ol><li>contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref> (CONF:11339)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -34,12 +34,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10674)<tt><b>/@code</b>="67550-4" </tt><i>Transport mode from scene NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10673)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10675), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TransportationMode.dita">TransportationMode</xref> 2.16.840.1.113883.17.3.11.66</tt><b> DYNAMIC</b> (CONF:10676)
-<p>NEMSIS Trace: EDisposition.17 (disposition transport mode)</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11379) <ol><li>contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TransportModeQualifier.dita">Transport Mode Qualifier</xref> (CONF:11339)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10675), which <b>SHALL</b> be selected from ValueSet<tt> TransportationMode 2.16.840.1.113883.17.3.11.66</tt><b> DYNAMIC</b> (CONF:10676)
+<p>NEMSIS Trace: eDisposition.17 (disposition transport mode)</p></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11379) <ol><li>contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref> (CONF:11339)</li></ol> 
 </li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSDispositionSection.dita">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSDispositionSection.html">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.1133883.17.3.10.1.33" extension="2022-01-01"/>
   <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" displayName="Transport mode from scene NEMSIS"/>

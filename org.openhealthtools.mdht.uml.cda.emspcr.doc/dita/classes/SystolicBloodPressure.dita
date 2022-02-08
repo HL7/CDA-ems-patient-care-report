@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_SystolicBloodPressure.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_SystolicBloodPressure.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_SystolicBloodPressure.dita#classId/conformance">
@@ -20,13 +18,16 @@
 <ol audience="developer" conref="generated/_SystolicBloodPressure.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_SystolicBloodPressure.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Systolic Blood Pressure example</b></p>
+<p audience="examples"><b>Systolic Blood Pressure example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_SystolicBloodPressure.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.23" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="8480-6" displayName="Systolic blood pressure" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="PQ" value="130" unit="mm[Hg]" />
+]]></codeblock>
 </body>
 </topic>

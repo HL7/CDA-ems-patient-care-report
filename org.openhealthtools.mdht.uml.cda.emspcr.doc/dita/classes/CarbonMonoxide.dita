@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_CarbonMonoxide.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_CarbonMonoxide.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_CarbonMonoxide.dita#classId/conformance">
@@ -20,13 +18,16 @@
 <ol audience="developer" conref="generated/_CarbonMonoxide.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_CarbonMonoxide.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Carbon Monoxide example</b></p>
+<p audience="examples"><b>Carbon Monoxide example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_CarbonMonoxide.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.167" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="20563-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carboxyhemoglobin/Hemoglobin.total in Blood" />
+<value xsi:type="PQ" value="0" unit="%" />
+]]></codeblock>
 </body>
 </topic>

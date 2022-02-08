@@ -21,23 +21,23 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10768)<tt><b>/@code</b>="10154-3" </tt><i>Chief complaint Narrative - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)<p>effectiveTime.low = NEMSIS Trace: ESituation.01</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)<p>effectiveTime.low = NEMSIS Trace: eSituation.01</p>
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="ST"</tt> (CONF:10770)<p>NEMSIS Trace: ESituation.04</p>
+<b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="ST"</tt> (CONF:10770)<p>NEMSIS Trace: eSituation.04</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)<p>NEMSIS Trace: ESituation.07
+<b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> AnatomicLocation 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)<p>NEMSIS Trace: eSituation.07
 Complaint site is required if complaint is type "Chief complaint"</p>
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10771) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref></li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10771) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10772) <ol><li>contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintType.dita">Complaint Type</xref></li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10772) <ol><li>contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (CONF:10782)</li></ol> 
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref> (CONF:10782)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -48,20 +48,20 @@ Complaint site is required if complaint is type "Chief complaint"</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10768)<tt><b>/@code</b>="10154-3" </tt><i>Chief complaint Narrative - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)
-<p>effectiveTime.low = NEMSIS Trace: ESituation.01</p></li>
+<p>effectiveTime.low = NEMSIS Trace: eSituation.01</p></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="ST"</tt> (CONF:10770)
-<p>NEMSIS Trace: ESituation.04</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)
-<p>NEMSIS Trace: ESituation.07
+<p>NEMSIS Trace: eSituation.04</p></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> AnatomicLocation 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)
+<p>NEMSIS Trace: eSituation.07
 Complaint site is required if complaint is type "Chief complaint"</p></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10771) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref></li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10771) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10772) <ol><li>contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintType.dita">Complaint Type</xref></li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10772) <ol><li>contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (CONF:10782)</li></ol> 
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref> (CONF:10782)</li></ol> 
 </li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSSituationSection.dita">EMS Situation Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSSituationSection.html">EMS Situation Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.1133883.17.3.10.1.63" extension="2022-01-01"/>
   <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" displayName="Chief complaint Narrative - Reported"/>

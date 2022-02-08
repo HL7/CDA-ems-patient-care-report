@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_HeadAssessment.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_HeadAssessment.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_HeadAssessment.dita#classId/conformance">
@@ -20,13 +18,17 @@
 <ol audience="developer" conref="generated/_HeadAssessment.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_HeadAssessment.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Head Assessment example</b></p>
+<p audience="examples"><b>Head Assessment example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_HeadAssessment.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.113" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67525-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of Head NEMSIS" />
+    <value xsi:type="CD" code="LA17208-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bleeding controlled" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

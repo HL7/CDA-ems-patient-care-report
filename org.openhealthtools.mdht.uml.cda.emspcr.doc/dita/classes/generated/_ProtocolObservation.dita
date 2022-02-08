@@ -21,10 +21,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>Protocol used NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10720), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.11.73</tt><b> DYNAMIC</b> (CONF:10721)<p>NEMSIS Trace: EProtocols.01</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10720), which <b>SHALL</b> be selected from ValueSet<tt> Protocol 2.16.840.1.113883.17.3.11.73</tt><b> DYNAMIC</b> (CONF:10721)<p>NEMSIS Trace: eProtocols.01</p>
 </li>
 <li>
-contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref> (CONF:11073)</li></ol> 
+contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref> (CONF:11073)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -34,12 +34,12 @@ contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  <ol><
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>Protocol used NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10720), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.11.73</tt><b> DYNAMIC</b> (CONF:10721)
-<p>NEMSIS Trace: EProtocols.01</p></li>
-<li>contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref> (CONF:11073)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10720), which <b>SHALL</b> be selected from ValueSet<tt> Protocol 2.16.840.1.113883.17.3.11.73</tt><b> DYNAMIC</b> (CONF:10721)
+<p>NEMSIS Trace: eProtocols.01</p></li>
+<li>contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref> (CONF:11073)</li></ol> 
 </li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSProtocolSection.dita">EMS Protocol Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSProtocolSection.html">EMS Protocol Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.1133883.17.3.10.1.93" extension="2022-01-01"/>
   <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" displayName="Protocol used NEMSIS"/>

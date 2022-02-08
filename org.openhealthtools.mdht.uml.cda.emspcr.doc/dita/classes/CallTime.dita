@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_CallTime.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_CallTime.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_CallTime.dita#classId/conformance">
@@ -20,13 +18,17 @@
 <ol audience="developer" conref="generated/_CallTime.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_CallTime.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Call Time example</b></p>
+<p audience="examples"><b>Call Time example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_CallTime.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.38" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="69469-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="911 call to public safety answering point or other designated entity requesting EMS services [Date and time] Facility NEMSIS" />
+<value xsi:type="TS" value="201201011545+0600" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

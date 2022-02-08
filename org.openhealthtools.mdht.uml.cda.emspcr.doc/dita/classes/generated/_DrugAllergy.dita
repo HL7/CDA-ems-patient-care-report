@@ -27,7 +27,7 @@ The drug, to be placed in the participating product, is encoded in RxNorm.</p>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="416098002" </tt><i>Drug allergy (disorder)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11341)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: EHistory.06
+<b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: eHistory.06
 
 Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken from ICD-10 CM.</i></lines></p></li></ol></li></ol></li></ol> 
 </li>
@@ -41,7 +41,7 @@ Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken f
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="416098002" </tt><i>Drug allergy (disorder)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11341)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: EHistory.06
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11126) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10208) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> such that it  (CONF:10209) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11646), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11645)<p><lines><i>NEMSIS Trace: eHistory.06
 
 Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken from ICD-10 CM.</i></lines></p></li></ol></li></ol></li></ol> 
 </li>

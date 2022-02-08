@@ -21,10 +21,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10294)<tt><b>/@code</b>="19889-5" </tt><i>Carbon dioxide/Gas.total.at end expiration in Exhaled gas</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10293)
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11308)<p>NEMSIS Trace: EVitals.01</p>
+<b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11308)<p>NEMSIS Trace: eVitals.01</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10295)<p>NEMSIS Trace: EVitals.16
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10295)<p>NEMSIS Trace: eVitals.16
 UCUM units will typically be "%", "mmHg", or "kPa".</p>
 </li>
 </ol>
@@ -36,9 +36,9 @@ UCUM units will typically be "%", "mmHg", or "kPa".</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10294)<tt><b>/@code</b>="19889-5" </tt><i>Carbon dioxide/Gas.total.at end expiration in Exhaled gas</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10293)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11308)
-<p>NEMSIS Trace: EVitals.01</p></li>
+<p>NEMSIS Trace: eVitals.01</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10295)
-<p>NEMSIS Trace: EVitals.16
+<p>NEMSIS Trace: eVitals.16
 UCUM units will typically be "%", "mmHg", or "kPa".</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

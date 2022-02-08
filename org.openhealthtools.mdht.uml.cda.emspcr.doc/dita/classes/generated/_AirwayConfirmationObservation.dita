@@ -21,13 +21,13 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10542)<tt><b>/@code</b>="71576-3" </tt><i>Airway device placement confirmation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10541)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10546)<p>NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10546)<p>NEMSIS Trace: eAirway.02. If the confirmation is negated, this SHALL be "NA."</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10545)<p>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10545)<p>NEMSIS Trace: if eAirway.02 is populated, this is TRUE</p>
 </li>
 <li>
-<b>MAY</b> contain zero or more [0..*] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AirwayDeviceConfirmationMethod.dita">AirwayDeviceConfirmationMethod</xref> 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)<p>NEMSIS Trace: EAirway.04</p>
+<b>MAY</b> contain zero or more [0..*] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> AirwayDeviceConfirmationMethod 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)<p>NEMSIS Trace: eAirway.04</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -38,11 +38,11 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10542)<tt><b>/@code</b>="71576-3" </tt><i>Airway device placement confirmation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10541)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10546)
-<p>NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</p></li>
+<p>NEMSIS Trace: eAirway.02. If the confirmation is negated, this SHALL be "NA."</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10545)
-<p>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</p></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AirwayDeviceConfirmationMethod.dita">AirwayDeviceConfirmationMethod</xref> 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)
-<p>NEMSIS Trace: EAirway.04</p></li>
+<p>NEMSIS Trace: if eAirway.02 is populated, this is TRUE</p></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> AirwayDeviceConfirmationMethod 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)
+<p>NEMSIS Trace: eAirway.04</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">

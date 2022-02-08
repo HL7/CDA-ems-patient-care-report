@@ -1331,7 +1331,7 @@
       <ownedLiteral xmi:id="_d9VPIMFTEeGyGv5RKvEgDA" name="LA17105-0"/>
       <ownedLiteral xmi:id="_d9bVwMFTEeGyGv5RKvEgDA" name="LA17106-8"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HE_3EHSUEeGa4IXs2ghZEw" name="CardiacArrestTimingVS">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HE_3EHSUEeGa4IXs2ghZEw" name="CardiacArrestTiming">
       <ownedLiteral xmi:id="_d_S-AMFTEeGyGv5RKvEgDA" name="LA17054-0"/>
       <ownedLiteral xmi:id="_d_ZEoMFTEeGyGv5RKvEgDA" name="LA17055-7"/>
     </packagedElement>
@@ -1667,7 +1667,7 @@
       <ownedLiteral xmi:id="_N3Z8IDKkEeyOwtfRawW6Qw" name="newLA4227011"/>
       <ownedLiteral xmi:id="_QUYU4DKkEeyOwtfRawW6Qw" name="newLA4227001"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_04PBcDKmEeyOwtfRawW6Qw" name="CrewDispositionVS">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_04PBcDKmEeyOwtfRawW6Qw" name="CrewDisposition">
       <ownedLiteral xmi:id="_rzQkgDKnEeyOwtfRawW6Qw" name="newLA4229013"/>
       <ownedLiteral xmi:id="_w8o5IDKnEeyOwtfRawW6Qw" name="newLA4229011"/>
       <ownedLiteral xmi:id="_zwObEDKnEeyOwtfRawW6Qw" name="newLA4229009"/>
@@ -2750,8 +2750,8 @@
   <term:ValueSetCode xmi:id="_d--08cFTEeGyGv5RKvEgDA" conceptName="Considered futile" base_EnumerationLiteral="_d--08MFTEeGyGv5RKvEgDA" xxxxx="LA17063-1"/>
   <term:ValueSetCode xmi:id="_d_FiocFTEeGyGv5RKvEgDA" conceptName="DNR orders" base_EnumerationLiteral="_d_FioMFTEeGyGv5RKvEgDA" xxxxx="LA17064-9"/>
   <term:ValueSetCode xmi:id="_d_MQUcFTEeGyGv5RKvEgDA" conceptName="Signs of circulation" base_EnumerationLiteral="_d_MQUMFTEeGyGv5RKvEgDA" xxxxx="LA17065-6"/>
-  <term:ValueSetCode xmi:id="_d_S-AcFTEeGyGv5RKvEgDA" conceptName="Yes, Prior to Any EMS Arrival (includes Transport EMS &amp;amp; Medical First Responders)" base_EnumerationLiteral="_d_S-AMFTEeGyGv5RKvEgDA" xxxxx="LA17054-0"/>
-  <term:ValueSetCode xmi:id="_d_ZrsMFTEeGyGv5RKvEgDA" conceptName="Yes, After Any EMS Arrival (includes Transport EMS &amp;amp; Medical First Responders)" base_EnumerationLiteral="_d_ZEoMFTEeGyGv5RKvEgDA" xxxxx="LA17055-7"/>
+  <term:ValueSetCode xmi:id="_d_S-AcFTEeGyGv5RKvEgDA" conceptName="Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)" base_EnumerationLiteral="_d_S-AMFTEeGyGv5RKvEgDA" xxxxx="LA17054-0"/>
+  <term:ValueSetCode xmi:id="_d_ZrsMFTEeGyGv5RKvEgDA" conceptName="Yes, After Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)" base_EnumerationLiteral="_d_ZEoMFTEeGyGv5RKvEgDA" xxxxx="LA17055-7"/>
   <term:ValueSetCode xmi:id="_d_mgAcFTEeGyGv5RKvEgDA" conceptName="Unable to complete" base_EnumerationLiteral="_d_mgAMFTEeGyGv5RKvEgDA" xxxxx="LA15185-4"/>
   <term:ValueSetCode xmi:id="_d_tNscFTEeGyGv5RKvEgDA" conceptName="Medication already taken" base_EnumerationLiteral="_d_tNsMFTEeGyGv5RKvEgDA" xxxxx="LA18921-9"/>
   <term:ValueSetCode xmi:id="_d_z7YcFTEeGyGv5RKvEgDA" conceptName="Medication allergy" base_EnumerationLiteral="_d_z7YMFTEeGyGv5RKvEgDA" xxxxx="LA18922-7"/>
@@ -2896,7 +2896,7 @@
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bdpWQMxGEeSOI6Ao2VuoSQ" conceptName="Hospital-burn" base_EnumerationLiteral="_bdovMMxGEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_kpYGAMxGEeSOI6Ao2VuoSQ" conceptName="Hospital-cath lab" base_EnumerationLiteral="_kpW34MxGEeSOI6Ao2VuoSQ"/>
-  <term:ValueSetCode xmi:id="_ffKmwMxNEeSng9W-IRKXig" conceptName="Hosptial-CCU" base_EnumerationLiteral="_ffIxkMxNEeSng9W-IRKXig"/>
+  <term:ValueSetCode xmi:id="_ffKmwMxNEeSng9W-IRKXig" conceptName="Hospital-CCU" base_EnumerationLiteral="_ffIxkMxNEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_rHIIYMxNEeSng9W-IRKXig" conceptName="Hospital-endoscopy" base_EnumerationLiteral="_rHHhUMxNEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_uMevwMxNEeSng9W-IRKXig" conceptName="Hospital-hospice" base_EnumerationLiteral="_uMeIsMxNEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_xA70YMxNEeSng9W-IRKXig" conceptName="Hospital-hyperbaric oxygen treatment" base_EnumerationLiteral="_xA7NUMxNEeSng9W-IRKXig"/>

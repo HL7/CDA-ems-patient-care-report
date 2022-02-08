@@ -2,11 +2,13 @@
 <project name="UML to DITA Transformation" default="uml2dita" basedir=".">
 
 	<property file="dita.properties" />
-	
-	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.emspcr.model" property="modelProject"/>
+
+	<property name="modelProject" value = "C:\Users\JayLyle\Documents\Repositories\CDA-ems-patient-care-report\org.openhealthtools.mdht.uml.cda.emspcr.model" />
 	<property name="modelPath.uml" value = "${modelProject}/model/${modelName}.uml" />
-	<property name="vocabPath.uml" value = "${modelProject}/model/${modelName}-vocab.uml" />	
-	<property name="baseURL" value = "http://www.hl7.org/ccdasearch/templates" />	
+	<property name="vocabPath.uml" value = "${modelProject}/model/${modelName}-vocab.uml" />
+	
+	<property name="baseURL" value = "http://www.hl7.org/ccdasearch/templates" />
+	
 	<property name="ditaFilePath" value = "${basedir}/dita" />
 	
 	

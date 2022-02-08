@@ -24,7 +24,7 @@
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11348)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10292)<p>NEMSIS Trace: EVitals.12
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10292)<p>NEMSIS Trace: eVitals.12
 UCUM units will typically be "%".</p>
 </li>
 </ol>
@@ -38,7 +38,7 @@ UCUM units will typically be "%".</p>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11348)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10292)
-<p>NEMSIS Trace: EVitals.12
+<p>NEMSIS Trace: eVitals.12
 UCUM units will typically be "%".</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

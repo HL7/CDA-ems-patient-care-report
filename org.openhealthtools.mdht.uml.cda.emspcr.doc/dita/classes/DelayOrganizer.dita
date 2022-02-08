@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_DelayOrganizer.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_DelayOrganizer.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_DelayOrganizer.dita#classId/conformance">
@@ -20,13 +18,19 @@
 <ol audience="developer" conref="generated/_DelayOrganizer.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_DelayOrganizer.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Delay Organizer example</b></p>
+<p audience="examples"><b>Delay Organizer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DelayOrganizer.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+        <organizer classCode="CLUSTER" moodCode="EVN">            
+            <templateId root="2.16.840.1.113883.17.3.10.1.95"/>
+            <id root="2.16.840.1.113883.19.4" extension="243446586"/>
+            <statusCode code="completed"/>
+            <component>
+                . . . 
+            </component>
+        </organizer>
+    ]]></codeblock>
 </body>
 </topic>

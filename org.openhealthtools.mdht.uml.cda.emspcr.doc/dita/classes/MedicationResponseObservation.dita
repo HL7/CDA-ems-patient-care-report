@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_MedicationResponseObservation.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_MedicationResponseObservation.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_MedicationResponseObservation.dita#classId/conformance">
@@ -20,13 +18,14 @@
 <ol audience="developer" conref="generated/_MedicationResponseObservation.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_MedicationResponseObservation.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Medication Response Observation example</b></p>
+<p audience="examples"><b>Medication Response Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_MedicationResponseObservation.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml">
+<observation classCode="OBS"  moodCode="EVN">
+	<code code="67540-5" displayName="Response to medication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+</observation>
 </body>
 </topic>

@@ -21,10 +21,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11676)<tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)<p>NEMSIS Trace: EVitals.01</p>
+<b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)<p>NEMSIS Trace: eVitals.01</p>
 </li>
 <li>
-contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="INT"</tt><p>NEMSIS Trace: EVitals.27
+contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="INT"</tt><p>NEMSIS Trace: eVitals.27
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</p>
 </li>
 </ol>
@@ -36,9 +36,9 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11676)<tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)
-<p>NEMSIS Trace: EVitals.01</p></li>
+<p>NEMSIS Trace: eVitals.01</p></li>
 <li>contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="INT"</tt>
-<p>NEMSIS Trace: EVitals.27
+<p>NEMSIS Trace: eVitals.27
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

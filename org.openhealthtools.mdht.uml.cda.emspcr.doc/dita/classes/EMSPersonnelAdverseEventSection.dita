@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/conformance">
@@ -20,13 +18,11 @@
 <ol audience="developer" conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>EMS Personnel Adverse Event Section example</b></p>
+<p audience="examples"><b>EMS Personnel Adverse Event Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/example">
+<codeblock audience="examples" conref="generated/_EMSPersonnelAdverseEventSection.dita#classId/example">
 </codeblock>
 </body>
 </topic>

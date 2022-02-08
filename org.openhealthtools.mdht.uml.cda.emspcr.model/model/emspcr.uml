@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_xpUkQGeQEeGtXKebdWh3hg" name="emspcr">
+    <packageImport xmi:id="_x1tacGeQEeGtXKebdWh3hg">
+      <importedPackage href="pathmap://CONSOL_MODEL/consol.uml#_2B30sBSVEeGGzu7fmW9pXw"/>
+    </packageImport>
+    <packageImport xmi:id="_x1tacWeQEeGtXKebdWh3hg">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
     <packageImport xmi:id="_x1tacmeQEeGtXKebdWh3hg">
       <importedPackage href="emspcr-vocab.uml#_xpzscGeQEeGtXKebdWh3hg"/>
+    </packageImport>
+    <packageImport xmi:id="_alO60EU9EeKcguOHLOhl3Q">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_xs1LQWeQEeGtXKebdWh3hg" name="PatientCareReport">
       <ownedComment xmi:id="_mETdgCwsEeOaIuM51LdlNw">
@@ -213,9 +222,9 @@ ePatient.10 . . . /PatientRole/addr/country</body>
           <ownedAttribute xmi:id="_iJSecHSBEeGa4IXs2ghZEw" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_5fZpQHSBEeGa4IXs2ghZEw">
               <body>NEMSIS Trace&#xD;
-EPatient.01: root= the OID for the generating EMS agency, or &quot;NI&quot;&#xD;
-EPatient.12: root=&quot; 2.16.840.1.113883.3.184&quot; (Social Security Administration)&#xD;
-EPatient.20 and EPatient.21: root= the OID for the state department of motor&#xD;
+ePatient.01: root= the OID for the generating EMS agency, or &quot;NI&quot;&#xD;
+ePatient.12: root=&quot; 2.16.840.1.113883.3.184&quot; (Social Security Administration)&#xD;
+ePatient.20 and ePatient.21: root= the OID for the state department of motor&#xD;
 vehicles, found at http://hl7.org/fhir/R4/identifier-registry.html, and reproduced in&#xD;
 the appendix &quot;Object Identifiers for US State Departments of Motor Vehicles&quot;.</body>
             </ownedComment>
@@ -226,7 +235,7 @@ the appendix &quot;Object Identifiers for US State Departments of Motor Vehicles
           </ownedAttribute>
           <ownedAttribute xmi:id="_iJTFgHSBEeGa4IXs2ghZEw" name="telecom" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_KEH_0HSCEeGa4IXs2ghZEw">
-              <body>NEMSIS Trace: EPatient.18</body>
+              <body>NEMSIS Trace: ePatient.18</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJTFgnSBEeGa4IXs2ghZEw"/>
@@ -244,7 +253,7 @@ the appendix &quot;Object Identifiers for US State Departments of Motor Vehicles
             <ownedAttribute xmi:id="_skFM4HSCEeGa4IXs2ghZEw" name="birthTime" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_8QFWQHSDEeGa4IXs2ghZEw">
                 <body>NEMSIS Trace&#xD;
-EPatient.17</body>
+ePatient.17</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_skFM4nSCEeGa4IXs2ghZEw"/>
@@ -253,7 +262,7 @@ EPatient.17</body>
             </ownedAttribute>
             <ownedAttribute xmi:id="_skFz8HSCEeGa4IXs2ghZEw" name="ethnicGroupCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_h7krMHSEEeGa4IXs2ghZEw">
-                <body>NEMSIS Trace: EPatient.14</body>
+                <body>NEMSIS Trace: ePatient.14</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_skFz8nSCEeGa4IXs2ghZEw"/>
@@ -263,9 +272,9 @@ EPatient.17</body>
             <ownedAttribute xmi:id="_skGbAHSCEeGa4IXs2ghZEw" name="name" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_3NwLcHs_EeGs2I-Db78R9w">
                 <body>NEMSIS Trace&#xD;
-EPatient.02 . . . /PatientRole/Patient/name/family&#xD;
-EPatient.03 . . . /PatientRole/Patient/name/given&#xD;
-EPatient.04 . . . /PatientRole/Patient/name/given&#xD;
+ePatient.02 . . . /PatientRole/Patient/name/family&#xD;
+ePatient.03 . . . /PatientRole/Patient/name/given&#xD;
+ePatient.04 . . . /PatientRole/Patient/name/given&#xD;
 Name sub-elements SHOULD be in the following order: family, given, middle (also &quot;given&quot;).&#xD;
 For names from cultures not following the order assumed above, the &quot;family&quot; name SHOULD be populated with whatever name component should be used to sort by. E.g., for a person with a single name, &quot;family&quot; should be used.</body>
               </ownedComment>
@@ -276,7 +285,7 @@ For names from cultures not following the order assumed above, the &quot;family&
             </ownedAttribute>
             <ownedAttribute xmi:id="_skHCEHSCEeGa4IXs2ghZEw" name="raceCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_Fy-BwHSEEeGa4IXs2ghZEw">
-                <body>NEMSIS Trace: EPatient.14&#xD;
+                <body>NEMSIS Trace: ePatient.14&#xD;
 NEMSIS collects race and ethnicity in the one-question format (see guidance at http://www.whitehouse.gov/omb/fedreg_1997standards), but the HL7 RIM and, therefore, the CDA schema contain separate elements. It is necessary to populate both CDA fields based on the values&#xD;
 selected for the NEMSIS question. Further, the CDA model includes a single race code. In order to support multiple race codes as required by OMB, we adopt a second race code entry from the HL7 SDWG namespace. All documents with a race code must populate the CDA race code; if more than one race code is recorded, then the SDWG element may also be populated. No semantic priority is implied by the element selection.</body>
               </ownedComment>
@@ -287,7 +296,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
             </ownedAttribute>
             <ownedAttribute xmi:id="_skHCE3SCEeGa4IXs2ghZEw" name="sdtc:RaceCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_fiKj0HSEEeGa4IXs2ghZEw">
-                <body>NEMSIS Trace: EPatient.14</body>
+                <body>NEMSIS Trace: ePatient.14</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_skHCFXSCEeGa4IXs2ghZEw"/>
@@ -296,7 +305,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
             </ownedAttribute>
             <ownedAttribute xmi:id="_ppT5kHtAEeGs2I-Db78R9w" name="administrativeGenderCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_ut-GQHtAEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: EPatient.13&#xD;
+                <body>NEMSIS Trace: ePatient.13&#xD;
 &#xD;
 See terminology map in Appendix &quot;Gender&quot;.</body>
               </ownedComment>
@@ -433,7 +442,7 @@ dPersonnel.03 . . . Person/name/given</body>
           </generalization>
           <ownedAttribute xmi:id="_XQzHsGlZEeG4boS-IbG8Zw" name="effectiveTime" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_u-jvEHuEEeGs2I-Db78R9w">
-              <body>NEMSIS Trace: ETimes.03, the date the responding unit was notified by dispatch</body>
+              <body>NEMSIS Trace: eTimes.03, the date the responding unit was notified by dispatch</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
           </ownedAttribute>
@@ -480,7 +489,7 @@ dPersonnel.03 . . . Person/name/given</body>
               </ownedAttribute>
               <ownedAttribute xmi:id="_CZIRYHuFEeGs2I-Db78R9w" name="code" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_Q-h0gHuFEeGs2I-Db78R9w">
-                  <body>NEMSIS Trace: EResponse.07</body>
+                  <body>NEMSIS Trace: eResponse.07</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ig3EoXuFEeGs2I-Db78R9w" value="1"/>
@@ -502,7 +511,7 @@ dPersonnel.03 . . . Person/name/given</body>
                 </ownedAttribute>
                 <ownedAttribute xmi:id="_D5KvMGlaEeG4boS-IbG8Zw" name="name" visibility="private" aggregation="composite">
                   <ownedComment xmi:id="_n6DVEHuFEeGs2I-Db78R9w">
-                    <body>NEMSIS Trace: EScene.13</body>
+                    <body>NEMSIS Trace: eScene.13</body>
                   </ownedComment>
                   <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_wfRKoD5yEd6cla2oXsPtlA"/>
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D5KvMmlaEeG4boS-IbG8Zw"/>
@@ -616,7 +625,7 @@ Optimal address may be where dContact.01 Agency Contact Type is &quot;EMS Agency
             </ownedAttribute>
             <ownedAttribute xmi:id="_pBfSUHtFEeGs2I-Db78R9w" name="id" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_t5vasHtFEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: EResponse.01&#xD;
+                <body>NEMSIS Trace: eResponse.01&#xD;
 @extension is the Agency identifier; @root, if included, the OID of the assigning body</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
@@ -626,7 +635,7 @@ Optimal address may be where dContact.01 Agency Contact Type is &quot;EMS Agency
             </ownedAttribute>
             <ownedAttribute xmi:id="_pBf5YHtFEeGs2I-Db78R9w" name="name" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_xKbvYHtFEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: EResponse.02</body>
+                <body>NEMSIS Trace: eResponse.02</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u7sm8HtFEeGs2I-Db78R9w" value="1"/>
@@ -650,7 +659,7 @@ Optimal address may be where dContact.01 Agency Contact Type is &quot;EMS Agency
           </generalization>
           <ownedAttribute xmi:id="_mftcoHtGEeGs2I-Db78R9w" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="__HcnYHtGEeGs2I-Db78R9w">
-              <body>NEMSIS Trace: EResponse.05, type of service requested</body>
+              <body>NEMSIS Trace: eResponse.05, type of service requested</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3apTwXtGEeGs2I-Db78R9w" value="1"/>
@@ -679,7 +688,7 @@ id/@extension is the unit number assigned by the Agency, where the id/@root SHOU
             </generalization>
             <ownedAttribute xmi:id="_D291EHtIEeGs2I-Db78R9w" name="functionCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_fDB9wHtIEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: ECrew.03</body>
+                <body>NEMSIS Trace: eCrew.03</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0DwdYUwJEeyaFf-ZdVTpIw"/>
@@ -696,7 +705,7 @@ id/@extension is the unit number assigned by the Agency, where the id/@root SHOU
               </generalization>
               <ownedAttribute xmi:id="_yVEPIHtIEeGs2I-Db78R9w" name="code" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="__UJ7wHtIEeGs2I-Db78R9w">
-                  <body>NEMSIS Trace: ECrew.02</body>
+                  <body>NEMSIS Trace: eCrew.02</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ArYoUwJEeyaFf-ZdVTpIw"/>
@@ -705,7 +714,7 @@ id/@extension is the unit number assigned by the Agency, where the id/@root SHOU
               </ownedAttribute>
               <ownedAttribute xmi:id="_yVE2MHtIEeGs2I-Db78R9w" name="id" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_DP4xgHtJEeGs2I-Db78R9w">
-                  <body>NEMSIS Trace: ECrew.01</body>
+                  <body>NEMSIS Trace: eCrew.01</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yVE2MntIEeGs2I-Db78R9w" value="1"/>
@@ -778,7 +787,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
           </generalization>
           <ownedAttribute xmi:id="_ULxOYHtKEeGs2I-Db78R9w" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_aVzHsHtKEeGs2I-Db78R9w">
-              <body>NEMSIS Trace: ERecord.01</body>
+              <body>NEMSIS Trace: eRecord.01</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vljr0XtKEeGs2I-Db78R9w" value="1"/>
@@ -828,7 +837,7 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_X-jPwHuHEeGs2I-Db78R9w" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_pO1EwHuHEeGs2I-Db78R9w">
-              <body>NEMSIS Trace: EDisposition.21</body>
+              <body>NEMSIS Trace: eDisposition.21</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZFJKkMcZEeGjDJAyT0XW9Q" value="1"/>
@@ -1480,7 +1489,7 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2JkB8Z4aEeGzbp5zEFWdWg" memberEnd="_2Jiz0J4aEeGzbp5zEFWdWg _2JkpAJ4aEeGzbp5zEFWdWg">
       <ownedComment xmi:id="_H67KwJ4bEeGzbp5zEFWdWg">
-        <body>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</body>
+        <body>NEMSIS Trace: eAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</body>
       </ownedComment>
       <ownedEnd xmi:id="_2JkpAJ4aEeGzbp5zEFWdWg" type="_K8JK8JuoEeGzXI65shd6Fw" association="_2JkB8Z4aEeGzbp5zEFWdWg"/>
     </packagedElement>
@@ -1513,7 +1522,7 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kZFhEJ9mEeGw9ZRnaFfEZQ" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0FUJYJ9mEeGw9ZRnaFfEZQ">
-          <body>NEMSIS Trace: ENarrative.01</body>
+          <body>NEMSIS Trace: eNarrative.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l82Z4Z9mEeGw9ZRnaFfEZQ" value="1"/>
@@ -2019,7 +2028,7 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TCM6uZ-bEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_TCM6up-bEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.22&#xD;
+          <body>NEMSIS Trace: eResponse.22&#xD;
 UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -2061,7 +2070,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1M-LMNOXEeKU4pFWxuU9dw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_w87ZkC0AEeO0H9tywllqaQ">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mss_wV5VEeSDRdbTWFBAMw"/>
@@ -2070,7 +2079,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P3KK4IzrEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_g0CiwIzrEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.06&#xD;
+          <body>NEMSIS Trace: eVitals.06&#xD;
 UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -2278,7 +2287,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HWg3UHwHEeGW3cDolvqrTA" name="negationInd" visibility="private">
         <ownedComment xmi:id="_MZJqwHwHEeGW3cDolvqrTA">
-          <body>Populate as true if NEMSIS EArrest.01 = &quot;No&quot;</body>
+          <body>Populate as true if NEMSIS eArrest.01 = &quot;No&quot;</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HWg3UnwHEeGW3cDolvqrTA"/>
@@ -2287,7 +2296,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZQFWYHwGEeGW3cDolvqrTA" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_SOr6wHwHEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.14</body>
+          <body>NEMSIS Trace: eArrest.14</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AgDREEdLEeyArY5urXDDvQ" value="1"/>
@@ -2296,7 +2305,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZQF9cHwGEeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_GH358HwHEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.01</body>
+          <body>NEMSIS Trace: eArrest.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xhkkUXwGEeGW3cDolvqrTA" value="1"/>
@@ -2402,7 +2411,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_CtLicHwMEeGW3cDolvqrTA" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_yBo8wHwMEeGW3cDolvqrTA">
-              <body>NEMSIS Trace: EArrest.04</body>
+              <body>NEMSIS Trace: eArrest.04</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tfMsUXwMEeGW3cDolvqrTA" value="1"/>
@@ -2533,7 +2542,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_LSRx0IzoEeGnhceUMXltng" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Z2c58ETUEeK4eqZnYXUWXg">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M2Ef0IzoEeGnhceUMXltng" value="1"/>
@@ -2654,7 +2663,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_FHspcIzpEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ZKWYIENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.02</body>
+          <body>NEMSIS Trace: eVitals.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgHz4McXEeGjDJAyT0XW9Q" value="1"/>
@@ -2673,7 +2682,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedComment>
       <generalization xmi:id="_D6EWkJ-eEeGorI3CPDW2ww">
         <ownedComment xmi:id="_p4JPUEM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.11</body>
+          <body>NEMSIS Trace: eDisposition.11</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -2705,7 +2714,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedComment>
       <generalization xmi:id="_nv-0hJ-fEeGorI3CPDW2ww">
         <ownedComment xmi:id="_uDDJgEM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.17</body>
+          <body>NEMSIS Trace: eDisposition.17</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -2718,7 +2727,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_nv-0hp-fEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_oTlP0EM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.17 (disposition transport mode)</body>
+          <body>NEMSIS Trace: eDisposition.17 (disposition transport mode)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nv-0iJ-fEeGorI3CPDW2ww" value="1"/>
@@ -2766,7 +2775,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_EagUuZ-fEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_wAxacEM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.16</body>
+          <body>NEMSIS Trace: eDisposition.16</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EagUu5-fEeGorI3CPDW2ww" value="1"/>
@@ -2785,7 +2794,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedComment>
       <generalization xmi:id="_cm1q8Z-hEeGorI3CPDW2ww">
         <ownedComment xmi:id="_xob70EM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.20</body>
+          <body>NEMSIS Trace: eDisposition.20</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -2798,7 +2807,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_cm1q85-hEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_uvrwkEM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.20</body>
+          <body>NEMSIS Trace: eDisposition.20</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qBl88M5sEeSYyeRwIaqIFQ" value="1"/>
@@ -2817,7 +2826,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedComment>
       <generalization xmi:id="_083ap5-hEeGorI3CPDW2ww">
         <ownedComment xmi:id="_Na520J-iEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EDisposition.24</body>
+          <body>NEMSIS Trace: eDisposition.24</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -2830,7 +2839,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedAttribute>
       <ownedAttribute xmi:id="_OnRjUJ-iEeGorI3CPDW2ww" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Pp6FAJ-iEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EDisposition.25&#xD;
+          <body>NEMSIS Trace: eDisposition.25&#xD;
 Required if element value is a positive value (not &quot;no&quot;).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
@@ -2839,7 +2848,7 @@ Required if element value is a positive value (not &quot;no&quot;).</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_083aqZ-hEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LVXNAEM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.24</body>
+          <body>NEMSIS Trace: eDisposition.24</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_083aq5-hEeGorI3CPDW2ww" value="1"/>
@@ -2868,7 +2877,7 @@ Required if element value is a positive value (not &quot;no&quot;).</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Q4zL-Z-gEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_RKQj0EM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDisposition.19</body>
+          <body>NEMSIS Trace: eDisposition.19</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q4zL-5-gEeGorI3CPDW2ww" value="1"/>
@@ -2945,7 +2954,7 @@ Required if element value is a positive value (not &quot;no&quot;).</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9Kg5cKxCEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KsMFcENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.01</body>
+          <body>NEMSIS Trace: eTimes.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__y2NoKxCEeGLnrdLmr5TaQ" value="1"/>
@@ -2968,7 +2977,7 @@ Required if element value is a positive value (not &quot;no&quot;).</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JKerZKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_MxVNAENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.03&#xD;
+          <body>NEMSIS Trace: eTimes.03&#xD;
 This is the value represented in the header for the encompassing encounter</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
@@ -2992,7 +3001,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_UyaX1KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_OCwYoENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.05</body>
+          <body>NEMSIS Trace: eTimes.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UyaX1qxDEeGLnrdLmr5TaQ" value="1"/>
@@ -3015,7 +3024,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_iGh5RKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_PN4H8ENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.06</body>
+          <body>NEMSIS Trace: eTimes.06</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGh5RqxDEeGLnrdLmr5TaQ" value="1"/>
@@ -3038,7 +3047,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_yt7JVKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_QtYy4ENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.07</body>
+          <body>NEMSIS Trace: eTimes.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yt7JVqxDEeGLnrdLmr5TaQ" value="1"/>
@@ -3061,7 +3070,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_6w125KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_R8AiIENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.09</body>
+          <body>NEMSIS Trace: eTimes.09</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6w125qxDEeGLnrdLmr5TaQ" value="1"/>
@@ -3084,7 +3093,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_DaIA5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_TAgsEENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.11</body>
+          <body>NEMSIS Trace: eTimes.11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DaIA5qxEEeGLnrdLmr5TaQ" value="1"/>
@@ -3107,7 +3116,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_KrhK5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_UQIg4ENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.13</body>
+          <body>NEMSIS Trace: eTimes.13</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KrhK5qxEEeGLnrdLmr5TaQ" value="1"/>
@@ -3130,7 +3139,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_UFgZFKxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_VbpRwENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ETimes.02</body>
+          <body>NEMSIS Trace: eTimes.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFgZFqxEEeGLnrdLmr5TaQ" value="1"/>
@@ -3156,7 +3165,7 @@ This is the value represented in the header for the encompassing encounter</body
       </ownedAttribute>
       <ownedAttribute xmi:id="_Z6ME8Iy9EeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_NE3YkEM5EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.05</body>
+          <body>NEMSIS Trace: eHistory.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -3218,7 +3227,7 @@ The drug, to be placed in the participating product, is encoded in RxNorm.</body
             </generalization>
             <ownedAttribute xmi:id="_h7aPwIzFEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_mzAQ0IzFEeGnhceUMXltng">
-                <body>NEMSIS Trace: EHistory.06&#xD;
+                <body>NEMSIS Trace: eHistory.06&#xD;
 &#xD;
 Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken from ICD-10 CM.</body>
               </ownedComment>
@@ -3303,7 +3312,7 @@ Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken f
       </ownedAttribute>
       <ownedAttribute xmi:id="_Q2yEwXSVEeGa4IXs2ghZEw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KGp_UHSWEeGa4IXs2ghZEw">
-          <body>NEMSIS Trace: EInjury.01&#xD;
+          <body>NEMSIS Trace: eInjury.01&#xD;
 Causes are in ICD-10 chapter XX and parts of XIX.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -3324,7 +3333,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedComment>
       <generalization xmi:id="_dAw44HSWEeGa4IXs2ghZEw">
         <ownedComment xmi:id="_8OISsEM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.02</body>
+          <body>NEMSIS Trace: eInjury.02</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -3338,7 +3347,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_e-JyoHSWEeGa4IXs2ghZEw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_8gBRkMlQEeK2gbjCtOEivw">
-          <body>NEMSIS Trace: EInjury.02</body>
+          <body>NEMSIS Trace: eInjury.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u6e7UM5oEeSYyeRwIaqIFQ" value="1"/>
@@ -3369,7 +3378,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rAKHcIcXEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_-bwA0EM9EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.03</body>
+          <body>NEMSIS Trace: eInjury.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uQdoUIccEeGqF6qfYwLiQw" value="1"/>
@@ -3431,7 +3440,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MBJfUYccEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CCRbkEM-EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.05</body>
+          <body>NEMSIS Trace: eInjury.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xL9wIIccEeGqF6qfYwLiQw" value="1"/>
@@ -3462,7 +3471,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HKQMYIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_DtMsUEM-EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.06 - Location of Patient in Vehicle</body>
+          <body>NEMSIS Trace: eInjury.06 - Location of Patient in Vehicle</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a9gUcYcdEeGqF6qfYwLiQw" value="1"/>
@@ -3493,7 +3502,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iT6hUIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_FgCi8EM-EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.07</body>
+          <body>NEMSIS Trace: eInjury.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyK_EYcdEeGqF6qfYwLiQw" value="1"/>
@@ -3524,7 +3533,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5xVOAIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_G-nZwEM-EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EInjury.08</body>
+          <body>NEMSIS Trace: eInjury.08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C6sUgU_QEeOQyePZE5R0SQ" value="1"/>
@@ -3587,7 +3596,7 @@ Units SHOULD be in feet (UCUM 'ft_i')</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z1sgkYceEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_J59wkEM-EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EOther.07</body>
+          <body>NEMSIS Trace: eOther.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ab2IwIcfEeGqF6qfYwLiQw" value="1"/>
@@ -3623,9 +3632,9 @@ Units SHOULD be in feet (UCUM 'ft_i')</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YbhhAIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0aRD0IzdEeGnhceUMXltng">
-          <body>If NEMSIS EHistory. 08 is &quot;Refused &quot; or &quot;Unable to Complete,&quot; the value should be &quot;NI&quot;; the original value may be recorded in Observation.text.&#xD;
-If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.&#xD;
-If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
+          <body>If NEMSIS eHistory. 08 is &quot;Refused &quot; or &quot;Unable to Complete,&quot; the value should be &quot;NI&quot;; the original value may be recorded in Observation.text.&#xD;
+If NEMSIS eHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.&#xD;
+If NEMSIS eHistory. 08 has proper values, the value should be TRUE.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K35-4McQEeGjDJAyT0XW9Q" value="1"/>
@@ -3686,7 +3695,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_A0MAEFhAEeK-i8RB1gvLUA" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_GIOskFhAEeK-i8RB1gvLUA">
-          <body>effectiveTime.low = NEMSIS Trace: ESituation.01</body>
+          <body>effectiveTime.low = NEMSIS Trace: eSituation.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WF1IE_REeOQyePZE5R0SQ" value="1"/>
@@ -3694,7 +3703,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LZA2EKg-EeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_3kusYENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ESituation.04</body>
+          <body>NEMSIS Trace: eSituation.04</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P06AUahDEeG79fAvHk6H4g"/>
@@ -3708,7 +3717,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zDijMKhBEeG79fAvHk6H4g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LB9EIKhCEeG79fAvHk6H4g">
-          <body>NEMSIS Trace: ESituation.07&#xD;
+          <body>NEMSIS Trace: eSituation.07&#xD;
 Complaint site is required if complaint is type &quot;Chief complaint&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -3738,7 +3747,7 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_VvjZ0KhDEeG79fAvHk6H4g" name="ComplaintOrganSystemRelationship">
         <ownedComment xmi:id="_vaDpIKhDEeG79fAvHk6H4g">
-          <body>NEMSIS Trace: ESituation.08</body>
+          <body>NEMSIS Trace: eSituation.08</body>
         </ownedComment>
         <generalization xmi:id="_WJu0YKhDEeG79fAvHk6H4g">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
@@ -3801,7 +3810,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1FLY4ahDEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_fUOs0MlQEeK2gbjCtOEivw">
-          <body>NEMSIS Trace: ESituation.11</body>
+          <body>NEMSIS Trace: eSituation.11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2lRSoahDEeG79fAvHk6H4g" value="1"/>
@@ -3830,7 +3839,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LQztkahEEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_7AK-ACwtEeOaIuM51LdlNw">
-          <body>NEMSIS Trace: ESituation.09</body>
+          <body>NEMSIS Trace: eSituation.09</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M_mKoahEEeG79fAvHk6H4g" value="1"/>
@@ -3859,7 +3868,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_h3niYahEEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LUfA4MlQEeK2gbjCtOEivw">
-          <body>NEMSIS Trace: ESituation.10</body>
+          <body>NEMSIS Trace: eSituation.10</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5DI8U_UEeOQyePZE5R0SQ"/>
@@ -3888,7 +3897,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1uniAKhEEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_j0o88MlQEeK2gbjCtOEivw">
-          <body>NEMSIS Trace: ESituation.12</body>
+          <body>NEMSIS Trace: eSituation.12</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_58MVsKhEEeG79fAvHk6H4g" value="1"/>
@@ -3917,7 +3926,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OR7fwKhFEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_bthXMM5oEeSYyeRwIaqIFQ">
-          <body>NEMSIS Trace: ESituation.13</body>
+          <body>NEMSIS Trace: eSituation.13</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P-9pUKhFEeG79fAvHk6H4g" value="1"/>
@@ -3952,7 +3961,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OG2kgIzjEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_C1FmUENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.17, positive, negative, or null values</body>
+          <body>NEMSIS Trace: eHistory.17, positive, negative, or null values</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ZZKsMcWEeGjDJAyT0XW9Q" value="1"/>
@@ -3975,7 +3984,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pSyxYIzjEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_E2SCAENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.17, proper values</body>
+          <body>NEMSIS Trace: eHistory.17, proper values</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NZmhAVUuEeyiu80E1DcH3w" value="1"/>
@@ -4004,7 +4013,7 @@ For &quot;unknown,&quot; use NullFlavor=UNK.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6D5mJowEeG_FLcaRgAa7g" name="negationInd" visibility="private">
         <ownedComment xmi:id="_bNYxsJowEeG_FLcaRgAa7g">
-          <body>NEMSIS Trace: EMedications.03 negative action values&#xD;
+          <body>NEMSIS Trace: eMedications.03 negative action values&#xD;
 If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with a MedicationNotAdministeredReasonObservation (2.16.840.1.1133883.17.3.10.1.105)</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
@@ -4013,7 +4022,7 @@ If a substance is recorded as not given, it shall be recorded with a negationInd
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6D5lZowEeG_FLcaRgAa7g" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Mo3_YJowEeG_FLcaRgAa7g">
-          <body>NEMSIS Trace: EMedications.01&#xD;
+          <body>NEMSIS Trace: eMedications.01&#xD;
 Null Flavor for pertinent negative cases = NA</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
@@ -4022,7 +4031,7 @@ Null Flavor for pertinent negative cases = NA</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6D5m5owEeG_FLcaRgAa7g" name="routeCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_icEvoJslEeGzXI65shd6Fw">
-          <body>NEMSIS Trace: EMedications.04&#xD;
+          <body>NEMSIS Trace: eMedications.04&#xD;
 &#xD;
 See appendix &quot;NEMSIS Routes Mapped to FDA Routes of Administration&quot; for mapping NEMSIS values to FDA values and for postcoordination of device information.</body>
         </ownedComment>
@@ -4061,7 +4070,7 @@ See appendix &quot;NEMSIS Routes Mapped to FDA Routes of Administration&quot; fo
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6D5kpowEeG_FLcaRgAa7g" name="doseQuantity" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_N_Wz0JslEeGzXI65shd6Fw">
-          <body>NEMSIS Trace: EMedications.05, EMedications.06&#xD;
+          <body>NEMSIS Trace: eMedications.05, eMedications.06&#xD;
 Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
@@ -4073,7 +4082,7 @@ Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</bod
       </ownedAttribute>
       <ownedAttribute xmi:id="_Vb7U8BLSEeWNDqETRUui8w" name="rateQuantity" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_aMyb4BLSEeWNDqETRUui8w">
-          <body>NEMSIS Trace: EMedications.05, EMedications.06&#xD;
+          <body>NEMSIS Trace: eMedications.05, eMedications.06&#xD;
 Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
@@ -4190,7 +4199,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
           </generalization>
           <ownedAttribute xmi:id="_Qi4HMJsqEeGzXI65shd6Fw" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_aoIf8JsqEeGzXI65shd6Fw">
-              <body>NEMSIS Trace: EMedications.09</body>
+              <body>NEMSIS Trace: eMedications.09</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SaPRcZsqEeGzXI65shd6Fw" value="1"/>
@@ -4198,7 +4207,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:id="_208JYJspEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_cOCt0JsqEeGzXI65shd6Fw">
-              <body>NEMSIS Trace: EMedications.10</body>
+              <body>NEMSIS Trace: eMedications.10</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ttj6gJsqEeGzXI65shd6Fw" value="1"/>
@@ -4223,7 +4232,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:id="_3MaYwJsqEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_bDWd8EM_EeKBoM5tGvrHVQ">
-              <body>NEMSIS Trace: EMedications.11 - Medication Authorization channel</body>
+              <body>NEMSIS Trace: eMedications.11 - Medication Authorization channel</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
@@ -4293,7 +4302,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
       </ownedAttribute>
       <ownedAttribute xmi:id="_-QFe0J9nEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_cjneMEM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDispatch.02</body>
+          <body>NEMSIS Trace: eDispatch.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EU6vEZ9oEeGw9ZRnaFfEZQ" value="1"/>
@@ -4312,7 +4321,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
       </ownedComment>
       <generalization xmi:id="_BD2P0J98EeGw9ZRnaFfEZQ">
         <ownedComment xmi:id="_efgjIEM8EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EDispatch.01</body>
+          <body>NEMSIS Trace: eDispatch.01</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -4325,7 +4334,7 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
       </ownedAttribute>
       <ownedAttribute xmi:id="_CGKBYZ98EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_hja8gMk1EeK2gbjCtOEivw">
-          <body>NEMSIS Trace: EDispatch.01</body>
+          <body>NEMSIS Trace: eDispatch.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FEjFIZ98EeGw9ZRnaFfEZQ" value="1"/>
@@ -4344,8 +4353,8 @@ For blood products, the following SNOMED CT codes may be used:&#xD;
       </ownedComment>
       <generalization xmi:id="_wcI0sIcnEeGqF6qfYwLiQw">
         <ownedComment xmi:id="_Hz8KIEM8EeKBoM5tGvrHVQ">
-          <body>If EHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
-If EHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
+          <body>If eHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
+If eHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
 original value may be recorded in Observation.text.</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -4360,8 +4369,8 @@ original value may be recorded in Observation.text.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_yPMtwIcnEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_OBskUIcoEeGqF6qfYwLiQw">
-          <body>If EHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
-If EHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
+          <body>If eHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
+If eHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
 original value may be recorded in Observation.text.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
@@ -4385,7 +4394,7 @@ original value may be recorded in Observation.text.</body>
       </generalization>
       <ownedAttribute xmi:id="_QTHicIcqEeGqF6qfYwLiQw" name="negationInd" visibility="private">
         <ownedComment xmi:id="_ZYWooIcqEeGqF6qfYwLiQw">
-          <body>If EHistory.12 has the value &quot;None Reported,&quot; the value is &quot;True&quot;&#xD;
+          <body>If eHistory.12 has the value &quot;None Reported,&quot; the value is &quot;True&quot;&#xD;
 This negation of a notional class is parallel to the explicit question &quot;patient on medication&quot;</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
@@ -4395,7 +4404,7 @@ This negation of a notional class is parallel to the explicit question &quot;pat
       </ownedAttribute>
       <ownedAttribute xmi:id="_QTIJgIcqEeGqF6qfYwLiQw" name="nullFlavor" visibility="private">
         <ownedComment xmi:id="_bwK0kIcqEeGqF6qfYwLiQw">
-          <body>If EHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
+          <body>If eHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
 original value may be recorded in SubstanceAdministration.text.&#xD;
 This nulled notional class is parallel to the explicit question &quot;patient on medication&quot;</body>
         </ownedComment>
@@ -4406,7 +4415,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       </ownedAttribute>
       <ownedAttribute xmi:id="_yyw4YIcoEeGqF6qfYwLiQw" name="doseQuantity" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_4URZIIcoEeGqF6qfYwLiQw">
-          <body>NEMSIS Trace: EHistory.13, EHistory.14</body>
+          <body>NEMSIS Trace: eHistory.13, eHistory.14</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yyxfcYcoEeGqF6qfYwLiQw"/>
@@ -4415,7 +4424,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       </ownedAttribute>
       <ownedAttribute xmi:id="_yyxfcocoEeGqF6qfYwLiQw" name="routeCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CWzOAIcpEeGqF6qfYwLiQw">
-          <body>NEMSIS Trace: EHistory.15</body>
+          <body>NEMSIS Trace: eHistory.15</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yyxfdIcoEeGqF6qfYwLiQw"/>
@@ -4450,7 +4459,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </generalization>
             <ownedAttribute xmi:id="_JX9TQNOXEeKU4pFWxuU9dw" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_sTU8MEgSEeyD0_D2SJuFgA">
-                <body>NEMSIS Trace: EHistory.12 - Current Medications</body>
+                <body>NEMSIS Trace: eHistory.12 - Current Medications</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uKl7QDHWEeyA__laJHreSQ" value="1"/>
@@ -4724,7 +4733,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       </ownedAttribute>
       <ownedAttribute xmi:id="_7XbNEZosEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Hq8z8ENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.18</body>
+          <body>NEMSIS Trace: eHistory.18</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__E3IIZosEeG_FLcaRgAa7g" value="1"/>
@@ -4753,7 +4762,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       </ownedAttribute>
       <ownedAttribute xmi:id="_VF5WYZotEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Ju8sAENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.19</body>
+          <body>NEMSIS Trace: eHistory.19</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWOfkZotEeG_FLcaRgAa7g" value="1"/>
@@ -4782,7 +4791,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       </ownedAttribute>
       <ownedAttribute xmi:id="_tP9GoZotEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_7ghpQJotEeG_FLcaRgAa7g">
-          <body>NEMSIS Trace: EPatient.15, 16&#xD;
+          <body>NEMSIS Trace: ePatient.15, 16&#xD;
 UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -4812,7 +4821,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_I_28MZouEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_NbpnQENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.31</body>
+          <body>NEMSIS Trace: eVitals.31</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wE0_0M5uEeSYyeRwIaqIFQ" value="1"/>
@@ -4841,7 +4850,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_r59uoZouEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_PYJJIENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EHistory.01</body>
+          <body>NEMSIS Trace: eHistory.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MxnWUU_QEeOQyePZE5R0SQ" value="1"/>
@@ -4870,7 +4879,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P-cioaK4EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_vc1_QENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EScene.01</body>
+          <body>NEMSIS Trace: eScene.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_caInQaK4EeGOxth0BgV-QA" value="1"/>
@@ -4905,7 +4914,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xp-MoaK5EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_y88B4ENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EScene.06</body>
+          <body>NEMSIS Trace: eScene.06</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgPKsaK5EeGOxth0BgV-QA" value="1"/>
@@ -4928,7 +4937,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_GKkQ8KK8EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0MN4cENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EScene.07</body>
+          <body>NEMSIS Trace: eScene.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LtP2YaK8EeGOxth0BgV-QA" value="1"/>
@@ -4985,7 +4994,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_r13SgJ-kEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ZJ5zkENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EOther.05</body>
+          <body>NEMSIS Trace: eOther.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uCwn4J-kEeGorI3CPDW2ww" value="1"/>
@@ -5014,7 +5023,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_hjDJcZ-lEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_cFOVMENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EOther.06</body>
+          <body>NEMSIS Trace: eOther.06</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnaqsVUtEeyiu80E1DcH3w" value="1"/>
@@ -5039,7 +5048,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_rNkl42leEeG4boS-IbG8Zw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_gzIBAEM7EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EPayment.51</body>
+          <body>NEMSIS Trace: ePayment.51</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d_JkYM3gEeSDodsZ26-KBg" value="1"/>
@@ -5062,7 +5071,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedComment>
       <generalization xmi:id="_W97cwGleEeG4boS-IbG8Zw">
         <ownedComment xmi:id="_ifpNMEM7EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EPayment.50</body>
+          <body>NEMSIS Trace: ePayment.50</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -5075,7 +5084,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_kVzc0GleEeG4boS-IbG8Zw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_D_zRIMk2EeK2gbjCtOEivw">
-          <body>NEMSIS Trace: EPayment.50</body>
+          <body>NEMSIS Trace: ePayment.50</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9qE6YccJEeGjDJAyT0XW9Q" value="1"/>
@@ -5104,7 +5113,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_rDpghp-mEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_83ZVUENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProtocols.01</body>
+          <body>NEMSIS Trace: eProtocols.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rDpgiJ-mEeGorI3CPDW2ww" value="1"/>
@@ -5146,7 +5155,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_n-zaCZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ArTEwENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EOther.02</body>
+          <body>NEMSIS Trace: eOther.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0xo8cFNvEeydqZjGDRo7uw" value="1"/>
@@ -5370,7 +5379,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
       </ownedAttribute>
       <ownedAttribute xmi:id="_ngAboJ-bEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_tKQRkENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.23</body>
+          <body>NEMSIS Trace: eResponse.23</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_phCfQZ-bEeGorI3CPDW2ww" value="1"/>
@@ -5424,7 +5433,7 @@ NEMSIS Trace:  eArrest.03&#xD;
       </ownedAttribute>
       <ownedAttribute xmi:id="_4pk1sJurEeGzXI65shd6Fw" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LwgDQJusEeGzXI65shd6Fw">
-          <body>NEMSIS Trace: EArrest.15&#xD;
+          <body>NEMSIS Trace: eArrest.15&#xD;
 Use value &quot;aborted&quot; for discontinued resuscitation (eArrest.15)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -5433,8 +5442,8 @@ Use value &quot;aborted&quot; for discontinued resuscitation (eArrest.15)</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YR0Lk5uoEeGzXI65shd6Fw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_1crGwJupEeGzXI65shd6Fw">
-          <body>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low&#xD;
-If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</body>
+          <body>NEMSIS Trace: eProcedures.01 goes in effectiveTime.low&#xD;
+If an abandoned time is recorded, eArrest.15 goes in effectiveTime.high</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7m9F4UwFEeyaFf-ZdVTpIw"/>
@@ -5442,7 +5451,7 @@ If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_WwatcJusEeGzXI65shd6Fw" name="approachSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_iStE4JusEeGzXI65shd6Fw">
-          <body>NEMSIS Trace: EProcedures.13&#xD;
+          <body>NEMSIS Trace: eProcedures.13&#xD;
 Required conditionally if procedure code is insertion of an infusion device&#xD;
 Some NEMSIS values require additional information: see Appendix for details.</body>
         </ownedComment>
@@ -5563,7 +5572,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
           </generalization>
           <ownedAttribute xmi:id="_jXPAsJ0wEeGmCMENP40rhA" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_or7NcJ0wEeGmCMENP40rhA">
-              <body>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</body>
+              <body>NEMSIS Trace: eProcedures.09, ID equal to the EMS professional's agency ID number</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a4gR4UdTEeyArY5urXDDvQ"/>
@@ -5571,7 +5580,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
           </ownedAttribute>
           <ownedAttribute xmi:id="_cAEl4J0wEeGmCMENP40rhA" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_C-2usJ0xEeGmCMENP40rhA">
-              <body>NEMSIS Trace: EProcedures.10 - Role/Type of Person Performing the Procedure; eArrest.20 - Who First Initiated CPR; eArrest.21 - Who First Applied the AED; eArrest.22 - Who First Defibrillated the Patient</body>
+              <body>NEMSIS Trace: eProcedures.10 - Role/Type of Person Performing the Procedure; eArrest.20 - Who First Initiated CPR; eArrest.21 - Who First Applied the AED; eArrest.22 - Who First Defibrillated the Patient</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g2jzsZ0wEeGmCMENP40rhA" value="1"/>
@@ -5619,7 +5628,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
             </generalization>
             <ownedAttribute xmi:id="_wvJD0J4eEeGzbp5zEFWdWg" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_03YKwENBEeKBoM5tGvrHVQ">
-                <body>NEMSIS Trace: EAirway.03</body>
+                <body>NEMSIS Trace: eAirway.03</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EjUekMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -5654,7 +5663,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_lhozwIy-EeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_4E7TUIy_EeGnhceUMXltng">
-          <body>If NEMSIS EHistory.06 is &quot;No Known Drug Allergies,&quot; the value should be FALSE. If it is a proper value, the value should be TRUE. If it is a flavor of null, the appropriate flavor should be used here. See the null table to translate NEMSIS flavors into HL7; original values may be stored in Observation.text.</body>
+          <body>If NEMSIS eHistory.06 is &quot;No Known Drug Allergies,&quot; the value should be FALSE. If it is a proper value, the value should be TRUE. If it is a flavor of null, the appropriate flavor should be used here. See the null table to translate NEMSIS flavors into HL7; original values may be stored in Observation.text.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_re15AccJEeGjDJAyT0XW9Q" value="1"/>
@@ -5677,7 +5686,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_vMRHMIzYEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_JU5c8IzZEeGnhceUMXltng">
-          <body>If NEMSIS EHistory.07 has no values, this is FALSE; otherwise it is TRUE.</body>
+          <body>If NEMSIS eHistory.07 has no values, this is FALSE; otherwise it is TRUE.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3lBAoccJEeGjDJAyT0XW9Q" value="1"/>
@@ -5749,7 +5758,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_lZnpYJsmEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_DyJoUEM_EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EMedications.07</body>
+          <body>NEMSIS Trace: eMedications.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dq_FMMcQEeGjDJAyT0XW9Q" value="1"/>
@@ -5772,7 +5781,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_S3wbQJsnEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KrPnEEM_EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EMedications.08</body>
+          <body>NEMSIS Trace: eMedications.08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O00c0E_TEeOQyePZE5R0SQ" value="1"/>
@@ -5795,7 +5804,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_q-q7cJsoEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_XW4MMEM_EeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EMedications.02</body>
+          <body>NEMSIS Trace: eMedications.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tDMX8ZsoEeGzXI65shd6Fw" value="1"/>
@@ -5811,7 +5820,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </generalization>
       <ownedAttribute xmi:id="_GEDlWMOxEeKN86BM1f2PZA" name="moodCode" visibility="private">
         <ownedComment xmi:id="_0OKmECwqEeOaIuM51LdlNw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_GEDlWcOxEeKN86BM1f2PZA" value="EVN"/>
@@ -5826,7 +5835,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
       </ownedAttribute>
       <ownedAttribute xmi:id="_IKvTEZojEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_qPBQwJojEeG_FLcaRgAa7g">
-          <body>NEMSIS Trace: EExam.01&#xD;
+          <body>NEMSIS Trace: eExam.01&#xD;
 UCUM units should be 'kg'</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -5850,7 +5859,7 @@ UCUM units should be 'kg'</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ymc1wZojEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_h1Ez8ENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.02 Length Based Tape Measure.&#xD;
+          <body>NEMSIS Trace: eExam.02 Length Based Tape Measure.&#xD;
 Note: a license is required to implement the Broselow-Luten measure.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -5874,7 +5883,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_yAcRYETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0PEsIETXEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g1lqYEgOEeyD0_D2SJuFgA"/>
@@ -5882,7 +5891,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RoAz4ZolEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_oVudgENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.06</body>
+          <body>NEMSIS Trace: eExam.06</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YuEQkZolEeG_FLcaRgAa7g" value="1"/>
@@ -5905,7 +5914,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sMVkwETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_vDAP4ETXEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WSzBEUgOEeyD0_D2SJuFgA"/>
@@ -5913,7 +5922,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_74YesZokEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_lZf88ENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.05</body>
+          <body>NEMSIS Trace: eExam.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVFcYZolEeG_FLcaRgAa7g" value="1"/>
@@ -5936,7 +5945,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1giUAETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_27t4kETXEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sKWjMEgOEeyD0_D2SJuFgA"/>
@@ -5944,7 +5953,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pmm7AZolEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_qj7acENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.07</body>
+          <body>NEMSIS Trace: eExam.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k2oDUMcTEeGjDJAyT0XW9Q" value="1"/>
@@ -5967,7 +5976,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7_JWMETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9d2I0ETXEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9IvbgUTXEeKEm6ZghGGtvw" value="1"/>
@@ -5975,7 +5984,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_bT1jgZomEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_xWD1kENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.09</body>
+          <body>NEMSIS Trace: eExam.09</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dsn_0ZomEeG_FLcaRgAa7g" value="1"/>
@@ -5998,7 +6007,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="__vNHcETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_B9ztAETYEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BIi48ETYEeKEm6ZghGGtvw" value="1"/>
@@ -6006,7 +6015,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Xrf48ZooEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_1W-GQENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.11</body>
+          <body>NEMSIS Trace: eExam.11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9MWukV5TEeSDRdbTWFBAMw"/>
@@ -6014,7 +6023,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1jIQAJooEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0YV60ENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.10</body>
+          <body>NEMSIS Trace: eExam.10</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-DxewV5TEeSDRdbTWFBAMw"/>
@@ -6027,7 +6036,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedComment>
       <generalization xmi:id="_PRiu8JopEeG_FLcaRgAa7g">
         <ownedComment xmi:id="_UFXDQJopEeG_FLcaRgAa7g">
-          <body>NEMSIS Trace: EExam.12</body>
+          <body>NEMSIS Trace: eExam.12</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -6040,7 +6049,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ESMKcETYEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_FiWx0ETYEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FQkeQUTYEeKEm6ZghGGtvw" value="1"/>
@@ -6048,7 +6057,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RyXs8ZopEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Kf0eMMlaEeK2gbjCtOEivw">
-          <body>NEMSIS Trace: EExam.12</body>
+          <body>NEMSIS Trace: eExam.12</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b_VQMZopEeG_FLcaRgAa7g" value="1"/>
@@ -6071,7 +6080,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HaNrUETYEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_JViIgETYEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IQGxgETYEeKEm6ZghGGtvw" value="1"/>
@@ -6079,7 +6088,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sZ0stJopEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_5ly3IENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.14</body>
+          <body>NEMSIS Trace: eExam.14</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uoL7ME7rEey-foHPjB_9iA" value="1"/>
@@ -6087,7 +6096,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sZ0ssZopEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_66W2UENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.13</body>
+          <body>NEMSIS Trace: eExam.13</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vR1VIU7rEey-foHPjB_9iA"/>
@@ -6110,7 +6119,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KwPzAETYEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_L6rl0ETYEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LnMCEETYEeKEm6ZghGGtvw" value="1"/>
@@ -6118,7 +6127,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P7YgtJoqEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_93PeMENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.16</body>
+          <body>NEMSIS Trace: eExam.16</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Juc9MV5UEeSDRdbTWFBAMw"/>
@@ -6126,7 +6135,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P7YgsZoqEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9AJeIENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.15</body>
+          <body>NEMSIS Trace: eExam.15</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K1Nw8V5UEeSDRdbTWFBAMw"/>
@@ -6149,7 +6158,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_N6378ETYEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_P0qvIETYEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O3ulwETYEeKEm6ZghGGtvw" value="1"/>
@@ -6157,7 +6166,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tKDaVJoqEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_AplqAENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.18</body>
+          <body>NEMSIS Trace: eExam.18</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KRJWQTHXEeyA__laJHreSQ" value="1"/>
@@ -6165,7 +6174,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tKDaUZoqEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="__v8FMENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.17</body>
+          <body>NEMSIS Trace: eExam.17</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UbP3EV5UEeSDRdbTWFBAMw"/>
@@ -6188,7 +6197,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RREbsETYEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Z3jesCwqEeOaIuM51LdlNw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S82BAETYEeKEm6ZghGGtvw" value="1"/>
@@ -6196,7 +6205,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_F8R90ZorEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CVgZQENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.19</body>
+          <body>NEMSIS Trace: eExam.19</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VBuEE-XEey-foHPjB_9iA" value="1"/>
@@ -6220,7 +6229,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_av7GkHwIEeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_FZdNYHwKEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.01</body>
+          <body>NEMSIS Trace: eArrest.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CA9nkHwKEeGW3cDolvqrTA" value="1"/>
@@ -6245,7 +6254,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1TCuAHwKEeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_HE3J0HwLEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.02</body>
+          <body>NEMSIS Trace: eArrest.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DZr8HwKEeGW3cDolvqrTA" value="1"/>
@@ -6270,7 +6279,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_L8hNkHwREeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CbgU4HwSEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.11</body>
+          <body>NEMSIS Trace: eArrest.11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B2gpIMcLEeGjDJAyT0XW9Q" value="1"/>
@@ -6295,7 +6304,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kiav0HwSEeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Q_zPUHwTEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.12</body>
+          <body>NEMSIS Trace: eArrest.12</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__1V8cUwGEeyaFf-ZdVTpIw" value="1"/>
@@ -6320,7 +6329,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oCjZQXwTEeGW3cDolvqrTA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_gKpzcHwUEeGW3cDolvqrTA">
-          <body>NEMSIS Trace: EArrest.17 Cardiac Rhythm on Arrival at Destination</body>
+          <body>NEMSIS Trace: eArrest.17 Cardiac Rhythm on Arrival at Destination</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aMoZQUwHEeyaFf-ZdVTpIw" value="1"/>
@@ -6344,7 +6353,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gTkJkZuqEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_WPHoAENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EArrest.16 (Reason CPR/resuscitation discontinued)</body>
+          <body>NEMSIS Trace: eArrest.16 (Reason CPR/resuscitation discontinued)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdQDsJurEeGzXI65shd6Fw" value="1"/>
@@ -6366,7 +6375,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_IzXTJjKnEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
           <ownedComment xmi:id="_IzXTJzKnEeyOwtfRawW6Qw">
-            <body>NEMSIS Trace: EArrest.16 (Reason CPR/resuscitation discontinued)</body>
+            <body>NEMSIS Trace: eArrest.16 (Reason CPR/resuscitation discontinued)</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzXTKDKnEeyOwtfRawW6Qw" value="1"/>
@@ -6390,7 +6399,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2EixMZ0sEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_X_0JkENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProcedures.02 Procedure Performed Prior to this Unit's EMS Care; EArrest.07 AED Use Prior to EMS Arrival</body>
+          <body>NEMSIS Trace: eProcedures.02 Procedure Performed Prior to this Unit's EMS Care; eArrest.07 AED Use Prior to EMS Arrival</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LZWQZ0sEeGmCMENP40rhA" value="1"/>
@@ -6413,7 +6422,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_khWKwZ0tEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Zd-wsENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProcedures.05</body>
+          <body>NEMSIS Trace: eProcedures.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oRdmYZ0tEeGmCMENP40rhA" value="1"/>
@@ -6436,7 +6445,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FuH4sZ0uEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_a6UL0ENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProcedures.06</body>
+          <body>NEMSIS Trace: eProcedures.06</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JhhR0Z0uEeGmCMENP40rhA" value="1"/>
@@ -6459,7 +6468,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nBv1gZ0uEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_cTwrAENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProcedures.07</body>
+          <body>NEMSIS Trace: eProcedures.07</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Grn4Z0uEeGmCMENP40rhA" value="1"/>
@@ -6482,7 +6491,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_bVyIMZ0vEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_dxEWgENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProcedures.08</body>
+          <body>NEMSIS Trace: eProcedures.08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gd4sAMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -6505,7 +6514,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iuTGoJ4bEeGzbp5zEFWdWg" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_lEoE0J4bEeGzbp5zEFWdWg">
-          <body>NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be &quot;NA.&quot;</body>
+          <body>NEMSIS Trace: eAirway.02. If the confirmation is negated, this SHALL be &quot;NA.&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j1eKEJ4bEeGzbp5zEFWdWg" value="1"/>
@@ -6513,7 +6522,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MZjus54aEeGzbp5zEFWdWg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_h0beQENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</body>
+          <body>NEMSIS Trace: if eAirway.02 is populated, this is TRUE</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sewJgJ4aEeGzbp5zEFWdWg" value="1"/>
@@ -6521,7 +6530,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MZjusJ4aEeGzbp5zEFWdWg" name="methodCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_mPVjUENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EAirway.04</body>
+          <body>NEMSIS Trace: eAirway.04</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FUVU4UdKEeyArY5urXDDvQ"/>
@@ -6544,7 +6553,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P1-iQFhWEeK-i8RB1gvLUA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_b_fH8PeaEeK_n7ZHGRzt1Q">
-          <body>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values&#xD;
+          <body>NEMSIS Trace: eProcedures.03 pertinent negatives, eArrest.03 negative values&#xD;
 This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.&#xD;
 Note: CPR procedures have appropriate values &quot;Not Attempted-Considered Futile,&quot; &quot;Not Attempted-DNR Orders.&quot; &quot;Not Attempted-Signs of Circulation&quot;; other procedures have values &quot;Contraindication Noted,&quot; &quot;Denied By Order,&quot; &quot;Refused,&quot; &quot;Unable to Complete&quot;</body>
         </ownedComment>
@@ -6569,7 +6578,7 @@ Note: CPR procedures have appropriate values &quot;Not Attempted-Considered Futi
       </ownedAttribute>
       <ownedAttribute xmi:id="_5cbCwag_EeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_5hEdQENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ESituation.03</body>
+          <body>NEMSIS Trace: eSituation.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqmvwahAEeG79fAvHk6H4g" value="1"/>
@@ -6592,7 +6601,7 @@ Note: CPR procedures have appropriate values &quot;Not Attempted-Considered Futi
       </ownedAttribute>
       <ownedAttribute xmi:id="_iC3s8KhAEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_WdS7gKhBEeG79fAvHk6H4g">
-          <body>NEMSIS Trace: ESituation.05, 06&#xD;
+          <body>NEMSIS Trace: eSituation.05, 06&#xD;
 Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6616,7 +6625,7 @@ Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</bo
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZeDE0KhDEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9txuQENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: ESituation.08</body>
+          <body>NEMSIS Trace: eSituation.08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a6-84KhDEeG79fAvHk6H4g" value="1"/>
@@ -6639,7 +6648,7 @@ Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</bo
       </ownedAttribute>
       <ownedAttribute xmi:id="_hNivkZorEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_EEwwYENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.20</body>
+          <body>NEMSIS Trace: eExam.20</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pn72MMcTEeGjDJAyT0XW9Q" value="1"/>
@@ -6662,7 +6671,7 @@ Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</bo
       </ownedAttribute>
       <ownedAttribute xmi:id="_Y3lZYIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_clAGUIjtEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3lZYojtEeKx3P4dlW9OSw"/>
@@ -6671,7 +6680,7 @@ Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</bo
       </ownedAttribute>
       <ownedAttribute xmi:id="_nlVQYYzrEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0fkSMIzrEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.07&#xD;
+          <body>NEMSIS Trace: eVitals.07&#xD;
 UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6704,7 +6713,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_p3qPMIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_rADaoIjtEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p3qPMojtEeKx3P4dlW9OSw"/>
@@ -6713,7 +6722,7 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AsBA8IzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LQHR0IzsEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.10&#xD;
+          <body>NEMSIS Trace: eVitals.10&#xD;
 UCUM units SHOULD be &quot;/min&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6737,7 +6746,7 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_y88YsIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9d2LoIjtEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y88YsojtEeKx3P4dlW9OSw"/>
@@ -6746,7 +6755,7 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_R8_ZgIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_dnyMsIzsEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.14&#xD;
+          <body>NEMSIS Trace: eVitals.14&#xD;
 UCUM units SHOULD be &quot;/min&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6770,7 +6779,7 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="__ctsEIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_D9JU4IjvEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ctsEojtEeKx3P4dlW9OSw"/>
@@ -6779,7 +6788,7 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lpOTkYzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_p_zSQIzsEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.24&#xD;
+          <body>NEMSIS Trace: eVitals.24&#xD;
 UCUM units SHOULD be &quot;Cel&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6793,7 +6802,7 @@ UCUM units SHOULD be &quot;Cel&quot;.</body>
       </ownedComment>
       <generalization xmi:id="_1HuB4IzsEeGnhceUMXltng">
         <ownedComment xmi:id="_HYL4YIjvEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -6812,7 +6821,7 @@ UCUM units SHOULD be &quot;Cel&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_10aIwIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="__FR3MIzsEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.12&#xD;
+          <body>NEMSIS Trace: eVitals.12&#xD;
 UCUM units will typically be &quot;%&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6836,7 +6845,7 @@ UCUM units will typically be &quot;%&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_N9AsEZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_-eiSQENBEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EProtocols.02</body>
+          <body>NEMSIS Trace: eProtocols.02</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TK_z4J-nEeGorI3CPDW2ww" value="1"/>
@@ -6859,7 +6868,7 @@ UCUM units will typically be &quot;%&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mwgQIZ-BEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ayRNoENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.16</body>
+          <body>NEMSIS Trace: eResponse.16</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tc6dwZ-BEeGw9ZRnaFfEZQ" value="1"/>
@@ -6882,7 +6891,7 @@ UCUM units will typically be &quot;%&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sPMP-p-NEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_-ec1sJ-NEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.17&#xD;
+          <body>NEMSIS Trace: eResponse.17&#xD;
 UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6906,7 +6915,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_UGLMGZ-OEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_UGLMGp-OEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.17&#xD;
+          <body>NEMSIS Trace: eResponse.17&#xD;
 UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -6930,7 +6939,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="__PPzwJ99EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_D4lgIENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.08</body>
+          <body>NEMSIS Trace: eResponse.08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1FPxkMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -6953,7 +6962,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_pCK4KZ9-EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_FcYOIENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.09</body>
+          <body>NEMSIS Trace: eResponse.09</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2_yLoMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -6976,7 +6985,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_Vo79KZ9_EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_G0iT4ENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.10</body>
+          <body>NEMSIS Trace: eResponse.10</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4kwlYMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -6999,7 +7008,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_4qwhKZ9_EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_IJxBcENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.11</body>
+          <body>NEMSIS Trace: eResponse.11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Co9EMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -7022,7 +7031,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_e7LIGZ-AEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_JZ3-cENCEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EResponse.12</body>
+          <body>NEMSIS Trace: eResponse.12</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8oCNkMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -7045,7 +7054,7 @@ UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed 
       </ownedAttribute>
       <ownedAttribute xmi:id="_XnTCMIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_LPYN0IzzEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.23&#xD;
+          <body>NEMSIS Trace: eVitals.23&#xD;
 Integer value equal to the sum of verbal, motor, and eye</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
@@ -7069,7 +7078,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aL-lcIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_yVd8wENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.22</body>
+          <body>NEMSIS Trace: eVitals.22</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aL-lcozyEeGnhceUMXltng"/>
@@ -7092,7 +7101,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cteR0IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_zkKkgENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.19</body>
+          <body>NEMSIS Trace: eVitals.19</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qM9gUIzzEeGnhceUMXltng" value="1"/>
@@ -7138,7 +7147,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iMcb8IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_2sN6kENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.20</body>
+          <body>NEMSIS Trace: eVitals.20</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lV6cYYz0EeGnhceUMXltng" value="1"/>
@@ -7161,7 +7170,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5LZpkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_5vnw8IjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5LZpkojuEeKx3P4dlW9OSw"/>
@@ -7170,7 +7179,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-gs4kIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_kd7dwIzvEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.29</body>
+          <body>NEMSIS Trace: eVitals.29</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtRi8IzxEeGnhceUMXltng" value="1"/>
@@ -7178,7 +7187,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_H8VFgIzvEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_jm5vIIzvEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.30</body>
+          <body>NEMSIS Trace: eVitals.30</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFeE8IzxEeGnhceUMXltng" value="1"/>
@@ -7201,7 +7210,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2QW0wIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_3mzDQIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QW0wojuEeKx3P4dlW9OSw"/>
@@ -7210,7 +7219,7 @@ Integer value equal to the sum of verbal, motor, and eye</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mpd9sIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_2d44sIzuEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.27&#xD;
+          <body>NEMSIS Trace: eVitals.27&#xD;
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
@@ -7234,7 +7243,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
       </ownedAttribute>
       <ownedAttribute xmi:id="_zdpckIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0hcb4IjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zdpckojuEeKx3P4dlW9OSw"/>
@@ -7243,7 +7252,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
       </ownedAttribute>
       <ownedAttribute xmi:id="_ysOaYIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_qwMNcENDEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EVitals.26</body>
+          <body>NEMSIS Trace: eVitals.26</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNPMwYzuEeGnhceUMXltng" value="1"/>
@@ -7266,7 +7275,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
       </ownedAttribute>
       <ownedAttribute xmi:id="_w0ELMIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_yJOAQIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0ELMojuEeKx3P4dlW9OSw"/>
@@ -7275,7 +7284,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
       </ownedAttribute>
       <ownedAttribute xmi:id="_kqT-0IztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_tiLXYIztEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.18&#xD;
+          <body>NEMSIS Trace: eVitals.18&#xD;
 UCUM units will typically be &quot;mg/dl&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7299,7 +7308,7 @@ UCUM units will typically be &quot;mg/dl&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tt8HwIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_uigYQIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tt8HwojuEeKx3P4dlW9OSw"/>
@@ -7308,7 +7317,7 @@ UCUM units will typically be &quot;mg/dl&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_W79_gIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_gOCAwIztEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.17&#xD;
+          <body>NEMSIS Trace: eVitals.17&#xD;
 UCUM units will typically be &quot;%&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7332,7 +7341,7 @@ UCUM units will typically be &quot;%&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ploOkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sblvEIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ploOkojuEeKx3P4dlW9OSw"/>
@@ -7341,7 +7350,7 @@ UCUM units will typically be &quot;%&quot;.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JrbWgYztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_UElisIztEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.16&#xD;
+          <body>NEMSIS Trace: eVitals.16&#xD;
 UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7365,7 +7374,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
       </ownedAttribute>
       <ownedAttribute xmi:id="_Oq9X4IjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_QH0XcIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oq9X4ojuEeKx3P4dlW9OSw"/>
@@ -7374,7 +7383,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
       </ownedAttribute>
       <ownedAttribute xmi:id="_3BVWQIzpEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ynytsIzqEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.03</body>
+          <body>NEMSIS Trace: eVitals.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wKyjgM3iEeSDodsZ26-KBg" value="1"/>
@@ -7382,7 +7391,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
       </ownedAttribute>
       <ownedAttribute xmi:id="_3BUvMIzpEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_kBt1IIzqEeGnhceUMXltng">
-          <body>NEMSIS Trace: EVitals.05</body>
+          <body>NEMSIS Trace: eVitals.05</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yUh3MM3iEeSDodsZ26-KBg" value="1"/>
@@ -7417,7 +7426,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
             </generalization>
             <ownedAttribute xmi:id="_cO_gkMlYEeK2gbjCtOEivw" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_o2l6QMlYEeK2gbjCtOEivw">
-                <body>NEMSIS Trace: EVitals.04</body>
+                <body>NEMSIS Trace: eVitals.04</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_icHxMMlYEeK2gbjCtOEivw" value="1"/>
@@ -7457,7 +7466,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
       </generalization>
       <ownedAttribute xmi:id="_71YjkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9B9EYIjuEeKx3P4dlW9OSw">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_71YjkojuEeKx3P4dlW9OSw"/>
@@ -7551,7 +7560,7 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
       </ownedAttribute>
       <ownedAttribute xmi:id="_mrSsEZ-ZEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_vBfiAJ-ZEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.19&#xD;
+          <body>NEMSIS Trace: eResponse.19&#xD;
 UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7575,7 +7584,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ib1zqZ-aEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ib1zqp-aEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.20&#xD;
+          <body>NEMSIS Trace: eResponse.20&#xD;
 UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7599,7 +7608,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7kghOZ-aEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_7kghOp-aEeGorI3CPDW2ww">
-          <body>NEMSIS Trace: EResponse.21&#xD;
+          <body>NEMSIS Trace: eResponse.21&#xD;
 UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
@@ -7702,7 +7711,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tlkaQc3NEeSDodsZ26-KBg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tlkaQM3NEeSDodsZ26-KBg" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OBQJ0MtaEeSbT7e8VE5niQ" memberEnd="_OBO7sMtaEeSbT7e8VE5niQ _OBQJ0ctaEeSbT7e8VE5niQ">
@@ -7868,7 +7877,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_otuI0ETXEeKEm6ZghGGtvw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_q93mgETXEeKEm6ZghGGtvw">
-          <body>NEMSIS Trace: EExam.03</body>
+          <body>NEMSIS Trace: eExam.03</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r1Jb8DHYEeyA__laJHreSQ"/>
@@ -7876,7 +7885,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_c64EsZokEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_jYRFAENAEeKBoM5tGvrHVQ">
-          <body>NEMSIS Trace: EExam.04</body>
+          <body>NEMSIS Trace: eExam.04</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_idjDEZokEeG_FLcaRgAa7g" value="1"/>
@@ -7905,7 +7914,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Q_eNYLMNEeKNbt70lHd2Eg" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_XO1yULMQEeKNbt70lHd2Eg">
-          <body>NEMSIS Trace: EVitals.01</body>
+          <body>NEMSIS Trace: eVitals.01</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_eNYrMNEeKNbt70lHd2Eg"/>
@@ -8030,11 +8039,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_gTzdICVKEeyHwdMImhiDzQ" name="LungAssessment">
       <generalization xmi:id="_gTzdISVKEeyHwdMImhiDzQ">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_kTovwCVKEeyHwdMImhiDzQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kTpW0CVKEeyHwdMImhiDzQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CwEdACVLEeyHwdMImhiDzQ">
@@ -8043,7 +8052,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJSHISVLEeyHwdMImhiDzQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJSHICVLEeyHwdMImhiDzQ" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kTpW0yVKEeyHwdMImhiDzQ" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Zpj_wDKdEeyOwtfRawW6Qw">
@@ -8052,7 +8061,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTpW1CVKEeyHwdMImhiDzQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kTpW1SVKEeyHwdMImhiDzQ" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_uSA4MDKiEeyOwtfRawW6Qw" name="UnitDisposition">
@@ -8060,11 +8069,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The patient disposition for an EMS event identifying whether patient contact was made.</body>
       </ownedComment>
       <generalization xmi:id="_uSA4MTKiEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_w9pYADKiEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_w9p_EDKiEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_aAmaMDKyEeyOwtfRawW6Qw">
@@ -8073,7 +8082,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drKlQDKjEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drJ-MDKjEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2BpygDKkEeyOwtfRawW6Qw" name="PatientEngagement">
@@ -8081,11 +8090,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The patient disposition for an EMS event identifying whether a patient was evaluated and care or services were provided.</body>
       </ownedComment>
       <generalization xmi:id="_2BpygTKkEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_3FYgYDKkEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3FYgYTKkEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_g4-AMDKyEeyOwtfRawW6Qw">
@@ -8094,7 +8103,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qJI28TKlEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qJI28DKlEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_PFi4UDKmEeyOwtfRawW6Qw" name="CrewDisposition">
@@ -8102,11 +8111,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The crew disposition for this EMS event identifying which crew provided primary patient care or whether support services were required.</body>
       </ownedComment>
       <generalization xmi:id="_PFi4UTKmEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_QX7GMDKmEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QX7tQDKmEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_pgTf4DKmEeyOwtfRawW6Qw">
@@ -8115,7 +8124,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EgH08DKqEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EgGm0DKqEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Kp-OcDKyEeyOwtfRawW6Qw" name="TransportDisposition">
@@ -8123,11 +8132,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The transport disposition for an EMS event identifying whether a transport occurred and by which unit.</body>
       </ownedComment>
       <generalization xmi:id="_Kp-OcTKyEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_L4nL0DKyEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_L4ny4DKyEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_xVutkDKyEeyOwtfRawW6Qw">
@@ -8136,7 +8145,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0PDYErnEeyM8derc72xcA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0OcUErnEeyM8derc72xcA" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xAhzsTv0Eeys8b2-Q288fA" memberEnd="_xAhMoDv0Eeys8b2-Q288fA _xAhzsjv0Eeys8b2-Q288fA">
@@ -8147,11 +8156,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The assessment findings associated with the patient's chest.</body>
       </ownedComment>
       <generalization xmi:id="_Y9KOgUHMEeyzA5MgFxuJFA">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_apLrcEHMEeyzA5MgFxuJFA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_apMSgEHMEeyzA5MgFxuJFA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_vk53cEHMEeyzA5MgFxuJFA">
@@ -8160,7 +8169,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vt2BkVKiEeyNpe1IH9aHqA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vt2BkFKiEeyNpe1IH9aHqA" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_apM5kEHMEeyzA5MgFxuJFA" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_K-WVgEp4EeyM8derc72xcA">
@@ -8169,7 +8178,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uB3n8VKiEeyNpe1IH9aHqA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uB3n8FKiEeyNpe1IH9aHqA" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Q0O4M0HPEeyzA5MgFxuJFA" memberEnd="_Q0O4MEHPEeyzA5MgFxuJFA _Q0O4NEHPEeyzA5MgFxuJFA">
@@ -12793,7 +12802,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10371</ruleId>
   </CDA:ValueSetConstraint>
   <Ecore:EReference xmi:id="_MGBs8J73Ed6BCKDGgDgllw" xmlNamespace="##targetNamespace">
-    <base_Property href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    <base_Property href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
   </Ecore:EReference>
   <CDA:AssociationValidation xmi:id="_UcsbwDXgEeWpTYI46fwViQ" severity="INFO" base_Association="_N_nqoDXgEeWpTYI46fwViQ">
     <ruleId>CONF:11387</ruleId>
@@ -12873,8 +12882,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11589</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDispositionVS">
-    <reference href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_04PogDKmEeyOwtfRawW6Qw"/>
+  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" binding="Dynamic" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDisposition">
     <ruleId>CONF:11590</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_DXgnEDKqEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw">
@@ -12909,7 +12917,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_NPn7QEHKEeyUtcwaTRiR1Q" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
     <ruleId>CONF:11585</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="NeweExam.25" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
+  <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="NeweExam.25" displayName="Chest Assessment" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11596</ruleId>
   </CDA:CodeSystemConstraint>

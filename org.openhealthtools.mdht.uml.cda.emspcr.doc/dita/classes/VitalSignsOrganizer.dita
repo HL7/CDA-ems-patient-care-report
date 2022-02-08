@@ -10,8 +10,6 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_VitalSignsOrganizer.dita#classId/description">
 </section>
-<section audience="contextTable" conref="generated/_VitalSignsOrganizer.dita#classId/contextTable">
-</section>
 <!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_VitalSignsOrganizer.dita#classId/conformance">
@@ -20,13 +18,23 @@
 <ol audience="developer" conref="generated/_VitalSignsOrganizer.dita#classId/aggregate">
 <li></li>
 </ol>
-<section audience="tableconformance"  conref="generated/_VitalSignsOrganizer.dita#classId/tableconformance">
-</section>
 <p> </p>
-<p><b>Vital Signs Organizer example</b></p>
+<p audience="examples"><b>Vital Signs Organizer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_VitalSignsOrganizer.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+            <organizer classCode="CLUSTER" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="2.16.840.1.113883.19.4" extension="247546586"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="201201011602+0600"/>
+              <component>
+                       . . . 
+              </component>
+            </organizer>
+]]></codeblock>
+    
 </body>
 </topic>
