@@ -1691,6 +1691,11 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_kpXWQEVWEey3rIXjdfUhUg" name="NEMSIS"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bPGYAKovEeynVOSvWFRUjA" name="PatientsAtScene">
+      <ownedLiteral xmi:id="_xUKKoKovEeynVOSvWFRUjA" name="LA17717-2"/>
+      <ownedLiteral xmi:id="_9FwwcKovEeynVOSvWFRUjA" name="LA15382-7"/>
+      <ownedLiteral xmi:id="_BhIIgKowEeynVOSvWFRUjA" name="LA137-2"/>
+    </packagedElement>
     <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3303,4 +3308,10 @@
   </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_kpZLcEVWEey3rIXjdfUhUg" base_Enumeration="_kpXWQEVWEey3rIXjdfUhUg"/>
   <term:ValueSetCode xmi:id="_PeeF8EshEey1xMReq27Q3g" conceptName="Percutaneous" usageNote="For use with auto-injector value" base_EnumerationLiteral="_PeZNcEshEey1xMReq27Q3g"/>
+  <term:ValueSetVersion xmi:id="_bPHmIKovEeynVOSvWFRUjA" identifier="2.16.840.1.113883.17.3.11.110" binding="Dynamic" base_Enumeration="_bPGYAKovEeynVOSvWFRUjA">
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_xUMm4KovEeynVOSvWFRUjA" conceptName="Single" base_EnumerationLiteral="_xUKKoKovEeynVOSvWFRUjA"/>
+  <term:ValueSetCode xmi:id="_9FxXgKovEeynVOSvWFRUjA" conceptName="Multiple" base_EnumerationLiteral="_9FwwcKovEeynVOSvWFRUjA"/>
+  <term:ValueSetCode xmi:id="_BhJWoKowEeynVOSvWFRUjA" conceptName="None" base_EnumerationLiteral="_BhIIgKowEeynVOSvWFRUjA"/>
 </xmi:XMI>

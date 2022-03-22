@@ -902,8 +902,8 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoAwGtICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IoG2sdICEeKRzPZKi7WbBQ" name="historyOfCondition" type="_5XgZ4IzdEeGnhceUMXltng" aggregation="composite" association="_IoG2sNICEeKRzPZKi7WbBQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkECgfeeEeK_n7ZHGRzt1Q"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EkECgPeeEeK_n7ZHGRzt1Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hYuTkaotEeynVOSvWFRUjA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hYuTkKotEeynVOSvWFRUjA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_tvaNUmlaEeG4boS-IbG8Zw" memberEnd="_tvaNUGlaEeG4boS-IbG8Zw _tva0YGlaEeG4boS-IbG8Zw">
@@ -3260,14 +3260,6 @@ Drug codes are to be taken from RxNorm. Allergies to drug classes may be taken f
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lG9ZMYzaEeGnhceUMXltng"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lG9ZMIzaEeGnhceUMXltng" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_DVrwcFQ7EeyrCImimHJp2Q" name="component4" type="_I-d94FQ7EeyrCImimHJp2Q" association="_DVrwc1Q7EeyrCImimHJp2Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OiYSYFQ7EeyrCImimHJp2Q" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OiVPEFQ7EeyrCImimHJp2Q" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_GPX6YlQ7EeyrCImimHJp2Q" name="component4" type="_MLSfMFQ7EeyrCImimHJp2Q" association="_GPX6YFQ7EeyrCImimHJp2Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GPX6Y1Q7EeyrCImimHJp2Q"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GPX6ZFQ7EeyrCImimHJp2Q" value="1"/>
-      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_I-d94FQ7EeyrCImimHJp2Q" name="ExistenceOFNonDrugAllergy">
         <generalization xmi:id="_I-iPUFQ7EeyrCImimHJp2Q">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
@@ -3660,8 +3652,8 @@ If NEMSIS eHistory. 08 has proper values, the value should be TRUE.</body>
           <body>NEMSIS Trace: eHistory. 08</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5xcHYIzeEeGnhceUMXltng" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5xbgUIzeEeGnhceUMXltng" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_juqQMaotEeynVOSvWFRUjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_juqQMKotEeynVOSvWFRUjA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nUTUwDX7EeyDmf_o8i-KfQ" name="negationInd" visibility="private">
         <ownedComment xmi:id="_1QdGkDX7EeyDmf_o8i-KfQ">
@@ -4916,7 +4908,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
         <ownedComment xmi:id="_y88B4ENCEeKBoM5tGvrHVQ">
           <body>NEMSIS Trace: eScene.06</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgPKsaK5EeGOxth0BgV-QA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zgPKsKK5EeGOxth0BgV-QA" value="1"/>
       </ownedAttribute>
@@ -8050,8 +8042,8 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
           <body>NEMSIS Trace: eExam.23</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJSHISVLEeyHwdMImhiDzQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJSHICVLEeyHwdMImhiDzQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IiSlgKotEeynVOSvWFRUjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IiR-cKotEeynVOSvWFRUjA" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kTpW0yVKEeyHwdMImhiDzQ" name="targetSiteCode" visibility="private" aggregation="composite">
@@ -8059,8 +8051,8 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
           <body>NEMSIS Trace: eExam.22</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTpW1CVKEeyHwdMImhiDzQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kTpW1SVKEeyHwdMImhiDzQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kb7nsaotEeynVOSvWFRUjA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kb7nsKotEeynVOSvWFRUjA" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -8285,12 +8277,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fCedE1Q6EeyrCImimHJp2Q" memberEnd="_fCedEFQ6EeyrCImimHJp2Q _fCedFFQ6EeyrCImimHJp2Q">
       <ownedEnd xmi:id="_fCedFFQ6EeyrCImimHJp2Q" type="_eewsAFQ6EeyrCImimHJp2Q" association="_fCedE1Q6EeyrCImimHJp2Q"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_DVrwc1Q7EeyrCImimHJp2Q" memberEnd="_DVrwcFQ7EeyrCImimHJp2Q _DVrwdFQ7EeyrCImimHJp2Q">
-      <ownedEnd xmi:id="_DVrwdFQ7EeyrCImimHJp2Q" type="_CFApcIzGEeGnhceUMXltng" association="_DVrwc1Q7EeyrCImimHJp2Q"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_GPX6YFQ7EeyrCImimHJp2Q" memberEnd="_GPX6YlQ7EeyrCImimHJp2Q _GPX6YVQ7EeyrCImimHJp2Q">
-      <ownedEnd xmi:id="_GPX6YVQ7EeyrCImimHJp2Q" type="_CFApcIzGEeGnhceUMXltng" association="_GPX6YFQ7EeyrCImimHJp2Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JfK3M1Q7EeyrCImimHJp2Q" memberEnd="_JfK3MFQ7EeyrCImimHJp2Q _JfLeQFQ7EeyrCImimHJp2Q">
       <ownedEnd xmi:id="_JfLeQFQ7EeyrCImimHJp2Q" type="_I-d94FQ7EeyrCImimHJp2Q" association="_JfK3M1Q7EeyrCImimHJp2Q"/>
@@ -13178,7 +13164,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="emspcr-vocab.uml#_2NLqQNYmEeSOzuJFX8ssTQ"/>
     <ruleId>CONF:11629</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_s263MErgEeyM8derc72xcA" base_Property="_hIT7AErgEeyM8derc72xcA">
+  <CDA:PropertyValidation xmi:id="_s263MErgEeyM8derc72xcA" severity="INFO" base_Property="_hIT7AErgEeyM8derc72xcA">
     <ruleId>CONF:11723</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_cHdtUFKhEeyNpe1IH9aHqA" base_Property="_1TCuAHwKEeGW3cDolvqrTA">
@@ -13262,12 +13248,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_2ghb4FQ6EeyrCImimHJp2Q" base_Association="_fCedE1Q6EeyrCImimHJp2Q">
     <ruleId>CONF:11686</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_PX_rwFQ7EeyrCImimHJp2Q" base_Association="_DVrwc1Q7EeyrCImimHJp2Q">
-    <ruleId>CONF:11647</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_QudvcFQ7EeyrCImimHJp2Q" severity="WARNING" base_Association="_GPX6YFQ7EeyrCImimHJp2Q">
-    <ruleId>CONF:11648</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xH24oFQ7EeyrCImimHJp2Q" base_Association="_mMun01Q7EeyrCImimHJp2Q">
     <ruleId>CONF:11660</ruleId>
   </CDA:AssociationValidation>
@@ -13313,4 +13293,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="__o48cFUoEeyiu80E1DcH3w" base_Association="_Z-BPYDVpEeWqqoY-9eh2xA">
     <ruleId>CONF:11712</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ValueSetConstraint xmi:id="_6NtasKouEeynVOSvWFRUjA" base_Property="_xp-MoaK5EeGOxth0BgV-QA">
+    <reference href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_bPHmIKovEeynVOSvWFRUjA"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
