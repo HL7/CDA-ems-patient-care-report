@@ -21,7 +21,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11650)<tt><b>/@code</b>="67494-5" </tt><i>General mechanism of the forces which caused the injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10109)
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11615), which <b>SHALL</b> be selected from ValueSet<tt> MechanismOfInjury 2.16.840.1.113883.17.3.11.1</tt><b> DYNAMIC</b> (CONF:10110)<p>NEMSIS Trace: eInjury.02</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11615), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MechanismOfInjury.dita">MechanismOfInjury</xref> 2.16.840.1.113883.17.3.11.1</tt><b> DYNAMIC</b> (CONF:10110)<p>NEMSIS Trace: eInjury.02</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,10 +31,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11650)<tt><b>/@code</b>="67494-5" </tt><i>General mechanism of the forces which caused the injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10109)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11615), which <b>SHALL</b> be selected from ValueSet<tt> MechanismOfInjury 2.16.840.1.113883.17.3.11.1</tt><b> DYNAMIC</b> (CONF:10110)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11615), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MechanismOfInjury.dita">MechanismOfInjury</xref> 2.16.840.1.113883.17.3.11.1</tt><b> DYNAMIC</b> (CONF:10110)
 <p>NEMSIS Trace: eInjury.02</p></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSInjuryIncidentDescriptionSection.html">EMS Injury Incident Description Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSInjuryIncidentDescriptionSection.dita">EMS Injury Incident Description Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.1133883.17.3.10.1.51" extension="2022-01-01"/>
   <code code="67494-5" codeSystem="2.16.840.1.113883.6.1" displayName="General mechanism of the forces which caused the injury NEMSIS"/>

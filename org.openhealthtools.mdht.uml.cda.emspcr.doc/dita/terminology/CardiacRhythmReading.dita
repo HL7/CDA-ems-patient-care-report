@@ -61,8 +61,8 @@
 <row><entry>LA18206-5</entry><entry>LOINC</entry><entry>Non-STEMI inferior ischemia</entry></row>
 <row><entry>LA18207-3</entry><entry>LOINC</entry><entry>Non-STEMI lateral ischemia</entry></row>
 <row><entry>LA18208-1</entry><entry>LOINC</entry><entry>Non-STEMI posterior ischemia</entry></row>
-<row><entry>NewLA-9901030</entry><entry>LOINC</entry><entry>Non-STEMI Septal Ischemia</entry></row>
-<row><entry>NewLA-9901058</entry><entry>LOINC</entry><entry>STEMI Septal Ischemia</entry></row>
+<row><entry>LA32915-3</entry><entry>LOINC</entry><entry>Non-STEMI Septal Ischemia</entry></row>
+<row><entry>LA32916-1</entry><entry>LOINC</entry><entry>STEMI Septal Ischemia</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

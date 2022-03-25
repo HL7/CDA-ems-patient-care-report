@@ -37,17 +37,17 @@
 <row><entry>LA6150-2</entry><entry>LOINC</entry><entry>Agitation</entry></row>
 <row><entry>LA23818-0</entry><entry>LOINC</entry><entry>Somnolent</entry></row>
 <row><entry>LA17666-1</entry><entry>LOINC</entry><entry>Stupor</entry></row>
-<row><entry>NewLA-3519039</entry><entry>LOINC</entry><entry>Psychologically Impaired</entry></row>
-<row><entry>NewLA-3519037</entry><entry>LOINC</entry><entry>Pharmacologically Sedated</entry></row>
-<row><entry>NewLA-3519043</entry><entry>LOINC</entry><entry>State of emotional shock and stress, unspecified</entry></row>
-<row><entry>NewLA-3519029</entry><entry>LOINC</entry><entry>Altered mental status, unspecified</entry></row>
-<row><entry>NewLA-3519031</entry><entry>LOINC</entry><entry>Developmentally Impaired</entry></row>
-<row><entry>NewLA-3519035</entry><entry>LOINC</entry><entry>Pharmacologically Paralyzed</entry></row>
-<row><entry>NewLA-3519041</entry><entry>LOINC</entry><entry>Slowness and poor responsiveness</entry></row>
-<row><entry>NewLA-3519045</entry><entry>LOINC</entry><entry>Strange and inexplicable behavior</entry></row>
-<row><entry>NewLA-3519047</entry><entry>LOINC</entry><entry>Uncooperative</entry></row>
-<row><entry>NewLA-3519049</entry><entry>LOINC</entry><entry>Unspecified coma</entry></row>
-<row><entry>NewLA-3519033</entry><entry>LOINC</entry><entry>Disorientation, unspecified</entry></row>
+<row><entry>LA17313-0</entry><entry>LOINC</entry><entry>Psychologically Impaired</entry></row>
+<row><entry>LA32948-4</entry><entry>LOINC</entry><entry>Pharmacologically Sedated</entry></row>
+<row><entry>LA17678-6</entry><entry>LOINC</entry><entry>State of emotional shock and stress, unspecified</entry></row>
+<row><entry>LA32951-8</entry><entry>LOINC</entry><entry>Altered mental status, unspecified</entry></row>
+<row><entry>LA17307-2</entry><entry>LOINC</entry><entry>Developmentally Impaired</entry></row>
+<row><entry>LA32953-4</entry><entry>LOINC</entry><entry>Pharmacologically Paralyzed</entry></row>
+<row><entry>LA32950-0</entry><entry>LOINC</entry><entry>Slowness and poor responsiveness</entry></row>
+<row><entry>LA32956-7</entry><entry>LOINC</entry><entry>Strange and inexplicable behavior</entry></row>
+<row><entry>LA17317-1</entry><entry>LOINC</entry><entry>Uncooperative</entry></row>
+<row><entry>LA32955-9</entry><entry>LOINC</entry><entry>Unspecified coma</entry></row>
+<row><entry>LA17668-7</entry><entry>LOINC</entry><entry>Disorientation, unspecified</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

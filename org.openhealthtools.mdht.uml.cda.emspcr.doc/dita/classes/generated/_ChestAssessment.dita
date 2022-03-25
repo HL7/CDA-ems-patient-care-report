@@ -16,13 +16,13 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11609 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.195"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt><i>Chest Assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="11422-3" </tt><i>Physical Findings of Chest Assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ChestFinding.dita">ChestFinding</xref> 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)<p>NEMSIS Trace: eExam.24</p>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ChestFindingLocation.dita">ChestFindingLocation</xref> 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)<p>NEMSIS Trace: eExam.24</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -30,17 +30,17 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt><i>Chest Assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="11422-3" </tt><i>Physical Findings of Chest Assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ChestFinding.dita">ChestFinding</xref> 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)
 <p>NEMSIS Trace: eExam.25</p></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ChestFindingLocation.dita">ChestFindingLocation</xref> 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)
 <p>NEMSIS Trace: eExam.24</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
   <templateId root="2.16.840.1.1133883.17.3.10.1.195" extension="2022-01-01"/>
-  <code code="NeweExam.25" codeSystem="2.16.840.1.113883.6.1" displayName="Chest Assessment"/>
+  <code code="11422-3" codeSystem="2.16.840.1.113883.6.1" displayName="Physical Findings of Chest Assessment"/>
   <value xsi:type="CD"/>
 </observation>
 ]]></codeblock>

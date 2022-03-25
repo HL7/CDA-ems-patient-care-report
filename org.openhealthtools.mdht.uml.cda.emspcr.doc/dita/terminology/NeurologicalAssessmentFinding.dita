@@ -48,8 +48,8 @@
 <row><entry>LA18265-1</entry><entry>LOINC</entry><entry>Strength-asymmetric</entry></row>
 <row><entry>LA23822-2</entry><entry>LOINC</entry><entry>Arm Drift-Left</entry></row>
 <row><entry>LA23823-0</entry><entry>LOINC</entry><entry>Arm Drift-Right</entry></row>
-<row><entry>NewLA-3520026</entry><entry>LOINC</entry><entry>Status Seizure</entry></row>
-<row><entry>NewLA-3520055</entry><entry>LOINC</entry><entry>Other Seizures</entry></row>
+<row><entry>LA32958-3</entry><entry>LOINC</entry><entry>Status Seizure</entry></row>
+<row><entry>LA32959-1</entry><entry>LOINC</entry><entry>Other Seizures</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

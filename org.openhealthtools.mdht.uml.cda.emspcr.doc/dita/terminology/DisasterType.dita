@@ -39,12 +39,12 @@
 <row><entry>LA18099-4</entry><entry>LOINC</entry><entry>Secondary destructive device</entry></row>
 <row><entry>LA18100-0</entry><entry>LOINC</entry><entry>Shooting/sniper</entry></row>
 <row><entry>LA18101-8</entry><entry>LOINC</entry><entry>Vehicular</entry></row>
-<row><entry>NewLA-4507031</entry><entry>LOINC</entry><entry>Flood</entry></row>
-<row><entry>NewLA-4507033</entry><entry>LOINC</entry><entry>Land Slide</entry></row>
-<row><entry>NewLA-4507035</entry><entry>LOINC</entry><entry>Winter Storm</entry></row>
-<row><entry>NewLA-4507037</entry><entry>LOINC</entry><entry>Tornado</entry></row>
-<row><entry>NewLA-4507039</entry><entry>LOINC</entry><entry>Hurricane</entry></row>
-<row><entry>NewLA-4507029</entry><entry>LOINC</entry><entry>Earthquake</entry></row>
+<row><entry>LA30039-4</entry><entry>LOINC</entry><entry>Flood</entry></row>
+<row><entry>LA32967-4</entry><entry>LOINC</entry><entry>Land Slide</entry></row>
+<row><entry>LA32968-2</entry><entry>LOINC</entry><entry>Winter Storm</entry></row>
+<row><entry>LA30042-8</entry><entry>LOINC</entry><entry>Tornado</entry></row>
+<row><entry>LA30040-2</entry><entry>LOINC</entry><entry>Hurricane</entry></row>
+<row><entry>LA30037-8</entry><entry>LOINC</entry><entry>Earthquake</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

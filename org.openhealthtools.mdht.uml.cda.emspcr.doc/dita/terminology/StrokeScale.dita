@@ -31,12 +31,12 @@
 <row><entry>LA18300-6</entry><entry>LOINC</entry><entry>Other stoke scale type</entry></row>
 <row><entry>LA3774-2</entry><entry>LOINC</entry><entry>Massachusetts Stroke Scale (MSS)</entry></row>
 <row><entry>LA24430-3</entry><entry>LOINC</entry><entry>FAST-ED</entry></row>
-<row><entry>NewLA-3330023</entry><entry>LOINC</entry><entry>Los Angeles Motor Score (LAMS)</entry></row>
-<row><entry>NewLA-3330021</entry><entry>LOINC</entry><entry>Rapid Arterial oCclusion Evaluation (RACE)</entry></row>
-<row><entry>NewLA-3330019</entry><entry>LOINC</entry><entry>Melbourne Ambulance Stroke Screen (MASS)</entry></row>
-<row><entry>NewLA-3330017</entry><entry>LOINC</entry><entry>Ontario Prehospital Stroke Scale (OPSS)</entry></row>
-<row><entry>NewLA-3330015</entry><entry>LOINC</entry><entry>Boston Stroke Scale (BOSS)</entry></row>
-<row><entry>NewLA-3330004</entry><entry>LOINC</entry><entry>Los Angeles Prehospital Stroke Screen (LAPSS)</entry></row>
+<row><entry>LA33001-1</entry><entry>LOINC</entry><entry>Los Angeles Motor Score (LAMS)</entry></row>
+<row><entry>LA33000-3</entry><entry>LOINC</entry><entry>Rapid Arterial oCclusion Evaluation (RACE)</entry></row>
+<row><entry>LA32999-7</entry><entry>LOINC</entry><entry>Melbourne Ambulance Stroke Screen (MASS)</entry></row>
+<row><entry>LA32998-9</entry><entry>LOINC</entry><entry>Ontario Prehospital Stroke Scale (OPSS)</entry></row>
+<row><entry>LA32997-1</entry><entry>LOINC</entry><entry>Boston Stroke Scale (BOSS)</entry></row>
+<row><entry>LA33002-9</entry><entry>LOINC</entry><entry>Los Angeles Prehospital Stroke Screen (LAPSS)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

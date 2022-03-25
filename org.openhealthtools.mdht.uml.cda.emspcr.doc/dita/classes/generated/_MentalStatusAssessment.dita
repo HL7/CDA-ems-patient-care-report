@@ -24,7 +24,7 @@
 contain exactly one [1..1] <tt><b>effectiveTime</b></tt><p>NEMSIS Trace: eExam.03</p>
 </li>
 <li>
-<b>SHOULD</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11608), which <b>SHALL</b> be selected from ValueSet<tt> MentalStatusFinding 2.16.840.1.113883.17.3.11.84</tt><b> DYNAMIC</b> (CONF:10412)<p>NEMSIS Trace: eExam.19</p>
+<b>SHOULD</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11608), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MentalStatusFinding.dita">MentalStatusFinding</xref> 2.16.840.1.113883.17.3.11.84</tt><b> DYNAMIC</b> (CONF:10412)<p>NEMSIS Trace: eExam.19</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -36,7 +36,7 @@ contain exactly one [1..1] <tt><b>effectiveTime</b></tt><p>NEMSIS Trace: eExam.0
 </li>
 <li>contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <p>NEMSIS Trace: eExam.03</p></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11608), which <b>SHALL</b> be selected from ValueSet<tt> MentalStatusFinding 2.16.840.1.113883.17.3.11.84</tt><b> DYNAMIC</b> (CONF:10412)
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11608), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MentalStatusFinding.dita">MentalStatusFinding</xref> 2.16.840.1.113883.17.3.11.84</tt><b> DYNAMIC</b> (CONF:10412)
 <p>NEMSIS Trace: eExam.19</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

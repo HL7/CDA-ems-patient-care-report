@@ -34,9 +34,9 @@
 <row><entry>LA17584-6</entry><entry>LOINC</entry><entry>Technical failure (computer, phone etc.)</entry></row>
 <row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
 <row><entry>LA7540-3</entry><entry>LOINC</entry><entry>Language barrier</entry></row>
-<row><entry>NewLA-2208019</entry><entry>LOINC</entry><entry>Communication Specialist-Assignment Error</entry></row>
-<row><entry>NewLA-2208021</entry><entry>LOINC</entry><entry>No Receiving MD, Bed, Hospital</entry></row>
-<row><entry>NewLA-2208023</entry><entry>LOINC</entry><entry>Specialty Team Delay</entry></row>
+<row><entry>LA32992-2</entry><entry>LOINC</entry><entry>Communication Specialist-Assignment Error</entry></row>
+<row><entry>LA32993-0</entry><entry>LOINC</entry><entry>No Receiving MD, Bed, Hospital</entry></row>
+<row><entry>LA32994-8</entry><entry>LOINC</entry><entry>Specialty Team Delay</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

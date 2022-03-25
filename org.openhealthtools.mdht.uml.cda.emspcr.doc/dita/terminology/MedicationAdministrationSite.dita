@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>MedicationAdministrationSite - 2.16.840.1.113883.17.3.11.109</entry></row>
+<row><entry>Code System</entry><entry>SNOMED CT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Definition</entry><entry>Specifications for site of substance administration when Route is insufficiently specific</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -24,8 +25,8 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>280361007</entry><entry></entry><entry>Tracheostomy stoma</entry></row>
-<row><entry>15562006</entry><entry></entry><entry>Structure of respiratory region of nose</entry></row>
+<row><entry>280361007</entry><entry>SNOMED CT</entry><entry>Tracheostomy stoma</entry></row>
+<row><entry>15562006</entry><entry>SNOMED CT</entry><entry>Structure of respiratory region of nose</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

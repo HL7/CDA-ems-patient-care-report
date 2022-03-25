@@ -26,7 +26,7 @@
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -38,9 +38,9 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry
 </li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28:2022-01-01</tt>)</li></ol></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.1133883.17.3.10.1.23" extension="2022-01-01"/>
   <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="Vital Signs"/>

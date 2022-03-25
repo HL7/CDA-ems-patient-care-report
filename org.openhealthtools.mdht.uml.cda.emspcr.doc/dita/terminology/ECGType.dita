@@ -33,7 +33,7 @@
 <row><entry>LA18669-4</entry><entry>LOINC</entry><entry>15 lead</entry></row>
 <row><entry>LA18670-2</entry><entry>LOINC</entry><entry>18 lead</entry></row>
 <row><entry>LA18671-0</entry><entry>LOINC</entry><entry>Other</entry></row>
-<row><entry>NewLA-3304000</entry><entry>LOINC</entry><entry>2 Lead ECG (pads or paddles)</entry></row>
+<row><entry>LA32996-3</entry><entry>LOINC</entry><entry>2 Lead ECG (pads or paddles)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

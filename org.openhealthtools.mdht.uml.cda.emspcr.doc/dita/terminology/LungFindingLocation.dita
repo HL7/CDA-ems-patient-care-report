@@ -24,9 +24,9 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA3522003</entry><entry>LOINC</entry><entry>Right</entry></row>
-<row><entry>newLA3522001</entry><entry>LOINC</entry><entry>Left</entry></row>
-<row><entry>newLA3522005</entry><entry>LOINC</entry><entry>Bilateral</entry></row>
+<row><entry>LA4306-2</entry><entry>LOINC</entry><entry>Right</entry></row>
+<row><entry>LA4585-1</entry><entry>LOINC</entry><entry>Left</entry></row>
+<row><entry>LA25377-5</entry><entry>LOINC</entry><entry>Bilateral</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

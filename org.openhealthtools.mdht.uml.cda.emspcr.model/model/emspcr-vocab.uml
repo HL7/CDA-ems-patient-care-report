@@ -77,8 +77,8 @@
       <ownedLiteral xmi:id="_cS9_EMFTEeGyGv5RKvEgDA" name="LA18206-5"/>
       <ownedLiteral xmi:id="_cTKzYMFTEeGyGv5RKvEgDA" name="LA18207-3"/>
       <ownedLiteral xmi:id="_cTXAoMFTEeGyGv5RKvEgDA" name="LA18208-1"/>
-      <ownedLiteral xmi:id="_uWjb0A0EEey1-dRmTUcPqg" name="NewLA-9901030"/>
-      <ownedLiteral xmi:id="_xWTKcA0EEey1-dRmTUcPqg" name="NewLA-9901058"/>
+      <ownedLiteral xmi:id="_uWjb0A0EEey1-dRmTUcPqg" name="LA32915-3"/>
+      <ownedLiteral xmi:id="_xWTKcA0EEey1-dRmTUcPqg" name="LA32916-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YvxbQHSKEeGa4IXs2ghZEw" name="AlcoholDrugUseIndicator">
       <ownedLiteral xmi:id="_cTdHQMFTEeGyGv5RKvEgDA" name="LA17323-9"/>
@@ -86,7 +86,7 @@
       <ownedLiteral xmi:id="_cTp7kMFTEeGyGv5RKvEgDA" name="LA17325-4"/>
       <ownedLiteral xmi:id="_cTwCMMFTEeGyGv5RKvEgDA" name="LA17326-2"/>
       <ownedLiteral xmi:id="_cT2I0MFTEeGyGv5RKvEgDA" name="LA17327-0"/>
-      <ownedLiteral xmi:id="_6IxhQBosEeyPvO14mrApVQ" name="NewLA-3117013"/>
+      <ownedLiteral xmi:id="_6IxhQBosEeyPvO14mrApVQ" name="LA32962-5"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dd1s4HSKEeGa4IXs2ghZEw" name="ECGType">
       <ownedLiteral xmi:id="_cUCWEMFTEeGyGv5RKvEgDA" name="LA18664-5"/>
@@ -97,7 +97,7 @@
       <ownedLiteral xmi:id="_cUheQMFTEeGyGv5RKvEgDA" name="LA18669-4"/>
       <ownedLiteral xmi:id="_cUnk4MFTEeGyGv5RKvEgDA" name="LA18670-2"/>
       <ownedLiteral xmi:id="_cUtrgMFTEeGyGv5RKvEgDA" name="LA18671-0"/>
-      <ownedLiteral xmi:id="_o5ApoBydEey7EIwEV5UU_A" name="NewLA-3304000"/>
+      <ownedLiteral xmi:id="_o5ApoBydEey7EIwEV5UU_A" name="LA32996-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_gXnWYHSKEeGa4IXs2ghZEw" name="MethodOfECGInterpretation">
       <ownedLiteral xmi:id="_cUzyIMFTEeGyGv5RKvEgDA" name="LA18682-7"/>
@@ -441,14 +441,14 @@
       <ownedLiteral xmi:id="_c4S5sMFTEeGyGv5RKvEgDA" name="LA18784-1"/>
       <ownedLiteral xmi:id="_c4ZnYMFTEeGyGv5RKvEgDA" name="LA18785-8"/>
       <ownedLiteral xmi:id="_c4fuAMFTEeGyGv5RKvEgDA" name="LA18786-6"/>
-      <ownedLiteral xmi:id="_d6HnEBoUEeyPvO14mrApVQ" name="NewLA-3515111"/>
-      <ownedLiteral xmi:id="_hyC64BoUEeyPvO14mrApVQ" name="NewLA-3515101"/>
-      <ownedLiteral xmi:id="_3jX5MBoUEeyPvO14mrApVQ" name="NewLA-3515097"/>
-      <ownedLiteral xmi:id="_4jXWkBoUEeyPvO14mrApVQ" name="NewLA-3515099"/>
-      <ownedLiteral xmi:id="_5fFX8BoUEeyPvO14mrApVQ" name="NewLA-3515109"/>
-      <ownedLiteral xmi:id="_6R-NcBoUEeyPvO14mrApVQ" name="NewLA-3515107"/>
-      <ownedLiteral xmi:id="_7I4AQBoUEeyPvO14mrApVQ" name="NewLA-3515105"/>
-      <ownedLiteral xmi:id="_8HK0gBoUEeyPvO14mrApVQ" name="NewLA-3515103"/>
+      <ownedLiteral xmi:id="_d6HnEBoUEeyPvO14mrApVQ" name="LA32940-1"/>
+      <ownedLiteral xmi:id="_hyC64BoUEeyPvO14mrApVQ" name="LA32939-3"/>
+      <ownedLiteral xmi:id="_3jX5MBoUEeyPvO14mrApVQ" name="LA32941-9"/>
+      <ownedLiteral xmi:id="_4jXWkBoUEeyPvO14mrApVQ" name="LA32942-7"/>
+      <ownedLiteral xmi:id="_5fFX8BoUEeyPvO14mrApVQ" name="LA32938-5"/>
+      <ownedLiteral xmi:id="_6R-NcBoUEeyPvO14mrApVQ" name="LA32943-5"/>
+      <ownedLiteral xmi:id="_7I4AQBoUEeyPvO14mrApVQ" name="LA32944-3"/>
+      <ownedLiteral xmi:id="_8HK0gBoUEeyPvO14mrApVQ" name="LA32945-0"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Hmgs4HSNEeGa4IXs2ghZEw" name="EyeFindingLocation">
       <ownedLiteral xmi:id="_c7LOkMFTEeGyGv5RKvEgDA" name="LA18787-4"/>
@@ -489,8 +489,8 @@
       <ownedLiteral xmi:id="_c-YTkMFTEeGyGv5RKvEgDA" name="LA18265-1"/>
       <ownedLiteral xmi:id="_u3uH8NNaEeSysKjHSGZfJQ" name="LA23822-2"/>
       <ownedLiteral xmi:id="_yH-XwNNaEeSysKjHSGZfJQ" name="LA23823-0"/>
-      <ownedLiteral xmi:id="_2hZz8BoWEeyPvO14mrApVQ" name="NewLA-3520026"/>
-      <ownedLiteral xmi:id="_3dtrMBoWEeyPvO14mrApVQ" name="NewLA-3520055"/>
+      <ownedLiteral xmi:id="_2hZz8BoWEeyPvO14mrApVQ" name="LA32958-3"/>
+      <ownedLiteral xmi:id="_3dtrMBoWEeyPvO14mrApVQ" name="LA32959-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_RqmA8HSNEeGa4IXs2ghZEw" name="ExistenceOfContraindicationsToThrombolyticUse">
       <ownedLiteral xmi:id="_c-wuEMFTEeGyGv5RKvEgDA" name="LA17114-2"/>
@@ -574,12 +574,18 @@
       <ownedLiteral xmi:id="_orh-IL5MEeWsSvGfUKC7GA" name="LA9292-9"/>
       <ownedLiteral xmi:id="_rQf1QL5MEeWsSvGfUKC7GA" name="LA9296-0"/>
       <ownedLiteral xmi:id="_tODHEL5MEeWsSvGfUKC7GA" name="LA9291-1"/>
-      <ownedLiteral xmi:id="_9QgmEBpfEeyPvO14mrApVQ" name="NewLA-9905051"/>
-      <ownedLiteral xmi:id="__CReoBpfEeyPvO14mrApVQ" name="NewLA-9905049"/>
-      <ownedLiteral xmi:id="__hkpwBpfEeyPvO14mrApVQ" name="NewLA-9905047"/>
-      <ownedLiteral xmi:id="_ABSEkBpgEeyPvO14mrApVQ" name="NewLA-9905045"/>
-      <ownedLiteral xmi:id="_AhYg8BpgEeyPvO14mrApVQ" name="NewLA-9905043"/>
-      <ownedLiteral xmi:id="_A-JVcBpgEeyPvO14mrApVQ" name="NewLA-9905002"/>
+      <ownedLiteral xmi:id="_9QgmEBpfEeyPvO14mrApVQ" name="LA32966-6"/>
+      <ownedLiteral xmi:id="__CReoBpfEeyPvO14mrApVQ" name="LA9277-0"/>
+      <ownedLiteral xmi:id="__hkpwBpfEeyPvO14mrApVQ" name="LA32964-1"/>
+      <ownedLiteral xmi:id="_ABSEkBpgEeyPvO14mrApVQ" name="LA28538-9"/>
+      <ownedLiteral xmi:id="_AhYg8BpgEeyPvO14mrApVQ" name="LA4634-7"/>
+      <ownedLiteral xmi:id="_A-JVcBpgEeyPvO14mrApVQ" name="LA32922-9"/>
+      <ownedLiteral xmi:id="_LtakIKviEeypEvPWkfHjRA" name="LA33278-5"/>
+      <ownedLiteral xmi:id="_QAMA4KviEeypEvPWkfHjRA" name="LA9405-7"/>
+      <ownedLiteral xmi:id="_TaT-YKviEeypEvPWkfHjRA" name="LA33280-1"/>
+      <ownedLiteral xmi:id="_WSkk8KviEeypEvPWkfHjRA" name="LA33281-9"/>
+      <ownedLiteral xmi:id="_afhtkKviEeypEvPWkfHjRA" name="LA33282-7"/>
+      <ownedLiteral xmi:id="_dLY24KviEeypEvPWkfHjRA" name="LA33279-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e70xAHSOEeGa4IXs2ghZEw" name="MedicationAuthorizationType">
       <ownedLiteral xmi:id="_dDXhQMFTEeGyGv5RKvEgDA" name="LA17187-8"/>
@@ -647,10 +653,10 @@
       <ownedLiteral xmi:id="_dIIFcMFTEeGyGv5RKvEgDA" name="LA9555-9"/>
       <ownedLiteral xmi:id="_ce0nkNNmEeSysKjHSGZfJQ" name="LA17130-8"/>
       <ownedLiteral xmi:id="_fVBYoNNmEeSysKjHSGZfJQ" name="LA23800-8"/>
-      <ownedLiteral xmi:id="_HMgyUA-CEey1-dRmTUcPqg" name="NewLA-NewLA-2301085"/>
-      <ownedLiteral xmi:id="_Msea8A-CEey1-dRmTUcPqg" name="NewLA-2301087"/>
-      <ownedLiteral xmi:id="_Q6bpIA-CEey1-dRmTUcPqg" name="NewLA-2301089"/>
-      <ownedLiteral xmi:id="_UiFsUA-CEey1-dRmTUcPqg" name="NewLA-2301091"/>
+      <ownedLiteral xmi:id="_HMgyUA-CEey1-dRmTUcPqg" name="LA17392-4"/>
+      <ownedLiteral xmi:id="_Msea8A-CEey1-dRmTUcPqg" name="LA18716-3"/>
+      <ownedLiteral xmi:id="_Q6bpIA-CEey1-dRmTUcPqg" name="LA15098-9"/>
+      <ownedLiteral xmi:id="_UiFsUA-CEey1-dRmTUcPqg" name="LA15099-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9Ifj8HSOEeGa4IXs2ghZEw" name="DispatchDelayType">
       <ownedLiteral xmi:id="_dJbtAMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -662,9 +668,9 @@
       <ownedLiteral xmi:id="_dKCxAMFTEeGyGv5RKvEgDA" name="LA17584-6"/>
       <ownedLiteral xmi:id="_dKI3oMFTEeGyGv5RKvEgDA" name="LA18081-2"/>
       <ownedLiteral xmi:id="_dKPlUMFTEeGyGv5RKvEgDA" name="LA7540-3"/>
-      <ownedLiteral xmi:id="_dJW2gBybEey7EIwEV5UU_A" name="NewLA-2208019"/>
-      <ownedLiteral xmi:id="_dpZogBybEey7EIwEV5UU_A" name="NewLA-2208021"/>
-      <ownedLiteral xmi:id="_eKEsoBybEey7EIwEV5UU_A" name="NewLA-2208023"/>
+      <ownedLiteral xmi:id="_dJW2gBybEey7EIwEV5UU_A" name="LA32992-2"/>
+      <ownedLiteral xmi:id="_dpZogBybEey7EIwEV5UU_A" name="LA32993-0"/>
+      <ownedLiteral xmi:id="_eKEsoBybEey7EIwEV5UU_A" name="LA32994-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EYSdYHSNEeGa4IXs2ghZEw" name="EyeAssessmentFinding">
       <ownedLiteral xmi:id="_c4mbsMFTEeGyGv5RKvEgDA" name="LA14698-7"/>
@@ -697,8 +703,8 @@
       <ownedLiteral xmi:id="_A_0kEL4vEeWsSvGfUKC7GA" name="LA17283-5"/>
       <ownedLiteral xmi:id="_KdTyML4vEeWsSvGfUKC7GA" name="LA17214-0"/>
       <ownedLiteral xmi:id="_SuGjsL4vEeWsSvGfUKC7GA" name="LA22440-4"/>
-      <ownedLiteral xmi:id="_diNn8BoVEeyPvO14mrApVQ" name="NewLA-3518061"/>
-      <ownedLiteral xmi:id="_ek3-0BoVEeyPvO14mrApVQ" name="NewLA-3518063"/>
+      <ownedLiteral xmi:id="_diNn8BoVEeyPvO14mrApVQ" name="LA19576-0"/>
+      <ownedLiteral xmi:id="_ek3-0BoVEeyPvO14mrApVQ" name="LA32946-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_AsjgkHSPEeGa4IXs2ghZEw" name="VehicleImpactArea">
       <ownedLiteral xmi:id="_dIOMEMFTEeGyGv5RKvEgDA" name="LA10137-0"/>
@@ -831,8 +837,8 @@
       <ownedLiteral xmi:id="_bJ5WYL5SEeWsSvGfUKC7GA" name="LA24418-8"/>
       <ownedLiteral xmi:id="_dOwKEL5SEeWsSvGfUKC7GA" name="LA24419-6"/>
       <ownedLiteral xmi:id="_f2Rl8L5SEeWsSvGfUKC7GA" name="LA24420-4"/>
-      <ownedLiteral xmi:id="_knaq4ByYEey7EIwEV5UU_A" name="NewLA-3913081"/>
-      <ownedLiteral xmi:id="_mAFG8ByYEey7EIwEV5UU_A" name="NewLA-3913079"/>
+      <ownedLiteral xmi:id="_knaq4ByYEey7EIwEV5UU_A" name="LA18765-0"/>
+      <ownedLiteral xmi:id="_mAFG8ByYEey7EIwEV5UU_A" name="LA18766-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hkC7AHSPEeGa4IXs2ghZEw" name="ReasonResuscitationNotAttempted">
       <ownedLiteral xmi:id="_d--08MFTEeGyGv5RKvEgDA" name="LA17063-1"/>
@@ -850,10 +856,10 @@
       <ownedLiteral xmi:id="_dVNfMMFTEeGyGv5RKvEgDA" name="LA17756-0"/>
       <ownedLiteral xmi:id="_dVTl0MFTEeGyGv5RKvEgDA" name="LA17757-8"/>
       <ownedLiteral xmi:id="_dVaTgMFTEeGyGv5RKvEgDA" name="LA17758-6"/>
-      <ownedLiteral xmi:id="_-LN5UA0CEey1-dRmTUcPqg" name="NewLA-3009023"/>
-      <ownedLiteral xmi:id="_Gs-fAA0DEey1-dRmTUcPqg" name="NewLA-3009025"/>
-      <ownedLiteral xmi:id="_JzJlwA0DEey1-dRmTUcPqg" name="NewLA-3009027"/>
-      <ownedLiteral xmi:id="_O6ZMYA0DEey1-dRmTUcPqg" name="NewLA-3009021"/>
+      <ownedLiteral xmi:id="_-LN5UA0CEey1-dRmTUcPqg" name="LA32912-0"/>
+      <ownedLiteral xmi:id="_Gs-fAA0DEey1-dRmTUcPqg" name="LA32913-8"/>
+      <ownedLiteral xmi:id="_JzJlwA0DEey1-dRmTUcPqg" name="LA32914-6"/>
+      <ownedLiteral xmi:id="_O6ZMYA0DEey1-dRmTUcPqg" name="LA32911-2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_s33YoHSPEeGa4IXs2ghZEw" name="ProcedureComplicationType">
       <ownedLiteral xmi:id="_dVgaIMFTEeGyGv5RKvEgDA" name="LA137-2"/>
@@ -909,7 +915,7 @@
       <ownedLiteral xmi:id="_daKQoMFTEeGyGv5RKvEgDA" name="LA18680-1"/>
       <ownedLiteral xmi:id="_daQXQMFTEeGyGv5RKvEgDA" name="LA18681-9"/>
       <ownedLiteral xmi:id="_tIeKsL4kEeWsSvGfUKC7GA" name="LA18679-3"/>
-      <ownedLiteral xmi:id="_aEflkLm6Eeuy-M_WzDUTYw" name="NewLA-4004021"/>
+      <ownedLiteral xmi:id="_aEflkLm6Eeuy-M_WzDUTYw" name="LA32909-6"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_62vuUHSPEeGa4IXs2ghZEw" name="AirwayDeviceType">
       <ownedLiteral xmi:id="_daXE8MFTEeGyGv5RKvEgDA" name="LA18004-4"/>
@@ -953,7 +959,7 @@
       <ownedLiteral xmi:id="_yK1JYNNYEeSysKjHSGZfJQ" name="LA17695-0"/>
       <ownedLiteral xmi:id="_2dyzYNNYEeSysKjHSGZfJQ" name="LA17694-3"/>
       <ownedLiteral xmi:id="_5lK0ANNYEeSysKjHSGZfJQ" name="LA17697-6"/>
-      <ownedLiteral xmi:id="_6D9B0BlfEeyirYLmelJuXQ" name="NewLA-4219011"/>
+      <ownedLiteral xmi:id="_6D9B0BlfEeyirYLmelJuXQ" name="LA32920-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_XTbfcHSSEeGa4IXs2ghZEw" name="DestinationChoiceReason">
       <ownedLiteral xmi:id="_dgx2AMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -980,15 +986,15 @@
       <ownedLiteral xmi:id="_djADkMFTEeGyGv5RKvEgDA" name="LA18693-4"/>
       <ownedLiteral xmi:id="_5xtUkL5PEeWsSvGfUKC7GA" name="LA24393-3"/>
       <ownedLiteral xmi:id="_VBxMcL5QEeWsSvGfUKC7GA" name="LA24392-5"/>
-      <ownedLiteral xmi:id="_hF_LkBljEeyirYLmelJuXQ" name="NewLA-4221031"/>
-      <ownedLiteral xmi:id="_mAv1YBljEeyirYLmelJuXQ" name="NewLA-4221027"/>
-      <ownedLiteral xmi:id="_r7NosBljEeyirYLmelJuXQ" name="NewLA-4221029"/>
-      <ownedLiteral xmi:id="_vU46QBljEeyirYLmelJuXQ" name="NewLA-4221025"/>
-      <ownedLiteral xmi:id="_6BjRQBljEeyirYLmelJuXQ" name="NewLA-4221039"/>
-      <ownedLiteral xmi:id="_88-gkBljEeyirYLmelJuXQ" name="NewLA-4221041"/>
-      <ownedLiteral xmi:id="_H06TcBlkEeyirYLmelJuXQ" name="NewLA-4221037"/>
-      <ownedLiteral xmi:id="_KqlgEBlkEeyirYLmelJuXQ" name="NewLA-4221035"/>
-      <ownedLiteral xmi:id="_OdOrQBlkEeyirYLmelJuXQ" name="NewLA-4221033"/>
+      <ownedLiteral xmi:id="_hF_LkBljEeyirYLmelJuXQ" name="LA32923-7"/>
+      <ownedLiteral xmi:id="_mAv1YBljEeyirYLmelJuXQ" name="LA32924-5"/>
+      <ownedLiteral xmi:id="_r7NosBljEeyirYLmelJuXQ" name="LA21437-1"/>
+      <ownedLiteral xmi:id="_vU46QBljEeyirYLmelJuXQ" name="LA32926-0"/>
+      <ownedLiteral xmi:id="_6BjRQBljEeyirYLmelJuXQ" name="LA32927-8"/>
+      <ownedLiteral xmi:id="_88-gkBljEeyirYLmelJuXQ" name="LA27338-5"/>
+      <ownedLiteral xmi:id="_H06TcBlkEeyirYLmelJuXQ" name="LA32929-4"/>
+      <ownedLiteral xmi:id="_KqlgEBlkEeyirYLmelJuXQ" name="LA32930-2"/>
+      <ownedLiteral xmi:id="_OdOrQBlkEeyirYLmelJuXQ" name="LA27-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ehZiAHSSEeGa4IXs2ghZEw" name="SafetyEquipmentType">
       <ownedLiteral xmi:id="_djGxQMFTEeGyGv5RKvEgDA" name="LA137-2"/>
@@ -1004,7 +1010,7 @@
       <ownedLiteral xmi:id="_dkIE8MFTEeGyGv5RKvEgDA" name="LA9391-9"/>
       <ownedLiteral xmi:id="_dkOyoMFTEeGyGv5RKvEgDA" name="LA9392-7"/>
       <ownedLiteral xmi:id="_dkVgUMFTEeGyGv5RKvEgDA" name="LA9393-5"/>
-      <ownedLiteral xmi:id="_GedrkBotEeyPvO14mrApVQ" name="NewLA-2907033"/>
+      <ownedLiteral xmi:id="_GedrkBotEeyPvO14mrApVQ" name="LA11137-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_t3m3AHSSEeGa4IXs2ghZEw" name="ProviderAdverseEventType">
       <ownedLiteral xmi:id="_dlWM8MFTEeGyGv5RKvEgDA" name="LA137-2"/>
@@ -1184,19 +1190,19 @@
       <ownedLiteral xmi:id="_dzgkwMFTEeGyGv5RKvEgDA" name="LA18717-1"/>
       <ownedLiteral xmi:id="_d0BiIMFTEeGyGv5RKvEgDA" name="LA18719-7"/>
       <ownedLiteral xmi:id="_d0IP0MFTEeGyGv5RKvEgDA" name="LA18720-5"/>
-      <ownedLiteral xmi:id="_Lm7McByZEey7EIwEV5UU_A" name="NewLA-2205021"/>
-      <ownedLiteral xmi:id="_MDDu0ByZEey7EIwEV5UU_A" name="NewLA-2205009"/>
-      <ownedLiteral xmi:id="_MkZhUByZEey7EIwEV5UU_A" name="NewLA-2205015"/>
-      <ownedLiteral xmi:id="_NPGrMByZEey7EIwEV5UU_A" name="NewLA-2205017"/>
-      <ownedLiteral xmi:id="_NviewByZEey7EIwEV5UU_A" name="NewLA-2205019"/>
-      <ownedLiteral xmi:id="_OZ4cQByZEey7EIwEV5UU_A" name="NewLA-2205007"/>
-      <ownedLiteral xmi:id="_O9RdMByZEey7EIwEV5UU_A" name="NewLA-2205023"/>
-      <ownedLiteral xmi:id="_PfzigByZEey7EIwEV5UU_A" name="NewLA-2205025"/>
-      <ownedLiteral xmi:id="_QC62oByZEey7EIwEV5UU_A" name="NewLA-2205027"/>
-      <ownedLiteral xmi:id="_Qi-PsByZEey7EIwEV5UU_A" name="NewLA-2205029"/>
-      <ownedLiteral xmi:id="_R9tvYByZEey7EIwEV5UU_A" name="NewLA-2205031"/>
-      <ownedLiteral xmi:id="_SfYSAByZEey7EIwEV5UU_A" name="NewLA-2205033"/>
-      <ownedLiteral xmi:id="_TBgusByZEey7EIwEV5UU_A" name="NewLA-2205035"/>
+      <ownedLiteral xmi:id="_Lm7McByZEey7EIwEV5UU_A" name="LA32978-1"/>
+      <ownedLiteral xmi:id="_MDDu0ByZEey7EIwEV5UU_A" name="LA32983-1"/>
+      <ownedLiteral xmi:id="_MkZhUByZEey7EIwEV5UU_A" name="LA32982-3"/>
+      <ownedLiteral xmi:id="_NPGrMByZEey7EIwEV5UU_A" name="LA32981-5"/>
+      <ownedLiteral xmi:id="_NviewByZEey7EIwEV5UU_A" name="LA32980-7"/>
+      <ownedLiteral xmi:id="_OZ4cQByZEey7EIwEV5UU_A" name="LA32979-9"/>
+      <ownedLiteral xmi:id="_O9RdMByZEey7EIwEV5UU_A" name="LA17595-2"/>
+      <ownedLiteral xmi:id="_PfzigByZEey7EIwEV5UU_A" name="LA32977-3"/>
+      <ownedLiteral xmi:id="_QC62oByZEey7EIwEV5UU_A" name="LA32984-9"/>
+      <ownedLiteral xmi:id="_Qi-PsByZEey7EIwEV5UU_A" name="LA32976-5"/>
+      <ownedLiteral xmi:id="_R9tvYByZEey7EIwEV5UU_A" name="LA32975-7"/>
+      <ownedLiteral xmi:id="_SfYSAByZEey7EIwEV5UU_A" name="LA32974-0"/>
+      <ownedLiteral xmi:id="_TBgusByZEey7EIwEV5UU_A" name="LA32973-2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UO9zcHSTEeGa4IXs2ghZEw" name="AirbagStatus">
       <ownedLiteral xmi:id="_d0O9gMFTEeGyGv5RKvEgDA" name="LA17384-1"/>
@@ -1231,18 +1237,18 @@
       <ownedLiteral xmi:id="_KOCrUL4oEeWsSvGfUKC7GA" name="LA9296-0"/>
       <ownedLiteral xmi:id="_M-bvUL4oEeWsSvGfUKC7GA" name="LA24387-5"/>
       <ownedLiteral xmi:id="_PVUHIL4oEeWsSvGfUKC7GA" name="LA9291-1"/>
-      <ownedLiteral xmi:id="_avMEkA9-Eey1-dRmTUcPqg" name="NewLA-9925002"/>
+      <ownedLiteral xmi:id="_avMEkA9-Eey1-dRmTUcPqg" name="LA32922-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_nU1REHSTEeGa4IXs2ghZEw" name="UnitEquipmentCapability">
       <ownedLiteral xmi:id="_vTXVkNNvEeSysKjHSGZfJQ" name="LA23840-4"/>
       <ownedLiteral xmi:id="_xx1jINNvEeSysKjHSGZfJQ" name="LA23841-2"/>
-      <ownedLiteral xmi:id="_Iv-_EByaEey7EIwEV5UU_A" name="NewLA-2207017"/>
-      <ownedLiteral xmi:id="_KeJxEByaEey7EIwEV5UU_A" name="NewLA-2207019"/>
-      <ownedLiteral xmi:id="_K5GnsByaEey7EIwEV5UU_A" name="NewLA-2207021"/>
-      <ownedLiteral xmi:id="_LYhuoByaEey7EIwEV5UU_A" name="NewLA-2207023"/>
-      <ownedLiteral xmi:id="_L3_R0ByaEey7EIwEV5UU_A" name="NewLA-2207025"/>
-      <ownedLiteral xmi:id="_MaKKwByaEey7EIwEV5UU_A" name="NewLA-2207027"/>
-      <ownedLiteral xmi:id="_M6posByaEey7EIwEV5UU_A" name="NewLA-2207015"/>
+      <ownedLiteral xmi:id="_Iv-_EByaEey7EIwEV5UU_A" name="LA32989-8"/>
+      <ownedLiteral xmi:id="_KeJxEByaEey7EIwEV5UU_A" name="LA32988-0"/>
+      <ownedLiteral xmi:id="_K5GnsByaEey7EIwEV5UU_A" name="LA32987-2"/>
+      <ownedLiteral xmi:id="_LYhuoByaEey7EIwEV5UU_A" name="LA32986-4"/>
+      <ownedLiteral xmi:id="_L3_R0ByaEey7EIwEV5UU_A" name="LA32991-4"/>
+      <ownedLiteral xmi:id="_MaKKwByaEey7EIwEV5UU_A" name="LA32985-6"/>
+      <ownedLiteral xmi:id="_M6posByaEey7EIwEV5UU_A" name="LA32990-6"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_yL1P0HSTEeGa4IXs2ghZEw" name="NonDrugAllergyType">
       <ownedComment xmi:id="_LyrcgDXhEeWpTYI46fwViQ">
@@ -1262,17 +1268,17 @@
       <ownedLiteral xmi:id="_dvifANNaEeSysKjHSGZfJQ" name="LA6150-2"/>
       <ownedLiteral xmi:id="_f2dIMNNaEeSysKjHSGZfJQ" name="LA23818-0"/>
       <ownedLiteral xmi:id="_pDI6MNNaEeSysKjHSGZfJQ" name="LA17666-1"/>
-      <ownedLiteral xmi:id="__33pgBoVEeyPvO14mrApVQ" name="NewLA-3519039"/>
-      <ownedLiteral xmi:id="_AlztkBoWEeyPvO14mrApVQ" name="NewLA-3519037"/>
-      <ownedLiteral xmi:id="_BtMMYBoWEeyPvO14mrApVQ" name="NewLA-3519043"/>
-      <ownedLiteral xmi:id="_CROGgBoWEeyPvO14mrApVQ" name="NewLA-3519029"/>
-      <ownedLiteral xmi:id="_C2bsYBoWEeyPvO14mrApVQ" name="NewLA-3519031"/>
-      <ownedLiteral xmi:id="_DxJBIBoWEeyPvO14mrApVQ" name="NewLA-3519035"/>
-      <ownedLiteral xmi:id="_EnHm4BoWEeyPvO14mrApVQ" name="NewLA-3519041"/>
-      <ownedLiteral xmi:id="_FeAyoBoWEeyPvO14mrApVQ" name="NewLA-3519045"/>
-      <ownedLiteral xmi:id="_GMwH8BoWEeyPvO14mrApVQ" name="NewLA-3519047"/>
-      <ownedLiteral xmi:id="_G7WTUBoWEeyPvO14mrApVQ" name="NewLA-3519049"/>
-      <ownedLiteral xmi:id="_IKzJABoWEeyPvO14mrApVQ" name="NewLA-3519033"/>
+      <ownedLiteral xmi:id="__33pgBoVEeyPvO14mrApVQ" name="LA17313-0"/>
+      <ownedLiteral xmi:id="_AlztkBoWEeyPvO14mrApVQ" name="LA32948-4"/>
+      <ownedLiteral xmi:id="_BtMMYBoWEeyPvO14mrApVQ" name="LA17678-6"/>
+      <ownedLiteral xmi:id="_CROGgBoWEeyPvO14mrApVQ" name="LA32951-8"/>
+      <ownedLiteral xmi:id="_C2bsYBoWEeyPvO14mrApVQ" name="LA17307-2"/>
+      <ownedLiteral xmi:id="_DxJBIBoWEeyPvO14mrApVQ" name="LA32953-4"/>
+      <ownedLiteral xmi:id="_EnHm4BoWEeyPvO14mrApVQ" name="LA32950-0"/>
+      <ownedLiteral xmi:id="_FeAyoBoWEeyPvO14mrApVQ" name="LA32956-7"/>
+      <ownedLiteral xmi:id="_GMwH8BoWEeyPvO14mrApVQ" name="LA17317-1"/>
+      <ownedLiteral xmi:id="_G7WTUBoWEeyPvO14mrApVQ" name="LA32955-9"/>
+      <ownedLiteral xmi:id="_IKzJABoWEeyPvO14mrApVQ" name="LA17668-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_4pdakHSTEeGa4IXs2ghZEw" name="BarrierToCare">
       <ownedLiteral xmi:id="_d5uhgMFTEeGyGv5RKvEgDA" name="LA17306-4"/>
@@ -1291,8 +1297,8 @@
       <ownedLiteral xmi:id="_d7D-QMFTEeGyGv5RKvEgDA" name="LA17711-5"/>
       <ownedLiteral xmi:id="_d7Kr8MFTEeGyGv5RKvEgDA" name="LA6301-1"/>
       <ownedLiteral xmi:id="_6p2SMNNaEeSysKjHSGZfJQ" name="LA23824-8"/>
-      <ownedLiteral xmi:id="_rRsYQBosEeyPvO14mrApVQ" name="NewLA-3101035"/>
-      <ownedLiteral xmi:id="_sOU_oBosEeyPvO14mrApVQ" name="NewLA-3101033"/>
+      <ownedLiteral xmi:id="_rRsYQBosEeyPvO14mrApVQ" name="LA32960-9"/>
+      <ownedLiteral xmi:id="_sOU_oBosEeyPvO14mrApVQ" name="LA32961-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_7FZRgHSTEeGa4IXs2ghZEw" name="ProtocolAgeCategory">
       <ownedLiteral xmi:id="_d7RZoMFTEeGyGv5RKvEgDA" name="LA17571-3"/>
@@ -1308,7 +1314,7 @@
       <ownedLiteral xmi:id="_d8F5AMFTEeGyGv5RKvEgDA" name="LA18122-4"/>
       <ownedLiteral xmi:id="_d8MmsMFTEeGyGv5RKvEgDA" name="LA18123-2"/>
       <ownedLiteral xmi:id="_d8TUYMFTEeGyGv5RKvEgDA" name="LA32-8"/>
-      <ownedLiteral xmi:id="_43X1wBlmEeyirYLmelJuXQ" name="NewLA-4224019NewCode"/>
+      <ownedLiteral xmi:id="_43X1wBlmEeyirYLmelJuXQ" name="LA32937-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BYIa4HSUEeGa4IXs2ghZEw" name="StrokeScale">
       <ownedLiteral xmi:id="_d8aCEMFTEeGyGv5RKvEgDA" name="LA17110-0"/>
@@ -1317,12 +1323,12 @@
       <ownedLiteral xmi:id="_d80RwMFTEeGyGv5RKvEgDA" name="LA18300-6"/>
       <ownedLiteral xmi:id="_d86YYMFTEeGyGv5RKvEgDA" name="LA3774-2"/>
       <ownedLiteral xmi:id="_J1IcQL5NEeWsSvGfUKC7GA" name="LA24430-3"/>
-      <ownedLiteral xmi:id="_AXefMByeEey7EIwEV5UU_A" name="NewLA-3330023"/>
-      <ownedLiteral xmi:id="_A06CEByeEey7EIwEV5UU_A" name="NewLA-3330021"/>
-      <ownedLiteral xmi:id="_BZKlsByeEey7EIwEV5UU_A" name="NewLA-3330019"/>
-      <ownedLiteral xmi:id="_B2RYcByeEey7EIwEV5UU_A" name="NewLA-3330017"/>
-      <ownedLiteral xmi:id="_CTKv0ByeEey7EIwEV5UU_A" name="NewLA-3330015"/>
-      <ownedLiteral xmi:id="_Cv02oByeEey7EIwEV5UU_A" name="NewLA-3330004"/>
+      <ownedLiteral xmi:id="_AXefMByeEey7EIwEV5UU_A" name="LA33001-1"/>
+      <ownedLiteral xmi:id="_A06CEByeEey7EIwEV5UU_A" name="LA33000-3"/>
+      <ownedLiteral xmi:id="_BZKlsByeEey7EIwEV5UU_A" name="LA32999-7"/>
+      <ownedLiteral xmi:id="_B2RYcByeEey7EIwEV5UU_A" name="LA32998-9"/>
+      <ownedLiteral xmi:id="_CTKv0ByeEey7EIwEV5UU_A" name="LA32997-1"/>
+      <ownedLiteral xmi:id="_Cv02oByeEey7EIwEV5UU_A" name="LA33002-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Deg4kHSUEeGa4IXs2ghZEw" name="GlasgowComaScoreSpecialCircumstances">
       <ownedLiteral xmi:id="_d9BGEMFTEeGyGv5RKvEgDA" name="LA17102-7"/>
@@ -1350,12 +1356,12 @@
       <ownedLiteral xmi:id="_d-rS8MFTEeGyGv5RKvEgDA" name="LA18099-4"/>
       <ownedLiteral xmi:id="_d-xZkMFTEeGyGv5RKvEgDA" name="LA18100-0"/>
       <ownedLiteral xmi:id="_d-4HQMFTEeGyGv5RKvEgDA" name="LA18101-8"/>
-      <ownedLiteral xmi:id="_sS-4gBpgEeyPvO14mrApVQ" name="NewLA-4507031"/>
-      <ownedLiteral xmi:id="_sxUaUBpgEeyPvO14mrApVQ" name="NewLA-4507033"/>
-      <ownedLiteral xmi:id="_tx5GgBpgEeyPvO14mrApVQ" name="NewLA-4507035"/>
-      <ownedLiteral xmi:id="_uMsMIBpgEeyPvO14mrApVQ" name="NewLA-4507037"/>
-      <ownedLiteral xmi:id="_urSzsBpgEeyPvO14mrApVQ" name="NewLA-4507039"/>
-      <ownedLiteral xmi:id="_vTmw4BpgEeyPvO14mrApVQ" name="NewLA-4507029"/>
+      <ownedLiteral xmi:id="_sS-4gBpgEeyPvO14mrApVQ" name="LA30039-4"/>
+      <ownedLiteral xmi:id="_sxUaUBpgEeyPvO14mrApVQ" name="LA32967-4"/>
+      <ownedLiteral xmi:id="_tx5GgBpgEeyPvO14mrApVQ" name="LA32968-2"/>
+      <ownedLiteral xmi:id="_uMsMIBpgEeyPvO14mrApVQ" name="LA30042-8"/>
+      <ownedLiteral xmi:id="_urSzsBpgEeyPvO14mrApVQ" name="LA30040-2"/>
+      <ownedLiteral xmi:id="_vTmw4BpgEeyPvO14mrApVQ" name="LA30037-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dw32sJsjEeGzXI65shd6Fw" name="MedicationNotGivenReason">
       <ownedLiteral xmi:id="_d_mgAMFTEeGyGv5RKvEgDA" name="LA15185-4"/>
@@ -1497,12 +1503,12 @@
       <ownedLiteral xmi:id="_vFwssMxDEeSOI6Ao2VuoSQ" name="LA22848-8"/>
       <ownedLiteral xmi:id="_yrkVwMxDEeSOI6Ao2VuoSQ" name="LA22849-6"/>
       <ownedLiteral xmi:id="_mnoA8L4xEeWsSvGfUKC7GA" name="LA22850-4"/>
-      <ownedLiteral xmi:id="__yN9cBllEeyirYLmelJuXQ" name="NewLA-9908037"/>
-      <ownedLiteral xmi:id="_E2GHABlmEeyirYLmelJuXQ" name="NewLA-9908039"/>
-      <ownedLiteral xmi:id="_GC5RUBlmEeyirYLmelJuXQ" name="NewLA-9908041"/>
-      <ownedLiteral xmi:id="_GkGg8BlmEeyirYLmelJuXQ" name="NewLA-9908043"/>
-      <ownedLiteral xmi:id="_HpnXgBlmEeyirYLmelJuXQ" name="NewLA-9908045"/>
-      <ownedLiteral xmi:id="_IskpUBlmEeyirYLmelJuXQ" name="NewLA-9908047"/>
+      <ownedLiteral xmi:id="__yN9cBllEeyirYLmelJuXQ" name="LA32931-0"/>
+      <ownedLiteral xmi:id="_E2GHABlmEeyirYLmelJuXQ" name="LA32934-4"/>
+      <ownedLiteral xmi:id="_GC5RUBlmEeyirYLmelJuXQ" name="LA32935-1"/>
+      <ownedLiteral xmi:id="_GkGg8BlmEeyirYLmelJuXQ" name="LA32936-9"/>
+      <ownedLiteral xmi:id="_HpnXgBlmEeyirYLmelJuXQ" name="LA32933-6"/>
+      <ownedLiteral xmi:id="_IskpUBlmEeyirYLmelJuXQ" name="LA20786-2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PLHNoMxGEeSOI6Ao2VuoSQ" name="DestinationWardKind">
       <ownedLiteral xmi:id="_bdovMMxGEeSOI6Ao2VuoSQ" name="LA22808-2"/>
@@ -1559,131 +1565,107 @@
       <ownedLiteral xmi:id="_5Rd6oNYmEeSOzuJFX8ssTQ" name="280361007"/>
       <ownedLiteral xmi:id="_9Ct-sNYmEeSOzuJFX8ssTQ" name="15562006"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wCFtYA9xEey1-dRmTUcPqg" name="ProviderCategory">
-      <ownedLiteral xmi:id="_8YkscA9yEey1-dRmTUcPqg" name="NewLA-3006001"/>
-      <ownedLiteral xmi:id="_DSACYA9zEey1-dRmTUcPqg" name="NewLA-3006003"/>
-      <ownedLiteral xmi:id="_Ij6n8A9zEey1-dRmTUcPqg" name="NewLA-3006005"/>
-      <ownedLiteral xmi:id="_MLP7AA9zEey1-dRmTUcPqg" name="NewLA-3006007"/>
-      <ownedLiteral xmi:id="_QWfzcA9zEey1-dRmTUcPqg" name="NewLA-3006009"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BwnLgBlgEeyirYLmelJuXQ" name="FinalPatientCondition">
       <ownedLiteral xmi:id="_BwnLgRlgEeyirYLmelJuXQ" name="LA17696-8"/>
       <ownedLiteral xmi:id="_BwnLghlgEeyirYLmelJuXQ" name="LA17695-0"/>
       <ownedLiteral xmi:id="_BwnLgxlgEeyirYLmelJuXQ" name="LA17694-3"/>
       <ownedLiteral xmi:id="_BwnLhBlgEeyirYLmelJuXQ" name="LA17697-6"/>
-      <ownedLiteral xmi:id="_BwnLhRlgEeyirYLmelJuXQ" name="NewLA-4219011"/>
-      <ownedLiteral xmi:id="_ghUDIBlhEeyirYLmelJuXQ" name="NewLA-4219009"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lF8AsBloEeyirYLmelJuXQ" name="EMSUnitDisposition">
-      <ownedLiteral xmi:id="_8QsQEBloEeyirYLmelJuXQ" name="newLA4227003"/>
-      <ownedLiteral xmi:id="_BSR6oBlpEeyirYLmelJuXQ" name="newLA4227005"/>
-      <ownedLiteral xmi:id="_ER_NABlpEeyirYLmelJuXQ" name="newLA4227007"/>
-      <ownedLiteral xmi:id="_Ic35EBlpEeyirYLmelJuXQ" name="newLA4227009"/>
-      <ownedLiteral xmi:id="_Le11QBlpEeyirYLmelJuXQ" name="newLA4227011"/>
-      <ownedLiteral xmi:id="_OYwBoBlpEeyirYLmelJuXQ" name="newLA4227001"/>
+      <ownedLiteral xmi:id="_BwnLhRlgEeyirYLmelJuXQ" name="LA32920-3"/>
+      <ownedLiteral xmi:id="_ghUDIBlhEeyirYLmelJuXQ" name="LA32921-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_v7TnwBloEeyirYLmelJuXQ" name="PatientEngagement">
-      <ownedLiteral xmi:id="_cUiAABlpEeyirYLmelJuXQ" name="newLA4228005"/>
-      <ownedLiteral xmi:id="_gt50ABlpEeyirYLmelJuXQ" name="newLA4228007"/>
-      <ownedLiteral xmi:id="_kKjhEBlpEeyirYLmelJuXQ" name="newLA4228003"/>
-      <ownedLiteral xmi:id="_mnF08BlpEeyirYLmelJuXQ" name="newLA4228001"/>
-      <ownedLiteral xmi:id="_plVHsBlpEeyirYLmelJuXQ" name="newLA4228009"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4WrRkBloEeyirYLmelJuXQ" name="EMSTransportDisposition">
-      <ownedLiteral xmi:id="_TggwMBlqEeyirYLmelJuXQ" name="newLA4230007"/>
-      <ownedLiteral xmi:id="_W0H2ABlqEeyirYLmelJuXQ" name="newLA4230005"/>
-      <ownedLiteral xmi:id="_ZBCZgBlqEeyirYLmelJuXQ" name="newLA4230011"/>
-      <ownedLiteral xmi:id="_bwsdsBlqEeyirYLmelJuXQ" name="newLA4230003"/>
-      <ownedLiteral xmi:id="_d-kDcBlqEeyirYLmelJuXQ" name="newLA4230009"/>
-      <ownedLiteral xmi:id="_gwMdkBlqEeyirYLmelJuXQ" name="newLA4230013"/>
-      <ownedLiteral xmi:id="_kBP-oBlqEeyirYLmelJuXQ" name="newLA4230001"/>
+      <ownedLiteral xmi:id="_cUiAABlpEeyirYLmelJuXQ" name="LA33311-4"/>
+      <ownedLiteral xmi:id="_gt50ABlpEeyirYLmelJuXQ" name="LA33312-2"/>
+      <ownedLiteral xmi:id="_kKjhEBlpEeyirYLmelJuXQ" name="LA33310-6"/>
+      <ownedLiteral xmi:id="_mnF08BlpEeyirYLmelJuXQ" name="LA33309-8"/>
+      <ownedLiteral xmi:id="_plVHsBlpEeyirYLmelJuXQ" name="LA33313-0"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BHmPMBoaEeyPvO14mrApVQ" name="LungFinding">
-      <ownedLiteral xmi:id="_g3HDABocEeyPvO14mrApVQ" name="newLA3523001"/>
-      <ownedLiteral xmi:id="_iHGrQBocEeyPvO14mrApVQ" name="newLA3523003"/>
-      <ownedLiteral xmi:id="_i3IaABocEeyPvO14mrApVQ" name="newLA3523013"/>
-      <ownedLiteral xmi:id="_jjGIIBocEeyPvO14mrApVQ" name="newLA3523005"/>
-      <ownedLiteral xmi:id="_kJSlcBocEeyPvO14mrApVQ" name="newLA3523007"/>
-      <ownedLiteral xmi:id="_k0W7sBocEeyPvO14mrApVQ" name="newLA3523011"/>
-      <ownedLiteral xmi:id="_lkbGsBocEeyPvO14mrApVQ" name="newLA3523031"/>
-      <ownedLiteral xmi:id="_mJhX0BocEeyPvO14mrApVQ" name="newLA3523009"/>
-      <ownedLiteral xmi:id="_mz0SABocEeyPvO14mrApVQ" name="newLA3523017"/>
-      <ownedLiteral xmi:id="_nWZaoBocEeyPvO14mrApVQ" name="newLA3523019"/>
-      <ownedLiteral xmi:id="_n_pzABocEeyPvO14mrApVQ" name="newLA3523021"/>
-      <ownedLiteral xmi:id="_olpcABocEeyPvO14mrApVQ" name="newLA3523023"/>
-      <ownedLiteral xmi:id="_qz-UwBocEeyPvO14mrApVQ" name="newLA3523027"/>
-      <ownedLiteral xmi:id="_r1ifcBocEeyPvO14mrApVQ" name="newLA3523029"/>
-      <ownedLiteral xmi:id="_svjQoBocEeyPvO14mrApVQ" name="newLA3523025"/>
+      <ownedLiteral xmi:id="_g3HDABocEeyPvO14mrApVQ" name="LA33360-1"/>
+      <ownedLiteral xmi:id="_iHGrQBocEeyPvO14mrApVQ" name="LA33354-4"/>
+      <ownedLiteral xmi:id="_i3IaABocEeyPvO14mrApVQ" name="LA6626-1"/>
+      <ownedLiteral xmi:id="_jjGIIBocEeyPvO14mrApVQ" name="LA18402-0"/>
+      <ownedLiteral xmi:id="_kJSlcBocEeyPvO14mrApVQ" name="LA33362-7"/>
+      <ownedLiteral xmi:id="_k0W7sBocEeyPvO14mrApVQ" name="LA17232-2"/>
+      <ownedLiteral xmi:id="_lkbGsBocEeyPvO14mrApVQ" name="LA33365-0"/>
+      <ownedLiteral xmi:id="_mJhX0BocEeyPvO14mrApVQ" name="LA18226-3"/>
+      <ownedLiteral xmi:id="_mz0SABocEeyPvO14mrApVQ" name="LA7460-4"/>
+      <ownedLiteral xmi:id="_nWZaoBocEeyPvO14mrApVQ" name="LA33356-9"/>
+      <ownedLiteral xmi:id="_n_pzABocEeyPvO14mrApVQ" name="LA33355-1"/>
+      <ownedLiteral xmi:id="_olpcABocEeyPvO14mrApVQ" name="LA33363-5"/>
+      <ownedLiteral xmi:id="_qz-UwBocEeyPvO14mrApVQ" name="LA17612-5"/>
+      <ownedLiteral xmi:id="_r1ifcBocEeyPvO14mrApVQ" name="LA33364-3"/>
+      <ownedLiteral xmi:id="_svjQoBocEeyPvO14mrApVQ" name="LA17236-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VaCGQBodEeyPvO14mrApVQ" name="LungFindingLocation">
-      <ownedLiteral xmi:id="_aGPWsBodEeyPvO14mrApVQ" name="newLA3522003"/>
-      <ownedLiteral xmi:id="_alUfYBodEeyPvO14mrApVQ" name="newLA3522001"/>
-      <ownedLiteral xmi:id="_bDIcwBodEeyPvO14mrApVQ" name="newLA3522005"/>
+      <ownedLiteral xmi:id="_aGPWsBodEeyPvO14mrApVQ" name="LA4306-2"/>
+      <ownedLiteral xmi:id="_alUfYBodEeyPvO14mrApVQ" name="LA4585-1"/>
+      <ownedLiteral xmi:id="_bDIcwBodEeyPvO14mrApVQ" name="LA25377-5"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_sQNMwBodEeyPvO14mrApVQ" name="ChestFinding">
-      <ownedLiteral xmi:id="_YFJ90BofEeyPvO14mrApVQ" name="newLA3525007"/>
-      <ownedLiteral xmi:id="_YllKUBofEeyPvO14mrApVQ" name="newLA3525025"/>
-      <ownedLiteral xmi:id="_Zcwp8BofEeyPvO14mrApVQ" name="newLA3525027"/>
-      <ownedLiteral xmi:id="_aUXnYBofEeyPvO14mrApVQ" name="newLA3525029"/>
-      <ownedLiteral xmi:id="_a8_toBofEeyPvO14mrApVQ" name="newLA3525047"/>
-      <ownedLiteral xmi:id="_bjUGwBofEeyPvO14mrApVQ" name="newLA3525021"/>
-      <ownedLiteral xmi:id="_cN8YIBofEeyPvO14mrApVQ" name="newLA3525049"/>
-      <ownedLiteral xmi:id="_c1s7sBofEeyPvO14mrApVQ" name="newLA3525019"/>
-      <ownedLiteral xmi:id="_dc9I8BofEeyPvO14mrApVQ" name="newLA3525017"/>
-      <ownedLiteral xmi:id="_eF4xMBofEeyPvO14mrApVQ" name="newLA3525015"/>
-      <ownedLiteral xmi:id="_eqRQoBofEeyPvO14mrApVQ" name="newLA3525013"/>
-      <ownedLiteral xmi:id="_gbbsQBofEeyPvO14mrApVQ" name="newLA3525023"/>
-      <ownedLiteral xmi:id="_hMnRkBofEeyPvO14mrApVQ" name="newLA3525009"/>
-      <ownedLiteral xmi:id="_kVFeYBofEeyPvO14mrApVQ" name="newLA3525005"/>
-      <ownedLiteral xmi:id="_k29cYBofEeyPvO14mrApVQ" name="newLA3525003"/>
-      <ownedLiteral xmi:id="_lVRJABofEeyPvO14mrApVQ" name="newLA3525001"/>
-      <ownedLiteral xmi:id="_l24oUBofEeyPvO14mrApVQ" name="newLA3525033"/>
-      <ownedLiteral xmi:id="_ma1p8BofEeyPvO14mrApVQ" name="newLA3525035"/>
-      <ownedLiteral xmi:id="_m_XTUBofEeyPvO14mrApVQ" name="newLA3525037"/>
-      <ownedLiteral xmi:id="_nv4xUBofEeyPvO14mrApVQ" name="newLA3525039"/>
-      <ownedLiteral xmi:id="_oQe88BofEeyPvO14mrApVQ" name="newLA3525041"/>
-      <ownedLiteral xmi:id="_o2Kc4BofEeyPvO14mrApVQ" name="newLA3525043"/>
-      <ownedLiteral xmi:id="_pydtEBofEeyPvO14mrApVQ" name="newLA3525045"/>
-      <ownedLiteral xmi:id="_qpLSoBofEeyPvO14mrApVQ" name="newLA3525011"/>
+      <ownedLiteral xmi:id="_YFJ90BofEeyPvO14mrApVQ" name="LA17208-2"/>
+      <ownedLiteral xmi:id="_YllKUBofEeyPvO14mrApVQ" name="LA18236-2"/>
+      <ownedLiteral xmi:id="_Zcwp8BofEeyPvO14mrApVQ" name="LA7452-1"/>
+      <ownedLiteral xmi:id="_aUXnYBofEeyPvO14mrApVQ" name="LA6626-1"/>
+      <ownedLiteral xmi:id="_a8_toBofEeyPvO14mrApVQ" name="LA7423-2"/>
+      <ownedLiteral xmi:id="_bjUGwBofEeyPvO14mrApVQ" name="LA18225-5"/>
+      <ownedLiteral xmi:id="_cN8YIBofEeyPvO14mrApVQ" name="LA23810-7"/>
+      <ownedLiteral xmi:id="_c1s7sBofEeyPvO14mrApVQ" name="LA17229-8"/>
+      <ownedLiteral xmi:id="_dc9I8BofEeyPvO14mrApVQ" name="LA33345-2"/>
+      <ownedLiteral xmi:id="_eF4xMBofEeyPvO14mrApVQ" name="LA33353-6"/>
+      <ownedLiteral xmi:id="_eqRQoBofEeyPvO14mrApVQ" name="LA33346-0"/>
+      <ownedLiteral xmi:id="_gbbsQBofEeyPvO14mrApVQ" name="LA33342-9"/>
+      <ownedLiteral xmi:id="_hMnRkBofEeyPvO14mrApVQ" name="LA17209-0"/>
+      <ownedLiteral xmi:id="_kVFeYBofEeyPvO14mrApVQ" name="LA17222-3"/>
+      <ownedLiteral xmi:id="_k29cYBofEeyPvO14mrApVQ" name="LA18220-6"/>
+      <ownedLiteral xmi:id="_lVRJABofEeyPvO14mrApVQ" name="LA7410-9"/>
+      <ownedLiteral xmi:id="_l24oUBofEeyPvO14mrApVQ" name="LA7460-4"/>
+      <ownedLiteral xmi:id="_ma1p8BofEeyPvO14mrApVQ" name="LA33332-0"/>
+      <ownedLiteral xmi:id="_m_XTUBofEeyPvO14mrApVQ" name="LA17214-0"/>
+      <ownedLiteral xmi:id="_nv4xUBofEeyPvO14mrApVQ" name="LA18231-3"/>
+      <ownedLiteral xmi:id="_oQe88BofEeyPvO14mrApVQ" name="LA17709-9"/>
+      <ownedLiteral xmi:id="_o2Kc4BofEeyPvO14mrApVQ" name="LA17212-4"/>
+      <ownedLiteral xmi:id="_pydtEBofEeyPvO14mrApVQ" name="LA22440-4"/>
+      <ownedLiteral xmi:id="_qpLSoBofEeyPvO14mrApVQ" name="LA33338-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_yFhaUBodEeyPvO14mrApVQ" name="ChestFindingLocation">
-      <ownedLiteral xmi:id="_zeBo4BoeEeyPvO14mrApVQ" name="newLA3524011"/>
-      <ownedLiteral xmi:id="_0TeqMBoeEeyPvO14mrApVQ" name="newLA3524001"/>
-      <ownedLiteral xmi:id="_0zveoBoeEeyPvO14mrApVQ" name="newLA3524003"/>
-      <ownedLiteral xmi:id="_1WQ84BoeEeyPvO14mrApVQ" name="newLA3524005"/>
-      <ownedLiteral xmi:id="_123vkBoeEeyPvO14mrApVQ" name="newLA3524009"/>
-      <ownedLiteral xmi:id="_2bITMBoeEeyPvO14mrApVQ" name="newLA3524013"/>
-      <ownedLiteral xmi:id="_3D7_oBoeEeyPvO14mrApVQ" name="newLA3524015"/>
-      <ownedLiteral xmi:id="_4UCVkBoeEeyPvO14mrApVQ" name="newLA3524007"/>
+      <ownedLiteral xmi:id="_zeBo4BoeEeyPvO14mrApVQ" name="LA33302-3"/>
+      <ownedLiteral xmi:id="_0TeqMBoeEeyPvO14mrApVQ" name="LA33301-5"/>
+      <ownedLiteral xmi:id="_0zveoBoeEeyPvO14mrApVQ" name="LA33300-7"/>
+      <ownedLiteral xmi:id="_1WQ84BoeEeyPvO14mrApVQ" name="LA33299-1"/>
+      <ownedLiteral xmi:id="_123vkBoeEeyPvO14mrApVQ" name="LA33297-5"/>
+      <ownedLiteral xmi:id="_2bITMBoeEeyPvO14mrApVQ" name="LA33296-7"/>
+      <ownedLiteral xmi:id="_3D7_oBoeEeyPvO14mrApVQ" name="LA33298-3"/>
+      <ownedLiteral xmi:id="_4UCVkBoeEeyPvO14mrApVQ" name="LA33295-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_K-niAB7YEeyBnPWCl2bgOQ" name="ActCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_-m7XIB7YEeyBnPWCl2bgOQ" name="SNOMED CT"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jnuB4B7cEeyBnPWCl2bgOQ" name="ActStatus"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_sBvpQDKjEeyOwtfRawW6Qw" name="Unit Disposition">
-      <ownedLiteral xmi:id="_xalWMDKjEeyOwtfRawW6Qw" name="newLA4227003"/>
-      <ownedLiteral xmi:id="_BC69ADKkEeyOwtfRawW6Qw" name="newLA4227005"/>
-      <ownedLiteral xmi:id="_FJB2wDKkEeyOwtfRawW6Qw" name="newLA4227007"/>
-      <ownedLiteral xmi:id="_JtncQDKkEeyOwtfRawW6Qw" name="newLA4227009NewCode"/>
-      <ownedLiteral xmi:id="_N3Z8IDKkEeyOwtfRawW6Qw" name="newLA4227011"/>
-      <ownedLiteral xmi:id="_QUYU4DKkEeyOwtfRawW6Qw" name="newLA4227001"/>
+      <ownedLiteral xmi:id="_xalWMDKjEeyOwtfRawW6Qw" name="LA33304-9"/>
+      <ownedLiteral xmi:id="_BC69ADKkEeyOwtfRawW6Qw" name="LA33305-6"/>
+      <ownedLiteral xmi:id="_FJB2wDKkEeyOwtfRawW6Qw" name="LA33306-4"/>
+      <ownedLiteral xmi:id="_JtncQDKkEeyOwtfRawW6Qw" name="LA33307-2"/>
+      <ownedLiteral xmi:id="_N3Z8IDKkEeyOwtfRawW6Qw" name="LA33308-0"/>
+      <ownedLiteral xmi:id="_QUYU4DKkEeyOwtfRawW6Qw" name="LA33303-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_04PBcDKmEeyOwtfRawW6Qw" name="CrewDisposition">
-      <ownedLiteral xmi:id="_rzQkgDKnEeyOwtfRawW6Qw" name="newLA4229013"/>
-      <ownedLiteral xmi:id="_w8o5IDKnEeyOwtfRawW6Qw" name="newLA4229011"/>
-      <ownedLiteral xmi:id="_zwObEDKnEeyOwtfRawW6Qw" name="newLA4229009"/>
-      <ownedLiteral xmi:id="_2jX4IDKnEeyOwtfRawW6Qw" name="newLA4229007"/>
-      <ownedLiteral xmi:id="_5g5ZMDKnEeyOwtfRawW6Qw" name="newLA4229005"/>
-      <ownedLiteral xmi:id="_72f-oDKnEeyOwtfRawW6Qw" name="newLA4229003"/>
-      <ownedLiteral xmi:id="_-BDKoDKnEeyOwtfRawW6Qw" name="newLA4229001"/>
+      <ownedLiteral xmi:id="_rzQkgDKnEeyOwtfRawW6Qw" name="LA33320-5"/>
+      <ownedLiteral xmi:id="_w8o5IDKnEeyOwtfRawW6Qw" name="LA33319-7"/>
+      <ownedLiteral xmi:id="_zwObEDKnEeyOwtfRawW6Qw" name="LA33318-9"/>
+      <ownedLiteral xmi:id="_2jX4IDKnEeyOwtfRawW6Qw" name="LA33317-1"/>
+      <ownedLiteral xmi:id="_5g5ZMDKnEeyOwtfRawW6Qw" name="LA33316-3"/>
+      <ownedLiteral xmi:id="_72f-oDKnEeyOwtfRawW6Qw" name="LA33315-5"/>
+      <ownedLiteral xmi:id="_-BDKoDKnEeyOwtfRawW6Qw" name="LA33314-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Q48csDKzEeyOwtfRawW6Qw" name="TransportDisposition">
-      <ownedLiteral xmi:id="_b9OpgDKzEeyOwtfRawW6Qw" name="newLA4230013"/>
-      <ownedLiteral xmi:id="_fwWV0DKzEeyOwtfRawW6Qw" name="newLA4230011"/>
-      <ownedLiteral xmi:id="_oz1vkDKzEeyOwtfRawW6Qw" name="newLA4230009"/>
-      <ownedLiteral xmi:id="_rvpZYDKzEeyOwtfRawW6Qw" name="newLA4230007"/>
-      <ownedLiteral xmi:id="_uVbI0DKzEeyOwtfRawW6Qw" name="newLA4230005"/>
-      <ownedLiteral xmi:id="_wMh0YDKzEeyOwtfRawW6Qw" name="newLA4230003"/>
-      <ownedLiteral xmi:id="_yZmv8DKzEeyOwtfRawW6Qw" name="newLA4230001"/>
+      <ownedLiteral xmi:id="_b9OpgDKzEeyOwtfRawW6Qw" name="LA33327-0"/>
+      <ownedLiteral xmi:id="_fwWV0DKzEeyOwtfRawW6Qw" name="LA33326-2"/>
+      <ownedLiteral xmi:id="_oz1vkDKzEeyOwtfRawW6Qw" name="LA29248-4"/>
+      <ownedLiteral xmi:id="_rvpZYDKzEeyOwtfRawW6Qw" name="LA33324-7"/>
+      <ownedLiteral xmi:id="_uVbI0DKzEeyOwtfRawW6Qw" name="LA33323-9"/>
+      <ownedLiteral xmi:id="_wMh0YDKzEeyOwtfRawW6Qw" name="LA33322-1"/>
+      <ownedLiteral xmi:id="_yZmv8DKzEeyOwtfRawW6Qw" name="LA33321-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_vk1ScDX5EeyDmf_o8i-KfQ" name="ICD-10 CM AND PCS">
       <ownedComment xmi:id="_FQeDADX7EeyDmf_o8i-KfQ">
@@ -3011,7 +2993,7 @@
   <term:ValueSetCode xmi:id="_A4FjMNYmEeSOzuJFX8ssTQ" conceptName="Subcutaneous port" base_EnumerationLiteral="_A4E8INYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_D93oYdYmEeSOzuJFX8ssTQ" conceptName="Blow by oxygen mask" base_EnumerationLiteral="_D93oYNYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" binding="Dynamic" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_-m7-MB7YEeyBnPWCl2bgOQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_5Rd6odYmEeSOzuJFX8ssTQ" conceptName="Tracheostomy stoma" base_EnumerationLiteral="_5Rd6oNYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_9CulwNYmEeSOzuJFX8ssTQ" conceptName="Structure of respiratory region of nose" base_EnumerationLiteral="_9Ct-sNYmEeSOzuJFX8ssTQ"/>
@@ -3084,12 +3066,6 @@
   <term:ValueSetCode xmi:id="_O6aagA0DEey1-dRmTUcPqg" conceptName="Compressions-Hands Only CPR" base_EnumerationLiteral="_O6ZMYA0DEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_uWkC4A0EEey1-dRmTUcPqg" conceptName="Non-STEMI Septal Ischemia" base_EnumerationLiteral="_uWjb0A0EEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_xWUYkA0EEey1-dRmTUcPqg" conceptName="STEMI Septal Ischemia" base_EnumerationLiteral="_xWTKcA0EEey1-dRmTUcPqg"/>
-  <term:ValueSetVersion xmi:id="_wCIwsA9xEey1-dRmTUcPqg" identifier="2.16.840.1.113883.17.3.11.110" definition="Classification of person, EMS or otherwise, providing care" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_wCFtYA9xEey1-dRmTUcPqg"/>
-  <term:ValueSetCode xmi:id="_8Yl6kA9yEey1-dRmTUcPqg" conceptName="Family Member" base_EnumerationLiteral="_8YkscA9yEey1-dRmTUcPqg"/>
-  <term:ValueSetCode xmi:id="_DSBQgA9zEey1-dRmTUcPqg" conceptName="First Responder (Fire, Law, EMS)" base_EnumerationLiteral="_DSACYA9zEey1-dRmTUcPqg"/>
-  <term:ValueSetCode xmi:id="_Ij7PAA9zEey1-dRmTUcPqg" conceptName="Healthcare Professional (Non-EMS)" base_EnumerationLiteral="_Ij6n8A9zEey1-dRmTUcPqg"/>
-  <term:ValueSetCode xmi:id="_MLQiEA9zEey1-dRmTUcPqg" conceptName="Lay Person (Non-Family)" base_EnumerationLiteral="_MLP7AA9zEey1-dRmTUcPqg"/>
-  <term:ValueSetCode xmi:id="_QWgagA9zEey1-dRmTUcPqg" conceptName="Other EMS Professional (not part of dispatched response)" base_EnumerationLiteral="_QWfzcA9zEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_avN5wA9-Eey1-dRmTUcPqg" conceptName="Emergency Medical Technician - Intermediate" base_EnumerationLiteral="_avMEkA9-Eey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_HMhZYA-CEey1-dRmTUcPqg" conceptName="Altered Mental Status" base_EnumerationLiteral="_HMgyUA-CEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_MsfCAA-CEey1-dRmTUcPqg" conceptName="Intercept" base_EnumerationLiteral="_Msea8A-CEey1-dRmTUcPqg"/>
@@ -3119,27 +3095,12 @@
   <term:ValueSetCode xmi:id="_HpoloBlmEeyirYLmelJuXQ" conceptName="Cancer Center" base_EnumerationLiteral="_HpnXgBlmEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_IslQYBlmEeyirYLmelJuXQ" conceptName="Labor and Delivery" base_EnumerationLiteral="_IskpUBlmEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_43Zq8BlmEeyirYLmelJuXQ" conceptName="Yes-Sepsis" base_EnumerationLiteral="_43X1wBlmEeyirYLmelJuXQ"/>
-  <term:ValueSetVersion xmi:id="_lF914BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.112" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_lF8AsBloEeyirYLmelJuXQ"/>
   <term:ValueSetVersion xmi:id="_v7U14BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.113" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_v7TnwBloEeyirYLmelJuXQ"/>
-  <term:ValueSetVersion xmi:id="_4Wr4oBloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.115" binding="Dynamic" base_Enumeration="_4WrRkBloEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_8Qs3IBloEeyirYLmelJuXQ" conceptName="Cancelled on Scene" base_EnumerationLiteral="_8QsQEBloEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_BSTv0BlpEeyirYLmelJuXQ" conceptName="Cancelled Prior to Arrival at Scene" base_EnumerationLiteral="_BSR6oBlpEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_ESAbIBlpEeyirYLmelJuXQ" conceptName="No Patient Contact" base_EnumerationLiteral="_ER_NABlpEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_Ic5uQBlpEeyirYLmelJuXQ" conceptName="No Patient Found" base_EnumerationLiteral="_Ic35EBlpEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_Le3DYBlpEeyirYLmelJuXQ" conceptName="Non-Patient Incident (Not Otherwise Listed)" base_EnumerationLiteral="_Le11QBlpEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_OYxPwBlpEeyirYLmelJuXQ" conceptName="Patient Contact Made" base_EnumerationLiteral="_OYwBoBlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_cUj1MBlpEeyirYLmelJuXQ" conceptName="Patient Evaluated, No Care Required" base_EnumerationLiteral="_cUiAABlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_gt7pMBlpEeyirYLmelJuXQ" conceptName="Patient Refused Evaluation/Care" base_EnumerationLiteral="_gt50ABlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_kKkvMBlpEeyirYLmelJuXQ" conceptName="Patient Evaluated and Refused Care" base_EnumerationLiteral="_kKjhEBlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_mnHDEBlpEeyirYLmelJuXQ" conceptName="Patient Evaluated and Care Provided" base_EnumerationLiteral="_mnF08BlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_plVuwBlpEeyirYLmelJuXQ" conceptName="Patient Support Services Provided" base_EnumerationLiteral="_plVHsBlpEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_Tgh-UBlqEeyirYLmelJuXQ" conceptName="Transport by Another EMS Unit, with a Member of This Crew" base_EnumerationLiteral="_TggwMBlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_W0JEIBlqEeyirYLmelJuXQ" conceptName="Transport by Another EMS Unit" base_EnumerationLiteral="_W0H2ABlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_ZBDnoBlqEeyirYLmelJuXQ" conceptName="Non-Patient Transport (Not Otherwise Listed)" base_EnumerationLiteral="_ZBCZgBlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_bwtEwBlqEeyirYLmelJuXQ" conceptName="Transport by This EMS Unit, with a Member of Another Crew" base_EnumerationLiteral="_bwsdsBlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_d-kqgBlqEeyirYLmelJuXQ" conceptName="Patient Refused Transport" base_EnumerationLiteral="_d-kDcBlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_gwNEoBlqEeyirYLmelJuXQ" conceptName="No Transport" base_EnumerationLiteral="_gwMdkBlqEeyirYLmelJuXQ"/>
-  <term:ValueSetCode xmi:id="_kBRMwBlqEeyirYLmelJuXQ" conceptName="Transport by This EMS Unit (This Crew Only)" base_EnumerationLiteral="_kBP-oBlqEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_d7sUYBoUEeyPvO14mrApVQ" conceptName="Foot-Whole Foot-Right" base_EnumerationLiteral="_d6HnEBoUEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_hyC64RoUEeyPvO14mrApVQ" conceptName="Hand-Whole Hand-Left" base_EnumerationLiteral="_hyC64BoUEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_3jYgQBoUEeyPvO14mrApVQ" conceptName="Arm-Whole Arm and Hand-Left" base_EnumerationLiteral="_3jX5MBoUEeyPvO14mrApVQ"/>
@@ -3269,24 +3230,12 @@
   <term:CodeSystemVersion xmi:id="_-m7-MB7YEeyBnPWCl2bgOQ" identifier="2.16.840.1.113883.6.96" base_Enumeration="_-m7XIB7YEeyBnPWCl2bgOQ"/>
   <term:CodeSystemVersion xmi:id="_jnvQAB7cEeyBnPWCl2bgOQ" identifier="2.16.840.1.113883.5.14" base_Enumeration="_jnuB4B7cEeyBnPWCl2bgOQ"/>
   <term:ValueSetVersion xmi:id="_sBw3YDKjEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.112" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_sBvpQDKjEeyOwtfRawW6Qw"/>
-  <term:ValueSetCode xmi:id="_xal9QDKjEeyOwtfRawW6Qw" conceptName="Cancelled on Scene" base_EnumerationLiteral="_xalWMDKjEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_BC7kEDKkEeyOwtfRawW6Qw" conceptName="Cancelled Prior to Arrival at Scene" base_EnumerationLiteral="_BC69ADKkEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FJB2wTKkEeyOwtfRawW6Qw" conceptName="No Patient Contact" base_EnumerationLiteral="_FJB2wDKkEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_JtoDUDKkEeyOwtfRawW6Qw" conceptName="No Patient Found" base_EnumerationLiteral="_JtncQDKkEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_N3ajMDKkEeyOwtfRawW6Qw" conceptName="Non-Patient Incident (Not Otherwise Listed)" base_EnumerationLiteral="_N3Z8IDKkEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_QUY78DKkEeyOwtfRawW6Qw" conceptName="Patient Contact Made" base_EnumerationLiteral="_QUYU4DKkEeyOwtfRawW6Qw">
-    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_xal9QDKjEeyOwtfRawW6Qw" conceptName="Cancelled on Scene" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_xalWMDKjEeyOwtfRawW6Qw"/>
+  <term:ValueSetCode xmi:id="_BC7kEDKkEeyOwtfRawW6Qw" conceptName="Cancelled Prior to Arrival at Scene" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_BC69ADKkEeyOwtfRawW6Qw"/>
+  <term:ValueSetCode xmi:id="_FJB2wTKkEeyOwtfRawW6Qw" conceptName="No Patient Contact" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_FJB2wDKkEeyOwtfRawW6Qw"/>
+  <term:ValueSetCode xmi:id="_JtoDUDKkEeyOwtfRawW6Qw" conceptName="No Patient Found" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_JtncQDKkEeyOwtfRawW6Qw"/>
+  <term:ValueSetCode xmi:id="_N3ajMDKkEeyOwtfRawW6Qw" conceptName="Non-Patient Incident (Not Otherwise Listed)" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_N3Z8IDKkEeyOwtfRawW6Qw"/>
+  <term:ValueSetCode xmi:id="_QUY78DKkEeyOwtfRawW6Qw" conceptName="Patient Contact Made" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_EnumerationLiteral="_QUYU4DKkEeyOwtfRawW6Qw"/>
   <term:ValueSetVersion xmi:id="_04PogDKmEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.120" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_04PBcDKmEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_rzRyoDKnEeyOwtfRawW6Qw" conceptName="Back in Service, Care/Support Services Refused" base_EnumerationLiteral="_rzQkgDKnEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_w8qHQDKnEeyOwtfRawW6Qw" conceptName="Back in Service, No Care/Support Services Required" base_EnumerationLiteral="_w8o5IDKnEeyOwtfRawW6Qw"/>
@@ -3314,4 +3263,10 @@
   <term:ValueSetCode xmi:id="_xUMm4KovEeynVOSvWFRUjA" conceptName="Single" base_EnumerationLiteral="_xUKKoKovEeynVOSvWFRUjA"/>
   <term:ValueSetCode xmi:id="_9FxXgKovEeynVOSvWFRUjA" conceptName="Multiple" base_EnumerationLiteral="_9FwwcKovEeynVOSvWFRUjA"/>
   <term:ValueSetCode xmi:id="_BhJWoKowEeynVOSvWFRUjA" conceptName="None" base_EnumerationLiteral="_BhIIgKowEeynVOSvWFRUjA"/>
+  <term:ValueSetCode xmi:id="_LteOgKviEeypEvPWkfHjRA" conceptName="Healthcare Provider (non-911 Responder)" base_EnumerationLiteral="_LtakIKviEeypEvPWkfHjRA"/>
+  <term:ValueSetCode xmi:id="_QAMn8KviEeypEvPWkfHjRA" conceptName="Bystander" base_EnumerationLiteral="_QAMA4KviEeypEvPWkfHjRA"/>
+  <term:ValueSetCode xmi:id="_TaUlcKviEeypEvPWkfHjRA" conceptName="First Responder (Law Enforcement)" base_EnumerationLiteral="_TaT-YKviEeypEvPWkfHjRA"/>
+  <term:ValueSetCode xmi:id="_WSlMAKviEeypEvPWkfHjRA" conceptName="First Responder (non-EMS Fire)" base_EnumerationLiteral="_WSkk8KviEeypEvPWkfHjRA"/>
+  <term:ValueSetCode xmi:id="_afiUoKviEeypEvPWkfHjRA" conceptName="EMS Responder (transport EMS)" base_EnumerationLiteral="_afhtkKviEeypEvPWkfHjRA"/>
+  <term:ValueSetCode xmi:id="_dLZd8KviEeypEvPWkfHjRA" conceptName="First Responder (EMS)" base_EnumerationLiteral="_dLY24KviEeypEvPWkfHjRA"/>
 </xmi:XMI>

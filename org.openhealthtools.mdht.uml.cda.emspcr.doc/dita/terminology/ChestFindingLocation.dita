@@ -24,14 +24,14 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA3524011</entry><entry>LOINC</entry><entry>General - Posterior</entry></row>
-<row><entry>newLA3524001</entry><entry>LOINC</entry><entry>Left - Anterior</entry></row>
-<row><entry>newLA3524003</entry><entry>LOINC</entry><entry>Left - Posterior</entry></row>
-<row><entry>newLA3524005</entry><entry>LOINC</entry><entry>Right - Anterior</entry></row>
-<row><entry>newLA3524009</entry><entry>LOINC</entry><entry>General - Anterior</entry></row>
-<row><entry>newLA3524013</entry><entry>LOINC</entry><entry>Left - Side</entry></row>
-<row><entry>newLA3524015</entry><entry>LOINC</entry><entry>Right - Side</entry></row>
-<row><entry>newLA3524007</entry><entry>LOINC</entry><entry>Right - Posterior</entry></row>
+<row><entry>LA33302-3</entry><entry>LOINC</entry><entry>General - Posterior</entry></row>
+<row><entry>LA33301-5</entry><entry>LOINC</entry><entry>Left - Anterior</entry></row>
+<row><entry>LA33300-7</entry><entry>LOINC</entry><entry>Left - Posterior</entry></row>
+<row><entry>LA33299-1</entry><entry>LOINC</entry><entry>Right - Anterior</entry></row>
+<row><entry>LA33297-5</entry><entry>LOINC</entry><entry>General - Anterior</entry></row>
+<row><entry>LA33296-7</entry><entry>LOINC</entry><entry>Left - Side</entry></row>
+<row><entry>LA33298-3</entry><entry>LOINC</entry><entry>Right - Side</entry></row>
+<row><entry>LA33295-9</entry><entry>LOINC</entry><entry>Right - Posterior</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

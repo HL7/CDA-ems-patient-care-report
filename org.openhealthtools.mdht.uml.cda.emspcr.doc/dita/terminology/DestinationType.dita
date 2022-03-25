@@ -36,15 +36,15 @@
 <row><entry>LA18693-4</entry><entry>LOINC</entry><entry>Police/jail</entry></row>
 <row><entry>LA24393-3</entry><entry>LOINC</entry><entry>Freestanding Emergency Department</entry></row>
 <row><entry>LA24392-5</entry><entry>LOINC</entry><entry>Urgent Care</entry></row>
-<row><entry>NewLA-4221031</entry><entry>LOINC</entry><entry>Mental Health Facility</entry></row>
-<row><entry>NewLA-4221027</entry><entry>LOINC</entry><entry>Diagnostic Services</entry></row>
-<row><entry>NewLA-4221029</entry><entry>LOINC</entry><entry>Assisted Living Facility</entry></row>
-<row><entry>NewLA-4221025</entry><entry>LOINC</entry><entry>Dialysis Center</entry></row>
-<row><entry>NewLA-4221039</entry><entry>LOINC</entry><entry>Drug and/or Alcohol Rehabilitation Facility</entry></row>
-<row><entry>NewLA-4221041</entry><entry>LOINC</entry><entry>Skilled Nursing Facility</entry></row>
-<row><entry>NewLA-4221037</entry><entry>LOINC</entry><entry>Physical Rehabilitation Facility</entry></row>
-<row><entry>NewLA-4221035</entry><entry>LOINC</entry><entry>Other Recurring Care Center</entry></row>
-<row><entry>NewLA-4221033</entry><entry>LOINC</entry><entry>Nursing Home</entry></row>
+<row><entry>LA32923-7</entry><entry>LOINC</entry><entry>Mental Health Facility</entry></row>
+<row><entry>LA32924-5</entry><entry>LOINC</entry><entry>Diagnostic Services</entry></row>
+<row><entry>LA21437-1</entry><entry>LOINC</entry><entry>Assisted Living Facility</entry></row>
+<row><entry>LA32926-0</entry><entry>LOINC</entry><entry>Dialysis Center</entry></row>
+<row><entry>LA32927-8</entry><entry>LOINC</entry><entry>Drug and/or Alcohol Rehabilitation Facility</entry></row>
+<row><entry>LA27338-5</entry><entry>LOINC</entry><entry>Skilled Nursing Facility</entry></row>
+<row><entry>LA32929-4</entry><entry>LOINC</entry><entry>Physical Rehabilitation Facility</entry></row>
+<row><entry>LA32930-2</entry><entry>LOINC</entry><entry>Other Recurring Care Center</entry></row>
+<row><entry>LA27-8</entry><entry>LOINC</entry><entry>Nursing Home</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

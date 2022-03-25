@@ -24,13 +24,13 @@
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11310)<p>NEMSIS Trace: eVitals.01</p>
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)<p>NEMSIS Trace: eVitals.03</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)<p>NEMSIS Trace: eVitals.03</p>
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> MethodOfECGInterpretation 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)<p>NEMSIS Trace: eVitals.05</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)<p>NEMSIS Trace: eVitals.05</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11127) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:11128) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:11129) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> ECGType 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: eVitals.04</i></lines></p></li><li>contain zero or one [0..1] <tt><b>@classCode</b>="DEV" </tt></li><li>contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li></ol></li></ol></li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11127) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:11128) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:11129) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: eVitals.04</i></lines></p></li><li>contain zero or one [0..1] <tt><b>@classCode</b>="DEV" </tt></li><li>contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li></ol></li></ol></li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -42,11 +42,11 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11310)
 <p>NEMSIS Trace: eVitals.01</p></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)
 <p>NEMSIS Trace: eVitals.03</p></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> MethodOfECGInterpretation 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)
 <p>NEMSIS Trace: eVitals.05</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11127) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:11128) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:11129) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> ECGType 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: eVitals.04</i></lines></p></li><li>contain zero or one [0..1] <tt><b>@classCode</b>="DEV" </tt></li><li>contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li></ol></li></ol></li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> such that it  (CONF:11127) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:11128) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:11129) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: eVitals.04</i></lines></p></li><li>contain zero or one [0..1] <tt><b>@classCode</b>="DEV" </tt></li><li>contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li></ol></li></ol></li></ol> 
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

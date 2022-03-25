@@ -67,10 +67,10 @@
 <row><entry>LA9555-9</entry><entry>LOINC</entry><entry>Traumatic injury</entry></row>
 <row><entry>LA17130-8</entry><entry>LOINC</entry><entry>Drowning/Diving/SCUBA Accident</entry></row>
 <row><entry>LA23800-8</entry><entry>LOINC</entry><entry>Air medical Transport</entry></row>
-<row><entry>NewLA-NewLA-2301085</entry><entry>LOINC</entry><entry>Altered Mental Status</entry></row>
-<row><entry>NewLA-2301087</entry><entry>LOINC</entry><entry>Intercept</entry></row>
-<row><entry>NewLA-2301089</entry><entry>LOINC</entry><entry>Nausea</entry></row>
-<row><entry>NewLA-2301091</entry><entry>LOINC</entry><entry>Vomiting</entry></row>
+<row><entry>LA17392-4</entry><entry>LOINC</entry><entry>Altered Mental Status</entry></row>
+<row><entry>LA18716-3</entry><entry>LOINC</entry><entry>Intercept</entry></row>
+<row><entry>LA15098-9</entry><entry>LOINC</entry><entry>Nausea</entry></row>
+<row><entry>LA15099-7</entry><entry>LOINC</entry><entry>Vomiting</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

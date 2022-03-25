@@ -41,8 +41,8 @@
 <row><entry>LA17711-5</entry><entry>LOINC</entry><entry>Unconscious</entry></row>
 <row><entry>LA6301-1</entry><entry>LOINC</entry><entry>Obesity</entry></row>
 <row><entry>LA23824-8</entry><entry>LOINC</entry><entry>State of Emotional Distress</entry></row>
-<row><entry>NewLA-3101035</entry><entry>LOINC</entry><entry>Drug Use, Suspected</entry></row>
-<row><entry>NewLA-3101033</entry><entry>LOINC</entry><entry>Alcohol Use, Suspected</entry></row>
+<row><entry>LA32960-9</entry><entry>LOINC</entry><entry>Drug Use, Suspected</entry></row>
+<row><entry>LA32961-7</entry><entry>LOINC</entry><entry>Alcohol Use, Suspected</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

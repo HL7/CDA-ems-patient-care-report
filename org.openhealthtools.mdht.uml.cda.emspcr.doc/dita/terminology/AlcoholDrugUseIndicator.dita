@@ -30,7 +30,7 @@
 <row><entry>LA17325-4</entry><entry>LOINC</entry><entry>Patient admits to alcohol use</entry></row>
 <row><entry>LA17326-2</entry><entry>LOINC</entry><entry>Patient admits to drug use</entry></row>
 <row><entry>LA17327-0</entry><entry>LOINC</entry><entry>Positive level known from law enforcement or hospital record</entry></row>
-<row><entry>NewLA-3117013</entry><entry>LOINC</entry><entry>Physical Exam Indicates Suspected Alcohol or Drug Use</entry></row>
+<row><entry>LA32962-5</entry><entry>LOINC</entry><entry>Physical Exam Indicates Suspected Alcohol or Drug Use</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

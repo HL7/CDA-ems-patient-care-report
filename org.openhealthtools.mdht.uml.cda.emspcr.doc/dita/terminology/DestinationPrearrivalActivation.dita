@@ -33,7 +33,7 @@
 <row><entry>LA18122-4</entry><entry>LOINC</entry><entry>Yes, STEMI</entry></row>
 <row><entry>LA18123-2</entry><entry>LOINC</entry><entry>Yes, stroke</entry></row>
 <row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
-<row><entry>NewLA-4224019NewCode</entry><entry>LOINC</entry><entry>Yes-Sepsis</entry></row>
+<row><entry>LA32937-7</entry><entry>LOINC</entry><entry>Yes-Sepsis</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

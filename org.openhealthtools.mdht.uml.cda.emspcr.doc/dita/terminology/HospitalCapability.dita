@@ -39,12 +39,12 @@
 <row><entry>LA22848-8</entry><entry></entry><entry>Cardiac-STEMI/PCI Capable</entry></row>
 <row><entry>LA22849-6</entry><entry></entry><entry>Cardiac-STEMI/PCI Capable (24/7)</entry></row>
 <row><entry>LA22850-4</entry><entry></entry><entry>Cardiac-STEMI/Non-PCI Capable</entry></row>
-<row><entry>NewLA-9908037</entry><entry></entry><entry>Stroke-Acute Stroke Ready Hospital (ASRH)</entry></row>
-<row><entry>NewLA-9908039</entry><entry></entry><entry>Stroke-Primary Stroke Center (PSC)</entry></row>
-<row><entry>NewLA-9908041</entry><entry></entry><entry>Stroke-Thrombectomy-Capable Stroke Center (TSC)</entry></row>
-<row><entry>NewLA-9908043</entry><entry></entry><entry>Stroke-Comprehensive Stroke Center (CSC)</entry></row>
-<row><entry>NewLA-9908045</entry><entry></entry><entry>Cancer Center</entry></row>
-<row><entry>NewLA-9908047</entry><entry></entry><entry>Labor and Delivery</entry></row>
+<row><entry>LA32931-0</entry><entry></entry><entry>Stroke-Acute Stroke Ready Hospital (ASRH)</entry></row>
+<row><entry>LA32934-4</entry><entry></entry><entry>Stroke-Primary Stroke Center (PSC)</entry></row>
+<row><entry>LA32935-1</entry><entry></entry><entry>Stroke-Thrombectomy-Capable Stroke Center (TSC)</entry></row>
+<row><entry>LA32936-9</entry><entry></entry><entry>Stroke-Comprehensive Stroke Center (CSC)</entry></row>
+<row><entry>LA32933-6</entry><entry></entry><entry>Cancer Center</entry></row>
+<row><entry>LA20786-2</entry><entry></entry><entry>Labor and Delivery</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

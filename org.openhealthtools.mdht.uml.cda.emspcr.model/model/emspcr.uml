@@ -4087,8 +4087,8 @@ Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</bod
           <body>Two NEMSIS route (eMedications.04) values imply sites in addition to routes: &quot;nasotracheal tube&quot; and &quot;tracheostomy&quot;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hIT7AUrgEeyM8derc72xcA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hIT7AkrgEeyM8derc72xcA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QtCd0av4EeypEvPWkfHjRA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtCd0Kv4EeypEvPWkfHjRA" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_ATlKkErtEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_wcZtIJowEeG_FLcaRgAa7g" name="MedicationNotAdministeredReasonEntryRelationship">
@@ -11678,7 +11678,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_IqZWN9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoxlENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10989</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZWONICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoxlENICEeKRzPZKi7WbBQ">
+  <CDA:Entry xmi:id="_IqZWONICEeKRzPZKi7WbBQ" base_Association="_IoxlENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10990</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZWOdICEeKRzPZKi7WbBQ" base_Class="_5JQlAJovEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.72" assigningAuthorityName="NEMSIS" templateVersion="2022-01-01">
@@ -12811,7 +12811,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:CDATemplate xmi:id="_q0d_gCVKEeyHwdMImhiDzQ" base_Class="_gTzdICVKEeyHwdMImhiDzQ" templateId="2.16.840.1.1133883.17.3.10.1.194" templateVersion="2022-01-01">
     <ruleId>CONF:11572</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_1fXb8CVKEeyHwdMImhiDzQ" code="NeweExam.23" displayName="Lung Assessment Finding" base_Property="_kTovwCVKEeyHwdMImhiDzQ">
+  <CDA:CodeSystemConstraint xmi:id="_1fXb8CVKEeyHwdMImhiDzQ" code="32449-1" displayName="Physical Findings of Lung Assessment" base_Property="_kTovwCVKEeyHwdMImhiDzQ">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11573</ruleId>
   </CDA:CodeSystemConstraint>
@@ -12839,7 +12839,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:CDATemplate xmi:id="_FcbwYDKjEeyOwtfRawW6Qw" base_Class="_uSA4MDKiEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.196" templateVersion="2022-01-01">
     <ruleId>CONF:11578</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_ToMEcDKjEeyOwtfRawW6Qw" code="neweDisposition.27" displayName="Unit Disposition" base_Property="_w9pYADKiEeyOwtfRawW6Qw">
+  <CDA:CodeSystemConstraint xmi:id="_ToMEcDKjEeyOwtfRawW6Qw" code="100037-1" displayName="Patient contact disposition" base_Property="_w9pYADKiEeyOwtfRawW6Qw">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11579</ruleId>
   </CDA:CodeSystemConstraint>
@@ -12850,7 +12850,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:CDATemplate xmi:id="_5hkO8DKkEeyOwtfRawW6Qw" base_Class="_2BpygDKkEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.197" templateVersion="2022-01-01">
     <ruleId>CONF:11583</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_-0MmMDKkEeyOwtfRawW6Qw" code="neweDisposition.28" displayName="Patient Engagement" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
+  <CDA:CodeSystemConstraint xmi:id="_-0MmMDKkEeyOwtfRawW6Qw" code="100038-9" displayName="Patient evaluation disposition" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11584</ruleId>
   </CDA:CodeSystemConstraint>
@@ -12864,11 +12864,12 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:CDATemplate xmi:id="_U5nIsDKmEeyOwtfRawW6Qw" base_Class="_PFi4UDKmEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.198" templateVersion="2022-01-01">
     <ruleId>CONF:11588</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_bIGrQDKmEeyOwtfRawW6Qw" code="neweDisposition.29" displayName="Crew Disposition" base_Property="_QX7GMDKmEeyOwtfRawW6Qw">
+  <CDA:CodeSystemConstraint xmi:id="_bIGrQDKmEeyOwtfRawW6Qw" code="100039-7" displayName="Crew Disposition" base_Property="_QX7GMDKmEeyOwtfRawW6Qw">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11589</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" binding="Dynamic" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDisposition">
+  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDisposition">
+    <reference href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_04PogDKmEeyOwtfRawW6Qw"/>
     <ruleId>CONF:11590</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_DXgnEDKqEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw">
@@ -12877,7 +12878,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:CDATemplate xmi:id="_N942QDKyEeyOwtfRawW6Qw" base_Class="_Kp-OcDKyEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.199" templateVersion="2022-01-01">
     <ruleId>CONF:11592</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_0VRA0DKyEeyOwtfRawW6Qw" code="neweDisposition.30" displayName="Transport Disposition" base_Property="_L4nL0DKyEeyOwtfRawW6Qw">
+  <CDA:CodeSystemConstraint xmi:id="_0VRA0DKyEeyOwtfRawW6Qw" code="100040-5" displayName="Transport Disposition" base_Property="_L4nL0DKyEeyOwtfRawW6Qw">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11593</ruleId>
   </CDA:CodeSystemConstraint>
@@ -12903,7 +12904,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_NPn7QEHKEeyUtcwaTRiR1Q" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
     <ruleId>CONF:11585</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="NeweExam.25" displayName="Chest Assessment" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
+  <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="11422-3" displayName="Physical Findings of Chest Assessment" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
     <reference href="emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11596</ruleId>
   </CDA:CodeSystemConstraint>
@@ -13293,7 +13294,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="__o48cFUoEeyiu80E1DcH3w" base_Association="_Z-BPYDVpEeWqqoY-9eh2xA">
     <ruleId>CONF:11712</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ValueSetConstraint xmi:id="_6NtasKouEeynVOSvWFRUjA" base_Property="_xp-MoaK5EeGOxth0BgV-QA">
+  <CDA:ValueSetConstraint xmi:id="_6NtasKouEeynVOSvWFRUjA" base_Property="_xp-MoaK5EeGOxth0BgV-QA" uri="emspcr-vocab::PatientsAtScene">
     <reference href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_bPHmIKovEeynVOSvWFRUjA"/>
   </CDA:ValueSetConstraint>
 </xmi:XMI>

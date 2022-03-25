@@ -64,8 +64,8 @@
 <row><entry>LA24418-8</entry><entry>LOINC</entry><entry>Upper Arm-Right</entry></row>
 <row><entry>LA24419-6</entry><entry>LOINC</entry><entry>Venous Cutdown-Left Lower Extremity</entry></row>
 <row><entry>LA24420-4</entry><entry>LOINC</entry><entry>Venous Cutdown-Right Lower Extremity</entry></row>
-<row><entry>NewLA-3913081</entry><entry>LOINC</entry><entry>Wrist-Right</entry></row>
-<row><entry>NewLA-3913079</entry><entry>LOINC</entry><entry>Wrist-Left</entry></row>
+<row><entry>LA18765-0</entry><entry>LOINC</entry><entry>Wrist-Right</entry></row>
+<row><entry>LA18766-8</entry><entry>LOINC</entry><entry>Wrist-Left</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -73,14 +73,14 @@
 <row><entry>LA18784-1</entry><entry>LOINC</entry><entry>Toe-4th-right</entry></row>
 <row><entry>LA18785-8</entry><entry>LOINC</entry><entry>Toe-5th (smallest)-left</entry></row>
 <row><entry>LA18786-6</entry><entry>LOINC</entry><entry>Toe-5th (smallest)-right</entry></row>
-<row><entry>NewLA-3515111</entry><entry>LOINC</entry><entry>Foot-Whole Foot-Right</entry></row>
-<row><entry>NewLA-3515101</entry><entry>LOINC</entry><entry>Hand-Whole Hand-Left</entry></row>
-<row><entry>NewLA-3515097</entry><entry>LOINC</entry><entry>Arm-Whole Arm and Hand-Left</entry></row>
-<row><entry>NewLA-3515099</entry><entry>LOINC</entry><entry>Arm-Whole Arm and Hand-Right</entry></row>
-<row><entry>NewLA-3515109</entry><entry>LOINC</entry><entry>Foot-Whole Foot-Left</entry></row>
-<row><entry>NewLA-3515107</entry><entry>LOINC</entry><entry>Leg-Whole Leg-Right</entry></row>
-<row><entry>NewLA-3515105</entry><entry>LOINC</entry><entry>Leg-Whole Leg-Left</entry></row>
-<row><entry>NewLA-3515103</entry><entry>LOINC</entry><entry>Hand-Whole Hand-Right</entry></row>
+<row><entry>LA32940-1</entry><entry>LOINC</entry><entry>Foot-Whole Foot-Right</entry></row>
+<row><entry>LA32939-3</entry><entry>LOINC</entry><entry>Hand-Whole Hand-Left</entry></row>
+<row><entry>LA32941-9</entry><entry>LOINC</entry><entry>Arm-Whole Arm and Hand-Left</entry></row>
+<row><entry>LA32942-7</entry><entry>LOINC</entry><entry>Arm-Whole Arm and Hand-Right</entry></row>
+<row><entry>LA32938-5</entry><entry>LOINC</entry><entry>Foot-Whole Foot-Left</entry></row>
+<row><entry>LA32943-5</entry><entry>LOINC</entry><entry>Leg-Whole Leg-Right</entry></row>
+<row><entry>LA32944-3</entry><entry>LOINC</entry><entry>Leg-Whole Leg-Left</entry></row>
+<row><entry>LA32945-0</entry><entry>LOINC</entry><entry>Hand-Whole Hand-Right</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

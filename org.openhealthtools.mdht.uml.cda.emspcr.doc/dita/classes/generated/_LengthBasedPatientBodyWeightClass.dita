@@ -21,7 +21,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10366)<tt><b>/@code</b>="67670-0" </tt><i>Length-based tape measure category NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10365)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11603), which <b>SHALL</b> be selected from ValueSet<tt> LengthBasedWeightClass 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)<p>NEMSIS Trace: eExam.02 Length Based Tape Measure.
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11603), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)<p>NEMSIS Trace: eExam.02 Length Based Tape Measure.
 Note: a license is required to implement the Broselow-Luten measure.</p>
 </li>
 </ol>
@@ -32,7 +32,7 @@ Note: a license is required to implement the Broselow-Luten measure.</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10366)<tt><b>/@code</b>="67670-0" </tt><i>Length-based tape measure category NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10365)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11603), which <b>SHALL</b> be selected from ValueSet<tt> LengthBasedWeightClass 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11603), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
 <p>NEMSIS Trace: eExam.02 Length Based Tape Measure.
 Note: a license is required to implement the Broselow-Luten measure.</p></li>
 </ol>

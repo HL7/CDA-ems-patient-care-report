@@ -24,25 +24,25 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
 <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)<p>NEMSIS Trace: eVitals.01</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref> (CONF:11083)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)</li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref> (CONF:11085)</li></ol> 
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)</li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -56,22 +56,22 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)
 <p>NEMSIS Trace: eVitals.01</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref> (CONF:11083)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref> (CONF:11085)</li></ol> 
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
 </li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSVitalSignsSection.html">EMS Vital Signs Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSVitalSignsSection.dita">EMS Vital Signs Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
   <templateId root="2.16.840.1.1133883.17.3.10.1.28" extension="2022-01-01"/>
   <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs"/>

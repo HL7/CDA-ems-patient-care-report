@@ -25,7 +25,7 @@
 Required if element value is a positive value (not "no").</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10690), which <b>SHALL</b> be selected from ValueSet<tt> DestinationPrearrivalActivation 2.16.840.1.113883.17.3.11.87</tt><b> DYNAMIC</b> (CONF:11428)<p>NEMSIS Trace: eDisposition.24</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10690), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationPrearrivalActivation.dita">DestinationPrearrivalActivation</xref> 2.16.840.1.113883.17.3.11.87</tt><b> DYNAMIC</b> (CONF:11428)<p>NEMSIS Trace: eDisposition.24</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -38,10 +38,10 @@ Required if element value is a positive value (not "no").</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10691)
 <p>NEMSIS Trace: eDisposition.25
 Required if element value is a positive value (not "no").</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10690), which <b>SHALL</b> be selected from ValueSet<tt> DestinationPrearrivalActivation 2.16.840.1.113883.17.3.11.87</tt><b> DYNAMIC</b> (CONF:11428)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10690), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationPrearrivalActivation.dita">DestinationPrearrivalActivation</xref> 2.16.840.1.113883.17.3.11.87</tt><b> DYNAMIC</b> (CONF:11428)
 <p>NEMSIS Trace: eDisposition.24</p></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSDispositionSection.html">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSDispositionSection.dita">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.1133883.17.3.10.1.36" extension="2022-01-01"/>
   <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" displayName="Activation of the destination healthcare facility team NEMSIS"/>

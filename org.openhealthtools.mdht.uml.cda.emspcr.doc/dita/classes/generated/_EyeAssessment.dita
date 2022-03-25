@@ -24,10 +24,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11243)<p>NEMSIS Trace: eExam.03</p>
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10408), which <b>SHALL</b> be selected from ValueSet<tt> EyeAssessmentFinding 2.16.840.1.113883.17.3.11.38</tt><b> DYNAMIC</b> (CONF:10409)<p>NEMSIS Trace: eExam.18</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10408), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EyeAssessmentFinding.dita">EyeAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.38</tt><b> DYNAMIC</b> (CONF:10409)<p>NEMSIS Trace: eExam.18</p>
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:10406), which <b>SHALL</b> be selected from ValueSet<tt> EyeFindingLocation 2.16.840.1.113883.17.3.11.39</tt><b> DYNAMIC</b> (CONF:10407)<p>NEMSIS Trace: eExam.17</p>
+<b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:10406), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EyeFindingLocation.dita">EyeFindingLocation</xref> 2.16.840.1.113883.17.3.11.39</tt><b> DYNAMIC</b> (CONF:10407)<p>NEMSIS Trace: eExam.17</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -39,9 +39,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11243)
 <p>NEMSIS Trace: eExam.03</p></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10408), which <b>SHALL</b> be selected from ValueSet<tt> EyeAssessmentFinding 2.16.840.1.113883.17.3.11.38</tt><b> DYNAMIC</b> (CONF:10409)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10408), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EyeAssessmentFinding.dita">EyeAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.38</tt><b> DYNAMIC</b> (CONF:10409)
 <p>NEMSIS Trace: eExam.18</p></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:10406), which <b>SHALL</b> be selected from ValueSet<tt> EyeFindingLocation 2.16.840.1.113883.17.3.11.39</tt><b> DYNAMIC</b> (CONF:10407)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:10406), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EyeFindingLocation.dita">EyeFindingLocation</xref> 2.16.840.1.113883.17.3.11.39</tt><b> DYNAMIC</b> (CONF:10407)
 <p>NEMSIS Trace: eExam.17</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>

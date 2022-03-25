@@ -35,10 +35,10 @@
 <row><entry>LA17756-0</entry><entry>LOINC</entry><entry>Ventilation-impedance threshold device</entry></row>
 <row><entry>LA17757-8</entry><entry>LOINC</entry><entry>Ventilation-mouth to mouth</entry></row>
 <row><entry>LA17758-6</entry><entry>LOINC</entry><entry>Ventilation-pocket mask</entry></row>
-<row><entry>NewLA-3009023</entry><entry>LOINC</entry><entry>Ventilation-with OPA/NPA</entry></row>
-<row><entry>NewLA-3009025</entry><entry>LOINC</entry><entry>Ventilation-Advanced Airway Device</entry></row>
-<row><entry>NewLA-3009027</entry><entry>LOINC</entry><entry>Ventilation-Passive Ventilation with Oxygen</entry></row>
-<row><entry>NewLA-3009021</entry><entry>LOINC</entry><entry>Compressions-Hands Only CPR</entry></row>
+<row><entry>LA32912-0</entry><entry>LOINC</entry><entry>Ventilation-with OPA/NPA</entry></row>
+<row><entry>LA32913-8</entry><entry>LOINC</entry><entry>Ventilation-Advanced Airway Device</entry></row>
+<row><entry>LA32914-6</entry><entry>LOINC</entry><entry>Ventilation-Passive Ventilation with Oxygen</entry></row>
+<row><entry>LA32911-2</entry><entry>LOINC</entry><entry>Compressions-Hands Only CPR</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

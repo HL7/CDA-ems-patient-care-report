@@ -55,8 +55,8 @@
 <row><entry>LA17283-5</entry><entry>LOINC</entry><entry>Hyphema</entry></row>
 <row><entry>LA17214-0</entry><entry>LOINC</entry><entry>Puncture/Stab Wound</entry></row>
 <row><entry>LA22440-4</entry><entry>LOINC</entry><entry>Swelling</entry></row>
-<row><entry>NewLA-3518061</entry><entry>LOINC</entry><entry>Dilated</entry></row>
-<row><entry>NewLA-3518063</entry><entry>LOINC</entry><entry>Pin Point</entry></row>
+<row><entry>LA19576-0</entry><entry>LOINC</entry><entry>Dilated</entry></row>
+<row><entry>LA32946-8</entry><entry>LOINC</entry><entry>Pin Point</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
