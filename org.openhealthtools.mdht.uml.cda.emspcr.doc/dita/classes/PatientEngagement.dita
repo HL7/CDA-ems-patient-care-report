@@ -30,8 +30,8 @@
 <observation classCode="OBS" moodCode="EVN">
     <templateId root="2.16.840.1.1133883.17.3.10.1.197" extension="2022-01-01" />
     <id root="2.16.840.1.113883.19.4" extension="477978662" />
-    <code code="neweDisposition.28" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Engagement" />
-    <value xsi:type="CD" code="newLA4228001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Evaluated and Care Provided" />
+    <code code="100038-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Engagement" />
+    <value xsi:type="CD" code="LA33309-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Evaluated and Care Provided" />
 </observation>
 ]]></codeblock>
 </body>

@@ -22,7 +22,20 @@
 <p audience="examples"><b>EMS Response Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_EMSResponseSection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.3" extension="2022-01-01"/>
+    <code code="67664-3" codeSystem="2.16.840.1.113883.6.1" displayName="EMS
+        Response Narrative NEMSIS"/>
+    <title>EMS Response Narrative </title>
+    <text/>
+    <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+            . . .
+        </organizer>
+    </entry>
+. . .
+</section>
+]]></codeblock>
 </body>
 </topic>

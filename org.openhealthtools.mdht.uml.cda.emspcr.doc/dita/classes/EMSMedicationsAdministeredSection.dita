@@ -22,7 +22,20 @@
 <p audience="examples"><b>EMS Medications Administered Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_EMSMedicationsAdministeredSection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.18" extension="2022-01-01"/>
+    <code code="67849-0" codeSystem="2.16.840.1.113883.6.1" displayName="EMS
+        Medications Administered Narrative NEMSIS"/>
+    <title>EMS Medications Administered Narrative</title>
+    <text/>
+    <entry>
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            . . .
+        </substanceAdministration>
+    </entry>
+    . . .
+</section>
+]]></codeblock>
 </body>
 </topic>

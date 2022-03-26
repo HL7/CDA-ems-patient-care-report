@@ -26,7 +26,20 @@
 <p><b>EMS Times Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_EMSTimesSection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.10" extension="2022-01-01"/>
+    <code code="67667-6" codeSystem="2.16.840.1.113883.6.1" displayName="EMS
+        Times Narrative NEMSIS"/>
+    <title>EMS Times History Narrative </title>
+    <text/>
+    <entry>
+        <observation classCode="OBS" moodCode="EVN">
+            . . .
+        </observation>
+    </entry>
+. . .
+</section>
+]]></codeblock>
 </body>
 </topic>

@@ -22,7 +22,19 @@
 <p audience="examples"><b>EMS Cardiac Arrest Event Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_EMSCardiacArrestEventSection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.14" extension="2022-01-01"/>
+    <code code="67799-7" codeSystem="2.16.840.1.113883.6.1" displayName="EMS
+        Cardiac Arrest Event Narrative NEMSIS"/>
+    <title>EMS Cardiac Arrest Event</title>
+    <text/>
+    <entry>
+        <observation classCode="OBS" moodCode="EVN">
+            . . .
+        </observation>
+    </entry>
+</section>
+]]></codeblock>
 </body>
 </topic>

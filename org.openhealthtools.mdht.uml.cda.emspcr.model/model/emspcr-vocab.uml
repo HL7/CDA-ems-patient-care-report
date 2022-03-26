@@ -1765,7 +1765,7 @@
   <term:ValueSetVersion xmi:id="_92nb8HSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.87" definition="Kind of preparation requested at destination prior to patient arrival" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_92m04HSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_BYIa4XSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.88" definition="Type of instrument used to evaluate for stroke" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_BYIa4HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_DehfoHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.89" definition="Circumstance confounding the assessment of one or more Glasgow Coma Scale observations" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Deg4kHSUEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.91" version="2022" definition="Whether cardiac arrest occurred before or after arrival of emergency medical service team" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.91" definition="Whether cardiac arrest occurred before or after arrival of emergency medical service team" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_MkZfAHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.9" definition="Kind of incident resulting in or likely to result in injuries or clinically adverse events" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_MkY38HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dw5r4JsjEeGzXI65shd6Fw" identifier="2.16.840.1.113883.17.3.11.92" definition="Rationale for not adminstering an otherwise indicated medication" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dw32sJsjEeGzXI65shd6Fw"/>
   <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" definition="Appropriateness for disclosure of information" binding="Dynamic" codeSystem="_YctfMMFTEeGyGv5RKvEgDA" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
@@ -2807,22 +2807,22 @@
   <term:ValueSetCode xmi:id="_MAcDYLMUEeKNbt70lHd2Eg" conceptName="Signs of circulation" base_EnumerationLiteral="_MAbcULMUEeKNbt70lHd2Eg"/>
   <term:ValueSetVersion xmi:id="_7DvPsLMpEeKNbt70lHd2Eg" identifier="2.16.840.1.114222.4.11.836" fullName="General race category reported by the patient" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=67D34BBC-617F-DD11-B38D-00188B398520" binding="Dynamic" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_7DuooLMpEeKNbt70lHd2Eg"/>
   <term:ValueSetCode xmi:id="_BAds0LMqEeKNbt70lHd2Eg" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_BAdFwLMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_GijcYLMqEeKNbt70lHd2Eg" conceptName="Asian" base_EnumerationLiteral="_Gii1ULMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_Mt8AkbMqEeKNbt70lHd2Eg" conceptName="Black or African American" base_EnumerationLiteral="_Mt8AkLMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_RIb18LMqEeKNbt70lHd2Eg" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="_RIbO4LMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_Uhp0gLMqEeKNbt70lHd2Eg" conceptName="Other Race" base_EnumerationLiteral="_UhpNcLMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_YCL8AbMqEeKNbt70lHd2Eg" conceptName="White" base_EnumerationLiteral="_YCL8ALMqEeKNbt70lHd2Eg">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
   </term:ValueSetCode>
   <term:ValueSetVersion xmi:id="_gyJxQLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.114222.4.11.837" definition="Abbreviated set of ethnic backgrounds" binding="Dynamic" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_gx7u0LM0EeKq7sXu8zXehQ"/>
   <term:ValueSetCode xmi:id="_jKN00LM0EeKq7sXu8zXehQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_jKNNwLM0EeKq7sXu8zXehQ"/>
@@ -2920,7 +2920,7 @@
   <term:ValueSetCode xmi:id="_Ldp8B80YEeSJm6m0rTs9zw" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_Ldot6c0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8CM0YEeSJm6m0rTs9zw" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_Ldot6s0YEeSJm6m0rTs9zw"/>
   <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" binding="Dynamic" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="__SEeAM0ZEeSJm6m0rTs9zw" conceptName="Cuff-automated" base_EnumerationLiteral="__SD28M0ZEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Bne2MM0aEeSJm6m0rTs9zw" conceptName="Cuff-manual auscultated" base_EnumerationLiteral="_BnePIM0aEeSJm6m0rTs9zw"/>

@@ -22,7 +22,20 @@
 <p audience="examples"><b>EMS Past Medical History Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_EMSPastMedicalHistorySection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.19" extension="2022-01-01"/>
+    <code code="67842-5" codeSystem="2.16.840.1.113883.6.1" displayName="EMS
+        Past Medical History Narrative NEMSIS"/>
+    <title>EMS Past Medical History Narrative</title>
+    <text/>
+    <entry>
+        <observation classCode="OBS" moodCode="EVN">
+            . . .
+        </observation>
+    </entry>
+    . . .
+</section>
+]]></codeblock>
 </body>
 </topic>

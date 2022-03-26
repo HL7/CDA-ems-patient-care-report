@@ -307,7 +307,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
               <ownedComment xmi:id="_ut-GQHtAEeGs2I-Db78R9w">
                 <body>NEMSIS Trace: ePatient.13&#xD;
 &#xD;
-See terminology map in Appendix &quot;Gender&quot;.</body>
+See terminology map in the &quot;Gender&quot; Appendix.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVDpsXtAEeGs2I-Db78R9w" value="1"/>
@@ -12509,7 +12509,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_1M-yQNOXEeKU4pFWxuU9dw" severity="INFO" base_Property="_1M-LMNOXEeKU4pFWxuU9dw">
     <ruleId>CONF:7304</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
+  <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w" uri="">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <ruleId>CONF:10878</ruleId>
   </CDA:ValueSetConstraint>

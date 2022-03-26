@@ -22,7 +22,20 @@
 <p audience="examples"><b>EMS Procedures Performed Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_EMSProceduresPerformedSection.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+    <templateId root="2.16.840.1.1133883.17.3.10.1.21" extension="2022-01-01"/>
+    <code code="29554-3" codeSystem="2.16.840.1.113883.6.1"
+        displayName="Procedure Narrative"/>
+    <title>Procedure Narrative</title>
+    <text/>
+    <entry>
+        <procedure classCode="PROC" moodCode="EVN">
+            . . .
+        </procedure>
+    </entry>
+. . .
+</section>
+]]></codeblock>
 </body>
 </topic>
