@@ -5736,7 +5736,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_j9MusJsmEeGzXI65shd6Fw" name="MedicationResponseObservation">
       <ownedComment xmi:id="_VfFpoCwqEeOaIuM51LdlNw">
-        <body>Whether the patient's condition improved after medication administration</body>
+        <body>Whether the patients condition improved after medication administration</body>
       </ownedComment>
       <generalization xmi:id="_kLrPkJsmEeGzXI65shd6Fw">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>

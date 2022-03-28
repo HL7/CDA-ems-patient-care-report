@@ -162,21 +162,21 @@
 						<entry>Who First Initiated CPR </entry>
 						<entry>Procedure performer</entry>
 						<entry>[root].1.181</entry>
-						<entry>neweArrest.20</entry>
+						<entry>88102-9</entry>
 					</row>
 					<row>
 						<entry>eArrest.21</entry>
 						<entry>Who First Applied the AED</entry>
 						<entry>Procedure performer</entry>
 						<entry>[root].1.181</entry>
-						<entry>neweArrest.21</entry>
+						<entry>100034-8</entry>
 					</row>
 					<row>
 						<entry>eArrest.22</entry>
 						<entry>Who First Defibrillated the Patient</entry>
 						<entry>Procedure performer</entry>
 						<entry>[root].1.181</entry>
-						<entry>neweArrest.22</entry>
+						<entry>88663-0</entry>
 					</row>
 					<row>
 						<entry>eCrew.01</entry>
@@ -337,28 +337,28 @@
 						<entry>Unit Disposition</entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.196</entry>
-						<entry>neweDisposition.27</entry>
+						<entry>100037-1</entry>
 					</row>
 					<row>
 						<entry>eDisposition.28</entry>
 						<entry>Patient Evaluation/Care</entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.197</entry>
-						<entry>neweDisposition.28</entry>
+						<entry>100038-9</entry>
 					</row>
 					<row>
 						<entry>eDisposition.29</entry>
 						<entry>Crew Disposition</entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.198</entry>
-						<entry>neweDisposition.29</entry>
+						<entry>100039-7</entry>
 					</row>
 					<row>
 						<entry>eDisposition.30</entry>
 						<entry>Transport Disposition</entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.199</entry>
-						<entry>neweDisposition.30</entry>
+						<entry>100040-5</entry>
 					</row>
 					<row>
 						<entry>eExam.01</entry>
@@ -498,28 +498,28 @@
 						<entry>Lung Assessment Finding Location </entry>
 						<entry>Observation site</entry>
 						<entry>[root].1.194</entry>
-						<entry>neweExam.22</entry>
+						<entry>100036-3</entry>
 					</row>
 					<row>
 						<entry>eExam.23</entry>
 						<entry>Lung Assessment </entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.194</entry>
-						<entry>neweExam.23</entry>
+						<entry>32449-1</entry>
 					</row>
 					<row>
 						<entry>eExam.24</entry>
 						<entry>Chest Assessment Finding Location </entry>
 						<entry>Observation site</entry>
 						<entry>[root].1.195</entry>
-						<entry>neweExam.24</entry>
+						<entry>100035-5</entry>
 					</row>
 					<row>
 						<entry>eExam.25</entry>
 						<entry>Chest Assessment</entry>
 						<entry>Observation value</entry>
 						<entry>[root].1.195</entry>
-						<entry>neweExam.25</entry>
+						<entry>11422-3</entry>
 					</row>
 					<row>
 						<entry>eHistory.01</entry>

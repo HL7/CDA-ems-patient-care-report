@@ -11,7 +11,7 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p>Whether the patient's condition improved after medication administration</p>
+<p>Whether the patients condition improved after medication administration</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11502 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.106"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>

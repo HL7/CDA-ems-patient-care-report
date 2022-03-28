@@ -4,31 +4,26 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Acknowledgments</title>
 	<body>
-		<p>This implementation guide was developed with the support and sponsorship of the National EMS 
-Information System (NEMSIS), directed by Clay Mann. Additional clinical guidance was provided by Dr. 
-Greg Mears. NEMSIS is supported by the US National Highway Traffic Safety Administration, the Centers 
-for Disease Control, and the Health Resources and Services Administration, as well as dozens of other 
-government agencies, universities, and professional organizations. 
-</p>
+		<p>This implementation guide was developed with the support and sponsorship of the National EMS
+			Information System (NEMSIS), directed by Clay Mann. NEMSIS is supported by the US
+			National Highway Traffic Safety Administration, the Centers for Disease Control, and the
+			Health Resources and Services Administration, as well as dozens of other government
+			agencies, universities, and professional organizations. </p>
  
 <p> 
 Shakir Consulting was instrumental in the creation of the domain analysis model and constrained model 
 that inform this specification. 
 </p>
 
-<p> 
-The HL7 Patient Care, Emergency Care, and Clinical Interoperability Council working groups sponsored 
-the project, but we also leaned heavily on the work done by HL7’s Structured Documents committee, 
-as well as exemplary guides produced by other teams, most notably the Healthcare Associated Infections 
-team. Special thanks go to Russ Hamm, Jerry Sable, Rob Hausam, Keith Boone, Dan Leonard, and Dan 
-Vreeman. Sean Muir's assistance was indispensible in making the rich functionality of the Model-
-Driven Health Tools available.
-</p>
+<p> The HL7 Patient Care, Emergency Care, and Clinical Interoperability Council working groups
+			sponsored the project, but we also leaned heavily on the work done by HL7’s Structured
+			Documents committee, as well as exemplary guides produced by other teams, most notably
+			the Healthcare Associated Infections team. Special thanks go to Russ Hamm, Jerry Sable,
+			Rob Hausam, Keith Boone, Dan Leonard, and Dan Vreeman. Sean Muir supported the
+			implementation in Model- Driven Health Tools. </p>
 
-<p> 
-The work could not have been completed without the indefatigable assistance of Jaci Phillips and the 
-support of the Regenstrief institute. 
-</p>
+<p> The work could not have been completed without the generous assistance of the support of the
+			Regenstrief institute. </p>
 
 		<p>This document contains information from the following sources:</p>
 
@@ -66,40 +61,60 @@ support of the Regenstrief institute.
       <tgroup cols="2">
         <tbody>
           <row>
-            <entry>Co-Editor / Co-Chair</entry>
-            <entry>Anita Walden
-					Duke Translational Medicine Institute
-					Duke University
-					anita.walden@duke.edu</entry>
+            <entry>Co-Chair</entry>
+            <entry>Laura Langford Heerman, Intermountain Healthcare</entry>
           </row>
+					<row>
+						<entry>Co-Chair</entry>
+						<entry>Russ Leftwich, InterSystems</entry>
+					</row>
           <row>
-            <entry>Co-Editor</entry>
-            <entry>Jay Lyle
-					Ockham Information Services LLC
-					jlyle@ockhamis.com</entry>
-          </row>
-          <row>
-            <entry>Co-Editor</entry>
-            <entry>Sarah Ryan
-					Ockham Information Services LLC
-					sryan@ockhamis.comm</entry>
+            <entry>Editor</entry>
+            <entry>Jay Lyle, Ockham Information Services LLC </entry>
           </row>
           <row>
             <entry>EMS Subject Matter Expert</entry>
-            <entry>Clay Mann
-					National EMS Information System
-					University of Utah School of Medicine
-					clay.mann@utah.edu</entry>
+            <entry>Clay Mann National EMS Information System. University of Utah School of Medicine </entry>
           </row>
-          <row>
-            <entry>EMS Subject Matter Expert</entry>
-            <entry>Greg Mears, M.D.
-					Formerly of the Department of Emergency Medicine
-					University of North Carolina, Chapel Hill
-					gdmears@me.com</entry>
-          </row>
+					<row>
+						<entry>EMS Subject Matter Expert</entry>
+						<entry>Joshua Legler, National EMS Information System. University of Utah
+							School of Medicine </entry>
+					</row>
+					<row>
+						<entry>Terminology Support</entry>
+						<entry>Jami Deckard, Regenstrief Institute</entry>
+					</row>
         </tbody>
       </tgroup>
     </table>
+		<p><b>Prior Contributors</b></p>
+		<table id="table_chv_hvf_1tb">
+			<tgroup cols="2">
+				<tbody>
+					<row>
+						<entry>EMS Subject Matter Expert</entry>
+						<entry>Greg Mears, M.D. Formerly of the Department of Emergency Medicine
+							University of North Carolina, Chapel Hill </entry>
+					</row>
+					<row>
+						<entry>Co-Editor</entry>
+						<entry>Sarah Ryan,  Ockham Information Services LLC </entry>
+					</row>
+					<row>
+						<entry>Abdul-Malik Shakir</entry>
+						<entry>Shakir Consulting</entry>
+					</row>
+					<row>
+						<entry>Salimah Shakir</entry>
+						<entry>Shakir Consulting</entry>
+					</row>
+					<row>
+						<entry>Terminology Support</entry>
+						<entry>Jaci Phillips, Regenstrief Institute</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
 	</body>
 </topic>

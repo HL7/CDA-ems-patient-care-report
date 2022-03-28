@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
     <booktitle>
 		<mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
-		<booktitlealt id="Publication">Jan 2022</booktitlealt>
+		<booktitlealt id="Publication">May 2022</booktitlealt>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
     </booktitle>
     <bookmeta>
@@ -14,7 +14,7 @@
     	<prodinfo>
     	    <prodname>CDAR2_IG_EMS_PCR</prodname>  
 			<vrmlist>
-			    <vrm release="R3_N1" version="2022JAN" ></vrm>
+			    <vrm release="R3_N1" version="2022MAY" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>Normative</series>
@@ -40,11 +40,9 @@
         </bookrights>
     </bookmeta>
     <frontmatter>
-        <preface>
             <!-- <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/> --> 
            <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
            <topicref href="preface/RevisionHistory.dita" navtitle="Revision History" type="topic"/>
-        </preface>
         <booklists>
             <toc/>
             <figurelist/>
