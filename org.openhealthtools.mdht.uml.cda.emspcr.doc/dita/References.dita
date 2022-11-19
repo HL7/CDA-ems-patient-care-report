@@ -6,36 +6,58 @@
 	<body>
 		<p>
 			<ul>
-				<li>  Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo A, (Editors). HL7
-					Clinical Document Architecture, Release 2.0. ANSI-approved HL7 Standard; May
-					2005. Ann Arbor, Mich.: Health Level Seven, Inc. Available through <xref
-						format="html" href="http://www.hl7.org">HL7</xref> or if an HL7 member with
-					the following link: <xref format="zip"
-						href="http://www.hl7.org/documentcenter/private/standards/cda/r2/cda_r2_normativewebedition.zip"
-						>CDA Release 2 Normative Web Edition.</xref>
+				<li>CDA: 
+					<xref
+						format="html" href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=515" 
+						scope="external">Clinical Document Architecture 2.1</xref>
 				</li>
-				<li>
-					<xref format="html" href="http://www.regenstrief.org/loinc">LOINC®</xref>
-					: Logical Observation Identifiers Names and Codes,
-					Regenstrief
-					Institute.
+				<li>Extensible Markup Language (XML): 
+					<xref format="html" href="http://www.w3.org/XML" scope="external">www.w3.org/XML</xref>
+					.
 				</li>
-				<li>
-					<xref format="html" href="http://www.ihtsdo.org/">SNOMED CT®</xref>
+
+				<li>FDA Routes of Administration: 
+					<xref format="html" href="https://www.fda.gov/drugs/data-standards-manual-monographs/route-administration" 
+						scope="external">Food and Drug Administration Routes of Administration</xref>
+				</li>
+				<li>LOINC®: 
+					<xref format="html" href="http://www.regenstrief.org/loinc" scope="external">Logical Observation 
+						Identifiers Names and Codes, Regenstrief Institute.</xref>
+				</li>
+				<li>NEMSIS (National Emergency Medical Services Information System Data Dictionary, version
+					3.5: Available at <xref format="html" href="http://www.NEMSIS.org" scope="external"
+						>NEMSIS.org</xref>
+				</li>
+				<li>Race and Ethnicity 
+					<p>
+						OMB race categories can be found in <xref format="html" href=
+						"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.3/expansion" scope="external">VSAC</xref> 
+						or in the <xref format="html" href="http://hl7.org/fhir/us/core/ValueSet/omb-race-category" 
+						scope="external"> US Core FHIR </xref> specification
+					</p>
+					<p>
+						Detailed races can be found in <xref format="html" href=
+							"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.14914/expansion" scope="external">VSAC</xref> 
+						or in the <xref format="html" href="http://hl7.org/fhir/us/core/ValueSet/detailed-race" 
+							scope="external"> US Core FHIR </xref> specification
+					</p>
+					<p>
+						OMB ethnicity categories can be found in <xref format="html" href=
+							"https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.837/expansion" scope="external">VSAC</xref> 
+						or in the <xref format="html" href="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category" 
+							scope="external"> US Core FHIR </xref> specification
+					</p>					<p>
+						Detailed ethnicities can be found in <xref format="html" href=
+							"https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.877/expansion" scope="external">VSAC</xref> 
+						or in the <xref format="html" href="http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity" 
+							scope="external"> US Core FHIR </xref> specification
+					</p>
+				</li>
+				<li>SNOMED CT: 
+					<xref format="html" href="https://www.snomed.org/" scope="external">SNOMED CT®</xref>
 					: SNOMED Clinical Terms SNOMED International
 					Organization.
 				</li>
-				<li>
-					Extensible Markup Language,
-					<xref format="html" href="http://www.w3.org/XML">www.w3.org/XML</xref>
-					.
-				</li>
-				<li>  National Emergency Medical Services Information System (NEMSIS) Data Dictionary, version
-					3.5. Available at <xref format="html" href="http://www.NEMSIS.org"
-						>NEMSIS.org</xref>
-				</li>
-				<li> HL7 EMS Domain Analysis Model, available from HL7 at <xref href="http://hl7.org"
-						format="html" scope="external">HL7.org</xref>.</li>
 			</ul>
 		</p>
 	</body>

@@ -1372,11 +1372,6 @@
       <ownedLiteral xmi:id="_eAHdYMFTEeGyGv5RKvEgDA" name="LA4389-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YZGKgMFTEeGyGv5RKvEgDA" name="Confidentiality"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ycs4IMFTEeGyGv5RKvEgDA" name="HL7 Confidentiality">
-      <ownedComment xmi:id="_qkGlgDXlEeWpTYI46fwViQ">
-        <body>Types of privacy metadata classifying an IT resource (data, information object, service, or system capability) according to its level of sensitivity, which is based on an analysis of applicable privacy policies and the risk of financial, reputational, or other harm to an individual or entity that could result if made available or disclosed to unauthorized individuals, entities, or processes.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Yc5scMFTEeGyGv5RKvEgDA" name="Human language"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdC2YMFTEeGyGv5RKvEgDA" name="HL7 Human Language">
       <ownedComment xmi:id="_uFGnEDXlEeWpTYI46fwViQ">
@@ -1404,7 +1399,6 @@
       <ownedLiteral xmi:id="_eBDRgMFTEeGyGv5RKvEgDA" name="LA4216-3"/>
       <ownedLiteral xmi:id="_eBJ_MMFTEeGyGv5RKvEgDA" name="LA4389-8"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_l2HA0McHEeGjDJAyT0XW9Q" name="Ethnicity"/>
     <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_zOhYYL4jEeWsSvGfUKC7GA" name="LA22866-0"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_M5r9gMcdEeGjDJAyT0XW9Q" name="ICD-10">
       <ownedComment xmi:id="_zght8DXlEeWpTYI46fwViQ">
@@ -1686,7 +1680,7 @@
     </profileApplication>
   </uml:Package>
   <term:ValueSetVersion xmi:id="_Pg4m8WlfEeG4boS-IbG8Zw" identifier="2.16.840.1.113883.17.3.11.70" definition="Level of service provided for an encounter (as defined by CMS)" binding="Dynamic" base_Enumeration="_Pg4m8GlfEeG4boS-IbG8Zw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Z7NwIHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.1" definition="Kind of physical phenomenon causing an injury" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Z7NJEHSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_h3qpUHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.10" version="2022" definition="Etiology of a cardiac arrest" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_h3qCQHSJEeGa4IXs2ghZEw"/>
@@ -1733,7 +1727,7 @@
   <term:ValueSetVersion xmi:id="_YT_r8HSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.66" definition="Urgency of transport" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YT_E4HSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dEWckHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.56" definition="Anatomical location of administered infusion, typically intravenous" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dEV1gHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_hkDiEHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.90" definition="Rationale for not attempting to resuscitate a patient" binding="Dynamic" base_Enumeration="_hkC7AHSPEeGa4IXs2ghZEw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_olMpkHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.57" definition="Kind of procedure used for cardiopulmonary resuscitation" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_olMCgHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_s33_sHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.58" definition="Kind of abnormal effect associated with the performance of a procedure" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_s33YoHSPEeGa4IXs2ghZEw"/>
@@ -1768,8 +1762,7 @@
   <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.91" definition="Whether cardiac arrest occurred before or after arrival of emergency medical service team" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_MkZfAHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.9" definition="Kind of incident resulting in or likely to result in injuries or clinically adverse events" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_MkY38HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dw5r4JsjEeGzXI65shd6Fw" identifier="2.16.840.1.113883.17.3.11.92" definition="Rationale for not adminstering an otherwise indicated medication" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dw32sJsjEeGzXI65shd6Fw"/>
-  <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" definition="Appropriateness for disclosure of information" binding="Dynamic" codeSystem="_YctfMMFTEeGyGv5RKvEgDA" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
-  <term:CodeSystemVersion xmi:id="_YctfMMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.5.25" version="" fullName="Types of privacy metadata classifying an IT resource (data, information object, service, or system capability) according to its level of sensitivity, which is based on an analysis of applicable privacy policies and the risk of financial, reputational, or other harm to an individual or entity that could result if made available or disclosed to unauthorized individuals, entities, or processes." source="HL7" base_Enumeration="_Ycs4IMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" definition="Appropriateness for disclosure of information" binding="Dynamic" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetVersion xmi:id="_Yc5sccFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.11526" definition="Codes for the Representation of Names of Languages" binding="Dynamic" codeSystem="_YdC2YcFTEeGyGv5RKvEgDA" base_Enumeration="_Yc5scMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YdC2YcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.121" version="" fullName="Codes for the Representation of Names of Languages" source="HL7" base_Enumeration="_YdC2YMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YgJ0wcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.1" version="" fullName="Logical Observation Identifiers Names and Codes" source="NEMSIS" base_Enumeration="_YgJ0wMFTEeGyGv5RKvEgDA"/>
@@ -2755,9 +2748,6 @@
   <term:ValueSetCode xmi:id="_eA8j0cFTEeGyGv5RKvEgDA" conceptName="Denied by order" base_EnumerationLiteral="_eA8j0MFTEeGyGv5RKvEgDA" xxxxx="LA18925-0"/>
   <term:ValueSetCode xmi:id="_eBDRgcFTEeGyGv5RKvEgDA" conceptName="Contraindicated" base_EnumerationLiteral="_eBDRgMFTEeGyGv5RKvEgDA" xxxxx="LA4216-3"/>
   <term:ValueSetCode xmi:id="_eBJ_McFTEeGyGv5RKvEgDA" conceptName="Refused" base_EnumerationLiteral="_eBJ_MMFTEeGyGv5RKvEgDA" xxxxx="LA4389-8"/>
-  <term:ValueSetVersion xmi:id="_l2Hn4McHEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.1.11.15836" definition="Person's ethnic background" binding="Dynamic" base_Enumeration="_l2HA0McHEeGjDJAyT0XW9Q">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
-  </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_M5tLoMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.3.1" fullName="International Classification of Diseases, 10th revision" source="Classifications for diseases, signs and symptoms, abnormal findings, complaints, social circumstances, and external causes of injury or diseases" base_Enumeration="_M5r9gMcdEeGjDJAyT0XW9Q"/>
   <term:CodeSystemVersion xmi:id="_q2XMoMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.4" fullName="ICD-10 Procedure Coding System" base_Enumeration="_q2WlkMcdEeGjDJAyT0XW9Q"/>
   <term:CodeSystemVersion xmi:id="_t_IUYMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.90" fullName="International Classification of Diseases, 10th Revision, Clinical Modification" base_Enumeration="_t_HGQMcdEeGjDJAyT0XW9Q"/>
@@ -2783,7 +2773,7 @@
   <term:ValueSetCode xmi:id="_8ZrB0FKHEeK-YbJf-zpN1g" conceptName="Urethral" base_EnumerationLiteral="_8ZqawFKHEeK-YbJf-zpN1g"/>
   <term:CodeSystemVersion xmi:id="_vP74cFg6EeK-i8RB1gvLUA" identifier="2.16.840.1.113883.6.88" fullName="Normalized names for clinical drugs" source="National Library of Medicine" url="https://www.nlm.nih.gov/research/umls/rxnorm/" base_Enumeration="_vP6qUFg6EeK-i8RB1gvLUA"/>
   <term:ValueSetVersion xmi:id="_m-x-8FhYEeK-i8RB1gvLUA" identifier="2.16.840.1.113883.17.3.11.108" definition="Kind of device used to administer a substance to a patient" binding="Dynamic" base_Enumeration="_m-xX4FhYEeK-i8RB1gvLUA">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_xk0wkFhYEeK-i8RB1gvLUA" conceptName="Nasal Oxygen Cannula" base_EnumerationLiteral="_xkzicFhYEeK-i8RB1gvLUA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -2838,7 +2828,7 @@
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetCode>
   <term:ValueSetVersion xmi:id="_T7wrUMtYEeSbT7e8VE5niQ" identifier="2.16.840.1.113883.17.3.11.101" definition="Outcome of an EMS cardiac arrest event" binding="Dynamic" base_Enumeration="_T7u2IMtYEeSbT7e8VE5niQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_XPlMgMtYEeSbT7e8VE5niQ" conceptName="Expired in ED" base_EnumerationLiteral="_XPj-YMtYEeSbT7e8VE5niQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -2862,7 +2852,7 @@
   <term:ValueSetCode xmi:id="_bVBbEMtcEeSbT7e8VE5niQ" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_bVA0AMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_e6RDcMtcEeSbT7e8VE5niQ" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_e6QcYMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetVersion xmi:id="_1wsJEMxCEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.104" definition="Characteristic hospital capabilities that might be germane to an EMS destination selection" binding="Dynamic" base_Enumeration="_1wps0MxCEeSOI6Ao2VuoSQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7w-3kMxCEeSOI6Ao2VuoSQ" conceptName="Behavioral health" base_EnumerationLiteral="_7w-QgMxCEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_DL9bYMxDEeSOI6Ao2VuoSQ" conceptName="Burn center" base_EnumerationLiteral="_DL80UMxDEeSOI6Ao2VuoSQ"/>
@@ -2879,7 +2869,7 @@
   <term:ValueSetCode xmi:id="_vFxTwMxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable" base_EnumerationLiteral="_vFwssMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_yrk80MxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable (24/7)" base_EnumerationLiteral="_yrkVwMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetVersion xmi:id="_PLJC0MxGEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.103" definition="The location within the hospital that the patient was taken directly by EMS" binding="Dynamic" base_Enumeration="_PLHNoMxGEeSOI6Ao2VuoSQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bdpWQMxGEeSOI6Ao2VuoSQ" conceptName="Hospital-burn" base_EnumerationLiteral="_bdovMMxGEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_kpYGAMxGEeSOI6Ao2VuoSQ" conceptName="Hospital-cath lab" base_EnumerationLiteral="_kpW34MxGEeSOI6Ao2VuoSQ"/>
@@ -2907,7 +2897,7 @@
   <term:ValueSetCode xmi:id="_C1IZUMxPEeSng9W-IRKXig" conceptName="Hospital-rehabilitation" base_EnumerationLiteral="_C1HyQMxPEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_ID6LUMxPEeSng9W-IRKXig" conceptName="Hospital-SICU" base_EnumerationLiteral="_ID5kQMxPEeSng9W-IRKXig"/>
   <term:ValueSetVersion xmi:id="_LdpU8M0YEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.106" definition="Additional tactics or approaches used to support emergent response mode" binding="Dynamic" base_Enumeration="_Ldot4M0YEeSJm6m0rTs9zw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_LdpU8c0YEeSJm6m0rTs9zw" conceptName="Intersection Navigation-Against Normal Light Patterns" base_EnumerationLiteral="_Ldot4c0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8AM0YEeSJm6m0rTs9zw" conceptName="Intersection Navigation-With Automated Light Changing Technology" base_EnumerationLiteral="_Ldot4s0YEeSJm6m0rTs9zw"/>
@@ -3072,7 +3062,9 @@
   <term:ValueSetCode xmi:id="_Q6cQMA-CEey1-dRmTUcPqg" conceptName="Nausea" base_EnumerationLiteral="_Q6bpIA-CEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_UiGTYA-CEey1-dRmTUcPqg" conceptName="Vomiting" base_EnumerationLiteral="_UiFsUA-CEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_6FkLYBlfEeyirYLmelJuXQ" conceptName="Non-Acute/Routine" base_EnumerationLiteral="_6D9B0BlfEeyirYLmelJuXQ"/>
-  <term:ValueSetVersion xmi:id="_8seGwBlgEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.111" binding="Dynamic" base_Enumeration="_BwnLgBlgEeyirYLmelJuXQ"/>
+  <term:ValueSetVersion xmi:id="_8seGwBlgEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.111" binding="Dynamic" base_Enumeration="_BwnLgBlgEeyirYLmelJuXQ">
+    <codeSystem href="pathmap://EMSPCR_MODEL///emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_DVozIBlhEeyirYLmelJuXQ" conceptName="Critical (Red)" base_EnumerationLiteral="_BwnLgRlgEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_FB3EYBlhEeyirYLmelJuXQ" conceptName="Emergent (Yellow)" base_EnumerationLiteral="_BwnLghlgEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_GgYQ0BlhEeyirYLmelJuXQ" conceptName="Lower Acuity (Green)" base_EnumerationLiteral="_BwnLgxlgEeyirYLmelJuXQ"/>
