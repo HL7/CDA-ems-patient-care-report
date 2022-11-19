@@ -1,0 +1,20 @@
+<!-- BarriersToPatientCare: 2.16.840.1.1133883.17.3.10.1.83 -->
+
+<pattern id="p-PatientCareReport_1A_BarriersToPatientCare_moodCode_4_11_2-error_mdht" see="#p-PatientCareReport_1A_BarriersToPatientCare_moodCode_4_11_2-error_mdht" name="p-PatientCareReport_1A_BarriersToPatientCare_moodCode_4_11_2-error_mdht">
+		<!--
+			UML path: /BarriersToPatientCare
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/barriersToPatientCare
+			UML qualified name: emspcr::BarriersToPatientCare
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:barriersToPatientCare[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.83']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: BarriersToPatientCareMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.11.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11196)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

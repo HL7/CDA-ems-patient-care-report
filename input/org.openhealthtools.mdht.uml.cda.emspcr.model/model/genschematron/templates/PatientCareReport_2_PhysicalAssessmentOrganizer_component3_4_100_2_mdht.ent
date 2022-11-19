@@ -1,0 +1,20 @@
+<!-- PhysicalAssessmentOrganizer: 2.16.840.1.1133883.17.3.10.1.78 -->
+
+<pattern id="p-PatientCareReport_2_PhysicalAssessmentOrganizer_component3_4_100_2-error_mdht" see="#p-PatientCareReport_2_PhysicalAssessmentOrganizer_component3_4_100_2-error_mdht" name="p-PatientCareReport_2_PhysicalAssessmentOrganizer_component3_4_100_2-error_mdht">
+		<!--
+			UML path: /PhysicalAssessmentOrganizer
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer
+			UML qualified name: emspcr::PhysicalAssessmentOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']">
+		<!--
+			OCL: self.component->select(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer::SkinAssessmentComponent))->size() <= 1
+			Constraint name: PhysicalAssessmentOrganizerComponent3
+		-->
+	<assert test="count(cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.180']) &lt;= 1">Error: PatientCareReport - 4.100.2 component3
+		Conformance: MAY contain zero or one [0..1] component (CONF:11103)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

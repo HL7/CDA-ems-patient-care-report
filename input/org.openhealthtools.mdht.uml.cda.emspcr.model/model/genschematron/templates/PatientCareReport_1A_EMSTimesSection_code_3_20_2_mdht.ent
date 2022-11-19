@@ -1,0 +1,30 @@
+<!-- EMSTimesSection: 2.16.840.1.1133883.17.3.10.1.10 -->
+
+<pattern id="p-PatientCareReport_1A_EMSTimesSection_code_3_20_2-error_mdht" see="#p-PatientCareReport_1A_EMSTimesSection_code_3_20_2-error_mdht" name="p-PatientCareReport_1A_EMSTimesSection_code_3_20_2-error_mdht">
+		<!--
+			UML path: /EMSTimesSection
+			UML root path: /PatientCareReport/TimesSection
+			UML qualified name: emspcr::EMSTimesSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:TimesSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.10']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSTimesSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67667-6' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.20.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11641)/@code=&quot;67667-6&quot; EMS Times Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10820)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSTimesSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.20.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11641)/@code=&quot;67667-6&quot; EMS Times Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10820)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

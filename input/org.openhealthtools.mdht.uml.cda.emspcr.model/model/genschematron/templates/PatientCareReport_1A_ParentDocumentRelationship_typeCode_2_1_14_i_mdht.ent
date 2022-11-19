@@ -1,0 +1,20 @@
+<!-- ParentDocumentRelationship -->
+
+<pattern id="p-PatientCareReport_1A_ParentDocumentRelationship_typeCode_2_1_14_i-error_mdht" see="#p-PatientCareReport_1A_ParentDocumentRelationship_typeCode_2_1_14_i-error_mdht" name="p-PatientCareReport_1A_ParentDocumentRelationship_typeCode_2_1_14_i-error_mdht">
+		<!--
+			UML path: /PatientCareReport/relatedDocument
+			UML root path: /PatientCareReport/relatedDocument
+			UML qualified name: emspcr::PatientCareReport::ParentDocumentRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:relatedDocument">
+		<!--
+			OCL: true
+			Constraint name: PatientCareReportParentDocumentRelationshipTypeCode
+		-->
+	<assert test="true()">Error: PatientCareReport - 2.1.14.i typeCode
+		Conformance: contain exactly one [1..1] @typeCode=&quot;RPLC&quot; 
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

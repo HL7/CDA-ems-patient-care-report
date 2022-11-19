@@ -1,0 +1,20 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet_2_1_9_i_d_4_ix-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet_2_1_9_i_d_4_ix-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet_2_1_9_i_d_4_ix-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML root path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:providerOrganization/cda:addr">
+		<!--
+			OCL: self.isNullFlavorUndefined() implies ( self.streetAddressLine->size() >=1 and self.streetAddressLine->size() <=4)
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet
+		-->
+	<assert test="@nullFlavor or count(cda:streetAddressLine) &gt;= 1 and count(cda:streetAddressLine) &lt;= 4">Error: PatientCareReport - 2.1.9.i.d.4.ix GeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet
+		Conformance: SHALL contain at least one and not more than 4 streetAddressLine (CONF:7291, R2.1=CONF:81-7291, DSTU:819)
+		Analysis: SHALL contain at least one and not more than 4 streetAddressLine
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

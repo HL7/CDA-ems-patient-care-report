@@ -1,0 +1,20 @@
+<!-- EMSAdvanceDirectivesSection: 2.16.840.1.1133883.17.3.10.1.12 -->
+
+<pattern id="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_text_3_1_4-error_mdht" see="#p-PatientCareReport_1A_EMSAdvanceDirectivesSection_text_3_1_4-error_mdht" name="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_text_3_1_4-error_mdht">
+		<!--
+			UML path: /EMSAdvanceDirectivesSection
+			UML root path: /PatientCareReport/AdvanceDirectives
+			UML qualified name: emspcr::EMSAdvanceDirectivesSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AdvanceDirectives[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.12']">
+		<!--
+			OCL: not self.text.oclIsUndefined()
+			Constraint name: EMSAdvanceDirectivesSectionText
+		-->
+	<assert test="cda:text">Error: PatientCareReport - 3.1.4 text
+		Conformance: SHALL contain exactly one [1..1] text (CONF:10945)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

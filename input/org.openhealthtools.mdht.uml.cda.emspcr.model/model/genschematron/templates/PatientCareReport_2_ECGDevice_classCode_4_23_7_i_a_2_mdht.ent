@@ -1,0 +1,20 @@
+<!-- ECGDevice -->
+
+<pattern id="p-PatientCareReport_2_ECGDevice_classCode_4_23_7_i_a_2-error_mdht" see="#p-PatientCareReport_2_ECGDevice_classCode_4_23_7_i_a_2-error_mdht" name="p-PatientCareReport_2_ECGDevice_classCode_4_23_7_i_a_2-error_mdht">
+		<!--
+			UML path: /CardiacRhythm/participant1/participantRole/playingDevice
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component47/observation/participant1/participantRole/playingDevice
+			UML qualified name: emspcr::CardiacRhythm::ECGParticipant::ECGParticipantRole::ECGDevice
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.169']/cda:participant/cda:participantRole/cda:playingDevice">
+		<!--
+			OCL: (not self.classCode.oclIsUndefined()) implies (true)
+			Constraint name: CardiacRhythmECGParticipantECGParticipantRoleECGDeviceClassCode
+		-->
+	<assert test="not(@classCode) or true()">Error: PatientCareReport - 4.23.7.i.a.2 classCode
+		Conformance: contain zero or one [0..1] @classCode=&quot;DEV&quot; 
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

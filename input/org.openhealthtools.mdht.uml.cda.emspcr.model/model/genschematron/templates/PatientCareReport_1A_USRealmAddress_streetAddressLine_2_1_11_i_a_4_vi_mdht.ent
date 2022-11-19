@@ -1,0 +1,20 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_streetAddressLine_2_1_11_i_a_4_vi-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_streetAddressLine_2_1_11_i_a_4_vi-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_streetAddressLine_2_1_11_i_a_4_vi-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization/cda:addr">
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies (not self.streetAddressLine->isEmpty() ))
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressStreetAddressLine
+		-->
+	<assert test="@nullFlavor or cda:streetAddressLine">Error: PatientCareReport - 2.1.11.i.a.4.vi streetAddressLine
+		Conformance: SHALL contain at least one [1..*] streetAddressLine (CONF:7291, R2.1=CONF:81-7291)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

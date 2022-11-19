@@ -1,0 +1,20 @@
+<!-- PelvicAndGenitourinaryAssessmentComponent -->
+
+<pattern id="p-PatientCareReport_2_PelvicAndGenitourinaryAssessmentComponent_observation_4_100_9_i-error_mdht" see="#p-PatientCareReport_2_PelvicAndGenitourinaryAssessmentComponent_observation_4_100_9_i-error_mdht" name="p-PatientCareReport_2_PelvicAndGenitourinaryAssessmentComponent_observation_4_100_9_i-error_mdht">
+		<!--
+			UML path: /PhysicalAssessmentOrganizer/component10
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component10
+			UML qualified name: emspcr::PhysicalAssessmentOrganizer::PelvicAndGenitourinaryAssessmentComponent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.118']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PelvicAndGenitourinaryAssessment))
+			Constraint name: PhysicalAssessmentOrganizerPelvicAndGenitourinaryAssessmentComponentObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.118'])=1">Error: PatientCareReport - 4.100.9.i observation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11116)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

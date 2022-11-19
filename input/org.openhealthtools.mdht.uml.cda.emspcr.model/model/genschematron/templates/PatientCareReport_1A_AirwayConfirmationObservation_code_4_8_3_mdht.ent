@@ -1,0 +1,30 @@
+<!-- AirwayConfirmationObservation: 2.16.840.1.1133883.17.3.10.1.175 -->
+
+<pattern id="p-PatientCareReport_1A_AirwayConfirmationObservation_code_4_8_3-error_mdht" see="#p-PatientCareReport_1A_AirwayConfirmationObservation_code_4_8_3-error_mdht" name="p-PatientCareReport_1A_AirwayConfirmationObservation_code_4_8_3-error_mdht">
+		<!--
+			UML path: /AirwayConfirmationObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/AirwayConfirmationRelationship/AirwayConfirmationObservation
+			UML qualified name: emspcr::AirwayConfirmationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.175']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: AirwayConfirmationObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.8.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10542)/@code=&quot;71576-3&quot; Airway device placement confirmation NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10541)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '71576-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: AirwayConfirmationObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '71576-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.8.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10542)/@code=&quot;71576-3&quot; Airway device placement confirmation NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10541)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

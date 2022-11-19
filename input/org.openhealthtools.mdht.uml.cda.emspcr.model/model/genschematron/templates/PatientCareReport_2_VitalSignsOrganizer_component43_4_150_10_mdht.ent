@@ -1,0 +1,20 @@
+<!-- VitalSignsOrganizer: 2.16.840.1.1133883.17.3.10.1.28 -->
+
+<pattern id="p-PatientCareReport_2_VitalSignsOrganizer_component43_4_150_10-error_mdht" see="#p-PatientCareReport_2_VitalSignsOrganizer_component43_4_150_10-error_mdht" name="p-PatientCareReport_2_VitalSignsOrganizer_component43_4_150_10-error_mdht">
+		<!--
+			UML path: /VitalSignsOrganizer
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer
+			UML qualified name: emspcr::VitalSignsOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']">
+		<!--
+			OCL: self.component->select(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(emspcr::VitalSignsOrganizer::AdditionalVitalSignsOrganizer))->size() <= 1
+			Constraint name: VitalSignsOrganizerComponent43
+		-->
+	<assert test="count(cda:component[cda:organizer/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']) &lt;= 1">Error: PatientCareReport - 4.150.10 component43
+		Conformance: MAY contain zero or one [0..1] component (CONF:11706)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

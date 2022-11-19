@@ -1,0 +1,30 @@
+<!-- NeurologicalAssessment: 2.16.840.1.1133883.17.3.10.1.141 -->
+
+<pattern id="p-PatientCareReport_2_NeurologicalAssessment_code_4_85_3-error_mdht" see="#p-PatientCareReport_2_NeurologicalAssessment_code_4_85_3-error_mdht" name="p-PatientCareReport_2_NeurologicalAssessment_code_4_85_3-error_mdht">
+		<!--
+			UML path: /NeurologicalAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component15/observation
+			UML qualified name: emspcr::NeurologicalAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.141']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: NeurologicalAssessmentCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.85.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10414)/@code=&quot;67536-3&quot; Neurological assessment Nervous system NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10413)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67536-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: NeurologicalAssessmentCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67536-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.85.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10414)/@code=&quot;67536-3&quot; Neurological assessment Nervous system NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10413)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

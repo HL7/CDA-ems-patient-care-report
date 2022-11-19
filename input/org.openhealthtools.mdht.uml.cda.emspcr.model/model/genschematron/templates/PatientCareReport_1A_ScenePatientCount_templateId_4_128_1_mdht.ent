@@ -1,0 +1,20 @@
+<!-- ScenePatientCount: 2.16.840.1.1133883.17.3.10.1.86 -->
+
+<pattern id="p-PatientCareReport_1A_ScenePatientCount_templateId_4_128_1-error_mdht" see="#p-PatientCareReport_1A_ScenePatientCount_templateId_4_128_1-error_mdht" name="p-PatientCareReport_1A_ScenePatientCount_templateId_4_128_1-error_mdht">
+		<!--
+			UML path: /ScenePatientCount
+			UML root path: /PatientCareReport/SceneSection/scenePatientCount
+			UML qualified name: emspcr::ScenePatientCount
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SceneSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.8']/cda:scenePatientCount[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.86']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.86' and id.extension = '2022-01-01')
+			Constraint name: ScenePatientCountTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.86' and @extension = '2022-01-01'">Error: PatientCareReport - 4.128.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11480 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.86&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

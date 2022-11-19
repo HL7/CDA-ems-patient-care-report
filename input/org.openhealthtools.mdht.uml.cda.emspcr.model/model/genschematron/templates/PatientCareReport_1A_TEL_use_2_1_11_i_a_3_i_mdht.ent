@@ -1,0 +1,20 @@
+<!-- TEL -->
+
+<pattern id="p-PatientCareReport_1A_TEL_use_2_1_11_i_a_3_i-error_mdht" see="#p-PatientCareReport_1A_TEL_use_2_1_11_i_a_3_i-error_mdht" name="p-PatientCareReport_1A_TEL_use_2_1_11_i_a_3_i-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/telecom
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/telecom
+			UML qualified name: consol::GeneralHeaderConstraints::Custodian::AssignedCustodian::CustodianOrganization::TEL
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization/cda:telecom">
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies ((not self.use->isEmpty()) implies (not self.use->isEmpty()) ))
+			Constraint name: GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse
+		-->
+	<assert test="@nullFlavor or not(@use) or @use">Error: PatientCareReport - 2.1.11.i.a.3.i use
+		Conformance: SHOULD contain zero or one [0..1] @use (CONF:7998, R2.1=CONF:1198-7998)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,30 @@
+<!-- DestinationRole -->
+
+<pattern id="p-PatientCareReport_1A_DestinationRole_code_2_1_12_iii_b-error_mdht" see="#p-PatientCareReport_1A_DestinationRole_code_2_1_12_iii_b-error_mdht" name="p-PatientCareReport_1A_DestinationRole_code_2_1_12_iii_b-error_mdht">
+		<!--
+			UML path: /PatientCareReport/participant/DestinationRole
+			UML root path: /PatientCareReport/participant/DestinationRole
+			UML qualified name: emspcr::PatientCareReport::DestinationParticipantParticipation::DestinationRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:participant/cda:associatedEntity">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11504-0' or value.code = 'LA14084-0' or value.code = 'LA18686-8' or value.code = 'LA18687-6' or value.code = 'LA18688-4' or value.code = 'LA18690-0' or value.code = 'LA18691-8' or value.code = 'LA18692-6' or value.code = 'LA18693-4' or value.code = 'LA24393-3' or value.code = 'LA24392-5' or value.code = 'LA32923-7' or value.code = 'LA32924-5' or value.code = 'LA21437-1' or value.code = 'LA32926-0' or value.code = 'LA32927-8' or value.code = 'LA27338-5' or value.code = 'LA32929-4' or value.code = 'LA32930-2' or value.code = 'LA27-8')
+			Constraint name: PatientCareReportDestinationParticipantParticipationDestinationRoleCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA11504-0' or @code = 'LA14084-0' or @code = 'LA18686-8' or @code = 'LA18687-6' or @code = 'LA18688-4' or @code = 'LA18690-0' or @code = 'LA18691-8' or @code = 'LA18692-6' or @code = 'LA18693-4' or @code = 'LA24393-3' or @code = 'LA24392-5' or @code = 'LA32923-7' or @code = 'LA32924-5' or @code = 'LA21437-1' or @code = 'LA32926-0' or @code = 'LA32927-8' or @code = 'LA27338-5' or @code = 'LA32929-4' or @code = 'LA32930-2' or @code = 'LA27-8')]">Error: PatientCareReport - 2.1.12.iii.b code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11601), which SHALL be selected from ValueSet DestinationType 2.16.840.1.113883.17.3.11.69 DYNAMIC (CONF:10056)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: PatientCareReportDestinationParticipantParticipationDestinationRoleCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 2.1.12.iii.b code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11601), which SHALL be selected from ValueSet DestinationType 2.16.840.1.113883.17.3.11.69 DYNAMIC (CONF:10056)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

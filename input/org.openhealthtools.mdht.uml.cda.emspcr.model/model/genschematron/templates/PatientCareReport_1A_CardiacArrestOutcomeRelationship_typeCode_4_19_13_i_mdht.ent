@@ -1,0 +1,20 @@
+<!-- CardiacArrestOutcomeRelationship -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestOutcomeRelationship_typeCode_4_19_13_i-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestOutcomeRelationship_typeCode_4_19_13_i-error_mdht" name="p-PatientCareReport_1A_CardiacArrestOutcomeRelationship_typeCode_4_19_13_i-error_mdht">
+		<!--
+			UML path: /CardiacArrest/cardiacArrestOutcomeRelationship
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestOutcomeRelationship
+			UML qualified name: emspcr::CardiacArrest::CardiacArrestOutcomeRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.184']">
+		<!--
+			OCL: self.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP
+			Constraint name: CardiacArrestCardiacArrestOutcomeRelationshipTypeCode
+		-->
+	<assert test="@typeCode = 'COMP'">Error: PatientCareReport - 4.19.13.i typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode=&quot;COMP&quot;  (CONF:11333)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

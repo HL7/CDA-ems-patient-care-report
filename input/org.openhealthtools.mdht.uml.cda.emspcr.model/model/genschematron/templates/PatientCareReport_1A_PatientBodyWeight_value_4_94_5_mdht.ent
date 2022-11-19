@@ -1,0 +1,20 @@
+<!-- PatientBodyWeight: 2.16.840.1.1133883.17.3.10.1.178 -->
+
+<pattern id="p-PatientCareReport_1A_PatientBodyWeight_value_4_94_5-error_mdht" see="#p-PatientCareReport_1A_PatientBodyWeight_value_4_94_5-error_mdht" name="p-PatientCareReport_1A_PatientBodyWeight_value_4_94_5-error_mdht">
+		<!--
+			UML path: /PatientBodyWeight
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/bodyWeight/observation
+			UML qualified name: emspcr::PatientBodyWeight
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:entry/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.178']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ))
+			Constraint name: PatientBodyWeightValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='PQ')])">Error: PatientCareReport - 4.94.5 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;PQ&quot; (CONF:10364)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

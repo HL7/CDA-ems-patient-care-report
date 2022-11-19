@@ -1,0 +1,20 @@
+<!-- LastOralIntake: 2.16.840.1.1133883.17.3.10.1.80 -->
+
+<pattern id="p-PatientCareReport_1A_LastOralIntake_value_4_70_4-error_mdht" see="#p-PatientCareReport_1A_LastOralIntake_value_4_70_4-error_mdht" name="p-PatientCareReport_1A_LastOralIntake_value_4_70_4-error_mdht">
+		<!--
+			UML path: /LastOralIntake
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/lastOralIntake
+			UML qualified name: emspcr::LastOralIntake
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:lastOralIntake[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.80']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::TS))
+			Constraint name: LastOralIntakeValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='TS')])">Error: PatientCareReport - 4.70.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;TS&quot; (CONF:10425)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

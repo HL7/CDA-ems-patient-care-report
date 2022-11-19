@@ -1,0 +1,20 @@
+<!-- MedicationAdministrationDeviceParticipant -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministrationDeviceParticipant_medicationAdministrationDeviceRole_4_78_16_ii-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministrationDeviceParticipant_medicationAdministrationDeviceRole_4_78_16_ii-error_mdht" name="p-PatientCareReport_1A_MedicationAdministrationDeviceParticipant_medicationAdministrationDeviceRole_4_78_16_ii-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/medicationAdministrationDeviceParticipant
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationAdministrationDeviceParticipant
+			UML qualified name: emspcr::MedicationAdministered::MedicationAdministrationDeviceParticipant
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:participant[cda:participantRole/@classCode = 'MANU']">
+		<!--
+			OCL: self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(emspcr::MedicationAdministered::MedicationAdministrationDeviceParticipant::MedicationAdministrationDeviceRole))
+			Constraint name: MedicationAdministeredMedicationAdministrationDeviceParticipantMedicationAdministrationDeviceRole
+		-->
+	<assert test="count(cda:participantRole)=1">Error: PatientCareReport - 4.78.16.ii medicationAdministrationDeviceRole
+		Conformance: SHALL contain exactly one [1..1] participantRole (CONF:11075)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

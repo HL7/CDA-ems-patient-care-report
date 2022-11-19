@@ -1,0 +1,30 @@
+<!-- PatientCareReport: 2.16.840.1.1133883.17.3.10.2 -->
+
+<pattern id="p-PatientCareReport_1A_PatientCareReport_code_2_1_5-error_mdht" see="#p-PatientCareReport_1A_PatientCareReport_code_2_1_5-error_mdht" name="p-PatientCareReport_1A_PatientCareReport_code_2_1_5-error_mdht">
+		<!--
+			UML path: /PatientCareReport
+			UML root path: /PatientCareReport
+			UML qualified name: emspcr::PatientCareReport
+		-->
+	<rule context="/cda:ClinicalDocument">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: PatientCareReportCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 2.1.5 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:5253)/@code=&quot;67796-3&quot; EMS patient care report - version 3 Document NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10002)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: PatientCareReportCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67796-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 2.1.5 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:5253)/@code=&quot;67796-3&quot; EMS patient care report - version 3 Document NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10002)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

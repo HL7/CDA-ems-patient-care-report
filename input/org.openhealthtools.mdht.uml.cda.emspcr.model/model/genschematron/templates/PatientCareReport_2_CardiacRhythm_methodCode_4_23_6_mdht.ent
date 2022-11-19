@@ -1,0 +1,30 @@
+<!-- CardiacRhythm: 2.16.840.1.1133883.17.3.10.1.169 -->
+
+<pattern id="p-PatientCareReport_2_CardiacRhythm_methodCode_4_23_6-error_mdht" see="#p-PatientCareReport_2_CardiacRhythm_methodCode_4_23_6-error_mdht" name="p-PatientCareReport_2_CardiacRhythm_methodCode_4_23_6-error_mdht">
+		<!--
+			UML path: /CardiacRhythm
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component47/observation
+			UML qualified name: emspcr::CardiacRhythm
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.169']">
+		<!--
+			OCL: not self.methodCode->isEmpty()
+			Constraint name: CardiacRhythmMethodCodeP
+		-->
+	<assert test="cda:methodCode">Error: PatientCareReport - 4.23.6 methodCode
+		Conformance: SHALL contain at least one [1..*] methodCode (CONF:10277), which SHALL be selected from ValueSet MethodOfECGInterpretation 2.16.840.1.113883.17.3.11.20 DYNAMIC (CONF:10276)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.methodCode->isEmpty() and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18682-7' or value.code = 'LA18683-5' or value.code = 'LA18684-3' or value.code = 'LA18685-0'))
+			Constraint name: CardiacRhythmMethodCode
+		-->
+	<assert test="cda:methodCode and not(cda:methodCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18682-7' or @code = 'LA18683-5' or @code = 'LA18684-3' or @code = 'LA18685-0'))])">Error: PatientCareReport - 4.23.6 methodCode
+		Conformance: SHALL contain at least one [1..*] methodCode (CONF:10277), which SHALL be selected from ValueSet MethodOfECGInterpretation 2.16.840.1.113883.17.3.11.20 DYNAMIC (CONF:10276)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

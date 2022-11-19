@@ -1,0 +1,20 @@
+<!-- CardiacArrest: 2.16.840.1.1133883.17.3.10.1.27 -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrest_negationInd_4_19_3-error_mdht" see="#p-PatientCareReport_1A_CardiacArrest_negationInd_4_19_3-error_mdht" name="p-PatientCareReport_1A_CardiacArrest_negationInd_4_19_3-error_mdht">
+		<!--
+			UML path: /CardiacArrest
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence
+			UML qualified name: emspcr::CardiacArrest
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']">
+		<!--
+			OCL: (not self.negationInd.oclIsUndefined()) implies (not self.negationInd.oclIsUndefined())
+			Constraint name: CardiacArrestNegationInd
+		-->
+	<assert test="not(@negationInd) or @negationInd">Error: PatientCareReport - 4.19.3 negationInd
+		Conformance: SHOULD contain zero or one [0..1] @negationInd (CONF:10141)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

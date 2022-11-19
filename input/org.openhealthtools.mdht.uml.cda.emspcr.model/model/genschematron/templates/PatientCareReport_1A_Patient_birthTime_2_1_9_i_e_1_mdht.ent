@@ -1,0 +1,20 @@
+<!-- Patient -->
+
+<pattern id="p-PatientCareReport_1A_Patient_birthTime_2_1_9_i_e_1-error_mdht" see="#p-PatientCareReport_1A_Patient_birthTime_2_1_9_i_e_1-error_mdht" name="p-PatientCareReport_1A_Patient_birthTime_2_1_9_i_e_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/patient
+			UML root path: /PatientCareReport/recordTarget/patientRole/patient
+			UML qualified name: emspcr::PatientCareReport::RecordTarget::PatientRole::Patient
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:patient">
+		<!--
+			OCL: ((not self.birthTime.oclIsUndefined()) and self.birthTime.isNullFlavorUndefined()) implies (not self.birthTime.oclIsUndefined())
+			Constraint name: PatientCareReportRecordTargetPatientRolePatientBirthTime
+		-->
+	<assert test="not(cda:birthTime and not(cda:birthTime/@nullFlavor)) or cda:birthTime">Error: PatientCareReport - 2.1.9.i.e.1 birthTime
+		Conformance: SHOULD contain zero or one [0..1] birthTime (CONF:10873)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

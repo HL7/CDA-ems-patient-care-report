@@ -1,0 +1,20 @@
+<!-- CurrentMedication: 2.16.840.1.1133883.17.3.10.1.77 -->
+
+<pattern id="p-PatientCareReport_1A_CurrentMedication_doseQuantity_4_31_4-error_mdht" see="#p-PatientCareReport_1A_CurrentMedication_doseQuantity_4_31_4-error_mdht" name="p-PatientCareReport_1A_CurrentMedication_doseQuantity_4_31_4-error_mdht">
+		<!--
+			UML path: /CurrentMedication
+			UML root path: /PatientCareReport/CurrentMedication/currentMedication
+			UML qualified name: emspcr::CurrentMedication
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CurrentMedication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.15']/cda:currentMedication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.77']">
+		<!--
+			OCL: ((not self.doseQuantity.oclIsUndefined()) and self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
+			Constraint name: CurrentMedicationDoseQuantity
+		-->
+	<assert test="not(cda:doseQuantity and not(cda:doseQuantity/@nullFlavor)) or cda:doseQuantity">Error: PatientCareReport - 4.31.4 doseQuantity
+		Conformance: SHOULD contain zero or one [0..1] doseQuantity (CONF:10230)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

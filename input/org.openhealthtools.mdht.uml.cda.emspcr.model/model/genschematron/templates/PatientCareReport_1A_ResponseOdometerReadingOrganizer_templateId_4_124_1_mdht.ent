@@ -1,0 +1,20 @@
+<!-- ResponseOdometerReadingOrganizer: 2.16.840.1.1133883.17.3.10.1.97 -->
+
+<pattern id="p-PatientCareReport_1A_ResponseOdometerReadingOrganizer_templateId_4_124_1-error_mdht" see="#p-PatientCareReport_1A_ResponseOdometerReadingOrganizer_templateId_4_124_1-error_mdht" name="p-PatientCareReport_1A_ResponseOdometerReadingOrganizer_templateId_4_124_1-error_mdht">
+		<!--
+			UML path: /ResponseOdometerReadingOrganizer
+			UML root path: /PatientCareReport/ResponseSection/responseOdometerReadingOrganizer
+			UML qualified name: emspcr::ResponseOdometerReadingOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:responseOdometerReadingOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.97']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.97' and id.extension = '2022-01-01')
+			Constraint name: ResponseOdometerReadingOrganizerTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.97' and @extension = '2022-01-01'">Error: PatientCareReport - 4.124.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11494 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.97&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

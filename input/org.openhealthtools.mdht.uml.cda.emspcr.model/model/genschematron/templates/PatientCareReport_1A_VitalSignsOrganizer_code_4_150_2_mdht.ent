@@ -1,0 +1,30 @@
+<!-- VitalSignsOrganizer: 2.16.840.1.1133883.17.3.10.1.28 -->
+
+<pattern id="p-PatientCareReport_1A_VitalSignsOrganizer_code_4_150_2-error_mdht" see="#p-PatientCareReport_1A_VitalSignsOrganizer_code_4_150_2-error_mdht" name="p-PatientCareReport_1A_VitalSignsOrganizer_code_4_150_2-error_mdht">
+		<!--
+			UML path: /VitalSignsOrganizer
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer
+			UML qualified name: emspcr::VitalSignsOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96'
+			Constraint name: VitalSignsOrganizerCode
+		-->
+	<assert test="cda:code and cda:code[@code = '46680005' and @codeSystem = '2.16.840.1.113883.6.96']">Error: PatientCareReport - 4.150.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11338)/@code=&quot;46680005&quot; Vital signs (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:11337)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: VitalSignsOrganizerCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.150.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11338)/@code=&quot;46680005&quot; Vital signs (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:11337)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

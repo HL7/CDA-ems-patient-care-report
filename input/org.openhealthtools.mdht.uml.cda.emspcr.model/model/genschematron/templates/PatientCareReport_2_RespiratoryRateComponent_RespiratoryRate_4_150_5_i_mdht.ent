@@ -1,0 +1,20 @@
+<!-- RespiratoryRateComponent -->
+
+<pattern id="p-PatientCareReport_2_RespiratoryRateComponent_RespiratoryRate_4_150_5_i-error_mdht" see="#p-PatientCareReport_2_RespiratoryRateComponent_RespiratoryRate_4_150_5_i-error_mdht" name="p-PatientCareReport_2_RespiratoryRateComponent_RespiratoryRate_4_150_5_i-error_mdht">
+		<!--
+			UML path: /VitalSignsOrganizer/RespiratoryRateComponent
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/RespiratoryRateComponent
+			UML qualified name: emspcr::VitalSignsOrganizer::RespiratoryRateComponent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.146']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::RespiratoryRate))
+			Constraint name: VitalSignsOrganizerRespiratoryRateComponentRespiratoryRate
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.146'])=1">Error: PatientCareReport - 4.150.5.i RespiratoryRate
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11083)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

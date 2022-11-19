@@ -1,0 +1,20 @@
+<!-- ExistenceOfKnownNonDrugAllergy: 2.16.840.1.1133883.17.3.10.1.103 -->
+
+<pattern id="p-PatientCareReport_1A_ExistenceOfKnownNonDrugAllergy_templateId_4_52_1-error_mdht" see="#p-PatientCareReport_1A_ExistenceOfKnownNonDrugAllergy_templateId_4_52_1-error_mdht" name="p-PatientCareReport_1A_ExistenceOfKnownNonDrugAllergy_templateId_4_52_1-error_mdht">
+		<!--
+			UML path: /ExistenceOfKnownNonDrugAllergy
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/environmentalAllergies/ExistenceOfNonDrugAllergy
+			UML qualified name: emspcr::ExistenceOfKnownNonDrugAllergy
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:environmentalAllergies[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.49']/cda:ExistenceOfNonDrugAllergy[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.103']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.103' and id.extension = '2022-01-01')
+			Constraint name: ExistenceOfKnownNonDrugAllergyTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.103' and @extension = '2022-01-01'">Error: PatientCareReport - 4.52.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11499 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.103&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

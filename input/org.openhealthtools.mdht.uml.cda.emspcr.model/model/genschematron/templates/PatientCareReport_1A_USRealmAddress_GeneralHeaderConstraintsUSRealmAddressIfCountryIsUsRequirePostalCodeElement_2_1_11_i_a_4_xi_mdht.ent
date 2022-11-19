@@ -1,0 +1,20 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement_2_1_11_i_a_4_xi-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement_2_1_11_i_a_4_xi-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_GeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement_2_1_11_i_a_4_xi-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization/cda:addr">
+		<!--
+			OCL: isNullFlavorUndefined() and country->exists(c : datatypes::ADXP | c.getText() = 'US') implies postalCode->size() >= 1
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement
+		-->
+	<assert test="not(not(@nullFlavor) and cda:country[string(.//text()) = 'US']) or count(cda:postalCode) &gt;= 1">Error: PatientCareReport - 2.1.11.i.a.4.xi GeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement
+		Conformance: if the country is US, the postalCode element is required but SHOULD have @nullFlavor if the postalCode is unknown (DSTU:818)
+		Analysis: if the country is US, the postalCode element is required but SHOULD have @nullFlavor if the postalCode is unknown
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

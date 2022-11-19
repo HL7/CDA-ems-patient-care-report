@@ -1,0 +1,20 @@
+<!-- DrugAllergy: 2.16.840.1.1133883.17.3.10.1.48 -->
+
+<pattern id="p-PatientCareReport_2_DrugAllergy_participant1_4_45_5-error_mdht" see="#p-PatientCareReport_2_DrugAllergy_participant1_4_45_5-error_mdht" name="p-PatientCareReport_2_DrugAllergy_participant1_4_45_5-error_mdht">
+		<!--
+			UML path: /DrugAllergy
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer/component415/observation
+			UML qualified name: emspcr::DrugAllergy
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.48']">
+		<!--
+			OCL: self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(emspcr::DrugAllergy::DrugAllergyParticipation))
+			Constraint name: DrugAllergyParticipant1
+		-->
+	<assert test="count(cda:participant)=1">Error: PatientCareReport - 4.45.5 participant1
+		Conformance: SHALL contain exactly one [1..1] participant (CONF:11126)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

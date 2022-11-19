@@ -1,0 +1,20 @@
+<!-- EncompassingEncounterRelationship -->
+
+<pattern id="p-PatientCareReport_2_EncompassingEncounterRelationship_encompassingEncounter_2_1_15_ii-error_mdht" see="#p-PatientCareReport_2_EncompassingEncounterRelationship_encompassingEncounter_2_1_15_ii-error_mdht" name="p-PatientCareReport_2_EncompassingEncounterRelationship_encompassingEncounter_2_1_15_ii-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf
+			UML root path: /PatientCareReport/componentOf
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf">
+		<!--
+			OCL: self.encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter))
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEncompassingEncounter
+		-->
+	<assert test="count(cda:encompassingEncounter)=1">Error: PatientCareReport - 2.1.15.ii encompassingEncounter
+		Conformance: SHALL contain exactly one [1..1] encompassingEncounter (CONF:10882)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

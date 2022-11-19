@@ -1,0 +1,30 @@
+<!-- AdverseEventTypeObservation: 2.16.840.1.1133883.17.3.10.1.90 -->
+
+<pattern id="p-PatientCareReport_1A_AdverseEventTypeObservation_code_4_6_3-error_mdht" see="#p-PatientCareReport_1A_AdverseEventTypeObservation_code_4_6_3-error_mdht" name="p-PatientCareReport_1A_AdverseEventTypeObservation_code_4_6_3-error_mdht">
+		<!--
+			UML path: /AdverseEventTypeObservation
+			UML root path: /PatientCareReport/PersonnelAdverseEventSection/adverseEventTypeObservation
+			UML qualified name: emspcr::AdverseEventTypeObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PersonnelAdverseEventSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.6']/cda:adverseEventTypeObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.90']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: AdverseEventTypeObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.6.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10710)/@code=&quot;67555-3&quot; Work related exposure, injury, or death Provider NEMSIS type (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10709)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67555-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: AdverseEventTypeObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67555-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.6.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10710)/@code=&quot;67555-3&quot; Work related exposure, injury, or death Provider NEMSIS type (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10709)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

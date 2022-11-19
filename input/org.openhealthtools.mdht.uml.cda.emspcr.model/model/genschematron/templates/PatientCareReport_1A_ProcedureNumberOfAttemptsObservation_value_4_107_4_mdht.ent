@@ -1,0 +1,20 @@
+<!-- ProcedureNumberOfAttemptsObservation: 2.16.840.1.1133883.17.3.10.1.132 -->
+
+<pattern id="p-PatientCareReport_1A_ProcedureNumberOfAttemptsObservation_value_4_107_4-error_mdht" see="#p-PatientCareReport_1A_ProcedureNumberOfAttemptsObservation_value_4_107_4-error_mdht" name="p-PatientCareReport_1A_ProcedureNumberOfAttemptsObservation_value_4_107_4-error_mdht">
+		<!--
+			UML path: /ProcedureNumberOfAttemptsObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ProcedureNumberOfAttemptsRelationship/ProcedureNumberOfAttemptsObservation
+			UML qualified name: emspcr::ProcedureNumberOfAttemptsObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.132']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT))
+			Constraint name: ProcedureNumberOfAttemptsObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='INT')])">Error: PatientCareReport - 4.107.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;INT&quot; (CONF:10522)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- EMSPhysicalAssessmentSection: 2.16.840.1.1133883.17.3.10.1.20 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_barriersToPatientCare_3_13_10-error_mdht" see="#p-PatientCareReport_1A_EMSPhysicalAssessmentSection_barriersToPatientCare_3_13_10-error_mdht" name="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_barriersToPatientCare_3_13_10-error_mdht">
+		<!--
+			UML path: /EMSPhysicalAssessmentSection
+			UML root path: /PatientCareReport/PhysicalAssessmentSection
+			UML qualified name: emspcr::EMSPhysicalAssessmentSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::BarriersToPatientCare) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSPhysicalAssessmentSectionBarriersToPatientCare
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.83' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.13.10 barriersToPatientCare
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:10985)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

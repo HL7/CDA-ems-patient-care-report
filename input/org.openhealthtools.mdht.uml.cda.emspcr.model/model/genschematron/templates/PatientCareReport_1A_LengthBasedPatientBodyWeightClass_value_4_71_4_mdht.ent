@@ -1,0 +1,30 @@
+<!-- LengthBasedPatientBodyWeightClass: 2.16.840.1.1133883.17.3.10.1.110 -->
+
+<pattern id="p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_value_4_71_4-error_mdht" see="#p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_value_4_71_4-error_mdht" name="p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_value_4_71_4-error_mdht">
+		<!--
+			UML path: /LengthBasedPatientBodyWeightClass
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/lengthBasedBodyWeight/observation
+			UML qualified name: emspcr::LengthBasedPatientBodyWeightClass
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:entry/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.110']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15553-3' or value.code = 'LA15554-1' or value.code = 'LA15555-8' or value.code = 'LA17192-8' or value.code = 'LA17193-6' or value.code = 'LA17194-4' or value.code = 'LA17195-1' or value.code = 'LA17196-9' or value.code = 'LA4457-3'))
+			Constraint name: LengthBasedPatientBodyWeightClassValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA15553-3' or @code = 'LA15554-1' or @code = 'LA15555-8' or @code = 'LA17192-8' or @code = 'LA17193-6' or @code = 'LA17194-4' or @code = 'LA17195-1' or @code = 'LA17196-9' or @code = 'LA4457-3'))])">Error: PatientCareReport - 4.71.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11603), which SHALL be selected from ValueSet LengthBasedWeightClass 2.16.840.1.113883.17.3.11.24 DYNAMIC (CONF:10367)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: LengthBasedPatientBodyWeightClassValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.71.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11603), which SHALL be selected from ValueSet LengthBasedWeightClass 2.16.840.1.113883.17.3.11.24 DYNAMIC (CONF:10367)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

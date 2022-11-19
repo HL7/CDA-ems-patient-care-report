@@ -1,0 +1,20 @@
+<!-- GlasgowEye: 2.16.840.1.1133883.17.3.10.1.160 -->
+
+<pattern id="p-PatientCareReport_2_GlasgowEye_moodCode_4_58_2-error_mdht" see="#p-PatientCareReport_2_GlasgowEye_moodCode_4_58_2-error_mdht" name="p-PatientCareReport_2_GlasgowEye_moodCode_4_58_2-error_mdht">
+		<!--
+			UML path: /GlasgowEye
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component48/organizer/component414/observation
+			UML qualified name: emspcr::GlasgowEye
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.170']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.160']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: GlasgowEyeMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.58.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11294)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

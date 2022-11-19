@@ -1,0 +1,30 @@
+<!-- ThrombolyticContraindications: 2.16.840.1.1133883.17.3.10.1.82 -->
+
+<pattern id="p-PatientCareReport_1A_ThrombolyticContraindications_value_4_132_4-error_mdht" see="#p-PatientCareReport_1A_ThrombolyticContraindications_value_4_132_4-error_mdht" name="p-PatientCareReport_1A_ThrombolyticContraindications_value_4_132_4-error_mdht">
+		<!--
+			UML path: /ThrombolyticContraindications
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/thrombolyticContraindications
+			UML qualified name: emspcr::ThrombolyticContraindications
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:thrombolyticContraindications[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.82']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17114-2' or value.code = 'LA17115-9' or value.code = 'LA17116-7'))
+			Constraint name: ThrombolyticContraindicationsValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17114-2' or @code = 'LA17115-9' or @code = 'LA17116-7'))])">Error: PatientCareReport - 4.132.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11722), which SHALL be selected from ValueSet ExistenceOfContraindicationsToThrombolyticUse 2.16.840.1.113883.17.3.11.41 DYNAMIC (CONF:10433)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ThrombolyticContraindicationsValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.132.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11722), which SHALL be selected from ValueSet ExistenceOfContraindicationsToThrombolyticUse 2.16.840.1.113883.17.3.11.41 DYNAMIC (CONF:10433)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

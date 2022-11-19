@@ -1,0 +1,30 @@
+<!-- ProcedurePerformerEntity -->
+
+<pattern id="p-PatientCareReport_1A_ProcedurePerformerEntity_code_4_105_13_i_b-error_mdht" see="#p-PatientCareReport_1A_ProcedurePerformerEntity_code_4_105_13_i_b-error_mdht" name="p-PatientCareReport_1A_ProcedurePerformerEntity_code_4_105_13_i_b-error_mdht">
+		<!--
+			UML path: /Procedure/ProcedurePerformer/ProcedurePerformerEntity
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ProcedurePerformer/ProcedurePerformerEntity
+			UML qualified name: emspcr::Procedure::ProcedurePerformer::ProcedurePerformerEntity
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:performer/cda:assignedEntity">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15276-1' or value.code = 'LA18695-9' or value.code = 'LA18696-7' or value.code = 'LA18697-5' or value.code = 'LA18698-3' or value.code = 'LA18699-1' or value.code = 'LA18704-9' or value.code = 'LA18705-6' or value.code = 'LA18706-4' or value.code = 'LA4687-5' or value.code = 'LA9297-8' or value.code = 'LA24387-5' or value.code = 'LA9292-9' or value.code = 'LA9296-0' or value.code = 'LA9291-1' or value.code = 'LA32966-6' or value.code = 'LA9277-0' or value.code = 'LA32964-1' or value.code = 'LA28538-9' or value.code = 'LA4634-7' or value.code = 'LA32922-9' or value.code = 'LA33278-5' or value.code = 'LA9405-7' or value.code = 'LA33280-1' or value.code = 'LA33281-9' or value.code = 'LA33282-7' or value.code = 'LA33279-3')
+			Constraint name: ProcedureProcedurePerformerProcedurePerformerEntityCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA15276-1' or @code = 'LA18695-9' or @code = 'LA18696-7' or @code = 'LA18697-5' or @code = 'LA18698-3' or @code = 'LA18699-1' or @code = 'LA18704-9' or @code = 'LA18705-6' or @code = 'LA18706-4' or @code = 'LA4687-5' or @code = 'LA9297-8' or @code = 'LA24387-5' or @code = 'LA9292-9' or @code = 'LA9296-0' or @code = 'LA9291-1' or @code = 'LA32966-6' or @code = 'LA9277-0' or @code = 'LA32964-1' or @code = 'LA28538-9' or @code = 'LA4634-7' or @code = 'LA32922-9' or @code = 'LA33278-5' or @code = 'LA9405-7' or @code = 'LA33280-1' or @code = 'LA33281-9' or @code = 'LA33282-7' or @code = 'LA33279-3')]">Error: PatientCareReport - 4.105.13.i.b code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10537), which SHALL be selected from ValueSet ProviderRole 2.16.840.1.113883.17.3.11.46 DYNAMIC (CONF:10538)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ProcedureProcedurePerformerProcedurePerformerEntityCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.105.13.i.b code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10537), which SHALL be selected from ValueSet ProviderRole 2.16.840.1.113883.17.3.11.46 DYNAMIC (CONF:10538)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

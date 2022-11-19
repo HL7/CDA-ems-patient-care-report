@@ -1,0 +1,30 @@
+<!-- TraumaTriageCriteriaSteps1and2: 2.16.840.1.1133883.17.3.10.1.52 -->
+
+<pattern id="p-PatientCareReport_1A_TraumaTriageCriteriaSteps1and2_value_4_138_4-error_mdht" see="#p-PatientCareReport_1A_TraumaTriageCriteriaSteps1and2_value_4_138_4-error_mdht" name="p-PatientCareReport_1A_TraumaTriageCriteriaSteps1and2_value_4_138_4-error_mdht">
+		<!--
+			UML path: /TraumaTriageCriteriaSteps1and2
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/traumaCenterCriteria
+			UML qualified name: emspcr::TraumaTriageCriteriaSteps1and2
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:traumaCenterCriteria[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.52']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA23844-6' or value.code = 'LA17338-7' or value.code = 'LA17339-5' or value.code = 'LA17340-3' or value.code = 'LA17341-1' or value.code = 'LA17342-9' or value.code = 'LA17343-7' or value.code = 'LA17344-5' or value.code = 'LA17345-2' or value.code = 'LA17346-0' or value.code = 'LA17347-8'))
+			Constraint name: TraumaTriageCriteriaSteps1and2Value
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA23844-6' or @code = 'LA17338-7' or @code = 'LA17339-5' or @code = 'LA17340-3' or @code = 'LA17341-1' or @code = 'LA17342-9' or @code = 'LA17343-7' or @code = 'LA17344-5' or @code = 'LA17345-2' or @code = 'LA17346-0' or @code = 'LA17347-8'))])">Error: PatientCareReport - 4.138.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11616), which SHALL be selected from ValueSet TraumaCenterCriteria 2.16.840.1.113883.17.3.11.3 DYNAMIC (CONF:10112)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: TraumaTriageCriteriaSteps1and2ValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.138.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11616), which SHALL be selected from ValueSet TraumaCenterCriteria 2.16.840.1.113883.17.3.11.3 DYNAMIC (CONF:10112)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

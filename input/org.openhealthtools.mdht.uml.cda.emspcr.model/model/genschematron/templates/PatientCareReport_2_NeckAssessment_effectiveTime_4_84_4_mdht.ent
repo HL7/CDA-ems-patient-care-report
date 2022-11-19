@@ -1,0 +1,20 @@
+<!-- NeckAssessment: 2.16.840.1.1133883.17.3.10.1.114 -->
+
+<pattern id="p-PatientCareReport_2_NeckAssessment_effectiveTime_4_84_4-error_mdht" see="#p-PatientCareReport_2_NeckAssessment_effectiveTime_4_84_4-error_mdht" name="p-PatientCareReport_2_NeckAssessment_effectiveTime_4_84_4-error_mdht">
+		<!--
+			UML path: /NeckAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component6/observation
+			UML qualified name: emspcr::NeckAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.114']">
+		<!--
+			OCL: ((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+			Constraint name: NeckAssessmentEffectiveTime
+		-->
+	<assert test="not(cda:effectiveTime and not(cda:effectiveTime/@nullFlavor)) or cda:effectiveTime">Error: PatientCareReport - 4.84.4 effectiveTime
+		Conformance: SHOULD contain zero or one [0..1] effectiveTime (CONF:11229)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

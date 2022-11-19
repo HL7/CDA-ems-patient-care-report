@@ -1,0 +1,30 @@
+<!-- ProtocolObservation: 2.16.840.1.1133883.17.3.10.1.93 -->
+
+<pattern id="p-PatientCareReport_1A_ProtocolObservation_code_4_112_3-error_mdht" see="#p-PatientCareReport_1A_ProtocolObservation_code_4_112_3-error_mdht" name="p-PatientCareReport_1A_ProtocolObservation_code_4_112_3-error_mdht">
+		<!--
+			UML path: /ProtocolObservation
+			UML root path: /PatientCareReport/ProtocolSection/protocolObservation
+			UML qualified name: emspcr::ProtocolObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']/cda:protocolObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.93']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ProtocolObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.112.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10719)/@code=&quot;67537-1&quot; Protocol used NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10718)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67537-1' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: ProtocolObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67537-1' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.112.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10719)/@code=&quot;67537-1&quot; Protocol used NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10718)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

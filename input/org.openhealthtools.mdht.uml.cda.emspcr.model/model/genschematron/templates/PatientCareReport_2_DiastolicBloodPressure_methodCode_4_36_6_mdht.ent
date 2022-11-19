@@ -1,0 +1,30 @@
+<!-- DiastolicBloodPressure: 2.16.840.1.1133883.17.3.10.1.144 -->
+
+<pattern id="p-PatientCareReport_2_DiastolicBloodPressure_methodCode_4_36_6-error_mdht" see="#p-PatientCareReport_2_DiastolicBloodPressure_methodCode_4_36_6-error_mdht" name="p-PatientCareReport_2_DiastolicBloodPressure_methodCode_4_36_6-error_mdht">
+		<!--
+			UML path: /DiastolicBloodPressure
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component411/observation
+			UML qualified name: emspcr::DiastolicBloodPressure
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.144']">
+		<!--
+			OCL: self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA24013-7' or value.code = 'LA24012-9' or value.code = 'LA25780-0' or value.code = 'LA25782-6' or value.code = 'LA19771-7' or value.code = 'LA25783-4'))
+			Constraint name: DiastolicBloodPressureMethodCode
+		-->
+	<assert test="count(cda:methodCode) = 1 and not(cda:methodCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA24013-7' or @code = 'LA24012-9' or @code = 'LA25780-0' or @code = 'LA25782-6' or @code = 'LA19771-7' or @code = 'LA25783-4'))])">Error: PatientCareReport - 4.36.6 methodCode
+		Conformance: SHALL contain exactly one [1..1] methodCode (CONF:11346), which SHALL be selected from ValueSet BloodPressureMeasurementMethod 2.16.840.1.113883.17.3.11.107 DYNAMIC (CONF:11347)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.methodCode->size() =  1
+			Constraint name: DiastolicBloodPressureMethodCodeP
+		-->
+	<assert test="count(cda:methodCode) = 1">Error: PatientCareReport - 4.36.6 methodCode
+		Conformance: SHALL contain exactly one [1..1] methodCode (CONF:11346), which SHALL be selected from ValueSet BloodPressureMeasurementMethod 2.16.840.1.113883.17.3.11.107 DYNAMIC (CONF:11347)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

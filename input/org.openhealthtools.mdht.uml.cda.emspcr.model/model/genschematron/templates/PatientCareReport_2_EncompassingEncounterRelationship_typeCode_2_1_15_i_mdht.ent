@@ -1,0 +1,20 @@
+<!-- EncompassingEncounterRelationship -->
+
+<pattern id="p-PatientCareReport_2_EncompassingEncounterRelationship_typeCode_2_1_15_i-error_mdht" see="#p-PatientCareReport_2_EncompassingEncounterRelationship_typeCode_2_1_15_i-error_mdht" name="p-PatientCareReport_2_EncompassingEncounterRelationship_typeCode_2_1_15_i-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf
+			UML root path: /PatientCareReport/componentOf
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf">
+		<!--
+			OCL: isDefined('typeCode') and self.typeCode=vocab::ActRelationshipHasComponent::COMP
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipTypeCode
+		-->
+	<assert test="attribute::node()[name() = 'typeCode'] and @typeCode = 'COMP'">Error: PatientCareReport - 2.1.15.i typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode=&quot;COMP&quot;  (CONF:10042)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

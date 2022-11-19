@@ -1,0 +1,20 @@
+<!-- FaceAssessmentComponent -->
+
+<pattern id="p-PatientCareReport_2_FaceAssessmentComponent_observation_4_100_5_i-error_mdht" see="#p-PatientCareReport_2_FaceAssessmentComponent_observation_4_100_5_i-error_mdht" name="p-PatientCareReport_2_FaceAssessmentComponent_observation_4_100_5_i-error_mdht">
+		<!--
+			UML path: /PhysicalAssessmentOrganizer/component5
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component5
+			UML qualified name: emspcr::PhysicalAssessmentOrganizer::FaceAssessmentComponent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.112']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::FaceAssessment))
+			Constraint name: PhysicalAssessmentOrganizerFaceAssessmentComponentObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.112'])=1">Error: PatientCareReport - 4.100.5.i observation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11106)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

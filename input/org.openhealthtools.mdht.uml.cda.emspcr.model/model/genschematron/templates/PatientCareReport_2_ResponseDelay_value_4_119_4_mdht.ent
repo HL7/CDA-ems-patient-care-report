@@ -1,0 +1,30 @@
+<!-- ResponseDelay: 2.16.840.1.1133883.17.3.10.1.154 -->
+
+<pattern id="p-PatientCareReport_2_ResponseDelay_value_4_119_4-error_mdht" see="#p-PatientCareReport_2_ResponseDelay_value_4_119_4-error_mdht" name="p-PatientCareReport_2_ResponseDelay_value_4_119_4-error_mdht">
+		<!--
+			UML path: /ResponseDelay
+			UML root path: /PatientCareReport/ResponseSection/delayOrganizer/ResponseDelayRelationship/ResponseDelay
+			UML qualified name: emspcr::ResponseDelay
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:delayOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.95']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.154']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17583-8' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4' or value.code = 'LA24422-0' or value.code = 'LA24421-2'))
+			Constraint name: ResponseDelayValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17059-9' or @code = 'LA17583-8' or @code = 'LA17585-3' or @code = 'LA17586-1' or @code = 'LA17587-9' or @code = 'LA17588-7' or @code = 'LA17590-3' or @code = 'LA17591-1' or @code = 'LA17592-9' or @code = 'LA17593-7' or @code = 'LA17594-5' or @code = 'LA18081-2' or @code = 'LA18270-1' or @code = 'LA18271-9' or @code = 'LA18301-4' or @code = 'LA24422-0' or @code = 'LA24421-2'))])">Error: PatientCareReport - 4.119.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10597), which SHALL be selected from ValueSet ResponseDelayType 2.16.840.1.113883.17.3.11.51 DYNAMIC (CONF:10596)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ResponseDelayValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.119.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10597), which SHALL be selected from ValueSet ResponseDelayType 2.16.840.1.113883.17.3.11.51 DYNAMIC (CONF:10596)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

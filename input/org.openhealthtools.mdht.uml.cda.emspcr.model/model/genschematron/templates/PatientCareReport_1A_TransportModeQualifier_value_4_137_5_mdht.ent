@@ -1,0 +1,30 @@
+<!-- TransportModeQualifier: 2.16.840.1.1133883.17.3.10.1.193 -->
+
+<pattern id="p-PatientCareReport_1A_TransportModeQualifier_value_4_137_5-error_mdht" see="#p-PatientCareReport_1A_TransportModeQualifier_value_4_137_5-error_mdht" name="p-PatientCareReport_1A_TransportModeQualifier_value_4_137_5-error_mdht">
+		<!--
+			UML path: /TransportModeQualifier
+			UML root path: /PatientCareReport/DispositionSection/transportModeObservation/transportModeQualifierRelationship/observation
+			UML qualified name: emspcr::TransportModeQualifier
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:transportModeObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.33']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.193']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA22798-5' or value.code = 'LA22799-3' or value.code = 'LA22800-9' or value.code = 'LA22801-7' or value.code = 'LA22802-5' or value.code = 'LA22803-3' or value.code = 'LA22804-1' or value.code = 'LA22805-8' or value.code = 'LA22807-4' or value.code = 'LA22806-6'))
+			Constraint name: TransportModeQualifierValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA22798-5' or @code = 'LA22799-3' or @code = 'LA22800-9' or @code = 'LA22801-7' or @code = 'LA22802-5' or @code = 'LA22803-3' or @code = 'LA22804-1' or @code = 'LA22805-8' or @code = 'LA22807-4' or @code = 'LA22806-6'))])">Error: PatientCareReport - 4.137.5 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11600), which SHALL be selected from ValueSet TransportModeQualifier 2.16.840.1.113883.17.3.11.102 DYNAMIC (CONF:11356)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: TransportModeQualifierValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.137.5 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11600), which SHALL be selected from ValueSet TransportModeQualifier 2.16.840.1.113883.17.3.11.102 DYNAMIC (CONF:11356)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

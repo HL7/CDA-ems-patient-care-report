@@ -1,0 +1,30 @@
+<!-- ComplaintDuration: 2.16.840.1.1133883.17.3.10.1.139 -->
+
+<pattern id="p-PatientCareReport_1A_ComplaintDuration_code_4_26_3-error_mdht" see="#p-PatientCareReport_1A_ComplaintDuration_code_4_26_3-error_mdht" name="p-PatientCareReport_1A_ComplaintDuration_code_4_26_3-error_mdht">
+		<!--
+			UML path: /ComplaintDuration
+			UML root path: /PatientCareReport/SituationSection/complaint/ComplaintDurationRelationship/ComplaintDuration
+			UML qualified name: emspcr::ComplaintDuration
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:complaint[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.63']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.139']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ComplaintDurationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.26.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10779)/@code=&quot;67491-1&quot; Duration of chief complaint NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10780)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67491-1' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: ComplaintDurationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67491-1' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.26.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10779)/@code=&quot;67491-1&quot; Duration of chief complaint NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10780)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

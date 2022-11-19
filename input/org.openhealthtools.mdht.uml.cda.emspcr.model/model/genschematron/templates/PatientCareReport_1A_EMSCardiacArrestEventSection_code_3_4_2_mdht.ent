@@ -1,0 +1,30 @@
+<!-- EMSCardiacArrestEventSection: 2.16.840.1.1133883.17.3.10.1.14 -->
+
+<pattern id="p-PatientCareReport_1A_EMSCardiacArrestEventSection_code_3_4_2-error_mdht" see="#p-PatientCareReport_1A_EMSCardiacArrestEventSection_code_3_4_2-error_mdht" name="p-PatientCareReport_1A_EMSCardiacArrestEventSection_code_3_4_2-error_mdht">
+		<!--
+			UML path: /EMSCardiacArrestEventSection
+			UML root path: /PatientCareReport/CardiacArrestEvent
+			UML qualified name: emspcr::EMSCardiacArrestEventSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67799-7' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSCardiacArrestEventSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67799-7' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.4.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11633)/@code=&quot;67799-7&quot; EMS Cardiac Arrest Event Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10134)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSCardiacArrestEventSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.4.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11633)/@code=&quot;67799-7&quot; EMS Cardiac Arrest Event Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10134)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

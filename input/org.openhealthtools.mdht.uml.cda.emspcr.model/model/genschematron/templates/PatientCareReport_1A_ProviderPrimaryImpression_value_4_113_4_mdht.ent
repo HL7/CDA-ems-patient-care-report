@@ -1,0 +1,30 @@
+<!-- ProviderPrimaryImpression: 2.16.840.1.1133883.17.3.10.1.65 -->
+
+<pattern id="p-PatientCareReport_1A_ProviderPrimaryImpression_value_4_113_4-error_mdht" see="#p-PatientCareReport_1A_ProviderPrimaryImpression_value_4_113_4-error_mdht" name="p-PatientCareReport_1A_ProviderPrimaryImpression_value_4_113_4-error_mdht">
+		<!--
+			UML path: /ProviderPrimaryImpression
+			UML root path: /PatientCareReport/SituationSection/providerPrimaryImpression
+			UML qualified name: emspcr::ProviderPrimaryImpression
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:providerPrimaryImpression[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.65']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.90')
+			Constraint name: ProviderPrimaryImpressionValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.90')])">Error: PatientCareReport - 4.113.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10798), which SHALL be selected from (CodeSystem: 2.16.840.1.113883.6.90 ICD-10 CM) (CONF:10799)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ProviderPrimaryImpressionValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.113.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10798), which SHALL be selected from (CodeSystem: 2.16.840.1.113883.6.90 ICD-10 CM) (CONF:10799)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

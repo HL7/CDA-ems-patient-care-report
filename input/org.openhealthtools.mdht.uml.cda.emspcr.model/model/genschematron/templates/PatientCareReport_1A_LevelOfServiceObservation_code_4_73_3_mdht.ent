@@ -1,0 +1,30 @@
+<!-- LevelOfServiceObservation: 2.16.840.1.1133883.17.3.10.1.92 -->
+
+<pattern id="p-PatientCareReport_1A_LevelOfServiceObservation_code_4_73_3-error_mdht" see="#p-PatientCareReport_1A_LevelOfServiceObservation_code_4_73_3-error_mdht" name="p-PatientCareReport_1A_LevelOfServiceObservation_code_4_73_3-error_mdht">
+		<!--
+			UML path: /LevelOfServiceObservation
+			UML root path: /PatientCareReport/eMSBillingSection/levelOfServiceObservation
+			UML qualified name: emspcr::LevelOfServiceObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:eMSBillingSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.5']/cda:levelOfServiceObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.92']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: LevelOfServiceObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.73.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10090)/@code=&quot;69464-6&quot; Centers for medicare - medicaid, CMS, service level NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10091)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '69464-6' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: LevelOfServiceObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '69464-6' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.73.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10090)/@code=&quot;69464-6&quot; Centers for medicare - medicaid, CMS, service level NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10091)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

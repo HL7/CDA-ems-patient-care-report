@@ -1,0 +1,20 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_rateQuantity_4_78_7-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_rateQuantity_4_78_7-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_rateQuantity_4_78_7-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: ((not self.rateQuantity.oclIsUndefined()) and self.rateQuantity.isNullFlavorUndefined()) implies (not self.rateQuantity.oclIsUndefined())
+			Constraint name: MedicationAdministeredRateQuantity
+		-->
+	<assert test="not(cda:rateQuantity and not(cda:rateQuantity/@nullFlavor)) or cda:rateQuantity">Error: PatientCareReport - 4.78.7 rateQuantity
+		Conformance: MAY contain zero or one [0..1] rateQuantity (CONF:7517)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

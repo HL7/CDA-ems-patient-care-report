@@ -1,0 +1,20 @@
+<!-- ResponseOnSceneOdometerReading: 2.16.840.1.1133883.17.3.10.1.172 -->
+
+<pattern id="p-PatientCareReport_2_ResponseOnSceneOdometerReading_moodCode_4_125_2-error_mdht" see="#p-PatientCareReport_2_ResponseOnSceneOdometerReading_moodCode_4_125_2-error_mdht" name="p-PatientCareReport_2_ResponseOnSceneOdometerReading_moodCode_4_125_2-error_mdht">
+		<!--
+			UML path: /ResponseOnSceneOdometerReading
+			UML root path: /PatientCareReport/ResponseSection/responseOdometerReadingOrganizer/ResponseOnSceneOdometerReadingRelationship/ResponseOnSceneOdometerReading
+			UML qualified name: emspcr::ResponseOnSceneOdometerReading
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:responseOdometerReadingOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.97']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.172']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: ResponseOnSceneOdometerReadingMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.125.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11315)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

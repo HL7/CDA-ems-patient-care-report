@@ -1,0 +1,30 @@
+<!-- BackAndSpineAssessment: 2.16.840.1.1133883.17.3.10.1.119 -->
+
+<pattern id="p-PatientCareReport_2_BackAndSpineAssessment_targetSiteCode_4_10_6-error_mdht" see="#p-PatientCareReport_2_BackAndSpineAssessment_targetSiteCode_4_10_6-error_mdht" name="p-PatientCareReport_2_BackAndSpineAssessment_targetSiteCode_4_10_6-error_mdht">
+		<!--
+			UML path: /BackAndSpineAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component11/observation
+			UML qualified name: emspcr::BackAndSpineAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.119']">
+		<!--
+			OCL: ((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
+			Constraint name: BackAndSpineAssessmentTargetSiteCodeP
+		-->
+	<assert test="not(cda:targetSiteCode and cda:targetSiteCode[not(@nullFlavor)]) or cda:targetSiteCode">Error: PatientCareReport - 4.10.6 targetSiteCode
+		Conformance: SHALL contain zero or one [0..1] targetSiteCode (CONF:10396), which SHALL be selected from ValueSet BackSpineFindingLocation 2.16.840.1.113883.17.3.11.35 DYNAMIC (CONF:10395)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18726-2' or value.code = 'LA18727-0' or value.code = 'LA18728-8' or value.code = 'LA18729-6' or value.code = 'LA18730-4' or value.code = 'LA18731-2' or value.code = 'LA18732-0' or value.code = 'LA18733-8' or value.code = 'LA18734-6' or value.code = 'LA18735-3' or value.code = 'LA18736-1' or value.code = 'LA18737-9' or value.code = 'LA18738-7')))
+			Constraint name: BackAndSpineAssessmentTargetSiteCode
+		-->
+	<assert test="not(cda:targetSiteCode and cda:targetSiteCode[not(@nullFlavor)]) or not(cda:targetSiteCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18726-2' or @code = 'LA18727-0' or @code = 'LA18728-8' or @code = 'LA18729-6' or @code = 'LA18730-4' or @code = 'LA18731-2' or @code = 'LA18732-0' or @code = 'LA18733-8' or @code = 'LA18734-6' or @code = 'LA18735-3' or @code = 'LA18736-1' or @code = 'LA18737-9' or @code = 'LA18738-7'))])">Error: PatientCareReport - 4.10.6 targetSiteCode
+		Conformance: SHALL contain zero or one [0..1] targetSiteCode (CONF:10396), which SHALL be selected from ValueSet BackSpineFindingLocation 2.16.840.1.113883.17.3.11.35 DYNAMIC (CONF:10395)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

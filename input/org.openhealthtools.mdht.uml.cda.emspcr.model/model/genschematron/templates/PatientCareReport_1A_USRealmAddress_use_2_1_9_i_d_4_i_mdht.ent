@@ -1,0 +1,30 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_use_2_1_9_i_d_4_i-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_use_2_1_9_i_d_4_i-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_use_2_1_9_i_d_4_i-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML root path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:providerOrganization/cda:addr">
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies ((not self.use->isEmpty()) implies (not self.use->isEmpty()) ))
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressUseP
+		-->
+	<assert test="@nullFlavor or not(@use) or @use">Error: PatientCareReport - 2.1.9.i.d.4.i use
+		Conformance: SHOULD contain zero or one [0..1] @use, which SHALL be selected from ValueSet PostalAddressUse 2.16.840.1.113883.1.11.10637 STATIC (CONF:7290, R2.1=CONF:81-7290)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies ((not self.use->isEmpty()) implies (self.use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and 
+let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in 
+value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP)) ))
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressUse
+		-->
+	<assert test="@nullFlavor or not(@use) or not(@use[not(. and . = 'BAD' or . = 'DIR' or . = 'H' or . = 'HP' or . = 'HV' or . = 'PHYS' or . = 'PST' or . = 'PUB' or . = 'TMP' or . = 'WP')])">Error: PatientCareReport - 2.1.9.i.d.4.i use
+		Conformance: SHOULD contain zero or one [0..1] @use, which SHALL be selected from ValueSet PostalAddressUse 2.16.840.1.113883.1.11.10637 STATIC (CONF:7290, R2.1=CONF:81-7290)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

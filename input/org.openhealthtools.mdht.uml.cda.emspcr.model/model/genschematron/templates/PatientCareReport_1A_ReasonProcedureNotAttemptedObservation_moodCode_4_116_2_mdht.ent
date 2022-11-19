@@ -1,0 +1,20 @@
+<!-- ReasonProcedureNotAttemptedObservation: 2.16.840.1.1133883.17.3.10.1.137 -->
+
+<pattern id="p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_moodCode_4_116_2-error_mdht" see="#p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_moodCode_4_116_2-error_mdht" name="p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_moodCode_4_116_2-error_mdht">
+		<!--
+			UML path: /ReasonProcedureNotAttemptedObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ReasonProcedureNotAttemptedRelationship/ReasonProcedureNotAttemptedObservation
+			UML qualified name: emspcr::ReasonProcedureNotAttemptedObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.137']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: ReasonProcedureNotAttemptedObservationMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.116.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11262)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

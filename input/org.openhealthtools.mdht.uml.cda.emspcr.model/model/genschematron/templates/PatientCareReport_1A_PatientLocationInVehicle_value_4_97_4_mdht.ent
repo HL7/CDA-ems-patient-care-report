@@ -1,0 +1,30 @@
+<!-- PatientLocationInVehicle: 2.16.840.1.1133883.17.3.10.1.55 -->
+
+<pattern id="p-PatientCareReport_1A_PatientLocationInVehicle_value_4_97_4-error_mdht" see="#p-PatientCareReport_1A_PatientLocationInVehicle_value_4_97_4-error_mdht" name="p-PatientCareReport_1A_PatientLocationInVehicle_value_4_97_4-error_mdht">
+		<!--
+			UML path: /PatientLocationInVehicle
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/patientLocationInVehicle
+			UML qualified name: emspcr::PatientLocationInVehicle
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:patientLocationInVehicle[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.55']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17361-9' or value.code = 'LA17362-7' or value.code = 'LA17363-5' or value.code = 'LA17364-3' or value.code = 'LA17365-0' or value.code = 'LA17366-8' or value.code = 'LA17367-6' or value.code = 'LA17368-4' or value.code = 'LA17369-2' or value.code = 'LA17370-0' or value.code = 'LA17371-8' or value.code = 'LA17372-6' or value.code = 'LA17373-4' or value.code = 'LA17374-2' or value.code = 'LA4489-6'))
+			Constraint name: PatientLocationInVehicleValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17361-9' or @code = 'LA17362-7' or @code = 'LA17363-5' or @code = 'LA17364-3' or @code = 'LA17365-0' or @code = 'LA17366-8' or @code = 'LA17367-6' or @code = 'LA17368-4' or @code = 'LA17369-2' or @code = 'LA17370-0' or @code = 'LA17371-8' or @code = 'LA17372-6' or @code = 'LA17373-4' or @code = 'LA17374-2' or @code = 'LA4489-6'))])">Error: PatientCareReport - 4.97.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11618), which SHALL be selected from ValueSet VehiclePassengerLocation 2.16.840.1.113883.17.3.11.6 DYNAMIC (CONF:10121)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: PatientLocationInVehicleValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.97.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11618), which SHALL be selected from ValueSet VehiclePassengerLocation 2.16.840.1.113883.17.3.11.6 DYNAMIC (CONF:10121)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

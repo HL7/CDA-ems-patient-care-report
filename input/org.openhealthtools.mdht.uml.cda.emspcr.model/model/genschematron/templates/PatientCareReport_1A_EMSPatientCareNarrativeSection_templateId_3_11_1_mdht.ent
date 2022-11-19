@@ -1,0 +1,20 @@
+<!-- EMSPatientCareNarrativeSection: 2.16.840.1.1133883.17.3.10.1.1 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPatientCareNarrativeSection_templateId_3_11_1-error_mdht" see="#p-PatientCareReport_1A_EMSPatientCareNarrativeSection_templateId_3_11_1-error_mdht" name="p-PatientCareReport_1A_EMSPatientCareNarrativeSection_templateId_3_11_1-error_mdht">
+		<!--
+			UML path: /EMSPatientCareNarrativeSection
+			UML root path: /PatientCareReport/PatientCareNarrativeSection
+			UML qualified name: emspcr::EMSPatientCareNarrativeSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PatientCareNarrativeSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.1']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.1' and id.extension = '2022-01-01')
+			Constraint name: EMSPatientCareNarrativeSectionTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.1' and @extension = '2022-01-01'">Error: PatientCareReport - 3.11.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11405 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.1&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

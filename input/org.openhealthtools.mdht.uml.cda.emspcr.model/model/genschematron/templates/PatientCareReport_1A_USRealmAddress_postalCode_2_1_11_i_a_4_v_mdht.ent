@@ -1,0 +1,20 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_postalCode_2_1_11_i_a_4_v-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_postalCode_2_1_11_i_a_4_v-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_postalCode_2_1_11_i_a_4_v-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization/cda:addr">
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies (((not self.postalCode->isEmpty()) and self.postalCode->exists(element | element.isNullFlavorUndefined())) implies (not self.postalCode->isEmpty()) ))
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressPostalCode
+		-->
+	<assert test="@nullFlavor or not(cda:postalCode and cda:postalCode[not(@nullFlavor)]) or cda:postalCode">Error: PatientCareReport - 2.1.11.i.a.4.v postalCode
+		Conformance: SHOULD contain zero or one [0..1] postalCode (CONF:7294, R2.1=CONF:81-7294)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

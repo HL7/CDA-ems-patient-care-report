@@ -1,0 +1,20 @@
+<!-- Location -->
+
+<pattern id="p-PatientCareReport_2_Location_healthCareFacility_2_1_15_ii_c_1-error_mdht" see="#p-PatientCareReport_2_Location_healthCareFacility_2_1_15_ii_c_1-error_mdht" name="p-PatientCareReport_2_Location_healthCareFacility_2_1_15_ii_c_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter/location
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter/location
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::Location
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter/cda:location">
+		<!--
+			OCL: self.healthCareFacility->one(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::Location::HealthCareFacility))
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacility
+		-->
+	<assert test="count(cda:healthCareFacility[cda:location/@classCode = 'PLC'])=1">Error: PatientCareReport - 2.1.15.ii.c.1 healthCareFacility
+		Conformance: SHALL contain exactly one [1..1] healthCareFacility (CONF:10044)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

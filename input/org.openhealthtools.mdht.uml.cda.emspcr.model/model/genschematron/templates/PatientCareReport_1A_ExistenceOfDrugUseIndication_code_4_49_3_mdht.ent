@@ -1,0 +1,30 @@
+<!-- ExistenceOfDrugUseIndication: 2.16.840.1.1133883.17.3.10.1.70 -->
+
+<pattern id="p-PatientCareReport_1A_ExistenceOfDrugUseIndication_code_4_49_3-error_mdht" see="#p-PatientCareReport_1A_ExistenceOfDrugUseIndication_code_4_49_3-error_mdht" name="p-PatientCareReport_1A_ExistenceOfDrugUseIndication_code_4_49_3-error_mdht">
+		<!--
+			UML path: /ExistenceOfDrugUseIndication
+			UML root path: /PatientCareReport/SocialHistorySection/existenceOfDrugUseIndication
+			UML qualified name: emspcr::ExistenceOfDrugUseIndication
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SocialHistorySection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.22']/cda:existenceOfDrugUseIndication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.70']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ExistenceOfDrugUseIndicationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.49.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10248)/@code=&quot;69757-3&quot; Indications of drug or alcohol use by the patient NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10247)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '69757-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: ExistenceOfDrugUseIndicationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '69757-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.49.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10248)/@code=&quot;69757-3&quot; Indications of drug or alcohol use by the patient NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10247)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

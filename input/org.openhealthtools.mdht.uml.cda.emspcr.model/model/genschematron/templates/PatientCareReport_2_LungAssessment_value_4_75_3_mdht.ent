@@ -1,0 +1,30 @@
+<!-- LungAssessment: 2.16.840.1.1133883.17.3.10.1.194 -->
+
+<pattern id="p-PatientCareReport_2_LungAssessment_value_4_75_3-error_mdht" see="#p-PatientCareReport_2_LungAssessment_value_4_75_3-error_mdht" name="p-PatientCareReport_2_LungAssessment_value_4_75_3-error_mdht">
+		<!--
+			UML path: /LungAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component42/observation
+			UML qualified name: emspcr::LungAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.194']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA33360-1' or value.code = 'LA33354-4' or value.code = 'LA6626-1' or value.code = 'LA18402-0' or value.code = 'LA33362-7' or value.code = 'LA17232-2' or value.code = 'LA33365-0' or value.code = 'LA18226-3' or value.code = 'LA7460-4' or value.code = 'LA33356-9' or value.code = 'LA33355-1' or value.code = 'LA33363-5' or value.code = 'LA17612-5' or value.code = 'LA33364-3' or value.code = 'LA17236-3'))
+			Constraint name: LungAssessmentValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA33360-1' or @code = 'LA33354-4' or @code = 'LA6626-1' or @code = 'LA18402-0' or @code = 'LA33362-7' or @code = 'LA17232-2' or @code = 'LA33365-0' or @code = 'LA18226-3' or @code = 'LA7460-4' or @code = 'LA33356-9' or @code = 'LA33355-1' or @code = 'LA33363-5' or @code = 'LA17612-5' or @code = 'LA33364-3' or @code = 'LA17236-3'))])">Error: PatientCareReport - 4.75.3 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11575), which SHALL be selected from ValueSet LungFinding 2.16.840.1.113883.17.3.11.116 DYNAMIC (CONF:11574)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: LungAssessmentValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.75.3 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11575), which SHALL be selected from ValueSet LungFinding 2.16.840.1.113883.17.3.11.116 DYNAMIC (CONF:11574)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

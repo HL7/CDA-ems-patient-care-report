@@ -1,0 +1,20 @@
+<!-- SpontaneousCirculationRelationship -->
+
+<pattern id="p-PatientCareReport_1A_SpontaneousCirculationRelationship_typeCode_4_19_9_i-error_mdht" see="#p-PatientCareReport_1A_SpontaneousCirculationRelationship_typeCode_4_19_9_i-error_mdht" name="p-PatientCareReport_1A_SpontaneousCirculationRelationship_typeCode_4_19_9_i-error_mdht">
+		<!--
+			UML path: /CardiacArrest/spontaneousCirculationRelationship
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/spontaneousCirculationRelationship
+			UML qualified name: emspcr::CardiacArrest::SpontaneousCirculationRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.128']">
+		<!--
+			OCL: self.typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ
+			Constraint name: CardiacArrestSpontaneousCirculationRelationshipTypeCode
+		-->
+	<assert test="@typeCode = 'SUBJ'">Error: PatientCareReport - 4.19.9.i typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode=&quot;SUBJ&quot;  (CONF:10182)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

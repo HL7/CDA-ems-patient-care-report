@@ -1,0 +1,20 @@
+<!-- DrugAllergy: 2.16.840.1.1133883.17.3.10.1.48 -->
+
+<pattern id="p-PatientCareReport_2_DrugAllergy_moodCode_4_45_2-error_mdht" see="#p-PatientCareReport_2_DrugAllergy_moodCode_4_45_2-error_mdht" name="p-PatientCareReport_2_DrugAllergy_moodCode_4_45_2-error_mdht">
+		<!--
+			UML path: /DrugAllergy
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer/component415/observation
+			UML qualified name: emspcr::DrugAllergy
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.48']">
+		<!--
+			OCL: true
+			Constraint name: DrugAllergyMoodCode
+		-->
+	<assert test="true()">Error: PatientCareReport - 4.45.2 moodCode
+		Conformance: contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

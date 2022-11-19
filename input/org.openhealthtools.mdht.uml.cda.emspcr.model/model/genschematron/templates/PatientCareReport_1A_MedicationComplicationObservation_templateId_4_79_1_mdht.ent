@@ -1,0 +1,20 @@
+<!-- MedicationComplicationObservation: 2.16.840.1.1133883.17.3.10.1.107 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationComplicationObservation_templateId_4_79_1-error_mdht" see="#p-PatientCareReport_1A_MedicationComplicationObservation_templateId_4_79_1-error_mdht" name="p-PatientCareReport_1A_MedicationComplicationObservation_templateId_4_79_1-error_mdht">
+		<!--
+			UML path: /MedicationComplicationObservation
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/MedicationComplicationRelationship/MedicationComplicationObservation
+			UML qualified name: emspcr::MedicationComplicationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.107']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.107' and id.extension = '2022-01-01')
+			Constraint name: MedicationComplicationObservationTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.107' and @extension = '2022-01-01'">Error: PatientCareReport - 4.79.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11503 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.107&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

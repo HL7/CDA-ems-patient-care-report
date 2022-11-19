@@ -1,0 +1,22 @@
+<!-- PerformerParticipation -->
+
+<pattern id="p-PatientCareReport_1A_PerformerParticipation_functionCode_2_1_13_i_c_1-error_mdht" see="#p-PatientCareReport_1A_PerformerParticipation_functionCode_2_1_13_i_c_1-error_mdht" name="p-PatientCareReport_1A_PerformerParticipation_functionCode_2_1_13_i_c_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation
+			UML root path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation
+			UML qualified name: emspcr::PatientCareReport::ServiceEventParticipation::ServiceEvent::PerformerParticipation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer">
+		<!--
+			OCL: ((not self.functionCode.oclIsUndefined()) and self.functionCode.isNullFlavorUndefined()) implies (not self.functionCode.oclIsUndefined() and self.functionCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18707-2' or value.code = 'LA18708-0' or value.code = 'LA18709-8' or value.code = 'LA18710-6' or value.code = 'LA18711-4' or value.code = 'LA18712-2' or value.code = 'LA18713-0'))
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventPerformerParticipationFunctionCode
+		-->
+	<assert test="not(cda:functionCode and not(cda:functionCode/@nullFlavor)) or cda:functionCode and cda:functionCode[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18707-2' or @code = 'LA18708-0' or @code = 'LA18709-8' or @code = 'LA18710-6' or @code = 'LA18711-4' or @code = 'LA18712-2' or @code = 'LA18713-0')]">Error: PatientCareReport - 2.1.13.i.c.1 functionCode
+		Conformance: SHALL contain zero or one [0..1] functionCode, which SHALL be selected from ValueSet ProviderResponseRole 2.16.840.1.113883.17.3.11.80 DYNAMIC (CONF:10052)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

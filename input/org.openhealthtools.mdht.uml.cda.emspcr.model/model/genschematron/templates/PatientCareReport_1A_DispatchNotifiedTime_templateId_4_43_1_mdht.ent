@@ -1,0 +1,20 @@
+<!-- DispatchNotifiedTime: 2.16.840.1.1133883.17.3.10.1.46 -->
+
+<pattern id="p-PatientCareReport_1A_DispatchNotifiedTime_templateId_4_43_1-error_mdht" see="#p-PatientCareReport_1A_DispatchNotifiedTime_templateId_4_43_1-error_mdht" name="p-PatientCareReport_1A_DispatchNotifiedTime_templateId_4_43_1-error_mdht">
+		<!--
+			UML path: /DispatchNotifiedTime
+			UML root path: /PatientCareReport/TimesSection/dispatchNotifiedTime
+			UML qualified name: emspcr::DispatchNotifiedTime
+		-->
+	<rule context="/cda:ClinicalDocument/cda:TimesSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.10']/cda:dispatchNotifiedTime[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.46']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.46' and id.extension = '2022-01-01')
+			Constraint name: DispatchNotifiedTimeTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.46' and @extension = '2022-01-01'">Error: PatientCareReport - 4.43.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11438 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.46&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

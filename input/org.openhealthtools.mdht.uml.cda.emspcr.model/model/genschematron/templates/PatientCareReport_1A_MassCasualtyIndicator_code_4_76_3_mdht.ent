@@ -1,0 +1,30 @@
+<!-- MassCasualtyIndicator: 2.16.840.1.1133883.17.3.10.1.87 -->
+
+<pattern id="p-PatientCareReport_1A_MassCasualtyIndicator_code_4_76_3-error_mdht" see="#p-PatientCareReport_1A_MassCasualtyIndicator_code_4_76_3-error_mdht" name="p-PatientCareReport_1A_MassCasualtyIndicator_code_4_76_3-error_mdht">
+		<!--
+			UML path: /MassCasualtyIndicator
+			UML root path: /PatientCareReport/SceneSection/massCasualtyIndicator
+			UML qualified name: emspcr::MassCasualtyIndicator
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SceneSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.8']/cda:massCasualtyIndicator[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.87']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: MassCasualtyIndicatorCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.76.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10753)/@code=&quot;67490-3&quot; Mass casualty incident NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:11201)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67490-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: MassCasualtyIndicatorCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67490-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.76.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10753)/@code=&quot;67490-3&quot; Mass casualty incident NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:11201)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

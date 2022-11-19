@@ -1,0 +1,30 @@
+<!-- CardiacArrestCause: 2.16.840.1.1133883.17.3.10.1.124 -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestCause_value_4_20_4-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestCause_value_4_20_4-error_mdht" name="p-PatientCareReport_1A_CardiacArrestCause_value_4_20_4-error_mdht">
+		<!--
+			UML path: /CardiacArrestCause
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestCauseRelationship/cardiacArrestCause
+			UML qualified name: emspcr::CardiacArrestCause
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.124']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17056-5' or value.code = 'LA17058-1' or value.code = 'LA17059-9' or value.code = 'LA17977-2' or value.code = 'LA17978-0' or value.code = 'LA17979-8' or value.code = 'LA17980-6' or value.code = 'LA9539-3'))
+			Constraint name: CardiacArrestCauseValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17056-5' or @code = 'LA17058-1' or @code = 'LA17059-9' or @code = 'LA17977-2' or @code = 'LA17978-0' or @code = 'LA17979-8' or @code = 'LA17980-6' or @code = 'LA9539-3'))])">Error: PatientCareReport - 4.20.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11671), which SHALL be selected from ValueSet CardiacArrestCause 2.16.840.1.113883.17.3.11.10 DYNAMIC (CONF:10157)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: CardiacArrestCauseValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.20.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11671), which SHALL be selected from ValueSet CardiacArrestCause 2.16.840.1.113883.17.3.11.10 DYNAMIC (CONF:10157)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

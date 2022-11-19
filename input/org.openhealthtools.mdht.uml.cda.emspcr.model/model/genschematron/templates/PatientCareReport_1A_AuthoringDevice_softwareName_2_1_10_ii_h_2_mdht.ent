@@ -1,0 +1,20 @@
+<!-- AuthoringDevice -->
+
+<pattern id="p-PatientCareReport_1A_AuthoringDevice_softwareName_2_1_10_ii_h_2-error_mdht" see="#p-PatientCareReport_1A_AuthoringDevice_softwareName_2_1_10_ii_h_2-error_mdht" name="p-PatientCareReport_1A_AuthoringDevice_softwareName_2_1_10_ii_h_2-error_mdht">
+		<!--
+			UML path: /PatientCareReport/AuthorParticipation/AuthorRole/AuthoringDevice
+			UML root path: /PatientCareReport/AuthorParticipation/AuthorRole/AuthoringDevice
+			UML qualified name: emspcr::PatientCareReport::AuthorParticipation::AuthorRole::AuthoringDevice
+		-->
+	<rule context="/cda:ClinicalDocument/cda:author/cda:assignedAuthor/cda:assignedAuthoringDevice">
+		<!--
+			OCL: not self.softwareName.oclIsUndefined()
+			Constraint name: MISSINGOWNERSoftwareName
+		-->
+	<assert test="cda:softwareName">Error: PatientCareReport - 2.1.10.ii.h.2 softwareName
+		Conformance: SHALL contain exactly one [1..1] softwareName (CONF:9999)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

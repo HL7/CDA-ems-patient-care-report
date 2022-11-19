@@ -1,0 +1,20 @@
+<!-- EMSEncompassingEncounter -->
+
+<pattern id="p-PatientCareReport_2_EMSEncompassingEncounter_effectiveTime_2_1_15_ii_a-error_mdht" see="#p-PatientCareReport_2_EMSEncompassingEncounter_effectiveTime_2_1_15_ii_a-error_mdht" name="p-PatientCareReport_2_EMSEncompassingEncounter_effectiveTime_2_1_15_ii_a-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter">
+		<!--
+			OCL: not self.effectiveTime.oclIsUndefined()
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterEffectiveTime
+		-->
+	<assert test="cda:effectiveTime">Error: PatientCareReport - 2.1.15.ii.a effectiveTime
+		Conformance: SHALL contain exactly one [1..1] effectiveTime (CONF:10043)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

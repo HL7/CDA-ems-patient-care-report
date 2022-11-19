@@ -1,0 +1,20 @@
+<!-- EyeAssessment: 2.16.840.1.1133883.17.3.10.1.121 -->
+
+<pattern id="p-PatientCareReport_2_EyeAssessment_effectiveTime_4_54_4-error_mdht" see="#p-PatientCareReport_2_EyeAssessment_effectiveTime_4_54_4-error_mdht" name="p-PatientCareReport_2_EyeAssessment_effectiveTime_4_54_4-error_mdht">
+		<!--
+			UML path: /EyeAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component13/observation
+			UML qualified name: emspcr::EyeAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.121']">
+		<!--
+			OCL: not self.effectiveTime.oclIsUndefined()
+			Constraint name: EyeAssessmentEffectiveTime
+		-->
+	<assert test="cda:effectiveTime">Error: PatientCareReport - 4.54.4 effectiveTime
+		Conformance: SHALL contain exactly one [1..1] effectiveTime (CONF:11243)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

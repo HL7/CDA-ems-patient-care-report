@@ -1,0 +1,22 @@
+<!-- DrugAllergy: 2.16.840.1.1133883.17.3.10.1.48 -->
+
+<pattern id="p-PatientCareReport_2_DrugAllergy_value_4_45_4-error_mdht" see="#p-PatientCareReport_2_DrugAllergy_value_4_45_4-error_mdht" name="p-PatientCareReport_2_DrugAllergy_value_4_45_4-error_mdht">
+		<!--
+			UML path: /DrugAllergy
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer/component415/observation
+			UML qualified name: emspcr::DrugAllergy
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.48']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '416098002' and value.codeSystem = '2.16.840.1.113883.6.96')
+			Constraint name: DrugAllergyValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @code = '416098002' and @codeSystem = '2.16.840.1.113883.6.96')])">Error: PatientCareReport - 4.45.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot;/@code=&quot;416098002&quot; Drug allergy (disorder) (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:11341)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

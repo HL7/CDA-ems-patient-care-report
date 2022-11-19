@@ -1,0 +1,20 @@
+<!-- EMSSituationSection: 2.16.840.1.1133883.17.3.10.1.9 -->
+
+<pattern id="p-PatientCareReport_1A_EMSSituationSection_primarySymptom_3_18_8-error_mdht" see="#p-PatientCareReport_1A_EMSSituationSection_primarySymptom_3_18_8-error_mdht" name="p-PatientCareReport_1A_EMSSituationSection_primarySymptom_3_18_8-error_mdht">
+		<!--
+			UML path: /EMSSituationSection
+			UML root path: /PatientCareReport/SituationSection
+			UML qualified name: emspcr::EMSSituationSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PrimarySymptom) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSSituationSectionPrimarySymptom
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.66' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.18.8 primarySymptom
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:11045)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

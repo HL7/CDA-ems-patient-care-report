@@ -1,0 +1,20 @@
+<!-- AbdomenAssessment: 2.16.840.1.1133883.17.3.10.1.117 -->
+
+<pattern id="p-PatientCareReport_2_AbdomenAssessment_effectiveTime_4_2_4-error_mdht" see="#p-PatientCareReport_2_AbdomenAssessment_effectiveTime_4_2_4-error_mdht" name="p-PatientCareReport_2_AbdomenAssessment_effectiveTime_4_2_4-error_mdht">
+		<!--
+			UML path: /AbdomenAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component9/observation
+			UML qualified name: emspcr::AbdomenAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.117']">
+		<!--
+			OCL: not self.effectiveTime.oclIsUndefined()
+			Constraint name: AbdomenAssessmentEffectiveTime
+		-->
+	<assert test="cda:effectiveTime">Error: PatientCareReport - 4.2.4 effectiveTime
+		Conformance: SHALL contain exactly one [1..1] effectiveTime (CONF:11235)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

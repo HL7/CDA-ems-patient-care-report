@@ -1,0 +1,30 @@
+<!-- CandidatePatientRegistryType: 2.16.840.1.1133883.17.3.10.1.94 -->
+
+<pattern id="p-PatientCareReport_1A_CandidatePatientRegistryType_code_4_16_3-error_mdht" see="#p-PatientCareReport_1A_CandidatePatientRegistryType_code_4_16_3-error_mdht" name="p-PatientCareReport_1A_CandidatePatientRegistryType_code_4_16_3-error_mdht">
+		<!--
+			UML path: /CandidatePatientRegistryType
+			UML root path: /PatientCareReport/ProtocolSection/candidatePatientRegistryType
+			UML qualified name: emspcr::CandidatePatientRegistryType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']/cda:candidatePatientRegistryType[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.94']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: CandidatePatientRegistryTypeCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.16.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10728)/@code=&quot;67553-8&quot; Condition indicating eligibility for illness or injury registry NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10729)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67553-8' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: CandidatePatientRegistryTypeCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67553-8' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.16.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10728)/@code=&quot;67553-8&quot; Condition indicating eligibility for illness or injury registry NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10729)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

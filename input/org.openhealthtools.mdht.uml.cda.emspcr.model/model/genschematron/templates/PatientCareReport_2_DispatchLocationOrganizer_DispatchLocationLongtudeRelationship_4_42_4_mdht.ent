@@ -1,0 +1,20 @@
+<!-- DispatchLocationOrganizer: 2.16.840.1.1133883.17.3.10.1.96 -->
+
+<pattern id="p-PatientCareReport_2_DispatchLocationOrganizer_DispatchLocationLongtudeRelationship_4_42_4-error_mdht" see="#p-PatientCareReport_2_DispatchLocationOrganizer_DispatchLocationLongtudeRelationship_4_42_4-error_mdht" name="p-PatientCareReport_2_DispatchLocationOrganizer_DispatchLocationLongtudeRelationship_4_42_4-error_mdht">
+		<!--
+			UML path: /DispatchLocationOrganizer
+			UML root path: /PatientCareReport/ResponseSection/dispatchLocationOrganizer
+			UML qualified name: emspcr::DispatchLocationOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:dispatchLocationOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.96']">
+		<!--
+			OCL: self.component->select(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(emspcr::DispatchLocationOrganizer::DispatchLocationLongitudeRelationship))->size() <= 1
+			Constraint name: DispatchLocationOrganizerDispatchLocationLongtudeRelationship
+		-->
+	<assert test="count(cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.152']) &lt;= 1">Error: PatientCareReport - 4.42.4 DispatchLocationLongtudeRelationship
+		Conformance: MAY contain zero or one [0..1] component (CONF:10615)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

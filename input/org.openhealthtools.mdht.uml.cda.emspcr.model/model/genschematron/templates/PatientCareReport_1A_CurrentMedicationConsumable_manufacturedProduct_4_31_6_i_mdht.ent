@@ -1,0 +1,20 @@
+<!-- CurrentMedicationConsumable -->
+
+<pattern id="p-PatientCareReport_1A_CurrentMedicationConsumable_manufacturedProduct_4_31_6_i-error_mdht" see="#p-PatientCareReport_1A_CurrentMedicationConsumable_manufacturedProduct_4_31_6_i-error_mdht" name="p-PatientCareReport_1A_CurrentMedicationConsumable_manufacturedProduct_4_31_6_i-error_mdht">
+		<!--
+			UML path: /CurrentMedication/CurrentMedicationConsumable
+			UML root path: /PatientCareReport/CurrentMedication/currentMedication/CurrentMedicationConsumable
+			UML qualified name: emspcr::CurrentMedication::CurrentMedicationConsumable
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CurrentMedication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.15']/cda:currentMedication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.77']/cda:consumable">
+		<!--
+			OCL: self.manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(emspcr::CurrentMedication::CurrentMedicationConsumable::CurrentMedicationProduct))
+			Constraint name: CurrentMedicationCurrentMedicationConsumableManufacturedProduct
+		-->
+	<assert test="count(cda:manufacturedProduct)=1">Error: PatientCareReport - 4.31.6.i manufacturedProduct
+		Conformance: SHALL contain exactly one [1..1] manufacturedProduct (CONF:10236)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

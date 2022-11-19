@@ -1,0 +1,20 @@
+<!-- DispatchLocationLatitudeRelationship -->
+
+<pattern id="p-PatientCareReport_2_DispatchLocationLatitudeRelationship_DispatchLocationLatitude_4_42_3_i-error_mdht" see="#p-PatientCareReport_2_DispatchLocationLatitudeRelationship_DispatchLocationLatitude_4_42_3_i-error_mdht" name="p-PatientCareReport_2_DispatchLocationLatitudeRelationship_DispatchLocationLatitude_4_42_3_i-error_mdht">
+		<!--
+			UML path: /DispatchLocationOrganizer/DispatchLocationLatitudeRelationship
+			UML root path: /PatientCareReport/ResponseSection/dispatchLocationOrganizer/DispatchLocationLatitudeRelationship
+			UML qualified name: emspcr::DispatchLocationOrganizer::DispatchLocationLatitudeRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:dispatchLocationOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.96']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.151']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::DispatchLocationLatitude))
+			Constraint name: DispatchLocationOrganizerDispatchLocationLatitudeRelationshipDispatchLocationLatitude
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.151'])=1">Error: PatientCareReport - 4.42.3.i DispatchLocationLatitude
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10619)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

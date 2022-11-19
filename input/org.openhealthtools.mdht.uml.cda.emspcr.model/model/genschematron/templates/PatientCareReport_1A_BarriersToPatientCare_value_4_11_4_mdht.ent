@@ -1,0 +1,30 @@
+<!-- BarriersToPatientCare: 2.16.840.1.1133883.17.3.10.1.83 -->
+
+<pattern id="p-PatientCareReport_1A_BarriersToPatientCare_value_4_11_4-error_mdht" see="#p-PatientCareReport_1A_BarriersToPatientCare_value_4_11_4-error_mdht" name="p-PatientCareReport_1A_BarriersToPatientCare_value_4_11_4-error_mdht">
+		<!--
+			UML path: /BarriersToPatientCare
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/barriersToPatientCare
+			UML qualified name: emspcr::BarriersToPatientCare
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:barriersToPatientCare[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.83']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17306-4' or value.code = 'LA17307-2' or value.code = 'LA17308-0' or value.code = 'LA17309-8' or value.code = 'LA17310-6' or value.code = 'LA17311-4' or value.code = 'LA17312-2' or value.code = 'LA17313-0' or value.code = 'LA17314-8' or value.code = 'LA17315-5' or value.code = 'LA17316-3' or value.code = 'LA17317-1' or value.code = 'LA17318-9' or value.code = 'LA17711-5' or value.code = 'LA6301-1' or value.code = 'LA23824-8' or value.code = 'LA32960-9' or value.code = 'LA32961-7'))
+			Constraint name: BarriersToPatientCareValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17306-4' or @code = 'LA17307-2' or @code = 'LA17308-0' or @code = 'LA17309-8' or @code = 'LA17310-6' or @code = 'LA17311-4' or @code = 'LA17312-2' or @code = 'LA17313-0' or @code = 'LA17314-8' or @code = 'LA17315-5' or @code = 'LA17316-3' or @code = 'LA17317-1' or @code = 'LA17318-9' or @code = 'LA17711-5' or @code = 'LA6301-1' or @code = 'LA23824-8' or @code = 'LA32960-9' or @code = 'LA32961-7'))])">Error: PatientCareReport - 4.11.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10437), which SHALL be selected from ValueSet BarrierToCare 2.16.840.1.113883.17.3.11.85 DYNAMIC (CONF:10438)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: BarriersToPatientCareValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.11.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10437), which SHALL be selected from ValueSet BarrierToCare 2.16.840.1.113883.17.3.11.85 DYNAMIC (CONF:10438)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- CardiacArrestInformantRole -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestInformantRole_classCode_4_19_8_ii_a-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestInformantRole_classCode_4_19_8_ii_a-error_mdht" name="p-PatientCareReport_1A_CardiacArrestInformantRole_classCode_4_19_8_ii_a-error_mdht">
+		<!--
+			UML path: /CardiacArrest/cardiacArrestInformantParticipation/cardiacArrestInformantRole
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestInformantParticipation/cardiacArrestInformantRole
+			UML qualified name: emspcr::CardiacArrest::CardiacArrestInformantParticipation::CardiacArrestInformantRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:informant/cda:relatedEntity[@classCode = 'AGNT']">
+		<!--
+			OCL: self.classCode=vocab::RoleClassMutualRelationship::AGNT
+			Constraint name: CardiacArrestCardiacArrestInformantParticipationCardiacArrestInformantRoleClassCode
+		-->
+	<assert test="@classCode = 'AGNT'">Error: PatientCareReport - 4.19.8.ii.a classCode
+		Conformance: SHALL contain exactly one [1..1] @classCode=&quot;AGNT&quot;  (CONF:10159)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

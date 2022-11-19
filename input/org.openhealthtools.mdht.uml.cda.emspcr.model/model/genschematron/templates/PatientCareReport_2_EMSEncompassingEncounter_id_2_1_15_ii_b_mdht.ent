@@ -1,0 +1,20 @@
+<!-- EMSEncompassingEncounter -->
+
+<pattern id="p-PatientCareReport_2_EMSEncompassingEncounter_id_2_1_15_ii_b-error_mdht" see="#p-PatientCareReport_2_EMSEncompassingEncounter_id_2_1_15_ii_b-error_mdht" name="p-PatientCareReport_2_EMSEncompassingEncounter_id_2_1_15_ii_b-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter">
+		<!--
+			OCL: self.id->size() =  1
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterId
+		-->
+	<assert test="count(cda:id) = 1">Error: PatientCareReport - 2.1.15.ii.b id
+		Conformance: SHALL contain exactly one [1..1] id (CONF:11326)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

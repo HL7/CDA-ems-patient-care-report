@@ -1,0 +1,30 @@
+<!-- GlasgowTotal: 2.16.840.1.1133883.17.3.10.1.158 -->
+
+<pattern id="p-PatientCareReport_2_GlasgowTotal_code_4_61_3-error_mdht" see="#p-PatientCareReport_2_GlasgowTotal_code_4_61_3-error_mdht" name="p-PatientCareReport_2_GlasgowTotal_code_4_61_3-error_mdht">
+		<!--
+			UML path: /GlasgowTotal
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component48/organizer/component44/observation
+			UML qualified name: emspcr::GlasgowTotal
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.170']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.158']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: GlasgowTotalCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.61.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10319)/@code=&quot;9269-2&quot; Glasgow coma score.total (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10318)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '9269-2' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: GlasgowTotalCode
+		-->
+	<assert test="cda:code and cda:code[@code = '9269-2' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.61.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10319)/@code=&quot;9269-2&quot; Glasgow coma score.total (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10318)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- DestinationHospitalCapability: 2.16.840.1.1133883.17.3.10.1.104 -->
+
+<pattern id="p-PatientCareReport_1A_DestinationHospitalCapability_moodCode_4_33_3-error_mdht" see="#p-PatientCareReport_1A_DestinationHospitalCapability_moodCode_4_33_3-error_mdht" name="p-PatientCareReport_1A_DestinationHospitalCapability_moodCode_4_33_3-error_mdht">
+		<!--
+			UML path: /DestinationHospitalCapability
+			UML root path: /PatientCareReport/DispositionSection/primaryDestinationHospitalCapability
+			UML qualified name: emspcr::DestinationHospitalCapability
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:primaryDestinationHospitalCapability[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.104']">
+		<!--
+			OCL: isDefined('moodCode')
+			Constraint name: DestinationHospitalCapabilityMoodCode
+		-->
+	<assert test="attribute::node()[name() = 'moodCode']">Error: PatientCareReport - 4.33.3 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode (CONF:11360)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,30 @@
+<!-- DestinationRhythm: 2.16.840.1.1133883.17.3.10.1.129 -->
+
+<pattern id="p-PatientCareReport_1A_DestinationRhythm_value_4_34_4-error_mdht" see="#p-PatientCareReport_1A_DestinationRhythm_value_4_34_4-error_mdht" name="p-PatientCareReport_1A_DestinationRhythm_value_4_34_4-error_mdht">
+		<!--
+			UML path: /DestinationRhythm
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/destinationRhythmRelationship/destinationRhythm
+			UML qualified name: emspcr::DestinationRhythm
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.129']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12904-1' or value.code = 'LA17059-9' or value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17083-9' or value.code = 'LA17084-7' or value.code = 'LA17085-4' or value.code = 'LA17086-2' or value.code = 'LA17087-0' or value.code = 'LA17088-8' or value.code = 'LA17089-6' or value.code = 'LA17090-4' or value.code = 'LA17091-2' or value.code = 'LA17093-8' or value.code = 'LA17094-6' or value.code = 'LA17095-3' or value.code = 'LA17096-1' or value.code = 'LA17097-9' or value.code = 'LA17394-0' or value.code = 'LA17099-5' or value.code = 'LA17100-1' or value.code = 'LA17101-9' or value.code = 'LA17703-2' or value.code = 'LA17704-0' or value.code = 'LA17705-7' or value.code = 'LA17706-5' or value.code = 'LA17708-1' or value.code = 'LA17718-0' or value.code = 'LA18205-7' or value.code = 'LA18206-5' or value.code = 'LA18207-3' or value.code = 'LA18208-1' or value.code = 'LA32915-3' or value.code = 'LA32916-1'))
+			Constraint name: DestinationRhythmValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA12904-1' or @code = 'LA17059-9' or @code = 'LA17068-0' or @code = 'LA17070-6' or @code = 'LA17071-4' or @code = 'LA17072-2' or @code = 'LA17073-0' or @code = 'LA17074-8' or @code = 'LA17083-9' or @code = 'LA17084-7' or @code = 'LA17085-4' or @code = 'LA17086-2' or @code = 'LA17087-0' or @code = 'LA17088-8' or @code = 'LA17089-6' or @code = 'LA17090-4' or @code = 'LA17091-2' or @code = 'LA17093-8' or @code = 'LA17094-6' or @code = 'LA17095-3' or @code = 'LA17096-1' or @code = 'LA17097-9' or @code = 'LA17394-0' or @code = 'LA17099-5' or @code = 'LA17100-1' or @code = 'LA17101-9' or @code = 'LA17703-2' or @code = 'LA17704-0' or @code = 'LA17705-7' or @code = 'LA17706-5' or @code = 'LA17708-1' or @code = 'LA17718-0' or @code = 'LA18205-7' or @code = 'LA18206-5' or @code = 'LA18207-3' or @code = 'LA18208-1' or @code = 'LA32915-3' or @code = 'LA32916-1'))])">Error: PatientCareReport - 4.34.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11719), which SHALL be selected from ValueSet CardiacRhythmReading 2.16.840.1.113883.17.3.11.16 DYNAMIC (CONF:10190)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: DestinationRhythmValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.34.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11719), which SHALL be selected from ValueSet CardiacRhythmReading 2.16.840.1.113883.17.3.11.16 DYNAMIC (CONF:10190)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

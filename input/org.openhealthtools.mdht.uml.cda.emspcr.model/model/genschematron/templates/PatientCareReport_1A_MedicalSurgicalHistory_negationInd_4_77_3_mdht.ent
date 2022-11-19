@@ -1,0 +1,20 @@
+<!-- Medical/Surgical History: 2.16.840.1.1133883.17.3.10.1.61 -->
+
+<pattern id="p-PatientCareReport_1A_MedicalSurgicalHistory_negationInd_4_77_3-error_mdht" see="#p-PatientCareReport_1A_MedicalSurgicalHistory_negationInd_4_77_3-error_mdht" name="p-PatientCareReport_1A_MedicalSurgicalHistory_negationInd_4_77_3-error_mdht">
+		<!--
+			UML path: /Medical/Surgical History
+			UML root path: /PatientCareReport/PastMedicalHistorySection/historyOfCondition
+			UML qualified name: emspcr::Medical/Surgical History
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PastMedicalHistorySection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.19']/cda:historyOfCondition[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.61']">
+		<!--
+			OCL: (not self.negationInd.oclIsUndefined()) implies (not self.negationInd.oclIsUndefined())
+			Constraint name: Medical/Surgical HistoryNegationInd
+		-->
+	<assert test="not(@negationInd) or @negationInd">Error: PatientCareReport - 4.77.3 negationInd
+		Conformance: MAY contain zero or one [0..1] @negationInd (CONF:11455)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

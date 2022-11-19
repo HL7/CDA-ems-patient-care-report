@@ -1,0 +1,20 @@
+<!-- ParentDocument -->
+
+<pattern id="p-PatientCareReport_1A_ParentDocument_id_2_1_14_ii_a-error_mdht" see="#p-PatientCareReport_1A_ParentDocument_id_2_1_14_ii_a-error_mdht" name="p-PatientCareReport_1A_ParentDocument_id_2_1_14_ii_a-error_mdht">
+		<!--
+			UML path: /PatientCareReport/relatedDocument/ParentDocument
+			UML root path: /PatientCareReport/relatedDocument/ParentDocument
+			UML qualified name: emspcr::PatientCareReport::ParentDocumentRelationship::ParentDocument
+		-->
+	<rule context="/cda:ClinicalDocument/cda:relatedDocument/cda:parentDocument">
+		<!--
+			OCL: self.id->size() =  1
+			Constraint name: PatientCareReportParentDocumentRelationshipParentDocumentId
+		-->
+	<assert test="count(cda:id) = 1">Error: PatientCareReport - 2.1.14.ii.a id
+		Conformance: SHALL contain exactly one [1..1] id (CONF:10900)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

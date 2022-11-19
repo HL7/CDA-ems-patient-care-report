@@ -1,0 +1,30 @@
+<!-- Complaint: 2.16.840.1.1133883.17.3.10.1.63 -->
+
+<pattern id="p-PatientCareReport_1A_Complaint_targetSiteCode_4_25_6-error_mdht" see="#p-PatientCareReport_1A_Complaint_targetSiteCode_4_25_6-error_mdht" name="p-PatientCareReport_1A_Complaint_targetSiteCode_4_25_6-error_mdht">
+		<!--
+			UML path: /Complaint
+			UML root path: /PatientCareReport/SituationSection/complaint
+			UML qualified name: emspcr::Complaint
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:complaint[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.63']">
+		<!--
+			OCL: self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12703-7' or value.code = 'LA12705-2' or value.code = 'LA12706-0' or value.code = 'LA18111-7' or value.code = 'LA18112-5' or value.code = 'LA18113-3' or value.code = 'LA18114-1' or value.code = 'LA18115-8' or value.code = 'LA18116-6'))
+			Constraint name: ComplaintTargetSiteCode
+		-->
+	<assert test="count(cda:targetSiteCode) = 1 and not(cda:targetSiteCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA12703-7' or @code = 'LA12705-2' or @code = 'LA12706-0' or @code = 'LA18111-7' or @code = 'LA18112-5' or @code = 'LA18113-3' or @code = 'LA18114-1' or @code = 'LA18115-8' or @code = 'LA18116-6'))])">Error: PatientCareReport - 4.25.6 targetSiteCode
+		Conformance: SHALL contain exactly one [1..1] targetSiteCode (CONF:10773), which SHALL be selected from ValueSet AnatomicLocation 2.16.840.1.113883.17.3.11.76 DYNAMIC (CONF:10774)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.targetSiteCode->size() =  1
+			Constraint name: ComplaintTargetSiteCodeP
+		-->
+	<assert test="count(cda:targetSiteCode) = 1">Error: PatientCareReport - 4.25.6 targetSiteCode
+		Conformance: SHALL contain exactly one [1..1] targetSiteCode (CONF:10773), which SHALL be selected from ValueSet AnatomicLocation 2.16.840.1.113883.17.3.11.76 DYNAMIC (CONF:10774)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

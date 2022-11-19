@@ -1,0 +1,30 @@
+<!-- MedicationNotAdministeredReasonEntryRelationship -->
+
+<pattern id="p-PatientCareReport_1A_MedicationNotAdministeredReasonEntryRelationship_typeCode_4_78_9_ii-error_mdht" see="#p-PatientCareReport_1A_MedicationNotAdministeredReasonEntryRelationship_typeCode_4_78_9_ii-error_mdht" name="p-PatientCareReport_1A_MedicationNotAdministeredReasonEntryRelationship_typeCode_4_78_9_ii-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/medicationNotAdministeredEntryRelationship
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationNotAdministeredEntryRelationship
+			UML qualified name: emspcr::MedicationAdministered::MedicationNotAdministeredReasonEntryRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.105']">
+		<!--
+			OCL: isDefined('typeCode')
+			Constraint name: MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCodeP
+		-->
+	<assert test="attribute::node()[name() = 'typeCode']">Error: PatientCareReport - 4.78.9.ii typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode (CONF:10460)/@code=&quot;RSON&quot; Reason (CodeSystem: ) (CONF:10459)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::x_ActRelationshipEntryRelationship) and 
+let value : vocab::x_ActRelationshipEntryRelationship = self.typeCode.oclAsType(vocab::x_ActRelationshipEntryRelationship) in 
+value = vocab::x_ActRelationshipEntryRelationship::RSON
+			Constraint name: MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCode
+		-->
+	<assert test="@typeCode and @typeCode[. = 'RSON']">Error: PatientCareReport - 4.78.9.ii typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode (CONF:10460)/@code=&quot;RSON&quot; Reason (CodeSystem: ) (CONF:10459)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

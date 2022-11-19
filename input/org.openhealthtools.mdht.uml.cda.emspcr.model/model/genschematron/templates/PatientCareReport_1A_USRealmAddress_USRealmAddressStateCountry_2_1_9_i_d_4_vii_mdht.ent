@@ -1,0 +1,28 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_USRealmAddressStateCountry_2_1_9_i_d_4_vii-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_USRealmAddressStateCountry_2_1_9_i_d_4_vii-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_USRealmAddressStateCountry_2_1_9_i_d_4_vii-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML root path: /PatientCareReport/recordTarget/patientRole/providerOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:providerOrganization/cda:addr">
+		<!--
+			OCL: n/a
+			Constraint name: USRealmAddressStateCountry
+		-->
+	<assert test="true()">Error: PatientCareReport - 2.1.9.i.d.4.vii USRealmAddressStateCountry
+		Conformance: State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies (CONF:10024, R2.1=CONF:81-10024, DSTU:814)
+		Analysis: State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies
+		Validation message: n/a	</assert>
+		<!--
+			OCL: n/a
+			Constraint name: USRealmAddressPostal
+		-->
+	<assert test="true()">Error: PatientCareReport - 2.1.9.i.d.4.vii USRealmAddressStateCountry
+		Conformance: State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies (CONF:10024, R2.1=CONF:81-10024, DSTU:814)
+		Analysis: PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode MAY be present but MAY be bound to different vocabularies
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

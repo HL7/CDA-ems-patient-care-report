@@ -1,0 +1,30 @@
+<!-- ResponseModeToScene: 2.16.840.1.1133883.17.3.10.1.182 -->
+
+<pattern id="p-PatientCareReport_1A_ResponseModeToScene_value_4_123_4-error_mdht" see="#p-PatientCareReport_1A_ResponseModeToScene_value_4_123_4-error_mdht" name="p-PatientCareReport_1A_ResponseModeToScene_value_4_123_4-error_mdht">
+		<!--
+			UML path: /ResponseModeToScene
+			UML root path: /PatientCareReport/ResponseSection/responseModeToScene
+			UML qualified name: emspcr::ResponseModeToScene
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:responseModeToScene[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.182']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17177-9' or value.code = 'LA17178-7' or value.code = 'LA17179-5' or value.code = 'LA17180-3'))
+			Constraint name: ResponseModeToSceneValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17177-9' or @code = 'LA17178-7' or @code = 'LA17179-5' or @code = 'LA17180-3'))])">Error: PatientCareReport - 4.123.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10650), which SHALL be selected from ValueSet TransportationMode 2.16.840.1.113883.17.3.11.66 DYNAMIC (CONF:10649)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ResponseModeToSceneValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.123.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10650), which SHALL be selected from ValueSet TransportationMode 2.16.840.1.113883.17.3.11.66 DYNAMIC (CONF:10649)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

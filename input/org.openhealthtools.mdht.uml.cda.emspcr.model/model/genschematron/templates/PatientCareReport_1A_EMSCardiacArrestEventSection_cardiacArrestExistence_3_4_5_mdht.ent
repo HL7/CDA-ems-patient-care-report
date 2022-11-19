@@ -1,0 +1,20 @@
+<!-- EMSCardiacArrestEventSection: 2.16.840.1.1133883.17.3.10.1.14 -->
+
+<pattern id="p-PatientCareReport_1A_EMSCardiacArrestEventSection_cardiacArrestExistence_3_4_5-error_mdht" see="#p-PatientCareReport_1A_EMSCardiacArrestEventSection_cardiacArrestExistence_3_4_5-error_mdht" name="p-PatientCareReport_1A_EMSCardiacArrestEventSection_cardiacArrestExistence_3_4_5-error_mdht">
+		<!--
+			UML path: /EMSCardiacArrestEventSection
+			UML root path: /PatientCareReport/CardiacArrestEvent
+			UML qualified name: emspcr::EMSCardiacArrestEventSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::CardiacArrest) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSCardiacArrestEventSectionCardiacArrestExistence
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.4.5 cardiacArrestExistence
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:10939)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

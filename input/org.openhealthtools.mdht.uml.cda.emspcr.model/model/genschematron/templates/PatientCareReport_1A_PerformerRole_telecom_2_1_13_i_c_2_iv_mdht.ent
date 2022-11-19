@@ -1,0 +1,20 @@
+<!-- PerformerRole -->
+
+<pattern id="p-PatientCareReport_1A_PerformerRole_telecom_2_1_13_i_c_2_iv-error_mdht" see="#p-PatientCareReport_1A_PerformerRole_telecom_2_1_13_i_c_2_iv-error_mdht" name="p-PatientCareReport_1A_PerformerRole_telecom_2_1_13_i_c_2_iv-error_mdht">
+		<!--
+			UML path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation/PerformerRole
+			UML root path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation/PerformerRole
+			UML qualified name: emspcr::PatientCareReport::ServiceEventParticipation::ServiceEvent::PerformerParticipation::PerformerRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer/cda:assignedEntity">
+		<!--
+			OCL: ((not self.telecom->isEmpty()) and self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleTelecom
+		-->
+	<assert test="not(cda:telecom and cda:telecom[not(@nullFlavor)]) or cda:telecom">Error: PatientCareReport - 2.1.13.i.c.2.iv telecom
+		Conformance: MAY contain zero or one [0..1] telecom (CONF:10896)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+
