@@ -46,15 +46,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class AirwayConfirmationObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,9 +81,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,8 +94,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationTemplateId(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -160,9 +159,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,8 +172,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationMoodCode(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -237,9 +237,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,8 +250,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationCodeP(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -328,9 +329,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,8 +342,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationCode(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +413,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +426,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationEffectiveTime(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +491,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +504,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationValue(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationValue(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -565,9 +569,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -579,8 +582,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationMethodCodeP(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -646,7 +651,7 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18680-1' or value.code = 'LA18681-9' or value.code = 'LA18679-3' or value.code = 'NewLA-4004021')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18680-1' or value.code = 'LA18681-9' or value.code = 'LA18679-3' or value.code = 'LA32909-6')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' invariant operation.
@@ -656,9 +661,8 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -670,8 +674,10 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirwayConfirmationObservationMethodCode(
+			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

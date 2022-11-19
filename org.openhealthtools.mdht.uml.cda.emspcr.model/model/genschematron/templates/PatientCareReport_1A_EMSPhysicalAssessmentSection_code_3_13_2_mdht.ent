@@ -1,0 +1,30 @@
+<!-- EMSPhysicalAssessmentSection: 2.16.840.1.1133883.17.3.10.1.20 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_code_3_13_2-error_mdht" see="#p-PatientCareReport_1A_EMSPhysicalAssessmentSection_code_3_13_2-error_mdht" name="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_code_3_13_2-error_mdht">
+		<!--
+			UML path: /EMSPhysicalAssessmentSection
+			UML root path: /PatientCareReport/PhysicalAssessmentSection
+			UML qualified name: emspcr::EMSPhysicalAssessmentSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSPhysicalAssessmentSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '29545-1' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.13.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10337)/@code=&quot;29545-1&quot; Physical findings Narrative (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10336)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSPhysicalAssessmentSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.13.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10337)/@code=&quot;29545-1&quot; Physical findings Narrative (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10336)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

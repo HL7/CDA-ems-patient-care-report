@@ -1,0 +1,22 @@
+<!-- CardiacArrest: 2.16.840.1.1133883.17.3.10.1.27 -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrest_value_4_19_6-error_mdht" see="#p-PatientCareReport_1A_CardiacArrest_value_4_19_6-error_mdht" name="p-PatientCareReport_1A_CardiacArrest_value_4_19_6-error_mdht">
+		<!--
+			UML path: /CardiacArrest
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence
+			UML qualified name: emspcr::CardiacArrest
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '410429000' and value.codeSystem = '2.16.840.1.113883.6.96')
+			Constraint name: CardiacArrestValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @code = '410429000' and @codeSystem = '2.16.840.1.113883.6.96')])">Error: PatientCareReport - 4.19.6 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot;/@code=&quot;410429000&quot; cardiac arrest (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:10140)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

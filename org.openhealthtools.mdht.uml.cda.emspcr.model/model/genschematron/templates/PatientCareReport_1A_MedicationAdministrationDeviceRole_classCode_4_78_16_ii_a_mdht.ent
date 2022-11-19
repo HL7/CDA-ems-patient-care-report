@@ -1,0 +1,20 @@
+<!-- MedicationAdministrationDeviceRole -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministrationDeviceRole_classCode_4_78_16_ii_a-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministrationDeviceRole_classCode_4_78_16_ii_a-error_mdht" name="p-PatientCareReport_1A_MedicationAdministrationDeviceRole_classCode_4_78_16_ii_a-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/medicationAdministrationDeviceParticipant/medicationAdministrationDeviceRole
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationAdministrationDeviceParticipant/medicationAdministrationDeviceRole
+			UML qualified name: emspcr::MedicationAdministered::MedicationAdministrationDeviceParticipant::MedicationAdministrationDeviceRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:participant/cda:participantRole[@classCode = 'MANU']">
+		<!--
+			OCL: isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU
+			Constraint name: MedicationAdministeredMedicationAdministrationDeviceParticipantMedicationAdministrationDeviceRoleClassCode
+		-->
+	<assert test="attribute::node()[name() = 'classCode'] and @classCode = 'MANU'">Error: PatientCareReport - 4.78.16.ii.a classCode
+		Conformance: SHALL contain exactly one [1..1] @classCode=&quot;MANU&quot;  (CONF:11183)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

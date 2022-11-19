@@ -86,7 +86,8 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtremitiesAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExtremitiesAssessmentEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
@@ -113,7 +114,8 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtremitiesAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExtremitiesAssessmentTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCode(this, diagnostics, context);
 	}
 
@@ -122,7 +124,8 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtremitiesAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExtremitiesAssessmentTargetSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCodeP(this, diagnostics, context);
 	}
 
@@ -134,13 +137,14 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	public ExtremitiesAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ExtremitiesAssessmentImpl
+} // ExtremitiesAssessmentImpl

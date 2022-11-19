@@ -50,7 +50,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationCodeP(this, diagnostics, context);
 	}
 
@@ -86,7 +89,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationEffectiveTime(this, diagnostics, context);
 	}
 
@@ -95,7 +99,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationValue(this, diagnostics, context);
 	}
 
@@ -104,7 +109,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationMethodCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMethodCodeP(this, diagnostics, context);
 	}
 
@@ -113,7 +119,8 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAirwayConfirmationObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAirwayConfirmationObservationMethodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMethodCode(this, diagnostics, context);
 	}
 
@@ -125,13 +132,14 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	public AirwayConfirmationObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //AirwayConfirmationObservationImpl
+} // AirwayConfirmationObservationImpl

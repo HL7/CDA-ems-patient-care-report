@@ -1,0 +1,30 @@
+<!-- MedicationComplicationObservation: 2.16.840.1.1133883.17.3.10.1.107 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationComplicationObservation_value_4_79_4-error_mdht" see="#p-PatientCareReport_1A_MedicationComplicationObservation_value_4_79_4-error_mdht" name="p-PatientCareReport_1A_MedicationComplicationObservation_value_4_79_4-error_mdht">
+		<!--
+			UML path: /MedicationComplicationObservation
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/MedicationComplicationRelationship/MedicationComplicationObservation
+			UML qualified name: emspcr::MedicationComplicationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.107']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA15098-9' or value.code = 'LA15099-7' or value.code = 'LA15424-7' or value.code = 'LA17059-9' or value.code = 'LA17392-4' or value.code = 'LA17393-2' or value.code = 'LA17394-0' or value.code = 'LA17396-5' or value.code = 'LA20641-9' or value.code = 'LA17713-1' or value.code = 'LA17714-9' or value.code = 'LA18266-9' or value.code = 'LA18267-7' or value.code = 'LA7418-2' or value.code = 'LA7434-9' or value.code = 'LA7443-0' or value.code = 'LA7444-8' or value.code = 'LA9540-1' or value.code = 'LA9541-9' or value.code = 'LA9548-4' or value.code = 'LA20642-7'))
+			Constraint name: MedicationComplicationObservationValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA137-2' or @code = 'LA15098-9' or @code = 'LA15099-7' or @code = 'LA15424-7' or @code = 'LA17059-9' or @code = 'LA17392-4' or @code = 'LA17393-2' or @code = 'LA17394-0' or @code = 'LA17396-5' or @code = 'LA20641-9' or @code = 'LA17713-1' or @code = 'LA17714-9' or @code = 'LA18266-9' or @code = 'LA18267-7' or @code = 'LA7418-2' or @code = 'LA7434-9' or @code = 'LA7443-0' or @code = 'LA7444-8' or @code = 'LA9540-1' or @code = 'LA9541-9' or @code = 'LA9548-4' or @code = 'LA20642-7'))])">Error: PatientCareReport - 4.79.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10475), which SHALL be selected from ValueSet MedicationComplication 2.16.840.1.113883.17.3.11.45 DYNAMIC (CONF:10476)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: MedicationComplicationObservationValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.79.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10475), which SHALL be selected from ValueSet MedicationComplication 2.16.840.1.113883.17.3.11.45 DYNAMIC (CONF:10476)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

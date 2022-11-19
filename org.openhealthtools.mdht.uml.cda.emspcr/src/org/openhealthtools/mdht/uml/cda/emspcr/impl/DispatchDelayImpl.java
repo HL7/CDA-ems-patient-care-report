@@ -107,13 +107,14 @@ public class DispatchDelayImpl extends ObservationImpl implements DispatchDelay 
 	public DispatchDelay init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DispatchDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DispatchDelayImpl
+} // DispatchDelayImpl

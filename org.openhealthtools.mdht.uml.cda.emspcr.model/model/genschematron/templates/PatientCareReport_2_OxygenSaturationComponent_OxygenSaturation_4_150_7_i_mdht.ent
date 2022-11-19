@@ -1,0 +1,20 @@
+<!-- OxygenSaturationComponent -->
+
+<pattern id="p-PatientCareReport_2_OxygenSaturationComponent_OxygenSaturation_4_150_7_i-error_mdht" see="#p-PatientCareReport_2_OxygenSaturationComponent_OxygenSaturation_4_150_7_i-error_mdht" name="p-PatientCareReport_2_OxygenSaturationComponent_OxygenSaturation_4_150_7_i-error_mdht">
+		<!--
+			UML path: /VitalSignsOrganizer/OxygenSaturationComponent
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/OxygenSaturationComponent
+			UML qualified name: emspcr::VitalSignsOrganizer::OxygenSaturationComponent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.177']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::OxygenSaturation))
+			Constraint name: VitalSignsOrganizerOxygenSaturationComponentOxygenSaturation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.177'])=1">Error: PatientCareReport - 4.150.7.i OxygenSaturation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11087)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

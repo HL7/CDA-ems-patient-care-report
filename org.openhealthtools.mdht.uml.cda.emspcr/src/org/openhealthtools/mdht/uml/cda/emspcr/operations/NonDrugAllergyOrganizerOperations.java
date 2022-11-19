@@ -40,7 +40,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer#validateNonDrugAllergyOrganizerComponent4(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Component4</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer#validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Existence Of Non Drug Allergy</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer#validateNonDrugAllergyOrganizerNonDrugAllergy(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Non Drug Allergy</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer#validateNonDrugAllergyOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Template Id</em>}</li>
@@ -52,15 +51,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,83 +66,6 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 */
 	protected NonDrugAllergyOrganizerOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateNonDrugAllergyOrganizerComponent4(NonDrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Component4</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonDrugAllergyOrganizerComponent4(NonDrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNonDrugAllergyOrganizerComponent4(NonDrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Organizer Component4</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonDrugAllergyOrganizerComponent4(NonDrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param nonDrugAllergyOrganizer The receiving '<em><b>Non Drug Allergy Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateNonDrugAllergyOrganizerComponent4(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"NonDrugAllergyOrganizerNonDrugAllergyOrganizerComponent4","ERROR");
-    
-  	  
-  	  
-		if (VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER);
-			try {
-				VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonDrugAllergyOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_COMPONENT4,
-						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerNonDrugAllergyOrganizerComponent4"),
-						 new Object [] { nonDrugAllergyOrganizer }));
-			}
-			 
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -166,9 +86,8 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,8 +99,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(
+			NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -243,9 +163,8 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,8 +176,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateNonDrugAllergyOrganizerNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateNonDrugAllergyOrganizerNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -320,9 +240,8 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -334,8 +253,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateNonDrugAllergyOrganizerTemplateId(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateNonDrugAllergyOrganizerTemplateId(NonDrugAllergyOrganizer nonDrugAllergyOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -404,8 +324,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ExistenceOfKnownNonDrugAllergy getExistenceOfNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
+
+	public static ExistenceOfKnownNonDrugAllergy getExistenceOfNonDrugAllergy(
+			NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
 	
 	
 	
@@ -413,7 +334,7 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(56));
+			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(55));
 			try {
 				GET_EXISTENCE_OF_NON_DRUG_ALLERGY__EOCL_QRY = helper.createQuery(GET_EXISTENCE_OF_NON_DRUG_ALLERGY__EOCL_EXP);
 			}
@@ -451,8 +372,8 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<NonDrugAllergy> getNonDrugAllergies(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
+
+	public static EList<NonDrugAllergy> getNonDrugAllergies(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
 	
 	
 	
@@ -460,7 +381,7 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(57));
+			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(56));
 			try {
 				GET_NON_DRUG_ALLERGIES__EOCL_QRY = helper.createQuery(GET_NON_DRUG_ALLERGIES__EOCL_EXP);
 			}

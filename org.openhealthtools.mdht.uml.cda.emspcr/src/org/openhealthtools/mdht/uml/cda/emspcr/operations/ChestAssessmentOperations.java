@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ChestAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentTemplateId(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentTemplateId(ChestAssessment chestAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentCodeP(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentCodeP(ChestAssessment chestAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -240,7 +238,7 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_CHEST_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'NeweExam.25' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '11422-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestAssessmentCode(ChestAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Assessment Code</em>}' invariant operation.
@@ -250,9 +248,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,8 +261,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentCode(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentCode(ChestAssessment chestAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,7 +323,7 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_CHEST_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA3525007' or value.code = 'newLA3525025' or value.code = 'newLA3525027' or value.code = 'newLA3525029' or value.code = 'newLA3525047' or value.code = 'newLA3525021' or value.code = 'newLA3525049' or value.code = 'newLA3525019' or value.code = 'newLA3525017' or value.code = 'newLA3525015' or value.code = 'newLA3525013' or value.code = 'newLA3525023' or value.code = 'newLA3525009' or value.code = 'newLA3525005' or value.code = 'newLA3525003' or value.code = 'newLA3525001' or value.code = 'newLA3525033' or value.code = 'newLA3525035' or value.code = 'newLA3525037' or value.code = 'newLA3525039' or value.code = 'newLA3525041' or value.code = 'newLA3525043' or value.code = 'newLA3525045' or value.code = 'newLA3525011')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA18236-2' or value.code = 'LA7452-1' or value.code = 'LA6626-1' or value.code = 'LA7423-2' or value.code = 'LA18225-5' or value.code = 'LA23810-7' or value.code = 'LA17229-8' or value.code = 'LA33345-2' or value.code = 'LA33353-6' or value.code = 'LA33346-0' or value.code = 'LA33342-9' or value.code = 'LA17209-0' or value.code = 'LA17222-3' or value.code = 'LA18220-6' or value.code = 'LA7410-9' or value.code = 'LA7460-4' or value.code = 'LA33332-0' or value.code = 'LA17214-0' or value.code = 'LA18231-3' or value.code = 'LA17709-9' or value.code = 'LA17212-4' or value.code = 'LA22440-4' or value.code = 'LA33338-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestAssessmentValue(ChestAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Assessment Value</em>}' invariant operation.
@@ -335,9 +333,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,8 +346,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentValue(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentValue(ChestAssessment chestAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -412,9 +410,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentValueP(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentValueP(ChestAssessment chestAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -481,7 +479,7 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_CHEST_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA3524011' or value.code = 'newLA3524001' or value.code = 'newLA3524003' or value.code = 'newLA3524005' or value.code = 'newLA3524009' or value.code = 'newLA3524013' or value.code = 'newLA3524015' or value.code = 'newLA3524007')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA33302-3' or value.code = 'LA33301-5' or value.code = 'LA33300-7' or value.code = 'LA33299-1' or value.code = 'LA33297-5' or value.code = 'LA33296-7' or value.code = 'LA33298-3' or value.code = 'LA33295-9')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestAssessmentTargetSiteCode(ChestAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Assessment Target Site Code</em>}' invariant operation.
@@ -491,9 +489,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,8 +502,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentTargetSiteCode(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentTargetSiteCode(ChestAssessment chestAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -568,9 +566,8 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,8 +579,9 @@ public class ChestAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateChestAssessmentTargetSiteCodeP(ChestAssessment chestAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateChestAssessmentTargetSiteCodeP(ChestAssessment chestAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

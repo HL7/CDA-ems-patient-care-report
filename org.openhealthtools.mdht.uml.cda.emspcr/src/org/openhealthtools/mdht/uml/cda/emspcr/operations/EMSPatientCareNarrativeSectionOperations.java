@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSPatientCareNarrativeSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,10 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPatientCareNarrativeSectionTemplateId(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPatientCareNarrativeSectionTemplateId(
+			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +157,8 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +170,10 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPatientCareNarrativeSectionCode(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPatientCareNarrativeSectionCode(
+			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +235,8 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +248,10 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPatientCareNarrativeSectionCodeP(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPatientCareNarrativeSectionCodeP(
+			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -312,9 +313,8 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -326,8 +326,10 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPatientCareNarrativeSectionTitle(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPatientCareNarrativeSectionTitle(
+			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -389,9 +391,8 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -403,8 +404,10 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPatientCareNarrativeSectionText(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPatientCareNarrativeSectionText(
+			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

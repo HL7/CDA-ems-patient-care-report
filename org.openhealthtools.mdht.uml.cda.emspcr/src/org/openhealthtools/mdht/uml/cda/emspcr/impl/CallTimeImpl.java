@@ -98,13 +98,14 @@ public class CallTimeImpl extends ObservationImpl implements CallTime {
 	public CallTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CallTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CallTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CallTimeImpl
+} // CallTimeImpl

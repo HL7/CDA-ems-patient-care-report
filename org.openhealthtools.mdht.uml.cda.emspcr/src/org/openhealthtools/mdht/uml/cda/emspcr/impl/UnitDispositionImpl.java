@@ -98,13 +98,14 @@ public class UnitDispositionImpl extends ObservationImpl implements UnitDisposit
 	public UnitDisposition init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitDispositionImpl
+} // UnitDispositionImpl

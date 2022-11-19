@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer#validateDrugAllergyOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer#validateDrugAllergyOrganizerComponent4(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component4</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer#validateDrugAllergyOrganizerComponent415(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component415</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer#validateDrugAllergyOrganizerComponent42(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component42</em>}</li>
  * </ul>
  * </p>
@@ -40,15 +40,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DrugAllergyOrganizerOperations extends OrganizerOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,9 +75,8 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,8 +88,9 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugAllergyOrganizerTemplateId(DrugAllergyOrganizer drugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugAllergyOrganizerTemplateId(DrugAllergyOrganizer drugAllergyOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -137,26 +135,25 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDrugAllergyOrganizerComponent4(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component4</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDrugAllergyOrganizerComponent415(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component415</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDrugAllergyOrganizerComponent4(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDrugAllergyOrganizerComponent415(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	protected static final String VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDrugAllergyOrganizerComponent4(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component4</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDrugAllergyOrganizerComponent415(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Allergy Organizer Component415</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDrugAllergyOrganizerComponent4(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDrugAllergyOrganizerComponent415(DrugAllergyOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,7 +166,7 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 	
-	public static  boolean validateDrugAllergyOrganizerComponent4(DrugAllergyOrganizer drugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateDrugAllergyOrganizerComponent415(DrugAllergyOrganizer drugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -180,31 +177,31 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
   	 
   	 
   	 
-    DatatypesUtil.increment(context,"DrugAllergyOrganizerDrugAllergyOrganizerComponent4","ERROR");
+    DatatypesUtil.increment(context,"DrugAllergyOrganizerDrugAllergyOrganizerComponent415","ERROR");
     
   	  
   	  
-		if (VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DRUG_ALLERGY_ORGANIZER);
 			try {
-				VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 			}
 		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAllergyOrganizer)) {
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT415__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAllergyOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DRUG_ALLERGY_ORGANIZER__DRUG_ALLERGY_ORGANIZER_COMPONENT4,
-						 EmspcrPlugin.INSTANCE.getString("DrugAllergyOrganizerDrugAllergyOrganizerComponent4"),
+						 EmspcrValidator.DRUG_ALLERGY_ORGANIZER__DRUG_ALLERGY_ORGANIZER_COMPONENT415,
+						 EmspcrPlugin.INSTANCE.getString("DrugAllergyOrganizerDrugAllergyOrganizerComponent415"),
 						 new Object [] { drugAllergyOrganizer }));
 			}
 			 
@@ -231,9 +228,8 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT42__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ALLERGY_ORGANIZER_COMPONENT42__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,8 +241,9 @@ public class DrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugAllergyOrganizerComponent42(DrugAllergyOrganizer drugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugAllergyOrganizerComponent42(DrugAllergyOrganizer drugAllergyOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

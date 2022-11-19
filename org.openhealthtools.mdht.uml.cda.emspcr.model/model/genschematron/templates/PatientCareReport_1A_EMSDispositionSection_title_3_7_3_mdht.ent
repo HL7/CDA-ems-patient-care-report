@@ -1,0 +1,20 @@
+<!-- EMSDispositionSection: 2.16.840.1.1133883.17.3.10.1.4 -->
+
+<pattern id="p-PatientCareReport_1A_EMSDispositionSection_title_3_7_3-error_mdht" see="#p-PatientCareReport_1A_EMSDispositionSection_title_3_7_3-error_mdht" name="p-PatientCareReport_1A_EMSDispositionSection_title_3_7_3-error_mdht">
+		<!--
+			UML path: /EMSDispositionSection
+			UML root path: /PatientCareReport/DispositionSection
+			UML qualified name: emspcr::EMSDispositionSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']">
+		<!--
+			OCL: not self.title.oclIsUndefined() and self.title.getText() = 'EMS Disposition'
+			Constraint name: EMSDispositionSectionTitle
+		-->
+	<assert test="cda:title and string(cda:title//text()) = 'EMS Disposition'">Error: PatientCareReport - 3.7.3 title
+		Conformance: SHALL contain exactly one [1..1] title=&quot;EMS Disposition Section&quot;  which SHOULD equal &quot;EMS Disposition&quot; (CONF:10654)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

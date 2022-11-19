@@ -98,13 +98,14 @@ public class CardiacArrestCauseImpl extends ObservationImpl implements CardiacAr
 	public CardiacArrestCause init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CardiacArrestCause init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CardiacArrestCause init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CardiacArrestCauseImpl
+} // CardiacArrestCauseImpl

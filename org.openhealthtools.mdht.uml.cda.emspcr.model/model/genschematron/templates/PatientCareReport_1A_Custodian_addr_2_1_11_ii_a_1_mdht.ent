@@ -1,0 +1,20 @@
+<!-- Custodian -->
+
+<pattern id="p-PatientCareReport_1A_Custodian_addr_2_1_11_ii_a_1-error_mdht" see="#p-PatientCareReport_1A_Custodian_addr_2_1_11_ii_a_1-error_mdht" name="p-PatientCareReport_1A_Custodian_addr_2_1_11_ii_a_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/CustodianRole/Custodian
+			UML root path: /PatientCareReport/custodian/CustodianRole/Custodian
+			UML qualified name: emspcr::PatientCareReport::CustodianParticipation::CustodianRole::Custodian
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization">
+		<!--
+			OCL: not self.addr.oclIsUndefined()
+			Constraint name: PatientCareReportCustodianParticipationCustodianRoleCustodianAddr
+		-->
+	<assert test="cda:addr">Error: PatientCareReport - 2.1.11.ii.a.1 addr
+		Conformance: SHALL contain exactly one [1..1] addr (CONF:10886)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

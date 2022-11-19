@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getChestAssessment()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ChestAssessmentTemplateId ChestAssessmentCode ChestAssessmentCodeP ChestAssessmentValue ChestAssessmentValueP ChestAssessmentTargetSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.195' templateId.extension='2022-01-01' code.code='NeweExam.25' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ChestAssessmentCode='ChestAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC' constraints.validation.warning='ChestAssessmentTargetSiteCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ChestAssessmentTemplateId ChestAssessmentCode ChestAssessmentCodeP ChestAssessmentValue ChestAssessmentValueP ChestAssessmentTargetSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.195' templateId.extension='2022-01-01' code.code='11422-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical Findings of Chest Assessment' constraints.validation.dependOn.ChestAssessmentCode='ChestAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC' constraints.validation.warning='ChestAssessmentTargetSiteCodeP'"
  * @generated
  */
 public interface ChestAssessment extends Observation {
@@ -54,7 +54,7 @@ public interface ChestAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'NeweExam.25\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'11422-3\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateChestAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -66,7 +66,7 @@ public interface ChestAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'newLA3525007\' or value.code = \'newLA3525025\' or value.code = \'newLA3525027\' or value.code = \'newLA3525029\' or value.code = \'newLA3525047\' or value.code = \'newLA3525021\' or value.code = \'newLA3525049\' or value.code = \'newLA3525019\' or value.code = \'newLA3525017\' or value.code = \'newLA3525015\' or value.code = \'newLA3525013\' or value.code = \'newLA3525023\' or value.code = \'newLA3525009\' or value.code = \'newLA3525005\' or value.code = \'newLA3525003\' or value.code = \'newLA3525001\' or value.code = \'newLA3525033\' or value.code = \'newLA3525035\' or value.code = \'newLA3525037\' or value.code = \'newLA3525039\' or value.code = \'newLA3525041\' or value.code = \'newLA3525043\' or value.code = \'newLA3525045\' or value.code = \'newLA3525011\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17208-2\' or value.code = \'LA18236-2\' or value.code = \'LA7452-1\' or value.code = \'LA6626-1\' or value.code = \'LA7423-2\' or value.code = \'LA18225-5\' or value.code = \'LA23810-7\' or value.code = \'LA17229-8\' or value.code = \'LA33345-2\' or value.code = \'LA33353-6\' or value.code = \'LA33346-0\' or value.code = \'LA33342-9\' or value.code = \'LA17209-0\' or value.code = \'LA17222-3\' or value.code = \'LA18220-6\' or value.code = \'LA7410-9\' or value.code = \'LA7460-4\' or value.code = \'LA33332-0\' or value.code = \'LA17214-0\' or value.code = \'LA18231-3\' or value.code = \'LA17709-9\' or value.code = \'LA17212-4\' or value.code = \'LA22440-4\' or value.code = \'LA33338-7\')))'"
 	 * @generated
 	 */
 	boolean validateChestAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -90,7 +90,7 @@ public interface ChestAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'newLA3524011\' or value.code = \'newLA3524001\' or value.code = \'newLA3524003\' or value.code = \'newLA3524005\' or value.code = \'newLA3524009\' or value.code = \'newLA3524013\' or value.code = \'newLA3524015\' or value.code = \'newLA3524007\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA33302-3\' or value.code = \'LA33301-5\' or value.code = \'LA33300-7\' or value.code = \'LA33299-1\' or value.code = \'LA33297-5\' or value.code = \'LA33296-7\' or value.code = \'LA33298-3\' or value.code = \'LA33295-9\')))'"
 	 * @generated
 	 */
 	boolean validateChestAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,10 +113,11 @@ public interface ChestAssessment extends Observation {
 	 * @generated
 	 */
 	public ChestAssessment init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ChestAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ChestAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChestAssessment

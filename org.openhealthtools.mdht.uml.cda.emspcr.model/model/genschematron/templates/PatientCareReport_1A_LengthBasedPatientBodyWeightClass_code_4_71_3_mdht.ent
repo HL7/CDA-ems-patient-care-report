@@ -1,0 +1,30 @@
+<!-- LengthBasedPatientBodyWeightClass: 2.16.840.1.1133883.17.3.10.1.110 -->
+
+<pattern id="p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_code_4_71_3-error_mdht" see="#p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_code_4_71_3-error_mdht" name="p-PatientCareReport_1A_LengthBasedPatientBodyWeightClass_code_4_71_3-error_mdht">
+		<!--
+			UML path: /LengthBasedPatientBodyWeightClass
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/lengthBasedBodyWeight/observation
+			UML qualified name: emspcr::LengthBasedPatientBodyWeightClass
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:entry/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.110']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: LengthBasedPatientBodyWeightClassCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.71.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10366)/@code=&quot;67670-0&quot; Length-based tape measure category NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10365)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67670-0' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: LengthBasedPatientBodyWeightClassCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67670-0' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.71.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10366)/@code=&quot;67670-0&quot; Length-based tape measure category NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10365)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

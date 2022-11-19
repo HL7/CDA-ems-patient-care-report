@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class PatientBodyWeightOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightTemplateId(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightTemplateId(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightMoodCode(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightMoodCode(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightCodeP(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightCodeP(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightCode(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightCode(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -409,9 +407,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -423,8 +420,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightEffectiveTime(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightEffectiveTime(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -486,9 +484,8 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_BODY_WEIGHT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -500,8 +497,9 @@ public class PatientBodyWeightOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientBodyWeightValue(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientBodyWeightValue(PatientBodyWeight patientBodyWeight,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

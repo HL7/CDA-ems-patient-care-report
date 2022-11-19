@@ -1,0 +1,20 @@
+<!-- CustodianOrganization -->
+
+<pattern id="p-PatientCareReport_1A_CustodianOrganization_id_2_1_11_i_a_1-error_mdht" see="#p-PatientCareReport_1A_CustodianOrganization_id_2_1_11_i_a_1-error_mdht" name="p-PatientCareReport_1A_CustodianOrganization_id_2_1_11_i_a_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization
+			UML qualified name: consol::GeneralHeaderConstraints::Custodian::AssignedCustodian::CustodianOrganization
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization">
+		<!--
+			OCL: not self.id->isEmpty()
+			Constraint name: GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId
+		-->
+	<assert test="cda:id">Error: PatientCareReport - 2.1.11.i.a.1 id
+		Conformance: SHALL contain at least one [1..*] id (CONF:5522, R2.1=CONF:1198-5522)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

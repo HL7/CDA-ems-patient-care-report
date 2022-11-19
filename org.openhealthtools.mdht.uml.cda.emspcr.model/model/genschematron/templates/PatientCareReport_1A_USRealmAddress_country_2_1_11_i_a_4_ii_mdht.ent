@@ -1,0 +1,20 @@
+<!-- USRealmAddress -->
+
+<pattern id="p-PatientCareReport_1A_USRealmAddress_country_2_1_11_i_a_4_ii-error_mdht" see="#p-PatientCareReport_1A_USRealmAddress_country_2_1_11_i_a_4_ii-error_mdht" name="p-PatientCareReport_1A_USRealmAddress_country_2_1_11_i_a_4_ii-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization/addr
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmAddress
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization/cda:addr">
+		<!--
+			OCL:  ( self.isNullFlavorUndefined() implies (((not self.country->isEmpty()) and self.country->exists(element | element.isNullFlavorUndefined())) implies (not self.country->isEmpty()) ))
+			Constraint name: GeneralHeaderConstraintsUSRealmAddressCountry
+		-->
+	<assert test="@nullFlavor or not(cda:country and cda:country[not(@nullFlavor)]) or cda:country">Error: PatientCareReport - 2.1.11.i.a.4.ii country
+		Conformance: SHOULD contain zero or one [0..1] country (CONF:7295, R2.1=CONF:81-7295, DSTU:737)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

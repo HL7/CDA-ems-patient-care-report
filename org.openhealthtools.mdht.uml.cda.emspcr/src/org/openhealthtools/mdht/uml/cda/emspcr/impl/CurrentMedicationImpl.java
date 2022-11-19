@@ -116,13 +116,14 @@ public class CurrentMedicationImpl extends SubstanceAdministrationImpl implement
 	public CurrentMedication init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CurrentMedicationImpl
+} // CurrentMedicationImpl

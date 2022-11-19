@@ -1,0 +1,30 @@
+<!-- DispatchReason: 2.16.840.1.1133883.17.3.10.1.74 -->
+
+<pattern id="p-PatientCareReport_1A_DispatchReason_value_4_44_4-error_mdht" see="#p-PatientCareReport_1A_DispatchReason_value_4_44_4-error_mdht" name="p-PatientCareReport_1A_DispatchReason_value_4_44_4-error_mdht">
+		<!--
+			UML path: /DispatchReason
+			UML root path: /PatientCareReport/DispatchSection/complaintReportedByDispatch
+			UML qualified name: emspcr::DispatchReason
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispatchSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.2']/cda:complaintReportedByDispatch[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.74']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA23843-8' or value.code = 'LA15903-0' or value.code = 'LA17117-5' or value.code = 'LA17118-3' or value.code = 'LA17119-1' or value.code = 'LA17120-9' or value.code = 'LA17121-7' or value.code = 'LA17122-5' or value.code = 'LA17123-3' or value.code = 'LA17124-1' or value.code = 'LA17125-8' or value.code = 'LA17126-6' or value.code = 'LA17127-4' or value.code = 'LA17128-2' or value.code = 'LA17129-0' or value.code = 'LA17131-6' or value.code = 'LA17132-4' or value.code = 'LA17133-2' or value.code = 'LA17134-0' or value.code = 'LA17135-7' or value.code = 'LA17136-5' or value.code = 'LA17137-3' or value.code = 'LA17138-1' or value.code = 'LA17140-7' or value.code = 'LA17141-5' or value.code = 'LA17142-3' or value.code = 'LA17143-1' or value.code = 'LA17144-9' or value.code = 'LA17145-6' or value.code = 'LA17146-4' or value.code = 'LA17147-2' or value.code = 'LA17148-0' or value.code = 'LA17149-8' or value.code = 'LA17150-6' or value.code = 'LA18093-7' or value.code = 'LA18209-9' or value.code = 'LA18210-7' or value.code = 'LA18211-5' or value.code = 'LA9553-4' or value.code = 'LA9555-9' or value.code = 'LA17130-8' or value.code = 'LA23800-8' or value.code = 'LA17392-4' or value.code = 'LA18716-3' or value.code = 'LA15098-9' or value.code = 'LA15099-7'))
+			Constraint name: DispatchReasonValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA23843-8' or @code = 'LA15903-0' or @code = 'LA17117-5' or @code = 'LA17118-3' or @code = 'LA17119-1' or @code = 'LA17120-9' or @code = 'LA17121-7' or @code = 'LA17122-5' or @code = 'LA17123-3' or @code = 'LA17124-1' or @code = 'LA17125-8' or @code = 'LA17126-6' or @code = 'LA17127-4' or @code = 'LA17128-2' or @code = 'LA17129-0' or @code = 'LA17131-6' or @code = 'LA17132-4' or @code = 'LA17133-2' or @code = 'LA17134-0' or @code = 'LA17135-7' or @code = 'LA17136-5' or @code = 'LA17137-3' or @code = 'LA17138-1' or @code = 'LA17140-7' or @code = 'LA17141-5' or @code = 'LA17142-3' or @code = 'LA17143-1' or @code = 'LA17144-9' or @code = 'LA17145-6' or @code = 'LA17146-4' or @code = 'LA17147-2' or @code = 'LA17148-0' or @code = 'LA17149-8' or @code = 'LA17150-6' or @code = 'LA18093-7' or @code = 'LA18209-9' or @code = 'LA18210-7' or @code = 'LA18211-5' or @code = 'LA9553-4' or @code = 'LA9555-9' or @code = 'LA17130-8' or @code = 'LA23800-8' or @code = 'LA17392-4' or @code = 'LA18716-3' or @code = 'LA15098-9' or @code = 'LA15099-7'))])">Error: PatientCareReport - 4.44.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10571), which SHALL be selected from ValueSet Dispatch Reason 2.16.840.1.113883.17.3.11.49 DYNAMIC (CONF:10570)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: DispatchReasonValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.44.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10571), which SHALL be selected from ValueSet Dispatch Reason 2.16.840.1.113883.17.3.11.49 DYNAMIC (CONF:10570)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

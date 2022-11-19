@@ -116,13 +116,14 @@ public class HeartAssessmentImpl extends ObservationImpl implements HeartAssessm
 	public HeartAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public HeartAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public HeartAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //HeartAssessmentImpl
+} // HeartAssessmentImpl

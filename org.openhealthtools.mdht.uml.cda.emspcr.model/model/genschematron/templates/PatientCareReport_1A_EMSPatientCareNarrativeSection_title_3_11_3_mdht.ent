@@ -1,0 +1,20 @@
+<!-- EMSPatientCareNarrativeSection: 2.16.840.1.1133883.17.3.10.1.1 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPatientCareNarrativeSection_title_3_11_3-error_mdht" see="#p-PatientCareReport_1A_EMSPatientCareNarrativeSection_title_3_11_3-error_mdht" name="p-PatientCareReport_1A_EMSPatientCareNarrativeSection_title_3_11_3-error_mdht">
+		<!--
+			UML path: /EMSPatientCareNarrativeSection
+			UML root path: /PatientCareReport/PatientCareNarrativeSection
+			UML qualified name: emspcr::EMSPatientCareNarrativeSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PatientCareNarrativeSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.1']">
+		<!--
+			OCL: not self.title.oclIsUndefined()
+			Constraint name: EMSPatientCareNarrativeSectionTitle
+		-->
+	<assert test="cda:title">Error: PatientCareReport - 3.11.3 title
+		Conformance: SHALL contain exactly one [1..1] title=&quot;EMS Patient Care Narrative Section&quot;  (CONF:10554)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

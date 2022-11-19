@@ -49,15 +49,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ComplaintOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,9 +84,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_DURATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_DURATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,8 +97,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintDurationRelationship(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintDurationRelationship(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -163,9 +161,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TYPE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TYPE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,8 +174,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintTypeRelationship(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintTypeRelationship(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -240,9 +238,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,8 +251,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemRelationship(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemRelationship(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -317,9 +315,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,8 +328,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintTemplateId(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintTemplateId(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -394,9 +392,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -408,8 +405,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintMoodCode(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintMoodCode(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -471,9 +469,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -485,8 +482,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintCodeP(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintCodeP(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -562,9 +560,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -576,8 +573,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintCode(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintCode(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -645,9 +643,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -659,8 +656,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintEffectiveTime(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintEffectiveTime(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -722,9 +720,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -736,8 +733,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintValue(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintValue(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -801,9 +799,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -815,8 +812,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintTargetSiteCode(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintTargetSiteCode(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -878,9 +876,8 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,8 +889,9 @@ public class ComplaintOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintTargetSiteCodeP(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintTargetSiteCodeP(Complaint complaint, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

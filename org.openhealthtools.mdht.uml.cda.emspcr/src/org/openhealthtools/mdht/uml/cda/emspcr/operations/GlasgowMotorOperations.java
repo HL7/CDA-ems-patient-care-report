@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class GlasgowMotorOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowMotorTemplateId(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGlasgowMotorTemplateId(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowMotorMoodCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGlasgowMotorMoodCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowMotorCodeP(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGlasgowMotorCodeP(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +323,8 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +336,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowMotorCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGlasgowMotorCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -408,9 +406,8 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +419,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowMotorValue(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGlasgowMotorValue(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

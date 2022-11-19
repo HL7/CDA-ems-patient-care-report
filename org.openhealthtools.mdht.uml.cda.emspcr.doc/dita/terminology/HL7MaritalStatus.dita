@@ -34,6 +34,8 @@
 <row><entry>S</entry><entry></entry><entry>Never Married</entry></row>
 <row><entry>T</entry><entry></entry><entry>Domestic partner</entry></row>
 <row><entry>W</entry><entry></entry><entry>Widowed</entry></row>
+<row><entry>C</entry><entry></entry><entry>Common Law</entry></row>
+<row><entry>U</entry><entry></entry><entry>UnMarried</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

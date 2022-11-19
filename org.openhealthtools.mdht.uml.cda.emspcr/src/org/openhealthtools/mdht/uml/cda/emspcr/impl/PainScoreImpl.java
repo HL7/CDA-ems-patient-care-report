@@ -107,13 +107,14 @@ public class PainScoreImpl extends ObservationImpl implements PainScore {
 	public PainScore init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PainScoreImpl
+} // PainScoreImpl

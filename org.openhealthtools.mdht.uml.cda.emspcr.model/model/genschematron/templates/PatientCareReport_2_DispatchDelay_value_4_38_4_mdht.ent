@@ -1,0 +1,30 @@
+<!-- DispatchDelay: 2.16.840.1.1133883.17.3.10.1.153 -->
+
+<pattern id="p-PatientCareReport_2_DispatchDelay_value_4_38_4-error_mdht" see="#p-PatientCareReport_2_DispatchDelay_value_4_38_4-error_mdht" name="p-PatientCareReport_2_DispatchDelay_value_4_38_4-error_mdht">
+		<!--
+			UML path: /DispatchDelay
+			UML root path: /PatientCareReport/ResponseSection/delayOrganizer/DispatchDelayRelationship/DispatchDelay
+			UML qualified name: emspcr::DispatchDelay
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:delayOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.95']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.153']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17183-7' or value.code = 'LA17579-6' or value.code = 'LA17580-4' or value.code = 'LA17581-2' or value.code = 'LA17582-0' or value.code = 'LA17584-6' or value.code = 'LA18081-2' or value.code = 'LA7540-3' or value.code = 'LA32992-2' or value.code = 'LA32993-0' or value.code = 'LA32994-8'))
+			Constraint name: DispatchDelayValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17059-9' or @code = 'LA17183-7' or @code = 'LA17579-6' or @code = 'LA17580-4' or @code = 'LA17581-2' or @code = 'LA17582-0' or @code = 'LA17584-6' or @code = 'LA18081-2' or @code = 'LA7540-3' or @code = 'LA32992-2' or @code = 'LA32993-0' or @code = 'LA32994-8'))])">Error: PatientCareReport - 4.38.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10592), which SHALL be selected from ValueSet DispatchDelayType 2.16.840.1.113883.17.3.11.50 DYNAMIC (CONF:10591)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: DispatchDelayValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.38.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10592), which SHALL be selected from ValueSet DispatchDelayType 2.16.840.1.113883.17.3.11.50 DYNAMIC (CONF:10591)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

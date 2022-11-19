@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class TransportModeObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationTemplateId(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationTemplateId(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationMoodCode(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationMoodCode(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +234,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +247,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationCodeP(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationCodeP(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -327,9 +325,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,8 +338,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationCode(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationCode(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -412,9 +410,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationValue(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationValue(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -489,9 +487,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,8 +500,9 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationValueP(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationValueP(TransportModeObservation transportModeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -566,9 +564,8 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_TRANSPORT_MODE_QUALIFIER_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_MODE_OBSERVATION_TRANSPORT_MODE_QUALIFIER_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -580,8 +577,10 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportModeObservationTransportModeQualifierRelationship(TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportModeObservationTransportModeQualifierRelationship(
+			TransportModeObservation transportModeObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

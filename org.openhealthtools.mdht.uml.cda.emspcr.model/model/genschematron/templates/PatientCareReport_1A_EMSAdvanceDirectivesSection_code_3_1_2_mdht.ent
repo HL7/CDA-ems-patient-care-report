@@ -1,0 +1,30 @@
+<!-- EMSAdvanceDirectivesSection: 2.16.840.1.1133883.17.3.10.1.12 -->
+
+<pattern id="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_code_3_1_2-error_mdht" see="#p-PatientCareReport_1A_EMSAdvanceDirectivesSection_code_3_1_2-error_mdht" name="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_code_3_1_2-error_mdht">
+		<!--
+			UML path: /EMSAdvanceDirectivesSection
+			UML root path: /PatientCareReport/AdvanceDirectives
+			UML qualified name: emspcr::EMSAdvanceDirectivesSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AdvanceDirectives[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.12']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSAdvanceDirectivesSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67840-9' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.1.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11634)/@code=&quot;67840-9&quot; EMS Advance Directives Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10191)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSAdvanceDirectivesSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.1.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11634)/@code=&quot;67840-9&quot; EMS Advance Directives Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10191)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

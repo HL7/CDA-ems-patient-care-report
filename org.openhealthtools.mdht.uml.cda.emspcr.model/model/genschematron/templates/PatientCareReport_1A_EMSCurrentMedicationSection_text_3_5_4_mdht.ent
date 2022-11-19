@@ -1,0 +1,20 @@
+<!-- EMSCurrentMedicationSection: 2.16.840.1.1133883.17.3.10.1.15 -->
+
+<pattern id="p-PatientCareReport_1A_EMSCurrentMedicationSection_text_3_5_4-error_mdht" see="#p-PatientCareReport_1A_EMSCurrentMedicationSection_text_3_5_4-error_mdht" name="p-PatientCareReport_1A_EMSCurrentMedicationSection_text_3_5_4-error_mdht">
+		<!--
+			UML path: /EMSCurrentMedicationSection
+			UML root path: /PatientCareReport/CurrentMedication
+			UML qualified name: emspcr::EMSCurrentMedicationSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CurrentMedication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.15']">
+		<!--
+			OCL: not self.text.oclIsUndefined()
+			Constraint name: EMSCurrentMedicationSectionText
+		-->
+	<assert test="cda:text">Error: PatientCareReport - 3.5.4 text
+		Conformance: SHALL contain exactly one [1..1] text (CONF:10957)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,30 @@
+<!-- UnitLeftSceneTime: 2.16.840.1.1133883.17.3.10.1.43 -->
+
+<pattern id="p-PatientCareReport_1A_UnitLeftSceneTime_code_4_145_3-error_mdht" see="#p-PatientCareReport_1A_UnitLeftSceneTime_code_4_145_3-error_mdht" name="p-PatientCareReport_1A_UnitLeftSceneTime_code_4_145_3-error_mdht">
+		<!--
+			UML path: /UnitLeftSceneTime
+			UML root path: /PatientCareReport/TimesSection/unitLeftSceneTime
+			UML qualified name: emspcr::UnitLeftSceneTime
+		-->
+	<rule context="/cda:ClinicalDocument/cda:TimesSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.10']/cda:unitLeftSceneTime[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.43']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: UnitLeftSceneTimeCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.145.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10855)/@code=&quot;69475-2&quot; Responding unit left the scene with a patient [Date and time] Vehicle NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10854)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '69475-2' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: UnitLeftSceneTimeCode
+		-->
+	<assert test="cda:code and cda:code[@code = '69475-2' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.145.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10855)/@code=&quot;69475-2&quot; Responding unit left the scene with a patient [Date and time] Vehicle NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10854)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

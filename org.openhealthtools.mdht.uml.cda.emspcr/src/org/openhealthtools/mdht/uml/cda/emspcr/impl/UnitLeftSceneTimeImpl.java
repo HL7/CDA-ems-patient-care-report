@@ -98,13 +98,14 @@ public class UnitLeftSceneTimeImpl extends ObservationImpl implements UnitLeftSc
 	public UnitLeftSceneTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitLeftSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitLeftSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitLeftSceneTimeImpl
+} // UnitLeftSceneTimeImpl

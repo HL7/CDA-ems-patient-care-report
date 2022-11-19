@@ -94,7 +94,8 @@ public interface EMSPastMedicalHistorySection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ExistenceOfHistoryOfConditionOrSurgery) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,10 +104,11 @@ public interface EMSPastMedicalHistorySection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::MedicalSurgicalHistory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::MedicalSurgicalHistory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,10 +123,10 @@ public interface EMSPastMedicalHistorySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::MedicalSurgicalHistory)).oclAsType(emspcr::MedicalSurgicalHistory)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::MedicalSurgicalHistory))-&gt;asSequence()-&gt;any(true).oclAsType(emspcr::MedicalSurgicalHistory)'"
 	 * @generated
 	 */
-	EList<MedicalSurgicalHistory> getHistoryOfConditions();
+	MedicalSurgicalHistory getHistoryOfCondition();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,10 +134,11 @@ public interface EMSPastMedicalHistorySection extends Section {
 	 * @generated
 	 */
 	public EMSPastMedicalHistorySection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSPastMedicalHistorySection

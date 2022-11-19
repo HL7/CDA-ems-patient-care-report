@@ -1,0 +1,20 @@
+<!-- DestinationHospitalCapability: 2.16.840.1.1133883.17.3.10.1.104 -->
+
+<pattern id="p-PatientCareReport_1A_DestinationHospitalCapability_classCode_4_33_2-error_mdht" see="#p-PatientCareReport_1A_DestinationHospitalCapability_classCode_4_33_2-error_mdht" name="p-PatientCareReport_1A_DestinationHospitalCapability_classCode_4_33_2-error_mdht">
+		<!--
+			UML path: /DestinationHospitalCapability
+			UML root path: /PatientCareReport/DispositionSection/primaryDestinationHospitalCapability
+			UML qualified name: emspcr::DestinationHospitalCapability
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:primaryDestinationHospitalCapability[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.104']">
+		<!--
+			OCL: self.classCode=vocab::ActClassObservation::OBS
+			Constraint name: DestinationHospitalCapabilityClassCode
+		-->
+	<assert test="@classCode = 'OBS'">Error: PatientCareReport - 4.33.2 classCode
+		Conformance: SHALL contain exactly one [1..1] @classCode=&quot;OBS&quot; Observation (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:11357)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

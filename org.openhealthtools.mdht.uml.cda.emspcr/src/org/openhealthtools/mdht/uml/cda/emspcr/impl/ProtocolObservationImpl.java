@@ -107,13 +107,14 @@ public class ProtocolObservationImpl extends ObservationImpl implements Protocol
 	public ProtocolObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProtocolObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProtocolObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProtocolObservationImpl
+} // ProtocolObservationImpl

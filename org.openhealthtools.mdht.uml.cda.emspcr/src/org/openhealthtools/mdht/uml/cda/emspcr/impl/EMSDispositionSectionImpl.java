@@ -108,7 +108,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionNumberOfPatientsObservation(this, diagnostics, context);
 	}
 
@@ -117,7 +118,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionTransportModeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionTransportModeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportModeObservation(this, diagnostics, context);
 	}
 
@@ -126,7 +128,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportMethodObservation(this, diagnostics, context);
 	}
 
@@ -135,7 +138,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionReasonForChoosingDestinationObservation(this, diagnostics, context);
 	}
 
@@ -144,7 +148,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionPrearrivalActivationObservation(this, diagnostics, context);
 	}
 
@@ -153,7 +158,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(this, diagnostics, context);
 	}
 
@@ -162,7 +168,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionPrimaryDestinationHospitalCapability(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionPrimaryDestinationHospitalCapability(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionPrimaryDestinationHospitalCapability(this, diagnostics, context);
 	}
 
@@ -171,7 +178,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionDestinationWard(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionDestinationWard(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionDestinationWard(this, diagnostics, context);
 	}
 
@@ -180,7 +188,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionUnitDisposition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionUnitDisposition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionUnitDisposition(this, diagnostics, context);
 	}
 
@@ -189,7 +198,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionPatientEngagement(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionPatientEngagement(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionPatientEngagement(this, diagnostics, context);
 	}
 
@@ -198,7 +208,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionCrewDisposition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionCrewDisposition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionCrewDisposition(this, diagnostics, context);
 	}
 
@@ -207,7 +218,8 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispositionSectionTransportDisposition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSDispositionSectionTransportDisposition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportDisposition(this, diagnostics, context);
 	}
 
@@ -327,13 +339,14 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	public EMSDispositionSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSDispositionSectionImpl
+} // EMSDispositionSectionImpl

@@ -1,0 +1,20 @@
+<!-- EMSCardiacArrestEventSection: 2.16.840.1.1133883.17.3.10.1.14 -->
+
+<pattern id="p-PatientCareReport_1A_EMSCardiacArrestEventSection_title_3_4_3-error_mdht" see="#p-PatientCareReport_1A_EMSCardiacArrestEventSection_title_3_4_3-error_mdht" name="p-PatientCareReport_1A_EMSCardiacArrestEventSection_title_3_4_3-error_mdht">
+		<!--
+			UML path: /EMSCardiacArrestEventSection
+			UML root path: /PatientCareReport/CardiacArrestEvent
+			UML qualified name: emspcr::EMSCardiacArrestEventSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']">
+		<!--
+			OCL: not self.title.oclIsUndefined() and self.title.getText() = 'EMS Cardiac Arrest Event'
+			Constraint name: EMSCardiacArrestEventSectionTitle
+		-->
+	<assert test="cda:title and string(cda:title//text()) = 'EMS Cardiac Arrest Event'">Error: PatientCareReport - 3.4.3 title
+		Conformance: SHALL contain exactly one [1..1] title=&quot;EMS Cardiac Arrest Event&quot;  which SHOULD equal &quot;EMS Cardiac Arrest Event&quot; (CONF:10937)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

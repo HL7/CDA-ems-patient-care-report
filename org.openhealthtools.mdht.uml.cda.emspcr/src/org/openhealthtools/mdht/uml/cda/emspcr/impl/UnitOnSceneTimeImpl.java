@@ -98,13 +98,14 @@ public class UnitOnSceneTimeImpl extends ObservationImpl implements UnitOnSceneT
 	public UnitOnSceneTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitOnSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitOnSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitOnSceneTimeImpl
+} // UnitOnSceneTimeImpl

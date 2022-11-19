@@ -121,7 +121,8 @@ public class EMSSituationSectionImpl extends SectionImpl implements EMSSituation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSituationSectionProviderPrimaryImpression(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSSituationSectionProviderPrimaryImpression(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSSituationSectionOperations.validateEMSSituationSectionProviderPrimaryImpression(this, diagnostics, context);
 	}
 
@@ -148,7 +149,8 @@ public class EMSSituationSectionImpl extends SectionImpl implements EMSSituation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSituationSectionProviderSecondaryImpressions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSSituationSectionProviderSecondaryImpressions(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSSituationSectionOperations.validateEMSSituationSectionProviderSecondaryImpressions(this, diagnostics, context);
 	}
 
@@ -157,7 +159,8 @@ public class EMSSituationSectionImpl extends SectionImpl implements EMSSituation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSituationSectionInitialPatientAcuity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSSituationSectionInitialPatientAcuity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSSituationSectionOperations.validateEMSSituationSectionInitialPatientAcuity(this, diagnostics, context);
 	}
 
@@ -232,13 +235,14 @@ public class EMSSituationSectionImpl extends SectionImpl implements EMSSituation
 	public EMSSituationSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSSituationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSSituationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSSituationSectionImpl
+} // EMSSituationSectionImpl

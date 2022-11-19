@@ -122,10 +122,11 @@ public interface ResponseModeToScene extends Observation {
 	 * @generated
 	 */
 	public ResponseModeToScene init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseModeToScene

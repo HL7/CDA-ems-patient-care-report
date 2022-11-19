@@ -90,7 +90,7 @@ public interface MentalStatusAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17286-8\' or value.code = \'LA17287-6\' or value.code = \'LA17288-4\' or value.code = \'LA17289-2\' or value.code = \'LA17290-0\' or value.code = \'LA18259-4\' or value.code = \'LA6560-2\' or value.code = \'LA7438-0\' or value.code = \'LA9343-0\' or value.code = \'LA6150-2\' or value.code = \'LA23818-0\' or value.code = \'LA17666-1\' or value.code = \'NewLA-3519039\' or value.code = \'NewLA-3519037\' or value.code = \'NewLA-3519043\' or value.code = \'NewLA-3519029\' or value.code = \'NewLA-3519031\' or value.code = \'NewLA-3519035\' or value.code = \'NewLA-3519041\' or value.code = \'NewLA-3519045\' or value.code = \'NewLA-3519047\' or value.code = \'NewLA-3519049\' or value.code = \'NewLA-3519033\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17286-8\' or value.code = \'LA17287-6\' or value.code = \'LA17288-4\' or value.code = \'LA17289-2\' or value.code = \'LA17290-0\' or value.code = \'LA18259-4\' or value.code = \'LA6560-2\' or value.code = \'LA7438-0\' or value.code = \'LA9343-0\' or value.code = \'LA6150-2\' or value.code = \'LA23818-0\' or value.code = \'LA17666-1\' or value.code = \'LA17313-0\' or value.code = \'LA32948-4\' or value.code = \'LA17678-6\' or value.code = \'LA32951-8\' or value.code = \'LA17307-2\' or value.code = \'LA32953-4\' or value.code = \'LA32950-0\' or value.code = \'LA32956-7\' or value.code = \'LA17317-1\' or value.code = \'LA32955-9\' or value.code = \'LA17668-7\')))'"
 	 * @generated
 	 */
 	boolean validateMentalStatusAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,10 +113,11 @@ public interface MentalStatusAssessment extends Observation {
 	 * @generated
 	 */
 	public MentalStatusAssessment init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusAssessment

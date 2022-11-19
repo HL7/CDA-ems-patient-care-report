@@ -1,0 +1,20 @@
+<!-- EMSPersonnelAdverseEventSection: 2.16.840.1.1133883.17.3.10.1.6 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_title_3_12_3-error_mdht" see="#p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_title_3_12_3-error_mdht" name="p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_title_3_12_3-error_mdht">
+		<!--
+			UML path: /EMSPersonnelAdverseEventSection
+			UML root path: /PatientCareReport/PersonnelAdverseEventSection
+			UML qualified name: emspcr::EMSPersonnelAdverseEventSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PersonnelAdverseEventSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.6']">
+		<!--
+			OCL: not self.title.oclIsUndefined()
+			Constraint name: EMSPersonnelAdverseEventSectionTitle
+		-->
+	<assert test="cda:title">Error: PatientCareReport - 3.12.3 title
+		Conformance: SHALL contain exactly one [1..1] title=&quot;EMS Personnel Adverse Event Section&quot;  (CONF:10700)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

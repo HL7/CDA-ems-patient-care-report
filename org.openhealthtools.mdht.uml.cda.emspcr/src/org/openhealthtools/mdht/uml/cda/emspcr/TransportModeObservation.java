@@ -106,7 +106,8 @@ public interface TransportModeObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,10 +115,11 @@ public interface TransportModeObservation extends Observation {
 	 * @generated
 	 */
 	public TransportModeObservation init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransportModeObservation

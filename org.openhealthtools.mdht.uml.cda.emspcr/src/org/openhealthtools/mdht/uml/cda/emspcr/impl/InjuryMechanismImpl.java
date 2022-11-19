@@ -107,13 +107,14 @@ public class InjuryMechanismImpl extends ObservationImpl implements InjuryMechan
 	public InjuryMechanism init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public InjuryMechanism init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public InjuryMechanism init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //InjuryMechanismImpl
+} // InjuryMechanismImpl

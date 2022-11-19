@@ -1,0 +1,20 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_classCode_4_78_2-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_classCode_4_78_2-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_classCode_4_78_2-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: self.classCode=vocab::ActClass::SBADM
+			Constraint name: MedicationAdministeredClassCode
+		-->
+	<assert test="@classCode = 'SBADM'">Error: PatientCareReport - 4.78.2 classCode
+		Conformance: SHALL contain exactly one [1..1] @classCode=&quot;SBADM&quot;  (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:10445)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

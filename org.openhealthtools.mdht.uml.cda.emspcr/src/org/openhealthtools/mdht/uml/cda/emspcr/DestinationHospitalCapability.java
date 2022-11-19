@@ -90,7 +90,7 @@ public interface DestinationHospitalCapability extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA22833-0\' or value.code = \'LA22834-8\' or value.code = \'LA22835-5\' or value.code = \'LA22836-3\' or value.code = \'LA22837-1\' or value.code = \'LA22838-9\' or value.code = \'LA22842-1\' or value.code = \'LA22843-9\' or value.code = \'LA22844-7\' or value.code = \'LA22845-4\' or value.code = \'LA22846-2\' or value.code = \'LA22847-0\' or value.code = \'LA22848-8\' or value.code = \'LA22849-6\' or value.code = \'LA22850-4\' or value.code = \'NewLA-9908037\' or value.code = \'NewLA-9908039\' or value.code = \'NewLA-9908041\' or value.code = \'NewLA-9908043\' or value.code = \'NewLA-9908045\' or value.code = \'NewLA-9908047\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA22833-0\' or value.code = \'LA22834-8\' or value.code = \'LA22835-5\' or value.code = \'LA22836-3\' or value.code = \'LA22837-1\' or value.code = \'LA22838-9\' or value.code = \'LA22842-1\' or value.code = \'LA22843-9\' or value.code = \'LA22844-7\' or value.code = \'LA22845-4\' or value.code = \'LA22846-2\' or value.code = \'LA22847-0\' or value.code = \'LA22848-8\' or value.code = \'LA22849-6\' or value.code = \'LA22850-4\' or value.code = \'LA32931-0\' or value.code = \'LA32934-4\' or value.code = \'LA32935-1\' or value.code = \'LA32936-9\' or value.code = \'LA32933-6\' or value.code = \'LA20786-2\')))'"
 	 * @generated
 	 */
 	boolean validateDestinationHospitalCapabilityValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,10 +113,11 @@ public interface DestinationHospitalCapability extends Observation {
 	 * @generated
 	 */
 	public DestinationHospitalCapability init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DestinationHospitalCapability init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DestinationHospitalCapability init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DestinationHospitalCapability

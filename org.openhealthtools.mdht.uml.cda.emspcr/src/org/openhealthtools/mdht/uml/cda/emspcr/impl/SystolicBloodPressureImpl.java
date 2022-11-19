@@ -86,7 +86,8 @@ public class SystolicBloodPressureImpl extends ObservationImpl implements Systol
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSystolicBloodPressureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSystolicBloodPressureEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SystolicBloodPressureOperations.validateSystolicBloodPressureEffectiveTime(this, diagnostics, context);
 	}
 
@@ -125,13 +126,14 @@ public class SystolicBloodPressureImpl extends ObservationImpl implements Systol
 	public SystolicBloodPressure init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //SystolicBloodPressureImpl
+} // SystolicBloodPressureImpl

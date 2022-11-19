@@ -1,0 +1,20 @@
+<!-- ComplaintOrganSystemRelationship -->
+
+<pattern id="p-PatientCareReport_1A_ComplaintOrganSystemRelationship_ComplaintOrganSystem_4_25_9_i-error_mdht" see="#p-PatientCareReport_1A_ComplaintOrganSystemRelationship_ComplaintOrganSystem_4_25_9_i-error_mdht" name="p-PatientCareReport_1A_ComplaintOrganSystemRelationship_ComplaintOrganSystem_4_25_9_i-error_mdht">
+		<!--
+			UML path: /Complaint/ComplaintOrganSystemRelationship
+			UML root path: /PatientCareReport/SituationSection/complaint/ComplaintOrganSystemRelationship
+			UML qualified name: emspcr::Complaint::ComplaintOrganSystemRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:complaint[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.63']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.140']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ComplaintOrganSystem))
+			Constraint name: ComplaintComplaintOrganSystemRelationshipComplaintOrganSystem
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.140'])=1">Error: PatientCareReport - 4.25.9.i ComplaintOrganSystem
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10782)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

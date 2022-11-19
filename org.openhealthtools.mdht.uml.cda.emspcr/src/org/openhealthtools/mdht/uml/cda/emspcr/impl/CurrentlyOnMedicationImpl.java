@@ -89,13 +89,14 @@ public class CurrentlyOnMedicationImpl extends ObservationImpl implements Curren
 	public CurrentlyOnMedication init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CurrentlyOnMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CurrentlyOnMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CurrentlyOnMedicationImpl
+} // CurrentlyOnMedicationImpl

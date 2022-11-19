@@ -66,7 +66,7 @@ public interface DisasterType extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17594-5\' or value.code = \'LA18089-5\' or value.code = \'LA18090-3\' or value.code = \'LA18091-1\' or value.code = \'LA18092-9\' or value.code = \'LA18093-7\' or value.code = \'LA18094-5\' or value.code = \'LA18095-2\' or value.code = \'LA18096-0\' or value.code = \'LA18097-8\' or value.code = \'LA18098-6\' or value.code = \'LA18099-4\' or value.code = \'LA18100-0\' or value.code = \'LA18101-8\' or value.code = \'NewLA-4507031\' or value.code = \'NewLA-4507033\' or value.code = \'NewLA-4507035\' or value.code = \'NewLA-4507037\' or value.code = \'NewLA-4507039\' or value.code = \'NewLA-4507029\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17594-5\' or value.code = \'LA18089-5\' or value.code = \'LA18090-3\' or value.code = \'LA18091-1\' or value.code = \'LA18092-9\' or value.code = \'LA18093-7\' or value.code = \'LA18094-5\' or value.code = \'LA18095-2\' or value.code = \'LA18096-0\' or value.code = \'LA18097-8\' or value.code = \'LA18098-6\' or value.code = \'LA18099-4\' or value.code = \'LA18100-0\' or value.code = \'LA18101-8\' or value.code = \'LA30039-4\' or value.code = \'LA32967-4\' or value.code = \'LA32968-2\' or value.code = \'LA30042-8\' or value.code = \'LA30040-2\' or value.code = \'LA30037-8\')))'"
 	 * @generated
 	 */
 	boolean validateDisasterTypeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -89,10 +89,11 @@ public interface DisasterType extends Observation {
 	 * @generated
 	 */
 	public DisasterType init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DisasterType

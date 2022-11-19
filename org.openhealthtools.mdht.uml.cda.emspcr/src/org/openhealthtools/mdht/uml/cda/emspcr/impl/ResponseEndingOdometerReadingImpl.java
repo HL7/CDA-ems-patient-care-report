@@ -50,7 +50,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseEndingOdometerReadingTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseEndingOdometerReadingMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseEndingOdometerReadingCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingCodeP(this, diagnostics, context);
 	}
 
@@ -86,7 +89,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseEndingOdometerReadingValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingValue(this, diagnostics, context);
 	}
 
@@ -98,13 +102,14 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	public ResponseEndingOdometerReading init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseEndingOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResponseEndingOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResponseEndingOdometerReadingImpl
+} // ResponseEndingOdometerReadingImpl

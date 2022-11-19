@@ -59,8 +59,8 @@ public class DrugAllergyOrganizerImpl extends OrganizerImpl implements DrugAller
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDrugAllergyOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DrugAllergyOrganizerOperations.validateDrugAllergyOrganizerComponent4(this, diagnostics, context);
+	public boolean validateDrugAllergyOrganizerComponent415(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugAllergyOrganizerOperations.validateDrugAllergyOrganizerComponent415(this, diagnostics, context);
 	}
 
 	/**
@@ -80,13 +80,14 @@ public class DrugAllergyOrganizerImpl extends OrganizerImpl implements DrugAller
 	public DrugAllergyOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DrugAllergyOrganizerImpl
+} // DrugAllergyOrganizerImpl

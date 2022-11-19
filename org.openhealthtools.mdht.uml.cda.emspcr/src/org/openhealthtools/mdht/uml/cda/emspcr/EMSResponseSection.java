@@ -105,7 +105,8 @@ public interface EMSResponseSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::DispatchLocationOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,7 +118,8 @@ public interface EMSResponseSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::ResponseOdometerReadingOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,10 +175,11 @@ public interface EMSResponseSection extends Section {
 	 * @generated
 	 */
 	public EMSResponseSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSResponseSection

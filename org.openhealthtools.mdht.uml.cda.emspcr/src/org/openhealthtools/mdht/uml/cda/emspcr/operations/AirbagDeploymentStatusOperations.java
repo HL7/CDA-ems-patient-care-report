@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class AirbagDeploymentStatusOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirbagDeploymentStatusTemplateId(AirbagDeploymentStatus airbagDeploymentStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirbagDeploymentStatusTemplateId(AirbagDeploymentStatus airbagDeploymentStatus,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -156,9 +154,8 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,8 +167,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirbagDeploymentStatusMoodCode(AirbagDeploymentStatus airbagDeploymentStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirbagDeploymentStatusMoodCode(AirbagDeploymentStatus airbagDeploymentStatus,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirbagDeploymentStatusCode(AirbagDeploymentStatus airbagDeploymentStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirbagDeploymentStatusCode(AirbagDeploymentStatus airbagDeploymentStatus,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -314,9 +312,8 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,8 +325,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirbagDeploymentStatusValue(AirbagDeploymentStatus airbagDeploymentStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirbagDeploymentStatusValue(AirbagDeploymentStatus airbagDeploymentStatus,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -391,9 +389,8 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,8 +402,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAirbagDeploymentStatusValueP(AirbagDeploymentStatus airbagDeploymentStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAirbagDeploymentStatusValueP(AirbagDeploymentStatus airbagDeploymentStatus,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

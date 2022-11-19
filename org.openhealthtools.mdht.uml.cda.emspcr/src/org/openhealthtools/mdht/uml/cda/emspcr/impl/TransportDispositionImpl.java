@@ -98,13 +98,14 @@ public class TransportDispositionImpl extends ObservationImpl implements Transpo
 	public TransportDisposition init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TransportDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TransportDispositionImpl
+} // TransportDispositionImpl

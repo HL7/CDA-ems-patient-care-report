@@ -1,0 +1,30 @@
+<!-- PatientArrivedAtDestinationTime: 2.16.840.1.1133883.17.3.10.1.44 -->
+
+<pattern id="p-PatientCareReport_1A_PatientArrivedAtDestinationTime_code_4_93_3-error_mdht" see="#p-PatientCareReport_1A_PatientArrivedAtDestinationTime_code_4_93_3-error_mdht" name="p-PatientCareReport_1A_PatientArrivedAtDestinationTime_code_4_93_3-error_mdht">
+		<!--
+			UML path: /PatientArrivedAtDestinationTime
+			UML root path: /PatientCareReport/TimesSection/patientArrivedAtDestinationTime
+			UML qualified name: emspcr::PatientArrivedAtDestinationTime
+		-->
+	<rule context="/cda:ClinicalDocument/cda:TimesSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.10']/cda:patientArrivedAtDestinationTime[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.44']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: PatientArrivedAtDestinationTimeCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.93.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10859)/@code=&quot;69476-0&quot; Responding unit arrived with the patient at the destination or transfer point [Date and time] Vehicle NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10858)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '69476-0' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: PatientArrivedAtDestinationTimeCode
+		-->
+	<assert test="cda:code and cda:code[@code = '69476-0' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.93.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10859)/@code=&quot;69476-0&quot; Responding unit arrived with the patient at the destination or transfer point [Date and time] Vehicle NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10858)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

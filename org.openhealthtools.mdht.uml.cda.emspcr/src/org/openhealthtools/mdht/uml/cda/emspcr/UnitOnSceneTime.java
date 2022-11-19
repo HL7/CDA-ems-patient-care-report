@@ -89,10 +89,11 @@ public interface UnitOnSceneTime extends Observation {
 	 * @generated
 	 */
 	public UnitOnSceneTime init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitOnSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public UnitOnSceneTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // UnitOnSceneTime

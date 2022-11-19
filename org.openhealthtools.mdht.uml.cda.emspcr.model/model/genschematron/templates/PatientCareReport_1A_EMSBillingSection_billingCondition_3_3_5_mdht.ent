@@ -1,0 +1,20 @@
+<!-- EMSBillingSection: 2.16.840.1.1133883.17.3.10.1.5 -->
+
+<pattern id="p-PatientCareReport_1A_EMSBillingSection_billingCondition_3_3_5-error_mdht" see="#p-PatientCareReport_1A_EMSBillingSection_billingCondition_3_3_5-error_mdht" name="p-PatientCareReport_1A_EMSBillingSection_billingCondition_3_3_5-error_mdht">
+		<!--
+			UML path: /EMSBillingSection
+			UML root path: /PatientCareReport/eMSBillingSection
+			UML qualified name: emspcr::EMSBillingSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:eMSBillingSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.5']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->select(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::BillingCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)->size() <= 1
+			Constraint name: EMSBillingSectionBillingCondition
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.91' and @typeCode = 'COMP']) &lt;= 1">Error: PatientCareReport - 3.3.5 billingCondition
+		Conformance: If section/@nullFlavor is not present, SHOULD contain  [0..1] entry such that it  (CONF:10910)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -47,15 +47,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EyeAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,9 +82,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,8 +95,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentTemplateId(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentTemplateId(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -161,9 +159,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,8 +172,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentMoodCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentMoodCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -238,9 +236,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,8 +249,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -329,9 +327,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,8 +340,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -412,9 +410,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentEffectiveTime(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentEffectiveTime(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -481,7 +479,7 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA14698-7' or value.code = 'LA15255-5' or value.code = 'LA15256-3' or value.code = 'LA17275-1' or value.code = 'LA17276-9' or value.code = 'LA17277-7' or value.code = 'LA17278-5' or value.code = 'LA17279-3' or value.code = 'LA17280-1' or value.code = 'LA17281-9' or value.code = 'LA17282-7' or value.code = 'LA17283-5' or value.code = 'LA17284-3' or value.code = 'LA17285-0' or value.code = 'LA17710-7' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18250-3' or value.code = 'LA18251-1' or value.code = 'LA18253-7' or value.code = 'LA18254-5' or value.code = 'LA18255-2' or value.code = 'LA18256-0' or value.code = 'LA18257-8' or value.code = 'LA18258-6' or value.code = 'LA7423-2' or value.code = 'LA18252-9' or value.code = 'LA17283-5' or value.code = 'LA17214-0' or value.code = 'LA22440-4' or value.code = 'NewLA-3518061' or value.code = 'NewLA-3518063')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA14698-7' or value.code = 'LA15255-5' or value.code = 'LA15256-3' or value.code = 'LA17275-1' or value.code = 'LA17276-9' or value.code = 'LA17277-7' or value.code = 'LA17278-5' or value.code = 'LA17279-3' or value.code = 'LA17280-1' or value.code = 'LA17281-9' or value.code = 'LA17282-7' or value.code = 'LA17283-5' or value.code = 'LA17284-3' or value.code = 'LA17285-0' or value.code = 'LA17710-7' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18250-3' or value.code = 'LA18251-1' or value.code = 'LA18253-7' or value.code = 'LA18254-5' or value.code = 'LA18255-2' or value.code = 'LA18256-0' or value.code = 'LA18257-8' or value.code = 'LA18258-6' or value.code = 'LA7423-2' or value.code = 'LA18252-9' or value.code = 'LA17283-5' or value.code = 'LA17214-0' or value.code = 'LA22440-4' or value.code = 'LA19576-0' or value.code = 'LA32946-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyeAssessmentValue(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Value</em>}' invariant operation.
@@ -491,9 +489,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,8 +502,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentValue(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentValue(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -568,9 +566,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,8 +579,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentValueP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentValueP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -647,9 +645,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -661,8 +658,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentTargetSiteCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentTargetSiteCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -724,9 +722,8 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -738,8 +735,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEyeAssessmentTargetSiteCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEyeAssessmentTargetSiteCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

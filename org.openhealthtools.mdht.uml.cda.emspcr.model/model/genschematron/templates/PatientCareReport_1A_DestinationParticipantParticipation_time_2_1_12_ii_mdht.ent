@@ -1,0 +1,20 @@
+<!-- DestinationParticipantParticipation -->
+
+<pattern id="p-PatientCareReport_1A_DestinationParticipantParticipation_time_2_1_12_ii-error_mdht" see="#p-PatientCareReport_1A_DestinationParticipantParticipation_time_2_1_12_ii-error_mdht" name="p-PatientCareReport_1A_DestinationParticipantParticipation_time_2_1_12_ii-error_mdht">
+		<!--
+			UML path: /PatientCareReport/participant
+			UML root path: /PatientCareReport/participant
+			UML qualified name: emspcr::PatientCareReport::DestinationParticipantParticipation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:participant">
+		<!--
+			OCL: not self.time.oclIsUndefined()
+			Constraint name: PatientCareReportDestinationParticipantParticipationTime
+		-->
+	<assert test="cda:time">Error: PatientCareReport - 2.1.12.ii time
+		Conformance: SHALL contain exactly one [1..1] time (CONF:11328)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

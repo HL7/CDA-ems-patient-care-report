@@ -116,13 +116,14 @@ public class DestinationWardImpl extends ObservationImpl implements DestinationW
 	public DestinationWard init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DestinationWard init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DestinationWard init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DestinationWardImpl
+} // DestinationWardImpl

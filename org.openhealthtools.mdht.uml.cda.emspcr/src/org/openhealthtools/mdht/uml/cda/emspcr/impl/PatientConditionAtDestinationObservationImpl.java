@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientConditionAtDest
  *
  * @generated
  */
-public class PatientConditionAtDestinationObservationImpl extends ObservationImpl implements PatientConditionAtDestinationObservation {
+public class PatientConditionAtDestinationObservationImpl extends ObservationImpl
+		implements PatientConditionAtDestinationObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationValue(this, diagnostics, context);
 	}
 
@@ -95,7 +101,8 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientConditionAtDestinationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientConditionAtDestinationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientConditionAtDestinationObservationOperations.validatePatientConditionAtDestinationObservationValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +114,15 @@ public class PatientConditionAtDestinationObservationImpl extends ObservationImp
 	public PatientConditionAtDestinationObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientConditionAtDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientConditionAtDestinationObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientConditionAtDestinationObservationImpl
+} // PatientConditionAtDestinationObservationImpl

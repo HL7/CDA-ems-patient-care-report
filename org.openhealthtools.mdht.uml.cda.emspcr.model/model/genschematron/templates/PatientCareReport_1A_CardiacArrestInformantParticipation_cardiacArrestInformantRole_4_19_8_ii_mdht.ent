@@ -1,0 +1,20 @@
+<!-- CardiacArrestInformantParticipation -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestInformantParticipation_cardiacArrestInformantRole_4_19_8_ii-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestInformantParticipation_cardiacArrestInformantRole_4_19_8_ii-error_mdht" name="p-PatientCareReport_1A_CardiacArrestInformantParticipation_cardiacArrestInformantRole_4_19_8_ii-error_mdht">
+		<!--
+			UML path: /CardiacArrest/cardiacArrestInformantParticipation
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestInformantParticipation
+			UML qualified name: emspcr::CardiacArrest::CardiacArrestInformantParticipation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:informant[cda:relatedEntity/@classCode = 'AGNT']">
+		<!--
+			OCL: self.relatedEntity->one(relatedEntity : cda::RelatedEntity | not relatedEntity.oclIsUndefined() and relatedEntity.oclIsKindOf(emspcr::CardiacArrest::CardiacArrestInformantParticipation::CardiacArrestInformantRole))
+			Constraint name: CardiacArrestCardiacArrestInformantParticipationCardiacArrestInformantRole
+		-->
+	<assert test="count(cda:relatedEntity)=1">Error: PatientCareReport - 4.19.8.ii cardiacArrestInformantRole
+		Conformance: SHALL contain exactly one [1..1] relatedEntity (CONF:11071)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

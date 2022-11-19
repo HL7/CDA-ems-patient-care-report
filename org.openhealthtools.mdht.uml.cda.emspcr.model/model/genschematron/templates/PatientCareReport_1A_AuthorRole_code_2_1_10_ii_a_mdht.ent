@@ -1,0 +1,30 @@
+<!-- AuthorRole -->
+
+<pattern id="p-PatientCareReport_1A_AuthorRole_code_2_1_10_ii_a-error_mdht" see="#p-PatientCareReport_1A_AuthorRole_code_2_1_10_ii_a-error_mdht" name="p-PatientCareReport_1A_AuthorRole_code_2_1_10_ii_a-error_mdht">
+		<!--
+			UML path: /PatientCareReport/AuthorParticipation/AuthorRole
+			UML root path: /PatientCareReport/AuthorParticipation/AuthorRole
+			UML qualified name: emspcr::PatientCareReport::AuthorParticipation::AuthorRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:author/cda:assignedAuthor">
+		<!--
+			OCL: ((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+			Constraint name: GeneralHeaderConstraintsAuthorAssignedAuthorCodeP
+		-->
+	<assert test="not(cda:code and not(cda:code/@nullFlavor)) or cda:code">Error: PatientCareReport - 2.1.10.ii.a code
+		Conformance: SHOULD contain zero or one [0..1] code (CONF:16787), which SHOULD be selected from ValueSet Healthcare Provider Taxonomy (HIPAA) 2.16.840.1.114222.4.11.1066 DYNAMIC (CONF:16788)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+not value.code.oclIsUndefined())
+			Constraint name: GeneralHeaderConstraintsAuthorAssignedAuthorCode
+		-->
+	<assert test="not(cda:code and not(cda:code/@nullFlavor)) or cda:code and cda:code[@code]">Error: PatientCareReport - 2.1.10.ii.a code
+		Conformance: SHOULD contain zero or one [0..1] code (CONF:16787), which SHOULD be selected from ValueSet Healthcare Provider Taxonomy (HIPAA) 2.16.840.1.114222.4.11.1066 DYNAMIC (CONF:16788)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

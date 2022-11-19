@@ -50,7 +50,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityClassCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityCodeP(this, diagnostics, context);
 	}
 
@@ -86,7 +89,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityMoodCode(this, diagnostics, context);
 	}
 
@@ -95,7 +99,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityValue(this, diagnostics, context);
 	}
 
@@ -104,7 +109,8 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDestinationHospitalCapabilityValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDestinationHospitalCapabilityValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DestinationHospitalCapabilityOperations.validateDestinationHospitalCapabilityValueP(this, diagnostics, context);
 	}
 
@@ -116,13 +122,14 @@ public class DestinationHospitalCapabilityImpl extends ObservationImpl implement
 	public DestinationHospitalCapability init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DestinationHospitalCapability init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DestinationHospitalCapability init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DestinationHospitalCapabilityImpl
+} // DestinationHospitalCapabilityImpl

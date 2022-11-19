@@ -1,0 +1,30 @@
+<!-- HealthCareFacility -->
+
+<pattern id="p-PatientCareReport_2_HealthCareFacility_code_2_1_15_ii_c_1_ii-error_mdht" see="#p-PatientCareReport_2_HealthCareFacility_code_2_1_15_ii_c_1_ii-error_mdht" name="p-PatientCareReport_2_HealthCareFacility_code_2_1_15_ii_c_1_ii-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter/location/healthCareFacility
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter/location/healthCareFacility
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::Location::HealthCareFacility
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA23840-4' or value.code = 'LA23841-2' or value.code = 'LA32989-8' or value.code = 'LA32988-0' or value.code = 'LA32987-2' or value.code = 'LA32986-4' or value.code = 'LA32991-4' or value.code = 'LA32985-6' or value.code = 'LA32990-6')
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA23840-4' or @code = 'LA23841-2' or @code = 'LA32989-8' or @code = 'LA32988-0' or @code = 'LA32987-2' or @code = 'LA32986-4' or @code = 'LA32991-4' or @code = 'LA32985-6' or @code = 'LA32990-6')]">Error: PatientCareReport - 2.1.15.ii.c.1.ii code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11381), which SHALL be selected from ValueSet UnitEquipmentCapability 2.16.840.1.113883.17.3.11.82 DYNAMIC (CONF:10047)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 2.1.15.ii.c.1.ii code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11381), which SHALL be selected from ValueSet UnitEquipmentCapability 2.16.840.1.113883.17.3.11.82 DYNAMIC (CONF:10047)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

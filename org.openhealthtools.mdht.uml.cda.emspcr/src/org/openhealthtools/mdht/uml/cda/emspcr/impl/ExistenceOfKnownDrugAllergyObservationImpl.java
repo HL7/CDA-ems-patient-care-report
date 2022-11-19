@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.ExistenceOfKnownDrugAl
  *
  * @generated
  */
-public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl implements ExistenceOfKnownDrugAllergyObservation {
+public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl
+		implements ExistenceOfKnownDrugAllergyObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownDrugAllergyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownDrugAllergyObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownDrugAllergyObservationOperations.validateExistenceOfKnownDrugAllergyObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownDrugAllergyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownDrugAllergyObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownDrugAllergyObservationOperations.validateExistenceOfKnownDrugAllergyObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownDrugAllergyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownDrugAllergyObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownDrugAllergyObservationOperations.validateExistenceOfKnownDrugAllergyObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownDrugAllergyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownDrugAllergyObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownDrugAllergyObservationOperations.validateExistenceOfKnownDrugAllergyObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownDrugAllergyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownDrugAllergyObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownDrugAllergyObservationOperations.validateExistenceOfKnownDrugAllergyObservationValue(this, diagnostics, context);
 	}
 
@@ -98,13 +104,15 @@ public class ExistenceOfKnownDrugAllergyObservationImpl extends ObservationImpl 
 	public ExistenceOfKnownDrugAllergyObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfKnownDrugAllergyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ExistenceOfKnownDrugAllergyObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ExistenceOfKnownDrugAllergyObservationImpl
+} // ExistenceOfKnownDrugAllergyObservationImpl

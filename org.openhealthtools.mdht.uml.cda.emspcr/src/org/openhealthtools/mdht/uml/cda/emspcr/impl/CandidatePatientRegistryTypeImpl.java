@@ -50,7 +50,8 @@ public class CandidatePatientRegistryTypeImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCandidatePatientRegistryTypeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCandidatePatientRegistryTypeTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CandidatePatientRegistryTypeOperations.validateCandidatePatientRegistryTypeTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class CandidatePatientRegistryTypeImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCandidatePatientRegistryTypeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCandidatePatientRegistryTypeMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CandidatePatientRegistryTypeOperations.validateCandidatePatientRegistryTypeMoodCode(this, diagnostics, context);
 	}
 
@@ -95,7 +97,8 @@ public class CandidatePatientRegistryTypeImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCandidatePatientRegistryTypeValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCandidatePatientRegistryTypeValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CandidatePatientRegistryTypeOperations.validateCandidatePatientRegistryTypeValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +110,14 @@ public class CandidatePatientRegistryTypeImpl extends ObservationImpl implements
 	public CandidatePatientRegistryType init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CandidatePatientRegistryType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CandidatePatientRegistryType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CandidatePatientRegistryTypeImpl
+} // CandidatePatientRegistryTypeImpl

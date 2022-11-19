@@ -1,0 +1,30 @@
+<!-- PerformerRole -->
+
+<pattern id="p-PatientCareReport_1A_PerformerRole_code_2_1_13_i_c_2_i-error_mdht" see="#p-PatientCareReport_1A_PerformerRole_code_2_1_13_i_c_2_i-error_mdht" name="p-PatientCareReport_1A_PerformerRole_code_2_1_13_i_c_2_i-error_mdht">
+		<!--
+			UML path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation/PerformerRole
+			UML root path: /PatientCareReport/documentationOf/ServiceEvent/PerformerParticipation/PerformerRole
+			UML qualified name: emspcr::PatientCareReport::ServiceEventParticipation::ServiceEvent::PerformerParticipation::PerformerRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer/cda:assignedEntity">
+		<!--
+			OCL: ((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleCodeP
+		-->
+	<assert test="not(cda:code and not(cda:code/@nullFlavor)) or cda:code">Error: PatientCareReport - 2.1.13.i.c.2.i code
+		Conformance: SHALL contain zero or one [0..1] code (CONF:10893), which SHALL be selected from ValueSet CrewRoleLevel 2.16.840.1.113883.17.3.11.81 DYNAMIC (CONF:10053)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15276-1' or value.code = 'LA18695-9' or value.code = 'LA18696-7' or value.code = 'LA18697-5' or value.code = 'LA18698-3' or value.code = 'LA18699-1' or value.code = 'LA18704-9' or value.code = 'LA18705-6' or value.code = 'LA18706-4' or value.code = 'LA4687-5' or value.code = 'LA9297-8' or value.code = 'LA9292-9' or value.code = 'LA9296-0' or value.code = 'LA24387-5' or value.code = 'LA9291-1' or value.code = 'LA32922-9'))
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleCode
+		-->
+	<assert test="not(cda:code and not(cda:code/@nullFlavor)) or cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA15276-1' or @code = 'LA18695-9' or @code = 'LA18696-7' or @code = 'LA18697-5' or @code = 'LA18698-3' or @code = 'LA18699-1' or @code = 'LA18704-9' or @code = 'LA18705-6' or @code = 'LA18706-4' or @code = 'LA4687-5' or @code = 'LA9297-8' or @code = 'LA9292-9' or @code = 'LA9296-0' or @code = 'LA24387-5' or @code = 'LA9291-1' or @code = 'LA32922-9')]">Error: PatientCareReport - 2.1.13.i.c.2.i code
+		Conformance: SHALL contain zero or one [0..1] code (CONF:10893), which SHALL be selected from ValueSet CrewRoleLevel 2.16.840.1.113883.17.3.11.81 DYNAMIC (CONF:10053)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

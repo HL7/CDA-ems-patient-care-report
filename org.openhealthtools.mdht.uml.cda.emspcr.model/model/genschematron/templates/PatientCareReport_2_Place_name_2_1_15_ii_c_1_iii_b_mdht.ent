@@ -1,0 +1,20 @@
+<!-- Place -->
+
+<pattern id="p-PatientCareReport_2_Place_name_2_1_15_ii_c_1_iii_b-error_mdht" see="#p-PatientCareReport_2_Place_name_2_1_15_ii_c_1_iii_b-error_mdht" name="p-PatientCareReport_2_Place_name_2_1_15_ii_c_1_iii_b-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter/location/healthCareFacility/place
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter/location/healthCareFacility/place
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::Location::HealthCareFacility::Place
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:location">
+		<!--
+			OCL: ((not self.name.oclIsUndefined()) and self.name.isNullFlavorUndefined()) implies (not self.name.oclIsUndefined())
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlaceName
+		-->
+	<assert test="not(cda:name and not(cda:name/@nullFlavor)) or cda:name">Error: PatientCareReport - 2.1.15.ii.c.1.iii.b name
+		Conformance: MAY contain zero or one [0..1] name (CONF:10048)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

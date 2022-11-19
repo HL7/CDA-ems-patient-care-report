@@ -125,10 +125,11 @@ public interface SystolicBloodPressure extends Observation {
 	 * @generated
 	 */
 	public SystolicBloodPressure init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SystolicBloodPressure

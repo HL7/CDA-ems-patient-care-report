@@ -55,15 +55,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSProtocolSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,9 +90,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,8 +103,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionTemplateId(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionTemplateId(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -171,9 +169,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,8 +182,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionCode(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionCode(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -248,9 +246,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,8 +259,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionCodeP(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionCodeP(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +323,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +336,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionTitle(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionTitle(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -402,9 +400,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -416,8 +413,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionText(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionText(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -479,9 +477,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -493,8 +490,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionProtocolObservation(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionProtocolObservation(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -556,9 +554,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -570,8 +567,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSProtocolSectionCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -640,8 +638,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<ProtocolObservation> getProtocolObservations(EMSProtocolSection emsProtocolSection) {
+
+	public static EList<ProtocolObservation> getProtocolObservations(EMSProtocolSection emsProtocolSection) {
 	
 	
 	
@@ -689,8 +687,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CandidatePatientRegistryType getCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection) {
+
+	public static CandidatePatientRegistryType getCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection) {
 	
 	
 	

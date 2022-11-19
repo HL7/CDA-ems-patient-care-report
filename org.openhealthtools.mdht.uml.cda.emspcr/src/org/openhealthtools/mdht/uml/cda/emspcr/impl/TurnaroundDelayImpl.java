@@ -107,13 +107,14 @@ public class TurnaroundDelayImpl extends ObservationImpl implements TurnaroundDe
 	public TurnaroundDelay init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TurnaroundDelayImpl
+} // TurnaroundDelayImpl

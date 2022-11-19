@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime unitBackInServiceTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime unitBackInServiceTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime unitBackInServiceTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +323,8 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +336,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitBackInServiceTimeCode(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitBackInServiceTimeCode(UnitBackInServiceTime unitBackInServiceTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -408,9 +406,8 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +419,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitBackInServiceTimeValue(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitBackInServiceTimeValue(UnitBackInServiceTime unitBackInServiceTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

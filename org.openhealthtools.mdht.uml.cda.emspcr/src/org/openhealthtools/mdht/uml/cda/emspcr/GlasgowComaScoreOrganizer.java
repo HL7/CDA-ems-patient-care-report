@@ -19,13 +19,12 @@ import org.eclipse.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getGlasgowComaScoreOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GlasgowComaScoreOrganizerTemplateId GlasgowComaScoreOrganizerComponent4' templateId.root='2.16.840.1.1133883.17.3.10.1.170' templateId.extension='2022-01-01' constraints.validation.info='GlasgowComaScoreOrganizerEffectiveTime GlasgowComaScoreOrganizerComponent4' constraints.validation.warning='GlasgowComaScoreOrganizerComponent4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GlasgowComaScoreOrganizerTemplateId GlasgowComaScoreOrganizerComponent414 GlasgowComaScoreOrganizerComponent42 GlasgowComaScoreOrganizerComponent45' templateId.root='2.16.840.1.1133883.17.3.10.1.170' templateId.extension='2022-01-01' constraints.validation.info='GlasgowComaScoreOrganizerEffectiveTime GlasgowComaScoreOrganizerComponent43' constraints.validation.warning='GlasgowComaScoreOrganizerComponent44'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrGlasgowComaScoreOrganizerGlasgowEye constraints.validation.error='GlasgowComaScoreOrganizerGlasgowEyeObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrGlasgowComaScoreOrganizerGlasgowMotor constraints.validation.error='GlasgowComaScoreOrganizerGlasgowMotorObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrGlasgowComaScoreOrganizerGlasgowQualifier constraints.validation.error='GlasgowComaScoreOrganizerGlasgowQualifierObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrGlasgowComaScoreOrganizerGlasgowTotal constraints.validation.error='GlasgowComaScoreOrganizerGlasgowTotalObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrGlasgowComaScoreOrganizerGlasgowVerbal constraints.validation.error='GlasgowComaScoreOrganizerGlasgowVerbalObservation'"
- *        annotation="duplicates"
  * @generated
  */
 public interface GlasgowComaScoreOrganizer extends Organizer {
@@ -63,7 +62,55 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateGlasgowComaScoreOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGlasgowComaScoreOrganizerComponent414(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
+	 * @generated
+	 */
+	boolean validateGlasgowComaScoreOrganizerComponent42(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
+	 * @generated
+	 */
+	boolean validateGlasgowComaScoreOrganizerComponent43(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
+	 * @generated
+	 */
+	boolean validateGlasgowComaScoreOrganizerComponent44(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
+	 * @generated
+	 */
+	boolean validateGlasgowComaScoreOrganizerComponent45(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,10 +118,11 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * @generated
 	 */
 	public GlasgowComaScoreOrganizer init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowComaScoreOrganizer

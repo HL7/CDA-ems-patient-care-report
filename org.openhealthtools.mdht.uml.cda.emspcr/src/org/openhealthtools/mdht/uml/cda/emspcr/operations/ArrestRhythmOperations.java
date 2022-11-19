@@ -41,15 +41,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ArrestRhythmOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +76,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +89,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmTemplateId(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateArrestRhythmTemplateId(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -155,9 +153,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,8 +166,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmMoodCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateArrestRhythmMoodCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateArrestRhythmCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -313,9 +311,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,8 +324,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmValue(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateArrestRhythmValue(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

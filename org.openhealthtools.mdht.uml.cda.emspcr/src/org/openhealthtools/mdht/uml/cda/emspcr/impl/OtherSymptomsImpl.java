@@ -107,13 +107,14 @@ public class OtherSymptomsImpl extends ObservationImpl implements OtherSymptoms 
 	public OtherSymptoms init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public OtherSymptoms init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public OtherSymptoms init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //OtherSymptomsImpl
+} // OtherSymptomsImpl

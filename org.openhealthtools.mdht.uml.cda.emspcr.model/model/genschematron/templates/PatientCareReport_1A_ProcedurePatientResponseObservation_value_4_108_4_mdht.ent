@@ -1,0 +1,30 @@
+<!-- ProcedurePatientResponseObservation: 2.16.840.1.1133883.17.3.10.1.135 -->
+
+<pattern id="p-PatientCareReport_1A_ProcedurePatientResponseObservation_value_4_108_4-error_mdht" see="#p-PatientCareReport_1A_ProcedurePatientResponseObservation_value_4_108_4-error_mdht" name="p-PatientCareReport_1A_ProcedurePatientResponseObservation_value_4_108_4-error_mdht">
+		<!--
+			UML path: /ProcedurePatientResponseObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ProcedurePatientResponseRelationship/ProcedurePatientResponseObservation
+			UML qualified name: emspcr::ProcedurePatientResponseObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.135']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA65-8' or value.code = 'LA17181-1' or value.code = 'LA11011-6'))
+			Constraint name: ProcedurePatientResponseObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA65-8' or @code = 'LA17181-1' or @code = 'LA11011-6'))])">Error: PatientCareReport - 4.108.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10534), which SHALL be selected from ValueSet ChangeInPatientStatus 2.16.840.1.113883.17.3.11.78 DYNAMIC (CONF:10535)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ProcedurePatientResponseObservationValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.108.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10534), which SHALL be selected from ValueSet ChangeInPatientStatus 2.16.840.1.113883.17.3.11.78 DYNAMIC (CONF:10535)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

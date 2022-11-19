@@ -1,0 +1,20 @@
+<!-- DestinationRhythmRelationship -->
+
+<pattern id="p-PatientCareReport_1A_DestinationRhythmRelationship_destinationRhythm_4_19_10_iii-error_mdht" see="#p-PatientCareReport_1A_DestinationRhythmRelationship_destinationRhythm_4_19_10_iii-error_mdht" name="p-PatientCareReport_1A_DestinationRhythmRelationship_destinationRhythm_4_19_10_iii-error_mdht">
+		<!--
+			UML path: /CardiacArrest/destinationRhythmRelationship
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/destinationRhythmRelationship
+			UML qualified name: emspcr::CardiacArrest::DestinationRhythmRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.129']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::DestinationRhythm))
+			Constraint name: CardiacArrestDestinationRhythmRelationshipDestinationRhythm
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.129'])=1">Error: PatientCareReport - 4.19.10.iii destinationRhythm
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10188)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

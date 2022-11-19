@@ -89,13 +89,14 @@ public class CrewDispositionImpl extends ObservationImpl implements CrewDisposit
 	public CrewDisposition init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CrewDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CrewDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CrewDispositionImpl
+} // CrewDispositionImpl

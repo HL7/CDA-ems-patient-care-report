@@ -101,10 +101,11 @@ public interface HeartRate extends Observation {
 	 * @generated
 	 */
 	public HeartRate init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HeartRate

@@ -1,0 +1,30 @@
+<!-- TransportModeObservation: 2.16.840.1.1133883.17.3.10.1.33 -->
+
+<pattern id="p-PatientCareReport_1A_TransportModeObservation_code_4_136_3-error_mdht" see="#p-PatientCareReport_1A_TransportModeObservation_code_4_136_3-error_mdht" name="p-PatientCareReport_1A_TransportModeObservation_code_4_136_3-error_mdht">
+		<!--
+			UML path: /TransportModeObservation
+			UML root path: /PatientCareReport/DispositionSection/transportModeObservation
+			UML qualified name: emspcr::TransportModeObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:transportModeObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.33']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: TransportModeObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.136.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10674)/@code=&quot;67550-4&quot; Transport mode from scene NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10673)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67550-4' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: TransportModeObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67550-4' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.136.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10674)/@code=&quot;67550-4&quot; Transport mode from scene NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10673)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,22 @@
+<!-- CardiacArrestInformantRole -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestInformantRole_code_4_19_8_ii_b-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestInformantRole_code_4_19_8_ii_b-error_mdht" name="p-PatientCareReport_1A_CardiacArrestInformantRole_code_4_19_8_ii_b-error_mdht">
+		<!--
+			UML path: /CardiacArrest/cardiacArrestInformantParticipation/cardiacArrestInformantRole
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestInformantParticipation/cardiacArrestInformantRole
+			UML qualified name: emspcr::CardiacArrest::CardiacArrestInformantParticipation::CardiacArrestInformantRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:informant/cda:relatedEntity[@classCode = 'AGNT']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18020-0' or value.code = 'LA18021-8' or value.code = 'LA18022-6' or value.code = 'LA18023-4')
+			Constraint name: CardiacArrestCardiacArrestInformantParticipationCardiacArrestInformantRoleCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18020-0' or @code = 'LA18021-8' or @code = 'LA18022-6' or @code = 'LA18023-4')]">Error: PatientCareReport - 4.19.8.ii.b code
+		Conformance: SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet CardiacArrestWitnessRole 2.16.840.1.113883.17.3.11.11 DYNAMIC (CONF:10160)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

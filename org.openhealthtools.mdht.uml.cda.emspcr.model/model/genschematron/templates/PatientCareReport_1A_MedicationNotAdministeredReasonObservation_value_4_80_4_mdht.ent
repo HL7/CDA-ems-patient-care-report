@@ -1,0 +1,30 @@
+<!-- MedicationNotAdministeredReasonObservation: 2.16.840.1.1133883.17.3.10.1.105 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_value_4_80_4-error_mdht" see="#p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_value_4_80_4-error_mdht" name="p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_value_4_80_4-error_mdht">
+		<!--
+			UML path: /MedicationNotAdministeredReasonObservation
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationNotAdministeredEntryRelationship/medicationNotAdministeredReasonObservation
+			UML qualified name: emspcr::MedicationNotAdministeredReasonObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.105']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18921-9' or value.code = 'LA18922-7' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8'))
+			Constraint name: MedicationNotAdministeredReasonObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA15185-4' or @code = 'LA18921-9' or @code = 'LA18922-7' or @code = 'LA18925-0' or @code = 'LA4216-3' or @code = 'LA4389-8'))])">Error: PatientCareReport - 4.80.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10463), which SHALL be selected from ValueSet MedicationNotGivenReason 2.16.840.1.113883.17.3.11.92 DYNAMIC (CONF:10464)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: MedicationNotAdministeredReasonObservationValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.80.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10463), which SHALL be selected from ValueSet MedicationNotGivenReason 2.16.840.1.113883.17.3.11.92 DYNAMIC (CONF:10464)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

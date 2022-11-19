@@ -98,13 +98,14 @@ public class DrugAllergyImpl extends ObservationImpl implements DrugAllergy {
 	public DrugAllergy init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DrugAllergyImpl
+} // DrugAllergyImpl

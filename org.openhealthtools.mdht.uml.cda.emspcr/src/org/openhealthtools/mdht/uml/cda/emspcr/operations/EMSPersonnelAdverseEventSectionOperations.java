@@ -52,15 +52,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,9 +87,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,8 +100,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionTemplateId(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionTemplateId(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -168,9 +167,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,8 +180,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionCode(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionCode(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -245,9 +245,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,8 +258,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionCodeP(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionCodeP(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -322,9 +323,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,8 +336,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionTitle(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionTitle(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -399,9 +401,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,8 +414,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionText(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionText(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -476,9 +479,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -490,8 +492,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -553,9 +557,8 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -567,8 +570,10 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -637,8 +642,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  AdverseEventIndicator getAdverseEventIndicator(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
+
+	public static AdverseEventIndicator getAdverseEventIndicator(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
 	
 	
 	
@@ -684,8 +690,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  AdverseEventTypeObservation getAdverseEventTypeObservation(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
+
+	public static AdverseEventTypeObservation getAdverseEventTypeObservation(
+			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
 	
 	
 	

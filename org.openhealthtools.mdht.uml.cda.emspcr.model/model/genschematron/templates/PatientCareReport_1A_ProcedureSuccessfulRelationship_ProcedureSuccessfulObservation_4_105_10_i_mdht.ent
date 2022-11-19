@@ -1,0 +1,20 @@
+<!-- ProcedureSuccessfulRelationship -->
+
+<pattern id="p-PatientCareReport_1A_ProcedureSuccessfulRelationship_ProcedureSuccessfulObservation_4_105_10_i-error_mdht" see="#p-PatientCareReport_1A_ProcedureSuccessfulRelationship_ProcedureSuccessfulObservation_4_105_10_i-error_mdht" name="p-PatientCareReport_1A_ProcedureSuccessfulRelationship_ProcedureSuccessfulObservation_4_105_10_i-error_mdht">
+		<!--
+			UML path: /Procedure/ProcedureSuccessfulRelationship
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ProcedureSuccessfulRelationship
+			UML qualified name: emspcr::Procedure::ProcedureSuccessfulRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.133']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ProcedureSuccessfulObservation))
+			Constraint name: ProcedureProcedureSuccessfulRelationshipProcedureSuccessfulObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.133'])=1">Error: PatientCareReport - 4.105.10.i ProcedureSuccessfulObservation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10523)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

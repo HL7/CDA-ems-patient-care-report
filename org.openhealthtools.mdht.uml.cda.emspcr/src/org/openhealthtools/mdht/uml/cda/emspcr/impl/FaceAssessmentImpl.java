@@ -116,13 +116,14 @@ public class FaceAssessmentImpl extends ObservationImpl implements FaceAssessmen
 	public FaceAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //FaceAssessmentImpl
+} // FaceAssessmentImpl

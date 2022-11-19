@@ -113,10 +113,11 @@ public interface DestinationWard extends Observation {
 	 * @generated
 	 */
 	public DestinationWard init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DestinationWard init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DestinationWard init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DestinationWard

@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CarbonMonoxideOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -409,9 +407,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -423,8 +420,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -486,9 +484,8 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -500,8 +497,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

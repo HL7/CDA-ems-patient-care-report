@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DispatchReasonOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonTemplateId(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonTemplateId(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonMoodCode(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonMoodCode(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonCodeP(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonCodeP(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonCode(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonCode(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -401,7 +399,7 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_DISPATCH_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA23843-8' or value.code = 'LA15903-0' or value.code = 'LA17117-5' or value.code = 'LA17118-3' or value.code = 'LA17119-1' or value.code = 'LA17120-9' or value.code = 'LA17121-7' or value.code = 'LA17122-5' or value.code = 'LA17123-3' or value.code = 'LA17124-1' or value.code = 'LA17125-8' or value.code = 'LA17126-6' or value.code = 'LA17127-4' or value.code = 'LA17128-2' or value.code = 'LA17129-0' or value.code = 'LA17131-6' or value.code = 'LA17132-4' or value.code = 'LA17133-2' or value.code = 'LA17134-0' or value.code = 'LA17135-7' or value.code = 'LA17136-5' or value.code = 'LA17137-3' or value.code = 'LA17138-1' or value.code = 'LA17140-7' or value.code = 'LA17141-5' or value.code = 'LA17142-3' or value.code = 'LA17143-1' or value.code = 'LA17144-9' or value.code = 'LA17145-6' or value.code = 'LA17146-4' or value.code = 'LA17147-2' or value.code = 'LA17148-0' or value.code = 'LA17149-8' or value.code = 'LA17150-6' or value.code = 'LA18093-7' or value.code = 'LA18209-9' or value.code = 'LA18210-7' or value.code = 'LA18211-5' or value.code = 'LA9553-4' or value.code = 'LA9555-9' or value.code = 'LA17130-8' or value.code = 'LA23800-8' or value.code = 'NewLA-NewLA-2301085' or value.code = 'NewLA-2301087' or value.code = 'NewLA-2301089' or value.code = 'NewLA-2301091')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA23843-8' or value.code = 'LA15903-0' or value.code = 'LA17117-5' or value.code = 'LA17118-3' or value.code = 'LA17119-1' or value.code = 'LA17120-9' or value.code = 'LA17121-7' or value.code = 'LA17122-5' or value.code = 'LA17123-3' or value.code = 'LA17124-1' or value.code = 'LA17125-8' or value.code = 'LA17126-6' or value.code = 'LA17127-4' or value.code = 'LA17128-2' or value.code = 'LA17129-0' or value.code = 'LA17131-6' or value.code = 'LA17132-4' or value.code = 'LA17133-2' or value.code = 'LA17134-0' or value.code = 'LA17135-7' or value.code = 'LA17136-5' or value.code = 'LA17137-3' or value.code = 'LA17138-1' or value.code = 'LA17140-7' or value.code = 'LA17141-5' or value.code = 'LA17142-3' or value.code = 'LA17143-1' or value.code = 'LA17144-9' or value.code = 'LA17145-6' or value.code = 'LA17146-4' or value.code = 'LA17147-2' or value.code = 'LA17148-0' or value.code = 'LA17149-8' or value.code = 'LA17150-6' or value.code = 'LA18093-7' or value.code = 'LA18209-9' or value.code = 'LA18210-7' or value.code = 'LA18211-5' or value.code = 'LA9553-4' or value.code = 'LA9555-9' or value.code = 'LA17130-8' or value.code = 'LA23800-8' or value.code = 'LA17392-4' or value.code = 'LA18716-3' or value.code = 'LA15098-9' or value.code = 'LA15099-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchReasonValue(DispatchReason, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Reason Value</em>}' invariant operation.
@@ -411,9 +409,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonValue(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonValue(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class DispatchReasonOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchReasonValueP(DispatchReason dispatchReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchReasonValueP(DispatchReason dispatchReason, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

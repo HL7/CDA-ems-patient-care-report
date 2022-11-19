@@ -1,0 +1,20 @@
+<!-- PainScore: 2.16.840.1.1133883.17.3.10.1.164 -->
+
+<pattern id="p-PatientCareReport_2_PainScore_effectiveTime_4_91_4-error_mdht" see="#p-PatientCareReport_2_PainScore_effectiveTime_4_91_4-error_mdht" name="p-PatientCareReport_2_PainScore_effectiveTime_4_91_4-error_mdht">
+		<!--
+			UML path: /PainScore
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component42/observation
+			UML qualified name: emspcr::PainScore
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.164']">
+		<!--
+			OCL: ((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+			Constraint name: PainScoreEffectiveTime
+		-->
+	<assert test="not(cda:effectiveTime and not(cda:effectiveTime/@nullFlavor)) or cda:effectiveTime">Error: PatientCareReport - 4.91.4 effectiveTime
+		Conformance: MAY contain zero or one [0..1] effectiveTime (CONF:11300)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

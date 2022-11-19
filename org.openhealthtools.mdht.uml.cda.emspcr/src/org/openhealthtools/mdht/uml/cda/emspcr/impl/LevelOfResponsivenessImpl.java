@@ -86,7 +86,8 @@ public class LevelOfResponsivenessImpl extends ObservationImpl implements LevelO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLevelOfResponsivenessEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLevelOfResponsivenessEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessEffectiveTime(this, diagnostics, context);
 	}
 
@@ -116,13 +117,14 @@ public class LevelOfResponsivenessImpl extends ObservationImpl implements LevelO
 	public LevelOfResponsiveness init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //LevelOfResponsivenessImpl
+} // LevelOfResponsivenessImpl

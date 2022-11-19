@@ -116,13 +116,14 @@ public class NeckAssessmentImpl extends ObservationImpl implements NeckAssessmen
 	public NeckAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public NeckAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public NeckAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //NeckAssessmentImpl
+} // NeckAssessmentImpl

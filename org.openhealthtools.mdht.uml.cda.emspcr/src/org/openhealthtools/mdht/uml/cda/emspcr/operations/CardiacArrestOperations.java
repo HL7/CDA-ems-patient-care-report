@@ -50,15 +50,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CardiacArrestOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,9 +85,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,8 +98,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCardiacArrestCauseRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestCardiacArrestCauseRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -164,9 +162,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,8 +175,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCardiacArrestInformantParticipation(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestCardiacArrestInformantParticipation(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -241,9 +239,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,8 +252,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestSpontaneousCirculationRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestSpontaneousCirculationRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -318,9 +316,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -332,8 +329,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestDestinationRhythmRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestDestinationRhythmRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -395,9 +393,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -409,8 +406,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestArrestRhythmRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestArrestRhythmRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -472,9 +470,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -486,8 +483,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestTemplateId(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestTemplateId(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -549,9 +547,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -563,8 +560,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestMoodCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestMoodCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -628,9 +626,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -642,8 +639,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -705,9 +703,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -719,8 +716,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestNegationInd(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestNegationInd(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -782,9 +780,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -796,8 +793,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestEffectiveTime(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestEffectiveTime(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -861,9 +859,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -875,8 +872,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestValue(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestValue(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -938,9 +936,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_TIMING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_TIMING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -952,8 +949,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCardiacArrestTimingRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestCardiacArrestTimingRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -1015,9 +1013,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_OUTCOME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_CARDIAC_ARREST_OUTCOME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1029,8 +1026,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCardiacArrestOutcomeRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestCardiacArrestOutcomeRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

@@ -98,13 +98,14 @@ public class BodyTemperatureImpl extends ObservationImpl implements BodyTemperat
 	public BodyTemperature init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //BodyTemperatureImpl
+} // BodyTemperatureImpl

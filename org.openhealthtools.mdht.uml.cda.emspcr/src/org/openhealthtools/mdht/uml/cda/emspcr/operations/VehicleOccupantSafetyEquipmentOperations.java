@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentTemplateId(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentTemplateId(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +157,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +170,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentMoodCode(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentMoodCode(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +235,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +248,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentCodeP(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentCodeP(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +327,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +340,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentCode(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentCode(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -401,7 +403,7 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 */
 	protected static final String VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17375-9' or value.code = 'LA17376-7' or value.code = 'LA17377-5' or value.code = 'LA17378-3' or value.code = 'LA17379-1' or value.code = 'LA17380-9' or value.code = 'LA17382-5' or value.code = 'LA46-8' or value.code = 'LA9381-0' or value.code = 'LA9391-9' or value.code = 'LA9392-7' or value.code = 'LA9393-5' or value.code = 'NewLA-2907033')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17375-9' or value.code = 'LA17376-7' or value.code = 'LA17377-5' or value.code = 'LA17378-3' or value.code = 'LA17379-1' or value.code = 'LA17380-9' or value.code = 'LA17382-5' or value.code = 'LA46-8' or value.code = 'LA9381-0' or value.code = 'LA9391-9' or value.code = 'LA9392-7' or value.code = 'LA9393-5' or value.code = 'LA11137-9')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVehicleOccupantSafetyEquipmentValue(VehicleOccupantSafetyEquipment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vehicle Occupant Safety Equipment Value</em>}' invariant operation.
@@ -411,9 +413,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +426,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentValue(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentValue(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +491,8 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +504,10 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleOccupantSafetyEquipmentValueP(VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleOccupantSafetyEquipmentValueP(
+			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

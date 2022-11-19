@@ -1,0 +1,20 @@
+<!-- NonDrugAllergyOrganizer: 2.16.840.1.1133883.17.3.10.1.49 -->
+
+<pattern id="p-PatientCareReport_1A_NonDrugAllergyOrganizer_ExistenceOfNonDrugAllergy_4_87_2-error_mdht" see="#p-PatientCareReport_1A_NonDrugAllergyOrganizer_ExistenceOfNonDrugAllergy_4_87_2-error_mdht" name="p-PatientCareReport_1A_NonDrugAllergyOrganizer_ExistenceOfNonDrugAllergy_4_87_2-error_mdht">
+		<!--
+			UML path: /NonDrugAllergyOrganizer
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/environmentalAllergies
+			UML qualified name: emspcr::NonDrugAllergyOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:environmentalAllergies[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.49']">
+		<!--
+			OCL: self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::ExistenceOfKnownNonDrugAllergy))
+			Constraint name: NonDrugAllergyOrganizerExistenceOfNonDrugAllergy
+		-->
+	<assert test="count(cda:component[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.103'])=1">Error: PatientCareReport - 4.87.2 ExistenceOfNonDrugAllergy
+		Conformance: SHALL contain  [1..1] component such that it  (CONF:10212)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

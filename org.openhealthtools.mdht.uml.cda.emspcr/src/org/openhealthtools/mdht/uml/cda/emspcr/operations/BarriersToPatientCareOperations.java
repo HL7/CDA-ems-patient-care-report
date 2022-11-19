@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class BarriersToPatientCareOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareTemplateId(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareTemplateId(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareMoodCode(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareMoodCode(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareCodeP(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareCodeP(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareCode(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareCode(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -401,7 +399,7 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17306-4' or value.code = 'LA17307-2' or value.code = 'LA17308-0' or value.code = 'LA17309-8' or value.code = 'LA17310-6' or value.code = 'LA17311-4' or value.code = 'LA17312-2' or value.code = 'LA17313-0' or value.code = 'LA17314-8' or value.code = 'LA17315-5' or value.code = 'LA17316-3' or value.code = 'LA17317-1' or value.code = 'LA17318-9' or value.code = 'LA17711-5' or value.code = 'LA6301-1' or value.code = 'LA23824-8' or value.code = 'NewLA-3101035' or value.code = 'NewLA-3101033')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17306-4' or value.code = 'LA17307-2' or value.code = 'LA17308-0' or value.code = 'LA17309-8' or value.code = 'LA17310-6' or value.code = 'LA17311-4' or value.code = 'LA17312-2' or value.code = 'LA17313-0' or value.code = 'LA17314-8' or value.code = 'LA17315-5' or value.code = 'LA17316-3' or value.code = 'LA17317-1' or value.code = 'LA17318-9' or value.code = 'LA17711-5' or value.code = 'LA6301-1' or value.code = 'LA23824-8' or value.code = 'LA32960-9' or value.code = 'LA32961-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value</em>}' invariant operation.
@@ -411,9 +409,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareValue(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareValue(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBarriersToPatientCareValueP(BarriersToPatientCare barriersToPatientCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBarriersToPatientCareValueP(BarriersToPatientCare barriersToPatientCare,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

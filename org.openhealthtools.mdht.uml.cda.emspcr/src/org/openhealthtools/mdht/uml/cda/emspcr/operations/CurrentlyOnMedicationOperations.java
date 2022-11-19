@@ -41,15 +41,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +76,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +89,9 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationTemplateId(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentlyOnMedicationTemplateId(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -155,9 +153,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,8 +166,9 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationMoodCode(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentlyOnMedicationMoodCode(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationCode(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentlyOnMedicationCode(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -311,9 +309,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,8 +322,9 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationValue(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentlyOnMedicationValue(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

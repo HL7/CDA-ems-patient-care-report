@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class BodyTemperatureOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,9 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureTemplateId(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBodyTemperatureTemplateId(BodyTemperature bodyTemperature,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -156,9 +154,8 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,8 +167,9 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureMoodCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBodyTemperatureMoodCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBodyTemperatureCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -312,9 +310,8 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -326,8 +323,9 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureEffectiveTime(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBodyTemperatureEffectiveTime(BodyTemperature bodyTemperature,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -389,9 +387,8 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -403,8 +400,9 @@ public class BodyTemperatureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureValue(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBodyTemperatureValue(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

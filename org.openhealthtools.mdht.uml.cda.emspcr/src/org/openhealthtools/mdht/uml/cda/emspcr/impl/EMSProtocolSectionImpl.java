@@ -98,7 +98,8 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProtocolSectionProtocolObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSProtocolSectionProtocolObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSProtocolSectionOperations.validateEMSProtocolSectionProtocolObservation(this, diagnostics, context);
 	}
 
@@ -107,7 +108,8 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSProtocolSectionOperations.validateEMSProtocolSectionCandidatePatientRegistryType(this, diagnostics, context);
 	}
 
@@ -137,13 +139,14 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	public EMSProtocolSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSProtocolSectionImpl
+} // EMSProtocolSectionImpl

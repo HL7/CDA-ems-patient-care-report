@@ -50,7 +50,8 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransportModeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransportModeObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -104,7 +105,8 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationTransportModeQualifierRelationship(this, diagnostics, context);
 	}
 
@@ -116,13 +118,14 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	public TransportModeObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TransportModeObservationImpl
+} // TransportModeObservationImpl

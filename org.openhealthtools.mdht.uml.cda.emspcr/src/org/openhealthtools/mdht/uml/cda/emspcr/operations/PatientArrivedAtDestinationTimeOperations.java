@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,10 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientArrivedAtDestinationTimeTemplateId(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientArrivedAtDestinationTimeTemplateId(
+			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +156,8 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +169,10 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientArrivedAtDestinationTimeMoodCode(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientArrivedAtDestinationTimeMoodCode(
+			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +234,8 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +247,10 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientArrivedAtDestinationTimeCodeP(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientArrivedAtDestinationTimeCodeP(
+			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +326,8 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +339,10 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientArrivedAtDestinationTimeCode(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientArrivedAtDestinationTimeCode(
+			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -408,9 +410,8 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +423,10 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientArrivedAtDestinationTimeValue(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientArrivedAtDestinationTimeValue(
+			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

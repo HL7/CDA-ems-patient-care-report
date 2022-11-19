@@ -107,13 +107,14 @@ public class OxygenSaturationImpl extends ObservationImpl implements OxygenSatur
 	public OxygenSaturation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //OxygenSaturationImpl
+} // OxygenSaturationImpl

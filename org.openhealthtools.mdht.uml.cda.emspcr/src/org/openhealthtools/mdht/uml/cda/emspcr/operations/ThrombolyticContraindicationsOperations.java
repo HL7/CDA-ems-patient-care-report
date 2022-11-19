@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ThrombolyticContraindicationsOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsTemplateId(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +157,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +170,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsMoodCode(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +235,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +248,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsCodeP(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +327,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +340,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsCode(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsCode(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +413,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +426,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsValue(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsValue(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +491,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +504,10 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsValueP(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateThrombolyticContraindicationsValueP(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

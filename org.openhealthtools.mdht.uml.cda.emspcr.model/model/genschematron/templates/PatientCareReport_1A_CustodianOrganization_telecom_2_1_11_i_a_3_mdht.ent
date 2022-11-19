@@ -1,0 +1,20 @@
+<!-- CustodianOrganization -->
+
+<pattern id="p-PatientCareReport_1A_CustodianOrganization_telecom_2_1_11_i_a_3-error_mdht" see="#p-PatientCareReport_1A_CustodianOrganization_telecom_2_1_11_i_a_3-error_mdht" name="p-PatientCareReport_1A_CustodianOrganization_telecom_2_1_11_i_a_3-error_mdht">
+		<!--
+			UML path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization
+			UML root path: /PatientCareReport/custodian/assignedCustodian/representedCustodianOrganization
+			UML qualified name: consol::GeneralHeaderConstraints::Custodian::AssignedCustodian::CustodianOrganization
+		-->
+	<rule context="/cda:ClinicalDocument/cda:custodian/cda:assignedCustodian/cda:representedCustodianOrganization">
+		<!--
+			OCL: not self.telecom.oclIsUndefined()
+			Constraint name: GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom
+		-->
+	<assert test="cda:telecom">Error: PatientCareReport - 2.1.11.i.a.3 telecom
+		Conformance: SHALL contain exactly one [1..1] telecom (CONF:5525, R2.1=CONF:1198-5525)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

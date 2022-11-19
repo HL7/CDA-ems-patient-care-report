@@ -51,7 +51,8 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCardiacArrestEventSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSCardiacArrestEventSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -96,7 +97,8 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionCardiacArrestExistence(this, diagnostics, context);
 	}
 
@@ -117,13 +119,14 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	public EMSCardiacArrestEventSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSCardiacArrestEventSectionImpl
+} // EMSCardiacArrestEventSectionImpl

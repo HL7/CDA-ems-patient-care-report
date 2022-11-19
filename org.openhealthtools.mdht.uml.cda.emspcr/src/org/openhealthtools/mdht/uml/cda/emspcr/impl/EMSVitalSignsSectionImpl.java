@@ -97,7 +97,8 @@ public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSig
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
 	}
 
@@ -118,13 +119,14 @@ public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSig
 	public EMSVitalSignsSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSVitalSignsSectionImpl
+} // EMSVitalSignsSectionImpl

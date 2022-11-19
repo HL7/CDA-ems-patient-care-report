@@ -37,21 +37,20 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount#validateScenePatientCountCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount#validateScenePatientCountCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount#validateScenePatientCountValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount#validateScenePatientCountValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Value P</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class ScenePatientCountOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +79,8 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +92,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScenePatientCountTemplateId(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateScenePatientCountTemplateId(ScenePatientCount scenePatientCount,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +156,8 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +169,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScenePatientCountMoodCode(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateScenePatientCountMoodCode(ScenePatientCount scenePatientCount,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +233,8 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +246,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScenePatientCountCodeP(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateScenePatientCountCodeP(ScenePatientCount scenePatientCount,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +324,8 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +337,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScenePatientCountCode(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateScenePatientCountCode(ScenePatientCount scenePatientCount,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -398,7 +397,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ST)))";
+	protected static final String VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17717-2' or value.code = 'LA15382-7' or value.code = 'LA137-2')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScenePatientCountValue(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Value</em>}' invariant operation.
@@ -408,9 +409,8 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +422,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScenePatientCountValue(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateScenePatientCountValue(ScenePatientCount scenePatientCount,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -459,6 +460,82 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 						 EmspcrValidator.DIAGNOSTIC_SOURCE,
 						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_VALUE,
 						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountValue"),
+						 new Object [] { scenePatientCount }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateScenePatientCountValueP(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateScenePatientCountValueP(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateScenePatientCountValueP(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateScenePatientCountValueP(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param scenePatientCount The receiving '<em><b>Scene Patient Count</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateScenePatientCountValueP(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ScenePatientCountScenePatientCountValueP","ERROR");
+    
+  	  
+  	  
+		if (VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
+			try {
+				VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_PATIENT_COUNT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(scenePatientCount)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountValueP"),
 						 new Object [] { scenePatientCount }));
 			}
 			 

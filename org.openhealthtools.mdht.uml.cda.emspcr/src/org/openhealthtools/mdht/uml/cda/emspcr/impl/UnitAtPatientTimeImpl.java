@@ -98,13 +98,14 @@ public class UnitAtPatientTimeImpl extends ObservationImpl implements UnitAtPati
 	public UnitAtPatientTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitAtPatientTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitAtPatientTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitAtPatientTimeImpl
+} // UnitAtPatientTimeImpl

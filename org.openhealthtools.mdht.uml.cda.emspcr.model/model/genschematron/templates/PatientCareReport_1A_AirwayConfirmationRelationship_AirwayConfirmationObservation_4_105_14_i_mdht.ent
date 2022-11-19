@@ -1,0 +1,20 @@
+<!-- AirwayConfirmationRelationship -->
+
+<pattern id="p-PatientCareReport_1A_AirwayConfirmationRelationship_AirwayConfirmationObservation_4_105_14_i-error_mdht" see="#p-PatientCareReport_1A_AirwayConfirmationRelationship_AirwayConfirmationObservation_4_105_14_i-error_mdht" name="p-PatientCareReport_1A_AirwayConfirmationRelationship_AirwayConfirmationObservation_4_105_14_i-error_mdht">
+		<!--
+			UML path: /Procedure/AirwayConfirmationRelationship
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/AirwayConfirmationRelationship
+			UML qualified name: emspcr::Procedure::AirwayConfirmationRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.175']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::AirwayConfirmationObservation))
+			Constraint name: ProcedureAirwayConfirmationRelationshipAirwayConfirmationObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.175'])=1">Error: PatientCareReport - 4.105.14.i AirwayConfirmationObservation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10540)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

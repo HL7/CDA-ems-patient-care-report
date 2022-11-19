@@ -1,0 +1,30 @@
+<!-- ComplaintType: 2.16.840.1.1133883.17.3.10.1.138 -->
+
+<pattern id="p-PatientCareReport_1A_ComplaintType_value_4_28_4-error_mdht" see="#p-PatientCareReport_1A_ComplaintType_value_4_28_4-error_mdht" name="p-PatientCareReport_1A_ComplaintType_value_4_28_4-error_mdht">
+		<!--
+			UML path: /ComplaintType
+			UML root path: /PatientCareReport/SituationSection/complaint/ComplaintTypeRelationship/ComplaintType
+			UML qualified name: emspcr::ComplaintType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:complaint[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.63']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.138']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA18923-5' or value.code = 'LA18924-3'))
+			Constraint name: ComplaintTypeValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17059-9' or @code = 'LA18923-5' or @code = 'LA18924-3'))])">Error: PatientCareReport - 4.28.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10778), which SHALL be selected from ValueSet Complaint Type 2.16.840.1.113883.17.3.11.94 DYNAMIC (CONF:11267)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ComplaintTypeValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.28.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10778), which SHALL be selected from ValueSet Complaint Type 2.16.840.1.113883.17.3.11.94 DYNAMIC (CONF:11267)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

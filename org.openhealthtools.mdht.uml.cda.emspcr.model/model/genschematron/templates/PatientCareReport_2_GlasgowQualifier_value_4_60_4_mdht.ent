@@ -1,0 +1,30 @@
+<!-- GlasgowQualifier: 2.16.840.1.1133883.17.3.10.1.159 -->
+
+<pattern id="p-PatientCareReport_2_GlasgowQualifier_value_4_60_4-error_mdht" see="#p-PatientCareReport_2_GlasgowQualifier_value_4_60_4-error_mdht" name="p-PatientCareReport_2_GlasgowQualifier_value_4_60_4-error_mdht">
+		<!--
+			UML path: /GlasgowQualifier
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component48/organizer/component43/observation
+			UML qualified name: emspcr::GlasgowQualifier
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.170']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.159']">
+		<!--
+			OCL: ((not self.value->isEmpty()) and self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17102-7' or value.code = 'LA17103-5' or value.code = 'LA17104-3' or value.code = 'LA17105-0' or value.code = 'LA17106-8')))
+			Constraint name: GlasgowQualifierValue
+		-->
+	<assert test="not(cda:value and cda:value[not(@nullFlavor)]) or not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17102-7' or @code = 'LA17103-5' or @code = 'LA17104-3' or @code = 'LA17105-0' or @code = 'LA17106-8'))])">Error: PatientCareReport - 4.60.4 value
+		Conformance: MAY contain zero or more [0..*] value with @xsi:type=&quot;CD&quot; (CONF:10323), which SHALL be selected from ValueSet GlasgowComaScoreSpecialCircumstances 2.16.840.1.113883.17.3.11.89 DYNAMIC (CONF:11293)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.value->isEmpty()) and self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
+			Constraint name: GlasgowQualifierValueP
+		-->
+	<assert test="not(cda:value and cda:value[not(@nullFlavor)]) or not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.60.4 value
+		Conformance: MAY contain zero or more [0..*] value with @xsi:type=&quot;CD&quot; (CONF:10323), which SHALL be selected from ValueSet GlasgowComaScoreSpecialCircumstances 2.16.840.1.113883.17.3.11.89 DYNAMIC (CONF:11293)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

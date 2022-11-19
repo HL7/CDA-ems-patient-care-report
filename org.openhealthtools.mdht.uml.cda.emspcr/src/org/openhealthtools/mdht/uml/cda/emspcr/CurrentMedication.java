@@ -116,10 +116,11 @@ public interface CurrentMedication extends SubstanceAdministration {
 	 * @generated
 	 */
 	public CurrentMedication init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CurrentMedication

@@ -95,16 +95,26 @@ public class ScenePatientCountImpl extends ObservationImpl implements ScenePatie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateScenePatientCountValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ScenePatientCount init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ScenePatientCountImpl
+} // ScenePatientCountImpl

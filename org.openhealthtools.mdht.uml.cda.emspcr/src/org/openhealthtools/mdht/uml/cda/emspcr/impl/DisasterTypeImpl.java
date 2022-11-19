@@ -98,13 +98,14 @@ public class DisasterTypeImpl extends ObservationImpl implements DisasterType {
 	public DisasterType init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DisasterTypeImpl
+} // DisasterTypeImpl

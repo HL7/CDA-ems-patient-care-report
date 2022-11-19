@@ -37,7 +37,8 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,7 +50,8 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +63,8 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +76,8 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,7 +89,8 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.97\' and id.extension = \'2022-01-01\')'"
 	 * @generated
 	 */
-	boolean validateResponseOdometerReadingOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResponseOdometerReadingOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,10 +98,11 @@ public interface ResponseOdometerReadingOrganizer extends Organizer {
 	 * @generated
 	 */
 	public ResponseOdometerReadingOrganizer init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseOdometerReadingOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ResponseOdometerReadingOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseOdometerReadingOrganizer

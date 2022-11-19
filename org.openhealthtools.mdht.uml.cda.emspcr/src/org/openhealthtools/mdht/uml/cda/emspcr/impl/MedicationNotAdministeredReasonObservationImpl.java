@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationNotAdministe
  *
  * @generated
  */
-public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl implements MedicationNotAdministeredReasonObservation {
+public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl
+		implements MedicationNotAdministeredReasonObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(this, diagnostics, context);
 	}
 
@@ -95,7 +101,8 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +114,15 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	public MedicationNotAdministeredReasonObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MedicationNotAdministeredReasonObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public MedicationNotAdministeredReasonObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //MedicationNotAdministeredReasonObservationImpl
+} // MedicationNotAdministeredReasonObservationImpl

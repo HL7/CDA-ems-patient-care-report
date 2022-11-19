@@ -1,0 +1,20 @@
+<!-- HeadAssessment: 2.16.840.1.1133883.17.3.10.1.113 -->
+
+<pattern id="p-PatientCareReport_2_HeadAssessment_moodCode_4_63_2-error_mdht" see="#p-PatientCareReport_2_HeadAssessment_moodCode_4_63_2-error_mdht" name="p-PatientCareReport_2_HeadAssessment_moodCode_4_63_2-error_mdht">
+		<!--
+			UML path: /HeadAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component412/observation
+			UML qualified name: emspcr::HeadAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.113']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: HeadAssessmentMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.63.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11226)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,30 @@
+<!-- MedicationAdministrationDevice -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministrationDevice_code_4_78_16_ii_b_1-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministrationDevice_code_4_78_16_ii_b_1-error_mdht" name="p-PatientCareReport_1A_MedicationAdministrationDevice_code_4_78_16_ii_b_1-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/medicationAdministrationDeviceParticipant/medicationAdministrationDeviceRole/medicationAdministrationDevice
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationAdministrationDeviceParticipant/medicationAdministrationDeviceRole/medicationAdministrationDevice
+			UML qualified name: emspcr::MedicationAdministered::MedicationAdministrationDeviceParticipant::MedicationAdministrationDeviceRole::MedicationAdministrationDevice
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:participant/cda:participantRole[@classCode = 'MANU']/cda:playingDevice">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '39849001' or value.code = '427591007' or value.code = '425926003' or value.code = '428285009' or value.code = '398013009' or value.code = '425478008'
+			Constraint name: MedicationAdministeredMedicationAdministrationDeviceParticipantMedicationAdministrationDeviceRoleMedicationAdministrationDeviceCode
+		-->
+	<assert test="cda:code and cda:code[@code = '39849001' or @code = '427591007' or @code = '425926003' or @code = '428285009' or @code = '398013009' or @code = '425478008']">Error: PatientCareReport - 4.78.16.ii.b.1 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11184), which SHALL be selected from ValueSet EMSMedicationAdministrationDevice 2.16.840.1.113883.17.3.11.108 DYNAMIC (CONF:11716)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: MedicationAdministeredMedicationAdministrationDeviceParticipantMedicationAdministrationDeviceRoleMedicationAdministrationDeviceCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.78.16.ii.b.1 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11184), which SHALL be selected from ValueSet EMSMedicationAdministrationDevice 2.16.840.1.113883.17.3.11.108 DYNAMIC (CONF:11716)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

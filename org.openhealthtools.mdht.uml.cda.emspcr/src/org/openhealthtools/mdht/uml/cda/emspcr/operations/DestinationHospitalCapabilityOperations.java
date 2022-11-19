@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DestinationHospitalCapabilityOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityTemplateId(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityTemplateId(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +158,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +171,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityClassCode(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityClassCode(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +236,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +249,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityCodeP(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityCodeP(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -327,9 +328,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,8 +341,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityCode(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityCode(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +412,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +425,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityMoodCode(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityMoodCode(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -479,7 +482,7 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 */
 	protected static final String VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA22833-0' or value.code = 'LA22834-8' or value.code = 'LA22835-5' or value.code = 'LA22836-3' or value.code = 'LA22837-1' or value.code = 'LA22838-9' or value.code = 'LA22842-1' or value.code = 'LA22843-9' or value.code = 'LA22844-7' or value.code = 'LA22845-4' or value.code = 'LA22846-2' or value.code = 'LA22847-0' or value.code = 'LA22848-8' or value.code = 'LA22849-6' or value.code = 'LA22850-4' or value.code = 'NewLA-9908037' or value.code = 'NewLA-9908039' or value.code = 'NewLA-9908041' or value.code = 'NewLA-9908043' or value.code = 'NewLA-9908045' or value.code = 'NewLA-9908047')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA22833-0' or value.code = 'LA22834-8' or value.code = 'LA22835-5' or value.code = 'LA22836-3' or value.code = 'LA22837-1' or value.code = 'LA22838-9' or value.code = 'LA22842-1' or value.code = 'LA22843-9' or value.code = 'LA22844-7' or value.code = 'LA22845-4' or value.code = 'LA22846-2' or value.code = 'LA22847-0' or value.code = 'LA22848-8' or value.code = 'LA22849-6' or value.code = 'LA22850-4' or value.code = 'LA32931-0' or value.code = 'LA32934-4' or value.code = 'LA32935-1' or value.code = 'LA32936-9' or value.code = 'LA32933-6' or value.code = 'LA20786-2')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDestinationHospitalCapabilityValue(DestinationHospitalCapability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Destination Hospital Capability Value</em>}' invariant operation.
@@ -489,9 +492,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,8 +505,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityValue(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityValue(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -566,9 +570,8 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DESTINATION_HOSPITAL_CAPABILITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -580,8 +583,10 @@ public class DestinationHospitalCapabilityOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDestinationHospitalCapabilityValueP(DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDestinationHospitalCapabilityValueP(
+			DestinationHospitalCapability destinationHospitalCapability, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

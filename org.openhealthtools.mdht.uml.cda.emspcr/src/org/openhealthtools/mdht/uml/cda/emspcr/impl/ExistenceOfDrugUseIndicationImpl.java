@@ -50,7 +50,8 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfDrugUseIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfDrugUseIndicationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfDrugUseIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfDrugUseIndicationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationMoodCode(this, diagnostics, context);
 	}
 
@@ -98,13 +100,14 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	public ExistenceOfDrugUseIndication init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfDrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ExistenceOfDrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ExistenceOfDrugUseIndicationImpl
+} // ExistenceOfDrugUseIndicationImpl

@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DelayOrganizerOperations extends OrganizerOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerDispatchDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerDispatchDelayRelationship(DelayOrganizer delayOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerResponseDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerResponseDelayRelationship(DelayOrganizer delayOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerSceneDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerSceneDelayRelationship(DelayOrganizer delayOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -311,9 +309,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,8 +322,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerTransportDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerTransportDelayRelationship(DelayOrganizer delayOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -388,9 +386,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -402,8 +399,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerTurnaoundDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerTurnaoundDelayRelationship(DelayOrganizer delayOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -465,9 +463,8 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -479,8 +476,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDelayOrganizerTemplateId(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDelayOrganizerTemplateId(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

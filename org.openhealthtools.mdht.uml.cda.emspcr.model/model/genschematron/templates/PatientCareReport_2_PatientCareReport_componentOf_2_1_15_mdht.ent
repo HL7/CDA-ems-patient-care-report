@@ -1,0 +1,20 @@
+<!-- PatientCareReport: 2.16.840.1.1133883.17.3.10.2 -->
+
+<pattern id="p-PatientCareReport_2_PatientCareReport_componentOf_2_1_15-error_mdht" see="#p-PatientCareReport_2_PatientCareReport_componentOf_2_1_15-error_mdht" name="p-PatientCareReport_2_PatientCareReport_componentOf_2_1_15-error_mdht">
+		<!--
+			UML path: /PatientCareReport
+			UML root path: /PatientCareReport
+			UML qualified name: emspcr::PatientCareReport
+		-->
+	<rule context="/cda:ClinicalDocument">
+		<!--
+			OCL: self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(emspcr::PatientCareReport::EncompassingEncounterRelationship))
+			Constraint name: MISSINGOWNERComponentOf
+		-->
+	<assert test="count(cda:componentOf)=1">Error: PatientCareReport - 2.1.15 componentOf
+		Conformance: SHALL contain exactly one [1..1] componentOf (CONF:9955)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

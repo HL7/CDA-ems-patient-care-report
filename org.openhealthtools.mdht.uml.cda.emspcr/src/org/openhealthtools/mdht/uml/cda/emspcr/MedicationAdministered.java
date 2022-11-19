@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getMedicationAdministered()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='MedicationAdministeredMedicationNotAdministeredEntryRelationship MedicationAdministeredMedicationComplicationRelationship MedicationAdministeredMedicationPerformerParticipation MedicationAdministeredMedicationAuthorizationRelationship MedicationAdministeredMedicationAdministrationDeviceParticipant MedicationAdministeredNegationInd MedicationAdministeredRouteCodeP MedicationAdministeredDoseQuantity MedicationAdministeredRateQuantity' constraints.validation.error='MedicationAdministeredMedicationConsumable MedicationAdministeredMedicationAdministeredResponseRelationship MedicationAdministeredMedicationPriorAdministrationRelationship MedicationAdministeredTemplateId MedicationAdministeredClassCode MedicationAdministeredEffectiveTime MedicationAdministeredRouteCode MedicationAdministeredApproachSiteCode MedicationAdministeredApproachSiteCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.72' templateId.extension='2022-01-01' classCode='SBADM' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1.1' routeCode.codeSystemName='FDA Route of Administration' constraints.validation.dependOn.MedicationAdministeredRouteCode='MedicationAdministeredRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.MedicationAdministeredApproachSiteCode='MedicationAdministeredApproachSiteCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='MedicationAdministeredMedicationNotAdministeredEntryRelationship MedicationAdministeredMedicationComplicationRelationship MedicationAdministeredMedicationPerformerParticipation MedicationAdministeredMedicationAuthorizationRelationship MedicationAdministeredMedicationAdministrationDeviceParticipant MedicationAdministeredNegationInd MedicationAdministeredRouteCodeP MedicationAdministeredDoseQuantity MedicationAdministeredRateQuantity MedicationAdministeredApproachSiteCodeP' constraints.validation.error='MedicationAdministeredMedicationConsumable MedicationAdministeredMedicationAdministeredResponseRelationship MedicationAdministeredMedicationPriorAdministrationRelationship MedicationAdministeredTemplateId MedicationAdministeredClassCode MedicationAdministeredEffectiveTime MedicationAdministeredRouteCode MedicationAdministeredApproachSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.72' templateId.extension='2022-01-01' classCode='SBADM' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1.1' routeCode.codeSystemName='FDA Route of Administration' constraints.validation.dependOn.MedicationAdministeredRouteCode='MedicationAdministeredRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMED CT'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrMedicationAdministeredMedicationNotAdministeredReasonEntryRelationship constraints.validation.error='MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipMedicationNotAdministeredReasonObservation MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipInversionInd MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCode MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCodeP' inversionInd='TRUE' typeCode='RSON' constraints.validation.dependOn.MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCode='MedicationAdministeredMedicationNotAdministeredReasonEntryRelationshipTypeCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrMedicationAdministeredMedicationAdministeredConsumable constraints.validation.error='MedicationAdministeredMedicationAdministeredConsumableMedicationManfacturedProduct'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrMedicationAdministeredMedicationAdministeredConsumableMedicationManfacturedProduct constraints.validation.error='MedicationAdministeredMedicationAdministeredConsumableMedicationManfacturedProductMedicationLabeledDrug'"
@@ -47,7 +47,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +60,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationConsumable(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationConsumable(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,7 +73,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationAdministeredResponseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationAdministeredResponseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,7 +86,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationComplicationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationComplicationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,7 +99,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,7 +112,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer-&gt;exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationPerformerParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationPerformerParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +125,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationAuthorizationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationAuthorizationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,7 +138,8 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
 	 * @generated
 	 */
-	boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +244,7 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode-&gt;isEmpty() or self.approachSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode-&gt;isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode-&gt;isEmpty() or self.approachSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.approachSiteCode-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateMedicationAdministeredApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -259,10 +267,11 @@ public interface MedicationAdministered extends SubstanceAdministration {
 	 * @generated
 	 */
 	public MedicationAdministered init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MedicationAdministered init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicationAdministered init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationAdministered

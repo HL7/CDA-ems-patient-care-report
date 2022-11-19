@@ -1,0 +1,20 @@
+<!-- OtherAgencyAtSceneParticipation -->
+
+<pattern id="p-PatientCareReport_2_OtherAgencyAtSceneParticipation_otherAgencyAtSceneRole_2_1_15_ii_d_2-error_mdht" see="#p-PatientCareReport_2_OtherAgencyAtSceneParticipation_otherAgencyAtSceneRole_2_1_15_ii_d_2-error_mdht" name="p-PatientCareReport_2_OtherAgencyAtSceneParticipation_otherAgencyAtSceneRole_2_1_15_ii_d_2-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter/otherAgencyAtSceneParticipation
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter/otherAgencyAtSceneParticipation
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::OtherAgencyAtSceneParticipation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter/cda:encounterParticipant[cda:assignedEntity/@classCode = 'ASSIGNED']">
+		<!--
+			OCL: self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::OtherAgencyAtSceneParticipation::OtherAgencyAtSceneRole))
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationOtherAgencyAtSceneRole
+		-->
+	<assert test="count(cda:assignedEntity)=1">Error: PatientCareReport - 2.1.15.ii.d.2 otherAgencyAtSceneRole
+		Conformance: SHALL contain exactly one [1..1] assignedEntity (CONF:11624)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

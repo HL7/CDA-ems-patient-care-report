@@ -48,15 +48,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CardiacRhythmOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,9 +83,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,8 +96,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmParticipant1(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmParticipant1(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -162,9 +160,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,8 +173,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmTemplateId(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmTemplateId(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -239,9 +237,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,8 +250,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmMoodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmMoodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -316,9 +314,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -330,8 +327,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -407,9 +405,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -421,8 +418,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -490,9 +488,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -504,8 +501,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmEffectiveTime(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmEffectiveTime(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -559,7 +557,7 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12904-1' or value.code = 'LA17059-9' or value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17083-9' or value.code = 'LA17084-7' or value.code = 'LA17085-4' or value.code = 'LA17086-2' or value.code = 'LA17087-0' or value.code = 'LA17088-8' or value.code = 'LA17089-6' or value.code = 'LA17090-4' or value.code = 'LA17091-2' or value.code = 'LA17093-8' or value.code = 'LA17094-6' or value.code = 'LA17095-3' or value.code = 'LA17096-1' or value.code = 'LA17097-9' or value.code = 'LA17394-0' or value.code = 'LA17099-5' or value.code = 'LA17100-1' or value.code = 'LA17101-9' or value.code = 'LA17703-2' or value.code = 'LA17704-0' or value.code = 'LA17705-7' or value.code = 'LA17706-5' or value.code = 'LA17708-1' or value.code = 'LA17718-0' or value.code = 'LA18205-7' or value.code = 'LA18206-5' or value.code = 'LA18207-3' or value.code = 'LA18208-1' or value.code = 'NewLA-9901030' or value.code = 'NewLA-9901058')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12904-1' or value.code = 'LA17059-9' or value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17083-9' or value.code = 'LA17084-7' or value.code = 'LA17085-4' or value.code = 'LA17086-2' or value.code = 'LA17087-0' or value.code = 'LA17088-8' or value.code = 'LA17089-6' or value.code = 'LA17090-4' or value.code = 'LA17091-2' or value.code = 'LA17093-8' or value.code = 'LA17094-6' or value.code = 'LA17095-3' or value.code = 'LA17096-1' or value.code = 'LA17097-9' or value.code = 'LA17394-0' or value.code = 'LA17099-5' or value.code = 'LA17100-1' or value.code = 'LA17101-9' or value.code = 'LA17703-2' or value.code = 'LA17704-0' or value.code = 'LA17705-7' or value.code = 'LA17706-5' or value.code = 'LA17708-1' or value.code = 'LA17718-0' or value.code = 'LA18205-7' or value.code = 'LA18206-5' or value.code = 'LA18207-3' or value.code = 'LA18208-1' or value.code = 'LA32915-3' or value.code = 'LA32916-1')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmValue(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Value</em>}' invariant operation.
@@ -569,9 +567,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -583,8 +580,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmValue(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmValue(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -646,9 +644,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -660,8 +657,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmValueP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmValueP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -725,9 +723,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -739,8 +736,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmMethodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmMethodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -802,9 +800,8 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -816,8 +813,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacRhythmMethodCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacRhythmMethodCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

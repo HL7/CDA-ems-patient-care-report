@@ -33,7 +33,8 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.60\' and id.extension = \'2022-01-01\')'"
 	 * @generated
 	 */
-	boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,7 +46,8 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -57,7 +59,8 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,7 +72,8 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'67793-0\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
-	boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +85,8 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::BL)))'"
 	 * @generated
 	 */
-	boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,10 +94,11 @@ public interface ExistenceOfHistoryOfConditionOrSurgery extends Observation {
 	 * @generated
 	 */
 	public ExistenceOfHistoryOfConditionOrSurgery init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfHistoryOfConditionOrSurgery init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ExistenceOfHistoryOfConditionOrSurgery init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ExistenceOfHistoryOfConditionOrSurgery

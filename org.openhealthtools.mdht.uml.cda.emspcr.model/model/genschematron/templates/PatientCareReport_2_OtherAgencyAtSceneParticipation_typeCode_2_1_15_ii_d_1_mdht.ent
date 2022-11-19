@@ -1,0 +1,20 @@
+<!-- OtherAgencyAtSceneParticipation -->
+
+<pattern id="p-PatientCareReport_2_OtherAgencyAtSceneParticipation_typeCode_2_1_15_ii_d_1-error_mdht" see="#p-PatientCareReport_2_OtherAgencyAtSceneParticipation_typeCode_2_1_15_ii_d_1-error_mdht" name="p-PatientCareReport_2_OtherAgencyAtSceneParticipation_typeCode_2_1_15_ii_d_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter/otherAgencyAtSceneParticipation
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter/otherAgencyAtSceneParticipation
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::OtherAgencyAtSceneParticipation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter/cda:encounterParticipant[cda:assignedEntity/@classCode = 'ASSIGNED']">
+		<!--
+			OCL: self.typeCode=vocab::x_EncounterParticipant::CON
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationTypeCode
+		-->
+	<assert test="@typeCode = 'CON'">Error: PatientCareReport - 2.1.15.ii.d.1 typeCode
+		Conformance: SHALL contain exactly one [1..1] @typeCode=&quot;CON&quot;  (CONF:11623)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

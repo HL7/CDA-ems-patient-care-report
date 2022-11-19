@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DrugUseIndicationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,9 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugUseIndicationTemplateId(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugUseIndicationTemplateId(DrugUseIndication drugUseIndication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -156,9 +154,8 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,8 +167,9 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugUseIndicationMoodCode(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugUseIndicationMoodCode(DrugUseIndication drugUseIndication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugUseIndicationCode(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugUseIndicationCode(DrugUseIndication drugUseIndication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -304,7 +302,7 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17323-9' or value.code = 'LA17324-7' or value.code = 'LA17325-4' or value.code = 'LA17326-2' or value.code = 'LA17327-0' or value.code = 'NewLA-3117013')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17323-9' or value.code = 'LA17324-7' or value.code = 'LA17325-4' or value.code = 'LA17326-2' or value.code = 'LA17327-0' or value.code = 'LA32962-5')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDrugUseIndicationValue(DrugUseIndication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Use Indication Value</em>}' invariant operation.
@@ -314,9 +312,8 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,8 +325,9 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugUseIndicationValue(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugUseIndicationValue(DrugUseIndication drugUseIndication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -391,9 +389,8 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_USE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,8 +402,9 @@ public class DrugUseIndicationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugUseIndicationValueP(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDrugUseIndicationValueP(DrugUseIndication drugUseIndication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

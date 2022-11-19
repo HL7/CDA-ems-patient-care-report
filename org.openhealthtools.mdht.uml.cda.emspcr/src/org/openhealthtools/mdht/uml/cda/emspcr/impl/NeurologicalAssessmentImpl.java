@@ -107,13 +107,14 @@ public class NeurologicalAssessmentImpl extends ObservationImpl implements Neuro
 	public NeurologicalAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public NeurologicalAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public NeurologicalAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //NeurologicalAssessmentImpl
+} // NeurologicalAssessmentImpl

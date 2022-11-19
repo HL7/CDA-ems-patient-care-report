@@ -58,15 +58,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSResponseSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,9 +93,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,8 +106,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionTemplateId(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionTemplateId(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -174,9 +172,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,8 +185,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionCode(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionCode(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -251,9 +249,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,8 +262,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionCodeP(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionCodeP(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -328,9 +326,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,8 +339,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionTitle(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionTitle(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -405,9 +403,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -419,8 +416,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionText(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionText(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -482,9 +480,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -496,8 +493,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionDelayOrganizer(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionDelayOrganizer(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -559,9 +557,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -573,8 +570,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionDispatchLocationOrganizer(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionDispatchLocationOrganizer(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -636,9 +634,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -650,8 +647,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(
+			EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -713,9 +711,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -727,8 +724,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSResponseSectionResponseModeToScene(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSResponseSectionResponseModeToScene(EMSResponseSection emsResponseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -797,8 +795,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  DelayOrganizer getDelayOrganizer(EMSResponseSection emsResponseSection) {
+
+	public static DelayOrganizer getDelayOrganizer(EMSResponseSection emsResponseSection) {
 	
 	
 	
@@ -844,8 +842,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  DispatchLocationOrganizer getDispatchLocationOrganizer(EMSResponseSection emsResponseSection) {
+
+	public static DispatchLocationOrganizer getDispatchLocationOrganizer(EMSResponseSection emsResponseSection) {
 	
 	
 	
@@ -891,8 +889,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ResponseOdometerReadingOrganizer getResponseOdometerReadingOrganizer(EMSResponseSection emsResponseSection) {
+
+	public static ResponseOdometerReadingOrganizer getResponseOdometerReadingOrganizer(
+			EMSResponseSection emsResponseSection) {
 	
 	
 	
@@ -938,8 +937,8 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ResponseModeToScene getResponseModeToScene(EMSResponseSection emsResponseSection) {
+
+	public static ResponseModeToScene getResponseModeToScene(EMSResponseSection emsResponseSection) {
 	
 	
 	

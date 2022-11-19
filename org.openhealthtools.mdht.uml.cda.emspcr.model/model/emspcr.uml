@@ -18,7 +18,7 @@
         <body>A report from the EMS crew to the emergency department summarizing the patient's condition and any remedial actions taken</body>
       </ownedComment>
       <generalization xmi:id="_xs3ngWeQEeGtXKebdWh3hg">
-        <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_dduXkJ5OEeOr4eM3k36wAg"/>
+        <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
       </generalization>
       <ownedAttribute xmi:id="_ZTnIMGeREeGtXKebdWh3hg" name="classCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVd2kDcEd6xYZuu1VKCVw"/>
@@ -2568,7 +2568,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SaSUM5nEeSYyeRwIaqIFQ" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_IrCHIFPQEeyrCImimHJp2Q" name="component4" type="_P733gFPQEeyrCImimHJp2Q" association="_IrCHI1PQEeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_IrCHIFPQEeyrCImimHJp2Q" name="component411" type="_P733gFPQEeyrCImimHJp2Q" association="_IrCHI1PQEeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSnjUVQ-EeyrCImimHJp2Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSnjUFQ-EeyrCImimHJp2Q" value="1"/>
       </ownedAttribute>
@@ -4480,7 +4480,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZMf_QMWPEeK3RfDsHamIUQ" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Td6r0MWPEeK3RfDsHamIUQ" name="component4" visibility="private" type="_G04HsMWPEeK3RfDsHamIUQ" aggregation="composite" association="_Td758MWPEeK3RfDsHamIUQ">
+      <ownedAttribute xmi:id="_Td6r0MWPEeK3RfDsHamIUQ" name="component412" visibility="private" type="_G04HsMWPEeK3RfDsHamIUQ" aggregation="composite" association="_Td758MWPEeK3RfDsHamIUQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z2leEcWPEeK3RfDsHamIUQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z2leEMWPEeK3RfDsHamIUQ" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
@@ -4539,7 +4539,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VgEdYVUkEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VgEdYFUkEeyiu80E1DcH3w" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_hpWjQlQ7EeyrCImimHJp2Q" name="component4" type="_pFvcUFQ7EeyrCImimHJp2Q" association="_hpWjQFQ7EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_hpWjQlQ7EeyrCImimHJp2Q" name="component413" type="_pFvcUFQ7EeyrCImimHJp2Q" association="_hpWjQFQ7EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s1Zk8FQ7EeyrCImimHJp2Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s1Y94FQ7EeyrCImimHJp2Q" value="*"/>
       </ownedAttribute>
@@ -7465,23 +7465,23 @@ UCUM units will typically be &quot;%&quot;, &quot;mmHg&quot;, or &quot;kPa&quot;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_71YjkYjuEeKx3P4dlW9OSw" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_NdqigFQ6EeyrCImimHJp2Q" name="component4" type="_Tvr6MFQ6EeyrCImimHJp2Q" association="_NdrJklQ6EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_NdqigFQ6EeyrCImimHJp2Q" name="component414" type="_Tvr6MFQ6EeyrCImimHJp2Q" association="_NdrJklQ6EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LGsl4VUQEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LGsl4FUQEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PKepolQ6EeyrCImimHJp2Q" name="component4" type="_VgiMwFQ6EeyrCImimHJp2Q" association="_PKepoFQ6EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_PKepolQ6EeyrCImimHJp2Q" name="component42" type="_VgiMwFQ6EeyrCImimHJp2Q" association="_PKepoFQ6EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqCA4VUQEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MqCA4FUQEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PUorMlQ6EeyrCImimHJp2Q" name="component4" type="_Xmho4FQ6EeyrCImimHJp2Q" association="_PUorMFQ6EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_PUorMlQ6EeyrCImimHJp2Q" name="component43" type="_Xmho4FQ6EeyrCImimHJp2Q" association="_PUorMFQ6EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RRbCwVUQEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RRbCwFUQEeyiu80E1DcH3w" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PdJG8lQ6EeyrCImimHJp2Q" name="component4" type="_alRR8FQ6EeyrCImimHJp2Q" association="_PdJG8FQ6EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_PdJG8lQ6EeyrCImimHJp2Q" name="component44" type="_alRR8FQ6EeyrCImimHJp2Q" association="_PdJG8FQ6EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_trCB4FQ6EeyrCImimHJp2Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trBa0FQ6EeyrCImimHJp2Q" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PkoPAFQ6EeyrCImimHJp2Q" name="component4" type="_eewsAFQ6EeyrCImimHJp2Q" association="_Pknn8FQ6EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_PkoPAFQ6EeyrCImimHJp2Q" name="component45" type="_eewsAFQ6EeyrCImimHJp2Q" association="_Pknn8FQ6EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ToExEFUQEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ToEKAFUQEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
@@ -7627,7 +7627,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       <generalization xmi:id="_KNE2AK9UEeO6uquZyO0R2Q">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_bKMO0FQ4EeyrCImimHJp2Q" name="component4" type="_fhmT8FQ4EeyrCImimHJp2Q" association="_bKNc8lQ4EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_bKMO0FQ4EeyrCImimHJp2Q" name="component415" type="_fhmT8FQ4EeyrCImimHJp2Q" association="_bKNc8lQ4EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bKNc8FQ4EeyrCImimHJp2Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bKNc8VQ4EeyrCImimHJp2Q" value="*"/>
       </ownedAttribute>
@@ -7703,7 +7703,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tlkaQc3NEeSDodsZ26-KBg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tlkaQM3NEeSDodsZ26-KBg" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OBQJ0MtaEeSbT7e8VE5niQ" memberEnd="_OBO7sMtaEeSbT7e8VE5niQ _OBQJ0ctaEeSbT7e8VE5niQ">
@@ -7913,35 +7913,35 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_eNYbMNEeKNbt70lHd2Eg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_E0T8gFQ5EeyrCImimHJp2Q" name="component4" type="_J6vDwFQ5EeyrCImimHJp2Q" association="_E0T8g1Q5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_E0T8gFQ5EeyrCImimHJp2Q" name="component416" type="_J6vDwFQ5EeyrCImimHJp2Q" association="_E0T8g1Q5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D_S60VUPEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D_S60FUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_GR8YIlQ5EeyrCImimHJp2Q" name="component4" type="_Mq-WwFQ5EeyrCImimHJp2Q" association="_GR8YIFQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_GR8YIlQ5EeyrCImimHJp2Q" name="component42" type="_Mq-WwFQ5EeyrCImimHJp2Q" association="_GR8YIFQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GdpMkVUPEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GdpMkFUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_G2hE0lQ5EeyrCImimHJp2Q" name="component4" type="_SqQYoFQ5EeyrCImimHJp2Q" association="_G2hE0FQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_G2hE0lQ5EeyrCImimHJp2Q" name="component43" type="_SqQYoFQ5EeyrCImimHJp2Q" association="_G2hE0FQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JWMHAFUPEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JWLf8FUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HA8zMlQ5EeyrCImimHJp2Q" name="component4" type="_WryUYFQ5EeyrCImimHJp2Q" association="_HA8zMFQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_HA8zMlQ5EeyrCImimHJp2Q" name="component44" type="_WryUYFQ5EeyrCImimHJp2Q" association="_HA8zMFQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NOrbgVUPEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NOrbgFUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HIsZ8lQ5EeyrCImimHJp2Q" name="component4" type="_cY95oFQ5EeyrCImimHJp2Q" association="_HIsZ8FQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_HIsZ8lQ5EeyrCImimHJp2Q" name="component45" type="_cY95oFQ5EeyrCImimHJp2Q" association="_HIsZ8FQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PtMsYVUPEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PtMsYFUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HQMJEFQ5EeyrCImimHJp2Q" name="component4" type="_f9WmYFQ5EeyrCImimHJp2Q" association="_HQLiAFQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_HQMJEFQ5EeyrCImimHJp2Q" name="component46" type="_f9WmYFQ5EeyrCImimHJp2Q" association="_HQLiAFQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SMdkIVUPEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SMdkIFUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HwyUslQ5EeyrCImimHJp2Q" name="component4" type="_mWG4MFQ5EeyrCImimHJp2Q" association="_HwyUsFQ5EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_HwyUslQ5EeyrCImimHJp2Q" name="component47" type="_mWG4MFQ5EeyrCImimHJp2Q" association="_HwyUsFQ5EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VLYzYVUPEeyiu80E1DcH3w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VLYzYFUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_0GFu4FQ8EeyrCImimHJp2Q" name="component42" type="_1wh3cFQ8EeyrCImimHJp2Q" association="_0GFu41Q8EeyrCImimHJp2Q">
+      <ownedAttribute xmi:id="_0GFu4FQ8EeyrCImimHJp2Q" name="component48" type="_1wh3cFQ8EeyrCImimHJp2Q" association="_0GFu41Q8EeyrCImimHJp2Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xmp78VUPEeyiu80E1DcH3w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xmp78FUPEeyiu80E1DcH3w" value="1"/>
       </ownedAttribute>
@@ -8031,11 +8031,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_gTzdICVKEeyHwdMImhiDzQ" name="LungAssessment">
       <generalization xmi:id="_gTzdISVKEeyHwdMImhiDzQ">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_kTovwCVKEeyHwdMImhiDzQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kTpW0CVKEeyHwdMImhiDzQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_CwEdACVLEeyHwdMImhiDzQ">
@@ -8044,7 +8044,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IiSlgKotEeynVOSvWFRUjA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IiR-cKotEeynVOSvWFRUjA" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kTpW0yVKEeyHwdMImhiDzQ" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Zpj_wDKdEeyOwtfRawW6Qw">
@@ -8053,7 +8053,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kb7nsaotEeynVOSvWFRUjA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kb7nsKotEeynVOSvWFRUjA" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_uSA4MDKiEeyOwtfRawW6Qw" name="UnitDisposition">
@@ -8061,11 +8061,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The patient disposition for an EMS event identifying whether patient contact was made.</body>
       </ownedComment>
       <generalization xmi:id="_uSA4MTKiEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_w9pYADKiEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_w9p_EDKiEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_aAmaMDKyEeyOwtfRawW6Qw">
@@ -8074,7 +8074,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drKlQDKjEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drJ-MDKjEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2BpygDKkEeyOwtfRawW6Qw" name="PatientEngagement">
@@ -8082,11 +8082,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The patient disposition for an EMS event identifying whether a patient was evaluated and care or services were provided.</body>
       </ownedComment>
       <generalization xmi:id="_2BpygTKkEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_3FYgYDKkEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3FYgYTKkEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_g4-AMDKyEeyOwtfRawW6Qw">
@@ -8095,7 +8095,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qJI28TKlEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qJI28DKlEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_PFi4UDKmEeyOwtfRawW6Qw" name="CrewDisposition">
@@ -8103,11 +8103,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The crew disposition for this EMS event identifying which crew provided primary patient care or whether support services were required.</body>
       </ownedComment>
       <generalization xmi:id="_PFi4UTKmEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_QX7GMDKmEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QX7tQDKmEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_pgTf4DKmEeyOwtfRawW6Qw">
@@ -8116,7 +8116,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EgH08DKqEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EgGm0DKqEeyOwtfRawW6Qw" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Kp-OcDKyEeyOwtfRawW6Qw" name="TransportDisposition">
@@ -8124,11 +8124,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The transport disposition for an EMS event identifying whether a transport occurred and by which unit.</body>
       </ownedComment>
       <generalization xmi:id="_Kp-OcTKyEeyOwtfRawW6Qw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_L4nL0DKyEeyOwtfRawW6Qw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_L4ny4DKyEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_xVutkDKyEeyOwtfRawW6Qw">
@@ -8137,7 +8137,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0PDYErnEeyM8derc72xcA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0OcUErnEeyM8derc72xcA" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xAhzsTv0Eeys8b2-Q288fA" memberEnd="_xAhMoDv0Eeys8b2-Q288fA _xAhzsjv0Eeys8b2-Q288fA">
@@ -8148,11 +8148,11 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <body>The assessment findings associated with the patient's chest.</body>
       </ownedComment>
       <generalization xmi:id="_Y9KOgUHMEeyzA5MgFxuJFA">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_apLrcEHMEeyzA5MgFxuJFA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_apMSgEHMEeyzA5MgFxuJFA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_vk53cEHMEeyzA5MgFxuJFA">
@@ -8161,7 +8161,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vt2BkVKiEeyNpe1IH9aHqA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vt2BkFKiEeyNpe1IH9aHqA" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_apM5kEHMEeyzA5MgFxuJFA" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_K-WVgEp4EeyM8derc72xcA">
@@ -8170,7 +8170,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uB3n8VKiEeyNpe1IH9aHqA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uB3n8FKiEeyNpe1IH9aHqA" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Q0O4M0HPEeyzA5MgFxuJFA" memberEnd="_Q0O4MEHPEeyzA5MgFxuJFA _Q0O4NEHPEeyzA5MgFxuJFA">
@@ -12788,7 +12788,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10371</ruleId>
   </CDA:ValueSetConstraint>
   <Ecore:EReference xmi:id="_MGBs8J73Ed6BCKDGgDgllw" xmlNamespace="##targetNamespace">
-    <base_Property href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    <base_Property href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
   </Ecore:EReference>
   <CDA:AssociationValidation xmi:id="_UcsbwDXgEeWpTYI46fwViQ" severity="INFO" base_Association="_N_nqoDXgEeWpTYI46fwViQ">
     <ruleId>CONF:11387</ruleId>

@@ -101,10 +101,11 @@ public interface GlasgowQualifier extends Observation {
 	 * @generated
 	 */
 	public GlasgowQualifier init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowQualifier

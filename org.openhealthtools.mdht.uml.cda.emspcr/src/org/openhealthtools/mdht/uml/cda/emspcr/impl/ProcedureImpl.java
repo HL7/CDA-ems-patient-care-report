@@ -48,7 +48,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureAbandonedProcedureRelationship(this, diagnostics, context);
 	}
 
@@ -66,7 +67,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureNumberOfAttemptsRelationship(this, diagnostics, context);
 	}
 
@@ -84,7 +86,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureComplicationsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureComplicationsRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureComplicationsRelationship(this, diagnostics, context);
 	}
 
@@ -93,7 +96,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedurePatientResponseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedurePatientResponseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedurePatientResponseRelationship(this, diagnostics, context);
 	}
 
@@ -111,7 +115,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureAirwayConfirmationRelationship(this, diagnostics, context);
 	}
 
@@ -120,7 +125,8 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureReasonProcedureNotAttemptedRelationship(this, diagnostics, context);
 	}
 
@@ -213,13 +219,14 @@ public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl i
 	public Procedure init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProcedureImpl
+} // ProcedureImpl

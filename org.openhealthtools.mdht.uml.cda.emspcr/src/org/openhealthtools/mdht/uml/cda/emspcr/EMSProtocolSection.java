@@ -106,7 +106,8 @@ public interface EMSProtocolSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::CandidatePatientRegistryType) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,10 +133,11 @@ public interface EMSProtocolSection extends Section {
 	 * @generated
 	 */
 	public EMSProtocolSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSProtocolSection

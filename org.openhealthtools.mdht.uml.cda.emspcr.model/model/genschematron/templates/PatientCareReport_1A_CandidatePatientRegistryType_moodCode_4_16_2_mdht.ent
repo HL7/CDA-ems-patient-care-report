@@ -1,0 +1,20 @@
+<!-- CandidatePatientRegistryType: 2.16.840.1.1133883.17.3.10.1.94 -->
+
+<pattern id="p-PatientCareReport_1A_CandidatePatientRegistryType_moodCode_4_16_2-error_mdht" see="#p-PatientCareReport_1A_CandidatePatientRegistryType_moodCode_4_16_2-error_mdht" name="p-PatientCareReport_1A_CandidatePatientRegistryType_moodCode_4_16_2-error_mdht">
+		<!--
+			UML path: /CandidatePatientRegistryType
+			UML root path: /PatientCareReport/ProtocolSection/candidatePatientRegistryType
+			UML qualified name: emspcr::CandidatePatientRegistryType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']/cda:candidatePatientRegistryType[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.94']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: CandidatePatientRegistryTypeMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.16.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11210)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

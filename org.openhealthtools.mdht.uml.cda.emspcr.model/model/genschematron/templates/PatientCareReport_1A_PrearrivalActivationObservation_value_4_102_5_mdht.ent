@@ -1,0 +1,30 @@
+<!-- PrearrivalActivationObservation: 2.16.840.1.1133883.17.3.10.1.36 -->
+
+<pattern id="p-PatientCareReport_1A_PrearrivalActivationObservation_value_4_102_5-error_mdht" see="#p-PatientCareReport_1A_PrearrivalActivationObservation_value_4_102_5-error_mdht" name="p-PatientCareReport_1A_PrearrivalActivationObservation_value_4_102_5-error_mdht">
+		<!--
+			UML path: /PrearrivalActivationObservation
+			UML root path: /PatientCareReport/DispositionSection/prearrivalActivationObservation
+			UML qualified name: emspcr::PrearrivalActivationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:prearrivalActivationObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.36']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18117-4' or value.code = 'LA18118-2' or value.code = 'LA18119-0' or value.code = 'LA18120-8' or value.code = 'LA18121-6' or value.code = 'LA18122-4' or value.code = 'LA18123-2' or value.code = 'LA32-8' or value.code = 'LA32937-7'))
+			Constraint name: PrearrivalActivationObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18117-4' or @code = 'LA18118-2' or @code = 'LA18119-0' or @code = 'LA18120-8' or @code = 'LA18121-6' or @code = 'LA18122-4' or @code = 'LA18123-2' or @code = 'LA32-8' or @code = 'LA32937-7'))])">Error: PatientCareReport - 4.102.5 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10690), which SHALL be selected from ValueSet DestinationPrearrivalActivation 2.16.840.1.113883.17.3.11.87 DYNAMIC (CONF:11428)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: PrearrivalActivationObservationValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.102.5 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10690), which SHALL be selected from ValueSet DestinationPrearrivalActivation 2.16.840.1.113883.17.3.11.87 DYNAMIC (CONF:11428)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

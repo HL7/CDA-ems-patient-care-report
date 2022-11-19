@@ -98,13 +98,14 @@ public class UnitBackInServiceTimeImpl extends ObservationImpl implements UnitBa
 	public UnitBackInServiceTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitBackInServiceTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitBackInServiceTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitBackInServiceTimeImpl
+} // UnitBackInServiceTimeImpl

@@ -89,10 +89,11 @@ public interface GlasgowVerbal extends Observation {
 	 * @generated
 	 */
 	public GlasgowVerbal init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowVerbal init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public GlasgowVerbal init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowVerbal

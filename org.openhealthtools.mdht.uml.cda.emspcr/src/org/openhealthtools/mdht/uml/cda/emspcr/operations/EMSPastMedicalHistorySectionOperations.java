@@ -48,22 +48,20 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection#validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Past Medical History Section Existence Of History Of Condition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection#validateEMSPastMedicalHistorySectionHistoryOfCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Past Medical History Section History Of Condition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection#getExistenceOfHistoryOfCondition() <em>Get Existence Of History Of Condition</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection#getHistoryOfConditions() <em>Get History Of Conditions</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection#getHistoryOfCondition() <em>Get History Of Condition</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,9 +90,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,8 +103,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionTemplateId(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionTemplateId(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -171,9 +170,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,8 +183,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionCode(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionCode(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -248,9 +248,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,8 +261,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionCodeP(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionCodeP(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +326,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +339,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionTitle(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionTitle(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -402,9 +404,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -416,8 +417,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionText(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionText(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -479,9 +482,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -493,8 +495,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -546,7 +550,7 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::MedicalSurgicalHistory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::MedicalSurgicalHistory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPastMedicalHistorySectionHistoryOfCondition(EMSPastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Past Medical History Section History Of Condition</em>}' invariant operation.
@@ -556,9 +560,8 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -570,8 +573,10 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -640,8 +645,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ExistenceOfHistoryOfConditionOrSurgery getExistenceOfHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
+
+	public static ExistenceOfHistoryOfConditionOrSurgery getExistenceOfHistoryOfCondition(
+			EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
 	
 	
 	
@@ -663,24 +669,24 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHistoryOfConditions(EMSPastMedicalHistorySection) <em>Get History Of Conditions</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getHistoryOfCondition(EMSPastMedicalHistorySection) <em>Get History Of Condition</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfConditions(EMSPastMedicalHistorySection)
+	 * @see #getHistoryOfCondition(EMSPastMedicalHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HISTORY_OF_CONDITIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::MedicalSurgicalHistory)).oclAsType(emspcr::MedicalSurgicalHistory)";
+	protected static final String GET_HISTORY_OF_CONDITION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::MedicalSurgicalHistory))->asSequence()->any(true).oclAsType(emspcr::MedicalSurgicalHistory)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHistoryOfConditions(EMSPastMedicalHistorySection) <em>Get History Of Conditions</em>}' query operation.
+	 * The cached OCL query for the '{@link #getHistoryOfCondition(EMSPastMedicalHistorySection) <em>Get History Of Condition</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfConditions(EMSPastMedicalHistorySection)
+	 * @see #getHistoryOfCondition(EMSPastMedicalHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HISTORY_OF_CONDITIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_HISTORY_OF_CONDITION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -688,27 +694,25 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 */
 	
-	public static  EList<MedicalSurgicalHistory> getHistoryOfConditions(EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
+	public static  MedicalSurgicalHistory getHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
 	
 	
 	
-		if (GET_HISTORY_OF_CONDITIONS__EOCL_QRY == null) {
+		if (GET_HISTORY_OF_CONDITION__EOCL_QRY == null) {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(63));
 			try {
-				GET_HISTORY_OF_CONDITIONS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_CONDITIONS__EOCL_EXP);
+				GET_HISTORY_OF_CONDITION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_CONDITION__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 			}
 		 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_HISTORY_OF_CONDITIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<MedicalSurgicalHistory> result = (Collection<MedicalSurgicalHistory>) query.evaluate(emsPastMedicalHistorySection);
-		return new BasicEList.UnmodifiableEList<MedicalSurgicalHistory>(result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HISTORY_OF_CONDITION__EOCL_QRY);
+		return (MedicalSurgicalHistory) query.evaluate(emsPastMedicalHistorySection);
 	}
 
 } // EMSPastMedicalHistorySectionOperations

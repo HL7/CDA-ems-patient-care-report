@@ -89,10 +89,11 @@ public interface MassCasualtyIndicator extends Observation {
 	 * @generated
 	 */
 	public MassCasualtyIndicator init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MassCasualtyIndicator

@@ -58,15 +58,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSSceneSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,9 +93,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,8 +106,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionTemplateId(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionTemplateId(EMSSceneSection emsSceneSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -174,9 +172,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,8 +185,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionCode(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionCode(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -251,9 +249,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,8 +262,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionCodeP(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionCodeP(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -328,9 +326,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,8 +339,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionTitle(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionTitle(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -405,9 +403,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -419,8 +416,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionText(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionText(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -482,9 +480,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_FIRST_UNIT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_FIRST_UNIT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -496,8 +493,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionFirstUnitIndicator(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionFirstUnitIndicator(EMSSceneSection emsSceneSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -559,9 +557,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_SCENE_PATIENT_COUNT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_SCENE_PATIENT_COUNT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -573,8 +570,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionScenePatientCount(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionScenePatientCount(EMSSceneSection emsSceneSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -636,9 +634,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_MASS_CASUALTY_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_MASS_CASUALTY_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -650,8 +647,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionMassCasualtyIndicator(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionMassCasualtyIndicator(EMSSceneSection emsSceneSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -713,9 +711,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_LOCATION_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SCENE_SECTION_LOCATION_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -727,8 +724,9 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSceneSectionLocationTypeObservation(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSceneSectionLocationTypeObservation(EMSSceneSection emsSceneSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -797,8 +795,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  FirstUnitIndicator getFirstUnitIndicator(EMSSceneSection emsSceneSection) {
+
+	public static FirstUnitIndicator getFirstUnitIndicator(EMSSceneSection emsSceneSection) {
 	
 	
 	
@@ -844,8 +842,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ScenePatientCount getScenePatientCount(EMSSceneSection emsSceneSection) {
+
+	public static ScenePatientCount getScenePatientCount(EMSSceneSection emsSceneSection) {
 	
 	
 	
@@ -891,8 +889,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  MassCasualtyIndicator getMassCasualtyIndicator(EMSSceneSection emsSceneSection) {
+
+	public static MassCasualtyIndicator getMassCasualtyIndicator(EMSSceneSection emsSceneSection) {
 	
 	
 	
@@ -938,8 +936,8 @@ public class EMSSceneSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  LocationTypeObservation getLocationTypeObservation(EMSSceneSection emsSceneSection) {
+
+	public static LocationTypeObservation getLocationTypeObservation(EMSSceneSection emsSceneSection) {
 	
 	
 	

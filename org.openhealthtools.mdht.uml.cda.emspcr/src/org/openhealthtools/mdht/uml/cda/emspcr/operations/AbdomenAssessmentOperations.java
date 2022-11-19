@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentTemplateId(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentTemplateId(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentMoodCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentMoodCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -238,9 +236,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,8 +249,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -315,9 +313,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -329,8 +326,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentEffectiveTime(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentEffectiveTime(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -394,9 +392,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -408,8 +405,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentValue(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentValue(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -471,9 +469,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -485,8 +482,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentValueP(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentValueP(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -550,9 +548,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -564,8 +561,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentTargetSiteCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentTargetSiteCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -627,9 +625,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -641,8 +638,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentTargetSiteCodeP(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAbdomenAssessmentTargetSiteCodeP(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

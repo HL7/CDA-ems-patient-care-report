@@ -113,10 +113,11 @@ public interface DiastolicBloodPressure extends Observation {
 	 * @generated
 	 */
 	public DiastolicBloodPressure init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiastolicBloodPressure

@@ -1,0 +1,30 @@
+<!-- NeckAssessment: 2.16.840.1.1133883.17.3.10.1.114 -->
+
+<pattern id="p-PatientCareReport_2_NeckAssessment_code_4_84_3-error_mdht" see="#p-PatientCareReport_2_NeckAssessment_code_4_84_3-error_mdht" name="p-PatientCareReport_2_NeckAssessment_code_4_84_3-error_mdht">
+		<!--
+			UML path: /NeckAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component6/observation
+			UML qualified name: emspcr::NeckAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.114']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: NeckAssessmentCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.84.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11668)/@code=&quot;67527-2&quot; Physical findings of Neck NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10379)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67527-2' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: NeckAssessmentCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67527-2' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.84.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11668)/@code=&quot;67527-2&quot; Physical findings of Neck NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10379)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

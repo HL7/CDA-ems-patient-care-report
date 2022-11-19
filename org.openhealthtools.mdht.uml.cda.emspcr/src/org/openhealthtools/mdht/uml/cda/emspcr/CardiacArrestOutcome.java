@@ -101,10 +101,11 @@ public interface CardiacArrestOutcome extends Observation {
 	 * @generated
 	 */
 	public CardiacArrestOutcome init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CardiacArrestOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CardiacArrestOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacArrestOutcome

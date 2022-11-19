@@ -98,13 +98,14 @@ public class AdverseEventIndicatorImpl extends ObservationImpl implements Advers
 	public AdverseEventIndicator init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //AdverseEventIndicatorImpl
+} // AdverseEventIndicatorImpl

@@ -53,16 +53,8 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonDrugAllergyOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerComponent4(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(this, diagnostics, context);
 	}
 
@@ -71,7 +63,8 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonDrugAllergyOrganizerNonDrugAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonDrugAllergyOrganizerNonDrugAllergy(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerNonDrugAllergy(this, diagnostics, context);
 	}
 
@@ -110,13 +103,14 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	public NonDrugAllergyOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //NonDrugAllergyOrganizerImpl
+} // NonDrugAllergyOrganizerImpl

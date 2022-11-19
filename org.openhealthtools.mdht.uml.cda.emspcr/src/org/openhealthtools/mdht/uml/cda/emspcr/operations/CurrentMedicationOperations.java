@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CurrentMedicationOperations extends SubstanceAdministrationOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationConsumable(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationConsumable(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationTemplateId(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationTemplateId(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +234,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +247,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationNegationInd(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationNegationInd(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -313,9 +311,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,8 +324,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationNullFlavor(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationNullFlavor(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -390,9 +388,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -404,8 +401,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationDoseQuantity(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationDoseQuantity(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -467,9 +465,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -481,8 +478,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationRouteCodeP(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationRouteCodeP(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -558,9 +556,8 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CURRENT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -572,8 +569,9 @@ public class CurrentMedicationOperations extends SubstanceAdministrationOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentMedicationRouteCode(CurrentMedication currentMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCurrentMedicationRouteCode(CurrentMedication currentMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

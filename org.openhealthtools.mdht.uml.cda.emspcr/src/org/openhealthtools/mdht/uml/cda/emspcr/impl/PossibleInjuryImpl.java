@@ -98,13 +98,14 @@ public class PossibleInjuryImpl extends ObservationImpl implements PossibleInjur
 	public PossibleInjury init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PossibleInjuryImpl
+} // PossibleInjuryImpl

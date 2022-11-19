@@ -1,0 +1,20 @@
+<!-- MedicationPriorAdministrationRelationship -->
+
+<pattern id="p-PatientCareReport_1A_MedicationPriorAdministrationRelationship_MedicationPriorAdministrationObservation_4_78_13_i-error_mdht" see="#p-PatientCareReport_1A_MedicationPriorAdministrationRelationship_MedicationPriorAdministrationObservation_4_78_13_i-error_mdht" name="p-PatientCareReport_1A_MedicationPriorAdministrationRelationship_MedicationPriorAdministrationObservation_4_78_13_i-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/MedicationPriorAdministrationRelationship
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/MedicationPriorAdministrationRelationship
+			UML qualified name: emspcr::MedicationAdministered::MedicationPriorAdministrationRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.108']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::MedicationPriorAdministrationObservation))
+			Constraint name: MedicationAdministeredMedicationPriorAdministrationRelationshipMedicationPriorAdministrationObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.108'])=1">Error: PatientCareReport - 4.78.13.i MedicationPriorAdministrationObservation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10477)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

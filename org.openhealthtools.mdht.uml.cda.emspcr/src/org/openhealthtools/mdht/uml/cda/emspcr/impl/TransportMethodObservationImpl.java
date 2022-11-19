@@ -50,7 +50,8 @@ public class TransportMethodObservationImpl extends ObservationImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransportMethodObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransportMethodObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class TransportMethodObservationImpl extends ObservationImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransportMethodObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransportMethodObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -107,13 +109,14 @@ public class TransportMethodObservationImpl extends ObservationImpl implements T
 	public TransportMethodObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportMethodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TransportMethodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TransportMethodObservationImpl
+} // TransportMethodObservationImpl

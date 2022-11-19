@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.AbandonedProcedureReas
  *
  * @generated
  */
-public class AbandonedProcedureReasonObservationImpl extends ObservationImpl implements AbandonedProcedureReasonObservation {
+public class AbandonedProcedureReasonObservationImpl extends ObservationImpl
+		implements AbandonedProcedureReasonObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationValue(this, diagnostics, context);
 	}
 
@@ -95,7 +101,8 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbandonedProcedureReasonObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAbandonedProcedureReasonObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +114,14 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	public AbandonedProcedureReasonObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public AbandonedProcedureReasonObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public AbandonedProcedureReasonObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //AbandonedProcedureReasonObservationImpl
+} // AbandonedProcedureReasonObservationImpl

@@ -113,10 +113,11 @@ public interface TransportModeQualifier extends Observation {
 	 * @generated
 	 */
 	public TransportModeQualifier init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public TransportModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransportModeQualifier

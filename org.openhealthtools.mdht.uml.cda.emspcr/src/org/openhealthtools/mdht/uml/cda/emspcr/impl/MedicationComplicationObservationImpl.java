@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationComplication
  *
  * @generated
  */
-public class MedicationComplicationObservationImpl extends ObservationImpl implements MedicationComplicationObservation {
+public class MedicationComplicationObservationImpl extends ObservationImpl
+		implements MedicationComplicationObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValue(this, diagnostics, context);
 	}
 
@@ -95,7 +101,8 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationComplicationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationComplicationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +114,14 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	public MedicationComplicationObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //MedicationComplicationObservationImpl
+} // MedicationComplicationObservationImpl

@@ -1,0 +1,20 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_medicationAdministrationDeviceParticipant_4_78_16-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_medicationAdministrationDeviceParticipant_4_78_16-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_medicationAdministrationDeviceParticipant_4_78_16-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(emspcr::MedicationAdministered::MedicationAdministrationDeviceParticipant))->size() <= 1
+			Constraint name: MedicationAdministeredMedicationAdministrationDeviceParticipant
+		-->
+	<assert test="count(cda:participant[cda:participantRole/@classCode = 'MANU']) &lt;= 1">Error: PatientCareReport - 4.78.16 medicationAdministrationDeviceParticipant
+		Conformance: MAY contain zero or one [0..1] participant (CONF:11074)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

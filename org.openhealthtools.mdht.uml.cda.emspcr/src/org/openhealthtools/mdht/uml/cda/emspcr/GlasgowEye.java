@@ -89,10 +89,11 @@ public interface GlasgowEye extends Observation {
 	 * @generated
 	 */
 	public GlasgowEye init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowEye

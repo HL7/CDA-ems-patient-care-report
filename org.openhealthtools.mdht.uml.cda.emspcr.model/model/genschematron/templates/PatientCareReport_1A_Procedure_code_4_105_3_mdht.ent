@@ -1,0 +1,30 @@
+<!-- Procedure: 2.16.840.1.1133883.17.3.10.1.181 -->
+
+<pattern id="p-PatientCareReport_1A_Procedure_code_4_105_3-error_mdht" see="#p-PatientCareReport_1A_Procedure_code_4_105_3-error_mdht" name="p-PatientCareReport_1A_Procedure_code_4_105_3-error_mdht">
+		<!--
+			UML path: /Procedure
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1
+			UML qualified name: emspcr::Procedure
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96'
+			Constraint name: ProcedureCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.96']">Error: PatientCareReport - 4.105.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10496), which SHALL be selected from (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:11497)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ProcedureCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.105.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10496), which SHALL be selected from (CodeSystem: 2.16.840.1.113883.6.96 SNOMED CT) (CONF:11497)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

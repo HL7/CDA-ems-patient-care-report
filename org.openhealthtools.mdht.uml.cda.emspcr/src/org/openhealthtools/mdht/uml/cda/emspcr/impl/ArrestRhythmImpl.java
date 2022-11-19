@@ -89,13 +89,14 @@ public class ArrestRhythmImpl extends ObservationImpl implements ArrestRhythm {
 	public ArrestRhythm init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ArrestRhythmImpl
+} // ArrestRhythmImpl

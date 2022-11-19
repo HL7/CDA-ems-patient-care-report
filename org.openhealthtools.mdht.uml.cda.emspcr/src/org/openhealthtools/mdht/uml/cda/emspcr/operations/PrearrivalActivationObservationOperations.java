@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class PrearrivalActivationObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationTemplateId(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationTemplateId(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +158,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +171,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationMoodCode(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationMoodCode(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +236,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +249,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationCodeP(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationCodeP(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -327,9 +328,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,8 +341,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationCode(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationCode(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +412,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +425,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationEffectiveTime(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationEffectiveTime(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -479,7 +482,7 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 */
 	protected static final String VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18117-4' or value.code = 'LA18118-2' or value.code = 'LA18119-0' or value.code = 'LA18120-8' or value.code = 'LA18121-6' or value.code = 'LA18122-4' or value.code = 'LA18123-2' or value.code = 'LA32-8' or value.code = 'NewLA-4224019NewCode')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18117-4' or value.code = 'LA18118-2' or value.code = 'LA18119-0' or value.code = 'LA18120-8' or value.code = 'LA18121-6' or value.code = 'LA18122-4' or value.code = 'LA18123-2' or value.code = 'LA32-8' or value.code = 'LA32937-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrearrivalActivationObservationValue(PrearrivalActivationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prearrival Activation Observation Value</em>}' invariant operation.
@@ -489,9 +492,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,8 +505,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationValue(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationValue(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -566,9 +570,8 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -580,8 +583,10 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrearrivalActivationObservationValueP(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePrearrivalActivationObservationValueP(
+			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

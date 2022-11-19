@@ -1,0 +1,30 @@
+<!-- Patient -->
+
+<pattern id="p-PatientCareReport_1A_Patient_ethnicGroupCode_2_1_9_i_e_2-error_mdht" see="#p-PatientCareReport_1A_Patient_ethnicGroupCode_2_1_9_i_e_2-error_mdht" name="p-PatientCareReport_1A_Patient_ethnicGroupCode_2_1_9_i_e_2-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/patient
+			UML root path: /PatientCareReport/recordTarget/patientRole/patient
+			UML qualified name: emspcr::PatientCareReport::RecordTarget::PatientRole::Patient
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:patient">
+		<!--
+			OCL: ((not self.ethnicGroupCode.oclIsUndefined()) and self.ethnicGroupCode.isNullFlavorUndefined()) implies (not self.ethnicGroupCode.oclIsUndefined())
+			Constraint name: PatientCareReportRecordTargetPatientRolePatientEthnicGroupCodeP
+		-->
+	<assert test="not(cda:ethnicGroupCode and not(cda:ethnicGroupCode/@nullFlavor)) or cda:ethnicGroupCode">Error: PatientCareReport - 2.1.9.i.e.2 ethnicGroupCode
+		Conformance: MAY contain zero or one [0..1] ethnicGroupCode (CONF:10874), which SHALL be selected from ValueSet Ethnicity Group 2.16.840.1.114222.4.11.837 DYNAMIC (CONF:10032)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.ethnicGroupCode.oclIsUndefined()) and self.ethnicGroupCode.isNullFlavorUndefined()) implies (not self.ethnicGroupCode.oclIsUndefined() and self.ethnicGroupCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.ethnicGroupCode.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.238' and (value.code = '2135-2' or value.code = '2186-5'))
+			Constraint name: PatientCareReportRecordTargetPatientRolePatientEthnicGroupCode
+		-->
+	<assert test="not(cda:ethnicGroupCode and not(cda:ethnicGroupCode/@nullFlavor)) or cda:ethnicGroupCode and cda:ethnicGroupCode[@codeSystem = '2.16.840.1.113883.6.238' and (@code = '2135-2' or @code = '2186-5')]">Error: PatientCareReport - 2.1.9.i.e.2 ethnicGroupCode
+		Conformance: MAY contain zero or one [0..1] ethnicGroupCode (CONF:10874), which SHALL be selected from ValueSet Ethnicity Group 2.16.840.1.114222.4.11.837 DYNAMIC (CONF:10032)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

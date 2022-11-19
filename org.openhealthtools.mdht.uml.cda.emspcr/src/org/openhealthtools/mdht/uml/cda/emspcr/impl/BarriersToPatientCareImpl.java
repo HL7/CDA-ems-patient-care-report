@@ -107,13 +107,14 @@ public class BarriersToPatientCareImpl extends ObservationImpl implements Barrie
 	public BarriersToPatientCare init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //BarriersToPatientCareImpl
+} // BarriersToPatientCareImpl

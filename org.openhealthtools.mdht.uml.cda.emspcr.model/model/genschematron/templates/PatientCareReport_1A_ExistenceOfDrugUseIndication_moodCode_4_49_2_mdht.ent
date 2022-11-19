@@ -1,0 +1,20 @@
+<!-- ExistenceOfDrugUseIndication: 2.16.840.1.1133883.17.3.10.1.70 -->
+
+<pattern id="p-PatientCareReport_1A_ExistenceOfDrugUseIndication_moodCode_4_49_2-error_mdht" see="#p-PatientCareReport_1A_ExistenceOfDrugUseIndication_moodCode_4_49_2-error_mdht" name="p-PatientCareReport_1A_ExistenceOfDrugUseIndication_moodCode_4_49_2-error_mdht">
+		<!--
+			UML path: /ExistenceOfDrugUseIndication
+			UML root path: /PatientCareReport/SocialHistorySection/existenceOfDrugUseIndication
+			UML qualified name: emspcr::ExistenceOfDrugUseIndication
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SocialHistorySection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.22']/cda:existenceOfDrugUseIndication[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.70']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: ExistenceOfDrugUseIndicationMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.49.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11177)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

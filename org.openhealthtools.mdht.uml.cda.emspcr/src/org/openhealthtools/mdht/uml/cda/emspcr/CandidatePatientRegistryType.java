@@ -101,10 +101,11 @@ public interface CandidatePatientRegistryType extends Observation {
 	 * @generated
 	 */
 	public CandidatePatientRegistryType init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CandidatePatientRegistryType init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CandidatePatientRegistryType init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CandidatePatientRegistryType

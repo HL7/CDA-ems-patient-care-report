@@ -105,7 +105,8 @@ public class ResponseModeToSceneImpl extends ObservationImpl implements Response
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseModeToSceneResponseModeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseModeToSceneResponseModeQualifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneResponseModeQualifier(this, diagnostics, context);
 	}
 
@@ -126,13 +127,14 @@ public class ResponseModeToSceneImpl extends ObservationImpl implements Response
 	public ResponseModeToScene init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResponseModeToSceneImpl
+} // ResponseModeToSceneImpl

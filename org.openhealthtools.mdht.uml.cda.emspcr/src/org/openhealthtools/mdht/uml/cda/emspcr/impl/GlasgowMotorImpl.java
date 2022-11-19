@@ -98,13 +98,14 @@ public class GlasgowMotorImpl extends ObservationImpl implements GlasgowMotor {
 	public GlasgowMotor init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //GlasgowMotorImpl
+} // GlasgowMotorImpl

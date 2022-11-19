@@ -107,13 +107,14 @@ public class PrimarySymptomImpl extends ObservationImpl implements PrimarySympto
 	public PrimarySymptom init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PrimarySymptom init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PrimarySymptom init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PrimarySymptomImpl
+} // PrimarySymptomImpl

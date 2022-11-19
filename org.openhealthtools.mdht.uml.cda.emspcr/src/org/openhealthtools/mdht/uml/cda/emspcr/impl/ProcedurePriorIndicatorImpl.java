@@ -98,13 +98,14 @@ public class ProcedurePriorIndicatorImpl extends ObservationImpl implements Proc
 	public ProcedurePriorIndicator init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProcedurePriorIndicatorImpl
+} // ProcedurePriorIndicatorImpl

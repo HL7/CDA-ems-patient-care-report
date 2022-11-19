@@ -1,0 +1,30 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_routeCode_4_78_5-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_routeCode_4_78_5-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_routeCode_4_78_5-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: ((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
+			Constraint name: MedicationAdministeredRouteCodeP
+		-->
+	<assert test="not(cda:routeCode and not(cda:routeCode/@nullFlavor)) or cda:routeCode">Error: PatientCareReport - 4.78.5 routeCode
+		Conformance: MAY contain zero or one [0..1] routeCode (CONF:10450), which SHALL be selected from ValueSet MedicationAdministrationRoute 2.16.840.1.113883.17.3.11.43 DYNAMIC (CONF:10449)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.3.26.1.1.1' and (value.code = 'C38208' or value.code = 'C38246' or value.code = 'C38216' or value.code = 'C38222' or value.code = 'C38284' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38276' or value.code = 'C38285' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38290' or value.code = 'C38192' or value.code = 'C38295' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38271' or value.code = 'C38193' or value.code = 'C38238' or value.code = 'C64987' or value.code = 'C38250' or value.code = 'C38676'))
+			Constraint name: MedicationAdministeredRouteCode
+		-->
+	<assert test="not(cda:routeCode and not(cda:routeCode/@nullFlavor)) or cda:routeCode and cda:routeCode[@codeSystem = '2.16.840.1.113883.3.26.1.1.1' and (@code = 'C38208' or @code = 'C38246' or @code = 'C38216' or @code = 'C38222' or @code = 'C38284' or @code = 'C28161' or @code = 'C38255' or @code = 'C38276' or @code = 'C38285' or @code = 'C38287' or @code = 'C38288' or @code = 'C38290' or @code = 'C38192' or @code = 'C38295' or @code = 'C38299' or @code = 'C38300' or @code = 'C38304' or @code = 'C38305' or @code = 'C38271' or @code = 'C38193' or @code = 'C38238' or @code = 'C64987' or @code = 'C38250' or @code = 'C38676')]">Error: PatientCareReport - 4.78.5 routeCode
+		Conformance: MAY contain zero or one [0..1] routeCode (CONF:10450), which SHALL be selected from ValueSet MedicationAdministrationRoute 2.16.840.1.113883.17.3.11.43 DYNAMIC (CONF:10449)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

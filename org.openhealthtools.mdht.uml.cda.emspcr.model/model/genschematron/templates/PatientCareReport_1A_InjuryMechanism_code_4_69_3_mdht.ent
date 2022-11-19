@@ -1,0 +1,30 @@
+<!-- InjuryMechanism: 2.16.840.1.1133883.17.3.10.1.51 -->
+
+<pattern id="p-PatientCareReport_1A_InjuryMechanism_code_4_69_3-error_mdht" see="#p-PatientCareReport_1A_InjuryMechanism_code_4_69_3-error_mdht" name="p-PatientCareReport_1A_InjuryMechanism_code_4_69_3-error_mdht">
+		<!--
+			UML path: /InjuryMechanism
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/injuryMechanism
+			UML qualified name: emspcr::InjuryMechanism
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:injuryMechanism[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.51']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: InjuryMechanismCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.69.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11650)/@code=&quot;67494-5&quot; General mechanism of the forces which caused the injury NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10109)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67494-5' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: InjuryMechanismCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67494-5' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.69.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11650)/@code=&quot;67494-5&quot; General mechanism of the forces which caused the injury NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10109)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

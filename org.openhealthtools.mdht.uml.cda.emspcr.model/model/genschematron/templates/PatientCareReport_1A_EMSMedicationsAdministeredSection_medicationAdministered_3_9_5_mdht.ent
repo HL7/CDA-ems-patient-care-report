@@ -1,0 +1,20 @@
+<!-- EMSMedicationsAdministeredSection: 2.16.840.1.1133883.17.3.10.1.18 -->
+
+<pattern id="p-PatientCareReport_1A_EMSMedicationsAdministeredSection_medicationAdministered_3_9_5-error_mdht" see="#p-PatientCareReport_1A_EMSMedicationsAdministeredSection_medicationAdministered_3_9_5-error_mdht" name="p-PatientCareReport_1A_EMSMedicationsAdministeredSection_medicationAdministered_3_9_5-error_mdht">
+		<!--
+			UML path: /EMSMedicationsAdministeredSection
+			UML root path: /PatientCareReport/MedicationsAdministeredSection
+			UML qualified name: emspcr::EMSMedicationsAdministeredSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSMedicationsAdministeredSectionMedicationAdministered
+		-->
+	<assert test="@nullFlavor = 'NI' or cda:entry[cda:substanceAdministration and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72' and @typeCode = 'COMP']">Error: PatientCareReport - 3.9.5 medicationAdministered
+		Conformance: If section/@nullFlavor is not present, MAY contain  [1..*] entry such that it  (CONF:10989)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

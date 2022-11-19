@@ -1,0 +1,20 @@
+<!-- ProviderOrganization -->
+
+<pattern id="p-PatientCareReport_1A_ProviderOrganization_GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier_2_1_9_i_d_5-error_mdht" see="#p-PatientCareReport_1A_ProviderOrganization_GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier_2_1_9_i_d_5-error_mdht" name="p-PatientCareReport_1A_ProviderOrganization_GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier_2_1_9_i_d_5-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/providerOrganization
+			UML root path: /PatientCareReport/recordTarget/patientRole/providerOrganization
+			UML qualified name: consol::GeneralHeaderConstraints::RecordTarget::PatientRole::ProviderOrganization
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:providerOrganization">
+		<!--
+			OCL: self.id->exists( root='2.16.840.1.113883.4.6' )
+			Constraint name: GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier
+		-->
+	<assert test="cda:id/@root = '2.16.840.1.113883.4.6'">Error: PatientCareReport - 2.1.9.i.d.5 GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier
+		Conformance: The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996, R2.1=CONF:1198-16820)
+		Analysis: The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -152,13 +152,14 @@ public class ComplaintImpl extends ObservationImpl implements Complaint {
 	public Complaint init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ComplaintImpl
+} // ComplaintImpl

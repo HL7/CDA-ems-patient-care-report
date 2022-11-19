@@ -1,0 +1,30 @@
+<!-- MedicationNotAdministeredReasonObservation: 2.16.840.1.1133883.17.3.10.1.105 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_code_4_80_3-error_mdht" see="#p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_code_4_80_3-error_mdht" name="p-PatientCareReport_1A_MedicationNotAdministeredReasonObservation_code_4_80_3-error_mdht">
+		<!--
+			UML path: /MedicationNotAdministeredReasonObservation
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationNotAdministeredEntryRelationship/medicationNotAdministeredReasonObservation
+			UML qualified name: emspcr::MedicationNotAdministeredReasonObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.105']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: MedicationNotAdministeredReasonObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.80.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11666)/@code=&quot;ASSERTION&quot; Assertion (CodeSystem: 2.16.840.1.113883.5.4 ActCode) (CONF:10462)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'
+			Constraint name: MedicationNotAdministeredReasonObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = 'ASSERTION' and @codeSystem = '2.16.840.1.113883.5.4']">Error: PatientCareReport - 4.80.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11666)/@code=&quot;ASSERTION&quot; Assertion (CodeSystem: 2.16.840.1.113883.5.4 ActCode) (CONF:10462)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -50,7 +50,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2TemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2MoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2MoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2CodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2CodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2Code(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2Code(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2Value(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2Value(this, diagnostics, context);
 	}
 
@@ -95,7 +100,8 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTraumaTriageCriteriaSteps1and2ValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTraumaTriageCriteriaSteps1and2ValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TraumaTriageCriteriaSteps1and2Operations.validateTraumaTriageCriteriaSteps1and2ValueP(this, diagnostics, context);
 	}
 
@@ -107,13 +113,14 @@ public class TraumaTriageCriteriaSteps1and2Impl extends ObservationImpl implemen
 	public TraumaTriageCriteriaSteps1and2 init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TraumaTriageCriteriaSteps1and2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TraumaTriageCriteriaSteps1and2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TraumaTriageCriteriaSteps1and2Impl
+} // TraumaTriageCriteriaSteps1and2Impl

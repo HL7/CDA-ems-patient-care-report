@@ -50,7 +50,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestCardiacArrestCauseRelationship(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestCardiacArrestInformantParticipation(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestSpontaneousCirculationRelationship(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestDestinationRhythmRelationship(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestArrestRhythmRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestArrestRhythmRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestArrestRhythmRelationship(this, diagnostics, context);
 	}
 
@@ -149,7 +154,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestCardiacArrestTimingRelationship(this, diagnostics, context);
 	}
 
@@ -158,7 +164,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestCardiacArrestOutcomeRelationship(this, diagnostics, context);
 	}
 
@@ -170,13 +177,14 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	public CardiacArrest init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CardiacArrestImpl
+} // CardiacArrestImpl

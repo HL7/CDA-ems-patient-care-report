@@ -1,0 +1,30 @@
+<!-- PatientConditionAtDestinationObservation: 2.16.840.1.1133883.17.3.10.1.37 -->
+
+<pattern id="p-PatientCareReport_1A_PatientConditionAtDestinationObservation_code_4_95_3-error_mdht" see="#p-PatientCareReport_1A_PatientConditionAtDestinationObservation_code_4_95_3-error_mdht" name="p-PatientCareReport_1A_PatientConditionAtDestinationObservation_code_4_95_3-error_mdht">
+		<!--
+			UML path: /PatientConditionAtDestinationObservation
+			UML root path: /PatientCareReport/DispositionSection/patientConditionChangeAtDestinationObservation
+			UML qualified name: emspcr::PatientConditionAtDestinationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:patientConditionChangeAtDestinationObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.37']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: PatientConditionAtDestinationObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.95.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10694)/@code=&quot;77941-3&quot; Final patient acuity NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10693)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '77941-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: PatientConditionAtDestinationObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '77941-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.95.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10694)/@code=&quot;77941-3&quot; Final patient acuity NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10693)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

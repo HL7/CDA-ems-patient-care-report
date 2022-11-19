@@ -113,10 +113,11 @@ public interface ResponseModeQualifier extends Observation {
 	 * @generated
 	 */
 	public ResponseModeQualifier init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ResponseModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseModeQualifier

@@ -1,0 +1,30 @@
+<!-- EmergencyMedicalDispatchObservation: 2.16.840.1.1133883.17.3.10.1.73 -->
+
+<pattern id="p-PatientCareReport_1A_EmergencyMedicalDispatchObservation_value_4_48_4-error_mdht" see="#p-PatientCareReport_1A_EmergencyMedicalDispatchObservation_value_4_48_4-error_mdht" name="p-PatientCareReport_1A_EmergencyMedicalDispatchObservation_value_4_48_4-error_mdht">
+		<!--
+			UML path: /EmergencyMedicalDispatchObservation
+			UML root path: /PatientCareReport/DispatchSection/emergencyMedicalDispatchObservation
+			UML qualified name: emspcr::EmergencyMedicalDispatchObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispatchSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.2']/cda:emergencyMedicalDispatchObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.73']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17151-4' or value.code = 'LA17152-2' or value.code = 'LA17153-0' or value.code = 'LA32-8'))
+			Constraint name: EmergencyMedicalDispatchObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17151-4' or @code = 'LA17152-2' or @code = 'LA17153-0' or @code = 'LA32-8'))])">Error: PatientCareReport - 4.48.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10566), which SHALL be selected from ValueSet EMDPerformed 2.16.840.1.113883.17.3.11.48 DYNAMIC (CONF:10565)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: EmergencyMedicalDispatchObservationValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.48.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10566), which SHALL be selected from ValueSet EMDPerformed 2.16.840.1.113883.17.3.11.48 DYNAMIC (CONF:10565)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

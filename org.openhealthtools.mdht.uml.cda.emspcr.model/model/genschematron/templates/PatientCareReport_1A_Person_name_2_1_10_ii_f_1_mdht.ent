@@ -1,0 +1,20 @@
+<!-- Person -->
+
+<pattern id="p-PatientCareReport_1A_Person_name_2_1_10_ii_f_1-error_mdht" see="#p-PatientCareReport_1A_Person_name_2_1_10_ii_f_1-error_mdht" name="p-PatientCareReport_1A_Person_name_2_1_10_ii_f_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedPerson
+			UML root path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedPerson
+			UML qualified name: consol::GeneralHeaderConstraints::Author::AssignedAuthor::Person
+		-->
+	<rule context="/cda:ClinicalDocument/cda:author/cda:assignedAuthor/cda:assignedPerson">
+		<!--
+			OCL: not self.name->isEmpty()
+			Constraint name: GeneralHeaderConstraintsAuthorAssignedAuthorPersonName
+		-->
+	<assert test="cda:name">Error: PatientCareReport - 2.1.10.ii.f.1 name
+		Conformance: SHALL contain at least one [1..*] name (CONF:16789, R2.1=CONF:1198-16789)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

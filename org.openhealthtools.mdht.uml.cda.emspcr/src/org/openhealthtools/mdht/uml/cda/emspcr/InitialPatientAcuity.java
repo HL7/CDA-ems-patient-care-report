@@ -78,7 +78,7 @@ public interface InitialPatientAcuity extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17696-8\' or value.code = \'LA17695-0\' or value.code = \'LA17694-3\' or value.code = \'LA17697-6\' or value.code = \'NewLA-4219011\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17696-8\' or value.code = \'LA17695-0\' or value.code = \'LA17694-3\' or value.code = \'LA17697-6\' or value.code = \'LA32920-3\')))'"
 	 * @generated
 	 */
 	boolean validateInitialPatientAcuityValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -101,10 +101,11 @@ public interface InitialPatientAcuity extends Observation {
 	 * @generated
 	 */
 	public InitialPatientAcuity init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public InitialPatientAcuity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public InitialPatientAcuity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InitialPatientAcuity

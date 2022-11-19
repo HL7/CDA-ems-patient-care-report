@@ -1,0 +1,30 @@
+<!-- AirwayConfirmationObservation: 2.16.840.1.1133883.17.3.10.1.175 -->
+
+<pattern id="p-PatientCareReport_1A_AirwayConfirmationObservation_methodCode_4_8_6-error_mdht" see="#p-PatientCareReport_1A_AirwayConfirmationObservation_methodCode_4_8_6-error_mdht" name="p-PatientCareReport_1A_AirwayConfirmationObservation_methodCode_4_8_6-error_mdht">
+		<!--
+			UML path: /AirwayConfirmationObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/AirwayConfirmationRelationship/AirwayConfirmationObservation
+			UML qualified name: emspcr::AirwayConfirmationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.175']">
+		<!--
+			OCL: ((not self.methodCode->isEmpty()) and self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
+			Constraint name: AirwayConfirmationObservationMethodCodeP
+		-->
+	<assert test="not(cda:methodCode and cda:methodCode[not(@nullFlavor)]) or cda:methodCode">Error: PatientCareReport - 4.8.6 methodCode
+		Conformance: MAY contain zero or more [0..*] methodCode (CONF:10544), which SHALL be selected from ValueSet AirwayDeviceConfirmationMethod 2.16.840.1.113883.17.3.11.60 DYNAMIC (CONF:10543)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.methodCode->isEmpty()) and self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18680-1' or value.code = 'LA18681-9' or value.code = 'LA18679-3' or value.code = 'LA32909-6')))
+			Constraint name: AirwayConfirmationObservationMethodCode
+		-->
+	<assert test="not(cda:methodCode and cda:methodCode[not(@nullFlavor)]) or not(cda:methodCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18672-8' or @code = 'LA18673-6' or @code = 'LA18674-4' or @code = 'LA18675-1' or @code = 'LA18676-9' or @code = 'LA18677-7' or @code = 'LA18678-5' or @code = 'LA18680-1' or @code = 'LA18681-9' or @code = 'LA18679-3' or @code = 'LA32909-6'))])">Error: PatientCareReport - 4.8.6 methodCode
+		Conformance: MAY contain zero or more [0..*] methodCode (CONF:10544), which SHALL be selected from ValueSet AirwayDeviceConfirmationMethod 2.16.840.1.113883.17.3.11.60 DYNAMIC (CONF:10543)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

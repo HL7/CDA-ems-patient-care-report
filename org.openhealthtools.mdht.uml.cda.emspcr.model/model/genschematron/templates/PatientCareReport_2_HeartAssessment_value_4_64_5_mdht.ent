@@ -1,0 +1,30 @@
+<!-- HeartAssessment: 2.16.840.1.1133883.17.3.10.1.116 -->
+
+<pattern id="p-PatientCareReport_2_HeartAssessment_value_4_64_5-error_mdht" see="#p-PatientCareReport_2_HeartAssessment_value_4_64_5-error_mdht" name="p-PatientCareReport_2_HeartAssessment_value_4_64_5-error_mdht">
+		<!--
+			UML path: /HeartAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component8/observation
+			UML qualified name: emspcr::HeartAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.116']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17239-7' or value.code = 'LA17240-5' or value.code = 'LA17241-3' or value.code = 'LA18241-2' or value.code = 'LA18242-0' or value.code = 'LA18243-8' or value.code = 'LA18244-6' or value.code = 'LA18245-3' or value.code = 'LA18246-1' or value.code = 'LA6626-1'))
+			Constraint name: HeartAssessmentValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17239-7' or @code = 'LA17240-5' or @code = 'LA17241-3' or @code = 'LA18241-2' or @code = 'LA18242-0' or @code = 'LA18243-8' or @code = 'LA18244-6' or @code = 'LA18245-3' or @code = 'LA18246-1' or @code = 'LA6626-1'))])">Error: PatientCareReport - 4.64.5 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10385), which SHALL be selected from ValueSet HeartAssessmentFinding 2.16.840.1.113883.17.3.11.30 DYNAMIC (CONF:10386)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: HeartAssessmentValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.64.5 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10385), which SHALL be selected from ValueSet HeartAssessmentFinding 2.16.840.1.113883.17.3.11.30 DYNAMIC (CONF:10386)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

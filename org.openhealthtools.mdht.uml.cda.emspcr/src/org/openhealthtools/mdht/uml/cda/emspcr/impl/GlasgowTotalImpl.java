@@ -98,13 +98,14 @@ public class GlasgowTotalImpl extends ObservationImpl implements GlasgowTotal {
 	public GlasgowTotal init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //GlasgowTotalImpl
+} // GlasgowTotalImpl

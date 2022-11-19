@@ -98,13 +98,14 @@ public class LastOralIntakeImpl extends ObservationImpl implements LastOralIntak
 	public LastOralIntake init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //LastOralIntakeImpl
+} // LastOralIntakeImpl

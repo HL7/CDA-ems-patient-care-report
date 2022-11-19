@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_BEGINNING_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_BEGINNING_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,10 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
+			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -156,9 +155,8 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_ON_SCENE_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_ON_SCENE_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,8 +168,10 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
+			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -233,9 +233,8 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_DESTINATION_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_DESTINATION_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,8 +246,10 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
+			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -310,9 +311,8 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_ENDING_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_RESPONSE_ENDING_ODOMETER_READING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,8 +324,10 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
+			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -387,9 +389,8 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ODOMETER_READING_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,8 +402,10 @@ public class ResponseOdometerReadingOrganizerOperations extends OrganizerOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseOdometerReadingOrganizerTemplateId(ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseOdometerReadingOrganizerTemplateId(
+			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

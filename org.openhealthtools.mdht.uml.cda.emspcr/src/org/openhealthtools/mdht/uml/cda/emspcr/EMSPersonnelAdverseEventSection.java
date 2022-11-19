@@ -93,7 +93,8 @@ public interface EMSPersonnelAdverseEventSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdverseEventIndicator) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,7 +106,8 @@ public interface EMSPersonnelAdverseEventSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdverseEventTypeObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,10 +133,11 @@ public interface EMSPersonnelAdverseEventSection extends Section {
 	 * @generated
 	 */
 	public EMSPersonnelAdverseEventSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSPersonnelAdverseEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSPersonnelAdverseEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSPersonnelAdverseEventSection

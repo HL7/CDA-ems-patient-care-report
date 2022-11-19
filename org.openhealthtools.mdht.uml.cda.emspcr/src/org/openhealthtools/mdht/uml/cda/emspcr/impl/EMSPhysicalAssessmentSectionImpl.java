@@ -57,7 +57,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -102,7 +103,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(this, diagnostics, context);
 	}
 
@@ -111,7 +113,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientPregnancy(this, diagnostics, context);
 	}
 
@@ -120,7 +123,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionLastOralIntake(this, diagnostics, context);
 	}
 
@@ -129,7 +133,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPatientAge(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionPatientAge(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientAge(this, diagnostics, context);
 	}
 
@@ -138,7 +143,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionThrombolyticContraindications(this, diagnostics, context);
 	}
 
@@ -147,7 +153,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionBarriersToPatientCare(this, diagnostics, context);
 	}
 
@@ -156,7 +163,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionBodyWeight(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionBodyWeight(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionBodyWeight(this, diagnostics, context);
 	}
 
@@ -165,7 +173,8 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionLengthBasedBodyWeight(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPhysicalAssessmentSectionLengthBasedBodyWeight(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionLengthBasedBodyWeight(this, diagnostics, context);
 	}
 
@@ -231,13 +240,14 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	public EMSPhysicalAssessmentSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSPhysicalAssessmentSectionImpl
+} // EMSPhysicalAssessmentSectionImpl

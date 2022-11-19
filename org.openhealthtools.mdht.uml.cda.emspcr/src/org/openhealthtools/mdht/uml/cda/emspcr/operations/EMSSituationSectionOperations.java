@@ -70,15 +70,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSSituationSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,9 +105,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,8 +118,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionTemplateId(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionTemplateId(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -186,9 +184,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,8 +197,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionCode(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionCode(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -263,9 +261,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,8 +274,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionCodeP(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionCodeP(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -340,9 +338,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -354,8 +351,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionTitle(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionTitle(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -417,9 +415,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -431,8 +428,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionText(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionText(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -494,9 +492,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -508,8 +505,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionComplaint(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionComplaint(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -571,9 +569,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_POSSIBLE_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_POSSIBLE_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -585,8 +582,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionPossibleInjury(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionPossibleInjury(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -648,9 +646,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PROVIDER_PRIMARY_IMPRESSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PROVIDER_PRIMARY_IMPRESSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -662,8 +659,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionProviderPrimaryImpression(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionProviderPrimaryImpression(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -725,9 +723,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PRIMARY_SYMPTOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PRIMARY_SYMPTOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -739,8 +736,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionPrimarySymptom(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionPrimarySymptom(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -802,9 +800,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_OTHER_SYMPTOMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_OTHER_SYMPTOMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -816,8 +813,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionOtherSymptoms(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionOtherSymptoms(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -879,9 +877,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PROVIDER_SECONDARY_IMPRESSIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_PROVIDER_SECONDARY_IMPRESSIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -893,8 +890,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionProviderSecondaryImpressions(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionProviderSecondaryImpressions(
+			EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -956,9 +954,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_INITIAL_PATIENT_ACUITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_SITUATION_SECTION_INITIAL_PATIENT_ACUITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -970,8 +967,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSSituationSectionInitialPatientAcuity(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSSituationSectionInitialPatientAcuity(EMSSituationSection emsSituationSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -1040,8 +1038,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<Complaint> getComplaints(EMSSituationSection emsSituationSection) {
+
+	public static EList<Complaint> getComplaints(EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1089,8 +1087,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PossibleInjury getPossibleInjury(EMSSituationSection emsSituationSection) {
+
+	public static PossibleInjury getPossibleInjury(EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1136,8 +1134,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ProviderPrimaryImpression getProviderPrimaryImpression(EMSSituationSection emsSituationSection) {
+
+	public static ProviderPrimaryImpression getProviderPrimaryImpression(EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1183,8 +1181,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PrimarySymptom getPrimarySymptom(EMSSituationSection emsSituationSection) {
+
+	public static PrimarySymptom getPrimarySymptom(EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1230,8 +1228,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  OtherSymptoms getOtherSymptoms(EMSSituationSection emsSituationSection) {
+
+	public static OtherSymptoms getOtherSymptoms(EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1277,8 +1275,9 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ProviderSecondaryImpressions getProviderSecondaryImpressions(EMSSituationSection emsSituationSection) {
+
+	public static ProviderSecondaryImpressions getProviderSecondaryImpressions(
+			EMSSituationSection emsSituationSection) {
 	
 	
 	
@@ -1324,8 +1323,8 @@ public class EMSSituationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  InitialPatientAcuity getInitialPatientAcuity(EMSSituationSection emsSituationSection) {
+
+	public static InitialPatientAcuity getInitialPatientAcuity(EMSSituationSection emsSituationSection) {
 	
 	
 	

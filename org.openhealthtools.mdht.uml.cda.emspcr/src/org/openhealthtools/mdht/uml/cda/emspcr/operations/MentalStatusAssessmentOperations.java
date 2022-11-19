@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class MentalStatusAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentTemplateId(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentTemplateId(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentMoodCode(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentMoodCode(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +234,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +247,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentCodeP(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentCodeP(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -327,9 +325,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,8 +338,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentCode(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentCode(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +408,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +421,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentEffectiveTime(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentEffectiveTime(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -479,7 +477,7 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17286-8' or value.code = 'LA17287-6' or value.code = 'LA17288-4' or value.code = 'LA17289-2' or value.code = 'LA17290-0' or value.code = 'LA18259-4' or value.code = 'LA6560-2' or value.code = 'LA7438-0' or value.code = 'LA9343-0' or value.code = 'LA6150-2' or value.code = 'LA23818-0' or value.code = 'LA17666-1' or value.code = 'NewLA-3519039' or value.code = 'NewLA-3519037' or value.code = 'NewLA-3519043' or value.code = 'NewLA-3519029' or value.code = 'NewLA-3519031' or value.code = 'NewLA-3519035' or value.code = 'NewLA-3519041' or value.code = 'NewLA-3519045' or value.code = 'NewLA-3519047' or value.code = 'NewLA-3519049' or value.code = 'NewLA-3519033')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17286-8' or value.code = 'LA17287-6' or value.code = 'LA17288-4' or value.code = 'LA17289-2' or value.code = 'LA17290-0' or value.code = 'LA18259-4' or value.code = 'LA6560-2' or value.code = 'LA7438-0' or value.code = 'LA9343-0' or value.code = 'LA6150-2' or value.code = 'LA23818-0' or value.code = 'LA17666-1' or value.code = 'LA17313-0' or value.code = 'LA32948-4' or value.code = 'LA17678-6' or value.code = 'LA32951-8' or value.code = 'LA17307-2' or value.code = 'LA32953-4' or value.code = 'LA32950-0' or value.code = 'LA32956-7' or value.code = 'LA17317-1' or value.code = 'LA32955-9' or value.code = 'LA17668-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Value</em>}' invariant operation.
@@ -489,9 +487,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,8 +500,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentValue(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentValue(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -566,9 +564,8 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -580,8 +577,9 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMentalStatusAssessmentValueP(MentalStatusAssessment mentalStatusAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMentalStatusAssessmentValueP(MentalStatusAssessment mentalStatusAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

@@ -50,7 +50,8 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProviderPrimaryImpressionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProviderPrimaryImpressionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(this, diagnostics, context);
 	}
 
@@ -107,13 +108,14 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	public ProviderPrimaryImpression init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProviderPrimaryImpressionImpl
+} // ProviderPrimaryImpressionImpl

@@ -1,0 +1,20 @@
+<!-- ECGParticipantRole -->
+
+<pattern id="p-PatientCareReport_2_ECGParticipantRole_playingDevice_4_23_7_i_a-error_mdht" see="#p-PatientCareReport_2_ECGParticipantRole_playingDevice_4_23_7_i_a-error_mdht" name="p-PatientCareReport_2_ECGParticipantRole_playingDevice_4_23_7_i_a-error_mdht">
+		<!--
+			UML path: /CardiacRhythm/participant1/participantRole
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component47/observation/participant1/participantRole
+			UML qualified name: emspcr::CardiacRhythm::ECGParticipant::ECGParticipantRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.169']/cda:participant/cda:participantRole">
+		<!--
+			OCL: self.playingDevice->one(playingDevice : cda::Device | not playingDevice.oclIsUndefined() and playingDevice.oclIsKindOf(emspcr::CardiacRhythm::ECGParticipant::ECGParticipantRole::ECGDevice))
+			Constraint name: CardiacRhythmECGParticipantECGParticipantRolePlayingDevice
+		-->
+	<assert test="count(cda:playingDevice)=1">Error: PatientCareReport - 4.23.7.i.a playingDevice
+		Conformance: SHALL contain exactly one [1..1] playingDevice (CONF:11129)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- GlasgowTotal -->
+
+<pattern id="p-PatientCareReport_2_GlasgowTotal_observation_4_57_6_i-error_mdht" see="#p-PatientCareReport_2_GlasgowTotal_observation_4_57_6_i-error_mdht" name="p-PatientCareReport_2_GlasgowTotal_observation_4_57_6_i-error_mdht">
+		<!--
+			UML path: /GlasgowComaScoreOrganizer/component44
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component48/organizer/component44
+			UML qualified name: emspcr::GlasgowComaScoreOrganizer::GlasgowTotal
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.170']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.158']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowTotal))
+			Constraint name: GlasgowComaScoreOrganizerGlasgowTotalObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.158'])=1">Error: PatientCareReport - 4.57.6.i observation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11685)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

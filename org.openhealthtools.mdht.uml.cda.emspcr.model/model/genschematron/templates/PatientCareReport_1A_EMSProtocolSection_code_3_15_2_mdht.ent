@@ -1,0 +1,30 @@
+<!-- EMSProtocolSection: 2.16.840.1.1133883.17.3.10.1.7 -->
+
+<pattern id="p-PatientCareReport_1A_EMSProtocolSection_code_3_15_2-error_mdht" see="#p-PatientCareReport_1A_EMSProtocolSection_code_3_15_2-error_mdht" name="p-PatientCareReport_1A_EMSProtocolSection_code_3_15_2-error_mdht">
+		<!--
+			UML path: /EMSProtocolSection
+			UML root path: /PatientCareReport/ProtocolSection
+			UML qualified name: emspcr::EMSProtocolSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67663-5' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSProtocolSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67663-5' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.15.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11639)/@code=&quot;67663-5&quot; EMS Protocol Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10713)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSProtocolSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.15.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11639)/@code=&quot;67663-5&quot; EMS Protocol Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10713)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

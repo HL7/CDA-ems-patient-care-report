@@ -1,0 +1,22 @@
+<!-- HeadAssessment: 2.16.840.1.1133883.17.3.10.1.113 -->
+
+<pattern id="p-PatientCareReport_2_HeadAssessment_value_4_63_5-error_mdht" see="#p-PatientCareReport_2_HeadAssessment_value_4_63_5-error_mdht" name="p-PatientCareReport_2_HeadAssessment_value_4_63_5-error_mdht">
+		<!--
+			UML path: /HeadAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component412/observation
+			UML qualified name: emspcr::HeadAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.113']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17210-8' or value.code = 'LA17211-6' or value.code = 'LA17213-2' or value.code = 'LA17214-0' or value.code = 'LA17212-4' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA6626-1' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4' or value.code = 'LA7423-2' or value.code = 'LA17229-8' or value.code = 'LA22440-4' or value.code = 'LA17709-9'))
+			Constraint name: HeadAssessmentValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17208-2' or @code = 'LA17209-0' or @code = 'LA17210-8' or @code = 'LA17211-6' or @code = 'LA17213-2' or @code = 'LA17214-0' or @code = 'LA17212-4' or @code = 'LA18220-6' or @code = 'LA18221-4' or @code = 'LA18222-2' or @code = 'LA18223-0' or @code = 'LA18224-8' or @code = 'LA18225-5' or @code = 'LA18226-3' or @code = 'LA6626-1' or @code = 'LA7410-9' or @code = 'LA7452-1' or @code = 'LA7460-4' or @code = 'LA7423-2' or @code = 'LA17229-8' or @code = 'LA22440-4' or @code = 'LA17709-9'))])">Error: PatientCareReport - 4.63.5 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot;, which SHALL be selected from ValueSet HeadAssessmentFinding 2.16.840.1.113883.17.3.11.26 DYNAMIC (CONF:10374)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

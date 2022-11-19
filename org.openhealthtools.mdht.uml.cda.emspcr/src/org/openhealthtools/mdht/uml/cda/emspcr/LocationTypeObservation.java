@@ -89,10 +89,11 @@ public interface LocationTypeObservation extends Observation {
 	 * @generated
 	 */
 	public LocationTypeObservation init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LocationTypeObservation

@@ -98,13 +98,14 @@ public class UnitNotifiedTimeImpl extends ObservationImpl implements UnitNotifie
 	public UnitNotifiedTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public UnitNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public UnitNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //UnitNotifiedTimeImpl
+} // UnitNotifiedTimeImpl

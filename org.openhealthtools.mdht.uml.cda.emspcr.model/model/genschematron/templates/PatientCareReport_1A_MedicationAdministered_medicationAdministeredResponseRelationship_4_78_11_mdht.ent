@@ -1,0 +1,20 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_medicationAdministeredResponseRelationship_4_78_11-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_medicationAdministeredResponseRelationship_4_78_11-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_medicationAdministeredResponseRelationship_4_78_11-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(emspcr::MedicationAdministered::MedicationAdministeredResponseRelationship))
+			Constraint name: MedicationAdministeredMedicationAdministeredResponseRelationship
+		-->
+	<assert test="count(cda:entryRelationship[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.106'])=1">Error: PatientCareReport - 4.78.11 medicationAdministeredResponseRelationship
+		Conformance: SHALL contain exactly one [1..1] entryRelationship (CONF:10453)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

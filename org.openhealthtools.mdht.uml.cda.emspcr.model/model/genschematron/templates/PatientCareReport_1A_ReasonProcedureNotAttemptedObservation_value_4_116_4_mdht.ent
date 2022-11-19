@@ -1,0 +1,30 @@
+<!-- ReasonProcedureNotAttemptedObservation: 2.16.840.1.1133883.17.3.10.1.137 -->
+
+<pattern id="p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_value_4_116_4-error_mdht" see="#p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_value_4_116_4-error_mdht" name="p-PatientCareReport_1A_ReasonProcedureNotAttemptedObservation_value_4_116_4-error_mdht">
+		<!--
+			UML path: /ReasonProcedureNotAttemptedObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ReasonProcedureNotAttemptedRelationship/ReasonProcedureNotAttemptedObservation
+			UML qualified name: emspcr::ReasonProcedureNotAttemptedObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.137']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8' or value.code = 'LA17063-1' or value.code = 'LA17064-9' or value.code = 'LA17065-6'))
+			Constraint name: ReasonProcedureNotAttemptedObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA15185-4' or @code = 'LA18925-0' or @code = 'LA4216-3' or @code = 'LA4389-8' or @code = 'LA17063-1' or @code = 'LA17064-9' or @code = 'LA17065-6'))])">Error: PatientCareReport - 4.116.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11264), which SHALL be selected from ValueSet Reason Procedure not Performed Superset 2.16.840.1.113883.17.3.11.100 DYNAMIC (CONF:11265)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ReasonProcedureNotAttemptedObservationValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.116.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11264), which SHALL be selected from ValueSet Reason Procedure not Performed Superset 2.16.840.1.113883.17.3.11.100 DYNAMIC (CONF:11265)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

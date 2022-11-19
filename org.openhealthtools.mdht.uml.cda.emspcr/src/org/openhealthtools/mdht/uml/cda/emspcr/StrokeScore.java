@@ -114,7 +114,7 @@ public interface StrokeScore extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode-&gt;isEmpty() or self.methodCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.methodCode-&gt;size() = 1 and self.methodCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17110-0\' or value.code = \'LA17112-6\' or value.code = \'LA17113-4\' or value.code = \'LA18300-6\' or value.code = \'LA3774-2\' or value.code = \'LA24430-3\' or value.code = \'NewLA-3330023\' or value.code = \'NewLA-3330021\' or value.code = \'NewLA-3330019\' or value.code = \'NewLA-3330017\' or value.code = \'NewLA-3330015\' or value.code = \'NewLA-3330004\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode-&gt;isEmpty() or self.methodCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.methodCode-&gt;size() = 1 and self.methodCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17110-0\' or value.code = \'LA17112-6\' or value.code = \'LA17113-4\' or value.code = \'LA18300-6\' or value.code = \'LA3774-2\' or value.code = \'LA24430-3\' or value.code = \'LA33001-1\' or value.code = \'LA33000-3\' or value.code = \'LA32999-7\' or value.code = \'LA32998-9\' or value.code = \'LA32997-1\' or value.code = \'LA33002-9\')))'"
 	 * @generated
 	 */
 	boolean validateStrokeScoreMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -137,10 +137,11 @@ public interface StrokeScore extends Observation {
 	 * @generated
 	 */
 	public StrokeScore init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // StrokeScore

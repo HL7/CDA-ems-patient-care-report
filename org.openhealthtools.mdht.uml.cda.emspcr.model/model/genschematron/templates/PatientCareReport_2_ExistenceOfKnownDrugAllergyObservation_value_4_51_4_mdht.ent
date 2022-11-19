@@ -1,0 +1,20 @@
+<!-- ExistenceOfKnownDrugAllergyObservation: 2.16.840.1.1133883.17.3.10.1.102 -->
+
+<pattern id="p-PatientCareReport_2_ExistenceOfKnownDrugAllergyObservation_value_4_51_4-error_mdht" see="#p-PatientCareReport_2_ExistenceOfKnownDrugAllergyObservation_value_4_51_4-error_mdht" name="p-PatientCareReport_2_ExistenceOfKnownDrugAllergyObservation_value_4_51_4-error_mdht">
+		<!--
+			UML path: /ExistenceOfKnownDrugAllergyObservation
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer/component42/observation
+			UML qualified name: emspcr::ExistenceOfKnownDrugAllergyObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.102']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL))
+			Constraint name: ExistenceOfKnownDrugAllergyObservationValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='BL')])">Error: PatientCareReport - 4.51.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;BL&quot; (CONF:10204)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

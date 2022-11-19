@@ -98,13 +98,14 @@ public class GlasgowEyeImpl extends ObservationImpl implements GlasgowEye {
 	public GlasgowEye init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //GlasgowEyeImpl
+} // GlasgowEyeImpl

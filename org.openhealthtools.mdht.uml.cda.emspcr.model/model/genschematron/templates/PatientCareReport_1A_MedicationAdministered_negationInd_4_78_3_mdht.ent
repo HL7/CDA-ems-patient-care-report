@@ -1,0 +1,20 @@
+<!-- MedicationAdministered: 2.16.840.1.1133883.17.3.10.1.72 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAdministered_negationInd_4_78_3-error_mdht" see="#p-PatientCareReport_1A_MedicationAdministered_negationInd_4_78_3-error_mdht" name="p-PatientCareReport_1A_MedicationAdministered_negationInd_4_78_3-error_mdht">
+		<!--
+			UML path: /MedicationAdministered
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered
+			UML qualified name: emspcr::MedicationAdministered
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']">
+		<!--
+			OCL: (not self.negationInd.oclIsUndefined()) implies (not self.negationInd.oclIsUndefined())
+			Constraint name: MedicationAdministeredNegationInd
+		-->
+	<assert test="not(@negationInd) or @negationInd">Error: PatientCareReport - 4.78.3 negationInd
+		Conformance: MAY contain zero or one [0..1] @negationInd (CONF:10448)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

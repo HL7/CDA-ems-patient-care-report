@@ -1,0 +1,20 @@
+<!-- PatientCareReport: 2.16.840.1.1133883.17.3.10.2 -->
+
+<pattern id="p-PatientCareReport_1A_PatientCareReport_relatedDocument_2_1_14-error_mdht" see="#p-PatientCareReport_1A_PatientCareReport_relatedDocument_2_1_14-error_mdht" name="p-PatientCareReport_1A_PatientCareReport_relatedDocument_2_1_14-error_mdht">
+		<!--
+			UML path: /PatientCareReport
+			UML root path: /PatientCareReport
+			UML qualified name: emspcr::PatientCareReport
+		-->
+	<rule context="/cda:ClinicalDocument">
+		<!--
+			OCL: self.relatedDocument->select(relatedDocument : cda::RelatedDocument | not relatedDocument.oclIsUndefined() and relatedDocument.oclIsKindOf(emspcr::PatientCareReport::ParentDocumentRelationship))->size() <= 1
+			Constraint name: PatientCareReportRelatedDocument
+		-->
+	<assert test="count(cda:relatedDocument) &lt;= 1">Error: PatientCareReport - 2.1.14 relatedDocument
+		Conformance: MAY contain zero or one [0..1] relatedDocument (CONF:10029)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

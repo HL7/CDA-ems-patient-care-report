@@ -1,0 +1,30 @@
+<!-- MentalStatusAssessment: 2.16.840.1.1133883.17.3.10.1.122 -->
+
+<pattern id="p-PatientCareReport_2_MentalStatusAssessment_value_4_83_5-error_mdht" see="#p-PatientCareReport_2_MentalStatusAssessment_value_4_83_5-error_mdht" name="p-PatientCareReport_2_MentalStatusAssessment_value_4_83_5-error_mdht">
+		<!--
+			UML path: /MentalStatusAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component14/observation
+			UML qualified name: emspcr::MentalStatusAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.122']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17286-8' or value.code = 'LA17287-6' or value.code = 'LA17288-4' or value.code = 'LA17289-2' or value.code = 'LA17290-0' or value.code = 'LA18259-4' or value.code = 'LA6560-2' or value.code = 'LA7438-0' or value.code = 'LA9343-0' or value.code = 'LA6150-2' or value.code = 'LA23818-0' or value.code = 'LA17666-1' or value.code = 'LA17313-0' or value.code = 'LA32948-4' or value.code = 'LA17678-6' or value.code = 'LA32951-8' or value.code = 'LA17307-2' or value.code = 'LA32953-4' or value.code = 'LA32950-0' or value.code = 'LA32956-7' or value.code = 'LA17317-1' or value.code = 'LA32955-9' or value.code = 'LA17668-7'))
+			Constraint name: MentalStatusAssessmentValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17286-8' or @code = 'LA17287-6' or @code = 'LA17288-4' or @code = 'LA17289-2' or @code = 'LA17290-0' or @code = 'LA18259-4' or @code = 'LA6560-2' or @code = 'LA7438-0' or @code = 'LA9343-0' or @code = 'LA6150-2' or @code = 'LA23818-0' or @code = 'LA17666-1' or @code = 'LA17313-0' or @code = 'LA32948-4' or @code = 'LA17678-6' or @code = 'LA32951-8' or @code = 'LA17307-2' or @code = 'LA32953-4' or @code = 'LA32950-0' or @code = 'LA32956-7' or @code = 'LA17317-1' or @code = 'LA32955-9' or @code = 'LA17668-7'))])">Error: PatientCareReport - 4.83.5 value
+		Conformance: SHOULD contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11608), which SHALL be selected from ValueSet MentalStatusFinding 2.16.840.1.113883.17.3.11.84 DYNAMIC (CONF:10412)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: MentalStatusAssessmentValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.83.5 value
+		Conformance: SHOULD contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11608), which SHALL be selected from ValueSet MentalStatusFinding 2.16.840.1.113883.17.3.11.84 DYNAMIC (CONF:10412)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

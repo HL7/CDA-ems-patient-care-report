@@ -101,10 +101,11 @@ public interface BloodGlucose extends Observation {
 	 * @generated
 	 */
 	public BloodGlucose init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BloodGlucose init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public BloodGlucose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BloodGlucose

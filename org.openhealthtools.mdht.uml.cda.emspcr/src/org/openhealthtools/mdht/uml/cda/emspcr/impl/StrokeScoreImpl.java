@@ -134,13 +134,14 @@ public class StrokeScoreImpl extends ObservationImpl implements StrokeScore {
 	public StrokeScore init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //StrokeScoreImpl
+} // StrokeScoreImpl

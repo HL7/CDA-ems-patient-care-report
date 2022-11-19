@@ -89,10 +89,11 @@ public interface BodyTemperature extends Observation {
 	 * @generated
 	 */
 	public BodyTemperature init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BodyTemperature

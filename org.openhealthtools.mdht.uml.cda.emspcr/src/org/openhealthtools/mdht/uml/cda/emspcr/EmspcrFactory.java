@@ -1578,4 +1578,4 @@ public interface EmspcrFactory extends EFactory {
 	 */
 	EmspcrPackage getEmspcrPackage();
 
-} //EmspcrFactory
+} // EmspcrFactory

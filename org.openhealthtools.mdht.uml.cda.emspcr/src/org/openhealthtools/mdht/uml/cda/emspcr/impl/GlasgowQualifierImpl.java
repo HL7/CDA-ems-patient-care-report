@@ -107,13 +107,14 @@ public class GlasgowQualifierImpl extends ObservationImpl implements GlasgowQual
 	public GlasgowQualifier init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //GlasgowQualifierImpl
+} // GlasgowQualifierImpl

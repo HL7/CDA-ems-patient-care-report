@@ -107,13 +107,14 @@ public class VehicleImpactAreaImpl extends ObservationImpl implements VehicleImp
 	public VehicleImpactArea init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public VehicleImpactArea init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public VehicleImpactArea init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //VehicleImpactAreaImpl
+} // VehicleImpactAreaImpl

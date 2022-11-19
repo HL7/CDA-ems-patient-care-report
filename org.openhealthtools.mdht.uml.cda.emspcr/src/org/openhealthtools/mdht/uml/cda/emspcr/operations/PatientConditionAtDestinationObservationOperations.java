@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class PatientConditionAtDestinationObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationTemplateId(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationTemplateId(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +157,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +170,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationMoodCode(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationMoodCode(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +235,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +248,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationCodeP(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationCodeP(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +327,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +340,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationCode(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationCode(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -401,7 +403,7 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 */
 	protected static final String VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17696-8' or value.code = 'LA17695-0' or value.code = 'LA17694-3' or value.code = 'LA17697-6' or value.code = 'NewLA-4219011')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17696-8' or value.code = 'LA17695-0' or value.code = 'LA17694-3' or value.code = 'LA17697-6' or value.code = 'LA32920-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientConditionAtDestinationObservationValue(PatientConditionAtDestinationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition At Destination Observation Value</em>}' invariant operation.
@@ -411,9 +413,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +426,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationValue(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationValue(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +491,8 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +504,10 @@ public class PatientConditionAtDestinationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientConditionAtDestinationObservationValueP(PatientConditionAtDestinationObservation patientConditionAtDestinationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePatientConditionAtDestinationObservationValueP(
+			PatientConditionAtDestinationObservation patientConditionAtDestinationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

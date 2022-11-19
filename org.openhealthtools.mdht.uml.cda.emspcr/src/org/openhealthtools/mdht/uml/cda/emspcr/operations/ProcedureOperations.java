@@ -55,15 +55,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ProcedureOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,9 +90,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_ABANDONED_PROCEDURE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_ABANDONED_PROCEDURE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,8 +103,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureAbandonedProcedureRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureAbandonedProcedureRelationship(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -169,9 +167,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PRIOR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PRIOR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,8 +180,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedurePriorRelationship(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -246,9 +244,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,8 +257,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureNumberOfAttemptsRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureNumberOfAttemptsRelationship(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -323,9 +321,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_SUCCESSFUL_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_SUCCESSFUL_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,8 +334,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureSuccessfulRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureSuccessfulRelationship(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -400,9 +398,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_COMPLICATIONS_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_COMPLICATIONS_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,8 +411,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureComplicationsRelationship(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -477,9 +475,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -491,8 +488,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePatientResponseRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedurePatientResponseRelationship(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -554,9 +552,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -568,8 +565,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePerformer(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedurePerformer(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -631,9 +629,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_AIRWAY_CONFIRMATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_AIRWAY_CONFIRMATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -645,8 +642,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureAirwayConfirmationRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureAirwayConfirmationRelationship(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -708,9 +706,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_REASON_PROCEDURE_NOT_ATTEMPTED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_REASON_PROCEDURE_NOT_ATTEMPTED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -722,8 +719,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureReasonProcedureNotAttemptedRelationship(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureReasonProcedureNotAttemptedRelationship(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -785,9 +783,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -799,8 +796,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -864,9 +862,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -878,8 +875,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -941,9 +939,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -955,8 +952,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureCodeP(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureCodeP(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1018,9 +1016,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1032,8 +1029,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureNegationInd(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureNegationInd(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1095,9 +1093,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1109,8 +1106,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureStatusCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureStatusCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1172,9 +1170,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1186,8 +1183,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureEffectiveTime(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureEffectiveTime(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1241,7 +1239,7 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18757-7' or value.code = 'LA18758-5' or value.code = 'LA18790-8' or value.code = 'LA18791-6' or value.code = 'LA18792-4' or value.code = 'LA18793-2' or value.code = 'LA18794-0' or value.code = 'LA18795-7' or value.code = 'LA18796-5' or value.code = 'LA18797-3' or value.code = 'LA18798-1' or value.code = 'LA18799-9' or value.code = 'LA18800-5' or value.code = 'LA18801-3' or value.code = 'LA18802-1' or value.code = 'LA18803-9' or value.code = 'LA18804-7' or value.code = 'LA18805-4' or value.code = 'LA18806-2' or value.code = 'LA18807-0' or value.code = 'LA18808-8' or value.code = 'LA18809-6' or value.code = 'LA18810-4' or value.code = 'LA18811-2' or value.code = 'LA18812-0' or value.code = 'LA18813-8' or value.code = 'LA18814-6' or value.code = 'LA18815-3' or value.code = 'LA18816-1' or value.code = 'LA18817-9' or value.code = 'LA18818-7' or value.code = 'LA18112-5' or value.code = 'LA18113-3' or value.code = 'LA24415-4' or value.code = 'LA24416-2' or value.code = 'LA24417-0' or value.code = 'LA24418-8' or value.code = 'LA24419-6' or value.code = 'LA24420-4' or value.code = 'NewLA-3913081' or value.code = 'NewLA-3913079')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18757-7' or value.code = 'LA18758-5' or value.code = 'LA18790-8' or value.code = 'LA18791-6' or value.code = 'LA18792-4' or value.code = 'LA18793-2' or value.code = 'LA18794-0' or value.code = 'LA18795-7' or value.code = 'LA18796-5' or value.code = 'LA18797-3' or value.code = 'LA18798-1' or value.code = 'LA18799-9' or value.code = 'LA18800-5' or value.code = 'LA18801-3' or value.code = 'LA18802-1' or value.code = 'LA18803-9' or value.code = 'LA18804-7' or value.code = 'LA18805-4' or value.code = 'LA18806-2' or value.code = 'LA18807-0' or value.code = 'LA18808-8' or value.code = 'LA18809-6' or value.code = 'LA18810-4' or value.code = 'LA18811-2' or value.code = 'LA18812-0' or value.code = 'LA18813-8' or value.code = 'LA18814-6' or value.code = 'LA18815-3' or value.code = 'LA18816-1' or value.code = 'LA18817-9' or value.code = 'LA18818-7' or value.code = 'LA18112-5' or value.code = 'LA18113-3' or value.code = 'LA24415-4' or value.code = 'LA24416-2' or value.code = 'LA24417-0' or value.code = 'LA24418-8' or value.code = 'LA24419-6' or value.code = 'LA24420-4' or value.code = 'LA18765-0' or value.code = 'LA18766-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureApproachSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Approach Site Code</em>}' invariant operation.
@@ -1251,9 +1249,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1265,8 +1262,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureApproachSiteCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureApproachSiteCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1328,9 +1326,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1342,8 +1339,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureApproachSiteCodeP(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureApproachSiteCodeP(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1405,9 +1403,8 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_DEVICE_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_DEVICE_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1419,8 +1416,9 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureDeviceParticipation(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureDeviceParticipation(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

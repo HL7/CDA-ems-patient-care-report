@@ -41,15 +41,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DispatchLocationNameOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +76,8 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +89,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationNameTemplateId(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationNameTemplateId(DispatchLocationName dispatchLocationName,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -155,9 +153,8 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,8 +166,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationNameMoodCode(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationNameMoodCode(DispatchLocationName dispatchLocationName,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationNameCode(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationNameCode(DispatchLocationName dispatchLocationName,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -311,9 +309,8 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,8 +322,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationNameValue(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationNameValue(DispatchLocationName dispatchLocationName,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

@@ -89,10 +89,11 @@ public interface DispatchNotifiedTime extends Observation {
 	 * @generated
 	 */
 	public DispatchNotifiedTime init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DispatchNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DispatchNotifiedTime

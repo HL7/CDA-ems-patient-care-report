@@ -101,10 +101,11 @@ public interface PrimarySymptom extends Observation {
 	 * @generated
 	 */
 	public PrimarySymptom init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PrimarySymptom init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PrimarySymptom init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrimarySymptom

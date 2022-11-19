@@ -1,0 +1,20 @@
+<!-- AuthoringDevice -->
+
+<pattern id="p-PatientCareReport_1A_AuthoringDevice_manufacturerModelName_2_1_10_ii_e_1-error_mdht" see="#p-PatientCareReport_1A_AuthoringDevice_manufacturerModelName_2_1_10_ii_e_1-error_mdht" name="p-PatientCareReport_1A_AuthoringDevice_manufacturerModelName_2_1_10_ii_e_1-error_mdht">
+		<!--
+			UML path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedAuthoringDevice
+			UML root path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedAuthoringDevice
+			UML qualified name: consol::GeneralHeaderConstraints::Author::AssignedAuthor::AuthoringDevice
+		-->
+	<rule context="/cda:ClinicalDocument/cda:author/cda:assignedAuthor/cda:assignedAuthoringDevice">
+		<!--
+			OCL: not self.manufacturerModelName.oclIsUndefined()
+			Constraint name: GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName
+		-->
+	<assert test="cda:manufacturerModelName">Error: PatientCareReport - 2.1.10.ii.e.1 manufacturerModelName
+		Conformance: SHALL contain exactly one [1..1] manufacturerModelName (CONF:16784, R2.1=CONF:1198-16784)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

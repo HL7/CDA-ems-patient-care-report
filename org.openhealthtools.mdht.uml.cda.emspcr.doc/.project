@@ -25,4 +25,11 @@
 	<natures>
 		<nature>org.openhealthtools.mdht.uml.cda.ui.org.openhealthtools.mdht.uml.cda.nature.id</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>temp</name>
+			<type>2</type>
+			<location>/Users/seanmuir/Workspaces/runtime-EclipseApplication/.metadata/.plugins/org.eclipse.mdht.dita.ui/temp</location>
+		</link>
+	</linkedResources>
 </projectDescription>

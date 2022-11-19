@@ -1,0 +1,30 @@
+<!-- DestinationWard: 2.16.840.1.1133883.17.3.10.1.186 -->
+
+<pattern id="p-PatientCareReport_1A_DestinationWard_code_4_35_4-error_mdht" see="#p-PatientCareReport_1A_DestinationWard_code_4_35_4-error_mdht" name="p-PatientCareReport_1A_DestinationWard_code_4_35_4-error_mdht">
+		<!--
+			UML path: /DestinationWard
+			UML root path: /PatientCareReport/DispositionSection/destinationWard
+			UML qualified name: emspcr::DestinationWard
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:destinationWard[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.186']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: DestinationWardCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.35.4 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11364)/@code=&quot;77154-3&quot; Hospital inpatient destination (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:11365)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '77154-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: DestinationWardCode
+		-->
+	<assert test="cda:code and cda:code[@code = '77154-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.35.4 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11364)/@code=&quot;77154-3&quot; Hospital inpatient destination (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:11365)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

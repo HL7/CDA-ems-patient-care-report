@@ -78,7 +78,7 @@ public interface BarriersToPatientCare extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17306-4\' or value.code = \'LA17307-2\' or value.code = \'LA17308-0\' or value.code = \'LA17309-8\' or value.code = \'LA17310-6\' or value.code = \'LA17311-4\' or value.code = \'LA17312-2\' or value.code = \'LA17313-0\' or value.code = \'LA17314-8\' or value.code = \'LA17315-5\' or value.code = \'LA17316-3\' or value.code = \'LA17317-1\' or value.code = \'LA17318-9\' or value.code = \'LA17711-5\' or value.code = \'LA6301-1\' or value.code = \'LA23824-8\' or value.code = \'NewLA-3101035\' or value.code = \'NewLA-3101033\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17306-4\' or value.code = \'LA17307-2\' or value.code = \'LA17308-0\' or value.code = \'LA17309-8\' or value.code = \'LA17310-6\' or value.code = \'LA17311-4\' or value.code = \'LA17312-2\' or value.code = \'LA17313-0\' or value.code = \'LA17314-8\' or value.code = \'LA17315-5\' or value.code = \'LA17316-3\' or value.code = \'LA17317-1\' or value.code = \'LA17318-9\' or value.code = \'LA17711-5\' or value.code = \'LA6301-1\' or value.code = \'LA23824-8\' or value.code = \'LA32960-9\' or value.code = \'LA32961-7\')))'"
 	 * @generated
 	 */
 	boolean validateBarriersToPatientCareValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -101,10 +101,11 @@ public interface BarriersToPatientCare extends Observation {
 	 * @generated
 	 */
 	public BarriersToPatientCare init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BarriersToPatientCare

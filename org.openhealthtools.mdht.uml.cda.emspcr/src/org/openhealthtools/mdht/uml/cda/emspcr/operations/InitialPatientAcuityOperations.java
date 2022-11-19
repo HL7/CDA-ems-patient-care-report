@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class InitialPatientAcuityOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityTemplateId(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityTemplateId(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityMoodCode(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityMoodCode(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityCodeP(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityCodeP(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityCode(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityCode(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -401,7 +399,7 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 */
 	protected static final String VALIDATE_INITIAL_PATIENT_ACUITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17696-8' or value.code = 'LA17695-0' or value.code = 'LA17694-3' or value.code = 'LA17697-6' or value.code = 'NewLA-4219011')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17696-8' or value.code = 'LA17695-0' or value.code = 'LA17694-3' or value.code = 'LA17697-6' or value.code = 'LA32920-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInitialPatientAcuityValue(InitialPatientAcuity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Initial Patient Acuity Value</em>}' invariant operation.
@@ -411,9 +409,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityValue(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityValue(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_INITIAL_PATIENT_ACUITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class InitialPatientAcuityOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInitialPatientAcuityValueP(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInitialPatientAcuityValueP(InitialPatientAcuity initialPatientAcuity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

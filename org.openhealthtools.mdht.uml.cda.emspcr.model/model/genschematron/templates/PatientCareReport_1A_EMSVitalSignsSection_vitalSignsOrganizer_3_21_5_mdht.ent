@@ -1,0 +1,20 @@
+<!-- EMSVitalSignsSection: 2.16.840.1.1133883.17.3.10.1.23 -->
+
+<pattern id="p-PatientCareReport_1A_EMSVitalSignsSection_vitalSignsOrganizer_3_21_5-error_mdht" see="#p-PatientCareReport_1A_EMSVitalSignsSection_vitalSignsOrganizer_3_21_5-error_mdht" name="p-PatientCareReport_1A_EMSVitalSignsSection_vitalSignsOrganizer_3_21_5-error_mdht">
+		<!--
+			UML path: /EMSVitalSignsSection
+			UML root path: /PatientCareReport/VitalSignsSection
+			UML qualified name: emspcr::EMSVitalSignsSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::VitalSignsOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSVitalSignsSectionVitalSignsOrganizer
+		-->
+	<assert test="@nullFlavor = 'NI' or cda:entry[cda:organizer and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28' and @typeCode = 'COMP']">Error: PatientCareReport - 3.21.5 vitalSignsOrganizer
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..*] entry such that it  (CONF:10970)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- GlasgowComaScoreOrganizer: 2.16.840.1.1133883.17.3.10.1.170 -->
+
+<pattern id="p-PatientCareReport_2_GlasgowComaScoreOrganizer_component45_4_57_7-error_mdht" see="#p-PatientCareReport_2_GlasgowComaScoreOrganizer_component45_4_57_7-error_mdht" name="p-PatientCareReport_2_GlasgowComaScoreOrganizer_component45_4_57_7-error_mdht">
+		<!--
+			UML path: /GlasgowComaScoreOrganizer
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component48/organizer
+			UML qualified name: emspcr::GlasgowComaScoreOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.170']">
+		<!--
+			OCL: self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(emspcr::GlasgowComaScoreOrganizer::GlasgowVerbal))
+			Constraint name: GlasgowComaScoreOrganizerComponent45
+		-->
+	<assert test="count(cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.162'])=1">Error: PatientCareReport - 4.57.7 component45
+		Conformance: SHALL contain exactly one [1..1] component (CONF:11681)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- CarbonDioxide: 2.16.840.1.1133883.17.3.10.1.168 -->
+
+<pattern id="p-PatientCareReport_2_CarbonDioxide_effectiveTime_4_17_4-error_mdht" see="#p-PatientCareReport_2_CarbonDioxide_effectiveTime_4_17_4-error_mdht" name="p-PatientCareReport_2_CarbonDioxide_effectiveTime_4_17_4-error_mdht">
+		<!--
+			UML path: /CarbonDioxide
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component46/observation
+			UML qualified name: emspcr::CarbonDioxide
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.168']">
+		<!--
+			OCL: ((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+			Constraint name: CarbonDioxideEffectiveTime
+		-->
+	<assert test="not(cda:effectiveTime and not(cda:effectiveTime/@nullFlavor)) or cda:effectiveTime">Error: PatientCareReport - 4.17.4 effectiveTime
+		Conformance: MAY contain zero or one [0..1] effectiveTime (CONF:11308)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

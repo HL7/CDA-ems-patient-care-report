@@ -116,13 +116,14 @@ public class TransportModeQualifierImpl extends ObservationImpl implements Trans
 	public TransportModeQualifier init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TransportModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public TransportModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TransportModeQualifierImpl
+} // TransportModeQualifierImpl

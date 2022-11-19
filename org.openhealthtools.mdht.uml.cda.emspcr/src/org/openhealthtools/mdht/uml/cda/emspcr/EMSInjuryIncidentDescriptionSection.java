@@ -33,7 +33,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.17\' and id.extension = \'2022-01-01\')'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,7 +94,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryCauseCategory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,7 +107,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryMechanism) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,7 +120,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TraumaTriageCriteriaSteps1and2) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,7 +133,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TraumaTriageCriteriaSteps3and4) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,7 +146,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::VehicleImpactArea) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,7 +159,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PatientLocationInVehicle) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +172,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::VehicleOccupantSafetyEquipment) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,7 +185,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AirbagDeploymentStatus) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,7 +198,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::HeightOfFall) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +211,8 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::DisasterType) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,10 +310,11 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	 * @generated
 	 */
 	public EMSInjuryIncidentDescriptionSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSInjuryIncidentDescriptionSection

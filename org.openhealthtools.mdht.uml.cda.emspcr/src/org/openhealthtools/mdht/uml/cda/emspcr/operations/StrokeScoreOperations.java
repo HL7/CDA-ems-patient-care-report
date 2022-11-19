@@ -47,15 +47,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class StrokeScoreOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,9 +82,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,8 +95,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreTemplateId(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreTemplateId(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -161,9 +159,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,8 +172,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreMoodCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreMoodCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -238,9 +236,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,8 +249,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -329,9 +327,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,8 +340,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -412,9 +410,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreEffectiveTime(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreEffectiveTime(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -491,9 +489,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,8 +502,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreValue(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreValue(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -568,9 +566,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,8 +579,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreValueP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreValueP(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -637,7 +635,7 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17110-0' or value.code = 'LA17112-6' or value.code = 'LA17113-4' or value.code = 'LA18300-6' or value.code = 'LA3774-2' or value.code = 'LA24430-3' or value.code = 'NewLA-3330023' or value.code = 'NewLA-3330021' or value.code = 'NewLA-3330019' or value.code = 'NewLA-3330017' or value.code = 'NewLA-3330015' or value.code = 'NewLA-3330004')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17110-0' or value.code = 'LA17112-6' or value.code = 'LA17113-4' or value.code = 'LA18300-6' or value.code = 'LA3774-2' or value.code = 'LA24430-3' or value.code = 'LA33001-1' or value.code = 'LA33000-3' or value.code = 'LA32999-7' or value.code = 'LA32998-9' or value.code = 'LA32997-1' or value.code = 'LA33002-9')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStrokeScoreMethodCode(StrokeScore, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Stroke Score Method Code</em>}' invariant operation.
@@ -647,9 +645,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -661,8 +658,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreMethodCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreMethodCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -724,9 +722,8 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -738,8 +735,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateStrokeScoreMethodCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStrokeScoreMethodCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

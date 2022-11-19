@@ -78,7 +78,7 @@ public interface VehicleOccupantSafetyEquipment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA137-2\' or value.code = \'LA17375-9\' or value.code = \'LA17376-7\' or value.code = \'LA17377-5\' or value.code = \'LA17378-3\' or value.code = \'LA17379-1\' or value.code = \'LA17380-9\' or value.code = \'LA17382-5\' or value.code = \'LA46-8\' or value.code = \'LA9381-0\' or value.code = \'LA9391-9\' or value.code = \'LA9392-7\' or value.code = \'LA9393-5\' or value.code = \'NewLA-2907033\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA137-2\' or value.code = \'LA17375-9\' or value.code = \'LA17376-7\' or value.code = \'LA17377-5\' or value.code = \'LA17378-3\' or value.code = \'LA17379-1\' or value.code = \'LA17380-9\' or value.code = \'LA17382-5\' or value.code = \'LA46-8\' or value.code = \'LA9381-0\' or value.code = \'LA9391-9\' or value.code = \'LA9392-7\' or value.code = \'LA9393-5\' or value.code = \'LA11137-9\')))'"
 	 * @generated
 	 */
 	boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -101,10 +101,11 @@ public interface VehicleOccupantSafetyEquipment extends Observation {
 	 * @generated
 	 */
 	public VehicleOccupantSafetyEquipment init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VehicleOccupantSafetyEquipment

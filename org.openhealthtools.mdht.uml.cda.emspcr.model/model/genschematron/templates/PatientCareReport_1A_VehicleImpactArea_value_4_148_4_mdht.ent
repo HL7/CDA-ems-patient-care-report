@@ -1,0 +1,30 @@
+<!-- VehicleImpactArea: 2.16.840.1.1133883.17.3.10.1.54 -->
+
+<pattern id="p-PatientCareReport_1A_VehicleImpactArea_value_4_148_4-error_mdht" see="#p-PatientCareReport_1A_VehicleImpactArea_value_4_148_4-error_mdht" name="p-PatientCareReport_1A_VehicleImpactArea_value_4_148_4-error_mdht">
+		<!--
+			UML path: /VehicleImpactArea
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/vehicleImpactArea
+			UML qualified name: emspcr::VehicleImpactArea
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:vehicleImpactArea[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.54']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA10137-0' or value.code = 'LA10138-8' or value.code = 'LA10139-6' or value.code = 'LA10140-4' or value.code = 'LA10141-2' or value.code = 'LA13942-0' or value.code = 'LA14557-5' or value.code = 'LA14558-3' or value.code = 'LA6112-2' or value.code = 'LA6113-0' or value.code = 'LA6114-8' or value.code = 'LA6115-5'))
+			Constraint name: VehicleImpactAreaValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA10137-0' or @code = 'LA10138-8' or @code = 'LA10139-6' or @code = 'LA10140-4' or @code = 'LA10141-2' or @code = 'LA13942-0' or @code = 'LA14557-5' or @code = 'LA14558-3' or @code = 'LA6112-2' or @code = 'LA6113-0' or @code = 'LA6114-8' or @code = 'LA6115-5'))])">Error: PatientCareReport - 4.148.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11617), which SHALL be selected from ValueSet VehicleImpactArea 2.16.840.1.113883.17.3.11.5 DYNAMIC (CONF:10118)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: VehicleImpactAreaValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.148.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:11617), which SHALL be selected from ValueSet VehicleImpactArea 2.16.840.1.113883.17.3.11.5 DYNAMIC (CONF:10118)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

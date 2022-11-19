@@ -35,7 +35,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSInjuryIncidentDescr
  *
  * @generated
  */
-public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl implements EMSInjuryIncidentDescriptionSection {
+public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl
+		implements EMSInjuryIncidentDescriptionSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,7 +61,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -69,7 +71,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionCode(this, diagnostics, context);
 	}
 
@@ -78,7 +81,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionCodeP(this, diagnostics, context);
 	}
 
@@ -87,7 +91,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionTitle(this, diagnostics, context);
 	}
 
@@ -96,7 +101,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionText(this, diagnostics, context);
 	}
 
@@ -105,7 +111,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(this, diagnostics, context);
 	}
 
@@ -114,7 +121,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(this, diagnostics, context);
 	}
 
@@ -123,7 +131,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(this, diagnostics, context);
 	}
 
@@ -132,7 +141,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(this, diagnostics, context);
 	}
 
@@ -141,7 +151,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(this, diagnostics, context);
 	}
 
@@ -150,7 +161,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(this, diagnostics, context);
 	}
 
@@ -159,7 +171,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(this, diagnostics, context);
 	}
 
@@ -168,7 +181,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(this, diagnostics, context);
 	}
 
@@ -177,7 +191,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionHeightOfFall(this, diagnostics, context);
 	}
 
@@ -186,7 +201,8 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionDisasterType(this, diagnostics, context);
 	}
 
@@ -288,13 +304,14 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	public EMSInjuryIncidentDescriptionSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSInjuryIncidentDescriptionSectionImpl
+} // EMSInjuryIncidentDescriptionSectionImpl

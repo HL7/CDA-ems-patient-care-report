@@ -84,7 +84,7 @@ public interface MedicalSurgicalHistory extends Observation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Medical/Surgical HistoryValue'"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nnot value.code.oclIsUndefined()))'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nnot value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateMedicalSurgicalHistoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,7 +97,7 @@ public interface MedicalSurgicalHistory extends Observation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Medical/Surgical HistoryValueP'"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.value-&gt;isEmpty())  and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
 	boolean validateMedicalSurgicalHistoryValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,10 +121,11 @@ public interface MedicalSurgicalHistory extends Observation {
 	 * @generated
 	 */
 	public MedicalSurgicalHistory init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MedicalSurgicalHistory init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicalSurgicalHistory init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalSurgicalHistory

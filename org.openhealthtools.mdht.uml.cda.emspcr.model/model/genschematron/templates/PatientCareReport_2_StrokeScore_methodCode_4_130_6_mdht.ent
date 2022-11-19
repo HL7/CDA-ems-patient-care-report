@@ -1,0 +1,30 @@
+<!-- StrokeScore: 2.16.840.1.1133883.17.3.10.1.163 -->
+
+<pattern id="p-PatientCareReport_2_StrokeScore_methodCode_4_130_6-error_mdht" see="#p-PatientCareReport_2_StrokeScore_methodCode_4_130_6-error_mdht" name="p-PatientCareReport_2_StrokeScore_methodCode_4_130_6-error_mdht">
+		<!--
+			UML path: /StrokeScore
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component416/observation
+			UML qualified name: emspcr::StrokeScore
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.163']">
+		<!--
+			OCL: self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17110-0' or value.code = 'LA17112-6' or value.code = 'LA17113-4' or value.code = 'LA18300-6' or value.code = 'LA3774-2' or value.code = 'LA24430-3' or value.code = 'LA33001-1' or value.code = 'LA33000-3' or value.code = 'LA32999-7' or value.code = 'LA32998-9' or value.code = 'LA32997-1' or value.code = 'LA33002-9'))
+			Constraint name: StrokeScoreMethodCode
+		-->
+	<assert test="count(cda:methodCode) = 1 and not(cda:methodCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17110-0' or @code = 'LA17112-6' or @code = 'LA17113-4' or @code = 'LA18300-6' or @code = 'LA3774-2' or @code = 'LA24430-3' or @code = 'LA33001-1' or @code = 'LA33000-3' or @code = 'LA32999-7' or @code = 'LA32998-9' or @code = 'LA32997-1' or @code = 'LA33002-9'))])">Error: PatientCareReport - 4.130.6 methodCode
+		Conformance: SHALL contain exactly one [1..1] methodCode (CONF:10312), which SHALL be selected from ValueSet StrokeScale 2.16.840.1.113883.17.3.11.88 DYNAMIC (CONF:10311)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.methodCode->size() =  1
+			Constraint name: StrokeScoreMethodCodeP
+		-->
+	<assert test="count(cda:methodCode) = 1">Error: PatientCareReport - 4.130.6 methodCode
+		Conformance: SHALL contain exactly one [1..1] methodCode (CONF:10312), which SHALL be selected from ValueSet StrokeScale 2.16.840.1.113883.17.3.11.88 DYNAMIC (CONF:10311)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

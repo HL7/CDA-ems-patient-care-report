@@ -101,10 +101,11 @@ public interface ProtocolAgeCategory extends Observation {
 	 * @generated
 	 */
 	public ProtocolAgeCategory init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProtocolAgeCategory init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ProtocolAgeCategory init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProtocolAgeCategory

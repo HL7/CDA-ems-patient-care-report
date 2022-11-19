@@ -1,0 +1,20 @@
+<!-- BodyTemperature: 2.16.840.1.1133883.17.3.10.1.176 -->
+
+<pattern id="p-PatientCareReport_2_BodyTemperature_effectiveTime_4_14_4-error_mdht" see="#p-PatientCareReport_2_BodyTemperature_effectiveTime_4_14_4-error_mdht" name="p-PatientCareReport_2_BodyTemperature_effectiveTime_4_14_4-error_mdht">
+		<!--
+			UML path: /BodyTemperature
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/BodyTemperatureComponent/BodyTemperature
+			UML qualified name: emspcr::BodyTemperature
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.176']">
+		<!--
+			OCL: ((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+			Constraint name: BodyTemperatureEffectiveTime
+		-->
+	<assert test="not(cda:effectiveTime and not(cda:effectiveTime/@nullFlavor)) or cda:effectiveTime">Error: PatientCareReport - 4.14.4 effectiveTime
+		Conformance: MAY contain zero or one [0..1] effectiveTime (CONF:11279)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

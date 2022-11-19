@@ -1,0 +1,30 @@
+<!-- InitialPatientAcuity: 2.16.840.1.1133883.17.3.10.1.69 -->
+
+<pattern id="p-PatientCareReport_1A_InitialPatientAcuity_code_4_67_3-error_mdht" see="#p-PatientCareReport_1A_InitialPatientAcuity_code_4_67_3-error_mdht" name="p-PatientCareReport_1A_InitialPatientAcuity_code_4_67_3-error_mdht">
+		<!--
+			UML path: /InitialPatientAcuity
+			UML root path: /PatientCareReport/SituationSection/initialPatientAcuity
+			UML qualified name: emspcr::InitialPatientAcuity
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:initialPatientAcuity[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.69']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: InitialPatientAcuityCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.67.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10816)/@code=&quot;67493-7&quot; Initial patient acuity NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10817)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67493-7' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: InitialPatientAcuityCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67493-7' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.67.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10816)/@code=&quot;67493-7&quot; Initial patient acuity NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10817)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

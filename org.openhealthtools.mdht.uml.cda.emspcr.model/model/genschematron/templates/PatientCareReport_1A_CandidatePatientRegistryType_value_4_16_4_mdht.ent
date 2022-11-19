@@ -1,0 +1,30 @@
+<!-- CandidatePatientRegistryType: 2.16.840.1.1133883.17.3.10.1.94 -->
+
+<pattern id="p-PatientCareReport_1A_CandidatePatientRegistryType_value_4_16_4-error_mdht" see="#p-PatientCareReport_1A_CandidatePatientRegistryType_value_4_16_4-error_mdht" name="p-PatientCareReport_1A_CandidatePatientRegistryType_value_4_16_4-error_mdht">
+		<!--
+			UML path: /CandidatePatientRegistryType
+			UML root path: /PatientCareReport/ProtocolSection/candidatePatientRegistryType
+			UML qualified name: emspcr::CandidatePatientRegistryType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']/cda:candidatePatientRegistryType[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.94']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17057-3' or value.code = 'LA17058-1' or value.code = 'LA17059-9' or value.code = 'LA17398-1' or value.code = 'LA17399-9' or value.code = 'LA17400-5' or value.code = 'LA17401-3' or value.code = 'LA7318-4' or value.code = 'LA9535-1' or value.code = 'LA9553-4'))
+			Constraint name: CandidatePatientRegistryTypeValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17057-3' or @code = 'LA17058-1' or @code = 'LA17059-9' or @code = 'LA17398-1' or @code = 'LA17399-9' or @code = 'LA17400-5' or @code = 'LA17401-3' or @code = 'LA7318-4' or @code = 'LA9535-1' or @code = 'LA9553-4'))])">Error: PatientCareReport - 4.16.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10730), which SHALL be selected from ValueSet RegistryType 2.16.840.1.113883.17.3.11.74 DYNAMIC (CONF:10731)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: CandidatePatientRegistryTypeValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.16.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10730), which SHALL be selected from ValueSet RegistryType 2.16.840.1.113883.17.3.11.74 DYNAMIC (CONF:10731)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

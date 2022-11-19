@@ -1,0 +1,20 @@
+<!-- EMSSocialHistorySection: 2.16.840.1.1133883.17.3.10.1.22 -->
+
+<pattern id="p-PatientCareReport_1A_EMSSocialHistorySection_existenceOfDrugUseIndication_3_19_5-error_mdht" see="#p-PatientCareReport_1A_EMSSocialHistorySection_existenceOfDrugUseIndication_3_19_5-error_mdht" name="p-PatientCareReport_1A_EMSSocialHistorySection_existenceOfDrugUseIndication_3_19_5-error_mdht">
+		<!--
+			UML path: /EMSSocialHistorySection
+			UML root path: /PatientCareReport/SocialHistorySection
+			UML qualified name: emspcr::EMSSocialHistorySection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SocialHistorySection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.22']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ExistenceOfDrugUseIndication) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSSocialHistorySectionExistenceOfDrugUseIndication
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.70' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.19.5 existenceOfDrugUseIndication
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:10965)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

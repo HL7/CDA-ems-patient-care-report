@@ -101,10 +101,11 @@ public interface TraumaTriageCriteriaSteps3and4 extends Observation {
 	 * @generated
 	 */
 	public TraumaTriageCriteriaSteps3and4 init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public TraumaTriageCriteriaSteps3and4 init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public TraumaTriageCriteriaSteps3and4 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TraumaTriageCriteriaSteps3and4

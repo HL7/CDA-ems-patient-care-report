@@ -105,7 +105,8 @@ public interface EMSBillingSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::LevelOfServiceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,10 +132,11 @@ public interface EMSBillingSection extends Section {
 	 * @generated
 	 */
 	public EMSBillingSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSBillingSection

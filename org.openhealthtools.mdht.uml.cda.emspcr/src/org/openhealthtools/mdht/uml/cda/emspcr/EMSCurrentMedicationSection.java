@@ -94,7 +94,8 @@ public interface EMSCurrentMedicationSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::CurrentlyOnMedication) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,7 +107,8 @@ public interface EMSCurrentMedicationSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::CurrentMedication) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,10 +134,11 @@ public interface EMSCurrentMedicationSection extends Section {
 	 * @generated
 	 */
 	public EMSCurrentMedicationSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSCurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSCurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSCurrentMedicationSection

@@ -1,0 +1,30 @@
+<!-- ScenePatientCount: 2.16.840.1.1133883.17.3.10.1.86 -->
+
+<pattern id="p-PatientCareReport_1A_ScenePatientCount_value_4_128_4-error_mdht" see="#p-PatientCareReport_1A_ScenePatientCount_value_4_128_4-error_mdht" name="p-PatientCareReport_1A_ScenePatientCount_value_4_128_4-error_mdht">
+		<!--
+			UML path: /ScenePatientCount
+			UML root path: /PatientCareReport/SceneSection/scenePatientCount
+			UML qualified name: emspcr::ScenePatientCount
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SceneSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.8']/cda:scenePatientCount[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.86']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17717-2' or value.code = 'LA15382-7' or value.code = 'LA137-2'))
+			Constraint name: ScenePatientCountValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17717-2' or @code = 'LA15382-7' or @code = 'LA137-2'))])">Error: PatientCareReport - 4.128.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10751), which SHALL be selected from ValueSet PatientsAtScene 2.16.840.1.113883.17.3.11.110 DYNAMIC
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ScenePatientCountValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.128.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10751), which SHALL be selected from ValueSet PatientsAtScene 2.16.840.1.113883.17.3.11.110 DYNAMIC
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

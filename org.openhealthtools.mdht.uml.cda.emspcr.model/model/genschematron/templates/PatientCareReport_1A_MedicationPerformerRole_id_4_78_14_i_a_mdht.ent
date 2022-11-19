@@ -1,0 +1,20 @@
+<!-- MedicationPerformerRole -->
+
+<pattern id="p-PatientCareReport_1A_MedicationPerformerRole_id_4_78_14_i_a-error_mdht" see="#p-PatientCareReport_1A_MedicationPerformerRole_id_4_78_14_i_a-error_mdht" name="p-PatientCareReport_1A_MedicationPerformerRole_id_4_78_14_i_a-error_mdht">
+		<!--
+			UML path: /MedicationAdministered/MedicationPerformerParticipation/MedicationPerformerRole
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/MedicationPerformerParticipation/MedicationPerformerRole
+			UML qualified name: emspcr::MedicationAdministered::MedicationPerformerParticipation::MedicationPerformerRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:performer/cda:assignedEntity">
+		<!--
+			OCL: self.id->size() =  1
+			Constraint name: MedicationAdministeredMedicationPerformerParticipationMedicationPerformerRoleId
+		-->
+	<assert test="count(cda:id) = 1">Error: PatientCareReport - 4.78.14.i.a id
+		Conformance: SHALL contain exactly one [1..1] id (CONF:10484)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

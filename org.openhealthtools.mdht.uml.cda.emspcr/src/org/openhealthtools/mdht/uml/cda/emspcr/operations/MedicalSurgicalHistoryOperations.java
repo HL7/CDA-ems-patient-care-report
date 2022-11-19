@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryTemplateId(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryTemplateId(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryMoodCode(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryMoodCode(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +232,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +245,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryCodeP(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryCodeP(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -313,9 +311,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,8 +324,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryCode(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryCode(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -380,7 +378,7 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
 "not value.code.oclIsUndefined()))";
 
@@ -392,9 +390,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,8 +403,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryValue(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryValue(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -459,7 +457,7 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (( not self.value->isEmpty())  and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicalSurgicalHistoryValueP(MedicalSurgicalHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Surgical History Value P</em>}' invariant operation.
@@ -469,9 +467,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,8 +480,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryValueP(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryValueP(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -546,9 +544,8 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICAL_SURGICAL_HISTORY_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -560,8 +557,9 @@ public class MedicalSurgicalHistoryOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicalSurgicalHistoryNegationInd(MedicalSurgicalHistory medicalSurgicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicalSurgicalHistoryNegationInd(MedicalSurgicalHistory medicalSurgicalHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

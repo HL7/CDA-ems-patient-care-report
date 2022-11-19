@@ -1,0 +1,20 @@
+<!-- FirstUnitIndicator: 2.16.840.1.1133883.17.3.10.1.84 -->
+
+<pattern id="p-PatientCareReport_1A_FirstUnitIndicator_value_4_56_4-error_mdht" see="#p-PatientCareReport_1A_FirstUnitIndicator_value_4_56_4-error_mdht" name="p-PatientCareReport_1A_FirstUnitIndicator_value_4_56_4-error_mdht">
+		<!--
+			UML path: /FirstUnitIndicator
+			UML root path: /PatientCareReport/SceneSection/firstUnitIndicator
+			UML qualified name: emspcr::FirstUnitIndicator
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SceneSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.8']/cda:firstUnitIndicator[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.84']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL))
+			Constraint name: FirstUnitIndicatorValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='BL')])">Error: PatientCareReport - 4.56.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;BL&quot; (CONF:10743)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

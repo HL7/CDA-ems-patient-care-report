@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getScenePatientCount()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScenePatientCountTemplateId ScenePatientCountMoodCode ScenePatientCountCode ScenePatientCountCodeP ScenePatientCountValue' templateId.root='2.16.840.1.1133883.17.3.10.1.86' templateId.extension='2022-01-01' moodCode='EVN' code.code='67489-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Total patients at the scene NEMSIS' constraints.validation.dependOn.ScenePatientCountCode='ScenePatientCountCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScenePatientCountTemplateId ScenePatientCountMoodCode ScenePatientCountCode ScenePatientCountCodeP ScenePatientCountValue ScenePatientCountValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.86' templateId.extension='2022-01-01' moodCode='EVN' code.code='67489-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Total patients at the scene NEMSIS' constraints.validation.dependOn.ScenePatientCountCode='ScenePatientCountCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
 public interface ScenePatientCount extends Observation {
@@ -78,7 +78,7 @@ public interface ScenePatientCount extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::ST)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17717-2\' or value.code = \'LA15382-7\' or value.code = \'LA137-2\')))'"
 	 * @generated
 	 */
 	boolean validateScenePatientCountValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -86,13 +86,26 @@ public interface ScenePatientCount extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @generated
+	 */
+	boolean validateScenePatientCountValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ScenePatientCount init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ScenePatientCount

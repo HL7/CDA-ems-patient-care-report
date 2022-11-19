@@ -53,7 +53,8 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTemplateId(this, diagnostics, context);
 	}
 
@@ -98,7 +99,8 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(this, diagnostics, context);
 	}
 
@@ -107,7 +109,8 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionHistoryOfCondition(this, diagnostics, context);
 	}
 
@@ -125,8 +128,8 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicalSurgicalHistory> getHistoryOfConditions() {
-		return EMSPastMedicalHistorySectionOperations.getHistoryOfConditions(this);
+	public MedicalSurgicalHistory getHistoryOfCondition() {
+		return EMSPastMedicalHistorySectionOperations.getHistoryOfCondition(this);
 	}
 
 	/**
@@ -137,13 +140,14 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	public EMSPastMedicalHistorySection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSPastMedicalHistorySectionImpl
+} // EMSPastMedicalHistorySectionImpl

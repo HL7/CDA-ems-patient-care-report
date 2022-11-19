@@ -1,0 +1,30 @@
+<!-- DrugAllergyEntity -->
+
+<pattern id="p-PatientCareReport_2_DrugAllergyEntity_code_4_45_5_i_a_1-error_mdht" see="#p-PatientCareReport_2_DrugAllergyEntity_code_4_45_5_i_a_1-error_mdht" name="p-PatientCareReport_2_DrugAllergyEntity_code_4_45_5_i_a_1-error_mdht">
+		<!--
+			UML path: /DrugAllergy/participant1/DrugAllergyParticipantRole/DrugAllergyEntity
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer/component415/observation/participant1/DrugAllergyParticipantRole/DrugAllergyEntity
+			UML qualified name: emspcr::DrugAllergy::DrugAllergyParticipation::DrugAllergyParticipantRole::DrugAllergyEntity
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.48']/cda:participant/cda:participantRole/cda:playingEntity">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.88'
+			Constraint name: DrugAllergyDrugAllergyParticipationDrugAllergyParticipantRoleDrugAllergyEntityCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.88']">Error: PatientCareReport - 4.45.5.i.a.1 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11646), which SHOULD be selected from (CodeSystem: 2.16.840.1.113883.6.88 RxNorm) (CONF:11645)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: DrugAllergyDrugAllergyParticipationDrugAllergyParticipantRoleDrugAllergyEntityCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.45.5.i.a.1 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11646), which SHOULD be selected from (CodeSystem: 2.16.840.1.113883.6.88 RxNorm) (CONF:11645)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -107,13 +107,14 @@ public class PatientPregnancyImpl extends ObservationImpl implements PatientPreg
 	public PatientPregnancy init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientPregnancyImpl
+} // PatientPregnancyImpl

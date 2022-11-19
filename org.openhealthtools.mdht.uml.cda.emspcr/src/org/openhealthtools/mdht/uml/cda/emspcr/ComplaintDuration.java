@@ -89,10 +89,11 @@ public interface ComplaintDuration extends Observation {
 	 * @generated
 	 */
 	public ComplaintDuration init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ComplaintDuration init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ComplaintDuration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplaintDuration

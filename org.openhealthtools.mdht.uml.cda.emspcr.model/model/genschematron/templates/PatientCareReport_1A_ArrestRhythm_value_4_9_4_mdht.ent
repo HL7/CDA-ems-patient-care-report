@@ -1,0 +1,22 @@
+<!-- ArrestRhythm: 2.16.840.1.1133883.17.3.10.1.127 -->
+
+<pattern id="p-PatientCareReport_1A_ArrestRhythm_value_4_9_4-error_mdht" see="#p-PatientCareReport_1A_ArrestRhythm_value_4_9_4-error_mdht" name="p-PatientCareReport_1A_ArrestRhythm_value_4_9_4-error_mdht">
+		<!--
+			UML path: /ArrestRhythm
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/arrestRhythmRelationship/observation
+			UML qualified name: emspcr::ArrestRhythm
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.127']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8'))
+			Constraint name: ArrestRhythmValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17068-0' or @code = 'LA17070-6' or @code = 'LA17071-4' or @code = 'LA17072-2' or @code = 'LA17073-0' or @code = 'LA17074-8'))])">Error: PatientCareReport - 4.9.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot;, which SHALL be selected from ValueSet FirstMonitoredRhythm 2.16.840.1.113883.17.3.11.14 DYNAMIC (CONF:10180)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

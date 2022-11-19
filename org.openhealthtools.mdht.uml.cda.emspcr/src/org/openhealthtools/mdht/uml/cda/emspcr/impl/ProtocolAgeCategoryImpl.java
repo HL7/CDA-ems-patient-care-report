@@ -107,13 +107,14 @@ public class ProtocolAgeCategoryImpl extends ObservationImpl implements Protocol
 	public ProtocolAgeCategory init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProtocolAgeCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProtocolAgeCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProtocolAgeCategoryImpl
+} // ProtocolAgeCategoryImpl

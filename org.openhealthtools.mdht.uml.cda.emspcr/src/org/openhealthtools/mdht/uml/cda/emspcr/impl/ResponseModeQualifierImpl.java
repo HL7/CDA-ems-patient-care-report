@@ -116,13 +116,14 @@ public class ResponseModeQualifierImpl extends ObservationImpl implements Respon
 	public ResponseModeQualifier init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResponseModeQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResponseModeQualifierImpl
+} // ResponseModeQualifierImpl

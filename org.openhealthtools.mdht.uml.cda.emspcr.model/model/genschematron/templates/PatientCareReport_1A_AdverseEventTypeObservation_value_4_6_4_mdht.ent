@@ -1,0 +1,30 @@
+<!-- AdverseEventTypeObservation: 2.16.840.1.1133883.17.3.10.1.90 -->
+
+<pattern id="p-PatientCareReport_1A_AdverseEventTypeObservation_value_4_6_4-error_mdht" see="#p-PatientCareReport_1A_AdverseEventTypeObservation_value_4_6_4-error_mdht" name="p-PatientCareReport_1A_AdverseEventTypeObservation_value_4_6_4-error_mdht">
+		<!--
+			UML path: /AdverseEventTypeObservation
+			UML root path: /PatientCareReport/PersonnelAdverseEventSection/adverseEventTypeObservation
+			UML qualified name: emspcr::AdverseEventTypeObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PersonnelAdverseEventSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.6']/cda:adverseEventTypeObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.90']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA17402-1' or value.code = 'LA17403-9' or value.code = 'LA17404-7' or value.code = 'LA17405-4' or value.code = 'LA17406-2' or value.code = 'LA17407-0' or value.code = 'LA17408-8' or value.code = 'LA17409-6' or value.code = 'LA17410-4' or value.code = 'LA17411-2' or value.code = 'LA17412-0' or value.code = 'LA17413-8' or value.code = 'LA17414-6'))
+			Constraint name: AdverseEventTypeObservationValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA137-2' or @code = 'LA17059-9' or @code = 'LA17402-1' or @code = 'LA17403-9' or @code = 'LA17404-7' or @code = 'LA17405-4' or @code = 'LA17406-2' or @code = 'LA17407-0' or @code = 'LA17408-8' or @code = 'LA17409-6' or @code = 'LA17410-4' or @code = 'LA17411-2' or @code = 'LA17412-0' or @code = 'LA17413-8' or @code = 'LA17414-6'))])">Error: PatientCareReport - 4.6.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10711), which SHALL be selected from ValueSet ProviderAdverseEventType 2.16.840.1.113883.17.3.11.72 DYNAMIC (CONF:10712)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: AdverseEventTypeObservationValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.6.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:10711), which SHALL be selected from ValueSet ProviderAdverseEventType 2.16.840.1.113883.17.3.11.72 DYNAMIC (CONF:10712)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

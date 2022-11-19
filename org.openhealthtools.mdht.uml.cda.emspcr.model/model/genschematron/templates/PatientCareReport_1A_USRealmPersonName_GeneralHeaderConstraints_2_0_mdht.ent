@@ -1,0 +1,20 @@
+<!-- USRealmPersonName -->
+
+<pattern id="p-PatientCareReport_1A_USRealmPersonName_GeneralHeaderConstraints_2_0-error_mdht" see="#p-PatientCareReport_1A_USRealmPersonName_GeneralHeaderConstraints_2_0-error_mdht" name="p-PatientCareReport_1A_USRealmPersonName_GeneralHeaderConstraints_2_0-error_mdht">
+		<!--
+			UML path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedPerson/name
+			UML root path: /PatientCareReport/AuthorParticipation/AuthorRole/assignedPerson/name
+			UML qualified name: consol::GeneralHeaderConstraints::USRealmPersonName
+		-->
+	<rule context="/cda:ClinicalDocument/cda:author/cda:assignedAuthor/cda:assignedPerson/cda:name">
+		<!--
+			OCL: (getText(true)<>'' and ( family->isEmpty() and given->isEmpty() and suffix->isEmpty() and prefix->isEmpty()   )   ) xor (getText(true)='' and (not family->isEmpty() and not given->isEmpty()  ))
+			Constraint name: GeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent
+		-->
+	<assert test="not(string(@id=true()// text()) = '') and not(cda:family) and not(cda:given) and not(cda:suffix) and not(cda:prefix) or string(@id=true()// text()) = '' and cda:family and cda:given">Error: PatientCareReport - 2.0 USRealmHeader
+		Conformance: 
+		Analysis: US Realm Person Name shall have either mixed content (name) or family and given name parts
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

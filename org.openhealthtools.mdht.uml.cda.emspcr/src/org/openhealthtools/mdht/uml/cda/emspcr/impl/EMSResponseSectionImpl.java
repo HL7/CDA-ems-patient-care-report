@@ -108,7 +108,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSResponseSectionOperations.validateEMSResponseSectionDispatchLocationOrganizer(this, diagnostics, context);
 	}
 
@@ -117,7 +118,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSResponseSectionOperations.validateEMSResponseSectionResponseOdometerReadingOrganizer(this, diagnostics, context);
 	}
 
@@ -126,7 +128,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionResponseModeToScene(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSResponseSectionResponseModeToScene(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSResponseSectionOperations.validateEMSResponseSectionResponseModeToScene(this, diagnostics, context);
 	}
 
@@ -174,13 +177,14 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	public EMSResponseSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSResponseSectionImpl
+} // EMSResponseSectionImpl

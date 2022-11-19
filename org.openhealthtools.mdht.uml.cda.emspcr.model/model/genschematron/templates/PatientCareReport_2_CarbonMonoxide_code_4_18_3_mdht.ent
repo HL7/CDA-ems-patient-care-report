@@ -1,0 +1,30 @@
+<!-- CarbonMonoxide: 2.16.840.1.1133883.17.3.10.1.167 -->
+
+<pattern id="p-PatientCareReport_2_CarbonMonoxide_code_4_18_3-error_mdht" see="#p-PatientCareReport_2_CarbonMonoxide_code_4_18_3-error_mdht" name="p-PatientCareReport_2_CarbonMonoxide_code_4_18_3-error_mdht">
+		<!--
+			UML path: /CarbonMonoxide
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component45/observation
+			UML qualified name: emspcr::CarbonMonoxide
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.167']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: CarbonMonoxideCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.18.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10297)/@code=&quot;20563-3&quot; Carboxyhemoglobin/&#8203;Hemoglobin.total in Blood (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10296)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '20563-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: CarbonMonoxideCode
+		-->
+	<assert test="cda:code and cda:code[@code = '20563-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.18.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10297)/@code=&quot;20563-3&quot; Carboxyhemoglobin/&#8203;Hemoglobin.total in Blood (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10296)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

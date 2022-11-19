@@ -1,0 +1,30 @@
+<!-- EMSInjuryIncidentDescriptionSection: 2.16.840.1.1133883.17.3.10.1.17 -->
+
+<pattern id="p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_code_3_8_2-error_mdht" see="#p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_code_3_8_2-error_mdht" name="p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_code_3_8_2-error_mdht">
+		<!--
+			UML path: /EMSInjuryIncidentDescriptionSection
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection
+			UML qualified name: emspcr::EMSInjuryIncidentDescriptionSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '67800-3' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: EMSInjuryIncidentDescriptionSectionCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67800-3' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 3.8.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11632)/@code=&quot;67800-3&quot; EMS Injury Incident Description Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10094)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: EMSInjuryIncidentDescriptionSectionCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 3.8.2 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:11632)/@code=&quot;67800-3&quot; EMS Injury Incident Description Narrative NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10094)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

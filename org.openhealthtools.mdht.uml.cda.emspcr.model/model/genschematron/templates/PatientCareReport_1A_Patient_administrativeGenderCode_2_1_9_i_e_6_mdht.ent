@@ -1,0 +1,30 @@
+<!-- Patient -->
+
+<pattern id="p-PatientCareReport_1A_Patient_administrativeGenderCode_2_1_9_i_e_6-error_mdht" see="#p-PatientCareReport_1A_Patient_administrativeGenderCode_2_1_9_i_e_6-error_mdht" name="p-PatientCareReport_1A_Patient_administrativeGenderCode_2_1_9_i_e_6-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/patient
+			UML root path: /PatientCareReport/recordTarget/patientRole/patient
+			UML qualified name: emspcr::PatientCareReport::RecordTarget::PatientRole::Patient
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:patient">
+		<!--
+			OCL: not self.administrativeGenderCode.oclIsUndefined() and self.administrativeGenderCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.administrativeGenderCode.oclAsType(datatypes::CE) in 
+value.code = 'F' or value.code = 'M' or value.code = 'UN'
+			Constraint name: PatientCareReportRecordTargetPatientRolePatientAdministrativeGenderCode
+		-->
+	<assert test="cda:administrativeGenderCode and cda:administrativeGenderCode[@code = 'F' or @code = 'M' or @code = 'UN']">Error: PatientCareReport - 2.1.9.i.e.6 administrativeGenderCode
+		Conformance: SHALL contain exactly one [1..1] administrativeGenderCode (CONF:10035), which SHALL be selected from ValueSet Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1 DYNAMIC (CONF:10878)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.administrativeGenderCode.oclIsUndefined()
+			Constraint name: PatientCareReportRecordTargetPatientRolePatientAdministrativeGenderCodeP
+		-->
+	<assert test="cda:administrativeGenderCode">Error: PatientCareReport - 2.1.9.i.e.6 administrativeGenderCode
+		Conformance: SHALL contain exactly one [1..1] administrativeGenderCode (CONF:10035), which SHALL be selected from ValueSet Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1 DYNAMIC (CONF:10878)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

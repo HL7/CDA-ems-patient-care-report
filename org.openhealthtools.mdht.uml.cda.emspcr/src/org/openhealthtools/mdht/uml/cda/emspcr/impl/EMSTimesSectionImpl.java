@@ -158,7 +158,8 @@ public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSTimesSectionPatientArrivedAtDestinationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSTimesSectionPatientArrivedAtDestinationTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionPatientArrivedAtDestinationTime(this, diagnostics, context);
 	}
 
@@ -167,7 +168,8 @@ public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSTimesSectionUnitBackInServiceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSTimesSectionUnitBackInServiceTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionUnitBackInServiceTime(this, diagnostics, context);
 	}
 
@@ -176,7 +178,8 @@ public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSTimesSectionDispatchNotifiedTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSTimesSectionDispatchNotifiedTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionDispatchNotifiedTime(this, diagnostics, context);
 	}
 
@@ -269,13 +272,14 @@ public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection 
 	public EMSTimesSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSTimesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSTimesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSTimesSectionImpl
+} // EMSTimesSectionImpl

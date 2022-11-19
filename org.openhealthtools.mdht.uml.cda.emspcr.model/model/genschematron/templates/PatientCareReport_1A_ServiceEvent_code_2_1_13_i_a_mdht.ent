@@ -1,0 +1,22 @@
+<!-- ServiceEvent -->
+
+<pattern id="p-PatientCareReport_1A_ServiceEvent_code_2_1_13_i_a-error_mdht" see="#p-PatientCareReport_1A_ServiceEvent_code_2_1_13_i_a-error_mdht" name="p-PatientCareReport_1A_ServiceEvent_code_2_1_13_i_a-error_mdht">
+		<!--
+			UML path: /PatientCareReport/documentationOf/ServiceEvent
+			UML root path: /PatientCareReport/documentationOf/ServiceEvent
+			UML qualified name: emspcr::PatientCareReport::ServiceEventParticipation::ServiceEvent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17150-6' or value.code = 'LA18715-5' or value.code = 'LA18716-3' or value.code = 'LA18717-1' or value.code = 'LA18719-7' or value.code = 'LA18720-5' or value.code = 'LA32978-1' or value.code = 'LA32983-1' or value.code = 'LA32982-3' or value.code = 'LA32981-5' or value.code = 'LA32980-7' or value.code = 'LA32979-9' or value.code = 'LA17595-2' or value.code = 'LA32977-3' or value.code = 'LA32984-9' or value.code = 'LA32976-5' or value.code = 'LA32975-7' or value.code = 'LA32974-0' or value.code = 'LA32973-2')
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17150-6' or @code = 'LA18715-5' or @code = 'LA18716-3' or @code = 'LA18717-1' or @code = 'LA18719-7' or @code = 'LA18720-5' or @code = 'LA32978-1' or @code = 'LA32983-1' or @code = 'LA32982-3' or @code = 'LA32981-5' or @code = 'LA32980-7' or @code = 'LA32979-9' or @code = 'LA17595-2' or @code = 'LA32977-3' or @code = 'LA32984-9' or @code = 'LA32976-5' or @code = 'LA32975-7' or @code = 'LA32974-0' or @code = 'LA32973-2')]">Error: PatientCareReport - 2.1.13.i.a code
+		Conformance: SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet ServiceType 2.16.840.1.113883.17.3.11.79 DYNAMIC (CONF:10051)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

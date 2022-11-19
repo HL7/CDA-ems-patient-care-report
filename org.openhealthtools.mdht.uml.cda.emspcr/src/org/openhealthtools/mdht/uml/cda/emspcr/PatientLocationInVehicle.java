@@ -101,10 +101,11 @@ public interface PatientLocationInVehicle extends Observation {
 	 * @generated
 	 */
 	public PatientLocationInVehicle init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientLocationInVehicle

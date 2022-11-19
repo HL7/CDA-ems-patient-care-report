@@ -90,7 +90,7 @@ public interface EyeAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA14698-7\' or value.code = \'LA15255-5\' or value.code = \'LA15256-3\' or value.code = \'LA17275-1\' or value.code = \'LA17276-9\' or value.code = \'LA17277-7\' or value.code = \'LA17278-5\' or value.code = \'LA17279-3\' or value.code = \'LA17280-1\' or value.code = \'LA17281-9\' or value.code = \'LA17282-7\' or value.code = \'LA17283-5\' or value.code = \'LA17284-3\' or value.code = \'LA17285-0\' or value.code = \'LA17710-7\' or value.code = \'LA18225-5\' or value.code = \'LA18226-3\' or value.code = \'LA18250-3\' or value.code = \'LA18251-1\' or value.code = \'LA18253-7\' or value.code = \'LA18254-5\' or value.code = \'LA18255-2\' or value.code = \'LA18256-0\' or value.code = \'LA18257-8\' or value.code = \'LA18258-6\' or value.code = \'LA7423-2\' or value.code = \'LA18252-9\' or value.code = \'LA17283-5\' or value.code = \'LA17214-0\' or value.code = \'LA22440-4\' or value.code = \'NewLA-3518061\' or value.code = \'NewLA-3518063\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA14698-7\' or value.code = \'LA15255-5\' or value.code = \'LA15256-3\' or value.code = \'LA17275-1\' or value.code = \'LA17276-9\' or value.code = \'LA17277-7\' or value.code = \'LA17278-5\' or value.code = \'LA17279-3\' or value.code = \'LA17280-1\' or value.code = \'LA17281-9\' or value.code = \'LA17282-7\' or value.code = \'LA17283-5\' or value.code = \'LA17284-3\' or value.code = \'LA17285-0\' or value.code = \'LA17710-7\' or value.code = \'LA18225-5\' or value.code = \'LA18226-3\' or value.code = \'LA18250-3\' or value.code = \'LA18251-1\' or value.code = \'LA18253-7\' or value.code = \'LA18254-5\' or value.code = \'LA18255-2\' or value.code = \'LA18256-0\' or value.code = \'LA18257-8\' or value.code = \'LA18258-6\' or value.code = \'LA7423-2\' or value.code = \'LA18252-9\' or value.code = \'LA17283-5\' or value.code = \'LA17214-0\' or value.code = \'LA22440-4\' or value.code = \'LA19576-0\' or value.code = \'LA32946-8\')))'"
 	 * @generated
 	 */
 	boolean validateEyeAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -137,10 +137,11 @@ public interface EyeAssessment extends Observation {
 	 * @generated
 	 */
 	public EyeAssessment init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EyeAssessment

@@ -81,170 +81,32 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: {
-				EMSPastMedicalHistorySection emsPastMedicalHistorySection = (EMSPastMedicalHistorySection)theEObject;
-				T result = caseEMSPastMedicalHistorySection(emsPastMedicalHistorySection);
-				if (result == null) result = caseSection(emsPastMedicalHistorySection);
-				if (result == null) result = caseAct(emsPastMedicalHistorySection);
-				if (result == null) result = caseInfrastructureRoot(emsPastMedicalHistorySection);
+			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: {
+				EMSCurrentMedicationSection emsCurrentMedicationSection = (EMSCurrentMedicationSection)theEObject;
+				T result = caseEMSCurrentMedicationSection(emsCurrentMedicationSection);
+				if (result == null) result = caseSection(emsCurrentMedicationSection);
+				if (result == null) result = caseAct(emsCurrentMedicationSection);
+				if (result == null) result = caseInfrastructureRoot(emsCurrentMedicationSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY: {
-				ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery = (ExistenceOfHistoryOfConditionOrSurgery)theEObject;
-				T result = caseExistenceOfHistoryOfConditionOrSurgery(existenceOfHistoryOfConditionOrSurgery);
-				if (result == null) result = caseObservation(existenceOfHistoryOfConditionOrSurgery);
-				if (result == null) result = caseClinicalStatement(existenceOfHistoryOfConditionOrSurgery);
-				if (result == null) result = caseAct(existenceOfHistoryOfConditionOrSurgery);
-				if (result == null) result = caseInfrastructureRoot(existenceOfHistoryOfConditionOrSurgery);
+			case EmspcrPackage.CURRENTLY_ON_MEDICATION: {
+				CurrentlyOnMedication currentlyOnMedication = (CurrentlyOnMedication)theEObject;
+				T result = caseCurrentlyOnMedication(currentlyOnMedication);
+				if (result == null) result = caseObservation(currentlyOnMedication);
+				if (result == null) result = caseClinicalStatement(currentlyOnMedication);
+				if (result == null) result = caseAct(currentlyOnMedication);
+				if (result == null) result = caseInfrastructureRoot(currentlyOnMedication);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.MEDICAL_SURGICAL_HISTORY: {
-				MedicalSurgicalHistory medicalSurgicalHistory = (MedicalSurgicalHistory)theEObject;
-				T result = caseMedicalSurgicalHistory(medicalSurgicalHistory);
-				if (result == null) result = caseObservation(medicalSurgicalHistory);
-				if (result == null) result = caseClinicalStatement(medicalSurgicalHistory);
-				if (result == null) result = caseAct(medicalSurgicalHistory);
-				if (result == null) result = caseInfrastructureRoot(medicalSurgicalHistory);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.EMS_BILLING_SECTION: {
-				EMSBillingSection emsBillingSection = (EMSBillingSection)theEObject;
-				T result = caseEMSBillingSection(emsBillingSection);
-				if (result == null) result = caseSection(emsBillingSection);
-				if (result == null) result = caseAct(emsBillingSection);
-				if (result == null) result = caseInfrastructureRoot(emsBillingSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.BILLING_CONDITION: {
-				BillingCondition billingCondition = (BillingCondition)theEObject;
-				T result = caseBillingCondition(billingCondition);
-				if (result == null) result = caseObservation(billingCondition);
-				if (result == null) result = caseClinicalStatement(billingCondition);
-				if (result == null) result = caseAct(billingCondition);
-				if (result == null) result = caseInfrastructureRoot(billingCondition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION: {
-				LevelOfServiceObservation levelOfServiceObservation = (LevelOfServiceObservation)theEObject;
-				T result = caseLevelOfServiceObservation(levelOfServiceObservation);
-				if (result == null) result = caseObservation(levelOfServiceObservation);
-				if (result == null) result = caseClinicalStatement(levelOfServiceObservation);
-				if (result == null) result = caseAct(levelOfServiceObservation);
-				if (result == null) result = caseInfrastructureRoot(levelOfServiceObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: {
-				EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection = (EMSInjuryIncidentDescriptionSection)theEObject;
-				T result = caseEMSInjuryIncidentDescriptionSection(emsInjuryIncidentDescriptionSection);
-				if (result == null) result = caseSection(emsInjuryIncidentDescriptionSection);
-				if (result == null) result = caseAct(emsInjuryIncidentDescriptionSection);
-				if (result == null) result = caseInfrastructureRoot(emsInjuryIncidentDescriptionSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.INJURY_CAUSE_CATEGORY: {
-				InjuryCauseCategory injuryCauseCategory = (InjuryCauseCategory)theEObject;
-				T result = caseInjuryCauseCategory(injuryCauseCategory);
-				if (result == null) result = caseObservation(injuryCauseCategory);
-				if (result == null) result = caseClinicalStatement(injuryCauseCategory);
-				if (result == null) result = caseAct(injuryCauseCategory);
-				if (result == null) result = caseInfrastructureRoot(injuryCauseCategory);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.INJURY_MECHANISM: {
-				InjuryMechanism injuryMechanism = (InjuryMechanism)theEObject;
-				T result = caseInjuryMechanism(injuryMechanism);
-				if (result == null) result = caseObservation(injuryMechanism);
-				if (result == null) result = caseClinicalStatement(injuryMechanism);
-				if (result == null) result = caseAct(injuryMechanism);
-				if (result == null) result = caseInfrastructureRoot(injuryMechanism);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS1AND2: {
-				TraumaTriageCriteriaSteps1and2 traumaTriageCriteriaSteps1and2 = (TraumaTriageCriteriaSteps1and2)theEObject;
-				T result = caseTraumaTriageCriteriaSteps1and2(traumaTriageCriteriaSteps1and2);
-				if (result == null) result = caseObservation(traumaTriageCriteriaSteps1and2);
-				if (result == null) result = caseClinicalStatement(traumaTriageCriteriaSteps1and2);
-				if (result == null) result = caseAct(traumaTriageCriteriaSteps1and2);
-				if (result == null) result = caseInfrastructureRoot(traumaTriageCriteriaSteps1and2);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS3AND4: {
-				TraumaTriageCriteriaSteps3and4 traumaTriageCriteriaSteps3and4 = (TraumaTriageCriteriaSteps3and4)theEObject;
-				T result = caseTraumaTriageCriteriaSteps3and4(traumaTriageCriteriaSteps3and4);
-				if (result == null) result = caseObservation(traumaTriageCriteriaSteps3and4);
-				if (result == null) result = caseClinicalStatement(traumaTriageCriteriaSteps3and4);
-				if (result == null) result = caseAct(traumaTriageCriteriaSteps3and4);
-				if (result == null) result = caseInfrastructureRoot(traumaTriageCriteriaSteps3and4);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.VEHICLE_IMPACT_AREA: {
-				VehicleImpactArea vehicleImpactArea = (VehicleImpactArea)theEObject;
-				T result = caseVehicleImpactArea(vehicleImpactArea);
-				if (result == null) result = caseObservation(vehicleImpactArea);
-				if (result == null) result = caseClinicalStatement(vehicleImpactArea);
-				if (result == null) result = caseAct(vehicleImpactArea);
-				if (result == null) result = caseInfrastructureRoot(vehicleImpactArea);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE: {
-				PatientLocationInVehicle patientLocationInVehicle = (PatientLocationInVehicle)theEObject;
-				T result = casePatientLocationInVehicle(patientLocationInVehicle);
-				if (result == null) result = caseObservation(patientLocationInVehicle);
-				if (result == null) result = caseClinicalStatement(patientLocationInVehicle);
-				if (result == null) result = caseAct(patientLocationInVehicle);
-				if (result == null) result = caseInfrastructureRoot(patientLocationInVehicle);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT: {
-				VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment = (VehicleOccupantSafetyEquipment)theEObject;
-				T result = caseVehicleOccupantSafetyEquipment(vehicleOccupantSafetyEquipment);
-				if (result == null) result = caseObservation(vehicleOccupantSafetyEquipment);
-				if (result == null) result = caseClinicalStatement(vehicleOccupantSafetyEquipment);
-				if (result == null) result = caseAct(vehicleOccupantSafetyEquipment);
-				if (result == null) result = caseInfrastructureRoot(vehicleOccupantSafetyEquipment);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS: {
-				AirbagDeploymentStatus airbagDeploymentStatus = (AirbagDeploymentStatus)theEObject;
-				T result = caseAirbagDeploymentStatus(airbagDeploymentStatus);
-				if (result == null) result = caseObservation(airbagDeploymentStatus);
-				if (result == null) result = caseClinicalStatement(airbagDeploymentStatus);
-				if (result == null) result = caseAct(airbagDeploymentStatus);
-				if (result == null) result = caseInfrastructureRoot(airbagDeploymentStatus);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.HEIGHT_OF_FALL: {
-				HeightOfFall heightOfFall = (HeightOfFall)theEObject;
-				T result = caseHeightOfFall(heightOfFall);
-				if (result == null) result = caseObservation(heightOfFall);
-				if (result == null) result = caseClinicalStatement(heightOfFall);
-				if (result == null) result = caseAct(heightOfFall);
-				if (result == null) result = caseInfrastructureRoot(heightOfFall);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.DISASTER_TYPE: {
-				DisasterType disasterType = (DisasterType)theEObject;
-				T result = caseDisasterType(disasterType);
-				if (result == null) result = caseObservation(disasterType);
-				if (result == null) result = caseClinicalStatement(disasterType);
-				if (result == null) result = caseAct(disasterType);
-				if (result == null) result = caseInfrastructureRoot(disasterType);
+			case EmspcrPackage.CURRENT_MEDICATION: {
+				CurrentMedication currentMedication = (CurrentMedication)theEObject;
+				T result = caseCurrentMedication(currentMedication);
+				if (result == null) result = caseSubstanceAdministration(currentMedication);
+				if (result == null) result = caseClinicalStatement(currentMedication);
+				if (result == null) result = caseAct(currentMedication);
+				if (result == null) result = caseInfrastructureRoot(currentMedication);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -335,32 +197,32 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: {
-				EMSCurrentMedicationSection emsCurrentMedicationSection = (EMSCurrentMedicationSection)theEObject;
-				T result = caseEMSCurrentMedicationSection(emsCurrentMedicationSection);
-				if (result == null) result = caseSection(emsCurrentMedicationSection);
-				if (result == null) result = caseAct(emsCurrentMedicationSection);
-				if (result == null) result = caseInfrastructureRoot(emsCurrentMedicationSection);
+			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: {
+				EMSPastMedicalHistorySection emsPastMedicalHistorySection = (EMSPastMedicalHistorySection)theEObject;
+				T result = caseEMSPastMedicalHistorySection(emsPastMedicalHistorySection);
+				if (result == null) result = caseSection(emsPastMedicalHistorySection);
+				if (result == null) result = caseAct(emsPastMedicalHistorySection);
+				if (result == null) result = caseInfrastructureRoot(emsPastMedicalHistorySection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.CURRENTLY_ON_MEDICATION: {
-				CurrentlyOnMedication currentlyOnMedication = (CurrentlyOnMedication)theEObject;
-				T result = caseCurrentlyOnMedication(currentlyOnMedication);
-				if (result == null) result = caseObservation(currentlyOnMedication);
-				if (result == null) result = caseClinicalStatement(currentlyOnMedication);
-				if (result == null) result = caseAct(currentlyOnMedication);
-				if (result == null) result = caseInfrastructureRoot(currentlyOnMedication);
+			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY: {
+				ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery = (ExistenceOfHistoryOfConditionOrSurgery)theEObject;
+				T result = caseExistenceOfHistoryOfConditionOrSurgery(existenceOfHistoryOfConditionOrSurgery);
+				if (result == null) result = caseObservation(existenceOfHistoryOfConditionOrSurgery);
+				if (result == null) result = caseClinicalStatement(existenceOfHistoryOfConditionOrSurgery);
+				if (result == null) result = caseAct(existenceOfHistoryOfConditionOrSurgery);
+				if (result == null) result = caseInfrastructureRoot(existenceOfHistoryOfConditionOrSurgery);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.CURRENT_MEDICATION: {
-				CurrentMedication currentMedication = (CurrentMedication)theEObject;
-				T result = caseCurrentMedication(currentMedication);
-				if (result == null) result = caseSubstanceAdministration(currentMedication);
-				if (result == null) result = caseClinicalStatement(currentMedication);
-				if (result == null) result = caseAct(currentMedication);
-				if (result == null) result = caseInfrastructureRoot(currentMedication);
+			case EmspcrPackage.MEDICAL_SURGICAL_HISTORY: {
+				MedicalSurgicalHistory medicalSurgicalHistory = (MedicalSurgicalHistory)theEObject;
+				T result = caseMedicalSurgicalHistory(medicalSurgicalHistory);
+				if (result == null) result = caseObservation(medicalSurgicalHistory);
+				if (result == null) result = caseClinicalStatement(medicalSurgicalHistory);
+				if (result == null) result = caseAct(medicalSurgicalHistory);
+				if (result == null) result = caseInfrastructureRoot(medicalSurgicalHistory);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -390,25 +252,6 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = caseClinicalStatement(drugUseIndication);
 				if (result == null) result = caseAct(drugUseIndication);
 				if (result == null) result = caseInfrastructureRoot(drugUseIndication);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: {
-				EMSVitalSignsSection emsVitalSignsSection = (EMSVitalSignsSection)theEObject;
-				T result = caseEMSVitalSignsSection(emsVitalSignsSection);
-				if (result == null) result = caseSection(emsVitalSignsSection);
-				if (result == null) result = caseAct(emsVitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(emsVitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer)theEObject;
-				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseClinicalStatement(vitalSignsOrganizer);
-				if (result == null) result = caseAct(vitalSignsOrganizer);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsOrganizer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -528,6 +371,55 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EmspcrPackage.EMS_SCENE_SECTION: {
+				EMSSceneSection emsSceneSection = (EMSSceneSection)theEObject;
+				T result = caseEMSSceneSection(emsSceneSection);
+				if (result == null) result = caseSection(emsSceneSection);
+				if (result == null) result = caseAct(emsSceneSection);
+				if (result == null) result = caseInfrastructureRoot(emsSceneSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.FIRST_UNIT_INDICATOR: {
+				FirstUnitIndicator firstUnitIndicator = (FirstUnitIndicator)theEObject;
+				T result = caseFirstUnitIndicator(firstUnitIndicator);
+				if (result == null) result = caseObservation(firstUnitIndicator);
+				if (result == null) result = caseClinicalStatement(firstUnitIndicator);
+				if (result == null) result = caseAct(firstUnitIndicator);
+				if (result == null) result = caseInfrastructureRoot(firstUnitIndicator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.SCENE_PATIENT_COUNT: {
+				ScenePatientCount scenePatientCount = (ScenePatientCount)theEObject;
+				T result = caseScenePatientCount(scenePatientCount);
+				if (result == null) result = caseObservation(scenePatientCount);
+				if (result == null) result = caseClinicalStatement(scenePatientCount);
+				if (result == null) result = caseAct(scenePatientCount);
+				if (result == null) result = caseInfrastructureRoot(scenePatientCount);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.MASS_CASUALTY_INDICATOR: {
+				MassCasualtyIndicator massCasualtyIndicator = (MassCasualtyIndicator)theEObject;
+				T result = caseMassCasualtyIndicator(massCasualtyIndicator);
+				if (result == null) result = caseObservation(massCasualtyIndicator);
+				if (result == null) result = caseClinicalStatement(massCasualtyIndicator);
+				if (result == null) result = caseAct(massCasualtyIndicator);
+				if (result == null) result = caseInfrastructureRoot(massCasualtyIndicator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.LOCATION_TYPE_OBSERVATION: {
+				LocationTypeObservation locationTypeObservation = (LocationTypeObservation)theEObject;
+				T result = caseLocationTypeObservation(locationTypeObservation);
+				if (result == null) result = caseObservation(locationTypeObservation);
+				if (result == null) result = caseClinicalStatement(locationTypeObservation);
+				if (result == null) result = caseAct(locationTypeObservation);
+				if (result == null) result = caseInfrastructureRoot(locationTypeObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case EmspcrPackage.EMS_DISPATCH_SECTION: {
 				EMSDispatchSection emsDispatchSection = (EMSDispatchSection)theEObject;
 				T result = caseEMSDispatchSection(emsDispatchSection);
@@ -554,65 +446,6 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = caseClinicalStatement(dispatchReason);
 				if (result == null) result = caseAct(dispatchReason);
 				if (result == null) result = caseInfrastructureRoot(dispatchReason);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.EMS_RESPONSE_SECTION: {
-				EMSResponseSection emsResponseSection = (EMSResponseSection)theEObject;
-				T result = caseEMSResponseSection(emsResponseSection);
-				if (result == null) result = caseSection(emsResponseSection);
-				if (result == null) result = caseAct(emsResponseSection);
-				if (result == null) result = caseInfrastructureRoot(emsResponseSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.DELAY_ORGANIZER: {
-				DelayOrganizer delayOrganizer = (DelayOrganizer)theEObject;
-				T result = caseDelayOrganizer(delayOrganizer);
-				if (result == null) result = caseOrganizer(delayOrganizer);
-				if (result == null) result = caseClinicalStatement(delayOrganizer);
-				if (result == null) result = caseAct(delayOrganizer);
-				if (result == null) result = caseInfrastructureRoot(delayOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER: {
-				DispatchLocationOrganizer dispatchLocationOrganizer = (DispatchLocationOrganizer)theEObject;
-				T result = caseDispatchLocationOrganizer(dispatchLocationOrganizer);
-				if (result == null) result = caseOrganizer(dispatchLocationOrganizer);
-				if (result == null) result = caseClinicalStatement(dispatchLocationOrganizer);
-				if (result == null) result = caseAct(dispatchLocationOrganizer);
-				if (result == null) result = caseInfrastructureRoot(dispatchLocationOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER: {
-				ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer = (ResponseOdometerReadingOrganizer)theEObject;
-				T result = caseResponseOdometerReadingOrganizer(responseOdometerReadingOrganizer);
-				if (result == null) result = caseOrganizer(responseOdometerReadingOrganizer);
-				if (result == null) result = caseClinicalStatement(responseOdometerReadingOrganizer);
-				if (result == null) result = caseAct(responseOdometerReadingOrganizer);
-				if (result == null) result = caseInfrastructureRoot(responseOdometerReadingOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.RESPONSE_MODE_TO_SCENE: {
-				ResponseModeToScene responseModeToScene = (ResponseModeToScene)theEObject;
-				T result = caseResponseModeToScene(responseModeToScene);
-				if (result == null) result = caseObservation(responseModeToScene);
-				if (result == null) result = caseClinicalStatement(responseModeToScene);
-				if (result == null) result = caseAct(responseModeToScene);
-				if (result == null) result = caseInfrastructureRoot(responseModeToScene);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case EmspcrPackage.RESPONSE_MODE_QUALIFIER: {
-				ResponseModeQualifier responseModeQualifier = (ResponseModeQualifier)theEObject;
-				T result = caseResponseModeQualifier(responseModeQualifier);
-				if (result == null) result = caseObservation(responseModeQualifier);
-				if (result == null) result = caseClinicalStatement(responseModeQualifier);
-				if (result == null) result = caseAct(responseModeQualifier);
-				if (result == null) result = caseInfrastructureRoot(responseModeQualifier);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -803,52 +636,62 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.EMS_SCENE_SECTION: {
-				EMSSceneSection emsSceneSection = (EMSSceneSection)theEObject;
-				T result = caseEMSSceneSection(emsSceneSection);
-				if (result == null) result = caseSection(emsSceneSection);
-				if (result == null) result = caseAct(emsSceneSection);
-				if (result == null) result = caseInfrastructureRoot(emsSceneSection);
+			case EmspcrPackage.EMS_RESPONSE_SECTION: {
+				EMSResponseSection emsResponseSection = (EMSResponseSection)theEObject;
+				T result = caseEMSResponseSection(emsResponseSection);
+				if (result == null) result = caseSection(emsResponseSection);
+				if (result == null) result = caseAct(emsResponseSection);
+				if (result == null) result = caseInfrastructureRoot(emsResponseSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.FIRST_UNIT_INDICATOR: {
-				FirstUnitIndicator firstUnitIndicator = (FirstUnitIndicator)theEObject;
-				T result = caseFirstUnitIndicator(firstUnitIndicator);
-				if (result == null) result = caseObservation(firstUnitIndicator);
-				if (result == null) result = caseClinicalStatement(firstUnitIndicator);
-				if (result == null) result = caseAct(firstUnitIndicator);
-				if (result == null) result = caseInfrastructureRoot(firstUnitIndicator);
+			case EmspcrPackage.DELAY_ORGANIZER: {
+				DelayOrganizer delayOrganizer = (DelayOrganizer)theEObject;
+				T result = caseDelayOrganizer(delayOrganizer);
+				if (result == null) result = caseOrganizer(delayOrganizer);
+				if (result == null) result = caseClinicalStatement(delayOrganizer);
+				if (result == null) result = caseAct(delayOrganizer);
+				if (result == null) result = caseInfrastructureRoot(delayOrganizer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.SCENE_PATIENT_COUNT: {
-				ScenePatientCount scenePatientCount = (ScenePatientCount)theEObject;
-				T result = caseScenePatientCount(scenePatientCount);
-				if (result == null) result = caseObservation(scenePatientCount);
-				if (result == null) result = caseClinicalStatement(scenePatientCount);
-				if (result == null) result = caseAct(scenePatientCount);
-				if (result == null) result = caseInfrastructureRoot(scenePatientCount);
+			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER: {
+				DispatchLocationOrganizer dispatchLocationOrganizer = (DispatchLocationOrganizer)theEObject;
+				T result = caseDispatchLocationOrganizer(dispatchLocationOrganizer);
+				if (result == null) result = caseOrganizer(dispatchLocationOrganizer);
+				if (result == null) result = caseClinicalStatement(dispatchLocationOrganizer);
+				if (result == null) result = caseAct(dispatchLocationOrganizer);
+				if (result == null) result = caseInfrastructureRoot(dispatchLocationOrganizer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.MASS_CASUALTY_INDICATOR: {
-				MassCasualtyIndicator massCasualtyIndicator = (MassCasualtyIndicator)theEObject;
-				T result = caseMassCasualtyIndicator(massCasualtyIndicator);
-				if (result == null) result = caseObservation(massCasualtyIndicator);
-				if (result == null) result = caseClinicalStatement(massCasualtyIndicator);
-				if (result == null) result = caseAct(massCasualtyIndicator);
-				if (result == null) result = caseInfrastructureRoot(massCasualtyIndicator);
+			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER: {
+				ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer = (ResponseOdometerReadingOrganizer)theEObject;
+				T result = caseResponseOdometerReadingOrganizer(responseOdometerReadingOrganizer);
+				if (result == null) result = caseOrganizer(responseOdometerReadingOrganizer);
+				if (result == null) result = caseClinicalStatement(responseOdometerReadingOrganizer);
+				if (result == null) result = caseAct(responseOdometerReadingOrganizer);
+				if (result == null) result = caseInfrastructureRoot(responseOdometerReadingOrganizer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EmspcrPackage.LOCATION_TYPE_OBSERVATION: {
-				LocationTypeObservation locationTypeObservation = (LocationTypeObservation)theEObject;
-				T result = caseLocationTypeObservation(locationTypeObservation);
-				if (result == null) result = caseObservation(locationTypeObservation);
-				if (result == null) result = caseClinicalStatement(locationTypeObservation);
-				if (result == null) result = caseAct(locationTypeObservation);
-				if (result == null) result = caseInfrastructureRoot(locationTypeObservation);
+			case EmspcrPackage.RESPONSE_MODE_TO_SCENE: {
+				ResponseModeToScene responseModeToScene = (ResponseModeToScene)theEObject;
+				T result = caseResponseModeToScene(responseModeToScene);
+				if (result == null) result = caseObservation(responseModeToScene);
+				if (result == null) result = caseClinicalStatement(responseModeToScene);
+				if (result == null) result = caseAct(responseModeToScene);
+				if (result == null) result = caseInfrastructureRoot(responseModeToScene);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.RESPONSE_MODE_QUALIFIER: {
+				ResponseModeQualifier responseModeQualifier = (ResponseModeQualifier)theEObject;
+				T result = caseResponseModeQualifier(responseModeQualifier);
+				if (result == null) result = caseObservation(responseModeQualifier);
+				if (result == null) result = caseClinicalStatement(responseModeQualifier);
+				if (result == null) result = caseAct(responseModeQualifier);
+				if (result == null) result = caseInfrastructureRoot(responseModeQualifier);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1027,6 +870,163 @@ public class EmspcrSwitch<T> extends Switch<T> {
 				if (result == null) result = caseClinicalStatement(dispatchNotifiedTime);
 				if (result == null) result = caseAct(dispatchNotifiedTime);
 				if (result == null) result = caseInfrastructureRoot(dispatchNotifiedTime);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: {
+				EMSVitalSignsSection emsVitalSignsSection = (EMSVitalSignsSection)theEObject;
+				T result = caseEMSVitalSignsSection(emsVitalSignsSection);
+				if (result == null) result = caseSection(emsVitalSignsSection);
+				if (result == null) result = caseAct(emsVitalSignsSection);
+				if (result == null) result = caseInfrastructureRoot(emsVitalSignsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.VITAL_SIGNS_ORGANIZER: {
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer)theEObject;
+				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
+				if (result == null) result = caseOrganizer(vitalSignsOrganizer);
+				if (result == null) result = caseClinicalStatement(vitalSignsOrganizer);
+				if (result == null) result = caseAct(vitalSignsOrganizer);
+				if (result == null) result = caseInfrastructureRoot(vitalSignsOrganizer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: {
+				EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection = (EMSInjuryIncidentDescriptionSection)theEObject;
+				T result = caseEMSInjuryIncidentDescriptionSection(emsInjuryIncidentDescriptionSection);
+				if (result == null) result = caseSection(emsInjuryIncidentDescriptionSection);
+				if (result == null) result = caseAct(emsInjuryIncidentDescriptionSection);
+				if (result == null) result = caseInfrastructureRoot(emsInjuryIncidentDescriptionSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.INJURY_CAUSE_CATEGORY: {
+				InjuryCauseCategory injuryCauseCategory = (InjuryCauseCategory)theEObject;
+				T result = caseInjuryCauseCategory(injuryCauseCategory);
+				if (result == null) result = caseObservation(injuryCauseCategory);
+				if (result == null) result = caseClinicalStatement(injuryCauseCategory);
+				if (result == null) result = caseAct(injuryCauseCategory);
+				if (result == null) result = caseInfrastructureRoot(injuryCauseCategory);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.INJURY_MECHANISM: {
+				InjuryMechanism injuryMechanism = (InjuryMechanism)theEObject;
+				T result = caseInjuryMechanism(injuryMechanism);
+				if (result == null) result = caseObservation(injuryMechanism);
+				if (result == null) result = caseClinicalStatement(injuryMechanism);
+				if (result == null) result = caseAct(injuryMechanism);
+				if (result == null) result = caseInfrastructureRoot(injuryMechanism);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS1AND2: {
+				TraumaTriageCriteriaSteps1and2 traumaTriageCriteriaSteps1and2 = (TraumaTriageCriteriaSteps1and2)theEObject;
+				T result = caseTraumaTriageCriteriaSteps1and2(traumaTriageCriteriaSteps1and2);
+				if (result == null) result = caseObservation(traumaTriageCriteriaSteps1and2);
+				if (result == null) result = caseClinicalStatement(traumaTriageCriteriaSteps1and2);
+				if (result == null) result = caseAct(traumaTriageCriteriaSteps1and2);
+				if (result == null) result = caseInfrastructureRoot(traumaTriageCriteriaSteps1and2);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS3AND4: {
+				TraumaTriageCriteriaSteps3and4 traumaTriageCriteriaSteps3and4 = (TraumaTriageCriteriaSteps3and4)theEObject;
+				T result = caseTraumaTriageCriteriaSteps3and4(traumaTriageCriteriaSteps3and4);
+				if (result == null) result = caseObservation(traumaTriageCriteriaSteps3and4);
+				if (result == null) result = caseClinicalStatement(traumaTriageCriteriaSteps3and4);
+				if (result == null) result = caseAct(traumaTriageCriteriaSteps3and4);
+				if (result == null) result = caseInfrastructureRoot(traumaTriageCriteriaSteps3and4);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.VEHICLE_IMPACT_AREA: {
+				VehicleImpactArea vehicleImpactArea = (VehicleImpactArea)theEObject;
+				T result = caseVehicleImpactArea(vehicleImpactArea);
+				if (result == null) result = caseObservation(vehicleImpactArea);
+				if (result == null) result = caseClinicalStatement(vehicleImpactArea);
+				if (result == null) result = caseAct(vehicleImpactArea);
+				if (result == null) result = caseInfrastructureRoot(vehicleImpactArea);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE: {
+				PatientLocationInVehicle patientLocationInVehicle = (PatientLocationInVehicle)theEObject;
+				T result = casePatientLocationInVehicle(patientLocationInVehicle);
+				if (result == null) result = caseObservation(patientLocationInVehicle);
+				if (result == null) result = caseClinicalStatement(patientLocationInVehicle);
+				if (result == null) result = caseAct(patientLocationInVehicle);
+				if (result == null) result = caseInfrastructureRoot(patientLocationInVehicle);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT: {
+				VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment = (VehicleOccupantSafetyEquipment)theEObject;
+				T result = caseVehicleOccupantSafetyEquipment(vehicleOccupantSafetyEquipment);
+				if (result == null) result = caseObservation(vehicleOccupantSafetyEquipment);
+				if (result == null) result = caseClinicalStatement(vehicleOccupantSafetyEquipment);
+				if (result == null) result = caseAct(vehicleOccupantSafetyEquipment);
+				if (result == null) result = caseInfrastructureRoot(vehicleOccupantSafetyEquipment);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS: {
+				AirbagDeploymentStatus airbagDeploymentStatus = (AirbagDeploymentStatus)theEObject;
+				T result = caseAirbagDeploymentStatus(airbagDeploymentStatus);
+				if (result == null) result = caseObservation(airbagDeploymentStatus);
+				if (result == null) result = caseClinicalStatement(airbagDeploymentStatus);
+				if (result == null) result = caseAct(airbagDeploymentStatus);
+				if (result == null) result = caseInfrastructureRoot(airbagDeploymentStatus);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.HEIGHT_OF_FALL: {
+				HeightOfFall heightOfFall = (HeightOfFall)theEObject;
+				T result = caseHeightOfFall(heightOfFall);
+				if (result == null) result = caseObservation(heightOfFall);
+				if (result == null) result = caseClinicalStatement(heightOfFall);
+				if (result == null) result = caseAct(heightOfFall);
+				if (result == null) result = caseInfrastructureRoot(heightOfFall);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.DISASTER_TYPE: {
+				DisasterType disasterType = (DisasterType)theEObject;
+				T result = caseDisasterType(disasterType);
+				if (result == null) result = caseObservation(disasterType);
+				if (result == null) result = caseClinicalStatement(disasterType);
+				if (result == null) result = caseAct(disasterType);
+				if (result == null) result = caseInfrastructureRoot(disasterType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.EMS_BILLING_SECTION: {
+				EMSBillingSection emsBillingSection = (EMSBillingSection)theEObject;
+				T result = caseEMSBillingSection(emsBillingSection);
+				if (result == null) result = caseSection(emsBillingSection);
+				if (result == null) result = caseAct(emsBillingSection);
+				if (result == null) result = caseInfrastructureRoot(emsBillingSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.BILLING_CONDITION: {
+				BillingCondition billingCondition = (BillingCondition)theEObject;
+				T result = caseBillingCondition(billingCondition);
+				if (result == null) result = caseObservation(billingCondition);
+				if (result == null) result = caseClinicalStatement(billingCondition);
+				if (result == null) result = caseAct(billingCondition);
+				if (result == null) result = caseInfrastructureRoot(billingCondition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION: {
+				LevelOfServiceObservation levelOfServiceObservation = (LevelOfServiceObservation)theEObject;
+				T result = caseLevelOfServiceObservation(levelOfServiceObservation);
+				if (result == null) result = caseObservation(levelOfServiceObservation);
+				if (result == null) result = caseClinicalStatement(levelOfServiceObservation);
+				if (result == null) result = caseAct(levelOfServiceObservation);
+				if (result == null) result = caseInfrastructureRoot(levelOfServiceObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -4490,4 +4490,4 @@ public class EmspcrSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //EmspcrSwitch
+} // EmspcrSwitch

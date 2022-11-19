@@ -1,0 +1,20 @@
+<!-- BloodGlucoseComponent -->
+
+<pattern id="p-PatientCareReport_2_BloodGlucoseComponent_observation_4_3_7_i-error_mdht" see="#p-PatientCareReport_2_BloodGlucoseComponent_observation_4_3_7_i-error_mdht" name="p-PatientCareReport_2_BloodGlucoseComponent_observation_4_3_7_i-error_mdht">
+		<!--
+			UML path: /AdditionalVitalSignsOrganizer/component44
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component44
+			UML qualified name: emspcr::AdditionalVitalSignsOrganizer::BloodGlucoseComponent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.166']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::BloodGlucose))
+			Constraint name: AdditionalVitalSignsOrganizerBloodGlucoseComponentObservation
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.166'])=1">Error: PatientCareReport - 4.3.7.i observation
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:11698)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

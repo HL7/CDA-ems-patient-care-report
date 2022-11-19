@@ -78,7 +78,7 @@ public interface DispatchDelay extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17183-7\' or value.code = \'LA17579-6\' or value.code = \'LA17580-4\' or value.code = \'LA17581-2\' or value.code = \'LA17582-0\' or value.code = \'LA17584-6\' or value.code = \'LA18081-2\' or value.code = \'LA7540-3\' or value.code = \'NewLA-2208019\' or value.code = \'NewLA-2208021\' or value.code = \'NewLA-2208023\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty() and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17183-7\' or value.code = \'LA17579-6\' or value.code = \'LA17580-4\' or value.code = \'LA17581-2\' or value.code = \'LA17582-0\' or value.code = \'LA17584-6\' or value.code = \'LA18081-2\' or value.code = \'LA7540-3\' or value.code = \'LA32992-2\' or value.code = \'LA32993-0\' or value.code = \'LA32994-8\')))'"
 	 * @generated
 	 */
 	boolean validateDispatchDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -101,10 +101,11 @@ public interface DispatchDelay extends Observation {
 	 * @generated
 	 */
 	public DispatchDelay init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DispatchDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DispatchDelay

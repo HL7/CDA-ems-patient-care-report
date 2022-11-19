@@ -69,15 +69,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,9 +104,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,8 +117,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionTemplateId(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionTemplateId(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -185,9 +184,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,8 +197,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionCode(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionCode(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -262,9 +262,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,8 +275,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionCodeP(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionCodeP(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -339,9 +340,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,8 +353,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionTitle(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionTitle(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -416,9 +418,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,8 +431,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionText(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionText(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -493,9 +496,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -507,8 +509,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -570,9 +574,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -584,8 +587,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -647,9 +652,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -661,8 +665,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionLastOralIntake(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -724,9 +730,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -738,8 +743,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionPatientAge(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -801,9 +808,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -815,8 +821,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -878,9 +886,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,8 +899,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -955,9 +964,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -969,8 +977,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionBodyWeight(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionBodyWeight(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1032,9 +1042,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LENGTH_BASED_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LENGTH_BASED_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1046,8 +1055,10 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSPhysicalAssessmentSectionLengthBasedBodyWeight(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSPhysicalAssessmentSectionLengthBasedBodyWeight(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -1116,8 +1127,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<PhysicalAssessmentOrganizer> getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static EList<PhysicalAssessmentOrganizer> getPhysicalAssessmentOrganizers(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	
@@ -1165,8 +1177,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PatientPregnancy getPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static PatientPregnancy getPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	
@@ -1212,8 +1224,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  LastOralIntake getLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static LastOralIntake getLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	
@@ -1259,8 +1271,8 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PatientAge getPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static PatientAge getPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	
@@ -1306,8 +1318,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ThrombolyticContraindications getThrombolyticContraindications(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static ThrombolyticContraindications getThrombolyticContraindications(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	
@@ -1353,8 +1366,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  BarriersToPatientCare getBarriersToPatientCare(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+
+	public static BarriersToPatientCare getBarriersToPatientCare(
+			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 	
 	
 	

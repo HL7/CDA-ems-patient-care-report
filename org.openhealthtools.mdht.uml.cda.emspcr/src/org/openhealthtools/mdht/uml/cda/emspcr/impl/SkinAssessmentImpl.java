@@ -116,13 +116,14 @@ public class SkinAssessmentImpl extends ObservationImpl implements SkinAssessmen
 	public SkinAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //SkinAssessmentImpl
+} // SkinAssessmentImpl

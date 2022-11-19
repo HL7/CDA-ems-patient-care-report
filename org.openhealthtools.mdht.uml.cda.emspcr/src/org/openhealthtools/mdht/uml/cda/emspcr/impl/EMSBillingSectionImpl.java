@@ -106,7 +106,8 @@ public class EMSBillingSectionImpl extends SectionImpl implements EMSBillingSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionLevelOfServiceObservation(this, diagnostics, context);
 	}
 
@@ -136,13 +137,14 @@ public class EMSBillingSectionImpl extends SectionImpl implements EMSBillingSect
 	public EMSBillingSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSBillingSectionImpl
+} // EMSBillingSectionImpl

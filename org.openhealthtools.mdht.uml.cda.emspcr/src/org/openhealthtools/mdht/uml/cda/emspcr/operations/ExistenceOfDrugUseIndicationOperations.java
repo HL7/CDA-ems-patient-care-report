@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,10 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfDrugUseIndicationTemplateId(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfDrugUseIndicationTemplateId(
+			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +156,8 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +169,10 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfDrugUseIndicationMoodCode(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfDrugUseIndicationMoodCode(
+			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +234,8 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +247,10 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfDrugUseIndicationCodeP(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfDrugUseIndicationCodeP(
+			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +326,8 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +339,10 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfDrugUseIndicationCode(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfDrugUseIndicationCode(
+			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -408,9 +410,8 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +423,10 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfDrugUseIndicationValue(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfDrugUseIndicationValue(
+			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

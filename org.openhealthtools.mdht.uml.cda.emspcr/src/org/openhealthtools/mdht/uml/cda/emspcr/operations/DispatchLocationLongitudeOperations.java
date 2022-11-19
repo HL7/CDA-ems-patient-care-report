@@ -41,15 +41,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DispatchLocationLongitudeOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +76,8 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +89,10 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationLongitudeTemplateId(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationLongitudeTemplateId(
+			DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -155,9 +154,8 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,8 +167,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationLongitudeMoodCode(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationLongitudeMoodCode(DispatchLocationLongitude dispatchLocationLongitude,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +233,8 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +246,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationLongitudeCode(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationLongitudeCode(DispatchLocationLongitude dispatchLocationLongitude,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -311,9 +310,8 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,8 +323,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationLongitudeValue(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationLongitudeValue(DispatchLocationLongitude dispatchLocationLongitude,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

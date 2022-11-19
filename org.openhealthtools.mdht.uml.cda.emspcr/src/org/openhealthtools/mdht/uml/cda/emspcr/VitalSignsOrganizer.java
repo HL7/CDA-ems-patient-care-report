@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerSystolicBloodPressureComponent VitalSignsOrganizerRespiratoryRateComponent VitalSignsOrganizerOxygenSaturationComponent VitalSignsOrganizerTemplateId VitalSignsOrganizerCodeP VitalSignsOrganizerEffectiveTime VitalSignsOrganizerComponent42' constraints.validation.warning='VitalSignsOrganizerBodyTemperatureComponent VitalSignsOrganizerCode' templateId.root='2.16.840.1.1133883.17.3.10.1.28' templateId.extension='2022-01-01' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMED CT' code.displayName='Vital signs' constraints.validation.info='VitalSignsOrganizerComponent4 VitalSignsOrganizerComponent43'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerSystolicBloodPressureComponent VitalSignsOrganizerRespiratoryRateComponent VitalSignsOrganizerOxygenSaturationComponent VitalSignsOrganizerTemplateId VitalSignsOrganizerCodeP VitalSignsOrganizerEffectiveTime VitalSignsOrganizerComponent42' constraints.validation.warning='VitalSignsOrganizerBodyTemperatureComponent VitalSignsOrganizerCode' templateId.root='2.16.840.1.1133883.17.3.10.1.28' templateId.extension='2022-01-01' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMED CT' code.displayName='Vital signs' constraints.validation.info='VitalSignsOrganizerComponent411 VitalSignsOrganizerComponent43'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrVitalSignsOrganizerSystolicBloodPressureComponent constraints.validation.error='VitalSignsOrganizerSystolicBloodPressureComponentSystolicBloodPressure'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrVitalSignsOrganizerRespiratoryRateComponent constraints.validation.error='VitalSignsOrganizerRespiratoryRateComponentRespiratoryRate'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrVitalSignsOrganizerBodyTemperatureComponent constraints.validation.error='VitalSignsOrganizerBodyTemperatureComponentBodyTemperature'"
@@ -40,7 +40,8 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -52,7 +53,8 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -64,7 +66,8 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,7 +79,8 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,7 +140,7 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerComponent411(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,10 +172,11 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @generated
 	 */
 	public VitalSignsOrganizer init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsOrganizer

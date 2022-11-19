@@ -1,0 +1,20 @@
+<!-- CarbonDioxide: 2.16.840.1.1133883.17.3.10.1.168 -->
+
+<pattern id="p-PatientCareReport_2_CarbonDioxide_value_4_17_5-error_mdht" see="#p-PatientCareReport_2_CarbonDioxide_value_4_17_5-error_mdht" name="p-PatientCareReport_2_CarbonDioxide_value_4_17_5-error_mdht">
+		<!--
+			UML path: /CarbonDioxide
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component46/observation
+			UML qualified name: emspcr::CarbonDioxide
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.168']">
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ))
+			Constraint name: CarbonDioxideValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='PQ')])">Error: PatientCareReport - 4.17.5 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;PQ&quot; (CONF:10295)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

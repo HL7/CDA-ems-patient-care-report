@@ -1,0 +1,30 @@
+<!-- ProcedureSuccessfulObservation: 2.16.840.1.1133883.17.3.10.1.133 -->
+
+<pattern id="p-PatientCareReport_1A_ProcedureSuccessfulObservation_code_4_110_3-error_mdht" see="#p-PatientCareReport_1A_ProcedureSuccessfulObservation_code_4_110_3-error_mdht" name="p-PatientCareReport_1A_ProcedureSuccessfulObservation_code_4_110_3-error_mdht">
+		<!--
+			UML path: /ProcedureSuccessfulObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/ProcedureSuccessfulRelationship/ProcedureSuccessfulObservation
+			UML qualified name: emspcr::ProcedureSuccessfulObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.133']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: ProcedureSuccessfulObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.110.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10524)/@code=&quot;67544-7&quot; Procedure successful NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10525)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67544-7' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: ProcedureSuccessfulObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67544-7' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.110.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10524)/@code=&quot;67544-7&quot; Procedure successful NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10525)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

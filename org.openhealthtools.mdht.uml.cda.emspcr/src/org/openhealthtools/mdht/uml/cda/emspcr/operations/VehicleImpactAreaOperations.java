@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaTemplateId(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaTemplateId(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaMoodCode(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaMoodCode(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaCodeP(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaCodeP(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaCode(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaCode(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +409,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaValue(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaValue(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVehicleImpactAreaValueP(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVehicleImpactAreaValueP(VehicleImpactArea vehicleImpactArea,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

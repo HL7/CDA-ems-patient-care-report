@@ -1,0 +1,20 @@
+<!-- TurnaoundDelayRelationship -->
+
+<pattern id="p-PatientCareReport_2_TurnaoundDelayRelationship_TurnaroundDelay_4_32_6_i-error_mdht" see="#p-PatientCareReport_2_TurnaoundDelayRelationship_TurnaroundDelay_4_32_6_i-error_mdht" name="p-PatientCareReport_2_TurnaoundDelayRelationship_TurnaroundDelay_4_32_6_i-error_mdht">
+		<!--
+			UML path: /DelayOrganizer/TurnaoundDelayRelationship
+			UML root path: /PatientCareReport/ResponseSection/delayOrganizer/TurnaoundDelayRelationship
+			UML qualified name: emspcr::DelayOrganizer::TurnaoundDelayRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:delayOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.95']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.157']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::TurnaroundDelay))
+			Constraint name: DelayOrganizerTurnaoundDelayRelationshipTurnaroundDelay
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.157'])=1">Error: PatientCareReport - 4.32.6.i TurnaroundDelay
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10608)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

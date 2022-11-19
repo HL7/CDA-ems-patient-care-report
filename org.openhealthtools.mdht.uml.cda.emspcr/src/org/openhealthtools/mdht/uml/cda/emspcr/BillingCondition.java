@@ -101,10 +101,11 @@ public interface BillingCondition extends Observation {
 	 * @generated
 	 */
 	public BillingCondition init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BillingCondition init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public BillingCondition init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BillingCondition

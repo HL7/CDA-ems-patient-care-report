@@ -41,15 +41,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DispatchLocationOrganizerOperations extends OrganizerOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +76,8 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +89,10 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(
+			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -155,9 +154,8 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,8 +167,10 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
+			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -232,9 +232,8 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,8 +245,10 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
+			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -309,9 +310,8 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -323,8 +323,10 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDispatchLocationOrganizerTemplateId(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDispatchLocationOrganizerTemplateId(
+			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

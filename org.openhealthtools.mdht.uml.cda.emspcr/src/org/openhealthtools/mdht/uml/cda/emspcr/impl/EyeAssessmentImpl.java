@@ -134,13 +134,14 @@ public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment 
 	public EyeAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EyeAssessmentImpl
+} // EyeAssessmentImpl

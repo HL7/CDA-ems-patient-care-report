@@ -125,13 +125,14 @@ public class AbdomenAssessmentImpl extends ObservationImpl implements AbdomenAss
 	public AbdomenAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //AbdomenAssessmentImpl
+} // AbdomenAssessmentImpl

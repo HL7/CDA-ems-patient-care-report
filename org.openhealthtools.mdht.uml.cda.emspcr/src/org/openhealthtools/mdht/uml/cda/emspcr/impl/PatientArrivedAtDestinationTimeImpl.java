@@ -50,7 +50,8 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientArrivedAtDestinationTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientArrivedAtDestinationTimeTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientArrivedAtDestinationTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientArrivedAtDestinationTimeMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientArrivedAtDestinationTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientArrivedAtDestinationTimeCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientArrivedAtDestinationTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientArrivedAtDestinationTimeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCode(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientArrivedAtDestinationTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientArrivedAtDestinationTimeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeValue(this, diagnostics, context);
 	}
 
@@ -98,13 +103,14 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	public PatientArrivedAtDestinationTime init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientArrivedAtDestinationTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientArrivedAtDestinationTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientArrivedAtDestinationTimeImpl
+} // PatientArrivedAtDestinationTimeImpl

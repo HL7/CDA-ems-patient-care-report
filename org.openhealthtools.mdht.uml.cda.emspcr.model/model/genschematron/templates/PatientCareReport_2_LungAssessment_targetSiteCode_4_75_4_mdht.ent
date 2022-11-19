@@ -1,0 +1,30 @@
+<!-- LungAssessment: 2.16.840.1.1133883.17.3.10.1.194 -->
+
+<pattern id="p-PatientCareReport_2_LungAssessment_targetSiteCode_4_75_4-error_mdht" see="#p-PatientCareReport_2_LungAssessment_targetSiteCode_4_75_4-error_mdht" name="p-PatientCareReport_2_LungAssessment_targetSiteCode_4_75_4-error_mdht">
+		<!--
+			UML path: /LungAssessment
+			UML root path: /PatientCareReport/PhysicalAssessmentSection/physicalAssessmentOrganizer/component42/observation
+			UML qualified name: emspcr::LungAssessment
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']/cda:physicalAssessmentOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.78']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.194']">
+		<!--
+			OCL: ((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
+			Constraint name: LungAssessmentTargetSiteCodeP
+		-->
+	<assert test="not(cda:targetSiteCode and cda:targetSiteCode[not(@nullFlavor)]) or cda:targetSiteCode">Error: PatientCareReport - 4.75.4 targetSiteCode
+		Conformance: SHOULD contain zero or one [0..1] targetSiteCode (CONF:11577), which SHALL be selected from ValueSet LungFindingLocation 2.16.840.1.113883.17.3.11.117 DYNAMIC (CONF:11576)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: ((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA4306-2' or value.code = 'LA4585-1' or value.code = 'LA25377-5')))
+			Constraint name: LungAssessmentTargetSiteCode
+		-->
+	<assert test="not(cda:targetSiteCode and cda:targetSiteCode[not(@nullFlavor)]) or not(cda:targetSiteCode[not(. and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA4306-2' or @code = 'LA4585-1' or @code = 'LA25377-5'))])">Error: PatientCareReport - 4.75.4 targetSiteCode
+		Conformance: SHOULD contain zero or one [0..1] targetSiteCode (CONF:11577), which SHALL be selected from ValueSet LungFindingLocation 2.16.840.1.113883.17.3.11.117 DYNAMIC (CONF:11576)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

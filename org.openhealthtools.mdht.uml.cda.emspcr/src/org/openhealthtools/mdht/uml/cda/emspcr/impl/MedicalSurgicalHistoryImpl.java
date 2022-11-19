@@ -116,13 +116,14 @@ public class MedicalSurgicalHistoryImpl extends ObservationImpl implements Medic
 	public MedicalSurgicalHistory init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MedicalSurgicalHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public MedicalSurgicalHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //MedicalSurgicalHistoryImpl
+} // MedicalSurgicalHistoryImpl

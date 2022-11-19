@@ -1,0 +1,20 @@
+<!-- UnitEnRouteTime: 2.16.840.1.1133883.17.3.10.1.40 -->
+
+<pattern id="p-PatientCareReport_1A_UnitEnRouteTime_templateId_4_144_1-error_mdht" see="#p-PatientCareReport_1A_UnitEnRouteTime_templateId_4_144_1-error_mdht" name="p-PatientCareReport_1A_UnitEnRouteTime_templateId_4_144_1-error_mdht">
+		<!--
+			UML path: /UnitEnRouteTime
+			UML root path: /PatientCareReport/TimesSection/unitEnRouteTime
+			UML qualified name: emspcr::UnitEnRouteTime
+		-->
+	<rule context="/cda:ClinicalDocument/cda:TimesSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.10']/cda:unitEnRouteTime[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.40']">
+		<!--
+			OCL: self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.40' and id.extension = '2022-01-01')
+			Constraint name: UnitEnRouteTimeTemplateId
+		-->
+	<assert test="cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.40' and @extension = '2022-01-01'">Error: PatientCareReport - 4.144.1 templateId
+		Conformance: SHALL contain exactly one [1..1] templateId ( CONF:11432 ) such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.1133883.17.3.10.1.40&quot; SHALL contain exactly one [1..1] @extension=&quot;2022-01-01&quot;
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

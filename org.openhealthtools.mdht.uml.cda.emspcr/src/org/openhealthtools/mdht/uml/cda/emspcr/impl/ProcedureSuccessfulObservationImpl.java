@@ -50,7 +50,8 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureSuccessfulObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureSuccessfulObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureSuccessfulObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureSuccessfulObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureSuccessfulObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureSuccessfulObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureSuccessfulObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureSuccessfulObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCode(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureSuccessfulObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureSuccessfulObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationValue(this, diagnostics, context);
 	}
 
@@ -98,13 +103,14 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	public ProcedureSuccessfulObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProcedureSuccessfulObservationImpl
+} // ProcedureSuccessfulObservationImpl

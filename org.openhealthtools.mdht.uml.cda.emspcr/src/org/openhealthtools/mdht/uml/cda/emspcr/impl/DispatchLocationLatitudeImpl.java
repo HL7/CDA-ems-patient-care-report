@@ -50,7 +50,8 @@ public class DispatchLocationLatitudeImpl extends ObservationImpl implements Dis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDispatchLocationLatitudeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDispatchLocationLatitudeTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DispatchLocationLatitudeOperations.validateDispatchLocationLatitudeTemplateId(this, diagnostics, context);
 	}
 
@@ -89,13 +90,14 @@ public class DispatchLocationLatitudeImpl extends ObservationImpl implements Dis
 	public DispatchLocationLatitude init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DispatchLocationLatitudeImpl
+} // DispatchLocationLatitudeImpl

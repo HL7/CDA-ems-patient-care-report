@@ -92,10 +92,11 @@ public interface DrugAllergy extends Observation {
 	 * @generated
 	 */
 	public DrugAllergy init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugAllergy

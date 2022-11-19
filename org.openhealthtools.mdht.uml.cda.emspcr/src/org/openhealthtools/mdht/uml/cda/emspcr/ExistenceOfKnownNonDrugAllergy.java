@@ -89,10 +89,11 @@ public interface ExistenceOfKnownNonDrugAllergy extends Observation {
 	 * @generated
 	 */
 	public ExistenceOfKnownNonDrugAllergy init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfKnownNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ExistenceOfKnownNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ExistenceOfKnownNonDrugAllergy

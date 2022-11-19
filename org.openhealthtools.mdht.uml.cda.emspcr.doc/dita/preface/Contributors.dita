@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+    <title>Contributors</title>
+    <body>
+        <table>
+            <tgroup cols="2">
+                <tbody>
+                    <row>
+                        <entry>Co-Chair</entry>
+                        <entry>Laura Langford Heerman, Intermountain Healthcare</entry>
+                    </row>
+                    <row>
+                        <entry>Co-Chair</entry>
+                        <entry>Russ Leftwich, InterSystems</entry>
+                    </row>
+                    <row>
+                        <entry>Editor</entry>
+                        <entry>Jay Lyle, Ockham Information Services LLC </entry>
+                    </row>
+                    <row>
+                        <entry>EMS Subject Matter Expert</entry>
+                        <entry>Clay Mann National EMS Information System. University of Utah School of Medicine </entry>
+                    </row>
+                    <row>
+                        <entry>EMS Subject Matter Expert</entry>
+                        <entry>Joshua Legler, National EMS Information System. University of Utah School of Medicine 
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Terminology Support</entry>
+                        <entry>Jami Deckard, Regenstrief Institute</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <b>Prior Contributors</b>
+        </p>
+        <table id="table_chv_hvf_1tb">
+            <tgroup cols="2">
+                <tbody>
+                    <row>
+                        <entry>EMS Subject Matter Expert</entry>
+                        <entry>Greg Mears, M.D. Formerly of the Department of Emergency Medicine University of North Carolina, Chapel Hill 
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Co-Editor</entry>
+                        <entry>Sarah Ryan, Ockham Information Services LLC </entry>
+                    </row>
+                    <row>
+                        <entry>Abdul-Malik Shakir</entry>
+                        <entry>Shakir Consulting</entry>
+                    </row>
+                    <row>
+                        <entry>Salimah Shakir</entry>
+                        <entry>Shakir Consulting</entry>
+                    </row>
+                    <row>
+                        <entry>Terminology Support</entry>
+                        <entry>Jaci Phillips, Regenstrief Institute</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

@@ -107,13 +107,14 @@ public class HeartRateImpl extends ObservationImpl implements HeartRate {
 	public HeartRate init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //HeartRateImpl
+} // HeartRateImpl

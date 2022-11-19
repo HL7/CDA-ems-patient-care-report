@@ -89,10 +89,11 @@ public interface FirstUnitIndicator extends Observation {
 	 * @generated
 	 */
 	public FirstUnitIndicator init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public FirstUnitIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public FirstUnitIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FirstUnitIndicator

@@ -51,7 +51,8 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -96,7 +97,8 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(this, diagnostics, context);
 	}
 
@@ -117,13 +119,14 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	public EMSAdvanceDirectivesSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSAdvanceDirectivesSectionImpl
+} // EMSAdvanceDirectivesSectionImpl

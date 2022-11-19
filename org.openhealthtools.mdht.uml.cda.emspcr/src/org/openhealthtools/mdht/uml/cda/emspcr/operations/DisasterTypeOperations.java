@@ -42,15 +42,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DisasterTypeOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +77,8 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,8 +90,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDisasterTypeTemplateId(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDisasterTypeTemplateId(DisasterType disasterType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -156,9 +154,8 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,8 +167,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDisasterTypeMoodCode(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDisasterTypeMoodCode(DisasterType disasterType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDisasterTypeCode(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDisasterTypeCode(DisasterType disasterType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -304,7 +302,7 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17594-5' or value.code = 'LA18089-5' or value.code = 'LA18090-3' or value.code = 'LA18091-1' or value.code = 'LA18092-9' or value.code = 'LA18093-7' or value.code = 'LA18094-5' or value.code = 'LA18095-2' or value.code = 'LA18096-0' or value.code = 'LA18097-8' or value.code = 'LA18098-6' or value.code = 'LA18099-4' or value.code = 'LA18100-0' or value.code = 'LA18101-8' or value.code = 'NewLA-4507031' or value.code = 'NewLA-4507033' or value.code = 'NewLA-4507035' or value.code = 'NewLA-4507037' or value.code = 'NewLA-4507039' or value.code = 'NewLA-4507029')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17594-5' or value.code = 'LA18089-5' or value.code = 'LA18090-3' or value.code = 'LA18091-1' or value.code = 'LA18092-9' or value.code = 'LA18093-7' or value.code = 'LA18094-5' or value.code = 'LA18095-2' or value.code = 'LA18096-0' or value.code = 'LA18097-8' or value.code = 'LA18098-6' or value.code = 'LA18099-4' or value.code = 'LA18100-0' or value.code = 'LA18101-8' or value.code = 'LA30039-4' or value.code = 'LA32967-4' or value.code = 'LA32968-2' or value.code = 'LA30042-8' or value.code = 'LA30040-2' or value.code = 'LA30037-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDisasterTypeValue(DisasterType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disaster Type Value</em>}' invariant operation.
@@ -314,9 +312,8 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,8 +325,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDisasterTypeValue(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDisasterTypeValue(DisasterType disasterType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -391,9 +389,8 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DISASTER_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,8 +402,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDisasterTypeValueP(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDisasterTypeValueP(DisasterType disasterType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

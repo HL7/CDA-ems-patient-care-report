@@ -1,0 +1,20 @@
+<!-- ProviderOrganization -->
+
+<pattern id="p-PatientCareReport_1A_ProviderOrganization_telecom_2_1_9_i_d_3-error_mdht" see="#p-PatientCareReport_1A_ProviderOrganization_telecom_2_1_9_i_d_3-error_mdht" name="p-PatientCareReport_1A_ProviderOrganization_telecom_2_1_9_i_d_3-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole/providerOrganization
+			UML root path: /PatientCareReport/recordTarget/patientRole/providerOrganization
+			UML qualified name: consol::GeneralHeaderConstraints::RecordTarget::PatientRole::ProviderOrganization
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole/cda:providerOrganization">
+		<!--
+			OCL: not self.telecom->isEmpty()
+			Constraint name: GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom
+		-->
+	<assert test="cda:telecom">Error: PatientCareReport - 2.1.9.i.d.3 telecom
+		Conformance: SHALL contain at least one [1..*] telecom (CONF:5420, R2.1=CONF:1198-5420)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

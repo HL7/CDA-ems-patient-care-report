@@ -101,10 +101,11 @@ public interface LevelOfServiceObservation extends Observation {
 	 * @generated
 	 */
 	public LevelOfServiceObservation init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LevelOfServiceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public LevelOfServiceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LevelOfServiceObservation

@@ -37,23 +37,21 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Value P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.LungAssessment#validateLungAssessmentTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class LungAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentTemplateId(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentTemplateId(LungAssessment lungAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +157,8 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +170,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentCodeP(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentCodeP(LungAssessment lungAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -240,7 +238,7 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_LUNG_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'NeweExam.23' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '32449-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLungAssessmentCode(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Code</em>}' invariant operation.
@@ -250,9 +248,8 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,8 +261,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentCode(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentCode(LungAssessment lungAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -323,9 +321,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LUNG_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_LUNG_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA3523001' or value.code = 'newLA3523003' or value.code = 'newLA3523013' or value.code = 'newLA3523005' or value.code = 'newLA3523007' or value.code = 'newLA3523011' or value.code = 'newLA3523031' or value.code = 'newLA3523009' or value.code = 'newLA3523017' or value.code = 'newLA3523019' or value.code = 'newLA3523021' or value.code = 'newLA3523023' or value.code = 'newLA3523027' or value.code = 'newLA3523029' or value.code = 'newLA3523025')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA33360-1' or value.code = 'LA33354-4' or value.code = 'LA6626-1' or value.code = 'LA18402-0' or value.code = 'LA33362-7' or value.code = 'LA17232-2' or value.code = 'LA33365-0' or value.code = 'LA18226-3' or value.code = 'LA7460-4' or value.code = 'LA33356-9' or value.code = 'LA33355-1' or value.code = 'LA33363-5' or value.code = 'LA17612-5' or value.code = 'LA33364-3' or value.code = 'LA17236-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLungAssessmentValue(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Value</em>}' invariant operation.
@@ -335,9 +333,8 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,8 +346,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentValue(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentValue(LungAssessment lungAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -402,7 +400,7 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LUNG_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_LUNG_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (( not self.value->isEmpty())  and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLungAssessmentValueP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Value P</em>}' invariant operation.
@@ -412,9 +410,8 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentValueP(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentValueP(LungAssessment lungAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -472,28 +470,6 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -503,8 +479,9 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLungAssessmentTargetSiteCodeP(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateLungAssessmentTargetSiteCodeP(LungAssessment lungAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -542,18 +519,6 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 						 EmspcrPlugin.INSTANCE.getString("LungAssessmentLungAssessmentTargetSiteCodeP"),
 						 new Object [] { lungAssessment }));
 			}
-			
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.emspcr.LungAssessmentTargetSiteCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.emspcr.LungAssessmentTargetSiteCodeP", passToken);
-				}
-				passToken.add(lungAssessment);
-			}
 			 
 			return false;
 		}
@@ -570,7 +535,7 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA3522003' or value.code = 'newLA3522001' or value.code = 'newLA3522005')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA4306-2' or value.code = 'LA4585-1' or value.code = 'LA25377-5')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLungAssessmentTargetSiteCode(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code</em>}' invariant operation.
@@ -580,9 +545,29 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode->isEmpty()) )";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lung Assessment Target Site Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLungAssessmentTargetSiteCodeP(LungAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<  Constraint> VALIDATE_LUNG_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -594,17 +579,12 @@ public class LungAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
+	public static boolean validateLungAssessmentTargetSiteCode(LungAssessment lungAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
-	public static  boolean validateLungAssessmentTargetSiteCode(LungAssessment lungAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.LungAssessmentTargetSiteCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(lungAssessment)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
   	  
   	  
   	  

@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ComplaintOrganSystemOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemTemplateId(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemTemplateId(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemMoodCode(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemMoodCode(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +233,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +246,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemCodeP(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemCodeP(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +324,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +337,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemCode(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemCode(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +409,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemValue(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemValue(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLAINT_ORGAN_SYSTEM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class ComplaintOrganSystemOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComplaintOrganSystemValueP(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateComplaintOrganSystemValueP(ComplaintOrganSystem complaintOrganSystem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

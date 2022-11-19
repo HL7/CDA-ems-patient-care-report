@@ -1,0 +1,20 @@
+<!-- EMSInjuryIncidentDescriptionSection: 2.16.840.1.1133883.17.3.10.1.17 -->
+
+<pattern id="p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_injuryCauseCategory_3_8_5-error_mdht" see="#p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_injuryCauseCategory_3_8_5-error_mdht" name="p-PatientCareReport_1A_EMSInjuryIncidentDescriptionSection_injuryCauseCategory_3_8_5-error_mdht">
+		<!--
+			UML path: /EMSInjuryIncidentDescriptionSection
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection
+			UML qualified name: emspcr::EMSInjuryIncidentDescriptionSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryCauseCategory) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSInjuryIncidentDescriptionSectionInjuryCauseCategory
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.50' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.8.5 injuryCauseCategory
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:10917)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -47,15 +47,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class BackAndSpineAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,9 +82,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,8 +95,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentTemplateId(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentTemplateId(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -161,9 +159,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,8 +172,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentMoodCode(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentMoodCode(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -238,9 +236,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,8 +249,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentCodeP(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentCodeP(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -329,9 +327,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,8 +340,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentCode(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentCode(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -412,9 +410,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,8 +423,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentEffectiveTime(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentEffectiveTime(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -491,9 +489,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,8 +502,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentValue(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentValue(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -568,9 +566,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,8 +579,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentValueP(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentValueP(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -647,9 +645,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -661,8 +658,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentTargetSiteCode(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentTargetSiteCode(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -724,9 +722,8 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -738,8 +735,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBackAndSpineAssessmentTargetSiteCodeP(BackAndSpineAssessment backAndSpineAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateBackAndSpineAssessmentTargetSiteCodeP(BackAndSpineAssessment backAndSpineAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

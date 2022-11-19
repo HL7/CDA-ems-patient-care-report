@@ -81,7 +81,8 @@ public interface PrearrivalActivationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,7 +91,7 @@ public interface PrearrivalActivationObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18117-4\' or value.code = \'LA18118-2\' or value.code = \'LA18119-0\' or value.code = \'LA18120-8\' or value.code = \'LA18121-6\' or value.code = \'LA18122-4\' or value.code = \'LA18123-2\' or value.code = \'LA32-8\' or value.code = \'NewLA-4224019NewCode\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18117-4\' or value.code = \'LA18118-2\' or value.code = \'LA18119-0\' or value.code = \'LA18120-8\' or value.code = \'LA18121-6\' or value.code = \'LA18122-4\' or value.code = \'LA18123-2\' or value.code = \'LA32-8\' or value.code = \'LA32937-7\')))'"
 	 * @generated
 	 */
 	boolean validatePrearrivalActivationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,10 +114,11 @@ public interface PrearrivalActivationObservation extends Observation {
 	 * @generated
 	 */
 	public PrearrivalActivationObservation init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrearrivalActivationObservation

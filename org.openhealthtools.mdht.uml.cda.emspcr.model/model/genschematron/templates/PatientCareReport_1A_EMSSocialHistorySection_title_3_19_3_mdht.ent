@@ -1,0 +1,20 @@
+<!-- EMSSocialHistorySection: 2.16.840.1.1133883.17.3.10.1.22 -->
+
+<pattern id="p-PatientCareReport_1A_EMSSocialHistorySection_title_3_19_3-error_mdht" see="#p-PatientCareReport_1A_EMSSocialHistorySection_title_3_19_3-error_mdht" name="p-PatientCareReport_1A_EMSSocialHistorySection_title_3_19_3-error_mdht">
+		<!--
+			UML path: /EMSSocialHistorySection
+			UML root path: /PatientCareReport/SocialHistorySection
+			UML qualified name: emspcr::EMSSocialHistorySection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SocialHistorySection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.22']">
+		<!--
+			OCL: not self.title.oclIsUndefined()
+			Constraint name: EMSSocialHistorySectionTitle
+		-->
+	<assert test="cda:title">Error: PatientCareReport - 3.19.3 title
+		Conformance: SHALL contain exactly one [1..1] title=&quot;EMS Social History&quot;  (CONF:10243)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

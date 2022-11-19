@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class TransportDispositionOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDispositionTemplateId(TransportDisposition transportDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportDispositionTemplateId(TransportDisposition transportDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDispositionCodeP(TransportDisposition transportDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportDispositionCodeP(TransportDisposition transportDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -238,7 +236,7 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 */
 	protected static final String VALIDATE_TRANSPORT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'neweDisposition.30' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '100040-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportDispositionCode(TransportDisposition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Disposition Code</em>}' invariant operation.
@@ -248,9 +246,8 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,8 +259,9 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDispositionCode(TransportDisposition transportDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportDispositionCode(TransportDisposition transportDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -323,7 +321,7 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 */
 	protected static final String VALIDATE_TRANSPORT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA4230013' or value.code = 'newLA4230011' or value.code = 'newLA4230009' or value.code = 'newLA4230007' or value.code = 'newLA4230005' or value.code = 'newLA4230003' or value.code = 'newLA4230001')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA33327-0' or value.code = 'LA33326-2' or value.code = 'LA29248-4' or value.code = 'LA33324-7' or value.code = 'LA33323-9' or value.code = 'LA33322-1' or value.code = 'LA33321-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportDispositionValue(TransportDisposition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Disposition Value</em>}' invariant operation.
@@ -333,9 +331,8 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,8 +344,9 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDispositionValue(TransportDisposition transportDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportDispositionValue(TransportDisposition transportDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +408,8 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_DISPOSITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +421,9 @@ public class TransportDispositionOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDispositionValueP(TransportDisposition transportDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTransportDispositionValueP(TransportDisposition transportDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

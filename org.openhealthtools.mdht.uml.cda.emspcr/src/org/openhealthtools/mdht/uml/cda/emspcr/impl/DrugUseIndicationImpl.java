@@ -98,13 +98,14 @@ public class DrugUseIndicationImpl extends ObservationImpl implements DrugUseInd
 	public DrugUseIndication init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DrugUseIndicationImpl
+} // DrugUseIndicationImpl

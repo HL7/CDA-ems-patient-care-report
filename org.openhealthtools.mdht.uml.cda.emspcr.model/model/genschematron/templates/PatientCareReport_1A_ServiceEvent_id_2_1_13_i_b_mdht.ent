@@ -1,0 +1,20 @@
+<!-- ServiceEvent -->
+
+<pattern id="p-PatientCareReport_1A_ServiceEvent_id_2_1_13_i_b-error_mdht" see="#p-PatientCareReport_1A_ServiceEvent_id_2_1_13_i_b-error_mdht" name="p-PatientCareReport_1A_ServiceEvent_id_2_1_13_i_b-error_mdht">
+		<!--
+			UML path: /PatientCareReport/documentationOf/ServiceEvent
+			UML root path: /PatientCareReport/documentationOf/ServiceEvent
+			UML qualified name: emspcr::PatientCareReport::ServiceEventParticipation::ServiceEvent
+		-->
+	<rule context="/cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent">
+		<!--
+			OCL: not self.id->isEmpty()
+			Constraint name: PatientCareReportServiceEventParticipationServiceEventId
+		-->
+	<assert test="cda:id">Error: PatientCareReport - 2.1.13.i.b id
+		Conformance: SHALL contain at least two [2..*] id (CONF:10890)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- EMSAdvanceDirectivesSection: 2.16.840.1.1133883.17.3.10.1.12 -->
+
+<pattern id="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_advancedDirectiveObservation_3_1_5-error_mdht" see="#p-PatientCareReport_1A_EMSAdvanceDirectivesSection_advancedDirectiveObservation_3_1_5-error_mdht" name="p-PatientCareReport_1A_EMSAdvanceDirectivesSection_advancedDirectiveObservation_3_1_5-error_mdht">
+		<!--
+			UML path: /EMSAdvanceDirectivesSection
+			UML root path: /PatientCareReport/AdvanceDirectives
+			UML qualified name: emspcr::EMSAdvanceDirectivesSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AdvanceDirectives[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.12']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdvanceDirectiveObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSAdvanceDirectivesSectionAdvancedDirectiveObservation
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.98' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.1.5 advancedDirectiveObservation
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:10946)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

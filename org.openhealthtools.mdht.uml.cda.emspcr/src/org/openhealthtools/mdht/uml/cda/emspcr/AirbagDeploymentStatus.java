@@ -89,10 +89,11 @@ public interface AirbagDeploymentStatus extends Observation {
 	 * @generated
 	 */
 	public AirbagDeploymentStatus init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public AirbagDeploymentStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AirbagDeploymentStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AirbagDeploymentStatus

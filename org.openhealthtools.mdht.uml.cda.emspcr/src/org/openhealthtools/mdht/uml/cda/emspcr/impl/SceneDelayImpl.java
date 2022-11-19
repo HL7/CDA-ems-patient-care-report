@@ -107,13 +107,14 @@ public class SceneDelayImpl extends ObservationImpl implements SceneDelay {
 	public SceneDelay init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public SceneDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SceneDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //SceneDelayImpl
+} // SceneDelayImpl

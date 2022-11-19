@@ -1,0 +1,5 @@
+<!-- MedicationAuthorization -->
+
+<pattern id="p-PatientCareReport_1A_MedicationAuthorization_classCode_4_78_15_i_a-error_mdht" see="#p-PatientCareReport_1A_MedicationAuthorization_classCode_4_78_15_i_a-error_mdht" name="p-PatientCareReport_1A_MedicationAuthorization_classCode_4_78_15_i_a-error_mdht">
+</pattern>
+

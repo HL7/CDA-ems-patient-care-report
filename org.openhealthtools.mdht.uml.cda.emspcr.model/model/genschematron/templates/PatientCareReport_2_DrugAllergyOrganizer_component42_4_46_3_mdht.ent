@@ -1,0 +1,20 @@
+<!-- DrugAllergyOrganizer: 2.16.840.1.1133883.17.3.10.1.183 -->
+
+<pattern id="p-PatientCareReport_2_DrugAllergyOrganizer_component42_4_46_3-error_mdht" see="#p-PatientCareReport_2_DrugAllergyOrganizer_component42_4_46_3-error_mdht" name="p-PatientCareReport_2_DrugAllergyOrganizer_component42_4_46_3-error_mdht">
+		<!--
+			UML path: /DrugAllergyOrganizer
+			UML root path: /PatientCareReport/AllergiesAndAdverseReactionsSection/eMSDrugAllergyOrganizer
+			UML qualified name: emspcr::DrugAllergyOrganizer
+		-->
+	<rule context="/cda:ClinicalDocument/cda:AllergiesAndAdverseReactionsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.13']/cda:eMSDrugAllergyOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.183']">
+		<!--
+			OCL: self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(emspcr::DrugAllergyOrganizer::ExistenceOfKnownDrugAllergyComponent))
+			Constraint name: DrugAllergyOrganizerComponent42
+		-->
+	<assert test="count(cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.102'])=1">Error: PatientCareReport - 4.46.3 component42
+		Conformance: SHALL contain exactly one [1..1] component (CONF:11688)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

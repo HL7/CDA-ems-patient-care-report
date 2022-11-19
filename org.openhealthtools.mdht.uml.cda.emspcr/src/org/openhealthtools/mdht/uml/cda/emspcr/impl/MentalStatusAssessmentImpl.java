@@ -86,7 +86,8 @@ public class MentalStatusAssessmentImpl extends ObservationImpl implements Menta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMentalStatusAssessmentEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MentalStatusAssessmentOperations.validateMentalStatusAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
@@ -116,13 +117,14 @@ public class MentalStatusAssessmentImpl extends ObservationImpl implements Menta
 	public MentalStatusAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //MentalStatusAssessmentImpl
+} // MentalStatusAssessmentImpl

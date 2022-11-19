@@ -45,15 +45,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,9 +80,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +93,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentTemplateId(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentTemplateId(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -159,9 +158,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +171,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentMoodCode(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentMoodCode(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -236,9 +236,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +249,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentCodeP(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentCodeP(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -327,9 +328,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,8 +341,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentCode(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentCode(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +412,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +425,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -489,9 +492,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,8 +505,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentValue(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentValue(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -566,9 +570,8 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -580,8 +583,10 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePelvicAndGenitourinaryAssessmentValueP(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePelvicAndGenitourinaryAssessmentValueP(
+			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

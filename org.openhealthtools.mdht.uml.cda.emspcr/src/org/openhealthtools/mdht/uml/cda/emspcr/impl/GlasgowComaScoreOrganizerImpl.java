@@ -50,16 +50,8 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGlasgowComaScoreOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent4(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateGlasgowComaScoreOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGlasgowComaScoreOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerTemplateId(this, diagnostics, context);
 	}
 
@@ -68,8 +60,54 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGlasgowComaScoreOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGlasgowComaScoreOrganizerEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowComaScoreOrganizerComponent414(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent414(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowComaScoreOrganizerComponent42(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent42(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowComaScoreOrganizerComponent43(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent43(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowComaScoreOrganizerComponent44(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent44(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowComaScoreOrganizerComponent45(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerComponent45(this, diagnostics, context);
 	}
 
 	/**
@@ -80,13 +118,14 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	public GlasgowComaScoreOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //GlasgowComaScoreOrganizerImpl
+} // GlasgowComaScoreOrganizerImpl

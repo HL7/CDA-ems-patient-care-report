@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationTemplateId(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationTemplateId(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +157,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +170,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationMoodCode(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationMoodCode(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -235,9 +235,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +248,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationCodeP(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationCodeP(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -326,9 +327,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,8 +340,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationCode(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationCode(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +413,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +426,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationValue(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationValue(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +491,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +504,10 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationValueP(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateReasonProcedureNotAttemptedObservationValueP(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

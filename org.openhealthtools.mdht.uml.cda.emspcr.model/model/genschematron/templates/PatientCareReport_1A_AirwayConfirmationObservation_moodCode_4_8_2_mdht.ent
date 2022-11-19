@@ -1,0 +1,20 @@
+<!-- AirwayConfirmationObservation: 2.16.840.1.1133883.17.3.10.1.175 -->
+
+<pattern id="p-PatientCareReport_1A_AirwayConfirmationObservation_moodCode_4_8_2-error_mdht" see="#p-PatientCareReport_1A_AirwayConfirmationObservation_moodCode_4_8_2-error_mdht" name="p-PatientCareReport_1A_AirwayConfirmationObservation_moodCode_4_8_2-error_mdht">
+		<!--
+			UML path: /AirwayConfirmationObservation
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/AirwayConfirmationRelationship/AirwayConfirmationObservation
+			UML qualified name: emspcr::AirwayConfirmationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.175']">
+		<!--
+			OCL: self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+			Constraint name: AirwayConfirmationObservationMoodCode
+		-->
+	<assert test="@moodCode = 'EVN'">Error: PatientCareReport - 4.8.2 moodCode
+		Conformance: SHALL contain exactly one [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:11261)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

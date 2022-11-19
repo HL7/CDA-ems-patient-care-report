@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class DiastolicBloodPressureOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureTemplateId(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureTemplateId(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureMoodCode(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureMoodCode(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -237,9 +235,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,8 +248,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureCode(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureCode(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -314,9 +312,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,8 +325,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureEffectiveTime(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureEffectiveTime(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -391,9 +389,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,8 +402,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureValue(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureValue(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -470,9 +468,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -484,8 +481,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureMethodCode(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureMethodCode(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -547,9 +545,8 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_DIASTOLIC_BLOOD_PRESSURE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -561,8 +558,9 @@ public class DiastolicBloodPressureOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureMethodCodeP(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiastolicBloodPressureMethodCodeP(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

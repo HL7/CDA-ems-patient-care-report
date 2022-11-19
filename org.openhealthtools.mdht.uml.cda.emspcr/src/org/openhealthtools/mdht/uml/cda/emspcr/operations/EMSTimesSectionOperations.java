@@ -73,15 +73,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class EMSTimesSectionOperations extends SectionOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,9 +108,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,8 +121,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionTemplateId(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionTemplateId(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -189,9 +187,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,8 +200,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionCode(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionCode(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -266,9 +264,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,8 +277,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionCodeP(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionCodeP(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -343,9 +341,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -357,8 +354,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionTitle(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionTitle(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -420,9 +418,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,8 +431,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionText(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionText(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -497,9 +495,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -511,8 +508,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionCallTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionCallTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -574,9 +572,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -588,8 +585,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitNotifiedTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitNotifiedTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -651,9 +649,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -665,8 +662,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitEnRouteTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitEnRouteTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -728,9 +726,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -742,8 +739,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitOnSceneTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitOnSceneTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -805,9 +803,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -819,8 +816,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitAtPatienttTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitAtPatienttTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -882,9 +880,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -896,8 +893,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitLeftSceneTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitLeftSceneTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -959,9 +957,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -973,8 +970,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionPatientArrivedAtDestinationTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionPatientArrivedAtDestinationTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -1036,9 +1034,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1050,8 +1047,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionUnitBackInServiceTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionUnitBackInServiceTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -1113,9 +1111,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1127,8 +1124,9 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSTimesSectionDispatchNotifiedTime(EMSTimesSection emsTimesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEMSTimesSectionDispatchNotifiedTime(EMSTimesSection emsTimesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -1197,8 +1195,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CallTime getCallTime(EMSTimesSection emsTimesSection) {
+
+	public static CallTime getCallTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1244,8 +1242,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitNotifiedTime getUnitNotifiedTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitNotifiedTime getUnitNotifiedTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1291,8 +1289,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitEnRouteTime getUnitEnRouteTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitEnRouteTime getUnitEnRouteTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1338,8 +1336,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitOnSceneTime getUnitOnSceneTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitOnSceneTime getUnitOnSceneTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1385,8 +1383,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitAtPatientTime getUnitAtPatienttTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitAtPatientTime getUnitAtPatienttTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1432,8 +1430,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitLeftSceneTime getUnitLeftSceneTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitLeftSceneTime getUnitLeftSceneTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1479,8 +1477,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PatientArrivedAtDestinationTime getPatientArrivedAtDestinationTime(EMSTimesSection emsTimesSection) {
+
+	public static PatientArrivedAtDestinationTime getPatientArrivedAtDestinationTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1526,8 +1524,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitBackInServiceTime getUnitBackInServiceTime(EMSTimesSection emsTimesSection) {
+
+	public static UnitBackInServiceTime getUnitBackInServiceTime(EMSTimesSection emsTimesSection) {
 	
 	
 	
@@ -1573,8 +1571,8 @@ public class EMSTimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  DispatchNotifiedTime getDispatchNotifiedTime(EMSTimesSection emsTimesSection) {
+
+	public static DispatchNotifiedTime getDispatchNotifiedTime(EMSTimesSection emsTimesSection) {
 	
 	
 	

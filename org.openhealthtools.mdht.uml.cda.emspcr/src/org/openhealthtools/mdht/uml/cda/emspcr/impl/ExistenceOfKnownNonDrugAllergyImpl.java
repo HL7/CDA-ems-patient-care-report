@@ -50,7 +50,8 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownNonDrugAllergyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownNonDrugAllergyTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownNonDrugAllergyOperations.validateExistenceOfKnownNonDrugAllergyTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownNonDrugAllergyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownNonDrugAllergyMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownNonDrugAllergyOperations.validateExistenceOfKnownNonDrugAllergyMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownNonDrugAllergyCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownNonDrugAllergyCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownNonDrugAllergyOperations.validateExistenceOfKnownNonDrugAllergyCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownNonDrugAllergyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownNonDrugAllergyCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownNonDrugAllergyOperations.validateExistenceOfKnownNonDrugAllergyCode(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfKnownNonDrugAllergyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfKnownNonDrugAllergyValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfKnownNonDrugAllergyOperations.validateExistenceOfKnownNonDrugAllergyValue(this, diagnostics, context);
 	}
 
@@ -98,13 +103,14 @@ public class ExistenceOfKnownNonDrugAllergyImpl extends ObservationImpl implemen
 	public ExistenceOfKnownNonDrugAllergy init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfKnownNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ExistenceOfKnownNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ExistenceOfKnownNonDrugAllergyImpl
+} // ExistenceOfKnownNonDrugAllergyImpl

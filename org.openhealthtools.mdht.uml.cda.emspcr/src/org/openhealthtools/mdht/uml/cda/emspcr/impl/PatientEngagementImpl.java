@@ -98,13 +98,14 @@ public class PatientEngagementImpl extends ObservationImpl implements PatientEng
 	public PatientEngagement init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientEngagement init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientEngagement init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientEngagementImpl
+} // PatientEngagementImpl

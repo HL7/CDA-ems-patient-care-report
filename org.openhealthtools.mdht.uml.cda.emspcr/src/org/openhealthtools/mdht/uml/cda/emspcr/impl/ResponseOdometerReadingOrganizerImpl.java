@@ -50,7 +50,8 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(this, diagnostics, context);
 	}
 
@@ -86,7 +90,8 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseOdometerReadingOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResponseOdometerReadingOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerTemplateId(this, diagnostics, context);
 	}
 
@@ -98,13 +103,14 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	public ResponseOdometerReadingOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ResponseOdometerReadingOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResponseOdometerReadingOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResponseOdometerReadingOrganizerImpl
+} // ResponseOdometerReadingOrganizerImpl

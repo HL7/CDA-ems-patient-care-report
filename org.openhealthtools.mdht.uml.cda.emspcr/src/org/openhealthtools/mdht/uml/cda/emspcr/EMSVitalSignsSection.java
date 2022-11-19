@@ -111,10 +111,11 @@ public interface EMSVitalSignsSection extends Section {
 	 * @generated
 	 */
 	public EMSVitalSignsSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSVitalSignsSection

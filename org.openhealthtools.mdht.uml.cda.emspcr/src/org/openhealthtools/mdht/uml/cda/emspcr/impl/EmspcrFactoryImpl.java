@@ -57,23 +57,9 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case EmspcrPackage.PATIENT_CARE_REPORT: return createPatientCareReport();
-			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: return createEMSPastMedicalHistorySection();
-			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY: return createExistenceOfHistoryOfConditionOrSurgery();
-			case EmspcrPackage.MEDICAL_SURGICAL_HISTORY: return createMedicalSurgicalHistory();
-			case EmspcrPackage.EMS_BILLING_SECTION: return createEMSBillingSection();
-			case EmspcrPackage.BILLING_CONDITION: return createBillingCondition();
-			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION: return createLevelOfServiceObservation();
-			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: return createEMSInjuryIncidentDescriptionSection();
-			case EmspcrPackage.INJURY_CAUSE_CATEGORY: return createInjuryCauseCategory();
-			case EmspcrPackage.INJURY_MECHANISM: return createInjuryMechanism();
-			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS1AND2: return createTraumaTriageCriteriaSteps1and2();
-			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS3AND4: return createTraumaTriageCriteriaSteps3and4();
-			case EmspcrPackage.VEHICLE_IMPACT_AREA: return createVehicleImpactArea();
-			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE: return createPatientLocationInVehicle();
-			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT: return createVehicleOccupantSafetyEquipment();
-			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS: return createAirbagDeploymentStatus();
-			case EmspcrPackage.HEIGHT_OF_FALL: return createHeightOfFall();
-			case EmspcrPackage.DISASTER_TYPE: return createDisasterType();
+			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: return createEMSCurrentMedicationSection();
+			case EmspcrPackage.CURRENTLY_ON_MEDICATION: return createCurrentlyOnMedication();
+			case EmspcrPackage.CURRENT_MEDICATION: return createCurrentMedication();
 			case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT_SECTION: return createEMSCardiacArrestEventSection();
 			case EmspcrPackage.CARDIAC_ARREST: return createCardiacArrest();
 			case EmspcrPackage.EMS_ADVANCE_DIRECTIVES_SECTION: return createEMSAdvanceDirectivesSection();
@@ -83,14 +69,12 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 			case EmspcrPackage.EXISTENCE_OF_KNOWN_NON_DRUG_ALLERGY: return createExistenceOfKnownNonDrugAllergy();
 			case EmspcrPackage.NON_DRUG_ALLERGY: return createNonDrugAllergy();
 			case EmspcrPackage.DRUG_ALLERGY_ORGANIZER: return createDrugAllergyOrganizer();
-			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: return createEMSCurrentMedicationSection();
-			case EmspcrPackage.CURRENTLY_ON_MEDICATION: return createCurrentlyOnMedication();
-			case EmspcrPackage.CURRENT_MEDICATION: return createCurrentMedication();
+			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: return createEMSPastMedicalHistorySection();
+			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY: return createExistenceOfHistoryOfConditionOrSurgery();
+			case EmspcrPackage.MEDICAL_SURGICAL_HISTORY: return createMedicalSurgicalHistory();
 			case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION: return createEMSSocialHistorySection();
 			case EmspcrPackage.EXISTENCE_OF_DRUG_USE_INDICATION: return createExistenceOfDrugUseIndication();
 			case EmspcrPackage.DRUG_USE_INDICATION: return createDrugUseIndication();
-			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
-			case EmspcrPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
 			case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION: return createEMSPhysicalAssessmentSection();
 			case EmspcrPackage.PHYSICAL_ASSESSMENT_ORGANIZER: return createPhysicalAssessmentOrganizer();
 			case EmspcrPackage.PATIENT_PREGNANCY: return createPatientPregnancy();
@@ -103,15 +87,14 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 			case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION: return createEMSProceduresPerformedSection();
 			case EmspcrPackage.PROCEDURE: return createProcedure();
 			case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION: return createEMSPatientCareNarrativeSection();
+			case EmspcrPackage.EMS_SCENE_SECTION: return createEMSSceneSection();
+			case EmspcrPackage.FIRST_UNIT_INDICATOR: return createFirstUnitIndicator();
+			case EmspcrPackage.SCENE_PATIENT_COUNT: return createScenePatientCount();
+			case EmspcrPackage.MASS_CASUALTY_INDICATOR: return createMassCasualtyIndicator();
+			case EmspcrPackage.LOCATION_TYPE_OBSERVATION: return createLocationTypeObservation();
 			case EmspcrPackage.EMS_DISPATCH_SECTION: return createEMSDispatchSection();
 			case EmspcrPackage.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION: return createEmergencyMedicalDispatchObservation();
 			case EmspcrPackage.DISPATCH_REASON: return createDispatchReason();
-			case EmspcrPackage.EMS_RESPONSE_SECTION: return createEMSResponseSection();
-			case EmspcrPackage.DELAY_ORGANIZER: return createDelayOrganizer();
-			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER: return createDispatchLocationOrganizer();
-			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER: return createResponseOdometerReadingOrganizer();
-			case EmspcrPackage.RESPONSE_MODE_TO_SCENE: return createResponseModeToScene();
-			case EmspcrPackage.RESPONSE_MODE_QUALIFIER: return createResponseModeQualifier();
 			case EmspcrPackage.EMS_DISPOSITION_SECTION: return createEMSDispositionSection();
 			case EmspcrPackage.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION: return createNumberOfPatientsTransportedObservation();
 			case EmspcrPackage.TRANSPORT_MODE_OBSERVATION: return createTransportModeObservation();
@@ -131,11 +114,12 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 			case EmspcrPackage.EMS_PROTOCOL_SECTION: return createEMSProtocolSection();
 			case EmspcrPackage.PROTOCOL_OBSERVATION: return createProtocolObservation();
 			case EmspcrPackage.CANDIDATE_PATIENT_REGISTRY_TYPE: return createCandidatePatientRegistryType();
-			case EmspcrPackage.EMS_SCENE_SECTION: return createEMSSceneSection();
-			case EmspcrPackage.FIRST_UNIT_INDICATOR: return createFirstUnitIndicator();
-			case EmspcrPackage.SCENE_PATIENT_COUNT: return createScenePatientCount();
-			case EmspcrPackage.MASS_CASUALTY_INDICATOR: return createMassCasualtyIndicator();
-			case EmspcrPackage.LOCATION_TYPE_OBSERVATION: return createLocationTypeObservation();
+			case EmspcrPackage.EMS_RESPONSE_SECTION: return createEMSResponseSection();
+			case EmspcrPackage.DELAY_ORGANIZER: return createDelayOrganizer();
+			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER: return createDispatchLocationOrganizer();
+			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER: return createResponseOdometerReadingOrganizer();
+			case EmspcrPackage.RESPONSE_MODE_TO_SCENE: return createResponseModeToScene();
+			case EmspcrPackage.RESPONSE_MODE_QUALIFIER: return createResponseModeQualifier();
 			case EmspcrPackage.EMS_SITUATION_SECTION: return createEMSSituationSection();
 			case EmspcrPackage.COMPLAINT: return createComplaint();
 			case EmspcrPackage.POSSIBLE_INJURY: return createPossibleInjury();
@@ -154,6 +138,22 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 			case EmspcrPackage.PATIENT_ARRIVED_AT_DESTINATION_TIME: return createPatientArrivedAtDestinationTime();
 			case EmspcrPackage.UNIT_BACK_IN_SERVICE_TIME: return createUnitBackInServiceTime();
 			case EmspcrPackage.DISPATCH_NOTIFIED_TIME: return createDispatchNotifiedTime();
+			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
+			case EmspcrPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
+			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: return createEMSInjuryIncidentDescriptionSection();
+			case EmspcrPackage.INJURY_CAUSE_CATEGORY: return createInjuryCauseCategory();
+			case EmspcrPackage.INJURY_MECHANISM: return createInjuryMechanism();
+			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS1AND2: return createTraumaTriageCriteriaSteps1and2();
+			case EmspcrPackage.TRAUMA_TRIAGE_CRITERIA_STEPS3AND4: return createTraumaTriageCriteriaSteps3and4();
+			case EmspcrPackage.VEHICLE_IMPACT_AREA: return createVehicleImpactArea();
+			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE: return createPatientLocationInVehicle();
+			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT: return createVehicleOccupantSafetyEquipment();
+			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS: return createAirbagDeploymentStatus();
+			case EmspcrPackage.HEIGHT_OF_FALL: return createHeightOfFall();
+			case EmspcrPackage.DISASTER_TYPE: return createDisasterType();
+			case EmspcrPackage.EMS_BILLING_SECTION: return createEMSBillingSection();
+			case EmspcrPackage.BILLING_CONDITION: return createBillingCondition();
+			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION: return createLevelOfServiceObservation();
 			case EmspcrPackage.RESPONSE_ENDING_ODOMETER_READING: return createResponseEndingOdometerReading();
 			case EmspcrPackage.SYSTOLIC_BLOOD_PRESSURE: return createSystolicBloodPressure();
 			case EmspcrPackage.PRIOR_AID_VITALS: return createPriorAidVitals();
@@ -2146,4 +2146,4 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 		return EmspcrPackage.eINSTANCE;
 	}
 
-} //EmspcrFactoryImpl
+} // EmspcrFactoryImpl

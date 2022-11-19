@@ -1,0 +1,22 @@
+<!-- CardiacArrestTiming: 2.16.840.1.1133883.17.3.10.1.123 -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrestTiming_code_4_22_3-error_mdht" see="#p-PatientCareReport_1A_CardiacArrestTiming_code_4_22_3-error_mdht" name="p-PatientCareReport_1A_CardiacArrestTiming_code_4_22_3-error_mdht">
+		<!--
+			UML path: /CardiacArrestTiming
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/cardiacArrestTimingRelationship/cardiacArrestTiming
+			UML qualified name: emspcr::CardiacArrestTiming
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.123']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67502-5' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: CardiacArrestTimingCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67502-5' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.22.3 code
+		Conformance: SHALL contain exactly one [1..1] code/@code=&quot;67502-5&quot; Cardiac arrest timing (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:11670)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

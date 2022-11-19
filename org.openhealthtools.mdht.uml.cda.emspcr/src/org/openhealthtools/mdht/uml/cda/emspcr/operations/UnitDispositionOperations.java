@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class UnitDispositionOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,9 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitDispositionTemplateId(UnitDisposition unitDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitDispositionTemplateId(UnitDisposition unitDisposition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +155,8 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +168,9 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitDispositionCodeP(UnitDisposition unitDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitDispositionCodeP(UnitDisposition unitDisposition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -238,7 +236,7 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_UNIT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'neweDisposition.27' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '100037-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnitDispositionCode(UnitDisposition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Disposition Code</em>}' invariant operation.
@@ -248,9 +246,8 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,8 +259,9 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitDispositionCode(UnitDisposition unitDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitDispositionCode(UnitDisposition unitDisposition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -323,7 +321,7 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_UNIT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'newLA4227003' or value.code = 'newLA4227005' or value.code = 'newLA4227007' or value.code = 'newLA4227009NewCode' or value.code = 'newLA4227011' or value.code = 'newLA4227001')))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA33304-9' or value.code = 'LA33305-6' or value.code = 'LA33306-4' or value.code = 'LA33307-2' or value.code = 'LA33308-0' or value.code = 'LA33303-1')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnitDispositionValue(UnitDisposition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Disposition Value</em>}' invariant operation.
@@ -333,9 +331,8 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,8 +344,9 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitDispositionValue(UnitDisposition unitDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitDispositionValue(UnitDisposition unitDisposition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -410,9 +408,8 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_DISPOSITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,8 +421,9 @@ public class UnitDispositionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitDispositionValueP(UnitDisposition unitDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateUnitDispositionValueP(UnitDisposition unitDisposition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

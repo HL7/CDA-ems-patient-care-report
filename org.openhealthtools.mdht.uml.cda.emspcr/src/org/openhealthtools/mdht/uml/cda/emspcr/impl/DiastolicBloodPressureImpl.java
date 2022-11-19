@@ -77,7 +77,8 @@ public class DiastolicBloodPressureImpl extends ObservationImpl implements Diast
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiastolicBloodPressureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiastolicBloodPressureEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureEffectiveTime(this, diagnostics, context);
 	}
 
@@ -116,13 +117,14 @@ public class DiastolicBloodPressureImpl extends ObservationImpl implements Diast
 	public DiastolicBloodPressure init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DiastolicBloodPressureImpl
+} // DiastolicBloodPressureImpl

@@ -42,7 +42,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -54,7 +55,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informant-&gt;exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(cda::Informant12))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,7 +68,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,7 +81,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,7 +178,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,7 +191,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,10 +200,11 @@ public interface CardiacArrest extends Observation {
 	 * @generated
 	 */
 	public CardiacArrest init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacArrest

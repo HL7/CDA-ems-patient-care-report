@@ -1,0 +1,20 @@
+<!-- CardiacRhythm: 2.16.840.1.1133883.17.3.10.1.169 -->
+
+<pattern id="p-PatientCareReport_2_CardiacRhythm_participant1_4_23_7-error_mdht" see="#p-PatientCareReport_2_CardiacRhythm_participant1_4_23_7-error_mdht" name="p-PatientCareReport_2_CardiacRhythm_participant1_4_23_7-error_mdht">
+		<!--
+			UML path: /CardiacRhythm
+			UML root path: /PatientCareReport/VitalSignsSection/vitalSignsOrganizer/component43/organizer/component47/observation
+			UML qualified name: emspcr::CardiacRhythm
+		-->
+	<rule context="/cda:ClinicalDocument/cda:VitalSignsSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.23']/cda:vitalSignsOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.28']/cda:component/cda:organizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.30']/cda:component/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.169']">
+		<!--
+			OCL: self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(emspcr::CardiacRhythm::ECGParticipant))
+			Constraint name: CardiacRhythmParticipant1
+		-->
+	<assert test="count(cda:participant)=1">Error: PatientCareReport - 4.23.7 participant1
+		Conformance: SHALL contain exactly one [1..1] participant (CONF:11127)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -106,10 +106,11 @@ public interface DelayOrganizer extends Organizer {
 	 * @generated
 	 */
 	public DelayOrganizer init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DelayOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DelayOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DelayOrganizer

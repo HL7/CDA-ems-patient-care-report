@@ -107,13 +107,14 @@ public class ComplaintOrganSystemImpl extends ObservationImpl implements Complai
 	public ComplaintOrganSystem init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ComplaintOrganSystemImpl
+} // ComplaintOrganSystemImpl

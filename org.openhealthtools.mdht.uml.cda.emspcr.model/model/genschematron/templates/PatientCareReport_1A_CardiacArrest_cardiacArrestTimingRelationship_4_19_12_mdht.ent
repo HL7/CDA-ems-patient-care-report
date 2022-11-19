@@ -1,0 +1,20 @@
+<!-- CardiacArrest: 2.16.840.1.1133883.17.3.10.1.27 -->
+
+<pattern id="p-PatientCareReport_1A_CardiacArrest_cardiacArrestTimingRelationship_4_19_12-error_mdht" see="#p-PatientCareReport_1A_CardiacArrest_cardiacArrestTimingRelationship_4_19_12-error_mdht" name="p-PatientCareReport_1A_CardiacArrest_cardiacArrestTimingRelationship_4_19_12-error_mdht">
+		<!--
+			UML path: /CardiacArrest
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence
+			UML qualified name: emspcr::CardiacArrest
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']">
+		<!--
+			OCL: self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(emspcr::CardiacArrest::CardiacArrestTimingRelationship))
+			Constraint name: CardiacArrestCardiacArrestTimingRelationship
+		-->
+	<assert test="count(cda:entryRelationship)=1">Error: PatientCareReport - 4.19.12 cardiacArrestTimingRelationship
+		Conformance: SHALL contain exactly one [1..1] entryRelationship (CONF:11377)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

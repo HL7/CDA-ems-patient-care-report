@@ -77,10 +77,11 @@ public interface DispatchLocationLatitude extends Observation {
 	 * @generated
 	 */
 	public DispatchLocationLatitude init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DispatchLocationLatitude

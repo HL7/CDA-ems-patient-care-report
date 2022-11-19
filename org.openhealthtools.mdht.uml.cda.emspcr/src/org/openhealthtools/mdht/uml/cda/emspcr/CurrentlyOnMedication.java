@@ -77,10 +77,11 @@ public interface CurrentlyOnMedication extends Observation {
 	 * @generated
 	 */
 	public CurrentlyOnMedication init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CurrentlyOnMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CurrentlyOnMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CurrentlyOnMedication

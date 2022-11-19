@@ -1,0 +1,20 @@
+<!-- PrearrivalActivationObservation: 2.16.840.1.1133883.17.3.10.1.36 -->
+
+<pattern id="p-PatientCareReport_1A_PrearrivalActivationObservation_effectiveTime_4_102_4-error_mdht" see="#p-PatientCareReport_1A_PrearrivalActivationObservation_effectiveTime_4_102_4-error_mdht" name="p-PatientCareReport_1A_PrearrivalActivationObservation_effectiveTime_4_102_4-error_mdht">
+		<!--
+			UML path: /PrearrivalActivationObservation
+			UML root path: /PatientCareReport/DispositionSection/prearrivalActivationObservation
+			UML qualified name: emspcr::PrearrivalActivationObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:DispositionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.4']/cda:prearrivalActivationObservation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.36']">
+		<!--
+			OCL: not self.effectiveTime.oclIsUndefined()
+			Constraint name: PrearrivalActivationObservationEffectiveTime
+		-->
+	<assert test="cda:effectiveTime">Error: PatientCareReport - 4.102.4 effectiveTime
+		Conformance: SHALL contain exactly one [1..1] effectiveTime (CONF:10691)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

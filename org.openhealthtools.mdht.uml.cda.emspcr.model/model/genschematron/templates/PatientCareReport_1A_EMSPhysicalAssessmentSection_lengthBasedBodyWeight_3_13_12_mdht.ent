@@ -1,0 +1,20 @@
+<!-- EMSPhysicalAssessmentSection: 2.16.840.1.1133883.17.3.10.1.20 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_lengthBasedBodyWeight_3_13_12-error_mdht" see="#p-PatientCareReport_1A_EMSPhysicalAssessmentSection_lengthBasedBodyWeight_3_13_12-error_mdht" name="p-PatientCareReport_1A_EMSPhysicalAssessmentSection_lengthBasedBodyWeight_3_13_12-error_mdht">
+		<!--
+			UML path: /EMSPhysicalAssessmentSection
+			UML root path: /PatientCareReport/PhysicalAssessmentSection
+			UML qualified name: emspcr::EMSPhysicalAssessmentSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PhysicalAssessmentSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.20']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer::LengthBasedPatientBodyWeightClassComponent))->size() <= 1
+			Constraint name: EMSPhysicalAssessmentSectionLengthBasedBodyWeight
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.110']) &lt;= 1">Error: PatientCareReport - 3.13.12 lengthBasedBodyWeight
+		Conformance: MAY contain zero or one [0..1] entry (CONF:11402)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

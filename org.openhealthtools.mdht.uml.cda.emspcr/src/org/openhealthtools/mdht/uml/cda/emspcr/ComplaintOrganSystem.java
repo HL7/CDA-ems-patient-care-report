@@ -101,10 +101,11 @@ public interface ComplaintOrganSystem extends Observation {
 	 * @generated
 	 */
 	public ComplaintOrganSystem init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplaintOrganSystem

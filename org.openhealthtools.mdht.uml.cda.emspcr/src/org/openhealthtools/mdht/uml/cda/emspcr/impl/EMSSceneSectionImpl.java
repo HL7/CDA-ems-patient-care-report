@@ -117,7 +117,8 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSceneSectionMassCasualtyIndicator(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSSceneSectionMassCasualtyIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSSceneSectionOperations.validateEMSSceneSectionMassCasualtyIndicator(this, diagnostics, context);
 	}
 
@@ -126,7 +127,8 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSceneSectionLocationTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSSceneSectionLocationTypeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EMSSceneSectionOperations.validateEMSSceneSectionLocationTypeObservation(this, diagnostics, context);
 	}
 
@@ -174,13 +176,14 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	public EMSSceneSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EMSSceneSectionImpl
+} // EMSSceneSectionImpl

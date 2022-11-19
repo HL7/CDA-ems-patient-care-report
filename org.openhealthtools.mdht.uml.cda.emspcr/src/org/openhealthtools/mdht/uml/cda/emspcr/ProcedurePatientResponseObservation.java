@@ -33,7 +33,8 @@ public interface ProcedurePatientResponseObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.135\' and id.extension = \'2022-01-01\')'"
 	 * @generated
 	 */
-	boolean validateProcedurePatientResponseObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedurePatientResponseObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,7 +46,8 @@ public interface ProcedurePatientResponseObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateProcedurePatientResponseObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedurePatientResponseObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,10 +103,11 @@ public interface ProcedurePatientResponseObservation extends Observation {
 	 * @generated
 	 */
 	public ProcedurePatientResponseObservation init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProcedurePatientResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ProcedurePatientResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedurePatientResponseObservation

@@ -98,13 +98,14 @@ public class DestinationRhythmImpl extends ObservationImpl implements Destinatio
 	public DestinationRhythm init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DestinationRhythmImpl
+} // DestinationRhythmImpl

@@ -1,0 +1,20 @@
+<!-- EMSEncompassingEncounter -->
+
+<pattern id="p-PatientCareReport_2_EMSEncompassingEncounter_otherAgencyAtSceneParticipation_2_1_15_ii_d-error_mdht" see="#p-PatientCareReport_2_EMSEncompassingEncounter_otherAgencyAtSceneParticipation_2_1_15_ii_d-error_mdht" name="p-PatientCareReport_2_EMSEncompassingEncounter_otherAgencyAtSceneParticipation_2_1_15_ii_d-error_mdht">
+		<!--
+			UML path: /PatientCareReport/componentOf/encompassingEncounter
+			UML root path: /PatientCareReport/componentOf/encompassingEncounter
+			UML qualified name: emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter
+		-->
+	<rule context="/cda:ClinicalDocument/cda:componentOf/cda:encompassingEncounter">
+		<!--
+			OCL: self.encounterParticipant->select(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(emspcr::PatientCareReport::EncompassingEncounterRelationship::EMSEncompassingEncounter::OtherAgencyAtSceneParticipation))->size() >= 0
+			Constraint name: PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipation
+		-->
+	<assert test="count(cda:encounterParticipant[cda:assignedEntity/@classCode = 'ASSIGNED']) &gt;= 0">Error: PatientCareReport - 2.1.15.ii.d otherAgencyAtSceneParticipation
+		Conformance: MAY contain zero or more [0..*] encounterParticipant (CONF:11325)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -50,7 +50,8 @@ public class LevelOfServiceObservationImpl extends ObservationImpl implements Le
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLevelOfServiceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLevelOfServiceObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationTemplateId(this, diagnostics, context);
 	}
 
@@ -107,13 +108,14 @@ public class LevelOfServiceObservationImpl extends ObservationImpl implements Le
 	public LevelOfServiceObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LevelOfServiceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public LevelOfServiceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //LevelOfServiceObservationImpl
+} // LevelOfServiceObservationImpl

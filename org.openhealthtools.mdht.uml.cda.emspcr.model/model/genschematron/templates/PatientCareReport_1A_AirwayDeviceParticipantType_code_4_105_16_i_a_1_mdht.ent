@@ -1,0 +1,22 @@
+<!-- AirwayDeviceParticipantType -->
+
+<pattern id="p-PatientCareReport_1A_AirwayDeviceParticipantType_code_4_105_16_i_a_1-error_mdht" see="#p-PatientCareReport_1A_AirwayDeviceParticipantType_code_4_105_16_i_a_1-error_mdht" name="p-PatientCareReport_1A_AirwayDeviceParticipantType_code_4_105_16_i_a_1-error_mdht">
+		<!--
+			UML path: /Procedure/DeviceParticipation/AirwayDeviceParticipantRole/AirwayDeviceParticipantType
+			UML root path: /PatientCareReport/ProceduresPerformedSection/procedureActivityProcedure1/DeviceParticipation/AirwayDeviceParticipantRole/AirwayDeviceParticipantType
+			UML qualified name: emspcr::Procedure::AirwayDeviceParticipant::AirwayDeviceParticipantRole::AirwayDeviceParticipantType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProceduresPerformedSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.21']/cda:procedureActivityProcedure1[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.181']/cda:participant/cda:participantRole/cda:playingDevice">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18004-4' or value.code = 'LA18657-9' or value.code = 'LA18658-7' or value.code = 'LA18659-5' or value.code = 'LA18660-3' or value.code = 'LA18661-1' or value.code = 'LA18662-9' or value.code = 'LA18663-7')
+			Constraint name: ProcedureAirwayDeviceParticipantAirwayDeviceParticipantRoleAirwayDeviceParticipantTypeCode
+		-->
+	<assert test="cda:code and cda:code[@codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA18004-4' or @code = 'LA18657-9' or @code = 'LA18658-7' or @code = 'LA18659-5' or @code = 'LA18660-3' or @code = 'LA18661-1' or @code = 'LA18662-9' or @code = 'LA18663-7')]">Error: PatientCareReport - 4.105.16.i.a.1 code
+		Conformance: SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet AirwayDeviceType 2.16.840.1.113883.17.3.11.61 DYNAMIC (CONF:10550)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

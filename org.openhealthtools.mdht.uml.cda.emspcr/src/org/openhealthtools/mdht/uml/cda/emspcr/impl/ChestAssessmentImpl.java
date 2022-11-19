@@ -116,13 +116,14 @@ public class ChestAssessmentImpl extends ObservationImpl implements ChestAssessm
 	public ChestAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ChestAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ChestAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ChestAssessmentImpl
+} // ChestAssessmentImpl

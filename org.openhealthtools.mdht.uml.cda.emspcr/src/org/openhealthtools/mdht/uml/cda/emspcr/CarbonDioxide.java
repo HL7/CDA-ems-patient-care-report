@@ -101,10 +101,11 @@ public interface CarbonDioxide extends Observation {
 	 * @generated
 	 */
 	public CarbonDioxide init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CarbonDioxide init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CarbonDioxide init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CarbonDioxide

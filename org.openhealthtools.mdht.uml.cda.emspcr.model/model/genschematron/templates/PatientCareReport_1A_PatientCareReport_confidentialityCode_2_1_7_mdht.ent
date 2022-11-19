@@ -1,0 +1,22 @@
+<!-- PatientCareReport: 2.16.840.1.1133883.17.3.10.2 -->
+
+<pattern id="p-PatientCareReport_1A_PatientCareReport_confidentialityCode_2_1_7-error_mdht" see="#p-PatientCareReport_1A_PatientCareReport_confidentialityCode_2_1_7-error_mdht" name="p-PatientCareReport_1A_PatientCareReport_confidentialityCode_2_1_7-error_mdht">
+		<!--
+			UML path: /PatientCareReport
+			UML root path: /PatientCareReport
+			UML qualified name: emspcr::PatientCareReport
+		-->
+	<rule context="/cda:ClinicalDocument">
+		<!--
+			OCL: not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in 
+value.code = 'N' and value.codeSystem = '2.16.840.1.113883.5.25'
+			Constraint name: PatientCareReportConfidentialityCode
+		-->
+	<assert test="cda:confidentialityCode and cda:confidentialityCode[@code = 'N' and @codeSystem = '2.16.840.1.113883.5.25']">Error: PatientCareReport - 2.1.7 confidentialityCode
+		Conformance: SHALL contain exactly one [1..1] confidentialityCode=&quot;N&quot; /@code=&quot;N&quot;  (CodeSystem: 2.16.840.1.113883.5.25 HL7 Confidentiality) (CONF:11390)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -1,0 +1,20 @@
+<!-- PatientRole -->
+
+<pattern id="p-PatientCareReport_1A_PatientRole_addr_2_1_9_i_a-error_mdht" see="#p-PatientCareReport_1A_PatientRole_addr_2_1_9_i_a-error_mdht" name="p-PatientCareReport_1A_PatientRole_addr_2_1_9_i_a-error_mdht">
+		<!--
+			UML path: /PatientCareReport/recordTarget/patientRole
+			UML root path: /PatientCareReport/recordTarget/patientRole
+			UML qualified name: emspcr::PatientCareReport::RecordTarget::PatientRole
+		-->
+	<rule context="/cda:ClinicalDocument/cda:recordTarget/cda:patientRole">
+		<!--
+			OCL: not self.addr->isEmpty()
+			Constraint name: PatientCareReportRecordTargetPatientRoleAddr
+		-->
+	<assert test="cda:addr">Error: PatientCareReport - 2.1.9.i.a addr
+		Conformance: SHALL contain at least one [1..*] addr (CONF:10031)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

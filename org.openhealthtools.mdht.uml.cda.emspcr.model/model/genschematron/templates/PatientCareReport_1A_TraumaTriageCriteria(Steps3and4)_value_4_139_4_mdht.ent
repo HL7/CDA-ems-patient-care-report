@@ -1,0 +1,30 @@
+<!-- TraumaTriageCriteriaSteps3and4: 2.16.840.1.1133883.17.3.10.1.53 -->
+
+<pattern id="p-PatientCareReport_1A_TraumaTriageCriteriaSteps3and4_value_4_139_4-error_mdht" see="#p-PatientCareReport_1A_TraumaTriageCriteriaSteps3and4_value_4_139_4-error_mdht" name="p-PatientCareReport_1A_TraumaTriageCriteriaSteps3and4_value_4_139_4-error_mdht">
+		<!--
+			UML path: /TraumaTriageCriteriaSteps3and4
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/injuryRiskFactor
+			UML qualified name: emspcr::TraumaTriageCriteriaSteps3and4
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:injuryRiskFactor[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.53']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17348-6' or value.code = 'LA17349-4' or value.code = 'LA17350-2' or value.code = 'LA17352-8' or value.code = 'LA17353-6' or value.code = 'LA17357-7' or value.code = 'LA17360-1' or value.code = 'LA18124-0'))
+			Constraint name: TraumaTriageCriteriaSteps3and4Value
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17348-6' or @code = 'LA17349-4' or @code = 'LA17350-2' or @code = 'LA17352-8' or @code = 'LA17353-6' or @code = 'LA17357-7' or @code = 'LA17360-1' or @code = 'LA18124-0'))])">Error: PatientCareReport - 4.139.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11382), which SHALL be selected from ValueSet InjuryRiskFactor 2.16.840.1.113883.17.3.11.4 DYNAMIC (CONF:10115)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: TraumaTriageCriteriaSteps3and4ValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.139.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11382), which SHALL be selected from ValueSet InjuryRiskFactor 2.16.840.1.113883.17.3.11.4 DYNAMIC (CONF:10115)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

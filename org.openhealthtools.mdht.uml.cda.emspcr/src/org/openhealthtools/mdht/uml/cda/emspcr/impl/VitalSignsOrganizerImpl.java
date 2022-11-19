@@ -50,7 +50,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerSystolicBloodPressureComponent(this, diagnostics, context);
 	}
 
@@ -59,7 +60,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerRespiratoryRateComponent(this, diagnostics, context);
 	}
 
@@ -68,7 +70,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerBodyTemperatureComponent(this, diagnostics, context);
 	}
 
@@ -77,7 +80,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerOxygenSaturationComponent(this, diagnostics, context);
 	}
 
@@ -122,8 +126,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerComponent4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerComponent4(this, diagnostics, context);
+	public boolean validateVitalSignsOrganizerComponent411(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerComponent411(this, diagnostics, context);
 	}
 
 	/**
@@ -152,13 +156,14 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	public VitalSignsOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //VitalSignsOrganizerImpl
+} // VitalSignsOrganizerImpl

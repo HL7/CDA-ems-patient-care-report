@@ -107,13 +107,14 @@ public class PatientBodyWeightImpl extends ObservationImpl implements PatientBod
 	public PatientBodyWeight init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientBodyWeightImpl
+} // PatientBodyWeightImpl

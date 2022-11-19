@@ -1,0 +1,30 @@
+<!-- MedicationResponseObservation: 2.16.840.1.1133883.17.3.10.1.106 -->
+
+<pattern id="p-PatientCareReport_1A_MedicationResponseObservation_code_4_82_3-error_mdht" see="#p-PatientCareReport_1A_MedicationResponseObservation_code_4_82_3-error_mdht" name="p-PatientCareReport_1A_MedicationResponseObservation_code_4_82_3-error_mdht">
+		<!--
+			UML path: /MedicationResponseObservation
+			UML root path: /PatientCareReport/MedicationsAdministeredSection/medicationAdministered/medicationAdministeredResponseRelationship/medicationResponseObservation
+			UML qualified name: emspcr::MedicationResponseObservation
+		-->
+	<rule context="/cda:ClinicalDocument/cda:MedicationsAdministeredSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.18']/cda:medicationAdministered[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.72']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.106']">
+		<!--
+			OCL: not self.code.oclIsUndefined()
+			Constraint name: MedicationResponseObservationCodeP
+		-->
+	<assert test="cda:code">Error: PatientCareReport - 4.82.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10469)/@code=&quot;67540-5&quot; Response to medication NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10470)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67540-5' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: MedicationResponseObservationCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67540-5' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.82.3 code
+		Conformance: SHALL contain exactly one [1..1] code (CONF:10469)/@code=&quot;67540-5&quot; Response to medication NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10470)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

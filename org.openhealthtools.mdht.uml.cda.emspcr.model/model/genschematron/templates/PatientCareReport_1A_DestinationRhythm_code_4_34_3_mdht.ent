@@ -1,0 +1,22 @@
+<!-- DestinationRhythm: 2.16.840.1.1133883.17.3.10.1.129 -->
+
+<pattern id="p-PatientCareReport_1A_DestinationRhythm_code_4_34_3-error_mdht" see="#p-PatientCareReport_1A_DestinationRhythm_code_4_34_3-error_mdht" name="p-PatientCareReport_1A_DestinationRhythm_code_4_34_3-error_mdht">
+		<!--
+			UML path: /DestinationRhythm
+			UML root path: /PatientCareReport/CardiacArrestEvent/cardiacArrestExistence/destinationRhythmRelationship/destinationRhythm
+			UML qualified name: emspcr::DestinationRhythm
+		-->
+	<rule context="/cda:ClinicalDocument/cda:CardiacArrestEvent[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.14']/cda:cardiacArrestExistence[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.27']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.129']">
+		<!--
+			OCL: not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '67519-9' and value.codeSystem = '2.16.840.1.113883.6.1'
+			Constraint name: DestinationRhythmCode
+		-->
+	<assert test="cda:code and cda:code[@code = '67519-9' and @codeSystem = '2.16.840.1.113883.6.1']">Error: PatientCareReport - 4.34.3 code
+		Conformance: SHALL contain exactly one [1..1] code/@code=&quot;67519-9&quot; Cardiac rhythm NEMSIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:10189)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -101,10 +101,11 @@ public interface PatientPregnancy extends Observation {
 	 * @generated
 	 */
 	public PatientPregnancy init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientPregnancy

@@ -1,0 +1,20 @@
+<!-- EMSProtocolSection: 2.16.840.1.1133883.17.3.10.1.7 -->
+
+<pattern id="p-PatientCareReport_1A_EMSProtocolSection_candidatePatientRegistryType_3_15_6-error_mdht" see="#p-PatientCareReport_1A_EMSProtocolSection_candidatePatientRegistryType_3_15_6-error_mdht" name="p-PatientCareReport_1A_EMSProtocolSection_candidatePatientRegistryType_3_15_6-error_mdht">
+		<!--
+			UML path: /EMSProtocolSection
+			UML root path: /PatientCareReport/ProtocolSection
+			UML qualified name: emspcr::EMSProtocolSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ProtocolSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.7']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->select(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::CandidatePatientRegistryType) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)->size() <= 1
+			Constraint name: EMSProtocolSectionCandidatePatientRegistryType
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.94' and @typeCode = 'COMP']) &lt;= 1">Error: PatientCareReport - 3.15.6 candidatePatientRegistryType
+		Conformance: If section/@nullFlavor is not present, MAY contain  [0..1] entry such that it  (CONF:11026)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

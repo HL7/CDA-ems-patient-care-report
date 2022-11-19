@@ -98,13 +98,14 @@ public class LocationTypeObservationImpl extends ObservationImpl implements Loca
 	public LocationTypeObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //LocationTypeObservationImpl
+} // LocationTypeObservationImpl

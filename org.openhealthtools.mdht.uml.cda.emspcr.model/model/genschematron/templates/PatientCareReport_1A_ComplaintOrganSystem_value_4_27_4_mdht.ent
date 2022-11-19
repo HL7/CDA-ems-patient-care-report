@@ -1,0 +1,30 @@
+<!-- ComplaintOrganSystem: 2.16.840.1.1133883.17.3.10.1.140 -->
+
+<pattern id="p-PatientCareReport_1A_ComplaintOrganSystem_value_4_27_4-error_mdht" see="#p-PatientCareReport_1A_ComplaintOrganSystem_value_4_27_4-error_mdht" name="p-PatientCareReport_1A_ComplaintOrganSystem_value_4_27_4-error_mdht">
+		<!--
+			UML path: /ComplaintOrganSystem
+			UML root path: /PatientCareReport/SituationSection/complaint/ComplaintOrganSystemRelationship/ComplaintOrganSystem
+			UML qualified name: emspcr::ComplaintOrganSystem
+		-->
+	<rule context="/cda:ClinicalDocument/cda:SituationSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.9']/cda:complaint[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.63']/cda:entryRelationship/cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.140']">
+		<!--
+			OCL: self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA16968-2' or value.code = 'LA18114-1' or value.code = 'LA18277-6' or value.code = 'LA18278-4' or value.code = 'LA18279-2' or value.code = 'LA18281-8' or value.code = 'LA18282-6' or value.code = 'LA18283-4' or value.code = 'LA18284-2' or value.code = 'LA18285-9' or value.code = 'LA9534-4'))
+			Constraint name: ComplaintOrganSystemValue
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA16968-2' or @code = 'LA18114-1' or @code = 'LA18277-6' or @code = 'LA18278-4' or @code = 'LA18279-2' or @code = 'LA18281-8' or @code = 'LA18282-6' or @code = 'LA18283-4' or @code = 'LA18284-2' or @code = 'LA18285-9' or @code = 'LA9534-4'))])">Error: PatientCareReport - 4.27.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10786), which SHALL be selected from ValueSet OrganSystem 2.16.840.1.113883.17.3.11.77 DYNAMIC (CONF:10785)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: ComplaintOrganSystemValueP
+		-->
+	<assert test="count(cda:value) = 1 and not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.27.4 value
+		Conformance: SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot; (CONF:10786), which SHALL be selected from ValueSet OrganSystem 2.16.840.1.113883.17.3.11.77 DYNAMIC (CONF:10785)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

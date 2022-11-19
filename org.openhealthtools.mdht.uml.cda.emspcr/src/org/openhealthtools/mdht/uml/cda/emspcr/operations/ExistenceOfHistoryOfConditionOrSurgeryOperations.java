@@ -43,15 +43,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,9 +78,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +91,10 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(
+			ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -157,9 +156,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,8 +169,10 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(
+			ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -234,9 +234,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +247,10 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(
+			ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -325,9 +326,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,8 +339,10 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(
+			ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	
@@ -408,9 +410,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_OR_SURGERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +423,10 @@ public class ExistenceOfHistoryOfConditionOrSurgeryOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(
+			ExistenceOfHistoryOfConditionOrSurgery existenceOfHistoryOfConditionOrSurgery, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 	
 	
 	

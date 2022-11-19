@@ -113,10 +113,11 @@ public interface LevelOfResponsiveness extends Observation {
 	 * @generated
 	 */
 	public LevelOfResponsiveness init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LevelOfResponsiveness

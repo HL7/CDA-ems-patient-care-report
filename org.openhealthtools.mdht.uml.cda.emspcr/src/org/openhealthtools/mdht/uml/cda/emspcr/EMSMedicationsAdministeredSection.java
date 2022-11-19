@@ -34,7 +34,8 @@ public interface EMSMedicationsAdministeredSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.18\' and id.extension = \'2022-01-01\')'"
 	 * @generated
 	 */
-	boolean validateEMSMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,7 +95,8 @@ public interface EMSMedicationsAdministeredSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,10 +113,11 @@ public interface EMSMedicationsAdministeredSection extends Section {
 	 * @generated
 	 */
 	public EMSMedicationsAdministeredSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSMedicationsAdministeredSection

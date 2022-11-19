@@ -1,0 +1,20 @@
+<!-- EMSPersonnelAdverseEventSection: 2.16.840.1.1133883.17.3.10.1.6 -->
+
+<pattern id="p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_adverseEventIndicator_3_12_5-error_mdht" see="#p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_adverseEventIndicator_3_12_5-error_mdht" name="p-PatientCareReport_1A_EMSPersonnelAdverseEventSection_adverseEventIndicator_3_12_5-error_mdht">
+		<!--
+			UML path: /EMSPersonnelAdverseEventSection
+			UML root path: /PatientCareReport/PersonnelAdverseEventSection
+			UML qualified name: emspcr::EMSPersonnelAdverseEventSection
+		-->
+	<rule context="/cda:ClinicalDocument/cda:PersonnelAdverseEventSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.6']">
+		<!--
+			OCL: self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdverseEventIndicator) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+			Constraint name: EMSPersonnelAdverseEventSectionAdverseEventIndicator
+		-->
+	<assert test="@nullFlavor = 'NI' or count(cda:entry[cda:observation and cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.89' and @typeCode = 'COMP'])=1">Error: PatientCareReport - 3.12.5 adverseEventIndicator
+		Conformance: If section/@nullFlavor is not present, SHALL contain  [1..1] entry such that it  (CONF:11017)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

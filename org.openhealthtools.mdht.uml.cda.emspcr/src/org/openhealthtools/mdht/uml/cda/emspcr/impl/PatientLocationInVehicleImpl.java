@@ -50,7 +50,8 @@ public class PatientLocationInVehicleImpl extends ObservationImpl implements Pat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientLocationInVehicleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientLocationInVehicleTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleTemplateId(this, diagnostics, context);
 	}
 
@@ -107,13 +108,14 @@ public class PatientLocationInVehicleImpl extends ObservationImpl implements Pat
 	public PatientLocationInVehicle init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //PatientLocationInVehicleImpl
+} // PatientLocationInVehicleImpl

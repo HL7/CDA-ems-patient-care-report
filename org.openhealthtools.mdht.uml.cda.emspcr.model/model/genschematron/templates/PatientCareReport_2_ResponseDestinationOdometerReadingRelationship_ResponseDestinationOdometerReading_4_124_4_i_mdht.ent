@@ -1,0 +1,20 @@
+<!-- ResponseDestinationOdometerReadingRelationship -->
+
+<pattern id="p-PatientCareReport_2_ResponseDestinationOdometerReadingRelationship_ResponseDestinationOdometerReading_4_124_4_i-error_mdht" see="#p-PatientCareReport_2_ResponseDestinationOdometerReadingRelationship_ResponseDestinationOdometerReading_4_124_4_i-error_mdht" name="p-PatientCareReport_2_ResponseDestinationOdometerReadingRelationship_ResponseDestinationOdometerReading_4_124_4_i-error_mdht">
+		<!--
+			UML path: /ResponseOdometerReadingOrganizer/ResponseDestinationOdometerReadingRelationship
+			UML root path: /PatientCareReport/ResponseSection/responseOdometerReadingOrganizer/ResponseDestinationOdometerReadingRelationship
+			UML qualified name: emspcr::ResponseOdometerReadingOrganizer::ResponseDestinationOdometerReadingRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:responseOdometerReadingOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.97']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.173']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ResponseDestinationOdometerReading))
+			Constraint name: ResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationshipResponseDestinationOdometerReading
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.173'])=1">Error: PatientCareReport - 4.124.4.i ResponseDestinationOdometerReading
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10638)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.ExistenceOfHistoryOfCo
  *
  * @generated
  */
-public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl implements ExistenceOfHistoryOfConditionOrSurgery {
+public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl
+		implements ExistenceOfHistoryOfConditionOrSurgery {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,7 +51,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfConditionOrSurgeryOperations.validateExistenceOfHistoryOfConditionOrSurgeryTemplateId(this, diagnostics, context);
 	}
 
@@ -59,7 +61,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfConditionOrSurgeryOperations.validateExistenceOfHistoryOfConditionOrSurgeryMoodCode(this, diagnostics, context);
 	}
 
@@ -68,7 +71,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfHistoryOfConditionOrSurgeryCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfConditionOrSurgeryOperations.validateExistenceOfHistoryOfConditionOrSurgeryCodeP(this, diagnostics, context);
 	}
 
@@ -77,7 +81,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfHistoryOfConditionOrSurgeryCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfConditionOrSurgeryOperations.validateExistenceOfHistoryOfConditionOrSurgeryCode(this, diagnostics, context);
 	}
 
@@ -86,7 +91,8 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExistenceOfHistoryOfConditionOrSurgeryValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfConditionOrSurgeryOperations.validateExistenceOfHistoryOfConditionOrSurgeryValue(this, diagnostics, context);
 	}
 
@@ -98,13 +104,15 @@ public class ExistenceOfHistoryOfConditionOrSurgeryImpl extends ObservationImpl 
 	public ExistenceOfHistoryOfConditionOrSurgery init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ExistenceOfHistoryOfConditionOrSurgery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ExistenceOfHistoryOfConditionOrSurgery init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ExistenceOfHistoryOfConditionOrSurgeryImpl
+} // ExistenceOfHistoryOfConditionOrSurgeryImpl

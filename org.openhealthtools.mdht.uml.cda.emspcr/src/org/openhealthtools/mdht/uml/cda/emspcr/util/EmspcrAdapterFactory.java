@@ -74,79 +74,22 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EmspcrSwitch<Adapter> modelSwitch =
-		new EmspcrSwitch<Adapter>() {
+	protected EmspcrSwitch<Adapter> modelSwitch = new EmspcrSwitch<Adapter>() {
 			@Override
 			public Adapter casePatientCareReport(PatientCareReport object) {
 				return createPatientCareReportAdapter();
 			}
 			@Override
-			public Adapter caseEMSPastMedicalHistorySection(EMSPastMedicalHistorySection object) {
-				return createEMSPastMedicalHistorySectionAdapter();
+			public Adapter caseEMSCurrentMedicationSection(EMSCurrentMedicationSection object) {
+				return createEMSCurrentMedicationSectionAdapter();
 			}
 			@Override
-			public Adapter caseExistenceOfHistoryOfConditionOrSurgery(ExistenceOfHistoryOfConditionOrSurgery object) {
-				return createExistenceOfHistoryOfConditionOrSurgeryAdapter();
+			public Adapter caseCurrentlyOnMedication(CurrentlyOnMedication object) {
+				return createCurrentlyOnMedicationAdapter();
 			}
 			@Override
-			public Adapter caseMedicalSurgicalHistory(MedicalSurgicalHistory object) {
-				return createMedicalSurgicalHistoryAdapter();
-			}
-			@Override
-			public Adapter caseEMSBillingSection(EMSBillingSection object) {
-				return createEMSBillingSectionAdapter();
-			}
-			@Override
-			public Adapter caseBillingCondition(BillingCondition object) {
-				return createBillingConditionAdapter();
-			}
-			@Override
-			public Adapter caseLevelOfServiceObservation(LevelOfServiceObservation object) {
-				return createLevelOfServiceObservationAdapter();
-			}
-			@Override
-			public Adapter caseEMSInjuryIncidentDescriptionSection(EMSInjuryIncidentDescriptionSection object) {
-				return createEMSInjuryIncidentDescriptionSectionAdapter();
-			}
-			@Override
-			public Adapter caseInjuryCauseCategory(InjuryCauseCategory object) {
-				return createInjuryCauseCategoryAdapter();
-			}
-			@Override
-			public Adapter caseInjuryMechanism(InjuryMechanism object) {
-				return createInjuryMechanismAdapter();
-			}
-			@Override
-			public Adapter caseTraumaTriageCriteriaSteps1and2(TraumaTriageCriteriaSteps1and2 object) {
-				return createTraumaTriageCriteriaSteps1and2Adapter();
-			}
-			@Override
-			public Adapter caseTraumaTriageCriteriaSteps3and4(TraumaTriageCriteriaSteps3and4 object) {
-				return createTraumaTriageCriteriaSteps3and4Adapter();
-			}
-			@Override
-			public Adapter caseVehicleImpactArea(VehicleImpactArea object) {
-				return createVehicleImpactAreaAdapter();
-			}
-			@Override
-			public Adapter casePatientLocationInVehicle(PatientLocationInVehicle object) {
-				return createPatientLocationInVehicleAdapter();
-			}
-			@Override
-			public Adapter caseVehicleOccupantSafetyEquipment(VehicleOccupantSafetyEquipment object) {
-				return createVehicleOccupantSafetyEquipmentAdapter();
-			}
-			@Override
-			public Adapter caseAirbagDeploymentStatus(AirbagDeploymentStatus object) {
-				return createAirbagDeploymentStatusAdapter();
-			}
-			@Override
-			public Adapter caseHeightOfFall(HeightOfFall object) {
-				return createHeightOfFallAdapter();
-			}
-			@Override
-			public Adapter caseDisasterType(DisasterType object) {
-				return createDisasterTypeAdapter();
+			public Adapter caseCurrentMedication(CurrentMedication object) {
+				return createCurrentMedicationAdapter();
 			}
 			@Override
 			public Adapter caseEMSCardiacArrestEventSection(EMSCardiacArrestEventSection object) {
@@ -185,16 +128,16 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 				return createDrugAllergyOrganizerAdapter();
 			}
 			@Override
-			public Adapter caseEMSCurrentMedicationSection(EMSCurrentMedicationSection object) {
-				return createEMSCurrentMedicationSectionAdapter();
+			public Adapter caseEMSPastMedicalHistorySection(EMSPastMedicalHistorySection object) {
+				return createEMSPastMedicalHistorySectionAdapter();
 			}
 			@Override
-			public Adapter caseCurrentlyOnMedication(CurrentlyOnMedication object) {
-				return createCurrentlyOnMedicationAdapter();
+			public Adapter caseExistenceOfHistoryOfConditionOrSurgery(ExistenceOfHistoryOfConditionOrSurgery object) {
+				return createExistenceOfHistoryOfConditionOrSurgeryAdapter();
 			}
 			@Override
-			public Adapter caseCurrentMedication(CurrentMedication object) {
-				return createCurrentMedicationAdapter();
+			public Adapter caseMedicalSurgicalHistory(MedicalSurgicalHistory object) {
+				return createMedicalSurgicalHistoryAdapter();
 			}
 			@Override
 			public Adapter caseEMSSocialHistorySection(EMSSocialHistorySection object) {
@@ -207,14 +150,6 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDrugUseIndication(DrugUseIndication object) {
 				return createDrugUseIndicationAdapter();
-			}
-			@Override
-			public Adapter caseEMSVitalSignsSection(EMSVitalSignsSection object) {
-				return createEMSVitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
-				return createVitalSignsOrganizerAdapter();
 			}
 			@Override
 			public Adapter caseEMSPhysicalAssessmentSection(EMSPhysicalAssessmentSection object) {
@@ -265,6 +200,26 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 				return createEMSPatientCareNarrativeSectionAdapter();
 			}
 			@Override
+			public Adapter caseEMSSceneSection(EMSSceneSection object) {
+				return createEMSSceneSectionAdapter();
+			}
+			@Override
+			public Adapter caseFirstUnitIndicator(FirstUnitIndicator object) {
+				return createFirstUnitIndicatorAdapter();
+			}
+			@Override
+			public Adapter caseScenePatientCount(ScenePatientCount object) {
+				return createScenePatientCountAdapter();
+			}
+			@Override
+			public Adapter caseMassCasualtyIndicator(MassCasualtyIndicator object) {
+				return createMassCasualtyIndicatorAdapter();
+			}
+			@Override
+			public Adapter caseLocationTypeObservation(LocationTypeObservation object) {
+				return createLocationTypeObservationAdapter();
+			}
+			@Override
 			public Adapter caseEMSDispatchSection(EMSDispatchSection object) {
 				return createEMSDispatchSectionAdapter();
 			}
@@ -275,30 +230,6 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDispatchReason(DispatchReason object) {
 				return createDispatchReasonAdapter();
-			}
-			@Override
-			public Adapter caseEMSResponseSection(EMSResponseSection object) {
-				return createEMSResponseSectionAdapter();
-			}
-			@Override
-			public Adapter caseDelayOrganizer(DelayOrganizer object) {
-				return createDelayOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseDispatchLocationOrganizer(DispatchLocationOrganizer object) {
-				return createDispatchLocationOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResponseOdometerReadingOrganizer(ResponseOdometerReadingOrganizer object) {
-				return createResponseOdometerReadingOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResponseModeToScene(ResponseModeToScene object) {
-				return createResponseModeToSceneAdapter();
-			}
-			@Override
-			public Adapter caseResponseModeQualifier(ResponseModeQualifier object) {
-				return createResponseModeQualifierAdapter();
 			}
 			@Override
 			public Adapter caseEMSDispositionSection(EMSDispositionSection object) {
@@ -377,24 +308,28 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 				return createCandidatePatientRegistryTypeAdapter();
 			}
 			@Override
-			public Adapter caseEMSSceneSection(EMSSceneSection object) {
-				return createEMSSceneSectionAdapter();
+			public Adapter caseEMSResponseSection(EMSResponseSection object) {
+				return createEMSResponseSectionAdapter();
 			}
 			@Override
-			public Adapter caseFirstUnitIndicator(FirstUnitIndicator object) {
-				return createFirstUnitIndicatorAdapter();
+			public Adapter caseDelayOrganizer(DelayOrganizer object) {
+				return createDelayOrganizerAdapter();
 			}
 			@Override
-			public Adapter caseScenePatientCount(ScenePatientCount object) {
-				return createScenePatientCountAdapter();
+			public Adapter caseDispatchLocationOrganizer(DispatchLocationOrganizer object) {
+				return createDispatchLocationOrganizerAdapter();
 			}
 			@Override
-			public Adapter caseMassCasualtyIndicator(MassCasualtyIndicator object) {
-				return createMassCasualtyIndicatorAdapter();
+			public Adapter caseResponseOdometerReadingOrganizer(ResponseOdometerReadingOrganizer object) {
+				return createResponseOdometerReadingOrganizerAdapter();
 			}
 			@Override
-			public Adapter caseLocationTypeObservation(LocationTypeObservation object) {
-				return createLocationTypeObservationAdapter();
+			public Adapter caseResponseModeToScene(ResponseModeToScene object) {
+				return createResponseModeToSceneAdapter();
+			}
+			@Override
+			public Adapter caseResponseModeQualifier(ResponseModeQualifier object) {
+				return createResponseModeQualifierAdapter();
 			}
 			@Override
 			public Adapter caseEMSSituationSection(EMSSituationSection object) {
@@ -467,6 +402,70 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDispatchNotifiedTime(DispatchNotifiedTime object) {
 				return createDispatchNotifiedTimeAdapter();
+			}
+			@Override
+			public Adapter caseEMSVitalSignsSection(EMSVitalSignsSection object) {
+				return createEMSVitalSignsSectionAdapter();
+			}
+			@Override
+			public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
+				return createVitalSignsOrganizerAdapter();
+			}
+			@Override
+			public Adapter caseEMSInjuryIncidentDescriptionSection(EMSInjuryIncidentDescriptionSection object) {
+				return createEMSInjuryIncidentDescriptionSectionAdapter();
+			}
+			@Override
+			public Adapter caseInjuryCauseCategory(InjuryCauseCategory object) {
+				return createInjuryCauseCategoryAdapter();
+			}
+			@Override
+			public Adapter caseInjuryMechanism(InjuryMechanism object) {
+				return createInjuryMechanismAdapter();
+			}
+			@Override
+			public Adapter caseTraumaTriageCriteriaSteps1and2(TraumaTriageCriteriaSteps1and2 object) {
+				return createTraumaTriageCriteriaSteps1and2Adapter();
+			}
+			@Override
+			public Adapter caseTraumaTriageCriteriaSteps3and4(TraumaTriageCriteriaSteps3and4 object) {
+				return createTraumaTriageCriteriaSteps3and4Adapter();
+			}
+			@Override
+			public Adapter caseVehicleImpactArea(VehicleImpactArea object) {
+				return createVehicleImpactAreaAdapter();
+			}
+			@Override
+			public Adapter casePatientLocationInVehicle(PatientLocationInVehicle object) {
+				return createPatientLocationInVehicleAdapter();
+			}
+			@Override
+			public Adapter caseVehicleOccupantSafetyEquipment(VehicleOccupantSafetyEquipment object) {
+				return createVehicleOccupantSafetyEquipmentAdapter();
+			}
+			@Override
+			public Adapter caseAirbagDeploymentStatus(AirbagDeploymentStatus object) {
+				return createAirbagDeploymentStatusAdapter();
+			}
+			@Override
+			public Adapter caseHeightOfFall(HeightOfFall object) {
+				return createHeightOfFallAdapter();
+			}
+			@Override
+			public Adapter caseDisasterType(DisasterType object) {
+				return createDisasterTypeAdapter();
+			}
+			@Override
+			public Adapter caseEMSBillingSection(EMSBillingSection object) {
+				return createEMSBillingSectionAdapter();
+			}
+			@Override
+			public Adapter caseBillingCondition(BillingCondition object) {
+				return createBillingConditionAdapter();
+			}
+			@Override
+			public Adapter caseLevelOfServiceObservation(LevelOfServiceObservation object) {
+				return createLevelOfServiceObservationAdapter();
 			}
 			@Override
 			public Adapter caseResponseEndingOdometerReading(ResponseEndingOdometerReading object) {
@@ -785,12 +784,12 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 				return createObservationAdapter();
 			}
 			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
 			public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
 				return createSubstanceAdministrationAdapter();
+			}
+			@Override
+			public Adapter caseOrganizer(Organizer object) {
+				return createOrganizerAdapter();
 			}
 			@Override
 			public Adapter caseCDA_Procedure(org.eclipse.mdht.uml.cda.Procedure object) {
@@ -814,7 +813,6 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject)target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport <em>Patient Care Report</em>}'.
@@ -3348,4 +3346,4 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //EmspcrAdapterFactory
+} // EmspcrAdapterFactory

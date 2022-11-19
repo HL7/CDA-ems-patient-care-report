@@ -101,10 +101,11 @@ public interface ProviderPrimaryImpression extends Observation {
 	 * @generated
 	 */
 	public ProviderPrimaryImpression init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProviderPrimaryImpression

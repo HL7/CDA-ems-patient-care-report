@@ -44,15 +44,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,9 +79,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,8 +92,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeTemplateId(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeTemplateId(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -158,9 +156,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,8 +169,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeCodeP(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeCodeP(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -249,9 +247,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,8 +260,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeCode(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeCode(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -332,9 +330,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,8 +343,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeMoodCode(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeMoodCode(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -411,9 +409,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,8 +422,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeValue(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeValue(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -488,9 +486,8 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_CARDIAC_ARREST_OUTCOME_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,8 +499,9 @@ public class CardiacArrestOutcomeOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestOutcomeValueP(CardiacArrestOutcome cardiacArrestOutcome, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCardiacArrestOutcomeValueP(CardiacArrestOutcome cardiacArrestOutcome,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	

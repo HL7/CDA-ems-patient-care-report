@@ -1,0 +1,20 @@
+<!-- ResponseDelayRelationship -->
+
+<pattern id="p-PatientCareReport_2_ResponseDelayRelationship_ResponseDelay_4_32_3_i-error_mdht" see="#p-PatientCareReport_2_ResponseDelayRelationship_ResponseDelay_4_32_3_i-error_mdht" name="p-PatientCareReport_2_ResponseDelayRelationship_ResponseDelay_4_32_3_i-error_mdht">
+		<!--
+			UML path: /DelayOrganizer/ResponseDelayRelationship
+			UML root path: /PatientCareReport/ResponseSection/delayOrganizer/ResponseDelayRelationship
+			UML qualified name: emspcr::DelayOrganizer::ResponseDelayRelationship
+		-->
+	<rule context="/cda:ClinicalDocument/cda:ResponseSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.3']/cda:delayOrganizer[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.95']/cda:component[cda:observation/cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.154']">
+		<!--
+			OCL: self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ResponseDelay))
+			Constraint name: DelayOrganizerResponseDelayRelationshipResponseDelay
+		-->
+	<assert test="count(cda:observation[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.154'])=1">Error: PatientCareReport - 4.32.3.i ResponseDelay
+		Conformance: SHALL contain exactly one [1..1] observation (CONF:10593)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

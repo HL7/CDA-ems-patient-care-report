@@ -51,15 +51,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * @generated
  */
 public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,9 +86,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,8 +99,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneTemplateId(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneTemplateId(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -165,9 +163,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,8 +176,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneMoodCode(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneMoodCode(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -242,9 +240,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,8 +253,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneCodeP(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneCodeP(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -333,9 +331,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,8 +344,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneCode(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneCode(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -418,9 +416,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -432,8 +429,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneValue(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneValue(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -495,9 +493,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,8 +506,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneValueP(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneValueP(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -572,9 +570,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_RESPONSE_MODE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_MODE_TO_SCENE_RESPONSE_MODE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -586,8 +583,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneResponseModeQualifier(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResponseModeToSceneResponseModeQualifier(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 	
 	
 	
@@ -656,8 +654,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ResponseModeQualifier getResponseModeQualifier(ResponseModeToScene responseModeToScene) {
+
+	public static ResponseModeQualifier getResponseModeQualifier(ResponseModeToScene responseModeToScene) {
 	
 	
 	

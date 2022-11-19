@@ -107,13 +107,14 @@ public class DispatchReasonImpl extends ObservationImpl implements DispatchReaso
 	public DispatchReason init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public DispatchReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public DispatchReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //DispatchReasonImpl
+} // DispatchReasonImpl

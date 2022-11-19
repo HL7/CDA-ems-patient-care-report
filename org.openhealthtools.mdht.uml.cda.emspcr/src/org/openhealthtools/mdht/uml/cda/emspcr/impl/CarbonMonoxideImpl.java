@@ -107,13 +107,14 @@ public class CarbonMonoxideImpl extends ObservationImpl implements CarbonMonoxid
 	public CarbonMonoxide init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public CarbonMonoxide init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public CarbonMonoxide init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //CarbonMonoxideImpl
+} // CarbonMonoxideImpl

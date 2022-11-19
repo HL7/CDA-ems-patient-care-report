@@ -93,7 +93,8 @@ public interface EMSAdvanceDirectivesSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdvanceDirectiveObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
-	boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,10 +111,11 @@ public interface EMSAdvanceDirectivesSection extends Section {
 	 * @generated
 	 */
 	public EMSAdvanceDirectivesSection init();
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSAdvanceDirectivesSection

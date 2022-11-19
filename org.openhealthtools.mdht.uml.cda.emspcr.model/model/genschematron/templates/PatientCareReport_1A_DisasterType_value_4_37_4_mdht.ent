@@ -1,0 +1,30 @@
+<!-- DisasterType: 2.16.840.1.1133883.17.3.10.1.59 -->
+
+<pattern id="p-PatientCareReport_1A_DisasterType_value_4_37_4-error_mdht" see="#p-PatientCareReport_1A_DisasterType_value_4_37_4-error_mdht" name="p-PatientCareReport_1A_DisasterType_value_4_37_4-error_mdht">
+		<!--
+			UML path: /DisasterType
+			UML root path: /PatientCareReport/injuryIncidentDescriptionSection/disasterType
+			UML qualified name: emspcr::DisasterType
+		-->
+	<rule context="/cda:ClinicalDocument/cda:injuryIncidentDescriptionSection[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.17']/cda:disasterType[cda:templateId/@root = '2.16.840.1.1133883.17.3.10.1.59']">
+		<!--
+			OCL: not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17594-5' or value.code = 'LA18089-5' or value.code = 'LA18090-3' or value.code = 'LA18091-1' or value.code = 'LA18092-9' or value.code = 'LA18093-7' or value.code = 'LA18094-5' or value.code = 'LA18095-2' or value.code = 'LA18096-0' or value.code = 'LA18097-8' or value.code = 'LA18098-6' or value.code = 'LA18099-4' or value.code = 'LA18100-0' or value.code = 'LA18101-8' or value.code = 'LA30039-4' or value.code = 'LA32967-4' or value.code = 'LA32968-2' or value.code = 'LA30042-8' or value.code = 'LA30040-2' or value.code = 'LA30037-8'))
+			Constraint name: DisasterTypeValue
+		-->
+	<assert test="cda:value and not(cda:value[not(. and @xsi:type='CD' and @codeSystem = '2.16.840.1.113883.6.1' and (@code = 'LA17594-5' or @code = 'LA18089-5' or @code = 'LA18090-3' or @code = 'LA18091-1' or @code = 'LA18092-9' or @code = 'LA18093-7' or @code = 'LA18094-5' or @code = 'LA18095-2' or @code = 'LA18096-0' or @code = 'LA18097-8' or @code = 'LA18098-6' or @code = 'LA18099-4' or @code = 'LA18100-0' or @code = 'LA18101-8' or @code = 'LA30039-4' or @code = 'LA32967-4' or @code = 'LA32968-2' or @code = 'LA30042-8' or @code = 'LA30040-2' or @code = 'LA30037-8'))])">Error: PatientCareReport - 4.37.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11721), which SHALL be selected from ValueSet DisasterType 2.16.840.1.113883.17.3.11.9 DYNAMIC (CONF:10133)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+		<!--
+			OCL: self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))
+			Constraint name: DisasterTypeValueP
+		-->
+	<assert test="not(cda:value[not(@xsi:type='CD')])">Error: PatientCareReport - 4.37.4 value
+		Conformance: SHALL contain at least one [1..*] value with @xsi:type=&quot;CD&quot; (CONF:11721), which SHALL be selected from ValueSet DisasterType 2.16.840.1.113883.17.3.11.9 DYNAMIC (CONF:10133)
+		Analysis: n/a
+		Validation message: n/a	</assert>
+	</rule>
+</pattern>
+

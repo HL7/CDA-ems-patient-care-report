@@ -107,13 +107,14 @@ public class InjuryCauseCategoryImpl extends ObservationImpl implements InjuryCa
 	public InjuryCauseCategory init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //InjuryCauseCategoryImpl
+} // InjuryCauseCategoryImpl

@@ -107,13 +107,14 @@ public class HeadAssessmentImpl extends ObservationImpl implements HeadAssessmen
 	public HeadAssessment init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public HeadAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public HeadAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //HeadAssessmentImpl
+} // HeadAssessmentImpl

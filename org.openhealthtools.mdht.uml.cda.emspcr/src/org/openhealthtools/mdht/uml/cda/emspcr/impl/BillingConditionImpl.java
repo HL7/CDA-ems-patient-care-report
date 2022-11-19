@@ -107,13 +107,14 @@ public class BillingConditionImpl extends ObservationImpl implements BillingCond
 	public BillingCondition init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
      * @generated
      */
-    public BillingCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public BillingCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //BillingConditionImpl
+} // BillingConditionImpl
