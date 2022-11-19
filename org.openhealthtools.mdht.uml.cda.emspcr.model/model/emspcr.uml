@@ -13177,7 +13177,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_KgwdMFPREeyrCImimHJp2Q" base_Association="_ABheM1PREeyrCImimHJp2Q">
     <ruleId>CONF:11643</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_v7HgEFQ4EeyrCImimHJp2Q" base_Association="_bKNc8lQ4EeyrCImimHJp2Q">
+  <CDA:AssociationValidation xmi:id="_v7HgEFQ4EeyrCImimHJp2Q" severity="INFO" base_Association="_bKNc8lQ4EeyrCImimHJp2Q">
     <ruleId>CONF:11687</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_wjS6YFQ4EeyrCImimHJp2Q" base_Association="_mMZYAlQ4EeyrCImimHJp2Q">
