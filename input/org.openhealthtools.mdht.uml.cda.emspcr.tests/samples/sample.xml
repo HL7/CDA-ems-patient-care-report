@@ -1,11 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
   <!--This example is based on ALS test case #1 from the Minnesota EMS Regulatory Board, available at http://www.emsrb.state.mn.us. Example and guide 
     developed by the National EMS Information System and Ockham Information Sevices LLC under the auspices of Health Level 7, with support from the US 
     National Highway Traffic Safety Administration, the Centers for Disease Control, and the Health Resources and Services Administration, as well as 
     dozens of other government agencies, universities, and professional organizations. Example prepared for 2014 publication of normative implementation 
-    guide.-->
+    guide and updated for the 2022 revision to NEMSIS v3.5.
+    Note that the Header conforms to Consolidated CDA. The example sections contain elements sufficient to conform to C-CDA testing to demonstrate how 
+    existing capabilities might be leveraged, but they do not assert conformance to C-CDA sections, which have different use cases and expectations.   -->
   <realmCode code="US"/>
   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.17.3.10.2"/>                     <!-- The EMS PCR specification template identifier -->
@@ -13,8 +15,10 @@
   <id root="2.16.840.1.113883.19.1" extension="2086823449"/>           <!-- See notes for OID descriptions.  2.16.840.1.113883.19 is the example domain. -->
   <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Patient Care Report"/>
   <title>EMS Patient Care Report</title>
-  <effectiveTime value="201201011650+0600"/>
+  <effectiveTime value="20221201"  />
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" code="N"/>
+  <languageCode code="en-US" />
+  <setId extension="2086823449" root="2.16.840.1.113883.19.1" />      <!-- Version requires setId, for which we repeat the document Id here. -->
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole>
@@ -23,6 +27,7 @@
         <streetAddressLine>20190 Holyoak Avenue</streetAddressLine> 
         <city>Two Harbors</city> 
         <state>MN</state>  
+        <postalCode>99123</postalCode>
         <country>US</country>
       </addr>
       <telecom value="tel:(218)555-1212"/>
@@ -39,7 +44,7 @@
     </patientRole>
   </recordTarget>
   <author>
-    <time value="201201011650+0600"/>
+    <time value="20221201"  />
     <assignedAuthor>
       <id root ="2.16.840.1.113883.4.6" extension="hijklm"/>
       <addr>
@@ -59,7 +64,7 @@
     </assignedAuthor>
   </author>
   <author>
-    <time value="201201011650+0600"/>
+    <time value="20221201"  />
   <assignedAuthor>
     <id root="2.16.840.1.113883.19.6"  extension="1401065661"/>
       <addr nullFlavor="NI"/>
@@ -88,7 +93,7 @@
   </custodian>
   <participant typeCode="DST">
     <associatedEntity classCode="SDLOC">
-      <code code="LA11504-0" displayName="Hospital emergency department" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <code code="LA11504-0" displayName="Hospital emergency department" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
       <addr>
         <streetAddressLine>2000 Facility Road</streetAddressLine> 
         <city>Duluth</city> 
@@ -105,13 +110,15 @@
   <documentationOf>
     <serviceEvent>
       <id root="2.16.840.1.113883.19.3" extension="1557142669"/>
-      <code code="LA18715-5" displayName="911 response (scene)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-      <effectiveTime value="201201011545+0600"/>
+      <code code="LA18715-5" displayName="911 response (scene)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+      <effectiveTime>
+        <low value="201201011545+0600"/>
+      </effectiveTime> 
       <performer typeCode="PRF">
-        <functionCode code="LA18712-2" displayName="Primary patient caregiver-at scene" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <functionCode code="LA18712-2" displayName="Primary patient caregiver-at scene" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
         <assignedEntity>
           <id root="2.16.840.1.113883.4.6" extension="abcdefg"/>
-          <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <addr>
             <streetAddressLine>1000 EMT Lane</streetAddressLine> 
             <city>Duluth</city> 
@@ -133,11 +140,11 @@
   <componentOf typeCode="COMP">
     <encompassingEncounter>
       <id root="2.16.840.1.113883.19.3" extension="2086823789"/>
-      <effectiveTime value="201201011545+0600"/>
+      <effectiveTime />
       <location>
         <healthCareFacility>
           <id root="2.16.840.1.113883.19.5" extension="2074056439"/>
-          <code code="LA17575-4" displayName="Ground transport" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <code code="LA17575-4" displayName="Ground transport" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <location classCode="PLC">
             <name>Highway 50 and Ipava Ave</name>
           <addr>
@@ -154,6 +161,23 @@
   </componentOf>
   <component>
     <structuredBody>
+      <component>
+      <section>
+        <templateId root="2.16.840.1.113883.17.3.10.1.12"/>
+        <code code="67840-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS advance directives Narrative NEMSIS"/>
+        <title>EMS Advanced Directive Section</title>
+        <text>No advance directive identified
+        </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+              <id root="2.16.840.1.113883.19.4" extension="477979712"/>
+              <code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directive NEMSIS"/>
+              <value xsi:type="CD" code="LA137-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="None"/>
+            </observation>          
+          </entry>
+      </section>
+      </component>
       <component>
         <section>
           <templateId root="2.16.840.1.113883.17.3.10.1.5"/>
@@ -199,9 +223,8 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.17.3.10.1.15"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
-          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <!-- <templateId root="2.16.840.1.113883.10.20.22.2.1"/>  Consolidated medications -->
+          <code code="67844-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS current medications Narrative NEMSIS"/>
           <title>EMS Current Medications Section</title>
           <text>
             <table border="1" width="100%">
@@ -226,7 +249,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.1133883.17.3.10.1.75"/>
               <id root="2.16.840.1.113883.19.4" extension="208711679"/>
-              <code code="67791-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Currently on medication"/>
+              <code code="67791-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient take any medications NEMSIS"/>
               <value xsi:type="CD" nullFlavor="NI"/>
             </observation>
           </entry>
@@ -257,27 +280,59 @@
                   <td>No information</td> 
                   <td></td>
                 </tr>
+                <tr>
+                  <td>Existence of non-drug allergy</td> 
+                  <td>No information</td> 
+                  <td></td>
+                </tr>
               </tbody>
             </table>
           </text>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.102"/>
-              <id root="2.16.840.1.113883.19.4" extension="1219703426"/>
-              <code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Existence of drug allergy"/>
-              <value xsi:type="CD" nullFlavor="NI"/>
-            </observation>
+            <organizer  classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.49.1"/>
+              <statusCode code="completed"/>
+              <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.1133883.17.3.10.1.102"/>
+                    <id root="2.16.840.1.113883.19.4" extension="1219703426"/>
+                    <code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/>
+                    <value xsi:type="BL" value="false"/>
+                  </observation>    
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.49"/>
+              <statusCode code="completed"/>              
+              <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.1133883.17.3.10.1.103"/>
+                    <id root="2.16.840.1.113883.19.4" extension="1219703985"/>
+                    <code code="69747-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any environmental
+                      allergies NEMSIS"/>
+                    <value xsi:type="BL" nullFlavor="NI"/>
+                  </observation>    
+              </component>
+            </organizer>
           </entry>
         </section>
       </component>
       <component>
         <section>
-        
           <templateId root="2.16.840.1.113883.17.3.10.1.19"/>
           <id root="2.16.840.1.113883.19.4" extension="235078508"/>
           <code code="67842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Past Medical History Section"/>
           <title>EMS Past Medical History</title>
           <text>No history known</text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.60"/>
+              <code code="67793-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Has the patient had any significant medical conditions"/>
+              <value xsi:type="BL" nullFlavor="NI"/>
+            </observation>
+          </entry>
         </section>
       </component>
       <component>
@@ -318,7 +373,7 @@
               <templateId root="2.16.840.1.1133883.17.3.10.1.71"/>
               <id root="2.16.840.1.113883.19.4" extension="1289611790"/>
               <code code="67669-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alcohol - drug use"/>
-              <value xsi:type="CD" code="LA17328-8" displayName="Alcohol - drug use" codeSystem="2.16.840.1.113883.6.1"/>
+              <value xsi:type="CD" code="LA17328-8" displayName="Smell of alcohol on breath" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
             </observation>
           </entry>
         </section>
@@ -417,63 +472,50 @@
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.113"/>
-                  <code code="67525-6" displayName="HeadAssessmentFinding" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67525-6" displayName="Physical findings of Head NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.114"/>
-                  <code code="67527-2" displayName="NeckAssessmentFinding" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67527-2" displayName="Physical findings of Neck NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <templateId root="2.16.840.1.1133883.17.3.10.1.115"/>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.115"/>
-                  <code code="67528-0" displayName="ChestAndLungsAssessmentFinding" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA17208-2" displayName="Bleeding controlled" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA17244-7" displayName="Gunshot wound entry" codeSystem="2.16.840.1.113883.6.1"/>
-                </observation>
-              </component>
-              <component>
-                <observation classCode="OBS"  moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.17.3.10.1.115"/>
-                  <code code="67528-0" displayName="ChestAndLungsAssessmentFinding" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA17225-6" displayName="Breath sounds-decreased-left" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67528-0" displayName="Physical findings of Chest+Lungs NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA17208-2" displayName="Bleeding controlled" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA17244-7" displayName="Gunshot wound entry" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA17225-6" displayName="Breath sounds-decreased-left" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.117"/>
-                  <code code="67530-6" displayName="Abdomen assessment" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
-                  <targetSiteCode code="LA18721-3" displayName="Generalized" codeSystem="2.16.840.1.113883.6.1"/>
-                </observation>
-              </component>
-              <component>
-                <observation classCode="OBS"  moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.17.3.10.1.117"/>
-                  <code code="67530-6" displayName="Abdomen assessment" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67530-6" displayName="Abdomen assessment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="CD" nullFlavor="OTH">
                     <originalText>GI normal</originalText>
                   </value>
-                  <targetSiteCode code="LA18721-3" displayName="Generalized" codeSystem="2.16.840.1.113883.6.1"/>
+                  <targetSiteCode code="LA18721-3" displayName="Generalized" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.118"/>
-                  <code code="67531-4" displayName="Pelvic and genitourinary assessment" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67531-4" displayName="Physical findings of Pelvis+Genitourinary NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.113883.17.3.10.1.120"/>
-                  <code code="67533-0" displayName="Extremities assessment" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
+                  <code code="67533-0" displayName="Physical findings of Extremity NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
             </organizer>
@@ -513,8 +555,8 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.83"/>
               <id root="2.16.840.1.113883.19.4" extension="236102004"/>
-              <code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care"/>
-              <value xsi:type="CD" code="LA17711-5" displayName="Unconscious" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <code code="67515-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care"/>
+              <value xsi:type="CD" code="LA17711-5" displayName="Unconscious" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
             </observation>
           </entry>
         </section>
@@ -522,9 +564,9 @@
       <component>
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.18"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.38"/>
+          <!--  <templateId root="2.16.840.1.113883.10.20.22.2.38"/>  -->
           <id root="2.16.840.1.113883.19.4" extension="539703118"/>
-          <code code="29549-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medications Administered"/>
+          <code code="67849-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medications Administered"/>
           <title>Medications Administered Section</title>
           <text>
             <table border="1" width="100%">
@@ -548,8 +590,10 @@
           <entry>
             <substanceAdministration classCode="SBADM"  moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <effectiveTime value="201201011604+0600"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.16"/> -->
+              <id root="2.16.840.1.113883.19.4" extension="1537557561"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="201201011604+0600"/>
               <routeCode code="C38216" displayName="Respiratory" codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>              
               <approachSiteCode code="15562006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="structure of respiratory region of nose"/>
               <doseQuantity value="15" unit="L/min"/>
@@ -564,7 +608,7 @@
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19.4" extension="908786906"/>
-                  <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </assignedEntity>
               </performer>
               <participant typeCode="DEV">
@@ -576,13 +620,15 @@
               </participant>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67540-5" displayName="Response to medication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.106"/>
+                  <code code="67540-5" displayName="Response to medication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67539-7" displayName="Prioradministration" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.108"/>
+                  <code code="67539-7" displayName="Medication administered prior to this units EMS care NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="false"/>
                 </observation>
               </entryRelationship>
@@ -593,7 +639,7 @@
       <component>
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.21"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.27"/>
+          <!-- <templateId root="2.16.840.1.113883.10.20.22.2.7"/> -->
           <id root="2.16.840.1.113883.19.4" extension="484489671"/>
           <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Description"/>
           <title>EMS Procedures Performed</title>
@@ -648,50 +694,54 @@
           </text>
           <entry>
             <procedure classCode="PROC"  moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.14"/>  -->
+              <id root="2.16.840.1.113883.19.4" extension="944687601"/>
               <code code="09HN7BZ" displayName="Medical and Surgical/ Ear, Nose, and Sinus/ Insertion/ Nasopharynx/ Via natural or artificial opening/ Airway/ No qualifier" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS"/>
+              <statusCode code="completed"/>
               <effectiveTime value="201201011602+0600"/>
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19.4" extension="42742618"/>
-                  <code code="LA18705-6" displayName="Other non-healthcare professional" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                  <code code="LA18705-6" displayName="Other non-healthcare professional" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" >
                     <originalText>law enforcement</originalText>
                   </code>
+                  <addr nullFlavor="NI"/>
+                  <telecom nullFlavor="NI"/>
                 </assignedEntity>
               </performer>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.131"/>
-                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.133"/>
-                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.179"/>
-                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.135"/>
-                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.175"/>
-                  <code code="71576-3" displayName="Airway confirmation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="71576-3" displayName="Airway confirmation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <effectiveTime nullFlavor="NI"/>
                   <value xsi:type="BL" value="false"/>
                   <methodCode nullFlavor="NI"/>
@@ -701,134 +751,146 @@
           </entry>
           <entry>
             <procedure classCode="PROC"  moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.14"/>  -->
+              <id root="2.16.840.1.113883.19.4" extension="998688475"/>
               <code code="2W32XYZ" displayName="Placement/ Anatomical regions/ Immobilization/ Neck/ external/ Other device/ No qualifier" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS" >
                 <originalText>Cervical Collar</originalText>
               </code>
+              <statusCode code="completed"/>
               <effectiveTime value="201201011602+0600"/>
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19.4" extension="42742618"/>
-                  <code code="LA18705-6" displayName="Other non-healthcare professional" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                  <code code="LA18705-6" displayName="Other non-healthcare professional" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" >
                     <originalText>law enforcement</originalText>
                   </code>
+                <addr nullFlavor="NI"/>
+                <telecom nullFlavor="NI"/>
                 </assignedEntity>
               </performer>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.131"/>
-                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.133"/>
-                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.179"/>
-                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.135"/>
-                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
             </procedure>
           </entry>
           <entry>
             <procedure classCode="PROC" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.14"/> -->
+              <id root="2.16.840.1.113883.19.4" extension="947380984"/>
               <code code="2W35XYZ" displayName="Placement/ Anatomical regions/ Immobilization/ Back/ external/ Other device/ No qualifier" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS">
                 <originalText>Cervical Collar</originalText>
               </code>
+              <statusCode code="completed"/>
               <effectiveTime value="201201011604+0600"/>
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19.4" extension="42742618"/>
-                  <code code="LA18701-5" displayName="EMT-basic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="LA18701-5" displayName="EMT-basic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <addr nullFlavor="NI"/>
+                  <telecom value="tel:(123)456-7890"/>
                 </assignedEntity>
               </performer>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.131"/>
-                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="false"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.133"/>
-                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.179"/>
-                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.135"/>
-                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
             </procedure>
           </entry>
           <entry>
             <procedure classCode="PROC" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.14"/>  -->
+              <id root="2.16.840.1.113883.19.4" extension="948475829"/>
               <code code="0B9P30Z" displayName="Medical and Surgical/ Respiratory system/ Drainage/ Pleura, left/ Perdutaneous/ Drainage device/ No qualifier" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS" >
                 <originalText>Cervical Collar</originalText>
               </code>
+              <statusCode code="completed"/>
               <effectiveTime value="201201011616+0600"/>
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19.4" extension="42742618"/>
-                  <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <addr nullFlavor="NI"/>
+                  <telecom value="tel:(123)456-7890"/>
                 </assignedEntity>
               </performer>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.131"/>
-                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67542-1" displayName="Procedure performed prior to EMS arrival" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="false"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.133"/>
-                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67544-7" displayName="Procedure successful indicator" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="BL" value="true"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.179"/>
-                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67545-4" displayName="Procedure complication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA137-2" displayName="None" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <templateId root="2.16.840.1.1133883.17.3.10.1.135"/>
-                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <code code="67546-2" displayName="Procedure patient response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA65-8" displayName="Improved" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
             </procedure>
@@ -839,7 +901,7 @@
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.1"/>
           <id root="2.16.840.1.113883.19.4" extension="2112455333"/>
-          <code code="67781-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Patient Care Report Narrative Section"/>
+          <code code="67781-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of encounter note Narrative"/>
           <title>EMS Patient Care Report Narrative</title>
           <text>
             <paragraph><content styleCode="Bold">S </content>Called for motor vehicle crash</paragraph>
@@ -948,13 +1010,13 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>EMDPerformed</td> 
-                  <td>false</td> 
+                  <td>Emergency medical dispatch performed</td> 
+                  <td>Yes, without pre-arrival instructions</td> 
                   <td></td>
                 </tr>
                 <tr>
                   <td>Complaint reported by dispatch</td> 
-                  <td>traffic accident</td> 
+                  <td>Traffic/transportation incident</td> 
                   <td></td>
                 </tr>
               </tbody>
@@ -964,8 +1026,8 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.73"/>
               <id root="2.16.840.1.113883.19.4" extension="278654356"/>
-              <code code="67488-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMDPerformed"/>
-              <effectiveTime value="201201011616+0600"/>
+              <code code="67488-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergency medical dispatch performed NEMSIS"/>
+              <value xsi:type="CD" code="LA17152-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Yes, without pre-arrival instructions"/>
             </observation>
           </entry>
           <entry>
@@ -973,7 +1035,7 @@
               <templateId root="2.16.840.1.1133883.17.3.10.1.74"/>
               <id root="2.16.840.1.113883.19.4" extension="338421059"/>
               <code code="67570-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complaint reported by dispatch"/>
-              <value xsi:type="ST">traffic accident</value> 
+              <value xsi:type="CD" code="LA17146-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Traffic/transportation incident"/> 
             </observation>
           </entry>
         </section>
@@ -982,7 +1044,7 @@
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.4"/>
           <id root="2.16.840.1.113883.19.4" extension="1717550215"/>
-          <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Disposition Section"/>
+          <code code="67661-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Disposition Section"/>
           <title>EMS Disposition</title>
           <text>
             <table border="1" width="100%">
@@ -1030,14 +1092,6 @@
           </text>
           <entry>
             <observation classCode="OBS" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
-              <id root="2.16.840.1.113883.19.4" extension="1639598632"/>
-              <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport method"/>
-              <value xsi:type="CD" code="LA17168-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ground ambulance"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.31"/>
               <id root="2.16.840.1.113883.19.4" extension="1682230608"/>
               <code code="67547-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Number of patients"/>
@@ -1062,6 +1116,14 @@
           </entry>
           <entry>
             <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
+              <id root="2.16.840.1.113883.19.4" extension="410047233"/>
+              <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport method NEMSIS"/>
+              <value xsi:type="CD" code="LA17168-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ground-ambulance"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.35"/>
               <id root="2.16.840.1.113883.19.4" extension="410037273"/>
               <code code="67552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS reason for choosing destination"/>
@@ -1072,7 +1134,7 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.36"/>
               <id root="2.16.840.1.113883.19.4" extension="548134675"/>
-              <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS prearrival activation performed"/>
+              <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Activation of the destination healthcare facility team NEMSIS"/>
               <effectiveTime nullFlavor="NI"/>
               <value xsi:type="BL" value="false"/>
             </observation>
@@ -1111,7 +1173,7 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.89"/>
               <id root="2.16.840.1.113883.19.4" extension="1500491815"/>
-              <code code="67554-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS personnel exposed or injured"/>
+              <code code="67554-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Work related exposure, injury, or death Provider NEMSIS"/>
               <value xsi:type="BL" value="false"/>
             </observation>
           </entry>
@@ -1121,7 +1183,7 @@
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.7"/>
           <id root="2.16.840.1.113883.19.4" extension="1642545570"/>
-          <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Protocol Section"/>
+          <code code="67663-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol Narrative NEMSIS"/>
           <title>EMS Protocol Section</title>
           <text>
             <table border="1" width="100%">
@@ -1151,8 +1213,8 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.93"/>
               <id root="2.16.840.1.113883.19.4" extension="1884438851"/>
-              <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol"/>
-              <value xsi:type="CD" code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Not done"/>
+              <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Protocol used NEMSIS"/>
+              <value xsi:type="CD" code="LA6630-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Not done"/>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
                   <code code="67538-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Protocol age category"/>
@@ -1243,32 +1305,37 @@
               <statusCode code="completed"/>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67480-4" displayName="Dispatch delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.153"/>
+                  <code code="67480-4" displayName="Dispatch delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67557-9" displayName="Response delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                   <templateId root="2.16.840.1.1133883.17.3.10.1.154"/>
+                  <code code="67557-9" displayName="Response delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67558-7" displayName="Scene delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                   <templateId root="2.16.840.1.1133883.17.3.10.1.155"/>
+                  <code code="67558-7" displayName="Scene delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67559-5" displayName="Transport delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.156"/>
+                  <code code="67559-5" displayName="Transport delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67560-3" displayName="Turnaround delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                   <templateId root="2.16.840.1.1133883.17.3.10.1.157"/>
+                  <code code="67560-3" displayName="Turnaround delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18081-2" displayName="None/No delay" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
             </organizer>
@@ -1279,23 +1346,23 @@
               <id root="2.16.840.1.113883.19.4" extension="648798662"/>
               <statusCode code="completed"/>
               <component>
-                <templateId root="2.16.840.1.1133883.17.3.10.1.150"/>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="69466-1" displayName="Dispatch Location Name" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.150"/>
+                  <code code="69466-1" displayName="Dispatch Location Name" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="ST">Acme EMT Services</value>
                 </observation>
               </component>
               <component>
-                <templateId root="null"/>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="52002-3" displayName="Dispatch location latitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.151"/>
+                  <code code="52000-7" displayName="Ambulance transport, Origination site latitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="PQ" value="46.786939" unit="deg"/>
                 </observation>
               </component>
               <component>
-                <templateId root="null"/>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="52003-1" displayName="Dispatch location longitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.152"/>
+                  <code code="52001-5" displayName="Ambulance transport, Origination site longitude" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                   <value xsi:type="PQ" value="-92.098194" unit="deg"/>
                 </observation>
               </component>
@@ -1310,25 +1377,29 @@
               <effectiveTime value="201201011616+0600"/>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67484-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Beginning"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.171"/>
+                  <code code="67484-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Counter or odometer reading NEMSIS --beginning of call"/>
                   <value xsi:type="PQ" nullFlavor="NI" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67485-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="On scene"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.172"/>
+                  <code code="67485-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Counter or odometer reading NEMSIS --patient arrival"/>
                   <value xsi:type="PQ" nullFlavor="NI" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67486-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Destination"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.173"/>
+                  <code code="67486-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Counter or odometer reading NEMSIS --patient destination"/>
                   <value xsi:type="PQ" nullFlavor="NI" />
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="67487-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ending"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.174"/>
+                  <code code="67487-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Counter or odometer reading NEMSIS --end of call"/>
                   <value xsi:type="PQ" nullFlavor="NI" />
                 </observation>
               </component>
@@ -1336,7 +1407,7 @@
           </entry>
           <entry>
             <observation classCode="OBS" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.182"/>
               <id root="2.16.840.1.113883.19.4" extension="876999538"/>
               <code code="67482-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode to scene"/>
               <value xsi:type="CD" code="LA17177-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergent"/>
@@ -1401,17 +1472,19 @@
               <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS complaint"/>
               <effectiveTime value="201201011545+0600"/>
               <value xsi:type="ST" >gunshot wound</value>
-              <targetSiteCode code="LA18111-7" displayName="Chest" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <targetSiteCode code="LA18111-7" displayName="Chest" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="72114-2" displayName="Complaint type" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18923-5" displayName="Chief/primary" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.138"/>
+                  <code code="72114-2" displayName="Complaint type" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18923-5" displayName="Chief/primary" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS"  moodCode="EVN">
-                  <code code="69468-7" displayName="Organ system" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <value xsi:type="CD" code="LA18283-4" displayName="Pulmonary" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.140"/>
+                  <code code="69468-7" displayName="Organ system" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <value xsi:type="CD" code="LA18283-4" displayName="Pulmonary" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </entryRelationship>
             </observation>
@@ -1428,7 +1501,7 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.65"/>
               <id root="2.16.840.1.113883.19.4" extension="1583639517"/>
-              <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Provider Primary Impression"/>
+              <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary problem NEMSIS"/>
               <value xsi:type="CD" code="S29.9" displayName="Unspecified injury of thorax" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10 CM"/>
             </observation>
           </entry>
@@ -1452,7 +1525,7 @@
             <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.68"/>
               <id root="2.16.840.1.113883.19.4" extension="88284330"/>
-              <code code="69542-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Provider Secondary Impressions"/>
+              <code code="69542-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Secondary problem NEMSIS"/>
               <value xsi:type="CD" code="S29.9" displayName="Unspecified injury of thorax" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10 CM"/>
             </observation>
           </entry>
@@ -1462,7 +1535,7 @@
               <id root="2.16.840.1.113883.19.4" extension="1775820278"/>
               <code code="67493-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial Patient Acuity"/>
               <effectiveTime value="201201011616+0600"/>
-              <value xsi:type="CD" code="LA17695-0" displayName="Emergent (yellow)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <value xsi:type="CD" code="LA17695-0" displayName="Emergent (yellow)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
             </observation>
           </entry>
         </section>
@@ -1580,7 +1653,7 @@
               <templateId root="2.16.840.1.1133883.17.3.10.1.44"/>
               <id root="2.16.840.1.113883.19.4" extension="1781413455"/>
               <code code="69476-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient arrived at destination time"/>
-              <value xsi:type="TS" value="201201011650+0600"/>
+              <value xsi:type="TS" />
             </observation>
           </entry>
           <entry>
@@ -1604,8 +1677,7 @@
       <component>
         <section>        
           <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <!-- <templateId root="2.16.840.1.113883.10.20.22.2.4"/>  Consolidated analogue -->
           <id root="2.16.840.1.113883.19.4" extension="1523729757"/>
           <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
           <title>EMS Vital Signs</title>
@@ -1662,7 +1734,7 @@
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.26"/>  Consolidated analogue -->
               <id root="2.16.840.1.113883.19.4" extension="247546586"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
               <statusCode code="completed"/>
@@ -1672,40 +1744,63 @@
                   <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
                   <id root="2.16.840.1.113883.19.4" extension="689916797"/>
                   <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="BL" value="true"/> 
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.23.1"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="638193965"/>
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular systolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="PQ" value="90" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.144"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="613106108"/>
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular diastolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="PQ" value="42" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.145"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="787396836"/>
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart rate"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="PQ" value="142" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="1100521092"/>
                   <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Breaths"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="PQ" value="22" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
+                  <id root="2.16.840.1.113883.19.4" extension="1100521094"/>
                   <code code="2708-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Oxygen saturation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011602+0600"/>
                   <value xsi:type="PQ" value="90" unit="%"/>
                 </observation>
               </component>
@@ -1714,42 +1809,63 @@
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.26"/>  Consolidated analogue -->
               <id root="2.16.840.1.113883.19.4" extension="247546586"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
               <statusCode code="completed"/>
               <effectiveTime value="201201011611+0600"/>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.23.1"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="638193965"/>
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular systolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011611+0600"/>
                   <value xsi:type="PQ" value="96" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.144"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="613106108"/>
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular diastolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011611+0600"/>
                   <value xsi:type="PQ" value="44" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.145"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="787396836"/>
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart rate"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011611+0600"/>
                   <value xsi:type="PQ" value="120" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="1100521092"/>
                   <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Breaths"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011611+0600"/>
                   <value xsi:type="PQ" value="26" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/>    -->
+                  <id root="2.16.840.1.113883.19.4" extension="1100521095"/>             
                   <code code="2708-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Oxygen saturation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011611+0600"/>
                   <value xsi:type="PQ" value="84" unit="%"/>
                 </observation>
               </component>
@@ -1758,42 +1874,63 @@
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.26"/>  Consolidated analogue -->
               <id root="2.16.840.1.113883.19.4" extension="247546586"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
               <statusCode code="completed"/>
               <effectiveTime value="201201011627+0600"/>
               <component>
-                <observation classCode="OBS"  moodCode="EVN">
+                  <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.23.1"/>
+                    <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/>  -->
                   <id root="2.16.840.1.113883.19.4" extension="638193965"/>
-                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular systolic"/>
+                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular systolic"/>
+                    <statusCode code="completed"/>
+                  <effectiveTime value="201201011627+0600"/>
                   <value xsi:type="PQ" value="100" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.144"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="613106108"/>
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular diastolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011627+0600"/>
                   <value xsi:type="PQ" value="54" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.145"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="787396836"/>
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart rate"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011627+0600"/>
                   <value xsi:type="PQ" value="108" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="1100521092"/>
                   <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Breaths"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011627+0600"/>
                   <value xsi:type="PQ" value="24" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
+                  <id root="2.16.840.1.113883.19.4" extension="1100521097"/>
                   <code code="2708-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Oxygen saturation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011627+0600"/>
                   <value xsi:type="PQ" value="93" unit="%"/>
                 </observation>
               </component>
@@ -1802,42 +1939,63 @@
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <!-- <templateId root="2.16.840.1.113883.10.20.22.4.26"/>  Consolidated analogue -->
               <id root="2.16.840.1.113883.19.4" extension="247546586"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
               <statusCode code="completed"/>
               <effectiveTime value="201201011640+0600"/>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.23.1"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="638193965"/>
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular systolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011640+0600"/>
                   <value xsi:type="PQ" value="108" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.144"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="613106108"/>
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular diastolic"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011640+0600"/>
                   <value xsi:type="PQ" value="62" unit="mm[Hg]"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.145"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="787396836"/>
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart rate"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011640+0600"/> 
                   <value xsi:type="PQ" value="102" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
                   <id root="2.16.840.1.113883.19.4" extension="1100521092"/>
                   <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Breaths"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011640+0600"/>
                   <value xsi:type="PQ" value="20" unit="/min"/>
                 </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+                  <!-- <templateId root="2.16.840.1.113883.10.20.22.4.27"/> -->
+                  <id root="2.16.840.1.113883.19.4" extension="613106199"/>
                   <code code="2708-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Oxygen saturation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="201201011640+0600"/>
                   <value xsi:type="PQ" value="95" unit="%"/>
                 </observation>
               </component>
@@ -1845,11 +2003,10 @@
           </entry>
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
+            <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
               <id root="2.16.840.1.113883.19.4" extension="632881167"/>
               <statusCode code="completed"/>
-              <effectiveTime value="201201011650+0600"/>
+              <effectiveTime />
               <component>
                 <observation classCode="OBS" moodCode="EVN">                
                   <templateId root="2.16.840.1.1133883.17.3.10.1.165"/>
@@ -1872,7 +2029,7 @@
                   <id root="2.16.840.1.113883.19.4" extension="1769627615"/>
                   <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/>
                   <value xsi:type="CD" code="LA17099-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sinus tachycardia"/>
-                  <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                 </observation>
               </component>
             </organizer>
@@ -1954,7 +2111,3 @@
     </structuredBody>
   </component>
 </ClinicalDocument>
-
-
-
-
