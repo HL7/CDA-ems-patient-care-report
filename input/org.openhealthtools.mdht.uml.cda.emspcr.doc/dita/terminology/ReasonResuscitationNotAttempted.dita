@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ReasonResuscitationNotAttempted - 2.16.840.1.113883.17.3.11.90</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Rationale for not attempting to resuscitate a patient</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -24,9 +25,9 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17063-1</entry><entry></entry><entry>Considered futile</entry></row>
-<row><entry>LA17064-9</entry><entry></entry><entry>DNR orders</entry></row>
-<row><entry>LA17065-6</entry><entry></entry><entry>Signs of circulation</entry></row>
+<row><entry>LA17063-1</entry><entry>LOINC</entry><entry>Considered futile</entry></row>
+<row><entry>LA17064-9</entry><entry>LOINC</entry><entry>DNR orders</entry></row>
+<row><entry>LA17065-6</entry><entry>LOINC</entry><entry>Signs of circulation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

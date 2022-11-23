@@ -76,6 +76,27 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.30" extension="2022-01-01"/>
   <statusCode/>
   <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.165" extension="2022-01-01"/>
+      <code code="67775-7" codeSystem="2.16.840.1.113883.6.1" displayName="Level of responsiveness NEMSIS"/>
+      <value xsi:type="CD"/>
+    </observation>
+  </component>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.166" extension="2022-01-01"/>
+      <code code="2339-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Mass/volume] in Blood"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.168" extension="2022-01-01"/>
+      <code code="19889-5" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon dioxide/Gas.total.at end expiration in Exhaled gas"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
     <organizer classCode="CLUSTER" moodCode="SLOT">
       <templateId root="2.16.840.1.1133883.17.3.10.1.170" extension="2022-01-01"/>
       <statusCode/>
@@ -83,6 +104,20 @@
         <observation classCode="SPCOBS" moodCode="EVN">
           <templateId root="2.16.840.1.1133883.17.3.10.1.160" extension="2022-01-01"/>
           <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.eye opening"/>
+          <value xsi:type="INT"/>
+        </observation>
+      </component>
+      <component>
+        <observation classCode="SPCOBS" moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.192" extension="2022-01-01"/>
+          <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.motor"/>
+          <value xsi:type="INT"/>
+        </observation>
+      </component>
+      <component>
+        <observation classCode="SPCOBS" moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.162" extension="2022-01-01"/>
+          <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.verbal"/>
           <value xsi:type="INT"/>
         </observation>
       </component>

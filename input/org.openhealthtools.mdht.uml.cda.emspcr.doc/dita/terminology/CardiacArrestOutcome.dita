@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>CardiacArrestOutcome - 2.16.840.1.113883.17.3.11.101</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Outcome of an EMS cardiac arrest event</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -25,11 +26,11 @@
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
 <row><entry>LA22792-8</entry><entry>MISSING</entry><entry>Expired in ED</entry></row>
-<row><entry>LA22793-6</entry><entry></entry><entry>Expired in the field</entry></row>
-<row><entry>LA22794-4</entry><entry></entry><entry>Ongoing resuscitation in the ED</entry></row>
-<row><entry>LA22795-1</entry><entry></entry><entry>Return of spontaneous circulation in the field</entry></row>
-<row><entry>LA22796-9</entry><entry></entry><entry>Return of spontaneous circulation in the ED</entry></row>
-<row><entry>LA22797-7</entry><entry></entry><entry>Ongoing resuscitation by other EMS crew</entry></row>
+<row><entry>LA22793-6</entry><entry>LOINC</entry><entry>Expired in the field</entry></row>
+<row><entry>LA22794-4</entry><entry>LOINC</entry><entry>Ongoing resuscitation in the ED</entry></row>
+<row><entry>LA22795-1</entry><entry>LOINC</entry><entry>Return of spontaneous circulation in the field</entry></row>
+<row><entry>LA22796-9</entry><entry>LOINC</entry><entry>Return of spontaneous circulation in the ED</entry></row>
+<row><entry>LA22797-7</entry><entry>LOINC</entry><entry>Ongoing resuscitation by other EMS crew</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

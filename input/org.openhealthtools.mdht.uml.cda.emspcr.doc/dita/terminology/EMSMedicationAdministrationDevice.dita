@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>EMSMedicationAdministrationDevice - 2.16.840.1.113883.17.3.11.108</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of device used to administer a substance to a patient</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -28,8 +29,8 @@
 <row><entry>427591007</entry><entry>MISSING</entry><entry>Non-Rebreather Oxygen Mask</entry></row>
 <row><entry>425926003</entry><entry>MISSING</entry><entry>Partial Rebreather Oxygen Mask</entry></row>
 <row><entry>428285009</entry><entry>MISSING</entry><entry>Venturi Mask</entry></row>
-<row><entry>398013009</entry><entry></entry><entry>Subcutaneous port</entry></row>
-<row><entry>425478008</entry><entry></entry><entry>Blow by oxygen mask</entry></row>
+<row><entry>398013009</entry><entry>LOINC</entry><entry>Subcutaneous port</entry></row>
+<row><entry>425478008</entry><entry>LOINC</entry><entry>Blow by oxygen mask</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

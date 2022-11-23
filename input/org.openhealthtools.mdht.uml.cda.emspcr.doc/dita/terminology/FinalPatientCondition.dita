@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>FinalPatientCondition - 2.16.840.1.113883.17.3.11.111</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,12 +24,12 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17696-8</entry><entry></entry><entry>Critical (Red)</entry></row>
-<row><entry>LA17695-0</entry><entry></entry><entry>Emergent (Yellow)</entry></row>
-<row><entry>LA17694-3</entry><entry></entry><entry>Lower Acuity (Green)</entry></row>
-<row><entry>LA17697-6</entry><entry></entry><entry>Dead without Resuscitation Efforts (Black)</entry></row>
-<row><entry>LA32920-3</entry><entry></entry><entry>Non-Acute/Routine</entry></row>
-<row><entry>LA32921-1</entry><entry></entry><entry>Dead with Resuscitation Efforts (Black)</entry></row>
+<row><entry>LA17696-8</entry><entry>LOINC</entry><entry>Critical (Red)</entry></row>
+<row><entry>LA17695-0</entry><entry>LOINC</entry><entry>Emergent (Yellow)</entry></row>
+<row><entry>LA17694-3</entry><entry>LOINC</entry><entry>Lower Acuity (Green)</entry></row>
+<row><entry>LA17697-6</entry><entry>LOINC</entry><entry>Dead without Resuscitation Efforts (Black)</entry></row>
+<row><entry>LA32920-3</entry><entry>LOINC</entry><entry>Non-Acute/Routine</entry></row>
+<row><entry>LA32921-1</entry><entry>LOINC</entry><entry>Dead with Resuscitation Efforts (Black)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

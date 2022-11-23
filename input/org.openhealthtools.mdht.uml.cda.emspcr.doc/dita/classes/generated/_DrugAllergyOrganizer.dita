@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11564 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.183"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DrugAllergy.dita">Drug Allergy</xref></li></ol> 
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DrugAllergy.dita">Drug Allergy</xref></li></ol> 
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExistenceOfKnownDrugAllergyObservation.dita">Existence Of Known Drug Allergy Observation</xref> (CONF:11713)</li></ol> 
@@ -29,7 +29,7 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DrugAllergy.dita">Drug Allergy</xref></li></ol> 
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DrugAllergy.dita">Drug Allergy</xref></li></ol> 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExistenceOfKnownDrugAllergyObservation.dita">Existence Of Known Drug Allergy Observation</xref> (CONF:11713)</li></ol> 
 </li>

@@ -3,7 +3,7 @@
 
 	<property file="dita.properties" />
 
-	<property name="modelProject" value = "/Users/seanmuir/git/CDA-ems-patient-care-report/org.openhealthtools.mdht.uml.cda.emspcr.model" />
+	<property name="modelProject" value = "/Users/seanmuir/git/CDA-ems-patient-care-report/input/org.openhealthtools.mdht.uml.cda.emspcr.model" />
 	<property name="modelPath.uml" value = "${modelProject}/model/${modelName}.uml" />
 	<property name="vocabPath.uml" value = "${modelProject}/model/${modelName}-vocab.uml" />
 	

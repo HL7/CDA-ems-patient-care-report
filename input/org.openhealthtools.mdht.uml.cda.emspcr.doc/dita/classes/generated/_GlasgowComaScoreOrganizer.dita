@@ -65,6 +65,20 @@
       <value xsi:type="INT"/>
     </observation>
   </component>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.192" extension="2022-01-01"/>
+      <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.motor"/>
+      <value xsi:type="INT"/>
+    </observation>
+  </component>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.162" extension="2022-01-01"/>
+      <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.verbal"/>
+      <value xsi:type="INT"/>
+    </observation>
+  </component>
 </organizer>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->

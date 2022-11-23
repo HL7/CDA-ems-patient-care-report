@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>HospitalCapability - 2.16.840.1.113883.17.3.11.104</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Characteristic hospital capabilities that might be germane to an EMS destination selection</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -24,27 +25,27 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA22833-0</entry><entry></entry><entry>Behavioral health</entry></row>
-<row><entry>LA22834-8</entry><entry></entry><entry>Burn center</entry></row>
-<row><entry>LA22835-5</entry><entry></entry><entry>Critical access hospital</entry></row>
-<row><entry>LA22836-3</entry><entry></entry><entry>Hospital - general</entry></row>
-<row><entry>LA22837-1</entry><entry></entry><entry>Neonatal center</entry></row>
-<row><entry>LA22838-9</entry><entry></entry><entry>Pediatric center</entry></row>
-<row><entry>LA22842-1</entry><entry></entry><entry>Rehabilitation center</entry></row>
-<row><entry>LA22843-9</entry><entry></entry><entry>Trauma center level 1</entry></row>
-<row><entry>LA22844-7</entry><entry></entry><entry>Trauma center level 2</entry></row>
-<row><entry>LA22845-4</entry><entry></entry><entry>Trauma center level 3</entry></row>
-<row><entry>LA22846-2</entry><entry></entry><entry>Trauma center level 4</entry></row>
-<row><entry>LA22847-0</entry><entry></entry><entry>Trauma center level 5</entry></row>
-<row><entry>LA22848-8</entry><entry></entry><entry>Cardiac-STEMI/PCI Capable</entry></row>
-<row><entry>LA22849-6</entry><entry></entry><entry>Cardiac-STEMI/PCI Capable (24/7)</entry></row>
-<row><entry>LA22850-4</entry><entry></entry><entry>Cardiac-STEMI/Non-PCI Capable</entry></row>
-<row><entry>LA32931-0</entry><entry></entry><entry>Stroke-Acute Stroke Ready Hospital (ASRH)</entry></row>
-<row><entry>LA32934-4</entry><entry></entry><entry>Stroke-Primary Stroke Center (PSC)</entry></row>
-<row><entry>LA32935-1</entry><entry></entry><entry>Stroke-Thrombectomy-Capable Stroke Center (TSC)</entry></row>
-<row><entry>LA32936-9</entry><entry></entry><entry>Stroke-Comprehensive Stroke Center (CSC)</entry></row>
-<row><entry>LA32933-6</entry><entry></entry><entry>Cancer Center</entry></row>
-<row><entry>LA20786-2</entry><entry></entry><entry>Labor and Delivery</entry></row>
+<row><entry>LA22833-0</entry><entry>LOINC</entry><entry>Behavioral health</entry></row>
+<row><entry>LA22834-8</entry><entry>LOINC</entry><entry>Burn center</entry></row>
+<row><entry>LA22835-5</entry><entry>LOINC</entry><entry>Critical access hospital</entry></row>
+<row><entry>LA22836-3</entry><entry>LOINC</entry><entry>Hospital - general</entry></row>
+<row><entry>LA22837-1</entry><entry>LOINC</entry><entry>Neonatal center</entry></row>
+<row><entry>LA22838-9</entry><entry>LOINC</entry><entry>Pediatric center</entry></row>
+<row><entry>LA22842-1</entry><entry>LOINC</entry><entry>Rehabilitation center</entry></row>
+<row><entry>LA22843-9</entry><entry>LOINC</entry><entry>Trauma center level 1</entry></row>
+<row><entry>LA22844-7</entry><entry>LOINC</entry><entry>Trauma center level 2</entry></row>
+<row><entry>LA22845-4</entry><entry>LOINC</entry><entry>Trauma center level 3</entry></row>
+<row><entry>LA22846-2</entry><entry>LOINC</entry><entry>Trauma center level 4</entry></row>
+<row><entry>LA22847-0</entry><entry>LOINC</entry><entry>Trauma center level 5</entry></row>
+<row><entry>LA22848-8</entry><entry>LOINC</entry><entry>Cardiac-STEMI/PCI Capable</entry></row>
+<row><entry>LA22849-6</entry><entry>LOINC</entry><entry>Cardiac-STEMI/PCI Capable (24/7)</entry></row>
+<row><entry>LA22850-4</entry><entry>LOINC</entry><entry>Cardiac-STEMI/Non-PCI Capable</entry></row>
+<row><entry>LA32931-0</entry><entry>LOINC</entry><entry>Stroke-Acute Stroke Ready Hospital (ASRH)</entry></row>
+<row><entry>LA32934-4</entry><entry>LOINC</entry><entry>Stroke-Primary Stroke Center (PSC)</entry></row>
+<row><entry>LA32935-1</entry><entry>LOINC</entry><entry>Stroke-Thrombectomy-Capable Stroke Center (TSC)</entry></row>
+<row><entry>LA32936-9</entry><entry>LOINC</entry><entry>Stroke-Comprehensive Stroke Center (CSC)</entry></row>
+<row><entry>LA32933-6</entry><entry>LOINC</entry><entry>Cancer Center</entry></row>
+<row><entry>LA20786-2</entry><entry>LOINC</entry><entry>Labor and Delivery</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
