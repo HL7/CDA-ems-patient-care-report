@@ -4,12 +4,12 @@ This readme is included in a zip file which packages the
   Release 3, Normative US Realm
   December 2022
 
-# CDAR2_IG_EMSPCR_R3_2022DEC
+## CDAR2_IG_EMSPCR_R3_2022DEC
 
 The specification was prepared by Ockham Information Services, LLC under the guidance of the HL7 Clinical Interoperability Council Work Group.
 
  
-# Contents of the package
+## Contents of the package
  
 
 readme.txt                            This file
@@ -19,12 +19,12 @@ PatientCareReportSample.xml           The sample
 --.jar                                Java for validating instances
 
  
-# Note to Readers
+## Note to Readers
  
 The January ballot brought the CDA IG in line with the updated (3.5) NEMSIS data set. No other changes have been made.
 
  
-# Support files
+## Support files
  
 
 MDHT model files, dita content and related files (e.g., Java classes for implementation and validation) are housed on the HL7 GitHub: https://github.com/HL7/cda-ems-patient-care-report
@@ -37,7 +37,7 @@ Source materials: Project files are at https://confluence.hl7.org/display/CIC/Em
 Source specification: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
 Observational terminology is also published at LOINC: (https://loinc.org/search/?t=1&s=84428-2)
 
-Instructions for executing Java validation:
+### Instructions for executing Java validation:
 1. Ensure Java is installed
 2. Download ValidateEMS.jar from github
 3. Unzip jar into a directory
