@@ -15,7 +15,7 @@
   <id root="2.16.840.1.113883.19.1" extension="2086823449"/>           <!-- See notes for OID descriptions.  2.16.840.1.113883.19 is the example domain. -->
   <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Patient Care Report"/>
   <title>EMS Patient Care Report</title>
-  <effectiveTime  />
+  <effectiveTime value="201201041600+0600"/>  
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" code="N"/>
   <languageCode code="en-US" />
   <setId extension="2086823449" root="2.16.840.1.113883.19.1" />      <!-- Version requires setId, for which we repeat the document Id here. -->
@@ -44,7 +44,7 @@
     </patientRole>
   </recordTarget>
   <author>
-    <time />
+    <time value="201201041600+0600"/> 
     <assignedAuthor>
       <id root ="2.16.840.1.113883.4.6" extension="hijklm"/>
       <addr>
@@ -64,7 +64,7 @@
     </assignedAuthor>
   </author>
   <author>
-    <time />
+    <time value="201201041600+0600"/> 
   <assignedAuthor>
     <id root="2.16.840.1.113883.19.6"  extension="1401065661"/>
       <addr nullFlavor="NI"/>
