@@ -1,7 +1,7 @@
 This readme is included in a zip file which packages the 
-  HL7 CDA® Release 2 Implementation Guide:
+  HL7 CDAÆ Release 2 Implementation Guide:
   Emergency Medical Services Patient Care Report
-  Release 3, Normative—US Realm
+  Release 3, NormativeóUS Realm
   December 2022
 
   CDAR2_IG_EMSPCR_R3_2022DEC
@@ -15,8 +15,6 @@ Contents of the package
 readme.txt                            This file
 CDAR2_IG_EMS_PCR_R3_2022NOV.pdf       The specification
 PatientCareReportSample.xml           The sample
---.sch                                Schematron for validating instances
---.jar                                Java for validating instances
 
 ========================
 Note to Readers
@@ -37,6 +35,7 @@ Source materials: Project files are at https://confluence.hl7.org/display/CIC/Em
 Source specification: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
 Observational terminology is also published at LOINC: (https://loinc.org/search/?t=1&s=84428-2)
 
-Instructions for executing Java validation:
+Validation: 
+An executable java .jar file is posted in the Git repository (above), along with instructions for using it to validate instances.
 
 Please direct questions about the ballot to the HL7 CIC Working Group.
