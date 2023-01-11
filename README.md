@@ -21,7 +21,7 @@ PatientCareReportSample.xml           The sample
  
 ## Note to Readers
  
-The January ballot brought the CDA IG in line with the updated (3.5) NEMSIS data set. No other changes have been made.
+Release 3 of the guide is in line with the updated (3.5) NEMSIS data set. No other changes have been made.
 
  
 ## Support files
@@ -37,14 +37,7 @@ Source materials: Project files are at https://confluence.hl7.org/display/CIC/Em
 Source specification: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
 Observational terminology is also published at LOINC: (https://loinc.org/search/?t=1&s=84428-2)
 
-### Instructions for executing Java validation:
-1. Ensure Java is installed
-2. Download ValidateEMS.jar from github
-3. Unzip jar into a directory
-4. Place test file in directory
-5. Run this from the command line: java -cp "./runtime/*" org.openhealthtools.mdht.uml.cda.emspcr.util.Validate <filename>
-6. Output will include warnings and informational text regarding optional constraints but should contain no errors
+### Instructions for executing Java validation are provided at [Validation](https://github.com/HL7/CDA-ems-patient-care-report/tree/main/validation)
 
-
-Please direct questions about the ballot to the HL7 CIC Working Group.
+Please direct questions to the HL7 CIC Working Group.
 
