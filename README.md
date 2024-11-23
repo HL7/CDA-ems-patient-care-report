@@ -4,6 +4,9 @@ This readme is included in a zip file which packages the
   Release 3, Normative US Realm
   December 2022
 
+It is updated for the 2025 Errata edition. The document template was omitted from the publication; this edition addresses that issue. It also includes some non-substantive introductory text that was also omitted, and it enables hyperlinks for document navigation.
+
+
 ## CDAR2_IG_EMSPCR_R3_2022DEC
 
 The specification was prepared by Ockham Information Services, LLC under the guidance of the HL7 Clinical Interoperability Council Work Group.
