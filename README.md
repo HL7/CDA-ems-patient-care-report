@@ -31,13 +31,13 @@ Release 3 of the guide is in line with the updated (3.5) NEMSIS data set. No oth
 
 ### CDA R2 Stylesheet
 Style sheet for rendering CDA R2 Documents
-[CDA XSL](https://github.com/HL7/cda-core-xsl)
+[CDA XSL](https://hl7.org/permalink/?CDAStyleSheet)
 
 MDHT model files, dita content and related files (e.g., Java classes for implementation and validation) are housed on the HL7 GitHub: https://github.com/HL7/cda-ems-patient-care-report
 	
 The latest CDA Schema is located on the HL7 GitHub site:
 	https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions 
-  https://hl7.org/permalink/?CDAR2.0schema
+  https://hl7.org/permalink/?CDAR2.0schemaf
 
 Source materials: Project files are at https://confluence.hl7.org/display/CIC/Emergency+Medical+Services+Patient+Care+Report
 Source specification: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
