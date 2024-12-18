@@ -1,3 +1,5 @@
+## CDAR2_IG_EMSPCR_R3_2023APRerrata
+
 This readme is included in a zip file which packages the 
   HL7 CDA Release 2 Implementation Guide:
   Emergency Medical Services Patient Care Report
@@ -21,6 +23,11 @@ PatientCareReportSample.xml           The sample
 --.sch                                Schematron for validating instances
 --.jar                                Java for validating instances
 
+## Errata
+Include missing Document template (CDA-21198)
+Include additional text in Organization section on open specifications (CDA-20417)
+Include additional text in Organization section on vocabulary (CDA-20330)
+Repaired ToC navigation
  
 ## Note to Readers
  
