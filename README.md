@@ -44,7 +44,7 @@ MDHT model files, dita content and related files (e.g., Java classes for impleme
 	
 The latest CDA Schema is located on the HL7 GitHub site:
 	https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions 
-  https://hl7.org/permalink/?CDAR2.0schemaf
+  https://hl7.org/permalink/?CDAR2.0schema
 
 Source materials: Project files are at https://confluence.hl7.org/display/CIC/Emergency+Medical+Services+Patient+Care+Report
 Source specification: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
