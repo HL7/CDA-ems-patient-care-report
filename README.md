@@ -1,4 +1,4 @@
-## CDAR2_IG_EMSPCR_R3_2023APRerrata
+## HL7_CDAR2_IG_EMS_PCR_R3.0.1_JAN2025Errata
 
 This readme is included in a zip file which packages the 
   HL7 CDA Release 2 Implementation Guide:
