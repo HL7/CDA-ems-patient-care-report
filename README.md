@@ -16,12 +16,16 @@ The specification was prepared by Ockham Information Services, LLC under the gui
  
 ## Contents of the package
  
+* readme.txt: This file
+* HL7_CDAR2_IG_EMS_PCR_R3.0.1_JAN2025Errata.docx: The specification
+* CDAR2_IG_EMS_PCR_R3_2022NOV.pdf: The prior specification 
+* PatientCareReportSample.xml: The sample   
 
-readme.txt                            This file
-CDAR2_IG_EMS_PCR_R3_2022NOV.pdf       The specification
-PatientCareReportSample.xml           The sample
---.sch                                Schematron for validating instances
---.jar                                Java for validating instances
+Verification assets
+* /validation/readme.md: validation instructions
+* /validation/genschematron/emspcr.sch:  Schematron for validating instances
+* /validation/java/EMSValidation.zip:  Java for validating instances
+
 
 ## Errata
 Include missing Document template (CDA-21198)
