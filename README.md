@@ -28,10 +28,10 @@ Verification assets
 
 
 ## Errata
-Include missing Document template (CDA-21198)
-Include additional text in Organization section on open specifications (CDA-20417)
-Include additional text in Organization section on vocabulary (CDA-20330)
-Repaired ToC navigation
+* Include missing Document template (CDA-21198)
+* Include additional text in Organization section on open specifications (CDA-20417)
+* Include additional text in Organization section on vocabulary (CDA-20330)
+* Repaired ToC navigation
  
 ## Note to Readers
  
